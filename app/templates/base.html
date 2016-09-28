@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+    
+    <head>
+    
+        <meta charset="utf-8">
+        <title> </title>
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="{{ glob.metas }}">
+		<meta name="author"   content="{{ glob.authors }}">
+		<meta name="description" content="{{ glob.description }}">
+			
+		<link href="{{ url_for('static', filename='bower_components/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <!--<link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">-->
+
+		<script 					   src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>
+		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
+		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
+
+		
+		<style>
+			
+			
+			/*
+			 *temporary style sheets
+			 */
+			
+		</style>
+		
+
+		
+    </head>
+
+	
+
+    <header>
+		
+		<!-- for background carousel or smthg like that -->
+		
+	
+    </header>
+
+
+
+
+    
+	<body id="body" >
+		
+		
+		<!-- NAVBAR --------------------------------------------------------------------- -->
+		
+		<nav class="navbar navbar-default navbar-fixed-top">
+			
+			<div class = "container-fluid">
+				
+				<!-- main logo / title / nav bar -->
+				<div class="navbar-header">
+				</div>
+			
+			</div>
+		
+		</nav>
+		
+		
+		
+		<!-- CONTENTS --------------------------------------------------------------------- -->
+
+		<div class="container-fluid">
+			
+			{% block content %}{% endblock %}
+		
+		</div>
+		
+		<!-- FOOTER --------------------------------------------------------------------- -->
+		
+		<div class="footer navbar-fixed-bottom">
+			
+			<div >
+				
+				<h6 class="text-right">
+					
+						Developped for
+						<a color="black" target="_blank" href="http://">Visualizar 2016</a>
+						by
+						<a color="black" target="_blank" href="https://github.com/">collaborator</a>
+						 - 2016 &nbsp; 
+						<a rel="license" href="http://creativecommons.org/licenses/{{ glob.licenceCC }}/4.0/">
+							<img 	alt="Creative Commons License"
+									src="https://i.creativecommons.org/l/{{ glob.licenceCC }}/4.0/80x15.png" />
+						</a>
+				</h6>
+			</div>
+			<br></br>
+		
+		</div><!-- end of footer-->
+		
+		
+		
+		<!-- MODALS --------------------------------------------------------------------- -->
+	
+	
+	
+	
+    </body>
+
+
+
+    
+	<script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <!--  bootstrap callings  -->
+    <script type="text/javascript">
+		
+		// activate bootstrap dropdown and carousel
+		$(document).ready( function(){ $(".dropdown-toggle").dropdown() } ) ;
+		$(document).ready(function() { $('.carousel').carousel({interval: 7000}); });	
+		
+		
+		
+		
+    </script>
+    
+    
+</html>
+

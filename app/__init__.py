@@ -5,11 +5,20 @@ to generate networks/datavisualisations
 ------------------------------------------
 licence CC : BY - SA
 ---------------------------------------------
-project by :
 
+project by :
+    - FABLAB BARCELONA
+    - PING
+    
+
+developpers :
+    - Massimo M
+    - Mariana Q
+    - Julien P
 
 with the support of :
-
+    MediaLab Prado - Visualizar 2016
+    
 ---------------------------------------------
 
 '''
@@ -17,15 +26,11 @@ with the support of :
 from flask import Flask
 import os
 
-#from FabCity_vars_app import static_dir ### custom static directory
+from .scripts.app_vars import static_dir ### custom static directory
 
 
-app = Flask(__name__)
-#app = Flask(__name__, static_path = static_dir ) ### change static directory adress to custom for Flask
-
-
-#### TEST to change static folder's path instead of 'app = Flask(__name__, static_path = static_dir )'
-#### from snippet / url : http://flask.pocoo.org/snippets/102/
+#app = Flask(__name__)  ### default call
+app = Flask(__name__, static_path = static_dir ) ### change static directory adress to custom for Flask
 
 
 from app import views
