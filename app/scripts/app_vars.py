@@ -16,7 +16,7 @@ d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap,bower"""
 description = "description"
 authors     = "Massimo, Mariana, Julien"
 
-licenceCC = 'by-nc' ## https://creativecommons.org/choose/
+licenceCC   = 'GPL' 
 
 
 ### variables for app config

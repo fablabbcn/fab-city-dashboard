@@ -26,20 +26,23 @@ global_names = {
 def index():
     print '-'*10 , 'VIEW INDEX', '-'*50
     return render_template("index.html",
-                           glob = global_names,
+                           index = True,
+                           glob  = global_names,
                            )
 
 ### automatically creates specific routes for every dataset in collections
 @app.route('/<selection>')
-def data_rendering(selection):
+def data_render_map(selection):
     
     print
-    print '-'*10, 'VIEW RENDERING PAGE', selection, '-'*50
+    print '-'*10, 'VIEW RENDERING', selection, '-'*50
     print 'selection :', selection
     
     #call python script here if you want before rendering data
     
-    return render_template("D3_network.html",
+    return render_template("test_render.html",
                            glob = global_names,
+                           map_ = True,
+                           force= False,
                            )
 
