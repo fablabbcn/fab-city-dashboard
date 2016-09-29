@@ -26,7 +26,11 @@
 		
 		<!-- LEAFLET -->
 		<script type="text/javascript" src="{{ url_for('static', filename='bower_components/leaflet/dist/leaflet.js') }}"></script>
-		<link rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet/dist/leaflet.css') }}" />
+		<script type="text/javascript" src="{{ url_for('static', filename='bower_components/leaflet.markercluster/dist/leaflet.markercluster.js') }}"></script>
+		
+		<link   rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet/dist/leaflet.css') }}" />
+		<link   rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet.markercluster/dist/MarkerCluster.css') }}" />
+		<link   rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css') }}" />
 
 		<!-- STYLES -->
 		<style>
