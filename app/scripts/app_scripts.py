@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 
+import json
 from makerlabs import fablabs_io
 
 ### DATASETS FABLABS
