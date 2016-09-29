@@ -1,24 +1,18 @@
-'''          FAB CITY - VISUALIZAR 2016
+'''FAB CITY DASHBOARD - VISUALIZAR'16
 --------------------------------------------
-A web application powered by Flask and d3.js
-to generate networks/datavisualisations
+A dashboard for all the Fab Cities where citizens can understand the existing resilience of cities and how the Maker movement is having an impact on this.
 ------------------------------------------
-licence CC : BY - SA
+license: AGPL 3.0
 ---------------------------------------------
 
-project by :
-    - FABLAB BARCELONA
-    - PING
-    
+A project by: IAAC | Fab Lab Barcelona - Fab City Research Lab from the Fab City Global discussions.
+Proposed at Visualizar'16 at Medialab Prado: http://fablabbcn.org/news/2016/05/12/visualizar.html
 
-developpers :
-    - Massimo M
-    - Mariana Q
-    - Julien P
+Participants at Visualizar'16:
+    - Massimo Menichinelli (IAAC | Fab Lab Barcelona - Fab City Research Lab)
+    - Mariana Quintero (IAAC | Fab Lab Barcelona - Fab City Research Lab)
+    - Julien Paris (PING)
 
-with the support of :
-    MediaLab Prado - Visualizar 2016
-    
 ---------------------------------------------
 
 '''
@@ -26,11 +20,9 @@ with the support of :
 from flask import Flask
 import os
 
-from .scripts.app_vars import static_dir ### custom static directory
-
+from .scripts.app_vars import static_dir  ### custom static directory
 
 app = Flask(__name__)  ### default call
 #app = Flask(__name__, static_path = static_dir ) ### change static directory adress to custom for Flask
-
 
 from app import views
