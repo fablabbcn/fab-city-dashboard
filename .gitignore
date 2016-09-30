@@ -1,6 +1,9 @@
 # BOWER
 app/static/bower_components/
 
+# DATA
+.json
+
 # MAC
 # Folder view configuration files
 .DS_Store
