@@ -142,7 +142,7 @@ user_profiles = {
         
     ### CARTO TYPOLOGY ##################
     "world"       : [
-                        { "400px" : [ {"wor_ma": 12 }  ]      }, 
+                        { "500px" : [ {"wor_ma": 12 }  ]      }, 
                         { "50px" : [   {"too_pl" : 3 },
                                         {"too_id": 3 }
                                     ] },
