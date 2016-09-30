@@ -10,6 +10,6 @@ from    makerlabs import fablabs_io
 ## get datas from app DB ? 
 
 def test_fablab_io_json () :
-    test = fablabs_io.get_fablabs_dict()
+    test = fablabs_io.get_labs_dict(format="geojson")
     print test
     return test

@@ -1,6 +1,12 @@
 
+
+<div class="map">
+	<!-- LEAFLET + D3 : http://bl.ocks.org/d3noob/9267535 -->
+
 	<!-- D3.JS V4-->
 	<script type="text/javascript" src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>
+	
+	
 	
 	<!-- LEAFLET -->
 	<script type="text/javascript" src="{{ url_for('static', filename='bower_components/leaflet/dist/leaflet-src.js') }}"></script>		
@@ -10,30 +16,55 @@
 	<link   rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet.markercluster/dist/MarkerCluster.css') }}" />
 	<link   rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css') }}" />
 	
+
 	
 	
+	<!-- LEAFLET TEST DATAS
+		<script>var nameVar = document.currentScript; </script>
+	-->
+		<!-- SAMPLES TEST -->
+	<!--<script src="{{ url_for('static', filename='data_custom/Format_GEOJSON.json') }}" type="text/javascript">-->
+	<!--	</script>-->
+	<script src="{{ url_for('static', filename='data_custom/Leaflet_sample-geojson.js') }}" type="text/javascript">
+		</script>
+		
+		<!-- JSON STATS -->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_labs/FablabsIO_fablabs.json') }}" type="text/javascript">
+		</script>-->
+	
+		<!-- GEOJSONS -->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_labs/FablabsIO_fablabs.geojson') }}" type="text/javascript"></script>-->
+	<script src="{{ url_for('static', filename='data_custom/geojson_labs/Makery_fablabs.json') }}" type="text/javascript"></script>
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/us-states.js') }}" type="text/javascript"></script>-->
+	
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/all_countries.geojson') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/BEL_MAs_2016.geojson') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/ESP_MAs_2016.geojson') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/ITA_MAs_2016.geojson') }}" type="text/javascript"></script>	
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/PRT_MAs_2016.geojson') }}" type="text/javascript"></script>	
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/GBR_MAs_2016.geojson') }}" type="text/javascript"></script>	
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/DEU_MAs_2016.geojson') }}" type="text/javascript"></script>	
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/FRA_MAs_2016.geojson') }}" type="text/javascript"></script>	
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/USA_MAs_2016.geojson') }}" type="text/javascript"></script>	
 	
 	<!-- DIV MAP -->
-	<div id="map" style="width: 100%; height: 380px"></div>
-	
-	
-	<!-- LEAFLET TEST DATAS -->
-	<script src="{{ url_for('static', filename='data_custom/Format_GEOJSON.json') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='data_custom/Leaflet_sample-geojson.js') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='data_custom/geojson_labs/FablabsIO_fablabs.json') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='data_custom/geojson_labs/Makery_fablabs.json') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/us-states.js') }}" type="text/javascript"></script>
-	
-	<!-- LEAFLET + D3 : http://bl.ocks.org/d3noob/9267535 -->
+	<div id="map" style="width: 100%; height: {{ row['height'] }}"></div>
 	
 	<!-- LEAFLET SCRIPT -->
 	<script>
 		
 		// CREATE EMPTY LAYER
-		var empty_layer = new L.layerGroup();
+		var empty_layer    = new L.layerGroup();
+
+		// CREATE BASEMAPS LAYER
+		var basemaps_layer = new L.layerGroup();
+
+		// CREATE STATS LAYER
+		var stats_layer    = new L.layerGroup();
 		
-		// CREATE EMPTY LAYER
-		var fablabs_layer = new L.layerGroup();
+		// CREATE FABLABS LAYER
+		var fablabs_layer   = new L.layerGroup();
+		
 		
 		// BASEMAP
 		var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
@@ -50,7 +81,11 @@
 			zoom: 2,
 			layers: [grayscale, fablabs_layer]
 		});
-		
+		map.options.maxZoom = 10;
+		map.options.minZoom = 2;
+
+
+
 		
 		// FUNCTION - ADD POPUP TO FEATURES
 		function onEachFeature(feature, layer) {
@@ -62,17 +97,54 @@
 		}
 		
 		
-		// READ GEOJSON WITH D3 ////////////////// FAIL !!!
-		var d3_geojson = d3.json(M_fablabs, function (error, json) {
-											if (error) 	console.log(error);
-											console.log(json)
-											}
-								 )
+		//// READ GEOJSON WITH D3 ////////////////// FAIL !!!
+		//var d3_geojson = d3.json(M_fablabs, function (error, json) {
+		//									if (error) 	console.log(error);
+		//									console.log(json)
+		//									}
+		//						 )
 		
+		
+		// get color depending on population density value
+		function getColor(d) {
+			return d > 1000 ? '#800026' :
+			       d > 500  ? '#BD0026' :
+			       d > 200  ? '#E31A1C' :
+			       d > 100  ? '#FC4E2A' :
+			       d > 50   ? '#FD8D3C' :
+			       d > 20   ? '#FEB24C' :
+			       d > 10   ? '#FED976' :
+			                  '#FFEDA0';
+		}
+
+		function style(feature) {
+			return {
+				weight: 2,
+				opacity: 1,
+				color: 'white',
+				dashArray: '3',
+				fillOpacity: 0.7,
+				//fillColor: getColor(feature.properties.density)
+				fillColor: '#00e0e0'
+			};
+		}
+		
+		
+		// LOAD BASEMAPS
+		function addBasemap (geojson, layer_, bottom) {
+			
+			L.geoJson(geojson, {
+				style: style
+			})
+			.addTo(map)
+			.addTo(layer_, bottom);
+		};
 		
 		
 		// LOAD FABLABS
-		var Fablabs = L.geoJson( M_fablabs	, {
+		function addPoints (json, layer_) {
+			
+			L.geoJson ( json	, {
 			
 			style: function (feature) {
 				return feature.properties && feature.properties.style;
@@ -91,9 +163,25 @@
 				});
 			}
 			
-		})
-		.addTo(map)
-		.addTo(fablabs_layer);
+			})
+			.addTo(map)
+			.addTo(layer_);
+		};
+		
+		
+		
+		addBasemap(all_countries, basemaps_layer, true);
+		addBasemap(BEL_MAs_2016, basemaps_layer, false);
+		addBasemap(FRA_MAs_2016, basemaps_layer, false);
+		addBasemap(ESP_MAs_2016, basemaps_layer, false);
+		addBasemap(ITA_MAs_2016, basemaps_layer, false);
+		addBasemap(PRT_MAs_2016, basemaps_layer, false);
+		addBasemap(GBR_MAs_2016, basemaps_layer, false);
+		addBasemap(DEU_MAs_2016, basemaps_layer, false);
+		addBasemap(USA_MAs_2016, basemaps_layer, false);
+
+		addPoints(Makery_fablabs, fablabs_layer);
+		//addPoints(FablabsIO_fablabs, fablabs_layer);		
 		
 		//var Fablabs_ = L.geoJson(FIO_fablabs.labs	, {
 		//	
@@ -126,11 +214,18 @@
 		};
 		
 		var overlays = {
-			"Empty layer" : empty_layer,
-			"Fablabs"     : fablabs_layer
+			//"Empty layer" : empty_layer,
+			"Fablabs"     : fablabs_layer,
+			"Basemaps"    : basemaps_layer
 		};
 		
-		var controls = L.control.layers(baseLayers, overlays).addTo(map);
+		var controls = L.control.layers(baseLayers, overlays, {collapsed:false}).addTo(map);
+		
+		//var checks = document.querySelectorAll('[type = "checkbox"]'), i;
+		//function check() {
+		//	for (i = 0; i < checks.length; ++i) {
+		//		checks[i].disabled = false;
+		//check();
 		
 		
 		////FAILED CLUSTERS
@@ -164,3 +259,4 @@
 	
 	
 	</script>
+</div>
