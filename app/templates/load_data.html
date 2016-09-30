@@ -7,34 +7,31 @@
 
 {% if list_points %}
 <script>
-	var dft_radius = "5px";
-	var dft_opacity = "0.8";
-	var dataMongo = {
-		"type": "FeatureCollection",
-		"features": [{ %
-			for item in list_points %
-		} {
-			"geometry": {
-				"type": "Point",
-				"coordinates": [{
-					{
-						item.latitude
-					}
-				}, {
-					{
-						item.longitude
-					}
-				}]
-			},
-			"type": "Feature",
-			"properties": {
-				"color_": "#ff7800",
-				"radius_": dft_radius,
-				"opacity_": dft_opacity
-			}
-		}, { % endfor %
-		}]
-	};
+    var dft_radius = "5px";
+    var dft_opacity = "0.8";
+    var dataMongo = {
+        "type": "FeatureCollection",
+        "features": [{ %
+                for item in list_points %
+            } {
+                item.latitude
+            }
+        },
+        {
+            {
+                item.longitude
+            }
+        }]
+    },
+    "type": "Feature",
+    "properties": {
+        "color_": "#ff7800",
+        "radius_": dft_radius,
+        "opacity_": dft_opacity
+    }
+    }, { % endfor %
+    }]
+    };
 </script>
 {% endif %} {% block map_ %}{% endblock %} {% endif %}
 

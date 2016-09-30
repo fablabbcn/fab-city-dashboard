@@ -1,0 +1,51 @@
+
+
+{% extends "base.html" %}
+
+{% block content %}
+
+	
+	<!-- iterate through user_specs to put rows / heights	-->
+	
+	{% for row in user_specs %}
+
+	<div 	class="row"
+			id="{{ row['row'] }}"
+			style="min-height:{{ row['height'] }}"
+			>
+		
+		<!-- for each row put modules with their specific size/name/class -->
+		
+		{% for module in row['columns'] %}
+		
+		<div 	id="{{ row['row'] }}"
+				class="col-sm-{{module['width']}} {{module['module']}} "
+				>
+			
+			{#
+			module index : {{ module['module'] }}
+			<br>
+			module to include : modules{{ mod_incl[ module['module'] ]}}
+			<br>
+			module specs : {{ module }}
+			<hr>
+			#}
+			
+			{% set post_loop = loop %}
+			{% include 'modules/'+ mod_incl[ module['module'] ] %}
+		
+		</div>
+		
+		{% endfor %}
+
+	</div>
+	
+	{% endfor %}
+
+
+
+
+
+
+{% endblock %}
+    

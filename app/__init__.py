@@ -12,17 +12,16 @@ Participants at Visualizar'16:
     - Massimo Menichinelli (IAAC | Fab Lab Barcelona - Fab City Research Lab)
     - Mariana Quintero (IAAC | Fab Lab Barcelona - Fab City Research Lab)
     - Julien Paris (PING)
-
 ---------------------------------------------
-
 '''
 
 from flask import Flask
 import os
 
-from .scripts.app_vars import static_dir  ### custom static directory
+from .scripts.app_vars import static_dir  # custom static directory
 
-app = Flask(__name__)  ### default call
-#app = Flask(__name__, static_path = static_dir ) ### change static directory adress to custom for Flask
+app = Flask(__name__)  # default call
+# app = Flask(__name__, static_path = static_dir )
+# change static directory adress to custom for Flask
 
 from app import views
