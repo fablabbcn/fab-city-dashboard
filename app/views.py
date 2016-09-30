@@ -6,7 +6,7 @@ from werkzeug.routing import Rule
 
 ### import global variables for Z2N
 from .scripts.app_vars    import title, metas, description, subtitle, version, authors, licenceCC, static_dir, URLroot_
-from .scripts.app_vars    import user_profiles
+from .scripts.app_vars    import user_profiles, modules_html_dict
 from .scripts.app_scripts import *
 
 
@@ -75,14 +75,16 @@ def user_entry(user_profile):
 
     print 'user profile :', user_profile
     
+    ### generate template corresponding to user_profile
     user_specs = generateTemplate(user_profile)
     print "user_specs", user_specs
     
     return render_template("user_driven_template.html",
                            index        = True,
                            glob         = global_names,
-                           user_profile = user_profile,
-                           user_specs   = user_specs
+                           user_profile = user_profile,     ### settings for user_profile from user_profiles
+                           user_specs   = user_specs,       ### description of every row for template
+                           mod_incl     = modules_html_dict ### global dict to get corresponding .html modules
                            )
 
 @app.route('/test_blank')
