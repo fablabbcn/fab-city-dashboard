@@ -1,4 +1,7 @@
-'''FAB CITY DASHBOARD - VISUALIZAR'16
+# -*- encoding: utf-8 -*-
+
+'''
+FAB CITY DASHBOARD - VISUALIZAR'16
 --------------------------------------------
 A dashboard for all the Fab Cities where citizens can understand the existing resilience of cities and how the Maker movement is having an impact on this.
 ------------------------------------------
@@ -11,7 +14,7 @@ Proposed at Visualizar'16 at Medialab Prado: http://fablabbcn.org/news/2016/05/1
 Participants at Visualizar'16:
     - Massimo Menichinelli (IAAC | Fab Lab Barcelona - Fab City Research Lab)
     - Mariana Quintero (IAAC | Fab Lab Barcelona - Fab City Research Lab)
-    - Julien Paris (PING)
+    - Julien Paris (PING | LabSIC - Paris 13)
 ---------------------------------------------
 '''
 
