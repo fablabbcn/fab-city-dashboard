@@ -14,7 +14,7 @@ Proposed at Visualizar'16 at Medialab Prado: http://fablabbcn.org/news/2016/05/1
 Participants at Visualizar'16:
     - Massimo Menichinelli (IAAC | Fab Lab Barcelona - Fab City Research Lab)
     - Mariana Quintero (IAAC | Fab Lab Barcelona - Fab City Research Lab)
-    - Julien Paris (PING)
+    - Julien Paris (PING | LabSIC - Paris 13)
 ---------------------------------------------
 '''
 

@@ -1,24 +1,15 @@
-Flask==0.11.1
-Jinja2==2.8
-MarkupSafe==0.23
-Werkzeug==0.11.11
 click==6.6
 decorator==4.0.10
-<<<<<<< HEAD
-=======
 Flask==0.11.1
->>>>>>> master
 geojson==1.3.3
 geopy==1.11.0
 itsdangerous==0.24
+Jinja2==2.8
 kitchen==1.2.4
 makerlabs==0.14
-<<<<<<< HEAD
-=======
 MarkupSafe==0.23
->>>>>>> master
 mwparserfromhell==0.4.3
 networkx==1.11
 requests==2.11.1
 simplemediawiki==1.1.1
-wsgiref==0.1.2
+Werkzeug==0.11.11
