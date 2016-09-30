@@ -133,8 +133,8 @@ user_profiles = {
                       ],
     "only_dashboard"    : [
                         { "200px" : [ {"too_da" : 12 }      ]    }, 
-                        { "100px" : [   {"too_pl" : 2 },
-                                        {"too_id": 2 }
+                        { "50px" : [   {"too_pl" : 3 },
+                                        {"too_id": 3 }
                                     ] },
                         { "400px" : [ {"wor_ma" : 12 } ] },  ### row 1
 
@@ -143,8 +143,8 @@ user_profiles = {
     ### CARTO TYPOLOGY ##################
     "world"       : [
                         { "400px" : [ {"wor_ma": 12 }  ]      }, 
-                        { "50px" : [   {"too_pl" : 2 },
-                                        {"too_id": 2 }
+                        { "50px" : [   {"too_pl" : 3 },
+                                        {"too_id": 3 }
                                     ] },
                       ],
 
