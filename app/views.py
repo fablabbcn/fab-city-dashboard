@@ -6,9 +6,11 @@ from werkzeug.routing import Rule
 
 ### import global variables for Z2N
 from .scripts.app_vars    import title, metas, description, subtitle, version, authors, licenceCC, static_dir, URLroot_
+from .scripts.app_vars    import user_profiles
 from .scripts.app_scripts import *
 
 
+### gather global names
 global_names = {
         'titleApp'          : title,             # name/brand of the app
         'subtitleApp'       : subtitle,          # explanation of what the app does
@@ -20,6 +22,43 @@ global_names = {
     }
 
 
+### inform jinja how to create template corresponding to user
+def generateTemplate(userProfile):
+    
+    canvas = []
+    
+    canvas_raw = user_profiles[userProfile] ## return a list of rows' dictionaries with following format
+    ### [   { "400px" : [ {"reg_ma" : 9 }, {"reg_id": 3 } ] },
+    ###     { "50px" :  [ {"tool_la" : 12 } ] }, 
+    ###     { "600px" : [ {"con_re" : 4 }, {"wor_ma": 8 } ] }, 
+    ### ],, 
+    
+    counter = 1
+    
+    for row in canvas_raw :
+        
+        for height, modules in row.items():
+            
+            row_id          = "row_"+str(counter)
+            temp_template   = { "row"     : row_id, 
+                                "height"  : height,
+                                "columns" : [ ]
+                                }
+            
+            for module in modules :
+                index_module = modules.index(module)
+                for mod_name, mod_size in module.items():
+                    mod_dict = {"index_module"  : index_module,
+                                "module"        : mod_name,
+                                "width"         : mod_size
+                                }
+                    temp_template["columns"].append(mod_dict)
+        
+        canvas.append(temp_template)
+        counter += 1
+    
+    return canvas
+
 
 @app.route('/')
 @app.route('/index')
@@ -30,19 +69,64 @@ def index():
                            glob  = global_names,
                            )
 
+@app.route('/user/<user_profile>')
+def user_entry(user_profile):
+    print '-'*10 , 'VIEW USER TEMPLATE', '-'*50
+
+    print 'user profile :', user_profile
+    
+    user_specs = generateTemplate(user_profile)
+    print "user_specs", user_specs
+    
+    return render_template("user_driven_template.html",
+                           index        = True,
+                           glob         = global_names,
+                           user_profile = user_profile,
+                           user_specs   = user_specs
+                           )
+
+@app.route('/test_blank')
+def test_blank():
+    print '-'*10 , 'VIEW BLANK TEST', '-'*50
+    return render_template("blank_map_test.html",
+                           index = True,
+                           glob  = global_names,
+                           )
+
 ### automatically creates specific routes for every dataset in collections
-@app.route('/<selection>')
-def data_render_map(selection):
+@app.route('/test_leaflet/<selection>')
+def data_leaflet_map(selection):
     
     print
-    print '-'*10, 'VIEW RENDERING', selection, '-'*50
+    print '-'*10, 'VIEW RENDERING / Leaflet ', selection, '-'*50
     print 'selection :', selection
+
+    #find datas corresponding to selection
     
-    #call python script here if you want before rendering data
+    #call python script here if you want to compute indicators before rendering data
     
-    return render_template("test_render.html",
+    return render_template("test_leaflet.html",
                            glob = global_names,
                            map_ = True,
                            force= False,
                            )
 
+@app.route('/test_d3leaflet/<selection>')
+def data_d3leaflet_map(selection):
+    
+    print
+    print '-'*10, 'VIEW RENDERING / D3 + Leaflet ', selection, '-'*50
+    print 'selection :', selection
+
+    #find datas corresponding to selection
+    
+    #call python script here if you want to compute indicators before rendering data
+    
+    #preferences bootstrap / modules
+    
+    
+    return render_template("test_d3leaflet.html",
+                           glob = global_names,
+                           map_ = True,
+                           force= False,
+                           )

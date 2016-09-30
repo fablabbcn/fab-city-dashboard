@@ -12,9 +12,9 @@ project by :
     
 
 developpers :
-    - Massimo M
-    - Mariana Q
-    - Julien P
+    - Massimo Menichinelli
+    - Mariana Quintero
+    - Julien Paris
 
 with the support of :
     MediaLab Prado - Visualizar 2016

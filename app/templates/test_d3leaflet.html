@@ -1,0 +1,224 @@
+
+
+{% extends "load_data.html" %}
+	
+	
+	{% if map_ %}
+		
+		{% block map_ %}			
+			
+
+
+			<link  rel="stylesheet" 
+				   href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
+			   />
+			   
+			<script src="http://d3js.org/d3.v3.min.js"></script>
+		
+			<script	src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+			   
+			
+			
+			<div id="map" style="width: 100%; height: 500px"></div>
+			
+			<script type="text/javascript">
+				
+			var bicycleRental = {	"type": "FeatureCollection",
+									"features": [
+													{
+														"geometry": {
+															"type": "Point",
+															"coordinates": [
+																-104.9998241,
+																39.7471494
+															]
+														},
+														"type": "Feature",
+														"properties": {
+															"popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
+														},
+														"id": 51
+													},
+													{
+														"geometry": {
+															"type": "Point",
+															"coordinates": [
+																-104.9983545,
+																39.7502833
+															]
+														},
+														"type": "Feature",
+														"properties": {
+															"popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
+														},
+														"id": 52
+													},
+													{
+														"geometry": {
+															"type": "Point",
+															"coordinates": [
+																-104.9963919,
+																39.7444271
+															]
+														},
+														"type": "Feature",
+														"properties": {
+															"popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
+														},
+														"id": 54
+													},
+													{
+														"geometry": {
+															"type": "Point",
+															"coordinates": [
+																-104.9960754,
+																39.7498956
+															]
+														},
+														"type": "Feature",
+														"properties": {
+															"popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
+														},
+														"id": 55
+													},
+													{
+														"geometry": {
+															"type": "Point",
+															"coordinates": [
+																-104.9933717,
+																39.7477264
+															]
+														},
+														"type": "Feature",
+														"properties": {
+															"popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
+														},
+														"id": 57
+													},
+													{
+														"geometry": {
+															"type": "Point",
+															"coordinates": [
+																-104.9913392,
+																39.7432392
+															]
+														},
+														"type": "Feature",
+														"properties": {
+															"popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
+														},
+														"id": 58
+													},
+													{
+														"geometry": {
+															"type": "Point",
+															"coordinates": [
+																-104.9788452,
+																39.6933755
+															]
+														},
+														"type": "Feature",
+														"properties": {
+															"popupContent": "This is a B-Cycle Station. Come pick up a bike and pay by the hour. What a deal!"
+														},
+														"id": 74
+													}
+												]
+											};
+
+			var M_fablabs_ = {	"type":"FeatureCollection",
+								"features":[
+											{	"type":"Feature",
+												"properties":{
+													"id":"1",
+													"name":"(Fab)Lab Digiscope",
+													"website":"fablabdigiscope.wordpress.com",
+													"twitter":"","facebook":"",
+													"type_lab":"fablab",
+													"url_makery":"",
+													"adress":"660 Rue Noetzlin, Gif-sur-Yvette, 91190",
+													"country":"FR",
+													"marker-color":"#f00",
+													"marker-size":"small",
+													},
+												"geometry":{
+													"type":"Point",
+													"coordinates":[2.16843,48.7118]
+													}
+											},
+											{	"type":"Feature",
+												"properties":{
+													"id":"2",
+													"name":"tmp lab",
+													"website":"www.tmplab.org",
+													"twitter":"","facebook":"",
+													"type_lab":"hackerspace",
+													"url_makery":"",
+													"adress":"30 avenue de Newburn 94600 Choisy le Roi",
+													"country":"FR",
+													"marker-color":"#f00",
+													"marker-size":"small",
+													},
+												"geometry":{
+													"type":"Point",
+													"coordinates":[2.41144,48.7551]
+													}
+											}
+										]
+							};
+							
+							
+			var map = L.map('map').setView([20, 0], 2);
+			mapLink = 
+				'<a href="http://openstreetmap.org">OpenStreetMap</a>';
+			L.tileLayer(
+				'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; ' + mapLink + ' Contributors',
+				maxZoom: 10,
+				}).addTo(map);
+						
+			/* Initialize the SVG layer */
+			map._initPathRoot()    
+		
+			/* We simply pick up the SVG from the map object */
+			var svg = d3.select("#map").select("svg"),
+			g = svg.append("g");
+			
+			
+			d3.json(M_fablabs_, function(error, json) {
+
+				if(error) console.log(error, json); ///////////////////////////
+				
+				console.log(json);
+				/* Add a LatLng object to each item in the dataset */
+				json.features.forEach(function(d) {
+					d.LatLng = new L.LatLng(d.geometry.coordinates[0],
+											d.geometry.coordinates[1])
+				})
+				
+				var feature = g.selectAll("circle")
+					.data(json.features)
+					.enter().append("circle")
+					.style("stroke", "black")  
+					.style("opacity", .6) 
+					.style("fill", "red")
+					.attr("r", 20);  
+				
+				map.on("viewreset", update);
+				update();
+		
+				function update() {
+					feature.attr("transform", 
+					function(d) { 
+						return "translate("+ 
+							map.latLngToLayerPoint(d.LatLng).x +","+ 
+							map.latLngToLayerPoint(d.LatLng).y +")";
+						}
+					)
+				}
+			})			 
+		</script>		
+		
+		{% endblock %}
+	
+	{% endif %} <!-- end leaflet call -->

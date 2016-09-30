@@ -21,16 +21,7 @@
 		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>
 		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>
 		
-		<!-- D3.JS V4-->
-		<script type="text/javascript" src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>
 		
-		<!-- LEAFLET -->
-		<script type="text/javascript" src="{{ url_for('static', filename='bower_components/leaflet/dist/leaflet.js') }}"></script>
-		<script type="text/javascript" src="{{ url_for('static', filename='bower_components/leaflet.markercluster/dist/leaflet.markercluster.js') }}"></script>
-		
-		<link   rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet/dist/leaflet.css') }}" />
-		<link   rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet.markercluster/dist/MarkerCluster.css') }}" />
-		<link   rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css') }}" />
 
 		<!-- STYLES -->
 		<style>
@@ -84,11 +75,23 @@
 				
 				<ul class="nav navbar-nav">
 				  
-				  <li class="active">
-					<a href="/test">Test / map</a>
+				  <li >
+					<a href="/test_leaflet/algo">Leaflet map</a>
 				  </li>
 				  
-				  <li class="dropdown">
+				  <li >
+					<a href="/test_d3leaflet/algo">Leaflet + D3</a>
+				  </li>
+				  
+				  <li >
+					<a href="/user/analytic">User entry</a>
+				  </li>
+				  
+				  <li >
+					<a href="/test_blank">blank_test</a>
+				  </li>
+				  
+				  <!--<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 					  <li><a href="#">Action</a></li>
@@ -100,17 +103,18 @@
 					  <li><a href="#">One more separated link</a></li>
 					</ul>
 				  
-				  </li>
+				  </li>-->
+				  
 				</ul>
 				
 				
 				
-				<form class="navbar-form navbar-left">
+				<!--<form class="navbar-form navbar-left">
 				  <div class="form-group">
 					<input type="text" class="form-control" placeholder="Search">
 				  </div>
 				  <button type="submit" class="btn btn-default">Submit</button>
-				</form>
+				</form>-->
 				
 				<ul class="nav navbar-nav navbar-right">
 				  
@@ -128,6 +132,7 @@
 					</a>
 					<ul class="dropdown-menu">
 					  <li><a href="#">About</a></li>
+					  <li><a href="#">Credits</a></li>
 					  <li><a href="#">Contact</a></li>
 					  <li role="separator" class="divider"></li>
 					  <li><a href="#">Separated link</a></li>
@@ -175,7 +180,7 @@
 		<!-- MODALS --------------------------------------------------------------------- -->
 	
 
-
+		{% include 'modals.html' %}
 	
 	
     </body>
