@@ -1,4 +1,7 @@
-'''FAB CITY DASHBOARD - VISUALIZAR'16
+# -*- encoding: utf-8 -*-
+
+'''
+FAB CITY DASHBOARD - VISUALIZAR'16
 --------------------------------------------
 A dashboard for all the Fab Cities where citizens can understand the existing resilience of cities and how the Maker movement is having an impact on this.
 ------------------------------------------
