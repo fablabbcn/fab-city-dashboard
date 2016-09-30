@@ -2,233 +2,92 @@
 
 <html lang="eng">
 
-<head>
+	<head>
 
-    <meta charset="utf-8">
-    <title>Fab City Dashboard</title>
+		<meta charset="utf-8">
+		<title> </title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="{{ glob.metas }}">
-    <meta name="author" content="{{ glob.authors }}">
-    <meta name="description" content="{{ glob.description }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="{{ glob.metas }}">
+		<meta name="author" content="{{ glob.authors }}">
+		<meta name="description" content="{{ glob.description }}">
 
-    <!-- BOOTSTRAP -->
-    <link href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
-    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">-->
+		<!-- BOOTSTRATP	-->
+		<link href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+		<!--<link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">-->
 
-    <!-- JQUERY -->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js">
-    </script>
-    <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-    </script>
-    <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js">
-    </script>
+		<!-- JQUERY	-->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js">
+		</script>
+		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+		</script>
+		<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js">
+		</script>
 
-    <!-- D3.JS V4 -->
-    <script type="text/javascript" src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>
 
-    <!-- LEAFLET -->
-    <script type="text/javascript" src="{{ url_for('static', filename='bower_components/leaflet/dist/leaflet.js') }}"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='bower_components/leaflet/dist/leaflet.css') }}" />
 
-    <!-- STYLES -->
-    <style>
-        /*
-			 *temporary style sheets
-			 */
-    </style>
+		<!-- STYLES -->
+		<style>
+			/*
+	 *temporary style sheets
+	 */
+		</style>
 
-</head>
+	</head>
 
 
 
-<header>
+	<header>
 
-    <!-- for background carousel or smthg like that -->
+		<!-- for background carousel or smthg like that -->
 
-</header>
+	</header>
 
 
-<body id="body">
 
-    <!-- NAVBAR -->
 
-    <nav class="navbar navbar-default">
 
-        <div class="container-fluid">
+	<body id="body">
 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				  <span class="sr-only">Toggle navigation</span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				</button>
-                <a class="navbar-brand" href="/">Fabcity dashboard</a>
-            </div>
+		{% include 'modules/navbar.html' %}
 
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                <ul class="nav navbar-nav">
+		<!-- CONTENTS  -->
 
-                    <li class="active">
-                        <a href="/test">Test / map</a>
-                    </li>
+		<div class="container-fluid">
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
+			{% block content %}{% endblock %}
 
-                    </li>
-                </ul>
+		</div>
 
+		<!-- FOOTER -->
 
+		{% include 'modules/footer.html' %}
 
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
 
-                <ul class="nav navbar-nav navbar-right">
 
-                    <li><a href="#">Login</a></li>
+		<!-- MODALS -->
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						About
-						<span class="caret"></span>
-					</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </li>
 
-                </ul>
+		{% include 'modules/modals.html' %}
 
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
 
+	</body>
 
+	<script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
-    <!-- CONTENTS -->
-
-    <div class="container-fluid">
-
-        {% block content %}{% endblock %}
-
-    </div>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-        <div class="container">
-            =======
-
-            <head>
-
-                <meta charset="utf-8">
-                <title> </title>
-
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <meta name="keywords" content="{{ glob.metas }}">
-                <meta name="author" content="{{ glob.authors }}">
-                <meta name="description" content="{{ glob.description }}">
-
-                <!-- BOOTSTRATP	-->
-                <link href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
-                <!--<link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">-->
-
-                <!-- JQUERY	-->
-                <script src="http://code.jquery.com/jquery-1.11.1.min.js">
-                </script>
-                <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-                </script>
-                <script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js">
-                </script>
-
-
-
-                <!-- STYLES -->
-                <style>
-                    /*
-			 *temporary style sheets
-			 */
-                </style>
-
-            </head>
-
-
-
-            <header>
-
-                <!-- for background carousel or smthg like that -->
-
-            </header>
-
-
-
-
-
-            <body id="body">
-
-                {% include 'modules/navbar.html' %}
-
-
-
-                <!-- CONTENTS  -->
-
-                <div class="container-fluid">
-
-                    {% block content %}{% endblock %}
-
-                </div>
-
-                <!-- FOOTER -->
-
-                {% include 'modules/footer.html' %}
-
-
-
-                <!-- MODALS -->
-
-
-                {% include 'modules/modals.html' %}
-
-
-            </body>
-
-            <script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-
-            <!--  bootstrap callings  -->
-            <script type="text/javascript">
-                // activate bootstrap dropdown and carousel
-                $(document).ready(function() {
-                    $(".dropdown-toggle").dropdown()
-                });
-                $(document).ready(function() {
-                    $('.carousel').carousel({
-                        interval: 7000
-                    });
-                });
-            </script>
+	<!--  bootstrap callings  -->
+	<script type="text/javascript">
+		// activate bootstrap dropdown and carousel
+		$(document).ready(function() {
+			$(".dropdown-toggle").dropdown()
+		});
+		$(document).ready(function() {
+			$('.carousel').carousel({
+				interval: 7000
+			});
+		});
+	</script>
 
 </html>
