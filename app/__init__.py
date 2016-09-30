@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+# needed encoding for '|' signs 
 
 '''
 FAB CITY DASHBOARD - VISUALIZAR'16
