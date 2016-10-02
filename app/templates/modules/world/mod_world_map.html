@@ -260,6 +260,9 @@
 
 			if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
 				currentLayer.bringToFront();
+				for(var i=0; i<markerObjects.length; i++){
+					markerObjects[i].bringToFront();
+				}
 			}
 
 			info.update(currentLayer.feature.properties);
@@ -287,16 +290,12 @@
 		
 		
 		
-
 		
 		
 		
-		
-		
-		
-		basemapObjects = [] ;
 		
 		// LOAD BASEMAPS
+		basemapObjects = [] ;
 		function addBasemap (geojson, layer_, bottom) {
 			
 			var layer = L.geoJson(geojson, {
@@ -307,13 +306,15 @@
 			.addTo(layer_, bottom);
 			
 			basemapObjects.push(layer);
+			
 		};
 		
 		
-		// LOAD FABLABS
+		// LOAD MARKER OBJECTS (fablabs)
+		markerObjects = [] ;
 		function addPoints (json, layer_) {
 			
-			L.geoJson ( json	, {
+			var layer = L.geoJson ( json	, {
 			
 			style: function (feature) {
 				return feature.properties && feature.properties.style;
@@ -335,6 +336,9 @@
 			})
 			.addTo(map)
 			.addTo(layer_);
+			
+			markerObjects.push(layer);
+			
 		};
 		
 		
