@@ -206,7 +206,8 @@
 
 		info.update = function (props) {
 			this._div.innerHTML = '<h4>Legend</h4>' +  (props ?
-				'<b>' + props.addedDatas.countryName + '</b><br />' + value + ' ' + indicator
+				'<b>' + props.addedDatas.countryName + '</b><br />'
+				+ props.addedDatas.population
 				: 'Hover over a state');
 		};
 
@@ -226,7 +227,7 @@
 		
 		////////////////////////////////////////////
 		
-		// get color depending on a choosen d.value
+		// get color depending on a choosen d.value /////////// REDO IN MORE GENERAL WAY
 		function getColor(d) {
 			return d > 100*1000000  ? '#800026' :
 			       d > 50*1000000   ? '#BD0026' :
@@ -237,23 +238,34 @@
 			       d > 1*1000000    ? '#FED976' :
 			                  '#FFEDA0';
 		}
-
-		function style(feature) {
-			console.log(feature);
+		
+		
+		
+		function regionStyle(feature) {
+			
+			console.log(feature); ///////////////////
+			var props = feature.properties;
+			var fillColor ;
+			if (feature.id !="-99" && feature.properties.addedDatas != undefined ) {
+				fillColor = getColor(parseInt(props.addedDatas.population));
+			}
+			else { fillColor = "#00e0e0"  };
+			
 			return {
 				weight     : 2,
 				opacity    : 1,
 				color      : 'white',
 				dashArray  : '3',
 				fillOpacity: 0.7,
-				//fillColor  : getColor(parseInt(feature.properties.addedDatas.population))
+				fillColor  : fillColor,
 				//fillColor  : getColor(value),
-				fillColor  : '#00e0e0'
+				//fillColor  : '#00e0e0'
 			};
+		
 		}
 		
 		
-		// only for basemap
+		// HIGHLIGHTS ON BASEMAPS
 		function highlightFeature(e) {
 			
 			var currentLayer = e.target;
@@ -271,12 +283,6 @@
 					markerObjects[i].bringToFront(); //bring markers over all
 				}
 			};
-			
-			//retrieve data/indicator
-			//var id_       = currentLayer.feature.id ; // warning it can change if we use other geojson basemap
-			////console.log(id_);
-			//var indicator = "population";
-			//var value     = countries_dict[id_][indicator];
 
 			info.update(currentLayer.feature.properties);
 		}
@@ -302,6 +308,18 @@
 		}
 		
 		
+		// LOAD DATAS INTO GEOJSON 
+		function addDatasToGeojson(geojson, datas_dict){
+			var new_geojson = {"type":"FeatureCollection","features":[ ] } ;
+			for (var i=0;i<geojson.features.length; i++){
+				var feature                   = geojson.features[i];
+				var datas_toAdd               = datas_dict[feature.id];
+				feature.properties.addedDatas = datas_toAdd;
+				new_geojson.features.push(feature);
+			}
+			//console.log(new_geojson.features[0]);
+			return new_geojson;
+		};
 		
 		
 		// LOAD BASEMAPS
@@ -309,7 +327,7 @@
 		function addBasemap (geojson, layer_, bottom) {
 			
 			var layer = L.geoJson(geojson, {
-				style: style,
+				style: regionStyle,
 				onEachFeature: onEachBasemap
 			})
 			.addTo(map)
@@ -318,6 +336,9 @@
 			basemapObjects.push(layer);
 			
 		};
+		
+
+		
 		
 		
 		// LOAD MARKER OBJECTS (fablabs)
@@ -408,17 +429,7 @@
 		
 		
 		
-		function addDatasToGeojson(geojson, datas_dict){
-			var new_geojson = {"type":"FeatureCollection","features":[ ] } ;
-			for (var i=0;i<geojson.features.length; i++){
-				var feature                   = geojson.features[i];
-				var datas_toAdd               = datas_dict[feature.id];
-				feature.properties.addedDatas = datas_toAdd;
-				new_geojson.features.push(feature);
-			}
-			console.log(new_geojson.features[0]);
-			return new_geojson;
-		};
+		
 		
 		// ALL COUNTRIES SERVED
 		var all_countries_updated = addDatasToGeojson(all_countries, countries_dict);
