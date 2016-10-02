@@ -214,22 +214,30 @@
 
         // SVG icons transformations
         var icon_scale = 0.08;
-        var icon_x = 100;
-        accessibility_icon.attr("transform", "translate (" + icon_x + ", 0) scale(" + icon_scale + ")");
-        civic_icon.attr("transform", "translate (" + icon_x + ", 25) scale(" + icon_scale + ")");
-        community_icon.attr("transform", "translate (" + icon_x + ", 50) scale(" + icon_scale + ")");
-        education_icon.attr("transform", "translate (" + icon_x + ", 75) scale(" + icon_scale + ")");
-        environment_icon.attr("transform", "translate (" + icon_x + ", 100) scale(" + icon_scale + ")");
-        health_icon.attr("transform", "translate (" + icon_x + ", 125) scale(" + icon_scale + ")");
-        housing_icon.attr("transform", "translate (" + icon_x + ", 150) scale(" + icon_scale + ")");
-        income_icon.attr("transform", "translate (" + icon_x + ", 175) scale(" + icon_scale + ")");
-        jobs_icon.attr("transform", "translate (" + icon_x + ", 200) scale(" + icon_scale + ")");
-        life_icon.attr("transform", "translate (" + icon_x + ", 225) scale(" + icon_scale + ")");
-        safety_icon.attr("transform", "translate (" + icon_x + ", 250) scale(" + icon_scale + ")");
+        var icon_x = 130;
+        var icon_y = 3;
 
-
-
-
+        education_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        jobs_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        income_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        safety_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        health_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        environment_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        civic_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        accessibility_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        housing_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        community_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+        icon_y = icon_y + space_between_bars;
+        life_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
 
     });
 </script>
