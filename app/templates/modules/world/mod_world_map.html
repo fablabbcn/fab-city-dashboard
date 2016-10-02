@@ -7,11 +7,11 @@
 		}
 
 		.info {
-			padding   : 6px 8px;
-			font      : 14px/16px Arial, Helvetica, sans-serif;
-			background: white;
-			background: rgba(255,255,255,0.8);
-			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+			padding      : 6px 8px;
+			font         : 14px/16px Arial, Helvetica, sans-serif;
+			background   : white;
+			background   : rgba(255,255,255,0.8);
+			box-shadow   : 0 0 15px rgba(0,0,0,0.2);
 			border-radius: 5px;
 		}
 		.info h4 {
@@ -82,37 +82,38 @@
 	<!-- GEOJSONS BASEMAP // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection / ex: selection = "world"  --> 	
 	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/all_countries.geojson') }}" type="text/javascript"></script>
 	
-	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUS_MAs_2016.geojson') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUT_MAs_2016.geojson') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/BEL_MAs_2016.geojson') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CAN_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CHE_MAs_2016.geojson') }}" type="text/javascript"></script>
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CHL_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/COL_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CZE_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/DEU_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/DNK_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUS_MAs_2016.geojson') }}" type="text/javascript"></script>-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUT_MAs_2016.geojson') }}" type="text/javascript"></script>-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/BEL_MAs_2016.geojson') }}" type="text/javascript"></script>-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CAN_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CHE_MAs_2016.geojson') }}" type="text/javascript"></script>-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CHL_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/COL_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CZE_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/DEU_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/DNK_MAs_2016.geojson') }}" type="text/javascript"></script>-->
 	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/ESP_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/EST_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/FIN_MAs_2016.geojson') }}" type="text/javascript"></script>	
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/EST_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/FIN_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
 	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/FRA_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/GBR_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/GRC_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/HUN_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/IRL_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/ITA_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/JPN_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/KOR_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/LUX_FUAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/MEX_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/NLD_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/NOR_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/POL_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/PRT_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/SVK_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/SVN_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/SWE_MAs_2016.geojson') }}" type="text/javascript"></script>	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/USA_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/GBR_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/GRC_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/HUN_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/IRL_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/ITA_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/JPN_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/KOR_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/LUX_FUAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/MEX_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/NLD_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/NOR_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/POL_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/PRT_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/SVK_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/SVN_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/SWE_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/USA_MAs_2016.geojson') }}" type="text/javascript"></script>-->
 	
 	
 	<!--
@@ -191,21 +192,24 @@
 		var regionSelected = "{{ user_profile }}";
 
 		function setMapView(placeName){
-			console.log(placeName);
-			console.log(setGeoViews["world"]);
+			//console.log("setMapView/placeName : ", placeName);
 			var placeDict = setGeoViews[placeName]; //setGeoViews loaded as external .js file
+			//console.log("setMapView/placeDict", placeDict);
 			return placeDict; 
 		};
 		var region_settings = setMapView(regionSelected);
 		var set_center_view = region_settings["center"];
 		var set_zoom_view   = region_settings["zoom"];
-
+		
 		console.log("results setMapView() : ", regionSelected, region_settings)
+		
 		
 		// SET MAP VIEW /////////////// NEED TO BE DYNAMIC - respond to view
 		var map = L.map('map', {
-			center : [20, 0],
-			zoom   : 2,
+			//center : [20, 0], 	// set_center_view
+			center : set_center_view,
+			//zoom   : 2,			// set_zoom_view
+			zoom   : set_zoom_view,
 			layers : [grayscale, fablabs_layer]
 		});
 		map.options.maxZoom = 10;
@@ -244,9 +248,11 @@
 		}
 		
 		
-		////////////////////////////////////////////
 		
-		// get color depending on a choosen d.value /////////// REDO IN MORE GENERAL WAY
+		// STYLES ///////////////////////////////////////////////////////////////////////////////////////
+		
+		// get color depending on a choosen d.value /////////// REDO IN MORE GENERAL WAY ////////////////////////
+		// cf http://hslpicker.com
 		function getColor(d) {
 			return d > 100*1000000  ? '#800026' :
 			       d > 50*1000000   ? '#BD0026' :
@@ -259,18 +265,14 @@
 		}
 		
 		
-		
 		function regionStyle(feature) {
-			
 			//console.log(feature); 
 			var props = feature.properties;
 			var fillColor ;
-			
 			if (feature.id !="-99" && feature.properties.addedDatas != undefined ) {
 				fillColor = getColor(parseInt(props.addedDatas.population));
 			}
 			else { fillColor = "#00e0e0"  };
-			
 			return {
 				weight     : 2,
 				opacity    : 1,
@@ -281,11 +283,10 @@
 				//fillColor  : getColor(value),
 				//fillColor  : '#00e0e0'
 			};
+		};
 		
-		}
 		
-		
-		// HIGHLIGHTS ON BASEMAPS
+		// HIGHLIGHTS ON BASEMAPS // manage/hack z-index
 		function highlightFeature(e) {
 			
 			var currentLayer = e.target;
@@ -302,10 +303,13 @@
 				for(var i=0; i<markerObjects.length; i++){
 					markerObjects[i].bringToFront(); //bring markers over all
 				}
+				for(var i=0; i<markerObjects.length; i++){
+					markerObjects[i].bringToFront(); //bring markers over all
+				}
 			};
 
 			info.update(currentLayer.feature.properties);
-		}
+		};
 		
 		function resetHighlight(e) {
 			for (var i = 0; i<basemapObjects.length; i++) {
@@ -313,11 +317,11 @@
 				layer.resetStyle(e.target);
 				info.update();
 			}
-		}
+		};
 
 		function zoomToFeature(e) {
 			map.fitBounds(e.target.getBounds());
-		}
+		};
 
 		function onEachBasemap(feature, layer) {
 			layer.on({
@@ -325,7 +329,73 @@
 				mouseout : resetHighlight,
 				click    : zoomToFeature
 			});
-		}
+		};
+		
+		
+		/////////////////////////////////////////////////////////////////////////////////////////
+		
+		// LOAD BASEMAPS
+		basemapObjects = [] ;
+		function addBasemap (geojson, layer_, bottom) {
+			
+			var layer = L.geoJson(geojson, {
+				style: regionStyle,
+				onEachFeature: onEachBasemap
+			})
+			.addTo(map)
+			.addTo(layer_, bottom);
+			
+			basemapObjects.push(layer);
+			
+		};
+		
+		
+		// LOAD MARKER OBJECTS (fablabs) ///// MISSING DYNAMIC STYLES ////////////////////////
+		markerObjects = [] ;
+		function addPoints (json, layer_) {
+			var layer = L.geoJson ( json	, {
+				style: function (feature) {
+					return feature.properties && feature.properties.style;
+				},
+				onEachFeature: onEachMarker,
+				pointToLayer: function (feature, latlng) {
+					return L.circleMarker(latlng, {
+						radius: 3,
+						fillColor: "#ff7800",
+						color: "#000",
+						weight: 1,
+						opacity: 1,
+						fillOpacity: 0.8
+					});
+				}
+			})
+			.addTo(map)
+			.addTo(layer_);
+			markerObjects.push(layer);	
+		};
+
+		
+		/////////////////////////////////////////////////////////////////////////////////////////
+		
+		// PLACE LEGEND - GRADIENTS
+		var legend = L.control({position: 'bottomright'});
+		legend.onAdd = function (map) {
+			var div = L.DomUtil.create('div', 'info legend'), //div created with info lengend classes
+				grades = [0, 1, 2, 5, 10, 20, 50, 100],
+				labels = [],
+				from, to;
+			for (var i = 0; i < grades.length; i++) {
+				from = grades[i];
+				to   = grades[i + 1];
+				labels.push(
+					'<i style="background:' + getColor(from + 1) + '"></i> ' +
+					from + (to ? '&ndash;' + to : '+'));
+			}
+			div.innerHTML = labels.join('<br>');
+			return div;
+		};
+		legend.addTo(map);
+		
 		
 		
 		// VARIABLES GEOJSON COLLECTION MIN/MAX
@@ -358,91 +428,18 @@
 		};
 		
 		
-		// LOAD BASEMAPS
-		basemapObjects = [] ;
-		function addBasemap (geojson, layer_, bottom) {
-			
-			var layer = L.geoJson(geojson, {
-				style: regionStyle,
-				onEachFeature: onEachBasemap
-			})
-			.addTo(map)
-			.addTo(layer_, bottom);
-			
-			basemapObjects.push(layer);
-			
-		};
-		
+		// GEOJSONs TO UPDATE /////// NEED TO BE DYNAMIC /////////////////////////////////////////
+		var all_countries_updated = addDatasToGeojson(all_countries, countries_dict);
 
 		
 		
-		
-		// LOAD MARKER OBJECTS (fablabs)
-		markerObjects = [] ;
-		function addPoints (json, layer_) {
-			
-			var layer = L.geoJson ( json	, {
-			
-			style: function (feature) {
-				return feature.properties && feature.properties.style;
-			},
-			
-			onEachFeature: onEachMarker,
-			
-			pointToLayer: function (feature, latlng) {
-				return L.circleMarker(latlng, {
-					radius: 3,
-					fillColor: "#ff7800",
-					color: "#000",
-					weight: 1,
-					opacity: 1,
-					fillOpacity: 0.8
-				});
-			}
-			
-			})
-			.addTo(map)
-			.addTo(layer_);
-			
-			markerObjects.push(layer);
-			
-		};
-
-		
-		
-		var legend = L.control({position: 'bottomright'});
-
-		legend.onAdd = function (map) {
-
-			var div = L.DomUtil.create('div', 'info legend'),
-				grades = [0, 1, 2, 5, 10, 20, 50, 100],
-				labels = [],
-				from, to;
-
-			for (var i = 0; i < grades.length; i++) {
-				from = grades[i];
-				to = grades[i + 1];
-
-				labels.push(
-					'<i style="background:' + getColor(from + 1) + '"></i> ' +
-					from + (to ? '&ndash;' + to : '+'));
-			}
-
-			div.innerHTML = labels.join('<br>');
-			return div;
-		};
-
-		legend.addTo(map);
-		
-		
-		
+		// SERVE REGIONS ///////////////////////////////////////////////////////////////////////////////////
 		
 		// ALL COUNTRIES SERVED
-		var all_countries_updated = addDatasToGeojson(all_countries, countries_dict);
 		addBasemap(all_countries_updated, countries_layer, true);
 		
 		
-		// CHOOSE METROPOLITAN AREAS TO SERVE -- insert as Jinja call here (DRY)
+		// CHOOSE METROPOLITAN AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
 		//addBasemap(AUS_MAs_2016, met_areas_layer, false);
 		//addBasemap(AUT_MAs_2016, met_areas_layer, false);
 		//addBasemap(BEL_MAs_2016, met_areas_layer, false);
@@ -453,9 +450,11 @@
 		//addBasemap(CZE_MAs_2016, met_areas_layer, false);
 		//addBasemap(DEU_MAs_2016, met_areas_layer, false);
 		//addBasemap(DNK_MAs_2016, met_areas_layer, false);
+		
 		//addBasemap(ESP_MAs_2016, met_areas_layer, false);
 		//addBasemap(EST_MAs_2016, met_areas_layer, false);
 		//addBasemap(FIN_MAs_2016, met_areas_layer, false);
+		
 		//addBasemap(FRA_MAs_2016, met_areas_layer, false);
 		//addBasemap(GBR_MAs_2016, met_areas_layer, false);
 		//addBasemap(GRC_MAs_2016, met_areas_layer, false);
@@ -476,9 +475,9 @@
 		//addBasemap(USA_MAs_2016, met_areas_layer, false);
 		
 		
-		// SERVE LABS
+		// SERVE LABS //////////////////////////////////////////////////
 		addPoints(Makery_fablabs, fablabs_layer);
-		//addPoints(FablabsIO_fablabs_, fablabs_layer);		
+		//addPoints(FablabsIO_fablabs, fablabs_layer);		
 		
 		
 		

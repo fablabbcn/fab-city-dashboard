@@ -1,47 +1,47 @@
-var setGeoViews = {
+var setGeoViews_ = {
 
 	//"regions" : {
 	
-			"world"          : {"geobox" : [-180.0000, -90.0000, 180.0000, 90.0000],
-								"zoom"   : 8,
-								"center" : [,],
-								"code"   : "wo_", 
-								},
-			"europe"         : {"geobox" : [-10.331306, 36.199937,  32.203792, 61.295757],
-								"zoom"   : 8,
-								"center" : [,],
-								"code"   : "eu_", 
-								},        
-			"USA"            : {"geobox" : [-125.735663, 24.175174, -52.2330, 83.1621],
-								"zoom"   : 8,
-								"center" : [,],
-								"code"   : "us_", 
-								},
-			"CentralAmerica" : {"geobox" : [-116.099556, 4.684821, -59.410102, 32.499558],
-								"zoom"   : 8,
-								"center" : [,],
-								"code"   : "ca_", 
-								},
-			"SouthAmerica"   : {"geobox" : [-109.4749, -59.4505, -26.3325, 13.3903],
-								"zoom"   : 8,
-								"center" : [,],
-								"code"   : "sa_", 
-								},
-			"MiddleEast"     : {"geobox" : [11.058045, 24.469416, 59.003443, 44.340278],
-								"zoom"   : 8,
-								"center" : [,],
-								"code"   : "me_", 
-								},
-			"Asia"           : {"geobox" : [97.945979, -2.055812, 146.384700, 45.440040],
-								"zoom"   : 8,
-								"center" : [,],
-								"code"   : "as_", 
-								},
-			"Africa"         : {"geobox" : [-16.496816, -37.895250, 50.265313, 22.561622],
-								"zoom"   : 8,
-								"center" : [,],
-								"code"   : "af_", 
-								},
+		"world"          : {"geobox" : [-140.0000, -90.0000, 180.0000, 90.0000],
+							"zoom"   : 2,
+							"center" : [,],
+							"code"   : "wor", 
+							},
+		"europe"         : {"geobox" : [-10.331306, 36.199937,  32.203792, 61.295757],
+							"zoom"   : 8,
+							"center" : [,],
+							"code"   : "eu_", 
+							},        
+		"USA"            : {"geobox" : [-125.735663, 24.175174, -52.2330, 83.1621],
+							"zoom"   : 8,
+							"center" : [,],
+							"code"   : "us_", 
+							},
+		"CentralAmerica" : {"geobox" : [-116.099556, 4.684821, -59.410102, 32.499558],
+							"zoom"   : 8,
+							"center" : [,],
+							"code"   : "ca_", 
+							},
+		"SouthAmerica"   : {"geobox" : [-109.4749, -59.4505, -26.3325, 13.3903],
+							"zoom"   : 8,
+							"center" : [,],
+							"code"   : "sa_", 
+							},
+		"MiddleEast"     : {"geobox" : [11.058045, 24.469416, 59.003443, 44.340278],
+							"zoom"   : 8,
+							"center" : [,],
+							"code"   : "me_", 
+							},
+		"Asia"           : {"geobox" : [97.945979, -2.055812, 146.384700, 45.440040],
+							"zoom"   : 8,
+							"center" : [,],
+							"code"   : "as_", 
+							},
+		"Africa"         : {"geobox" : [-16.496816, -37.895250, 50.265313, 22.561622],
+							"zoom"   : 8,
+							"center" : [,],
+							"code"   : "af_", 
+							},
 	//},
 
 	//"countries" :{
@@ -187,6 +187,22 @@ var setGeoViews = {
 }
 
 
-function add(){
-		
-}
+//country["geobox"] = [ [west,north], [east,south] ]
+//country["center"] = [ centerWE,centerSN ] ;
+
+var setGeoViews = {};
+function addCenter(placesDict){
+		for (var key in placesDict) {
+				var value  = placesDict[key];
+				var geobox = value["geobox"];
+				var gbx_NW_W = geobox[0];
+				var gbx_NW_N = geobox[1];
+				var gbx_SE_E = geobox[2];
+				var gbx_SE_S = geobox[3];
+				var center   = [(gbx_NW_W+gbx_SE_E)/2, (gbx_NW_N+gbx_SE_S)/2];
+				value["center"] = center;
+				setGeoViews[key] = value;
+		}
+};
+addCenter(setGeoViews_);
+console.log("from inside setGeoViews.js : ", setGeoViews["world"]);

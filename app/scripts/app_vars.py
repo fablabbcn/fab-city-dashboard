@@ -152,5 +152,46 @@ user_profiles = {
                                     ] },
                       ],
 
+    "spain"       : [
+                        { "500px" : [ {"wor_ma": 12 }  ]      }, 
+                        { "50px" : [   {"too_pl" : 3 },
+                                        {"too_id": 3 }
+                                    ] },
+                      ],
 
 } ### end user_profiles dict
+
+
+metrop_areas_names = {
+    "AUS" : "AUS_MAs_2016",
+    "AUT" : "AUT_MAs_2016",
+    "BEL" : "BEL_MAs_2016",
+    "CAN" : "CAN_MAs_2016",
+    "CHE" : "CHE_MAs_2016",
+    "CHL" : "CHL_MAs_2016",
+    "COL" : "COL_MAs_2016",
+    "CZE" : "CZE_MAs_2016",
+    "DEU" : "DEU_MAs_2016",
+    "DNK" : "DNK_MAs_2016",
+    "ESP" : "ESP_MAs_2016",
+    "EST" : "EST_MAs_2016",
+    "FIN" : "FIN_MAs_2016",
+    "FRA" : "FRA_MAs_2016",
+    "GBR" : "GBR_MAs_2016",
+    "GRC" : "GRC_MAs_2016",
+    "HUN" : "HUN_MAs_2016",
+    "IRL" : "IRL_MAs_2016",
+    "ITA" : "ITA_MAs_2016",
+    "JPN" : "JPN_MAs_2016",
+    "KOR" : "KOR_MAs_2016",
+    "LUX" : "LUX_FUAs_2016",
+    "MEX" : "MEX_MAs_2016",
+    "NLD" : "NLD_MAs_2016",
+    "NOR" : "NOR_MAs_2016",
+    "POL" : "POL_MAs_2016",
+    "PRT" : "PRT_MAs_2016",
+    "SVK" : "SVK_MAs_2016",
+    "SVN" : "SVN_MAs_2016",
+    "SWE" : "SWE_MAs_2016",
+    "USA" : "USA_MAs_2016",
+}
