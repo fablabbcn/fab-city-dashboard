@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+
+<p>
+    Hello, OECD world!
+</p>
+
+<script>
+    d3.json("http://127.0.0.1:5000/oecd/regional-data", function(data) {
+        console.log(data);
+    });
+</script>
+
+{% endblock %}
