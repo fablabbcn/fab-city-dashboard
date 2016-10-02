@@ -5255,7 +5255,7 @@ var countries_list = [
 	},
 ];
 
-
+// create a countries_dict adding "center" and "geobox" entries
 function createCountriesDict (countriesL) {
 	
 	for(var i=0 ; i<countriesL.length ; i++ ) {
@@ -5281,4 +5281,4 @@ function createCountriesDict (countriesL) {
 };
 
 createCountriesDict(countries_list);
-console.log(countries_dict["ZWE"])
+console.log("from inside countries_dict.js / countries_dict['ZWE'] ", countries_dict["ZWE"])
