@@ -189,16 +189,18 @@
 		
 		// FIND GEOBOX/CENTER/ZOOM settings from setViews.js
 		var regionSelected = "{{ user_profile }}";
-		var set_center_view ;
-		var set_zoom_view   ;
+
 		function setMapView(placeName){
 			console.log(placeName);
 			console.log(setGeoViews["world"]);
 			var placeDict = setGeoViews[placeName]; //setGeoViews loaded as external .js file
 			return placeDict; 
 		};
-		setMapView(regionSelected);
-		console.log("results setMapView() : ", regionSelected, set_center_view, set_zoom_view)
+		var region_settings = setMapView(regionSelected);
+		var set_center_view = region_settings["center"];
+		var set_zoom_view   = region_settings["zoom"];
+
+		console.log("results setMapView() : ", regionSelected, region_settings)
 		
 		// SET MAP VIEW /////////////// NEED TO BE DYNAMIC - respond to view
 		var map = L.map('map', {
