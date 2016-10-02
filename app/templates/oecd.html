@@ -145,12 +145,7 @@
                 }
                 return label_value + "/10";
             })
-            .attr("x", function(d) {
-                for (property in d) {
-                    var label_value = d[property];
-                }
-                return zerox + legend_width + zerox + linearScale(label_value);
-            })
+            .attr("x", zerox + legend_width + width + zerox)
             .attr("y", function(d, i) {
                 return zeroy + barHeight - 2 + i * space_between_bars;
             });
