@@ -29,9 +29,12 @@ static_dir  = '/static'          ### for local dev
 URLroot_ = 'flask'
 
 
-####################################
-### BOOTSTRAP MODULES / USER PROFILE
-#
+######################################################################################################################
+### BOOTSTRAP MODULES / USER PROFILES -- JINJA CREATES TEMPLATES GIVEN A SPECIFIC USER PROFILE
+### modules_html_dict : indices to get modules html adresses
+### user_profiles     : dict to give instructions to Jinja template generator (instructed then in user_driven_template.html)
+#######################################################################################################################
+
 modules_html_dict = {
     
     ##"lab" : {
@@ -93,6 +96,7 @@ modules_html_dict = {
     #},    
 }
 
+############################################################################################
 ### order of modules /// format for one user  : "analitic"      : ["row_01" [ ], "row_02" } ,
 user_profiles = {
     

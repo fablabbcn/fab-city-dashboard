@@ -2,13 +2,13 @@
 
 <style>
 		#map {
-			width: 800px;
-			height: 500px;
+			/*width  : 800px;*/
+			/*height : 500px;*/
 		}
 
 		.info {
-			padding: 6px 8px;
-			font: 14px/16px Arial, Helvetica, sans-serif;
+			padding   : 6px 8px;
+			font      : 14px/16px Arial, Helvetica, sans-serif;
 			background: white;
 			background: rgba(255,255,255,0.8);
 			box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -60,19 +60,26 @@
 	<!-- SAMPLES TEST -->
 	<!--<script src="{{ url_for('static', filename='data_custom/Format_GEOJSON.json') }}" type="text/javascript">-->
 	<!--	</script>-->
-		
-	<!-- JSON STATS -->
-	<!--<script src="{{ url_for('static', filename='data_custom/json_stats/.json') }}" type="text/javascript"></script>-->
+
 	
-	<!-- SETVIEWS DICT -->
+	<!-- SETVIEWS DICT // GLOBAL SETTINGS DICT -->
 	<script src="{{ url_for('static', filename='data_custom/setGeoViews.js') }}" type="text/javascript"></script>
+	
+	
+	
+	<!-- JSON STATS // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection -->
 	<script src="{{ url_for('static', filename='data_custom/countries_dict.js') }}" type="text/javascript"></script>
 	
-	<!-- GEOJSONS -->
+	
+	
+	<!-- GEOJSONS MARKERS // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection  / ex: selection = "world"   --> 
 	<script src="{{ url_for('static', filename='data_custom/geojson_labs/FablabsIO_fablabs.geojson') }}" type="text/javascript"></script>
 	<script src="{{ url_for('static', filename='data_custom/geojson_labs/Makery_fablabs.json') }}" type="text/javascript"></script>
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/us-states.js') }}" type="text/javascript"></script>-->
+
 	
+	
+	<!-- GEOJSONS BASEMAP // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection / ex: selection = "world"  --> 	
 	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/all_countries.geojson') }}" type="text/javascript"></script>
 	
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUS_MAs_2016.geojson') }}" type="text/javascript"></script>
@@ -154,14 +161,10 @@
 		//									}
 		//						 )
 		
-		// find geobox/center from setViews.js
-		function setMapView(placeName){
-			var placeDict = setViews[placeName];
-			return placeDict; 
-		};
+
 		
 		// CREATE EMPTY LAYER
-		var empty_layer    = new L.layerGroup();
+		//var empty_layer    = new L.layerGroup();
 
 		// CREATE BASEMAPS LAYER
 		var countries_layer = new L.layerGroup();
@@ -182,12 +185,26 @@
 		
 		var grayscale  = L.tileLayer(mbUrl, {id: 'mapbox.light'  , attribution: mbAttr});
 		var streets    = L.tileLayer(mbUrl, {id: 'mapbox.streets', attribution: mbAttr});
+
 		
+		// FIND GEOBOX/CENTER/ZOOM settings from setViews.js
+		var regionSelected = "{{ user_profile }}";
+		var set_center_view ;
+		var set_zoom_view   ;
+		function setMapView(placeName){
+			console.log(placeName);
+			console.log(setGeoViews["world"]);
+			var placeDict = setGeoViews[placeName]; //setGeoViews loaded as external .js file
+			return placeDict; 
+		};
+		setMapView(regionSelected);
+		console.log("results setMapView() : ", regionSelected, set_center_view, set_zoom_view)
 		
+		// SET MAP VIEW /////////////// NEED TO BE DYNAMIC - respond to view
 		var map = L.map('map', {
-			center: [20, 0],
-			zoom: 2,
-			layers: [grayscale, fablabs_layer]
+			center : [20, 0],
+			zoom   : 2,
+			layers : [grayscale, fablabs_layer]
 		});
 		map.options.maxZoom = 10;
 		map.options.minZoom = 2;
@@ -243,9 +260,10 @@
 		
 		function regionStyle(feature) {
 			
-			console.log(feature); ///////////////////
+			//console.log(feature); 
 			var props = feature.properties;
 			var fillColor ;
+			
 			if (feature.id !="-99" && feature.properties.addedDatas != undefined ) {
 				fillColor = getColor(parseInt(props.addedDatas.population));
 			}
@@ -307,6 +325,22 @@
 			});
 		}
 		
+		
+		// VARIABLES GEOJSON COLLECTION MIN/MAX
+		var basemapMax = 0;
+		var basemapMin = 0;
+		function getCollMinMax(featuresList, varName) {
+			for (var i = 0; i<featuresList.length; i++) {
+				var feature = featuresList[i];
+				var number  = feature[varName] ;
+				if (number > basemapMax ) {
+					basemapMax = number;
+				}
+				if (number < basemapMin) {
+					basemapMin = number ;
+				}
+			}
+		}
 		
 		// LOAD DATAS INTO GEOJSON 
 		function addDatasToGeojson(geojson, datas_dict){
@@ -371,62 +405,32 @@
 			markerObjects.push(layer);
 			
 		};
+
 		
 		
-		//// RETURNS INVALID GEOJSON
-		//var FablabsIO_fablabs_ = {	"type": "FeatureCollection",
-		//							"features": [
-		//										 {  "type": "Fab Lab", ///////////////////////////////////////////////////////////////
-		//											"geometry": {	"type": "Point",
-		//															"coordinates": [44.8577845, -0.560466899999938]},
-		//											"properties": {	"links": [{"url": "http://127.cap-sciences.net/#!/", "id": 1068}],
-		//															"county": "",
-		//															"postal_code": "33300",
-		//															"country_code": "fr",
-		//															"id": 624, "kind_name":
-		//															"fab_lab",
-		//															"city": "Bordeaux",
-		//															"capabilities": ["three_d_printing", "cnc_milling", "laser", "precision_milling", "vinyl_cutting"],
-		//															"parent_id": null,
-		//															"latitude": 44.8577845,
-		//															"email": "fabmanager@cap-sciences.net",
-		//															"blurb": "Port\u00e9 par Cap Sciences dans le cadre du programme 'Inm\u00e9diats', en tant que centre de sciences, nous montrons au grand public ce que sont les laboratoires fabrication num\u00e9rique!",
-		//															"avatar": "https://www.filepicker.io/api/file/xARb1lghRVuBb6yiadZk",
-		//															"description": "Le 127\u00b0 comporte un Fab Lab, c'est \u00e0 dire un atelier de fabrication num\u00e9rique o\u00f9 vous pouvez utiliser toutes sortes de machines (d\u00e9coupe laser,  imprimantes 3D\u2026) permettant de travailler sur des mat\u00e9riaux vari\u00e9s (plastique, bois, carton, vinyle\u2026) afin de fabriquer (presque) n'importe quoi ! Il s'agit aussi d'un lieu d\u2019\u00e9changes et de rencontres, g\u00e9n\u00e9rateur d'id\u00e9es innovantes.\r\n\r\nLe 127\u00b0 est un espace permanent : ouvert \u00e0 tous, il offre la possibilit\u00e9 de r\u00e9aliser des objets soi-m\u00eame, de partager ses comp\u00e9tences et d\u2019apprendre au contact des m\u00e9diateurs et des autres usagers. ",
-		//															"phone": "",
-		//															"header_image_src": "https://www.filepicker.io/api/file/c6KhUXkzQ8O8PQFu8YWP",
-		//															"slug": "fablabdu127degres",
-		//															"name": " Fab Lab du 127\u00b0 ",
-		//															"url": "https://www.fablabs.io/fablabdu127degres",
-		//															"longitude": -0.560466899999938,
-		//															"address_1": "Cap Sciences, 20 Quai de Bacalan",
-		//															"address_2": "", "address_notes": ""}
-		//										 },
-		//										]
-		//							};
-		//
-		//// VALID GEOJSON OBJECT :
-		//var Makery_fablabs_ = {	"type":"FeatureCollection",
-		//						"features":[
-		//									{	"type":"Feature", ///// <------ NECESSARY FOR GEOJSON 
-		//										"geometry":{"type":"Point",
-		//													"coordinates":[2.16843,48.7118]},
-		//										"properties":{	"id":"1",
-		//														"name":"(Fab)Lab Digiscope",
-		//														"website":"http:\/\/fablabdigiscope.wordpress.com",
-		//														"twitter":"",
-		//														"facebook":"",
-		//														"type_lab":"fablab",
-		//														"url_makery":"",
-		//														"adress":"660 Rue Noetzlin, Gif-sur-Yvette, 91190",
-		//														"country":"FR",
-		//														"marker-color":"#f00","marker-size":"small"},
-		//									},
-		//										
-		//								   ]
-		//						};
-		
-		
+		var legend = L.control({position: 'bottomright'});
+
+		legend.onAdd = function (map) {
+
+			var div = L.DomUtil.create('div', 'info legend'),
+				grades = [0, 1, 2, 5, 10, 20, 50, 100],
+				labels = [],
+				from, to;
+
+			for (var i = 0; i < grades.length; i++) {
+				from = grades[i];
+				to = grades[i + 1];
+
+				labels.push(
+					'<i style="background:' + getColor(from + 1) + '"></i> ' +
+					from + (to ? '&ndash;' + to : '+'));
+			}
+
+			div.innerHTML = labels.join('<br>');
+			return div;
+		};
+
+		legend.addTo(map);
 		
 		
 		
@@ -491,6 +495,12 @@
 		
 		var controls = L.control.layers(baseLayers, overlays, {collapsed:false}).addTo(map);
 		
+		
+		
+		
+		////////////////////////////////////////////////////////////////////////////////////////////////
+		// ARCHIVE /  INVALID SCRIPTS
+		
 		//var checks = document.querySelectorAll('[type = "checkbox"]'), i;
 		//function check() {
 		//	for (i = 0; i < checks.length; ++i) {
@@ -526,6 +536,28 @@
 		//map.addLayer(markers);
 		//map.fitBounds(markers.getBounds());
 	
+	
+		//// VALID GEOJSON OBJECT :
+		//var Makery_fablabs_ = {	"type":"FeatureCollection",
+		//						"features":[
+		//									{	"type":"Feature", ///// <------ NECESSARY FOR GEOJSON 
+		//										"geometry":{"type":"Point",
+		//													"coordinates":[2.16843,48.7118]},
+		//										"properties":{	"id":"1",
+		//														"name":"(Fab)Lab Digiscope",
+		//														"website":"http:\/\/fablabdigiscope.wordpress.com",
+		//														"twitter":"",
+		//														"facebook":"",
+		//														"type_lab":"fablab",
+		//														"url_makery":"",
+		//														"adress":"660 Rue Noetzlin, Gif-sur-Yvette, 91190",
+		//														"country":"FR",
+		//														"marker-color":"#f00","marker-size":"small"},
+		//									},
+		//										
+		//								   ]
+		//						};
+
 	
 	
 	</script>
