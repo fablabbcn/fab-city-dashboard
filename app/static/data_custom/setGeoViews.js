@@ -185,3 +185,8 @@ var setGeoViews = {
 	//},
 
 }
+
+
+function add(){
+		
+}
