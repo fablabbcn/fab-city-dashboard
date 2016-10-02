@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 from app import app
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template
 
 import pandas as pd
 
@@ -144,7 +144,7 @@ def regional_data():
         app.static_folder+"/data_custom/json_stats/OECD/regional.csv",
         encoding="utf-8")
     # return regional_data.to_html()
-    return jsonify(regional_data.to_json())
+    return regional_data.to_json(orient='records')
 
 @app.route("/oecd/national-data")
 def national_data():
@@ -152,12 +152,10 @@ def national_data():
         app.static_folder+"/data_custom/json_stats/OECD/national.csv",
         encoding="utf-8")
     # return national_data.to_html()
-    return jsonify(national_data.to_json())
-
+    return national_data.to_json(orient='records')
 
 @app.route("/oecd/test")
 def oecd_test():
-
     return render_template(
         "oecd.html",
         glob=global_names,
