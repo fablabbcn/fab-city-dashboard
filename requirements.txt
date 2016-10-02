@@ -10,6 +10,11 @@ makerlabs==0.14
 MarkupSafe==0.23
 mwparserfromhell==0.4.3
 networkx==1.11
+numpy==1.11.1
+pandas==0.18.1
+python-dateutil==2.5.3
+pytz==2016.6.1
 requests==2.11.1
 simplemediawiki==1.1.1
+six==1.10.0
 Werkzeug==0.11.11
