@@ -5,3 +5,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
 }
+
+svg {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+}
