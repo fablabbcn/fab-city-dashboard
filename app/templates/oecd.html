@@ -40,10 +40,18 @@
             .entries(data);
 
         var regions = d3.nest()
-            .key(function(d) { return d["Region"]; })
+            .key(function(d) {
+                return d["Region"]; })
             .entries(data);
 
-        //console.log(regions[0]["values"][0]);
+        // A single region
+        console.log(regions[0]["key"])
+        var region_data = regions[0]["values"][0];
+        delete region_data["Region"];
+        delete region_data["Region Code"];
+        delete region_data["Country"];
+
+        console.log(region_data);
 
         var svg = d3.select("svg");
 
