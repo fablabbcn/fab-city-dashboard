@@ -5260,7 +5260,7 @@ function createCountriesDict (countriesL) {
 	
 	for(var i=0 ; i<countriesL.length ; i++ ) {
 		var country     = countriesL[i];
-		var countryCode = country.country_code ;
+		var countryCode = country.isoAlpha3 ; ///
 		//console.log(countryCode);
 		
 		var west          = parseFloat(country.west);
@@ -5281,4 +5281,4 @@ function createCountriesDict (countriesL) {
 };
 
 createCountriesDict(countries_list);
-console.log(countries_dict["AU"])
+console.log(countries_dict["ZWE"])

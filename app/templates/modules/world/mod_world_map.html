@@ -154,7 +154,11 @@
 		//									}
 		//						 )
 		
-		
+		// find geobox/center from setViews.js
+		function setMapView(placeName){
+			var placeDict = setViews[placeName];
+			return placeDict; 
+		};
 		
 		// CREATE EMPTY LAYER
 		var empty_layer    = new L.layerGroup();
@@ -202,7 +206,7 @@
 
 		info.update = function (props) {
 			this._div.innerHTML = '<h4>Legend</h4>' +  (props ?
-				'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+				'<b>' + props.addedDatas.countryName + '</b><br />' + value + ' ' + indicator
 				: 'Hover over a state');
 		};
 
@@ -210,8 +214,8 @@
 		
 
 		/////////////////////////////////////////
-		// FUNCTION - ADD POPUP TO FEATURES
-		function onEachFeature(feature, layer) {
+		// FUNCTION - ADD POPUP TO MARKERS
+		function onEachMarker(feature, layer) {
 			var popupContent = "<p></p>";
 			if (feature.properties && feature.properties.name) {
 				popupContent += "FABLAB : "+feature.properties.name;
@@ -223,47 +227,56 @@
 		////////////////////////////////////////////
 		
 		// get color depending on a choosen d.value
-		function getColor(value) {
-			return value > 1000 ? '#800026' :
-			       value > 500  ? '#BD0026' :
-			       value > 200  ? '#E31A1C' :
-			       value > 100  ? '#FC4E2A' :
-			       value > 50   ? '#FD8D3C' :
-			       value > 20   ? '#FEB24C' :
-			       value > 10   ? '#FED976' :
+		function getColor(d) {
+			return d > 100*1000000  ? '#800026' :
+			       d > 50*1000000   ? '#BD0026' :
+			       d > 20*1000000   ? '#E31A1C' :
+			       d > 10*1000000   ? '#FC4E2A' :
+			       d > 5*1000000    ? '#FD8D3C' :
+			       d > 2*1000000    ? '#FEB24C' :
+			       d > 1*1000000    ? '#FED976' :
 			                  '#FFEDA0';
 		}
 
 		function style(feature) {
+			console.log(feature);
 			return {
-				weight: 2,
-				opacity: 1,
-				color: 'white',
-				dashArray: '3',
+				weight     : 2,
+				opacity    : 1,
+				color      : 'white',
+				dashArray  : '3',
 				fillOpacity: 0.7,
-				//fillColor: getColor(feature.properties.density)
-				fillColor: '#00e0e0'
+				//fillColor  : getColor(parseInt(feature.properties.addedDatas.population))
+				//fillColor  : getColor(value),
+				fillColor  : '#00e0e0'
 			};
 		}
 		
 		
 		// only for basemap
 		function highlightFeature(e) {
+			
 			var currentLayer = e.target;
-
+			
 			currentLayer.setStyle({
-				weight: 3,
-				color: '#666',
-				dashArray: '',
-				fillOpacity: 0.7
+				weight      : 3,
+				color       : '#727',
+				dashArray   : '',
+				fillOpacity : 0.7
 			});
-
+			
 			if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
 				currentLayer.bringToFront();
 				for(var i=0; i<markerObjects.length; i++){
-					markerObjects[i].bringToFront();
+					markerObjects[i].bringToFront(); //bring markers over all
 				}
-			}
+			};
+			
+			//retrieve data/indicator
+			//var id_       = currentLayer.feature.id ; // warning it can change if we use other geojson basemap
+			////console.log(id_);
+			//var indicator = "population";
+			//var value     = countries_dict[id_][indicator];
 
 			info.update(currentLayer.feature.properties);
 		}
@@ -287,9 +300,6 @@
 				click    : zoomToFeature
 			});
 		}
-		
-		
-		
 		
 		
 		
@@ -320,7 +330,7 @@
 				return feature.properties && feature.properties.style;
 			},
 			
-			onEachFeature: onEachFeature,
+			onEachFeature: onEachMarker,
 			
 			pointToLayer: function (feature, latlng) {
 				return L.circleMarker(latlng, {
@@ -396,8 +406,23 @@
 		//						};
 		
 		
+		
+		
+		function addDatasToGeojson(geojson, datas_dict){
+			var new_geojson = {"type":"FeatureCollection","features":[ ] } ;
+			for (var i=0;i<geojson.features.length; i++){
+				var feature                   = geojson.features[i];
+				var datas_toAdd               = datas_dict[feature.id];
+				feature.properties.addedDatas = datas_toAdd;
+				new_geojson.features.push(feature);
+			}
+			console.log(new_geojson.features[0]);
+			return new_geojson;
+		};
+		
 		// ALL COUNTRIES SERVED
-		addBasemap(all_countries, countries_layer, true);
+		var all_countries_updated = addDatasToGeojson(all_countries, countries_dict);
+		addBasemap(all_countries_updated, countries_layer, true);
 		
 		
 		// CHOOSE METROPOLITAN AREAS TO SERVE -- insert as Jinja call here (DRY)

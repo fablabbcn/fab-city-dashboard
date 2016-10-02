@@ -1,47 +1,48 @@
 var setViews = {
 
-	"regions" : {
+	//"regions" : {
+	
 			"World"          : {"geobox" : [-180.0000, -90.0000, 180.0000, 90.0000],
 								"zoom"   : 8,
 								"center" : [,],
-								"code"   : "wo", 
+								"code"   : "wo_", 
 								},
 			"Europe"         : {"geobox" : [-10.331306, 36.199937,  32.203792, 61.295757],
 								"zoom"   : 8,
 								"center" : [,],
-								"code"   : "wo", 
+								"code"   : "eu_", 
 								},        
 			"USA"            : {"geobox" : [-125.735663, 24.175174, -52.2330, 83.1621],
 								"zoom"   : 8,
 								"center" : [,],
-								"code"   : "wo", 
+								"code"   : "us_", 
 								},
 			"CentralAmerica" : {"geobox" : [-116.099556, 4.684821, -59.410102, 32.499558],
 								"zoom"   : 8,
 								"center" : [,],
-								"code"   : "wo", 
+								"code"   : "ca_", 
 								},
 			"SouthAmerica"   : {"geobox" : [-109.4749, -59.4505, -26.3325, 13.3903],
 								"zoom"   : 8,
 								"center" : [,],
-								"code"   : "wo", 
+								"code"   : "sa_", 
 								},
 			"MiddleEast"     : {"geobox" : [11.058045, 24.469416, 59.003443, 44.340278],
 								"zoom"   : 8,
 								"center" : [,],
-								"code"   : "wo", 
+								"code"   : "me_", 
 								},
 			"Asia"           : {"geobox" : [97.945979, -2.055812, 146.384700, 45.440040],
 								"zoom"   : 8,
 								"center" : [,],
-								"code"   : "wo", 
+								"code"   : "as_", 
 								},
 			"Africa"         : {"geobox" : [-16.496816, -37.895250, 50.265313, 22.561622],
 								"zoom"   : 8,
 								"center" : [,],
-								"code"   : "wo", 
+								"code"   : "af_", 
 								},
-	},
+	//},
 
 	//"countries" :{
 	//	
@@ -49,7 +50,7 @@ var setViews = {
 	//	
 	//},
 	
-	"cities" : {
+	//"cities" : {
 		"Istanbul"       : {"geobox" : [27.9985, 40.8027, 29.9297, 41.5252], 
 							"zoom"   : 8,
 							"center" : [,],
@@ -181,6 +182,6 @@ var setViews = {
 							"code"   : "wo", 
 							},
 
-	},
+	//},
 
 }
