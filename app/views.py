@@ -141,7 +141,7 @@ def data_d3leaflet_map(selection):
 @app.route("/oecd/regional-data")
 def regional_data():
     regional_data = pd.read_csv(
-        app.static_folder+"/data_custom/OECD/regional.csv",
+        app.static_folder+"/data_custom/json_stats/OECD/regional.csv",
         encoding="utf-8")
     # return regional_data.to_html()
     return jsonify(regional_data.to_json())
@@ -149,7 +149,7 @@ def regional_data():
 @app.route("/oecd/national-data")
 def national_data():
     national_data = pd.read_csv(
-        app.static_folder+"/data_custom/OECD/national.csv",
+        app.static_folder+"/data_custom/json_stats/OECD/national.csv",
         encoding="utf-8")
     # return national_data.to_html()
     return jsonify(national_data.to_json())
