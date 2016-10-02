@@ -1,12 +1,68 @@
 {% extends "base.html" %} {% block content %}
 
-<p>
-    Hello, OECD world!
-</p>
+<h2 id="title">
+    A country
+</h2>
+<h3 id="subtitle">
+    A region
+</h3>
+<ul id="content">
+</ul>
+
+<svg width="960" height="500" style="border: 1px solid black;"></svg>
 
 <script>
     d3.json("regional-data", function(data) {
         console.log(data[0]);
+        d3.select("body").select("#title").text(data[0]["Country"]);
+        d3.select("body").select("#subtitle").text(data[0]["Region"]);
+
+        var content = d3.select("body").select("#content");
+
+        content.append("li").text("Community: " + data[0]["Community"]);
+        content.append("li").text("Education: " + data[0]["Education"]);
+        content.append("li").text("Jobs: " + data[0]["Jobs"]);
+        content.append("li").text("Income: " + data[0]["Income"]);
+        content.append("li").text("Safety: " + data[0]["Safety"]);
+        content.append("li").text("Health: " + data[0]["Health"]);
+        content.append("li").text("Environment: " + data[0]["Environment"]);
+        content.append("li").text("Civic engagement: " + data[0]["Civic engagement"]);
+        content.append("li").text("Accessiblity to services: " + data[0]["Civic engagement"]);
+        content.append("li").text("Housing: " + data[0]["Housing"]);
+        content.append("li").text("Life satisfaction: " + data[0]["Life satisfaction"]);
+
+        // Region
+        // Region Code
+        // Country
+
+        var countries = d3.nest()
+            .key(function(d) { return d["Country"]; })
+            .entries(data);
+
+        var regions = d3.nest()
+            .key(function(d) { return d["Region"]; })
+            .entries(data);
+
+        //console.log(regions[0]["values"][0]);
+
+        var svg = d3.select("svg");
+
+        // var x = d3.scale.linear()
+        //     .domain([0, 10])
+        //     .range([0, 960]);
+        //
+        // svg.selectAll("rect")
+        //     .data(data[0])
+        //     .enter().append("rect")
+        //     .attr("x", 0)
+        //     .attr("y", y)
+        //     .attr("width", x)
+        //     .attr("height", y.rangeBand());
+
+        svg.append("rect")
+            .attr("width", 100)
+            .attr("height", 100);
+
     });
 </script>
 
