@@ -33,22 +33,23 @@
 			   aria-haspopup="true"
 			   aria-expanded="false">
 				Who are you ? <span class="caret"></span></a> <!-- user profiles-->
+			
 			<ul class="dropdown-menu">
 
-			  <li><a href="/user/only_infos"	>only infos</a></li>
-			  <li><a href="/user/only_dashboard">global dashboard</a></li>
+			  <li><a href="/user/only_infos/World"	  >Only infos</a></li>
+			  <li><a href="/user/only_dashboard/World">Global dashboard</a></li>
 			  
 			  <li role="separator" class="divider"></li>
 
-			  <li><a href="/user/analytic"		>User - analytic</a></li>
-			  <li><a href="/user/citizen"		>User - citizen</a></li>
-			  <li><a href="/user/civic_leader"	>User - civic_leader</a></li>
-			  <li><a href="/user/maker"			>User - maker</a></li>
-			  <li><a href="/user/fab_manager"	>User - fab manager</a></li>
+			  <li><a href="/user/analytic/World"	>User - analytic</a></li>
+			  <li><a href="/user/citizen/World" 	>User - citizen</a></li>
+			  <li><a href="/user/civic_leader/World">User - civic_leader</a></li>
+			  <li><a href="/user/maker/World"		>User - maker</a></li>
+			  <li><a href="/user/fab_manager/World"	>User - fab manager</a></li>
 			  
 			  <li role="separator" class="divider"></li>
 			  
-			  <li><a href="/user/world"			>Geo - world</a></li>
+			  <li><a href="/user/carto/World"			>Geo - World</a></li>
 			  <!--<li><a href="/user/region"		>Geo - region</a></li>-->
 			  <!--<li><a href="/user/city"			>Geo - city</a></li>-->
 			  <!--<li><a href="/user/fab_lab"		>Geo - fablab</a></li>-->
@@ -68,9 +69,9 @@
 			<a href="/test_d3leaflet/algo">Leaflet + D3</a>
 		  </li>-->
 		  
-		  <li >
+		  <!--<li >
 			<a href="/test_blank">blank_test</a>
-		  </li>
+		  </li>-->
 		  
 		  <li >
 			<a href="/oecd/test">OECD_test</a>
@@ -90,6 +91,12 @@
 		<ul class="nav navbar-nav navbar-right">
 		  
 		  <li><a href="#">Login</a></li>
+		  
+		  <li>
+			<a type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+			demo modal
+			</a>
+		  </li>
 		  
 		  <li class="dropdown">
 			<a href="#"

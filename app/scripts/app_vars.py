@@ -15,7 +15,7 @@ opensource,open source,open data,creative commons,github,
 d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap,bower"""
 
 description = "description"
-authors     = "Massimo, Mariana, Julien"
+authors     = "Massimo Menichinelli, Mariana Quintero, Julien Paris"
 
 licenceCC   = 'GPL' 
 
@@ -144,24 +144,18 @@ user_profiles = {
 
                       ],        
         
-    ### CARTO TYPOLOGY ##################
-    "world"       : [
+    ### CARTO-USER TYPOLOGY ##################
+    "carto"       : [
                         { "500px" : [ {"wor_ma": 12 }  ]      }, 
-                        { "50px" : [   {"too_pl" : 3 },
-                                        {"too_id": 3 }
+                        { "50px" : [   {"too_pl" : 6 },
+                                        {"too_id": 6 }
                                     ] },
                       ],
 
-    "spain"       : [
-                        { "500px" : [ {"wor_ma": 12 }  ]      }, 
-                        { "50px" : [   {"too_pl" : 3 },
-                                        {"too_id": 3 }
-                                    ] },
-                      ],
 
 } ### end user_profiles dict
 
-
+### code names for metropolitan areas and the corresponding geojson name
 metrop_areas_names = {
     "AUS" : "AUS_MAs_2016",
     "AUT" : "AUT_MAs_2016",

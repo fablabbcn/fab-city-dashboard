@@ -70,22 +70,23 @@ def index():
         glob=global_names, )
 
 
-@app.route('/user/<user_profile>')
-def user_entry(user_profile):
+@app.route('/user/<user_profile>/<regionSelected>')
+def user_entry(user_profile, regionSelected):
     print '-' * 10, 'VIEW USER TEMPLATE', '-' * 50
 
-    print 'user profile :', user_profile
+    print 'user profile/region :', user_profile, regionSelected
 
     ### generate template corresponding to user_profile
     user_specs = generateTemplate(user_profile)
     print "user_specs", user_specs
 
     return render_template("user_driven_template.html",
-                           index        = True,
-                           glob         = global_names,
-                           user_profile = user_profile,     ### settings for user_profile from user_profiles
-                           user_specs   = user_specs,       ### description of every row for template
-                           mod_incl     = modules_html_dict ### global dict to get corresponding .html modules
+                           index          = True,
+                           glob           = global_names,
+                           user_profile   = user_profile,     ### settings for user_profile from user_profiles
+                           user_specs     = user_specs,       ### description of every row for template
+                           regionSelected = regionSelected,
+                           mod_incl       = modules_html_dict ### global dict to get corresponding .html modules
                            )
 
 

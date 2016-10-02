@@ -1,7 +1,7 @@
 
 <!--MODULE TOOLS/choose city : too_ci <br>-->
 	
-<div class="btn-group" style="text-align: center">
+<!--<div class="btn-group" style="text-align: center">
   <button type="button" class="btn btn-default ">
 	choose a place</button>
   <button type="button" class="btn  btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -20,6 +20,56 @@
     <li><a href="#">Africa</a></li>
     <li role="separator" class="divider"></li>
   </ul>
+</div>-->
+
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    choose a region <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a id="changeRegion" name="World" 			>World</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a id="changeRegion" name="Europe" 			>Europe</a></li>
+    <li><a id="changeRegion" name="USA"    			>USA</a></li>
+    <li><a id="changeRegion" name="CentralAmerica" 	>Central America</a></li>
+    <li><a id="changeRegion" name="SouthAmerica" 	>South America</a></li>
+    <li><a id="changeRegion" name="MiddleEast" 		>Middle East</a></li>
+    <li><a id="changeRegion" name="Asia" 			>Asia</a></li>
+    <li><a id="changeRegion" name="Africa" 			>Africa</a></li>
+    <li><a id="changeRegion" name="Oceania" 		>Oceania</a></li>
+  </ul>
 </div>
 
 
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    choose a country <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a id="changeRegion" name="ESP" 			>Spain</a></li>
+    <li><a id="changeRegion" name="FRA" 			>France</a></li>
+    <li><a id="changeRegion" name="DEU" 			>Germany</a></li>
+
+  </ul>
+</div>
+
+
+
+<script>
+  
+  var user_profile = "{{ user_profile }}";
+  
+  // onClick get div id and GET corresponding URL
+  // region_id refers to index in app_vars.py
+  function changeRegion(region_id) {
+	// create a url adress as a string corresponding to user_profile and selected region ID
+	var URL_adress = "/user/"+ user_profile + "/" + region_id ;
+	// load url in navigator
+	window.location = URL_adress;
+  }
+  
+  $('#changeRegion').click(function(){ changeRegion(this.name); return console.log("error"); });
+
+  
+</script>
