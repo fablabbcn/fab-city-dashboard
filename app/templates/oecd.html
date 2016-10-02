@@ -75,12 +75,12 @@
 
         // Linear scale for scaling the graph
         var linearScale = d3.scaleLinear()
-            .domain([0, 10])
+            .domain([0, 10.0])
             .range([0, width]);
 
         // Access svg area
         var svg = d3.select("#region_resilience")
-            .attr("width", width * 3.5)
+            .attr("width", width + 250)
             .attr("height", space_between_bars * region_array.length + zeroy);
 
         // Rounded bars
@@ -89,6 +89,17 @@
             .enter()
             .append("g")
 
+        // Scale line
+        bar.append("line")
+            .style("stroke", "#b3b3b3")
+            .attr("x1", zerox + legend_width)
+            .attr("y1", function(d, i) {
+                return zeroy + i * 25 + 6;
+            })
+            .attr("x2", zerox + legend_width + linearScale(10))
+            .attr("y2", function(d, i) {
+                return zeroy + i * 25 + 6;
+            });
 
         // The bars
         bar.append("rect")
@@ -145,7 +156,6 @@
             });
 
         // SVG icons
-
         var accessibility_icon = svg.append("g");
         d3.xml("../static/images/icons/svg/accesibility_to_services.svg").mimeType("image/svg+xml").get(function(error, xml) {
             if (error) throw error;
@@ -214,7 +224,7 @@
 
         // SVG icons transformations
         var icon_scale = 0.08;
-        var icon_x = 130;
+        var icon_x = 150;
         var icon_y = 3;
 
         education_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
