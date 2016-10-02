@@ -12,16 +12,18 @@
     <meta name="author" content="{{ glob.authors }}">
     <meta name="description" content="{{ glob.description }}">
 
-    <!-- BOOTSTRAP -->
-    <link href={{ url_for( 'static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css' ) }} rel="stylesheet" media="screen">
-
+    <!-- JQUERY -->
     <script src={{ url_for( 'static', filename='bower_components/jquery/dist/jquery.min.js' ) }}></script>
 
+    <!-- BOOTSTRAP -->
+    <link href={{ url_for( 'static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css' ) }} rel="stylesheet" media="screen">
     <script src={{ url_for( 'static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js' ) }}></script>
+
+    <!-- D3 -->
     <script src={{ url_for( 'static', filename='bower_components/d3/d3.min.js' ) }}></script>
 
-
-    <!--<link rel="shortcut icon" href="{{ url_for('static', filename='images/elements/favicon.ico') }}">-->
+    <!-- Fab City favicon -->
+    <link rel="shortcut icon" href={{ url_for( 'static', filename='images/favicon.ico' ) }}>
 
 
     <!-- STYLES -->
