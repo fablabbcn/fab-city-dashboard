@@ -1,75 +1,148 @@
 {% extends "base.html" %} {% block content %}
 
-<h2 id="title">
-    A country
-</h2>
-<h3 id="subtitle">
-    A region
-</h3>
-<ul id="content">
-</ul>
+<h2><span id="title"></span> - <span id="subtitle"></span></h2>
 
 <svg width="960" height="500" style="border: 1px solid black;"></svg>
 
 <script>
     d3.json("regional-data", function(data) {
+
+        // Debug
         console.log(data[0]);
+
+        // Change title
         d3.select("body").select("#title").text(data[0]["Country"]);
         d3.select("body").select("#subtitle").text(data[0]["Region"]);
 
-        var content = d3.select("body").select("#content");
+        // Colors for the resilience metrics
+        var resilience_colors = {
+            "Housing": "#16785D",
+            "Income": "#22357C",
+            "Jobs": "#1A5774",
+            "Community": "#67A61E",
+            "Environment": "#1A9022",
+            "Education": "#551C7B",
+            "Civic engagement": "#7A1676",
+            "Work life balance": "#A81E3E",
+            "Life satisfaction": "#E62339",
+            "Safety": "#B78621",
+            "Health": "#B74021",
+            "Accessibility to services": "#B7B721"
+        };
 
-        content.append("li").text("Community: " + data[0]["Community"]);
-        content.append("li").text("Education: " + data[0]["Education"]);
-        content.append("li").text("Jobs: " + data[0]["Jobs"]);
-        content.append("li").text("Income: " + data[0]["Income"]);
-        content.append("li").text("Safety: " + data[0]["Safety"]);
-        content.append("li").text("Health: " + data[0]["Health"]);
-        content.append("li").text("Environment: " + data[0]["Environment"]);
-        content.append("li").text("Civic engagement: " + data[0]["Civic engagement"]);
-        content.append("li").text("Accessiblity to services: " + data[0]["Civic engagement"]);
-        content.append("li").text("Housing: " + data[0]["Housing"]);
-        content.append("li").text("Life satisfaction: " + data[0]["Life satisfaction"]);
-
-        // Region
-        // Region Code
-        // Country
-
+        // Nesting countries
         var countries = d3.nest()
-            .key(function(d) { return d["Country"]; })
+            .key(function(d) {
+                return d["Country"];
+            })
             .entries(data);
 
+        // Nesting regions
         var regions = d3.nest()
             .key(function(d) {
-                return d["Region"]; })
+                return d["Region"];
+            })
             .entries(data);
 
-        // A single region
+        // A single region: delete
         console.log(regions[0]["key"])
         var region_data = regions[0]["values"][0];
         delete region_data["Region"];
         delete region_data["Region Code"];
         delete region_data["Country"];
 
-        console.log(region_data);
+        var region_array = [];
+        var region_object = {}
 
-        var svg = d3.select("svg");
+        for (var property in region_data) {
+            if (property != "Region" && property != "Region Code" && property != "Country") {
+                //region_object[property] = parseFloat(region_data[property]);
+                test = {}
+                test[property] = parseFloat(region_data[property]);
+                region_array.push(test);
+            }
 
-        // var x = d3.scale.linear()
-        //     .domain([0, 10])
-        //     .range([0, 960]);
-        //
-        // svg.selectAll("rect")
-        //     .data(data[0])
-        //     .enter().append("rect")
-        //     .attr("x", 0)
-        //     .attr("y", y)
-        //     .attr("width", x)
-        //     .attr("height", y.rangeBand());
+        }
 
-        svg.append("rect")
-            .attr("width", 100)
-            .attr("height", 100);
+
+        // variables
+        var zerox = 10;
+        var zeroy = 10;
+        var width = 300;
+        var barHeight = 13;
+        var space_between_bars = 25;
+        var legend_width = 180;
+
+        // Linear scale for scaling the graph
+        var linearScale = d3.scaleLinear()
+            .domain([0, 10])
+            .range([0, width]);
+
+        // Access svg area
+        var svg = d3.select("svg")
+            .attr("width", width * 3.5)
+            .attr("height", space_between_bars * region_array.length + zeroy);
+
+        // Rounded bars
+        var bar = svg.selectAll("g")
+            .data(region_array)
+            .enter()
+            .append("g")
+
+
+        // The bars
+        bar.append("rect")
+            .attr("x", zerox + legend_width)
+            .attr("y", function(d, i) {
+                return zeroy + i * 25;
+            })
+            .attr("width", function(d) {
+                for (property in d) {
+                    var resilience_value = d[property];
+                }
+                return linearScale(resilience_value);
+            })
+            .attr("height", barHeight)
+            .attr("rx", 6)
+            .attr("ry", 6)
+            .attr("fill", function(d) {
+                for (property in d) {
+                    var the_color = resilience_colors[property];
+                }
+                return the_color;
+            });
+
+        // The legend labels
+        bar.append("text")
+            .attr("x", zerox)
+            .attr("y", function(d, i) {
+                return zeroy + 6 + i * 25;
+            })
+            .attr("dy", ".35em")
+            .text(function(d) {
+                for (property in d) {
+                    var label_text = property;
+                }
+                return label_text;
+            });
+
+        // The value labels
+        bar.append("text")
+            .text(function(d) {
+                for (property in d) {
+                    var label_value = d[property];
+                }
+                return label_value + "/10";
+            })
+            .attr("x", function(d) {
+                for (property in d) {
+                    var label_value = d[property];
+                }
+                return zerox + legend_width + zerox + linearScale(label_value);
+            })
+            .attr("y", function(d, i) {
+                return zeroy + barHeight - 2 + i * space_between_bars;
+            });
 
     });
 </script>
