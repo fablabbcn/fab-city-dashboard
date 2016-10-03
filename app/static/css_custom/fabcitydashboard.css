@@ -59,7 +59,7 @@ p.descriptions {
 
 .navbar{
 	position: fixed;
-	z-index: 1;
+	z-index: 90;
 	width: 100%;
 }
 
