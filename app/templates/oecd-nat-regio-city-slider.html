@@ -2,7 +2,7 @@
 
 <h2><span id="title"></span> - <span id="subtitle"></span></h2>
 
-<svg class="svg_oecd" id="region_resilience"></svg>
+<svg class="svg_oecd" id="region_resilience" style="border: 1px solid red;"></svg>
 <!-- added specific class "svg_oecd" -> style because it was affecting map/Leaflet rendering -->
 
 <script>
@@ -80,8 +80,8 @@
 
                 // Access svg area
                 var svg = d3.select("#region_resilience")
-                    .attr("width", width + legend_width + 60)
-                    .attr("height", (space_between_bars + space_between_groups) * region_array.length + zeroy);
+                    .attr("width", 1000)
+                    .attr("height", 1000);
 
                 // Rounded bars
                 var regions = svg.append("g");
@@ -249,8 +249,14 @@
                         return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight + 6 + barHeight;
                     });
 
-                // The bars: country
+                // The bars: city
                 barci.append("rect")
+                    .attr("class", function(d) {
+                        for (property in d) {
+                            var the_class = property;
+                        }
+                        return "city " + property.toLowerCase();
+                    })
                     .attr("x", zerox + legend_width)
                     .attr("y", function(d, i) {
                         return zeroy + i * (space_between_bars + space_between_groups);
@@ -362,7 +368,7 @@
                 });
 
                 // SVG icons transformations
-                var icon_scale = 0.04;
+                var icon_scale = 0.02;
                 var icon_x = legend_width - 20;
                 var icon_y = 5 + barHeight;
 
@@ -399,6 +405,63 @@
                 icon_y = icon_y + space_between_bars + space_between_groups;
                 life_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
 
+                // Slider
+                // From https://bl.ocks.org/mbostock/6452972
+
+                var x = d3.scaleLinear()
+                    .domain([0, 180])
+                    .range([0, width])
+                    .clamp(true);
+
+                var slider = svg.append("g")
+                    .attr("class", "slider")
+                    .attr("transform", "translate(100, 600)");
+
+                slider.append("line")
+                    .attr("class", "track")
+                    .attr("x1", x.range()[0])
+                    .attr("x2", x.range()[1])
+                    .select(function() {
+                        return this.parentNode.appendChild(this.cloneNode(true));
+                    })
+                    .attr("class", "track-inset")
+                    .select(function() {
+                        return this.parentNode.appendChild(this.cloneNode(true));
+                    })
+                    .attr("class", "track-overlay")
+                    .call(d3.drag()
+                        .on("start.interrupt", function() {
+                            slider.interrupt();
+                        })
+                        .on("start drag", function() {
+                            hue(x.invert(d3.event.x));
+                        }));
+
+                slider.insert("g", ".track-overlay")
+                    .attr("class", "ticks")
+                    .attr("transform", "translate(0," + 18 + ")")
+                    .selectAll("text")
+                    .data(x.ticks(10))
+                    .enter().append("text")
+                    .attr("x", x)
+                    .attr("y", 25)
+                    .attr("text-anchor", "middle")
+                    .text(function(d) {
+                        return d + "°";
+                    });
+
+                var handle = slider.insert("rect", ".track-overlay")
+                    .attr("class", "handle")
+                    .attr("width", 6)
+                    .attr("height", 20)
+                    .attr("y", -10)
+                    .attr("rx", 3)
+                    .attr("ry", 3);
+
+                function hue(h) {
+                    handle.attr("x", x(h));
+                    d3.select(".city.education").attr("fill", d3.hsl(h, 0.8, 0.8));
+                }
 
             }
         });
