@@ -133,7 +133,7 @@ user_profiles = {
     "only_infos"       : [
                         { "400px" : [ {"inf_in" : 12 }      ]    }, 
                         { "400px" : [ {"inf_ab" : 2 }, {"inf_pa": 5 } ] },    
-                        { "600px" : [ {"inf_co": 6 }        ]      }, 
+                        { "200px" : [ {"inf_co": 12 }        ]      }, 
                       ],
     "only_dashboard"    : [
                         { "200px" : [ {"too_da" : 12 }      ]    }, 
