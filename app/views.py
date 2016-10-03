@@ -65,19 +65,19 @@ def generateTemplate(userProfile):
 
 
 def selectedRegionSpecs(selectedRegion, level):
-    
+
     print ("selectedRegionSpecs / selectedRegion : ", selectedRegion)
-    
+
     regionSpecs                 = geoJSON_dict[selectedRegion]
-    
+
     print ("selectedRegionSpecs / regionSpecs : ", regionSpecs)
-    
+
     temp_specs                  = regionSpecs
     temp_specs["js_var"]        = regionSpecs["regions"]
     temp_specs["geojson_url"]   = root_basemaps +"regions/"+ selectedRegion + "/" + regionSpecs[level] + ".geojson"
-    
+
     print ("selectedRegionSpecs / temp_specs : ", temp_specs)
-    
+
     return temp_specs
 
 @app.route('/')
@@ -200,6 +200,14 @@ def oecd_nat_regio():
 def oecd_nat_regio_city():
     return render_template(
         "oecd-nat-regio-city.html",
+        glob=global_names,
+        map_=True,
+        force=False, )
+
+@app.route("/oecd/nat-regio-city-slider")
+def oecd_nat_regio_city_slider():
+    return render_template(
+        "oecd-nat-regio-city-slider.html",
         glob=global_names,
         map_=True,
         force=False, )
