@@ -11,11 +11,6 @@ body {
     height: 60px;
 }
 
-.background{
-	 background-image: url("{{ url_for('static', filename='images/backgrounds/map-image.png') }}") 
-	 repeat: no-repeat;
-	 position: center center fixed;
-}
 
 h1, h2, h3, h4, h5, h6, nav {
     font-family: "Montserrat", sans-serif;
@@ -77,6 +72,35 @@ p.descriptions {
 	z-index: 90;
 	width: 100%;
 }
+
+.navbar-default{
+	background-color: #222;
+	border-color: #222;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #F7F7F7;
+}
+
+.navbar-default 
+.navbar-nav
+.active 
+a, 
+.navbar-default 
+.navbar-nav .active 
+a:focus, 
+.navbar-default 
+.navbar-nav .active 
+a:hover {
+    color: #F7F7F7;
+    background-color: #E62339;
+}
+
+.dropdown-menu{
+	background-color: #E62339;
+}
+
+
 
 .logo-max {
     height: 80px;

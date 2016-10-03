@@ -86,7 +86,9 @@ modules_html_dict = {
     "inf_ab" : "infos/mod_about.html",                 #text
     "inf_co" : "infos/mod_contact.html",               #text
     "inf_in" : "infos/mod_intro.html",                 #text
+    "inf_re" : "infos/mod_intro_resilience.html",      #text
     "inf_pa" : "infos/mod_participation.html",         #form/comment
+
     #},
 
     ##"tools" : {
@@ -142,7 +144,12 @@ user_profiles = {
                                     ] },
                         { "400px" : [ {"wor_ma" : 12 } ] },  ### row 1
 
-                      ],        
+                      ],   
+    "demo"       : [
+                        { "400px" : [ {"inf_in" : 12 }      ]    }, 
+                        { "400px" : [ {"inf_re" : 12 }      ]    }, 
+                        { "200px" : [ {"inf_co": 12 }        ]      }, 
+                      ],     
         
     ### CARTO-USER TYPOLOGY ##################
     "carto"       : [
