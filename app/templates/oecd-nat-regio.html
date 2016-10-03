@@ -105,13 +105,18 @@
                 barc.append("line")
                     .style("stroke", "#b3b3b3")
                     .style("opacity", 0.2)
-                    .attr("x1", zerox + legend_width)
-                    .attr("y1", function(d, i) {
-                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + space_between_bars + space_between_groups + barHeight;
+                    .attr("x1", function(d) {
+                        for (property in d) {
+                            var resilience_value = d[property];
+                        }
+                        return zerox + legend_width + linearScale(resilience_value);
                     })
-                    .attr("x2", zerox + legend_width + linearScale(10))
+                    .attr("y1", function(d, i) {
+                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
+                    })
+                    .attr("x2", zerox + legend_width + width)
                     .attr("y2", function(d, i) {
-                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + space_between_bars + space_between_groups + barHeight;
+                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
                     });
 
                 // The bars: region
@@ -170,7 +175,7 @@
                     })
                     .attr("x", zerox + legend_width + width + zerox)
                     .attr("y", function(d, i) {
-                        return zeroy + barHeight - 2 + i * (space_between_bars + space_between_groups);
+                        return zeroy + i * (space_between_bars + space_between_groups) + barHeight;
                     });
 
                 // The value labels: countries
@@ -184,7 +189,7 @@
                     })
                     .attr("x", zerox + legend_width + width + zerox)
                     .attr("y", function(d, i) {
-                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + space_between_bars + space_between_groups + barHeight + 6;
+                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight + 6;
                     });
 
 
@@ -283,30 +288,36 @@
                 // SVG icons transformations
                 var icon_scale = 0.04;
                 var icon_x = legend_width - 20;
-                var icon_y = 5;
+                var icon_y = 5 + barHeight / 2;
 
                 education_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
-                jobs_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" +
+                jobs_icon.attr("transform", "translate (" + icon_x +
+                    ", " + icon_y + ") scale(" +
                     icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
                 income_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
-                icon_y = icon_y + space_between_bars + space_between_groups;
+                icon_y = icon_y +
+                    space_between_bars + space_between_groups;
                 safety_icon.attr(
                     "transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
-                health_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale +
+                health_icon.attr("transform", "translate (" + icon_x + ", " + icon_y +
+                    ") scale(" + icon_scale +
                     ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
                 environment_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
-                icon_y = icon_y + space_between_bars + space_between_groups;
+                icon_y = icon_y + space_between_bars +
+                    space_between_groups;
                 civic_icon.attr("transform",
                     "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
-                accessibility_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                accessibility_icon.attr("transform", "translate (" + icon_x + ", " + icon_y +
+                    ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
                 housing_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
-                icon_y = icon_y + space_between_bars + space_between_groups;
+                icon_y = icon_y +
+                    space_between_bars + space_between_groups;
                 community_icon.attr("transform", "translate (" +
                     icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
