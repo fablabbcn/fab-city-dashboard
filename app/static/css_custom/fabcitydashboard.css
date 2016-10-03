@@ -4,7 +4,11 @@ body {
 }
 
 .content {
-	padding: 0% 6%;
+    padding: 0% 6%;
+}
+
+.upper-margin {
+    height: 60px;
 }
 
 h1, h2, h3, h4, h5, h6, nav {
@@ -12,44 +16,93 @@ h1, h2, h3, h4, h5, h6, nav {
 }
 
 h2.section-heading {
- font-size: 30px;
- text-align: left;
- text-transform: uppercase;
+    font-size: 30px;
+    text-align: left;
+    text-transform: uppercase;
 }
 
-h2.section-subheading{
-  font-size: 20px;
-  text-align: left;
-  line-height: 1.4;
-  text-transform: uppercase;
+h2.section-subheading {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.4;
+    text-transform: uppercase;
 }
 
 p.descriptions {
-  font-size: 16px;
-  line-height: 1.7;
-  text-align: left;
-} 
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+}
 
 .btn-xl {
-  padding: 10px 20px;
-  border-color: #E62339;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #E62339;
+    padding: 10px 20px;
+    border-color: #E62339;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #E62339;
 }
 
-.btn-xl:hover,
-.btn-xl:focus,
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-  color: #fff;
-  background-color: #d41111;
+.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
+    color: #fff;
+    background-color: #d41111;
 }
+
+
+/*NAVBAR */
+
+.navbar{
+	position: fixed;
+	z-index: 90;
+	width: 100%;
+}
+
+.logo-max {
+    height: 80px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.logo-navbar-min {
+    height: 38px;
+    margin-left: 0;
+    margin-top: 0px;
+}
+
+@media(min-width:767px) {
+    .logo-max {
+        height: 100px;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    .logo-navbar-min {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media(min-width:920px) {
+    .logo-max {
+        height: 120px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .logo-navbar-min {
+        margin-left: 0;
+    }
+}
+
+@media(min-width:1200px) {
+    .logo-max {
+        height: 140px;
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+}
+
 
 /* styles for modules - check app_vars.py for description */
 
@@ -140,3 +193,36 @@ too_id {
     font-family: "Dosis", sans-serif;
     font-weight: bold;
 }
+
+
+/* Slider. From: https://bl.ocks.org/mbostock/6452972*/
+
+.ticks {
+    font: 10px;
+}
+
+.track, .track-inset, .track-overlay {
+    stroke-linecap: round;
+}
+
+.track {
+    stroke: #aaaaaa;
+    stroke-width: 10px;
+}
+
+.track-inset {
+    stroke: #ddd;
+    stroke-width: 0px;
+}
+
+.track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    cursor: move;
+}
+
+.handle {
+    fill: #141875;
+}
+
+.city.education {}

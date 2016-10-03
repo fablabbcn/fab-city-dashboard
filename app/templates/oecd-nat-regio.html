@@ -105,13 +105,18 @@
                 barc.append("line")
                     .style("stroke", "#b3b3b3")
                     .style("opacity", 0.2)
-                    .attr("x1", zerox + legend_width)
-                    .attr("y1", function(d, i) {
-                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + space_between_bars + space_between_groups + barHeight;
+                    .attr("x1", function(d) {
+                        for (property in d) {
+                            var resilience_value = d[property];
+                        }
+                        return zerox + legend_width + linearScale(resilience_value);
                     })
-                    .attr("x2", zerox + legend_width + linearScale(10))
+                    .attr("y1", function(d, i) {
+                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
+                    })
+                    .attr("x2", zerox + legend_width + width)
                     .attr("y2", function(d, i) {
-                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + space_between_bars + space_between_groups + barHeight;
+                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
                     });
 
                 // The bars: region
@@ -170,7 +175,7 @@
                     })
                     .attr("x", zerox + legend_width + width + zerox)
                     .attr("y", function(d, i) {
-                        return zeroy + barHeight - 2 + i * (space_between_bars + space_between_groups);
+                        return zeroy + i * (space_between_bars + space_between_groups) + barHeight;
                     });
 
                 // The value labels: countries
@@ -184,7 +189,7 @@
                     })
                     .attr("x", zerox + legend_width + width + zerox)
                     .attr("y", function(d, i) {
-                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + space_between_bars + space_between_groups + barHeight + 6;
+                        return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight + 6;
                     });
 
 
@@ -199,7 +204,6 @@
                     .attr("width", function(d) {
                         for (property in d) {
                             var resilience_value = d[property];
-                            console.log(property, d[property]);
                         }
                         return linearScale(resilience_value);
                     })
@@ -215,67 +219,67 @@
 
                 // SVG icons
                 var accessibility_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/accesibility_to_services.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/accesibility_to_services_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     accessibility_icon.node().appendChild(xml.documentElement);
                 });
 
                 var civic_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/civic_engagement.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/civic_engagement_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     civic_icon.node().appendChild(xml.documentElement);
                 });
 
                 var community_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/community.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/community_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     community_icon.node().appendChild(xml.documentElement);
                 });
 
                 var education_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/education.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/education_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     education_icon.node().appendChild(xml.documentElement);
                 });
 
                 var environment_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/environment.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/environment_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     environment_icon.node().appendChild(xml.documentElement);
                 });
 
                 var health_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/health.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/health_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     health_icon.node().appendChild(xml.documentElement);
                 });
 
                 var housing_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/housing.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/housing_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     housing_icon.node().appendChild(xml.documentElement);
                 });
 
                 var income_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/housing.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/housing_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     income_icon.node().appendChild(xml.documentElement);
                 });
 
                 var jobs_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/jobs.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/jobs_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     jobs_icon.node().appendChild(xml.documentElement);
                 });
 
                 var life_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/life_satisfaction.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/life_satisfaction_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     life_icon.node().appendChild(xml.documentElement);
                 });
 
                 var safety_icon = svg.append("g");
-                d3.xml("../static/images/icons/svg/safety.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                d3.xml("../static/images/icons/svg/safety_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                     if (error) throw error;
                     safety_icon.node().appendChild(xml.documentElement);
                 });
@@ -283,30 +287,36 @@
                 // SVG icons transformations
                 var icon_scale = 0.04;
                 var icon_x = legend_width - 20;
-                var icon_y = 5;
+                var icon_y = 5 + barHeight / 2;
 
                 education_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
-                jobs_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" +
+                jobs_icon.attr("transform", "translate (" + icon_x +
+                    ", " + icon_y + ") scale(" +
                     icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
                 income_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
-                icon_y = icon_y + space_between_bars + space_between_groups;
+                icon_y = icon_y +
+                    space_between_bars + space_between_groups;
                 safety_icon.attr(
                     "transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
-                health_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale +
+                health_icon.attr("transform", "translate (" + icon_x + ", " + icon_y +
+                    ") scale(" + icon_scale +
                     ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
                 environment_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
-                icon_y = icon_y + space_between_bars + space_between_groups;
+                icon_y = icon_y + space_between_bars +
+                    space_between_groups;
                 civic_icon.attr("transform",
                     "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
-                accessibility_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                accessibility_icon.attr("transform", "translate (" + icon_x + ", " + icon_y +
+                    ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;
                 housing_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
-                icon_y = icon_y + space_between_bars + space_between_groups;
+                icon_y = icon_y +
+                    space_between_bars + space_between_groups;
                 community_icon.attr("transform", "translate (" +
                     icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                 icon_y = icon_y + space_between_bars + space_between_groups;

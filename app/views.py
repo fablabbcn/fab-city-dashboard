@@ -10,7 +10,11 @@ from werkzeug.routing import Rule
 
 # import global variables for Z2N
 from .scripts.app_vars import title, metas, description, subtitle, version, authors, licenceCC, static_dir, URLroot_
-from .scripts.app_vars import user_profiles, modules_html_dict
+
+# import var dictionaries : user_profiles, regions dicts...
+from .scripts.app_vars import user_profiles, modules_html_dict, geoJSON_dict, root_basemaps
+
+# import local scripts
 from .scripts.app_scripts import *
 
 # gather global names
@@ -60,6 +64,22 @@ def generateTemplate(userProfile):
     return canvas
 
 
+def selectedRegionSpecs(selectedRegion, level):
+
+    print ("selectedRegionSpecs / selectedRegion : ", selectedRegion)
+
+    regionSpecs                 = geoJSON_dict[selectedRegion]
+
+    print ("selectedRegionSpecs / regionSpecs : ", regionSpecs)
+
+    temp_specs                  = regionSpecs
+    temp_specs["js_var"]        = regionSpecs["regions"]
+    temp_specs["geojson_url"]   = root_basemaps +"regions/"+ selectedRegion + "/" + regionSpecs[level] + ".geojson"
+
+    print ("selectedRegionSpecs / temp_specs : ", temp_specs)
+
+    return temp_specs
+
 @app.route('/')
 @app.route('/index')
 def index():
@@ -80,12 +100,17 @@ def user_entry(user_profile, regionSelected):
     user_specs = generateTemplate(user_profile)
     print "user_specs", user_specs
 
+    ### generate template corresponding to user_profile
+    region_specs = selectedRegionSpecs(regionSelected, "regions")
+    #print "region_specs", region_specs
+
     return render_template("user_driven_template.html",
                            index          = True,
                            glob           = global_names,
                            user_profile   = user_profile,     ### settings for user_profile from user_profiles
                            user_specs     = user_specs,       ### description of every row for template
                            regionSelected = regionSelected,
+                           region_specs   = region_specs,
                            mod_incl       = modules_html_dict ### global dict to get corresponding .html modules
                            )
 
@@ -167,6 +192,22 @@ def oecd_test():
 def oecd_nat_regio():
     return render_template(
         "oecd-nat-regio.html",
+        glob=global_names,
+        map_=True,
+        force=False, )
+
+@app.route("/oecd/nat-regio-city")
+def oecd_nat_regio_city():
+    return render_template(
+        "oecd-nat-regio-city.html",
+        glob=global_names,
+        map_=True,
+        force=False, )
+
+@app.route("/oecd/nat-regio-city-slider")
+def oecd_nat_regio_city_slider():
+    return render_template(
+        "oecd-nat-regio-city-slider.html",
         glob=global_names,
         map_=True,
         force=False, )

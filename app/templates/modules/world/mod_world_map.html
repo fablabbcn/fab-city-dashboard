@@ -75,14 +75,15 @@
 	
 	
 	<!-- GEOJSONS MARKERS // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection  / ex: selection = "world"   --> 
-	<script src="{{ url_for('static', filename='data_custom/geojson_labs/FablabsIO_fablabs.geojson') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='data_custom/geojson_labs/FablabsIO_fablabs.geojson') }}" type="text/javascript"></script> 
 	<script src="{{ url_for('static', filename='data_custom/geojson_labs/Makery_fablabs.json') }}" type="text/javascript"></script>
 
 	
 	
 	<!-- GEOJSONS BASEMAP // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection / ex: selection = "world"  --> 	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/all_countries.geojson') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/World/all_countries.geojson') }}" type="text/javascript"></script>
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/us-states.js') }}" type="text/javascript"></script>-->
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/ESP/ESP_admin_level_4.geojson') }}" type="text/javascript"></script>
 	
 	
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUS_MAs_2016.geojson') }}" type="text/javascript"></script>-->
@@ -95,10 +96,16 @@
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/CZE_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/DEU_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/DNK_MAs_2016.geojson') }}" type="text/javascript"></script>-->
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/ESP_MAs_2016.geojson') }}" type="text/javascript"></script>	
+	
+	<!-- ESP_MAs_2016.geojson -->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/ESP_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/EST_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/FIN_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/FRA_MAs_2016.geojson') }}" type="text/javascript"></script>	
+	
+	<!-- FRA_MAs_2016.geojson -->
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/FRA_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
+	
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/GBR_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/GRC_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/HUN_MAs_2016.geojson') }}" type="text/javascript"></script>	-->
@@ -131,7 +138,13 @@
 		//									}
 		//						 )
 		
-
+		// FIND GEOBOX/CENTER/ZOOM settings from setViews.js
+		var regionSelected = "{{ regionSelected }}";
+		var userProfile    = "{{ user_profile }}"  ;
+		
+		
+		
+		
 		
 		// CREATE EMPTY LAYER
 		//var empty_layer    = new L.layerGroup();
@@ -157,8 +170,7 @@
 		var streets    = L.tileLayer(mbUrl, {id: 'mapbox.streets', attribution: mbAttr});
 
 		
-		// FIND GEOBOX/CENTER/ZOOM settings from setViews.js
-		var regionSelected = "{{ regionSelected }}";
+
 
 		function setMapView(placeName){
 			//console.log("setMapView/placeName : ", placeName);
@@ -405,8 +417,19 @@
 		// SERVE REGIONS ///////////////////////////////////////////////////////////////////////////////////
 		
 		// ALL COUNTRIES SERVED -- all_countries_updated , all_countries
-		addBasemap(all_countries_updated, countries_layer, true);
+		//addBasemap(all_countries_updated, countries_layer, true);
+		addBasemap(ESP_admin_level_4, countries_layer, true);
+		//addBasemap(FRA_admin_level_4, countries_layer, true);
+		//addBasemap(PRT_admin_level_4, countries_layer, true);
+		//addBasemap(ITA_admin_level_4, countries_layer, true);
+		//
+		//addBasemap(DEU_admin_level_4, countries_layer, true);
+		//addBasemap(DNK_admin_level_4, countries_layer, true);
+		//addBasemap(NLD_admin_level_4, countries_layer, true);
 		
+		// CHOOSE REGION AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
+
+
 		
 		// CHOOSE METROPOLITAN AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
 		//addBasemap(AUS_MAs_2016, met_areas_layer, false);

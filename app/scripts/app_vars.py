@@ -152,40 +152,111 @@ user_profiles = {
                                     ] },
                       ],
 
+   ### CARTO-USER TYPOLOGY ##################
+    "introApp"    : [
+                        { "200px" : [ {"inf_in": 12 }  ]      }, 
+                        { "100px" : [ {"con_re": 12 }  ]      }, 
+                        { "500px" : [ {"wor_ma": 12 }  ]      }, 
+                      ],
+
+
 
 } ### end user_profiles dict
 
-### code names for metropolitan areas and the corresponding geojson name
-metrop_areas_names = {
-    "AUS" : "AUS_MAs_2016",
-    "AUT" : "AUT_MAs_2016",
-    "BEL" : "BEL_MAs_2016",
-    "CAN" : "CAN_MAs_2016",
-    "CHE" : "CHE_MAs_2016",
-    "CHL" : "CHL_MAs_2016",
-    "COL" : "COL_MAs_2016",
-    "CZE" : "CZE_MAs_2016",
-    "DEU" : "DEU_MAs_2016",
-    "DNK" : "DNK_MAs_2016",
-    "ESP" : "ESP_MAs_2016",
-    "EST" : "EST_MAs_2016",
-    "FIN" : "FIN_MAs_2016",
-    "FRA" : "FRA_MAs_2016",
-    "GBR" : "GBR_MAs_2016",
-    "GRC" : "GRC_MAs_2016",
-    "HUN" : "HUN_MAs_2016",
-    "IRL" : "IRL_MAs_2016",
-    "ITA" : "ITA_MAs_2016",
-    "JPN" : "JPN_MAs_2016",
-    "KOR" : "KOR_MAs_2016",
-    "LUX" : "LUX_FUAs_2016",
-    "MEX" : "MEX_MAs_2016",
-    "NLD" : "NLD_MAs_2016",
-    "NOR" : "NOR_MAs_2016",
-    "POL" : "POL_MAs_2016",
-    "PRT" : "PRT_MAs_2016",
-    "SVK" : "SVK_MAs_2016",
-    "SVN" : "SVN_MAs_2016",
-    "SWE" : "SWE_MAs_2016",
-    "USA" : "USA_MAs_2016",
+
+########################################################################
+### GEOJSON ROUTING  // code names for corresponding .geojson file name
+
+root_basemaps = "/data_custom/geojson_basemaps/" 
+
+geoJSON_dict = {
+    ### "regions" - "metropolitan_areas_OECD" == folders name in /data_custom/geojson_basemaps
+    ### "country": "AUS", "regions" : "xxx" == filename of the .geojson file
+
+    ########################################################################
+  
+        "World" :           {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "Europe":           {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "USA"   :           {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},  
+        "CentralAmerica" :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},  
+        "SouthAmerica"   :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "MiddleEast"     :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "Asia"           :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "Africa"         :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "Oceania"   : {         "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""}, 
+    
+    ########################################################################
+    
+    "AUS"   : { "country": "AUS", "regions" : "AUS_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "AUS_MAs_2016"},
+    "AUT"   : {     "country": "AUT", "regions" : "AUT_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "AUT_MAs_2016"},
+        "BEL"   : { "country": "BEL", "regions" : "BEL_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "BEL_MAs_2016"},
+    "CAN"   : { "country": "CAN", "regions" : "CAN_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "CAN_MAs_2016"},
+    "CHE"   : { "country": "CHE", "regions" : "CHE_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "CHE_MAs_2016"},
+    "CHL"   : { "country": "CHL", "regions" : "CHL_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "CHL_MAs_2016"},
+    "COL"   : { "country": "COL", "regions" : "COL_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "COL_MAs_2016"},
+    "CZE"   : { "country": "CZE", "regions" : "CZE_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "CZE_MAs_2016"},
+        "DEU"   : { "country": "DEU", "regions" : "DEU_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "DEU_MAs_2016"},
+        "DNK"   : { "country": "DNK", "regions" : "DNK_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "DNK_MAs_2016"},
+        "ESP"   : { "country": "ESP", "regions" : "ESP_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "ESP_MAs_2016"},
+    "EST"   : { "country": "EST", "regions" : "EST_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "EST_MAs_2016"},
+        "FIN"   : { "country": "FIN", "regions" : "FIN_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "FIN_MAs_2016"},
+        "FRA"   : { "country": "FRA", "regions" : "FRA_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "FRA_MAs_2016"},
+        "GBR"   : { "country": "GBR", "regions" : "GBR_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "GBR_MAs_2016"},
+    "GRC"   : { "country": "GRC", "regions" : "GRC_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "GRC_MAs_2016"},
+    "HUN"   : { "country": "HUN", "regions" : "HUN_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "HUN_MAs_2016"},
+    "IRL"   : { "country": "IRL", "regions" : "IRL_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "IRL_MAs_2016"},
+        "ITA"   : { "country": "ITA", "regions" : "ITA_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "ITA_MAs_2016"},
+    "JPN"   : { "country": "JPN", "regions" : "JPN_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "JPN_MAs_2016"},
+    "KOR"   : { "country": "KOR", "regions" : "KOR_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "KOR_MAs_2016"},
+    "LUX"   : { "country": "LUX", "regions" : "LUX_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "LUX_FUAs_2016"},
+    "MEX"   : { "country": "MEx", "regions" : "MEX_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "MEX_MAs_2016"},
+        "NLD"   : { "country": "NLD", "regions" : "NLD_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "NLD_MAs_2016"}, ## Netherlands
+        "NOR"   : { "country": "NOR", "regions" : "NOR_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "NOR_MAs_2016"},
+    "POL"   : { "country": "POL", "regions" : "POL_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "POL_MAs_2016"},
+        "PRT"   : { "country": "PRT", "regions" : "PRT_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "PRT_MAs_2016"},
+    "SVK"   : { "country": "SVK", "regions" : "SVK_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "SVK_MAs_2016"},
+    "SVN"   : { "country": "SVN", "regions" : "SVN_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "SVN_MAs_2016"},
+    "SWE"   : { "country": "SWE", "regions" : "SWE_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "SWE_MAs_2016"},
+        "USA"   : { "country": "USA", "regions" : "USA_admin_level_4" ,
+                    "metropolitan_areas_OECD" : "USA_MAs_2016"},
 }
+
