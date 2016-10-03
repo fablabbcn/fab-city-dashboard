@@ -64,13 +64,21 @@ def generateTemplate(userProfile):
     return canvas
 
 
-def selectedRegionSpecs(selectedRegion):
+def selectedRegionSpecs(selectedRegion, level):
     
-    regionSpecs                = geoJSON_dict[selectedRegion]
-    regionSpecs["js_var"]      = regionSpecs[""]
-    regionSpecs["geojson_url"] = root_basemaps +"regions/"+ regionSpecs[""] + ".geojson"
+    print ("selectedRegionSpecs / selectedRegion : ", selectedRegion)
     
-    return regionSpecs
+    regionSpecs                 = geoJSON_dict[selectedRegion]
+    
+    print ("selectedRegionSpecs / regionSpecs : ", regionSpecs)
+    
+    temp_specs                  = regionSpecs
+    temp_specs["js_var"]        = regionSpecs["regions"]
+    temp_specs["geojson_url"]   = root_basemaps +"regions/"+ selectedRegion + "/" + regionSpecs[level] + ".geojson"
+    
+    print ("selectedRegionSpecs / temp_specs : ", temp_specs)
+    
+    return temp_specs
 
 @app.route('/')
 @app.route('/index')
@@ -92,12 +100,17 @@ def user_entry(user_profile, regionSelected):
     user_specs = generateTemplate(user_profile)
     print "user_specs", user_specs
 
+    ### generate template corresponding to user_profile
+    region_specs = selectedRegionSpecs(regionSelected, "regions")
+    #print "region_specs", region_specs
+
     return render_template("user_driven_template.html",
                            index          = True,
                            glob           = global_names,
                            user_profile   = user_profile,     ### settings for user_profile from user_profiles
                            user_specs     = user_specs,       ### description of every row for template
                            regionSelected = regionSelected,
+                           region_specs   = region_specs,
                            mod_incl       = modules_html_dict ### global dict to get corresponding .html modules
                            )
 
