@@ -249,8 +249,14 @@
                         return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight + 6 + barHeight;
                     });
 
-                // The bars: country
+                // The bars: city
                 barci.append("rect")
+                    .attr("class", function(d) {
+                        for (property in d) {
+                            var the_class = property;
+                        }
+                        return "city " + property.toLowerCase();
+                    })
                     .attr("x", zerox + legend_width)
                     .attr("y", function(d, i) {
                         return zeroy + i * (space_between_bars + space_between_groups);
@@ -409,7 +415,7 @@
 
                 var slider = svg.append("g")
                     .attr("class", "slider")
-                    .attr("transform", "translate(100, 700)");
+                    .attr("transform", "translate(100, 600)");
 
                 slider.append("line")
                     .attr("class", "track")
@@ -454,7 +460,7 @@
 
                 function hue(h) {
                     handle.attr("x", x(h));
-                    svg.style("background-color", d3.hsl(h, 0.8, 0.8));
+                    d3.select(".city.education").attr("fill", d3.hsl(h, 0.8, 0.8));
                 }
 
             }
