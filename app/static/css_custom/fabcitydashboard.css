@@ -6,128 +6,93 @@ h1, h2, h3, h4, h5, h6, nav {
     font-family: "Montserrat", sans-serif;
 }
 
+
 /* styles for modules - check app_vars.py for description */
+
+
 /* lab_ma == labs + map ... lab_if == labs + infos ... _id == indicators ... _pr == projects ... _da == dashboard */
-lab_ma{
-    
-}
-lab_if{
-    
-}
-lab_id{
-    
-}
-lab_pr{
-    
-}
-lab_da{
-    
-}
 
-cit_ma{
-    
-}
-cit_if{
-    
-}
-cit_id{
-    
-}
-cit_pr{
-    
-}
-cit_da {
-    
-}         
+lab_ma {}
 
-reg_ma{
-    
-}
-reg_if{
-    
-}          
-reg_id{
-    
-}
-reg_pr{
-    
-}
-reg_da{
-    
-}
+lab_if {}
 
-cou_ma{
-    
-}           
-cou_if{
-    
-}          
-cou_id{
-    
-}     
-cou_pr{
-    
-}        
-cou_da{
-    
-}
+lab_id {}
 
-wor_ma{
-    
-}          
-wor_if{
-    
-}           
-wor_id{
-    
-}      
-wor_pr{
-    
-}
-wor_da{
-    
-}
+lab_pr {}
 
-con_re{
-    
-}
-con_an{
-    
-}
-con_fa{
-    
-}
+lab_da {}
 
-inf_ab{
-    
-}
-inf_co{
-    
-}
-inf_in{
-    
-}
-inf_pa{
-    
-}
+cit_ma {}
 
-too_da{
-    
-}
-too_pl{
-    margin-top: 10px; /* not working yet */
+cit_if {}
 
-}
-too_id{
+cit_id {}
+
+cit_pr {}
+
+cit_da {}
+
+reg_ma {}
+
+reg_if {}
+
+reg_id {}
+
+reg_pr {}
+
+reg_da {}
+
+cou_ma {}
+
+cou_if {}
+
+cou_id {}
+
+cou_pr {}
+
+cou_da {}
+
+wor_ma {}
+
+wor_if {}
+
+wor_id {}
+
+wor_pr {}
+
+wor_da {}
+
+con_re {}
+
+con_an {}
+
+con_fa {}
+
+inf_ab {}
+
+inf_co {}
+
+inf_in {}
+
+inf_pa {}
+
+too_da {}
+
+too_pl {
     margin-top: 10px;
-
+    /* not working yet */
 }
+
+too_id {
+    margin-top: 10px;
+}
+
 
 /* svg_oecd // if this style is not specific it affects the map (dephase by 10px from top for instance */
-svg_oecd {
+
+#region_resilience {
     margin-top: 10px;
     margin-bottom: 30px;
     font-family: "Dosis", sans-serif;
     font-weight: bold;
 }
-
