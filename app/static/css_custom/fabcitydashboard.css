@@ -132,81 +132,84 @@ p.descriptions {
 
 /* lab_ma == labs + map ... lab_if == labs + infos ... _id == indicators ... _pr == projects ... _da == dashboard */
 
-lab_ma {}
+.lab_ma {}
 
-lab_if {}
+.lab_if {}
 
-lab_id {}
+.lab_id {}
 
-lab_pr {}
+.lab_pr {}
 
-lab_da {}
+.lab_da {}
 
-cit_ma {}
+.cit_ma {}
 
-cit_if {}
+.cit_if {}
 
-cit_id {}
+.cit_id {}
 
-cit_pr {}
+.cit_pr {}
 
-cit_da {}
+.cit_da {}
 
-reg_ma {}
+.reg_ma {}
 
-reg_if {}
+.reg_if {}
 
-reg_id {}
+.reg_id {}
 
-reg_pr {}
+.reg_pr {}
 
-reg_da {}
+.reg_da {}
 
-cou_ma {}
+.cou_ma {}
 
-cou_if {}
+.cou_if {}
 
-cou_id {}
+.cou_id {}
 
-cou_pr {}
+.cou_pr {}
 
-cou_da {}
+.cou_da {}
 
-wor_ma {}
+.wor_ma {}
 
-wor_if {}
+.wor_if {}
 
-wor_id {}
+.wor_id {}
 
-wor_pr {}
+.wor_pr {}
 
-wor_da {}
+.wor_da {}
 
-con_re {}
+.con_re {}
 
-con_an {}
+.con_an {}
 
-con_fa {}
+.con_fa {}
 
-inf_ab {}
+.inf_ab {}
 
-inf_co {
+.inf_co {
 	background-color: #222;
-	
+	background-image: url( "{{ url_for('static', filename='images/backgrounds/map-image.png') }} ") ;
+	background-repeat: no-repeat;
+	background-position: center center fixed;
 }
 
-inf_in {}
 
-inf_pa {}
+.inf_in {}
 
-too_da {}
+.inf_pa {}
 
-too_pl {
+.too_da {}
+
+.too_pl {
     margin-top: 10px;
     /* not working yet */
 }
 
-too_id {
+.too_id {
     margin-top: 10px;
 }
 
