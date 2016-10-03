@@ -14,11 +14,11 @@
 
     <!-- JQUERY -->
     <script src={{ url_for( 'static', filename='bower_components/jquery/dist/jquery.min.js' ) }}></script>
-	<!--<script 					   src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>-->
-	<!--<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>-->
-	<!--<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>-->
-    
-	<!-- BOOTSTRAP -->
+    <!--<script 					   src="http://code.jquery.com/jquery-1.11.1.min.js"> </script>-->
+    <!--<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> </script>-->
+    <!--<script type='text/javascript' src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"> </script>-->
+
+    <!-- BOOTSTRAP -->
     <link href={{ url_for( 'static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css' ) }} rel="stylesheet" media="screen">
     <!--<link href={{ url_for( 'static', filename='bower_components/bootstrap/dist/css/bootstrap-theme.min.css' ) }} rel="stylesheet" media="screen">-->
     <script src={{ url_for( 'static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js' ) }}></script>
@@ -43,7 +43,8 @@
 
     <!-- The dashboard css -->
     <link href={{ url_for( 'static', filename='css_custom/fabcitydashboard.css' ) }} rel="stylesheet" media="screen">
-
+    <!--<link href="http://fab.city/style.css" rel="stylesheet" media="screen" />
+-->
 
     <!-- STYLES -->
     <style>
@@ -98,8 +99,7 @@
 
 <!--  bootstrap callings  -->
 <script type="text/javascript">
-    
-		// activate bootstrap dropdown and carousel
+    // activate bootstrap dropdown and carousel
     $(document).ready(function() {
         $(".dropdown-toggle").dropdown()
     });
@@ -108,7 +108,6 @@
             interval: 7000
         });
     });
-	
 </script>
 
 </html>

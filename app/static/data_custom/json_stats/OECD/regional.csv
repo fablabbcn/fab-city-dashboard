@@ -1,4 +1,4 @@
-Country,Region,Region Code,Education,Jobs,Income,Safety,Health,Environment,Civic engagement,Accessibility to services,Housing,Community,Life satisfaction
+Country,Region,Region Code,Education,Jobs,Income,Safety,Health,Environment,Civic engagement,Accessiblity to services,Housing,Community,Life satisfaction
 Australia,New South Wales,AU1,8,8.1,6.8,8.8,9,9.8,10,7.2,7.2,8.9,7.8
 Australia,Victoria,AU2,8.1,7.9,5.9,9.5,9.5,8.6,10,7.5,7.8,9.3,8.5
 Australia,Queensland,AU3,7.8,8.1,6.3,9.5,8.3,9.9,10,7.7,8.3,8.6,8.1
@@ -29,9 +29,9 @@ Canada,Manitoba,CA46,8.7,7.5,4.8,3.6,5.9,6.9,5.2,8.2,7.8,9.5,9.3
 Canada,Saskatchewan,CA47,8.9,8.3,5.8,6.2,5.5,6.5,6,8.1,9.4,7.1,8.5
 Canada,Alberta,CA48,9.1,8.6,7.3,7.1,7.8,7.4,5.3,9.1,8.9,7.9,8.5
 Canada,British Columbia,CA59,9.6,6.9,5.6,8.1,9.1,8.1,5.6,9.4,8.3,9.8,9.3
-Canada,Yukon,CA60,..,8.4,7.4,10,2.9,9.4,6.9,8.2,8.3,..,..
-Canada,Northwest Territories,CA61,..,7,7.4,0,4.2,9.7,4.2,8,5,..,..
-Canada,Nunavut,CA62,..,3.1,5.5,0,0,10,3.6,5.8,2.2,..,..
+Canada,Yukon,CA60,0,8.4,7.4,10,2.9,9.4,6.9,8.2,8.3,0,0
+Canada,Northwest Territories,CA61,0,7,7.4,0,4.2,9.7,4.2,8,5,0,0
+Canada,Nunavut,CA62,0,3.1,5.5,0,0,10,3.6,5.8,2.2,0,0
 Chile,Tarapacá,CL01,8.4,7.4,0.9,7.8,4.2,4.7,0,1.9,1.1,4.1,5.6
 Chile,Antofagasta,CL02,9.1,6.3,1.4,6.2,3.6,2.6,0,4.2,1.1,6.3,7
 Chile,Atacama,CL03,7.5,6.2,1,10,4.4,5.3,0,1,1.7,6.6,1.9
@@ -45,8 +45,8 @@ Chile,Los Lagos,CL10,6.2,8.3,0.7,4.1,3.8,10,0,0,2.2,6.1,5.6
 Chile,Aysén,CL11,6.2,8.8,1.4,1.2,1.5,10,0,0,1.7,0,10
 Chile,Magallanes y Antártica,CL12,8.5,7.9,1.5,2.2,2.1,10,0,1.2,2.8,1.1,8.1
 Chile,Santiago Metropolitan,CL13,8.3,6.6,1.5,4.8,4.3,7.7,0.7,3.6,1.7,5.8,6.3
-Chile,Los Rios,CL14,6.2,6.7,0.6,5.5,2.7,9.5,0.7,0,..,6.4,2.6
-Chile,Arica y Parinacota,CL15,8.2,4.3,0.7,5.2,4.7,6.9,0,3.5,..,6.7,4.8
+Chile,Los Rios,CL14,6.2,6.7,0.6,5.5,2.7,9.5,0.7,0,0,6.4,2.6
+Chile,Arica y Parinacota,CL15,8.2,4.3,0.7,5.2,4.7,6.9,0,3.5,0,6.7,4.8
 Czech Republic,Prague,CZ01,10,9.3,3.5,7.2,5.4,0.8,4.1,9.1,2.2,7.6,6.3
 Czech Republic,Central Bohemian Region,CZ02,10,8.1,2.8,7.9,2.7,2.1,3.5,7.5,2.8,2.7,4.1
 Czech Republic,Southwest,CZ03,10,7.9,2.4,9.5,3.1,3,3,7.2,3.3,6,4.8
@@ -69,7 +69,7 @@ Finland,Western Finland,FI19,8.8,6.9,4,9.7,7.5,8.2,5.1,9.1,5.6,9,8.9
 Finland,Helsinki-Uusimaa,FI1B,8.8,7.8,4.9,9.8,7.7,6.8,6.4,9.9,5,8.8,8.9
 Finland,Southern Finland,FI1C,8.7,6.4,4.1,9.8,6.7,7.5,5.3,9.1,5.6,8.8,8.9
 Finland,Eastern and Northern Finland,FI1D,9,6.1,3.8,9.3,6.4,8.6,4,8.8,5.6,8.8,8.9
-Finland,Åland,FI20,7.4,9.8,5,10,8.3,8.8,2.1,5.7,7.2,..,..
+Finland,Åland,FI20,7.4,9.8,5,10,8.3,8.8,2.1,5.7,7.2,0,0
 France,Île-de-France,FR10,7.8,6,6.3,8.6,10,3.5,7.4,8.6,3.3,7.9,5.6
 France,Champagne-Ardenne,FR21,7,5,4.7,9.7,7.4,3.8,7.8,7.4,5.6,5.4,5.2
 France,Picardy,FR22,6.6,4.8,4.8,9,6.5,3.7,8.1,7.5,5,7.3,5.6
