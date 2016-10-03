@@ -24,20 +24,24 @@
 
 
 <div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button"
+					class="btn btn-default dropdown-toggle selector"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false">
     choose a region <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    <li><a tag="changeRegion" name="World" 						>World</a></li>
+    <li><a class="changeRegion" role="button" id="World" 						>World</a></li>
     <li role="separator" class="divider"></li>
-    <li><a tag="changeRegion" name="Europe" 					>Europe</a></li>
-    <li><a tag="changeRegion" name="USA"    					>USA</a></li>
-    <li><a tag="changeRegion" name="CentralAmerica" 	>Central America</a></li>
-    <li><a tag="changeRegion" name="SouthAmerica" 		>South America</a></li>
-    <li><a tag="changeRegion" name="MiddleEast" 			>Middle East</a></li>
-    <li><a tag="changeRegion" name="Asia" 						>Asia</a></li>
-    <li><a tag="changeRegion" name="Africa" 					>Africa</a></li>
-    <li><a tag="changeRegion" name="Oceania" 					>Oceania</a></li>
+    <li><a class="changeRegion" role="button" id="Europe" 					>Europe</a></li>
+    <li><a class="changeRegion" role="button" id="USA"    					>USA</a></li>
+    <li><a class="changeRegion" role="button" id="CentralAmerica" 	>Central America</a></li>
+    <li><a class="changeRegion" role="button" id="SouthAmerica" 		>South America</a></li>
+    <li><a class="changeRegion" role="button" id="MiddleEast" 			>Middle East</a></li>
+    <li><a class="changeRegion" role="button" id="Asia" 						>Asia</a></li>
+    <li><a class="changeRegion" role="button" id="Africa" 					>Africa</a></li>
+    <li><a class="changeRegion" role="button" id="Oceania" 					>Oceania</a></li>
   </ul>
 </div>
 
@@ -47,35 +51,39 @@
     choose a country <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    <li><a id="changeRegion" name="ESP" 			>Spain</a></li>
-    <li><a id="changeRegion" name="FRA" 			>France</a></li>
-    <li><a id="changeRegion" name="DEU" 			>Germany</a></li>
+    <li><a class="changeRegion" id="ESP" 			>Spain</a></li>
+    <li><a class="changeRegion" id="FRA" 			>France</a></li>
+    <li><a class="changeRegion" id="DEU" 			>Germany</a></li>
+    <li><a class="changeRegion" id="BEL" 			>Belgique</a></li>
+    <li><a class="changeRegion" id="..." 			>...</a></li>
 
   </ul>
 </div>
 
 
 
-<script>
-  
-  var user_profile = "{{ user_profile }}";
-  
-  ////////// onClick get div id and GET corresponding URL ////// NOT WORKING YET
-  // region_id refers to index in app_vars.py
-  function changeRegion(region_id) {
+<script type="text/javascript">
+	
+	var user_profile = "{{ user_profile }}";
+	
+	////////// onClick get div id and GET corresponding URL ////// NOT WORKING YET
+	// region_id refers to index in app_vars.py
+	function changeRegion(region_id) {
 	// create a url adress as a string corresponding to user_profile and selected region ID
 	var URL_adress = "/user/"+ user_profile + "/" + region_id ;
 	// load url in navigator
 	window.location = URL_adress;
-  }
-  
-  //$('#changeRegion').click(function(){ changeRegion(this.name); return console.log("error"); });
-
-	var chgRegion_butts = document.getElementsByTagName("changeRegion");
+	};
 	
-	for (var i=0; i<chgRegion_butts.length; i++){
-		var chgRg_butt = chgRegion_butts[i] ;
-		chgRg_butt.addEventListener('click', changeRegion(this.tag), false );
-	}
-  
+		
+	$(document).ready(function() {
+		
+		//console.log(user_profile);
+		
+		d3.selectAll('.changeRegion')
+      .attr("onclick", "changeRegion(this.id)");
+		
+	
+	});
+	
 </script>

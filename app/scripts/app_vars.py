@@ -146,7 +146,7 @@ user_profiles = {
         
     ### CARTO-USER TYPOLOGY ##################
     "carto"       : [
-                        { "500px" : [ {"wor_ma": 12 }  ]      }, 
+                        { "520px" : [ {"wor_ma": 12 }  ]      }, 
                         { "50px" : [   {"too_pl" : 6 },
                                         {"too_id": 6 }
                                     ] },

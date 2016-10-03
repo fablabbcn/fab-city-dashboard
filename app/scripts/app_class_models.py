@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
 
+### UNFINISHED 
+### sketch for function dealing with geojsons datas 
 import json
 from .geoboxes import geoboxes_cities, geoboxes_countries, geoboxes_regions
 
