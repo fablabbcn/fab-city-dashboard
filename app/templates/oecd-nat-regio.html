@@ -100,8 +100,6 @@
                         return zeroy + i * space_between_bars + 6;
                     });
 
-                console.log("REGION", region_array);
-                console.log("COUNTRY", country_array);
                 // Scale line: country
                 barc.append("line")
                     .style("stroke", "#b3b3b3")
@@ -136,8 +134,6 @@
                         }
                         return the_color;
                     });
-
-
 
                 // The legend labels: region
                 barr.append("text")
@@ -177,13 +173,13 @@
                     });
 
                 // The value labels: countries
-                barr.append("text")
+                barc.append("text")
                     .style("opacity", 0.2)
                     .text(function(d) {
                         for (property in d) {
                             var label_value = d[property];
                         }
-                        return label_value + "/10";
+                        return Math.round(label_value * 10) / 10 + "/10";
                     })
                     .attr("x", zerox + legend_width + width + zerox)
                     .attr("y", function(d, i) {
