@@ -35,6 +35,15 @@
 </style>
 
 
+<div>
+		TEST DYNAMIC REGIONS CALLING + CORRESPONDING GEOJSON <br>
+		
+		<!--region_specs == {{ region_specs }} <br>-->
+		GEOJSON_file_url = "{{ region_specs['geojson_url'] }}" <br>
+		GEOJSON_js_var   = "{{ region_specs['js_var'] }}"
+
+</div>
+
 <div class="map">
 		
 	<!-- LEAFLET + D3 : http://bl.ocks.org/d3noob/9267535 -->
@@ -42,6 +51,22 @@
 	<!-- D3.JS V4-->
 	<!--<script type="text/javascript" src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>-->
 	<!---->
+	
+	<!-- GEOJSON FILES SETTINGS -->
+	<script type="text/javascript">
+		
+		//region_specs == {		'regions': 'all_countries',
+		//										'country': '',
+		//										'metropolitan_areas_OECD': '',
+		//										'geojson_url': u'/data_custom/geojson_basemaps/regions/World/all_countries.geojson',
+		//										'js_var': 'all_countries'
+		//								}
+
+		var GEOJSON_file_url = "{{ region_specs['geojson_url'] }}" ;
+		var GEOJSON_js_var   = "{{ region_specs['js_var'] }}"      ;
+		
+		
+	</script>
 	
 	
 	<!-- LEAFLET -->
