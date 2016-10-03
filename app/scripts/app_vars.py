@@ -163,13 +163,39 @@ user_profiles = {
 
 } ### end user_profiles dict
 
-### code names for corresponding .geojson file name
+
+########################################################################
+### GEOJSON ROUTING  // code names for corresponding .geojson file name
+
 root_basemaps = "/data_custom/geojson_basemaps/" 
+
 geoJSON_dict = {
     ### "regions" - "metropolitan_areas_OECD" == folders name in /data_custom/geojson_basemaps
     ### "country": "AUS", "regions" : "xxx" == filename of the .geojson file
-        "World" : { "country": "", "regions" : "all_countries",
-                    "metropolitan_areas_OECD" : ""},
+
+    ########################################################################
+  
+        "World" :           {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "Europe":           {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "USA"   :           {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},  
+        "CentralAmerica" :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},  
+        "SouthAmerica"   :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "MiddleEast"     :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "Asia"           :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "Africa"         :  {   "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""},
+        "Oceania"   : {         "country": "", "regions" : "all_countries",
+                                "metropolitan_areas_OECD" : ""}, 
+    
+    ########################################################################
+    
     "AUS"   : { "country": "AUS", "regions" : "AUS_admin_level_4" ,
                     "metropolitan_areas_OECD" : "AUS_MAs_2016"},
     "AUT"   : {     "country": "AUT", "regions" : "AUT_admin_level_4" ,
