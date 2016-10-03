@@ -1,105 +1,123 @@
 <nav class="navbar navbar-default">
-
-    <div class="container-fluid">
-
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	
+	<div class="container-fluid">
+	  
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+		<button type="button"
+				class="navbar-toggle collapsed"
+				data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
 		  <span class="sr-only">Toggle navigation</span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-            <a class="navbar-brand" href="/">Fab City Dashboard - v.0.1</a>
-        </div>
+		<a class="navbar-brand" href="/">Fabcity dashboard - v.0.1</a>
+	  </div>
+  
+  
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		
+		<ul class="nav navbar-nav">
+		  
+		  
+		  <li class="dropdown active">
+			<a href="#"
+			   class="dropdown-toggle"
+			   data-toggle="dropdown"
+			   role="button"
+			   aria-haspopup="true"
+			   aria-expanded="false">
+				Who are you ? <span class="caret"></span></a> <!-- user profiles-->
+			
+			<ul class="dropdown-menu">
 
+			  <li><a href="/user/only_infos/World"	  >Only infos</a></li>
+			  <li><a href="/user/only_dashboard/World">Global dashboard</a></li>
+			  
+			  <li role="separator" class="divider"></li>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <li><a href="/user/analytic/World"	>User - analytic</a></li>
+			  <li><a href="/user/citizen/World" 	>User - citizen</a></li>
+			  <li><a href="/user/civic_leader/World">User - civic_leader</a></li>
+			  <li><a href="/user/maker/World"		>User - maker</a></li>
+			  <li><a href="/user/fab_manager/World"	>User - fab manager</a></li>
+			  
+			  <li role="separator" class="divider"></li>
+			  
+			  <li><a href="/user/carto/World"			>Geo - World</a></li>
+			  <!--<li><a href="/user/region"		>Geo - region</a></li>-->
+			  <!--<li><a href="/user/city"			>Geo - city</a></li>-->
+			  <!--<li><a href="/user/fab_lab"		>Geo - fablab</a></li>-->
+			  
 
-            <ul class="nav navbar-nav">
-
-
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-				Who are you ? <span class="caret"></span></a>
-                    <!-- user profiles-->
-                    <ul class="dropdown-menu">
-
-                        <li><a href="/user/only_infos">only infos</a></li>
-                        <li><a href="/user/only_dashboard">global dashboard</a></li>
-
-                        <li role="separator" class="divider"></li>
-
-                        <li><a href="/user/analytic">User - analytic</a></li>
-                        <li><a href="/user/citizen">User - citizen</a></li>
-                        <li><a href="/user/civic_leader">User - civic_leader</a></li>
-                        <li><a href="/user/maker">User - maker</a></li>
-                        <li><a href="/user/fab_manager">User - fab manager</a></li>
-
-                        <li role="separator" class="divider"></li>
-
-                        <li><a href="/user/world">Geo - world</a></li>
-                        <!--<li><a href="/user/region"		>Geo - region</a></li>-->
-                        <!--<li><a href="/user/city"			>Geo - city</a></li>-->
-                        <!--<li><a href="/user/fab_lab"		>Geo - fablab</a></li>-->
-
-
-
-                    </ul>
-
-                </li>
-
-
-                <!--<li >
+			
+			</ul>
+		  
+		  </li>
+		  
+		  
+		  <!--<li >
 			<a href="/test_leaflet/algo">Leaflet map</a>
 		  </li>
-
+		  
 		  <li >
 			<a href="/test_d3leaflet/algo">Leaflet + D3</a>
 		  </li>-->
-
-                <li>
-                    <a href="/test_blank">blank_test</a>
-                </li>
-
-                <li>
-                    <a href="/oecd/test">OECD_test</a>
-                </li>
-
-            </ul>
-
-
-
-            <!--<form class="navbar-form navbar-left">
+		  
+		  <li >
+			<a href="/test_blank">blank_test</a>
+		  </li>
+		  
+		  <li >
+			<a href="/oecd/test">OECD_test</a>
+		  </li>
+		  
+		</ul>
+		
+		
+		
+		<!--<form class="navbar-form navbar-left">
 		  <div class="form-group">
 			<input type="text" class="form-control" placeholder="Search">
 		  </div>
 		  <button type="submit" class="btn btn-default">Submit</button>
 		</form>-->
-
-            <ul class="nav navbar-nav navbar-right">
-
-                <li><a href="#">Login</a></li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		
+		<ul class="nav navbar-nav navbar-right">
+		  
+		  <li><a href="#">Login</a></li>
+		  
+		  <li>
+			<a type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+			demo modal
+			</a>
+		  
+		  
+		  <li class="dropdown">
+			<a href="#"
+			   class="dropdown-toggle"
+			   data-toggle="dropdown"
+			   role="button"
+			   aria-haspopup="true"
+			   aria-expanded="false">
 				About
 				<span class="caret"></span>
 			</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Credits</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
+			<ul class="dropdown-menu">
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">Credits</a></li>
+			  <li><a href="#">Contact</a></li>
+			  <li role="separator" class="divider"></li>
+			  <li><a href="#">Separated link</a></li>
+			</ul>
+		  </li>
+		
+		</ul>
+		
+	  </div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+  </nav>
