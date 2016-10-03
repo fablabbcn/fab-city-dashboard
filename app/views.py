@@ -10,7 +10,11 @@ from werkzeug.routing import Rule
 
 # import global variables for Z2N
 from .scripts.app_vars import title, metas, description, subtitle, version, authors, licenceCC, static_dir, URLroot_
-from .scripts.app_vars import user_profiles, modules_html_dict
+
+# import var dictionaries : user_profiles, regions dicts...
+from .scripts.app_vars import user_profiles, modules_html_dict, geoJSON_dict, root_basemaps
+
+# import local scripts
 from .scripts.app_scripts import *
 
 # gather global names
@@ -59,6 +63,14 @@ def generateTemplate(userProfile):
 
     return canvas
 
+
+def selectedRegionSpecs(selectedRegion):
+    
+    regionSpecs                = geoJSON_dict[selectedRegion]
+    regionSpecs["js_var"]      = regionSpecs[""]
+    regionSpecs["geojson_url"] = root_basemaps +"regions/"+ regionSpecs[""] + ".geojson"
+    
+    return regionSpecs
 
 @app.route('/')
 @app.route('/index')

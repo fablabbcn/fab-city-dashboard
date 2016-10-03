@@ -81,9 +81,9 @@
 	
 	
 	<!-- GEOJSONS BASEMAP // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection / ex: selection = "world"  --> 	
-	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/all_countries.geojson') }}" type="text/javascript"></script>-->
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/World/all_countries.geojson') }}" type="text/javascript"></script>
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/us-states.js') }}" type="text/javascript"></script>-->
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/ESP_region.geojson') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/ESP/ESP_admin_level_4.geojson') }}" type="text/javascript"></script>
 	
 	
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUS_MAs_2016.geojson') }}" type="text/javascript"></script>-->
@@ -417,7 +417,15 @@
 		// SERVE REGIONS ///////////////////////////////////////////////////////////////////////////////////
 		
 		// ALL COUNTRIES SERVED -- all_countries_updated , all_countries
-		addBasemap(all_countries_updated, countries_layer, true);
+		//addBasemap(all_countries_updated, countries_layer, true);
+		addBasemap(ESP_admin_level_4, countries_layer, true);
+		//addBasemap(FRA_admin_level_4, countries_layer, true);
+		//addBasemap(PRT_admin_level_4, countries_layer, true);
+		//addBasemap(ITA_admin_level_4, countries_layer, true);
+		//
+		//addBasemap(DEU_admin_level_4, countries_layer, true);
+		//addBasemap(DNK_admin_level_4, countries_layer, true);
+		//addBasemap(NLD_admin_level_4, countries_layer, true);
 		
 		// CHOOSE REGION AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
 
