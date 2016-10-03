@@ -66,17 +66,23 @@ def generateTemplate(userProfile):
 
 def selectedRegionSpecs(selectedRegion, level):
 
-    print ("selectedRegionSpecs / selectedRegion : ", selectedRegion)
+    #print ("selectedRegionSpecs / selectedRegion : ", selectedRegion)
 
     regionSpecs                 = geoJSON_dict[selectedRegion]
 
-    print ("selectedRegionSpecs / regionSpecs : ", regionSpecs)
+    #print ("selectedRegionSpecs / regionSpecs : ", regionSpecs)
 
     temp_specs                  = regionSpecs
     temp_specs["js_var"]        = regionSpecs["regions"]
     temp_specs["geojson_url"]   = root_basemaps +"regions/"+ selectedRegion + "/" + regionSpecs[level] + ".geojson"
 
-    print ("selectedRegionSpecs / temp_specs : ", temp_specs)
+    #print ("selectedRegionSpecs / temp_specs : ", temp_specs)
+    ## format like :
+    ### temp_specs = {  'regions'    : 'all_countries',
+    #                   'country'    : '',
+    #                   'metropolitan_areas_OECD': '',
+    #                   'geojson_url': u'/data_custom/geojson_basemaps/regions/World/all_countries.geojson',
+    #                   'js_var'     : 'all_countries'}
 
     return temp_specs
 
@@ -84,10 +90,9 @@ def selectedRegionSpecs(selectedRegion, level):
 @app.route('/index')
 def index():
     print '-' * 10, 'VIEW INDEX', '-' * 50
-    return render_template(
-        "index.html",
-        index=True,
-        glob=global_names, )
+    return render_template( "index.html",
+                            index = True,
+                            glob  = global_names, )
 
 
 @app.route('/user/<user_profile>/<regionSelected>')
@@ -102,15 +107,15 @@ def user_entry(user_profile, regionSelected):
 
     ### generate template corresponding to user_profile
     region_specs = selectedRegionSpecs(regionSelected, "regions")
-    #print "region_specs", region_specs
+    print "region_specs", region_specs
 
     return render_template("user_driven_template.html",
-                           index          = True,
+                           index          = False,
                            glob           = global_names,
                            user_profile   = user_profile,     ### settings for user_profile from user_profiles
                            user_specs     = user_specs,       ### description of every row for template
-                           regionSelected = regionSelected,
-                           region_specs   = region_specs,
+                           regionSelected = regionSelected,   ### specs to 
+                           region_specs   = region_specs,     ### specs for Jinja / get corresponding geojson (js var names and urls)
                            mod_incl       = modules_html_dict ### global dict to get corresponding .html modules
                            )
 
