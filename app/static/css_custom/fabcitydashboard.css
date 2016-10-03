@@ -2,7 +2,7 @@ body {
     font-family: "Roboto Slab", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -119,4 +119,10 @@ too_pl{
 }
 too_id{
     
+}
+svg {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
 }
