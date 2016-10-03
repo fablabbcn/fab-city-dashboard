@@ -71,8 +71,8 @@
         var zeroy = 10;
         var width = 300;
         var barHeight = 13;
-        var space_between_bars = 25;
-        var legend_width = 180;
+        var space_between_bars = 25 * 2;
+        var legend_width = 200;
 
         // Linear scale for scaling the graph
         var linearScale = d3.scaleLinear()
@@ -81,7 +81,7 @@
 
         // Access svg area
         var svg = d3.select("#region_resilience")
-            .attr("width", width + 250)
+            .attr("width", width + legend_width + 60)
             .attr("height", space_between_bars * region_array.length + zeroy);
 
         // Rounded bars
@@ -90,7 +90,7 @@
             .enter()
             .append("g")
 
-        // Scale line
+        // Scale line: region
         bar.append("line")
             .style("stroke", "#b3b3b3")
             .attr("x1", zerox + legend_width)
@@ -102,7 +102,20 @@
                 return zeroy + i * space_between_bars + 6;
             });
 
-        // The bars
+        // Scale line: country
+        bar.append("line")
+            .style("stroke", "#b3b3b3")
+            .style("opacity", 0.2)
+            .attr("x1", zerox + legend_width)
+            .attr("y1", function(d, i) {
+                return zeroy + i * space_between_bars + 6 + space_between_bars / 2;
+            })
+            .attr("x2", zerox + legend_width + linearScale(10))
+            .attr("y2", function(d, i) {
+                return zeroy + i * space_between_bars + 6 + space_between_bars / 2;
+            });
+
+        // The bars: region
         bar.append("rect")
             .attr("x", zerox + legend_width)
             .attr("y", function(d, i) {
@@ -124,7 +137,30 @@
                 return the_color;
             });
 
-        // The legend labels
+        // The bars: country
+        bar.append("rect")
+            .style("opacity", 0.2)
+            .attr("x", zerox + legend_width)
+            .attr("y", function(d, i) {
+                return zeroy + i * space_between_bars + space_between_bars / 2;
+            })
+            .attr("width", function(d) {
+                for (property in d) {
+                    var resilience_value = d[property];
+                }
+                return linearScale(resilience_value);
+            })
+            .attr("height", barHeight)
+            .attr("rx", 6)
+            .attr("ry", 6)
+            .attr("fill", function(d) {
+                for (property in d) {
+                    var the_color = resilience_colors[property];
+                }
+                return the_color;
+            });
+
+        // The legend labels: region
         bar.append("text")
             .attr("x", zerox)
             .attr("y", function(d, i) {
@@ -137,6 +173,16 @@
                 }
                 return label_text;
             });
+
+        // The legend labels: country
+        bar.append("text")
+            .style("opacity", 0.2)
+            .attr("x", zerox)
+            .attr("y", function(d, i) {
+                return zeroy + 6 + i * space_between_bars + space_between_bars / 2;
+            })
+            .attr("dy", ".35em")
+            .text("Value at country level");
 
         // The value labels
         bar.append("text")
@@ -219,9 +265,9 @@
         });
 
         // SVG icons transformations
-        var icon_scale = 0.08;
+        var icon_scale = 0.04;
         var icon_x = legend_width - 20;
-        var icon_y = 3;
+        var icon_y = 5;
 
         education_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
         icon_y = icon_y + space_between_bars;
