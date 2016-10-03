@@ -8,6 +8,9 @@
 <script>
     d3.json("regional-data", function(data) {
 
+        // Debug
+        console.log(data[0]);
+
         // Change title
         d3.select("body").select("#title").text(data[0]["Country"]);
         d3.select("body").select("#subtitle").text(data[0]["Region"]);
@@ -42,7 +45,12 @@
             })
             .entries(data);
 
-        // A single region
+        // A single region: delete
+        console.log(regions[0]["key"])
+        var region_data = regions[0]["values"][0];
+        delete region_data["Region"];
+        delete region_data["Region Code"];
+        delete region_data["Country"];
 
         var region_array = [];
         var region_object = {}
