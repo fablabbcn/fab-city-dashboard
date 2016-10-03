@@ -11,9 +11,27 @@ body {
     height: 60px;
 }
 
+.background{
+	 background-image: url("{{ url_for('static', filename='images/backgrounds/map-image.png') }}") 
+	 repeat: no-repeat;
+	 position: center center fixed;
+}
+
 h1, h2, h3, h4, h5, h6, nav {
     font-family: "Montserrat", sans-serif;
 }
+
+a {
+	color: #E62339;
+}
+
+a :hover,
+a :focus,
+a :active,
+a .active {
+  color: #d41111;
+}
+
 
 h2.section-heading {
     font-size: 30px;
@@ -104,6 +122,11 @@ p.descriptions {
 }
 
 
+.navbar-nav li {
+	text-transform: uppercase;
+}
+
+
 /* styles for modules - check app_vars.py for description */
 
 
@@ -167,7 +190,10 @@ con_fa {}
 
 inf_ab {}
 
-inf_co {}
+inf_co {
+	background-color: #222;
+	
+}
 
 inf_in {}
 
