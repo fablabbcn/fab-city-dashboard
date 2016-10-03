@@ -36,11 +36,13 @@
 
 
 <div>
-		TEST DYNAMIC REGIONS CALLING + CORRESPONDING GEOJSON <br>
+		<!--TEST DYNAMIC REGIONS CALLING + CORRESPONDING GEOJSON <br>-->
 		
 		<!--region_specs == {{ region_specs }} <br>-->
-		GEOJSON_file_url = "{{ region_specs['geojson_url'] }}" <br>
-		GEOJSON_js_var   = "{{ region_specs['js_var'] }}"
+		<!--GEOJSON_file_url = "{{ region_specs['geojson_url'] }}" <br>
+		GEOJSON_js_var   = "{{ region_specs['js_var'] }}" <br>-->
+		{% set file_url = region_specs['geojson_url'] %}
+		{% set js_var   = region_specs['js_var'] %}
 
 </div>
 
@@ -51,22 +53,6 @@
 	<!-- D3.JS V4-->
 	<!--<script type="text/javascript" src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>-->
 	<!---->
-	
-	<!-- GEOJSON FILES SETTINGS -->
-	<script type="text/javascript">
-		
-		//region_specs == {		'regions': 'all_countries',
-		//										'country': '',
-		//										'metropolitan_areas_OECD': '',
-		//										'geojson_url': u'/data_custom/geojson_basemaps/regions/World/all_countries.geojson',
-		//										'js_var': 'all_countries'
-		//								}
-
-		var GEOJSON_file_url = "{{ region_specs['geojson_url'] }}" ;
-		var GEOJSON_js_var   = "{{ region_specs['js_var'] }}"      ;
-		
-		
-	</script>
 	
 	
 	<!-- LEAFLET -->
@@ -104,11 +90,31 @@
 	<script src="{{ url_for('static', filename='data_custom/geojson_labs/Makery_fablabs.json') }}" type="text/javascript"></script>
 
 	
+
+
+	
+	<!-- GEOJSON FILES SETTINGS -->
+	<script type="text/javascript">
+		
+		//region_specs == {		'regions': 'all_countries',
+		//										'country': '',
+		//										'metropolitan_areas_OECD': '',
+		//										'geojson_url': u'/data_custom/geojson_basemaps/regions/World/all_countries.geojson',
+		//										'js_var': 'all_countries'
+		//								}
+		
+		//var GEOJSON_file_url = "{{ region_specs['geojson_url'] }}" ;
+		//var GEOJSON_js_var   = "{{ region_specs['js_var'] }}"      ;
+		//
+		//console.log("GEOJSON_file_url : ", GEOJSON_file_url)
+	</script>
+	
 	
 	<!-- GEOJSONS BASEMAP // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection / ex: selection = "world"  --> 	
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/World/all_countries.geojson') }}" type="text/javascript"></script>
+	<script src="{{ url_for('static', filename = file_url) }}" type="text/javascript"></script>
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/World/all_countries.geojson') }}" type="text/javascript"></script>-->
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/us-states.js') }}" type="text/javascript"></script>-->
-	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/ESP/ESP_admin_level_4.geojson') }}" type="text/javascript"></script>
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/ESP/ESP_admin_level_4.geojson') }}" type="text/javascript"></script>-->
 	
 	
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUS_MAs_2016.geojson') }}" type="text/javascript"></script>-->
@@ -151,7 +157,9 @@
 	
 	
 	<!-- DIV MAP -->
-	<div id="map" style="width: 100%; height: {{ row['height'] }}"></div>
+	<div 	id="map"
+		style="width: 100%; height: {{ row['height'] }}">
+	</div>
 	
 	<!-- LEAFLET / D3 SCRIPT -->
 	<script>
@@ -166,7 +174,6 @@
 		// FIND GEOBOX/CENTER/ZOOM settings from setViews.js
 		var regionSelected = "{{ regionSelected }}";
 		var userProfile    = "{{ user_profile }}"  ;
-		
 		
 		
 		
@@ -435,15 +442,18 @@
 		
 		
 		// GEOJSONs TO UPDATE /////// NEED TO BE DYNAMIC /////////////////////////////////////////
-		var all_countries_updated = addDatasToGeojson(all_countries, countries_dict);
+		//var all_countries_updated = addDatasToGeojson(all_countries, countries_dict);
 
 		
 		
 		// SERVE REGIONS ///////////////////////////////////////////////////////////////////////////////////
 		
+		// dynamically serving js_var names
+		addBasemap({{ js_var }}, countries_layer, true)
+		
 		// ALL COUNTRIES SERVED -- all_countries_updated , all_countries
 		//addBasemap(all_countries_updated, countries_layer, true);
-		addBasemap(ESP_admin_level_4, countries_layer, true);
+		//addBasemap(ESP_admin_level_4, countries_layer, true);
 		//addBasemap(FRA_admin_level_4, countries_layer, true);
 		//addBasemap(PRT_admin_level_4, countries_layer, true);
 		//addBasemap(ITA_admin_level_4, countries_layer, true);

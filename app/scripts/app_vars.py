@@ -167,7 +167,7 @@ user_profiles = {
 ########################################################################
 ### GEOJSON ROUTING  // code names for corresponding .geojson file name
 
-root_basemaps = "/data_custom/geojson_basemaps/" 
+root_basemaps = "data_custom/geojson_basemaps/" 
 
 geoJSON_dict = {
     ### "regions" - "metropolitan_areas_OECD" == folders name in /data_custom/geojson_basemaps
