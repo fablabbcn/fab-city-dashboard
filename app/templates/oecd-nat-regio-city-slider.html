@@ -157,7 +157,7 @@
                         for (property in d) {
                             var the_class = property;
                         }
-                        return "region " + property.toLowerCase();
+                        return "region " + property.toLowerCase() + " bar";
                     })
                     .style("opacity", 0.4)
                     .attr("x", zerox + legend_width)
@@ -216,6 +216,12 @@
 
                 // The value labels: region
                 barr.append("text")
+                    .attr("class", function(d) {
+                        for (property in d) {
+                            var the_class = property;
+                        }
+                        return "region " + property.toLowerCase() + " value";
+                    })
                     .style("opacity", 0.4)
                     .text(function(d) {
                         for (property in d) {
@@ -230,6 +236,12 @@
 
                 // The value labels: cities
                 barci.append("text")
+                    .attr("class", function(d) {
+                        for (property in d) {
+                            var the_class = property;
+                        }
+                        return "city " + property.toLowerCase() + " value";
+                    })
                     .text(function(d) {
                         for (property in d) {
                             var label_value = d[property];
@@ -243,6 +255,12 @@
 
                 // The value labels: countries
                 barc.append("text")
+                    .attr("class", function(d) {
+                        for (property in d) {
+                            var the_class = property;
+                        }
+                        return "countries " + property.toLowerCase() + " value";
+                    })
                     .style("opacity", 0.2)
                     .text(function(d) {
                         for (property in d) {
@@ -261,7 +279,7 @@
                         for (property in d) {
                             var the_class = property;
                         }
-                        return "city " + property.toLowerCase();
+                        return "city " + property.toLowerCase() + " bar";
                     })
                     .attr("x", zerox + legend_width)
                     .attr("y", function(d, i) {
@@ -290,7 +308,7 @@
                         for (property in d) {
                             var the_class = property;
                         }
-                        return "country " + property.toLowerCase();
+                        return "country " + property.toLowerCase() + " bar";
                     })
                     .attr("x", zerox + legend_width)
                     .attr("y", function(d, i) {
@@ -477,7 +495,9 @@
 
                 function hue(h) {
                     handle.attr("x", x(h));
-                    d3.select(".city.education").attr("width", linearScale(h));
+                    console.log(h);
+                    d3.select(".city.education.bar").attr("width", linearScale(h / 10));
+                    d3.select(".city.education.value").text(Math.round(h * 10) / 10 + "/10");
                 }
 
             }
