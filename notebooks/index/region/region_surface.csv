@@ -1,0 +1,2294 @@
+Region,Territory Level and Typology,2014
+AUS: Australia,Country,7703350
+  AU1: New South Wales,Large regions (TL2),801352
+    AU101: Capital Region,Small regions (TL3) - predominantly rural,51894.4
+    AU103: Central West,,70297.6
+    AU104: Coffs Harbour - Grafton,,13229.9
+    AU105: Far West and Orana,,339364
+    AU106: Hunter Valley Exc Newcastle,,21492.3
+    AU107: Illawarra,Small regions (TL3) - predominantly urban,1539.2
+    AU108: Mid North Coast,Small regions (TL3) - predominantly rural,18850.7
+    AU109: Murray,,97796.2
+    AU110: New England and North West,,99145
+    AU111: Newcastle and Lake Macquarie,Small regions (TL3) - predominantly urban,869.9
+    AU112: Richmond - Tweed,Small regions (TL3) - intermediate,10270.7
+    AU113: Riverina,Small regions (TL3) - predominantly rural,56986.9
+    AU114: Southern Highlands and Shoalhaven,Small regions (TL3) - intermediate,6703.6
+    AU1GS: Sydney,Small regions (TL3) - predominantly urban,12368.6
+  AU2: Victoria,Large regions (TL2),227590
+    AU201: Ballarat,Small regions (TL3) - intermediate,10287.6
+    AU202: Bendigo,Small regions (TL3) - predominantly rural,11841.9
+    AU203: Geelong,Small regions (TL3) - intermediate,4428.7
+    AU204: Hume,Small regions (TL3) - predominantly rural,34004
+    AU205: Latrobe - Gippsland,,41557.3
+    AU215: North West,,78071.7
+    AU216: Shepparton,,10934.3
+    AU217: Warrnambool and South West,,26380
+    AU2GM: Melbourne,Small regions (TL3) - predominantly urban,9989.9
+  AU3: Queensland,Large regions (TL2),1734190
+    AU306: Cairns,Small regions (TL3) - intermediate,21344.3
+    AU307: Darling Downs - Maranoa,Small regions (TL3) - predominantly rural,166353
+    AU308: Fitzroy,Small regions (TL3) - intermediate,117549
+    AU309: Gold Coast,Small regions (TL3) - predominantly urban,1836.8
+    AU312: Mackay,Small regions (TL3) - predominantly rural,90125.5
+    AU315: Queensland - Outback,,1183040
+    AU316: Sunshine Coast,Small regions (TL3) - intermediate,3084.6
+    AU317: Toowoomba,,2258.4
+    AU318: Townsville,,80016.2
+    AU319: Wide Bay,Small regions (TL3) - predominantly rural,48502.6
+    AU3GB: Brisbane,Small regions (TL3) - predominantly urban,15827
+  AU4: South Australia,Large regions (TL2),985324
+    AU405: Barossa - Yorke - Mid North,Small regions (TL3) - predominantly rural,37716.9
+    AU406: South Australia - Outback,,877753
+    AU407: South Australia - South East,,65451.6
+    AU4GA: Adelaide,Small regions (TL3) - predominantly urban,3257.8
+  AU5: Western Australia,Large regions (TL2),2532420
+    AU501: Bunbury,Small regions (TL3) - predominantly rural,24800.4
+    AU508: Western Australia - Outback,,2298050
+    AU509: Western Australia - Wheat Belt,,197303
+    AU5GP: Perth,Small regions (TL3) - predominantly urban,6417.8
+  AU6: Tasmania,Large regions (TL2),67914.3
+    AU601: Hobart,Small regions (TL3) - intermediate,1695.3
+    AU602: Launceston and North East,Small regions (TL3) - predominantly rural,19975.1
+    AU603: South East,,23821.9
+    AU604: West and North West,,22526
+  AU7: Northern Territory (NT),Large regions (TL2),1352210
+    AU701: Darwin,Small regions (TL3) - intermediate,3163.7
+    AU702: Northern Territory - Outback,Small regions (TL3) - predominantly rural,1345030
+  AU8: Australian Capital Territory (ACT),Large regions (TL2),2349.4
+    AU801: Australian Capital Territory,Small regions (TL3) - predominantly urban,2358
+AUT: Austria,Country,82409
+  AT11: Burgenland (AT),Large regions (TL2),3669
+    AT111: Mittelburgenland,Small regions (TL3) - predominantly rural close to a city,694
+    AT112: Nordburgenland,,1526
+    AT113: Südburgenland,,1449
+  AT12: Lower Austria,Large regions (TL2),18917
+    AT121: Mostviertel-Eisenwurzen,Small regions (TL3) - predominantly rural close to a city,3303
+    AT122: Niederösterreich-Süd,,3355
+    AT123: Sankt Pölten,,1216
+    AT124: Waldviertel,Small regions (TL3) - predominantly rural remote,4551
+    AT125: Weinviertel,Small regions (TL3) - predominantly rural close to a city,2390
+    AT126: Wiener Umland/Nordteil,Small regions (TL3) - predominantly urban,2660
+    AT127: Wiener Umland/Südteil,,1444
+  AT13: Vienna,Large regions (TL2),395
+    AT130: Vienna,Small regions (TL3) - predominantly urban,395
+  AT21: Carinthia,Large regions (TL2),9360
+    AT211: Klagenfurt-Villach,Small regions (TL3) - intermediate,1958
+    AT212: Oberkärnten,Small regions (TL3) - predominantly rural remote,4064
+    AT213: Unterkärnten,Small regions (TL3) - predominantly rural close to a city,3338
+  AT22: Styria,Large regions (TL2),16251
+    AT221: Graz,Small regions (TL3) - intermediate,1218
+    AT222: Liezen,Small regions (TL3) - predominantly rural remote,3233
+    AT223: Östliche Obersteiermark,Small regions (TL3) - intermediate,3232
+    AT224: Oststeiermark,Small regions (TL3) - predominantly rural close to a city,3329
+    AT225: West- und Südsteiermark,,2198
+    AT226: Westliche Obersteiermark,Small regions (TL3) - predominantly rural remote,3040
+  AT31: Upper Austria,Large regions (TL2),11717
+    AT311: Innviertel,Small regions (TL3) - predominantly rural close to a city,2781
+    AT312: Linz-Wels,Small regions (TL3) - intermediate,1701
+    AT313: Mühlviertel,Small regions (TL3) - predominantly rural close to a city,2630
+    AT314: Steyr-Kirchdorf,,2215
+    AT315: Traunviertel,,2390
+  AT32: Salzburg,Large regions (TL2),7050
+    AT321: Lungau,Small regions (TL3) - predominantly rural remote,1010
+    AT322: Pinzgau-Pongau,,4355
+    AT323: Salzburg und Umgebung,Small regions (TL3) - intermediate,1686
+  AT33: Tyrol,Large regions (TL2),12514
+    AT331: Außerfern,Small regions (TL3) - predominantly rural close to a city,1213
+    AT332: Innsbruck,Small regions (TL3) - predominantly urban,2079
+    AT333: Osttirol,Small regions (TL3) - predominantly rural remote,2005
+    AT334: Tyrolean Oberland,,3293
+    AT335: Tyrolean Unterland,Small regions (TL3) - predominantly rural close to a city,3924
+  AT34: Vorarlberg,Large regions (TL2),2534
+    AT341: Bludenz-Bregenzer Wald,Small regions (TL3) - predominantly rural close to a city,1854
+    AT342: Rheintal-Bodenseegebiet,Small regions (TL3) - predominantly urban,680
+BEL: Belgium,Country,30326
+  BE1: Brussels Capital Region,Large regions (TL2),161
+  BE2: Flemish Region,,13360
+  BE3: Wallonia,,16804
+CAN: Canada,Country,9093510
+  CA10: Newfoundland and Labrador,Large regions (TL2),373872
+"    CA1001: Division 1, NL",Small regions (TL3) - intermediate,9218.5
+"    CA1002: Division 2, NL",Small regions (TL3) - predominantly rural remote,6098.6
+"    CA1003: Division 3, NL",,19897.7
+"    CA1004: Division 4, NL",,7088.1
+"    CA1005: Division 5, NL",,10365.2
+"    CA1006: Division 6, NL",,16237.2
+"    CA1007: Division 7, NL",,9672.9
+"    CA1008: Division 8, NL",,9314.2
+"    CA1009: Division 9, NL",,13527.5
+"    CA1010: Division 10, NL",,199703
+"    CA1011: Division 11, NL",,69371.6
+  CA11: Prince Edward Island,Large regions (TL2),5660
+"    CA1101: Kings, PE",Small regions (TL3) - predominantly rural remote,1684.3
+"    CA1102: Queens, PE",,2020.1
+"    CA1103: Prince, PE",,1979.5
+  CA12: Nova Scotia,Large regions (TL2),53338
+"    CA1201: Shelburne, NS",Small regions (TL3) - predominantly rural remote,2464.7
+"    CA1202: Yarmouth, NS",,2123.3
+"    CA1203: Digby, NS",,2515.2
+"    CA1204: Queens, NS",,2392.4
+"    CA1205: Annapolis, NS",,3185
+"    CA1206: Lunenburg, NS",,2907.9
+"    CA1207: Kings, NS",,2122.2
+"    CA1208: Hants, NS",,3049.1
+"    CA1209: Halifax, NS",Small regions (TL3) - intermediate,5495.6
+"    CA1210: Colchester, NS",Small regions (TL3) - predominantly rural remote,3627.7
+"    CA1211: Cumberland, NS",,4271.1
+"    CA1212: Pictou, NS",,2845.3
+"    CA1213: Guysborough, NS",,4044.2
+"    CA1214: Antigonish, NS",,1457.8
+"    CA1215: Inverness, NS",,3830.4
+"    CA1216: Richmond, NS",,1244.2
+"    CA1217: Cape Breton, NS",Small regions (TL3) - predominantly rural close to a city,2470.6
+"    CA1218: Victoria, NS",Small regions (TL3) - predominantly rural remote,2870.8
+  CA13: New Brunswick,Large regions (TL2),71450
+"    CA1301: Saint John, NB",Small regions (TL3) - predominantly urban,1462
+"    CA1302: Charlotte, NB",Small regions (TL3) - predominantly rural remote,3423.5
+"    CA1303: Sunbury, NB",Small regions (TL3) - predominantly rural close to a city,2697.1
+"    CA1304: Queens, NB",Small regions (TL3) - predominantly rural remote,3681.5
+"    CA1305: Kings, NB",Small regions (TL3) - predominantly rural close to a city,3482.6
+"    CA1306: Albert, NB",,1806.1
+"    CA1307: Westmorland, NB",,3659.6
+"    CA1308: Kent, NB",,4551
+"    CA1309: Northumberland, NB",Small regions (TL3) - predominantly rural remote,12112.5
+"    CA1310: York, NB",Small regions (TL3) - intermediate,8952
+"    CA1311: Carleton, NB",Small regions (TL3) - predominantly rural remote,3312
+"    CA1312: Victoria, NB",,5502.9
+"    CA1313: Madawaska County, NB",,3461.5
+"    CA1314: Restigouche County, NB",,8577.5
+"    CA1315: Gloucester County, NB",,4673.4
+  CA24: Quebec,Large regions (TL2),1365130
+"    CA2401: Les Îles-de-la-Madeleine, QC",Small regions (TL3) - predominantly rural remote,205.4
+"    CA2402: Le Rocher-Percé, QC",,3077.8
+"    CA2403: La Côte-de-Gaspé, QC",,4097.1
+"    CA2404: La Haute-Gaspésie, QC",,5066
+"    CA2405: Bonaventure, QC",,4375.2
+"    CA2406: Avignon, QC",,3486.5
+"    CA2407: La Matapédia, QC",,5373.9
+"    CA2408: Matane, QC",,3318.9
+"    CA2409: La Mitis, QC",,2279.2
+"    CA2410: Rimouski-Neigette, QC",Small regions (TL3) - intermediate,2716.5
+"    CA2411: Les Basques, QC",Small regions (TL3) - predominantly rural remote,1122.8
+"    CA2412: Rivière-du-Loup, QC",Small regions (TL3) - intermediate,1273.3
+"    CA2413: Témiscouata, QC",Small regions (TL3) - predominantly rural remote,3904.8
+"    CA2414: Kamouraska, QC",,2242.7
+"    CA2415: Charlevoix-Est, QC",,2305.7
+"    CA2416: Charlevoix, QC",,3764.6
+"    CA2417: L'Islet, QC",,2099.6
+"    CA2418: Montmagny, QC",Small regions (TL3) - predominantly rural close to a city,1697.1
+"    CA2419: Bellechasse, QC",,1749.6
+"    CA2420: L'Île-d'Orléans, QC",,192.8
+"    CA2421: La Côte-de-Beaupré, QC",,4864.7
+"    CA2422: La Jacques-Cartier, QC",,3194.7
+"    CA2423: Communauté-Urbaine-de-Québec, QC",Small regions (TL3) - predominantly urban,549.1
+"    CA2425: Lévis, QC",,449.3
+"    CA2426: La Nouvelle-Beauce, QC",Small regions (TL3) - predominantly rural close to a city,906
+"    CA2427: Robert-Cliche, QC",,838.8
+"    CA2428: Les Etchemins, QC",Small regions (TL3) - predominantly rural remote,1810.2
+"    CA2429: Beauce-Sartigan, QC",Small regions (TL3) - intermediate,1953.6
+"    CA2430: Le Granit, QC",Small regions (TL3) - predominantly rural remote,2734
+"    CA2431: L'Amiante, QC",,1912.6
+"    CA2432: L'Érable, QC",,1286.8
+"    CA2433: Lotbinière, QC",Small regions (TL3) - predominantly rural close to a city,1662
+"    CA2434: Portneuf, QC",,3922.9
+"    CA2435: Mékinac, QC",,5224.9
+"    CA2436: Shawinigan, QC",Small regions (TL3) - intermediate,733.3
+"    CA2437: Francheville, QC",Small regions (TL3) - predominantly urban,1160.7
+"    CA2438: Bécancour, QC",Small regions (TL3) - predominantly rural close to a city,1144.6
+"    CA2439: Arthabaska, QC",Small regions (TL3) - intermediate,1889.5
+"    CA2440: Asbestos, QC",Small regions (TL3) - predominantly rural remote,785.9
+"    CA2441: Le Haut-Saint-François, QC",Small regions (TL3) - predominantly rural close to a city,2275.3
+"    CA2442: Le Val-Saint-François, QC",,1403.1
+"    CA2443: Sherbrooke, QC",Small regions (TL3) - predominantly urban,353.5
+"    CA2444: Coaticook, QC",Small regions (TL3) - predominantly rural close to a city,1338.8
+"    CA2445: Memphrémagog, QC",Small regions (TL3) - intermediate,1318.7
+"    CA2446: Brome-Missisquoi, QC",Small regions (TL3) - predominantly rural close to a city,1537
+"    CA2447: La Haute-Yamaska, QC",Small regions (TL3) - intermediate,750.9
+"    CA2448: Acton, QC",Small regions (TL3) - predominantly rural close to a city,580.4
+"    CA2449: Drummond, QC",Small regions (TL3) - intermediate,1600.1
+"    CA2450: Nicolet-Yamaska, QC",Small regions (TL3) - predominantly rural close to a city,1007.8
+"    CA2451: Maskinongé, QC",,2386.6
+"    CA2452: D'Autray, QC",Small regions (TL3) - predominantly rural remote,1246.7
+"    CA2453: Le Bas-Richelieu, QC",Small regions (TL3) - intermediate,598.1
+"    CA2454: Les Maskoutains, QC",,1301.2
+"    CA2455: Rouville, QC",Small regions (TL3) - predominantly rural close to a city,483.2
+"    CA2456: Le Haut-Richelieu, QC",Small regions (TL3) - intermediate,936.3
+"    CA2457: La Vallée-du-Richelieu, QC",Small regions (TL3) - predominantly urban,588.9
+"    CA2458: Longueuil, QC",,282.4
+"    CA2459: Lajemmerais, QC",,345.5
+"    CA2460: L'Assomption, QC",,257.6
+"    CA2461: Joliette, QC",Small regions (TL3) - intermediate,416.3
+"    CA2462: Matawinie, QC",Small regions (TL3) - predominantly rural remote,9520.4
+"    CA2463: Montcalm, QC",,711.5
+"    CA2464: Les Moulins, QC",Small regions (TL3) - predominantly urban,261.2
+"    CA2465: Laval, QC",,247.1
+"    CA2466: Communauté-Urbaine-de-Montréal, QC",,499.2
+"    CA2467: Roussillon, QC",,423.2
+"    CA2468: Les Jardins-de-Napierville, QC",Small regions (TL3) - predominantly rural close to a city,803.3
+"    CA2469: Le Haut-Saint-Laurent, QC",Small regions (TL3) - predominantly rural remote,1171.8
+"    CA2470: Beauharnois-Salaberry, QC",Small regions (TL3) - intermediate,470.7
+"    CA2471: Vaudreuil-Soulanges, QC",,854.8
+"    CA2472: Deux-Montagnes, QC",Small regions (TL3) - predominantly urban,243.2
+"    CA2473: Thérèse-De Blainville, QC",,206.5
+"    CA2474: Mirabel, QC",Small regions (TL3) - predominantly rural close to a city,485.5
+"    CA2475: La Rivière-du-Nord, QC",Small regions (TL3) - intermediate,451
+"    CA2476: Argenteuil, QC",Small regions (TL3) - predominantly rural remote,1245.5
+"    CA2477: Les Pays-d'en-Haut, QC",,682.7
+"    CA2478: Les Laurentides, QC",,2475.4
+"    CA2479: Antoine-Labelle, QC",,14954.4
+"    CA2480: Papineau, QC",,2934.3
+"    CA2481: Gatineau, QC",Small regions (TL3) - predominantly urban,342.3
+"    CA2482: Les Collines-de-l'Outaouais, QC",Small regions (TL3) - predominantly rural close to a city,2033
+"    CA2483: La Vallée-de-la-Gatineau, QC",Small regions (TL3) - predominantly rural remote,12466
+"    CA2484: Pontiac, QC",,12984.5
+"    CA2485: Témiscamingue, QC",,16408.6
+"    CA2486: Rouyn-Noranda, QC",,5991.1
+"    CA2487: Abitibi-Ouest, QC",,3333.4
+"    CA2488: Abitibi, QC",,7674.2
+"    CA2489: Vallée-de-l'Or, QC",,24267.1
+"    CA2490: La Tuque, QC",,26349.8
+"    CA2491: Le Domaine-du-Roy, QC",,17799.4
+"    CA2492: Maria-Chapdelaine, QC",,36769.5
+"    CA2493: Lac-Saint-Jean-Est, QC",Small regions (TL3) - intermediate,2781.4
+"    CA2494: Le Saguenay-et-son-Fjord, QC",,41358.3
+"    CA2495: La Haute-Côte-Nord, QC",Small regions (TL3) - predominantly rural remote,11611.1
+"    CA2496: Manicouagan, QC",,35699.6
+"    CA2497: Sept-Rivières-Caniapiscau, QC",,100859
+"    CA2498: Minganie-Basse-Côte-Nord, QC",,99457.8
+"    CA2499: Nord-du-Québec, QC",,747158
+  CA35: Ontario,Large regions (TL2),917741
+"    CA3501: Stormont, Dundas and Glengarry, ON",Small regions (TL3) - predominantly rural remote,3306.9
+"    CA3502: Prescott and Russell, ON",Small regions (TL3) - predominantly rural close to a city,2001.2
+"    CA3506: Ottawa-Carleton, ON",Small regions (TL3) - predominantly urban,2778.1
+"    CA3507: Leeds and Grenville, ON",Small regions (TL3) - predominantly rural close to a city,3350.2
+"    CA3509: Lanark, ON",,2979.1
+"    CA3510: Frontenac, ON",Small regions (TL3) - intermediate,3672.5
+"    CA3511: Lennox and Addington, ON",Small regions (TL3) - predominantly rural close to a city,2776.5
+"    CA3512: Hastings, ON",,5977.6
+"    CA3513: Prince Edward, ON",,1050.1
+"    CA3514: Northumberland, ON",,1903
+"    CA3515: Peterborough, ON",Small regions (TL3) - intermediate,3805.7
+"    CA3516: Kawartha Lakes, ON",Small regions (TL3) - predominantly rural close to a city,3059.5
+"    CA3518: Durham, ON",Small regions (TL3) - intermediate,2523.1
+"    CA3519: York, ON",Small regions (TL3) - predominantly urban,1761.8
+"    CA3520: Toronto, ON",,630.2
+"    CA3521: Peel, ON",,1242.4
+"    CA3522: Dufferin, ON",Small regions (TL3) - predominantly rural close to a city,1485.6
+"    CA3523: Wellington, ON",Small regions (TL3) - intermediate,2656.7
+"    CA3524: Halton, ON",Small regions (TL3) - predominantly urban,967.2
+"    CA3525: Hamilton, ON",,1117.2
+"    CA3526: Niagara, ON",Small regions (TL3) - intermediate,1854.2
+"    CA3528: Haldimand-Norfolk, ON",Small regions (TL3) - predominantly rural close to a city,2894.1
+"    CA3529: Brant, ON",Small regions (TL3) - intermediate,1092.9
+"    CA3530: Waterloo, ON",Small regions (TL3) - predominantly urban,1368.6
+"    CA3531: Perth, ON",Small regions (TL3) - predominantly rural close to a city,2218.4
+"    CA3532: Oxford, ON",,2039.5
+"    CA3534: Elgin, ON",Small regions (TL3) - intermediate,1880.8
+"    CA3536: Chatham-Kent, ON",,2470.7
+"    CA3537: Essex, ON",,1851.3
+"    CA3538: Lambton, ON",,3001.7
+"    CA3539: Middlesex, ON",Small regions (TL3) - predominantly urban,3317.1
+"    CA3540: Huron, ON",Small regions (TL3) - predominantly rural remote,3396.7
+"    CA3541: Bruce, ON",,4079.2
+"    CA3542: Grey, ON",,4508.1
+"    CA3543: Simcoe, ON",Small regions (TL3) - predominantly rural close to a city,4840.6
+"    CA3544: Muskoka, ON",Small regions (TL3) - predominantly rural remote,3890.2
+"    CA3546: Haliburton, ON",,4025.3
+"    CA3547: Renfrew, ON",,7403.5
+"    CA3548: Nipissing, ON",Small regions (TL3) - predominantly rural close to a city,17065.1
+"    CA3549: Parry Sound, ON",Small regions (TL3) - predominantly rural remote,9222
+"    CA3551: Manitoulin, ON",,4759.7
+"    CA3552: Sudbury (District), ON",,38504.5
+"    CA3553: Greater Sudbury / Grand Sudbury, ON",Small regions (TL3) - intermediate,3211.2
+"    CA3554: Timiskaming, ON",Small regions (TL3) - predominantly rural remote,13279.9
+"    CA3556: Cochrane, ON",,141247
+"    CA3557: Algoma, ON",Small regions (TL3) - intermediate,48734.7
+"    CA3558: Thunder Bay, ON",,103706
+"    CA3559: Rainy River, ON",Small regions (TL3) - predominantly rural remote,15472.9
+"    CA3560: Kenora, ON",,407193
+  CA46: Manitoba,Large regions (TL2),553556
+"    CA4601: Division 1, MB",Small regions (TL3) - predominantly rural remote,14872.6
+"    CA4602: Division 2, MB",Small regions (TL3) - predominantly rural close to a city,4406.4
+"    CA4603: Division 3, MB",Small regions (TL3) - predominantly rural remote,5309.5
+"    CA4604: Division 4, MB",,4481.6
+"    CA4605: Division 5, MB",,8228.5
+"    CA4606: Division 6, MB",,3944.7
+"    CA4607: Division 7, MB",,5743.9
+"    CA4608: Division 8, MB",,5752
+"    CA4609: Division 9, MB",,2990.2
+"    CA4610: Division 10, MB",Small regions (TL3) - predominantly rural close to a city,1914.6
+"    CA4611: Division 11, MB",Small regions (TL3) - predominantly urban,571
+"    CA4612: Division 12, MB",Small regions (TL3) - predominantly rural close to a city,1856.7
+"    CA4613: Division 13, MB",,1693.9
+"    CA4614: Division 14, MB",,2810.9
+"    CA4615: Division 15, MB",Small regions (TL3) - predominantly rural remote,9326.6
+"    CA4616: Division 16, MB",,4712.5
+"    CA4617: Division 17, MB",,13624.7
+"    CA4618: Division 18, MB",,11330.7
+"    CA4619: Division 19, MB",,61219
+"    CA4620: Division 20, MB",,9869.5
+"    CA4621: Division 21, MB",,43196.7
+"    CA4622: Division 22, MB",,92070.7
+"    CA4623: Division 23, MB",,242443
+  CA47: Saskatchewan,Large regions (TL2),591670
+"    CA4701: Division 1, SK",Small regions (TL3) - predominantly rural remote,14996.8
+"    CA4702: Division 2, SK",,16859.2
+"    CA4703: Division 3, SK",,18554
+"    CA4704: Division 4, SK",,21365
+"    CA4705: Division 5, SK",,14782.8
+"    CA4706: Division 6, SK",Small regions (TL3) - intermediate,17548
+"    CA4707: Division 7, SK",Small regions (TL3) - predominantly rural remote,18835.8
+"    CA4708: Division 8, SK",,22233.3
+"    CA4709: Division 9, SK",,15270.8
+"    CA4710: Division 10, SK",,12220.3
+"    CA4711: Division 11, SK",Small regions (TL3) - intermediate,16683.1
+"    CA4712: Division 12, SK",Small regions (TL3) - predominantly rural remote,13887.4
+"    CA4713: Division 13, SK",,17255.3
+"    CA4714: Division 14, SK",,33817.7
+"    CA4715: Division 15, SK",,19612.5
+"    CA4716: Division 16, SK",,21828.5
+"    CA4717: Division 17, SK",,22457.8
+"    CA4718: Division 18, SK",,270068
+  CA48: Alberta,Large regions (TL2),642317
+"    CA4801: Division 1, AB",Small regions (TL3) - predominantly rural close to a city,20526.1
+"    CA4802: Division 2, AB",,17659.9
+"    CA4803: Division 3, AB",Small regions (TL3) - predominantly rural remote,13866.2
+"    CA4804: Division 4, AB",,21466.5
+"    CA4805: Division 5, AB",,16775.2
+"    CA4806: Division 6, AB",Small regions (TL3) - predominantly urban,12645.3
+"    CA4807: Division 7, AB",Small regions (TL3) - predominantly rural remote,19209.5
+"    CA4808: Division 8, AB",Small regions (TL3) - predominantly rural close to a city,9909.3
+"    CA4809: Division 9, AB",Small regions (TL3) - predominantly rural remote,18921.4
+"    CA4810: Division 10, AB",,20451.6
+"    CA4811: Division 11, AB",Small regions (TL3) - predominantly urban,15754.3
+"    CA4812: Division 12, AB",Small regions (TL3) - predominantly rural remote,30046.7
+"    CA4813: Division 13, AB",,24373.4
+"    CA4814: Division 14, AB",,26964.1
+"    CA4815: Division 15, AB",,28400
+"    CA4816: Division 16, AB",Small regions (TL3) - predominantly rural close to a city,97267.4
+"    CA4817: Division 17, AB",Small regions (TL3) - predominantly rural remote,192084
+"    CA4818: Division 18, AB",,33205.2
+"    CA4819: Division 19, AB",,20518.2
+  CA59: British Columbia,Large regions (TL2),925186
+"    CA5901: East Kootenay, BC",Small regions (TL3) - predominantly rural remote,27560.5
+"    CA5903: Central Kootenay, BC",,22130.7
+"    CA5905: Kootenay Boundary, BC",,8095.6
+"    CA5907: Okanagan-Similkameen, BC",,10412.6
+"    CA5909: Fraser Valley, BC",Small regions (TL3) - predominantly rural close to a city,13361.7
+"    CA5915: Greater Vancouver, BC",Small regions (TL3) - predominantly urban,2877.4
+"    CA5917: Capital, BC",,2341
+"    CA5919: Cowichan Valley, BC",Small regions (TL3) - predominantly rural close to a city,3473.1
+"    CA5921: Nanaimo, BC",Small regions (TL3) - predominantly urban,2034.9
+"    CA5923: Alberni-Clayoquot, BC",Small regions (TL3) - predominantly rural remote,6596.6
+    CA5925: Comox Valley BC,,20013.5
+"    CA5927: Powell River, BC",,5092.1
+"    CA5929: Sunshine Coast, BC",,3778.1
+"    CA5931: Squamish-Lillooet, BC",,16353.7
+"    CA5933: Thompson-Nicola, BC",Small regions (TL3) - predominantly rural close to a city,44475.7
+"    CA5935: Central Okanagan, BC",,2904
+"    CA5937: North Okanagan, BC",,7511.9
+"    CA5939: Columbia-Shuswap, BC",Small regions (TL3) - predominantly rural remote,29004
+"    CA5941: Cariboo, BC",,80629.3
+"    CA5943: Mount Waddington, BC",,20288.2
+"    CA5945: Central Coast, BC",,24556.4
+"    CA5947: Skeena-Queen Charlotte, BC",,19871.8
+"    CA5949: Kitimat-Stikine, BC",,91917.9
+"    CA5951: Bulkley-Nechako, BC",,73440.9
+"    CA5953: Fraser-Fort George, BC",Small regions (TL3) - predominantly rural close to a city,50705.8
+"    CA5955: Peace River, BC",Small regions (TL3) - predominantly rural remote,117761
+"    CA5957: Stikine, BC",,132478
+"    CA5959: Northern Rockies, BC",,85148.9
+  CA60: Yukon,Large regions (TL2),474391
+"    CA6001: Yukon, YT",Small regions (TL3) - predominantly rural remote,474711
+  CA61: Northwest Territories,Large regions (TL2),1183090
+    CA6106: Region 6 NT,Small regions (TL3) - predominantly rural remote,618620
+"    CA6107: Inuvik, NT",,522215
+  CA62: Nunavut,Large regions (TL2),1936110
+"    CA6204: Baffin, NU",Small regions (TL3) - predominantly rural remote,1040420
+"    CA6205: Keewatin, NU",,445109
+"    CA6208: Kitikmeot, NU",,446728
+CHL: Chile,Country,740243
+  CL01: Tarapacá,Large regions (TL2),42225.8
+    CL011: Iquique,Small regions (TL3) - predominantly rural,2835.3
+    CL012: Tamarugal,,39390.5
+  CL02: Antofagasta,Large regions (TL2),126049
+    CL021: Antofagasta,Small regions (TL3) - predominantly rural,67813.5
+    CL022: El Loa,,41999.6
+    CL023: Tocopilla,,16236
+  CL03: Atacama,Large regions (TL2),75176.2
+    CL031: Copiapó,Small regions (TL3) - predominantly rural,32538.5
+    CL032: Chañaral,,24436.2
+    CL033: Huasco,,18201.5
+  CL04: Coquimbo,Large regions (TL2),40579.9
+    CL041: Elqui,Small regions (TL3) - predominantly rural,16895.1
+    CL042: Choapa,,10131.6
+    CL043: Limarí,,13553.2
+  CL05: Valparaíso,Large regions (TL2),16396.1
+    CL051: Valparaíso,Small regions (TL3) - predominantly urban,2146.6
+    CL052: Isla De Pascua,Small regions (TL3) - predominantly rural,163.6
+    CL053: Los Andes,,3054.1
+    CL054: Petorca,,4588.9
+    CL055: Quillota,Small regions (TL3) - intermediate,1113.1
+    CL056: San Antonio,,1511.6
+    CL057: San Felipe de Aconcagua,Small regions (TL3) - predominantly rural,2659.2
+    CL058: Marga Marga,Small regions (TL3) - intermediate,1159
+  CL06: O'Higgins,Large regions (TL2),16387
+    CL061: Cachapoal,Small regions (TL3) - intermediate,7384.2
+    CL062: Cardenal Caro,Small regions (TL3) - predominantly rural,3324.8
+    CL063: Colchagua,,5678
+  CL07: Maule,Large regions (TL2),30296.1
+    CL071: Talca,Small regions (TL3) - intermediate,9937.8
+    CL072: Cauquenes,Small regions (TL3) - predominantly rural,3027.2
+    CL073: Curicó,,7280.9
+    CL074: Linares,,10050.2
+  CL08: Bío-Bío,Large regions (TL2),37068.7
+    CL081: Concepción,Small regions (TL3) - predominantly urban,3439
+    CL082: Arauco,Small regions (TL3) - predominantly rural,5463.3
+    CL083: Bío-Bío,,14987.9
+    CL084: Ñuble,,13178.5
+  CL09: Araucanía,Large regions (TL2),31842.3
+    CL091: Cautín,Small regions (TL3) - intermediate,18409
+    CL092: Malleco,Small regions (TL3) - predominantly rural,13433.3
+  CL10: Los Lagos,Large regions (TL2),48583.6
+    CL101: Llanquihue,Small regions (TL3) - predominantly rural,14876.4
+    CL102: Chiloé,,9181.6
+    CL103: Osorno,Small regions (TL3) - intermediate,9223.7
+    CL104: Palena,Small regions (TL3) - predominantly rural,15301.9
+  CL11: Aysén,Large regions (TL2),108494
+    CL111: Coihaique,Small regions (TL3) - predominantly rural,12942.5
+    CL112: Aysen,,46588.8
+    CL113: Capitán Prat,,37043.6
+    CL114: General Carrera,,11919.5
+  CL12: Magallanes y Antártica,Large regions (TL2),116437
+    CL121: Magallanes,Small regions (TL3) - predominantly rural,38400.8
+    CL122: Antártica Chilena,,15853.7
+    CL123: Tierra Del Fuego,,22592.7
+    CL124: Última Esperanza,,55443.9
+  CL13: Santiago Metropolitan,Large regions (TL2),15403.2
+    CL131: Santiago,Small regions (TL3) - predominantly urban,2030.3
+    CL132: Cordillera,,5528.3
+    CL133: Chacabuco,Small regions (TL3) - predominantly rural,2076.1
+    CL134: Maipo,Small regions (TL3) - predominantly urban,1120.5
+    CL135: Melipilla,Small regions (TL3) - predominantly rural,4065.7
+    CL136: Talagante,Small regions (TL3) - predominantly urban,582.3
+  CL14: Los Rios,Large regions (TL2),18429.5
+    CL141: Valdivia,Small regions (TL3) - predominantly rural,10197.2
+    CL142: Ranco,,8232.3
+  CL15: Arica Y Parinacota,Large regions (TL2),16873.3
+    CL151: Arica,Small regions (TL3) - predominantly rural,8726.4
+    CL152: Parinacota,,8146.9
+CZE: Czech Republic,Country,77226.5
+  CZ01: Prague,Large regions (TL2),485.4
+    CZ010: Prague,Small regions (TL3) - predominantly urban,485.4
+  CZ02: Central Bohemian Region,Large regions (TL2),10806.5
+    CZ020: Central Bohemia,Small regions (TL3) - predominantly urban,10806.5
+  CZ03: Southwest,Large regions (TL2),17058.8
+    CZ031: South Bohemia,Small regions (TL3) - predominantly rural close to a city,9615.6
+    CZ032: Plzen,,7443.2
+  CZ04: Northwest,Large regions (TL2),8474.7
+    CZ041: Karlovy Vary,Small regions (TL3) - intermediate,3243.5
+    CZ042: Ústí nad Labem,,5231.2
+  CZ05: Northeast,Large regions (TL2),12254.3
+    CZ051: Liberec,Small regions (TL3) - intermediate,3115.4
+    CZ052: Hradec Králové,,4684
+    CZ053: Pardubice,Small regions (TL3) - predominantly rural close to a city,4455
+  CZ06: Southeast,Large regions (TL2),13715.6
+    CZ063: Vysocina,Small regions (TL3) - predominantly rural close to a city,6675.9
+    CZ064: South Moravia,Small regions (TL3) - intermediate,7039.6
+  CZ07: Central Moravia,Large regions (TL2),9119.6
+    CZ071: Olomouc,Small regions (TL3) - predominantly rural close to a city,5207.6
+    CZ072: Zlín,,3912
+  CZ08: Moravia-Silesia,Large regions (TL2),5311.7
+    CZ080: Moravia-Silesia,Small regions (TL3) - intermediate,5311.7
+DNK: Denmark,Country,42959
+  DK01: Capital (DK),Large regions (TL2),2546.2
+    DK011: City of Copenhagen,Small regions (TL3) - predominantly urban,167
+    DK012: Copenhagen suburbs,,342.1
+    DK013: North Zealand,Small regions (TL3) - intermediate,1448.8
+    DK014: Bornholm,Small regions (TL3) - predominantly rural remote,588.3
+  DK02: Zealand,Large regions (TL2),7217.7
+    DK021: East Zealand,Small regions (TL3) - intermediate,807.8
+    DK022: West and South Zealand,Small regions (TL3) - predominantly rural remote,6409.9
+  DK03: Southern Denmark,Large regions (TL2),12321.6
+    DK031: Fyn,Small regions (TL3) - intermediate,3544.4
+    DK032: South Jutland,,8777.2
+  DK04: Central Jutland,Large regions (TL2),13000.4
+    DK041: West Jutland,Small regions (TL3) - predominantly rural remote,7158.7
+    DK042: East Jutland,Small regions (TL3) - intermediate,5841.7
+  DK05: Northern Jutland,Large regions (TL2),7873.2
+    DK050: North Jutland,Small regions (TL3) - predominantly rural close to a city,7873.2
+EST: Estonia,Country,43432
+  EE00: Estonia,Large regions (TL2),43432
+    EE001: North Estonia,Small regions (TL3) - predominantly urban,4333
+    EE004: West Estonia,Small regions (TL3) - predominantly rural close to a city,11135
+    EE006: Central Estonia,Small regions (TL3) - predominantly rural remote,9067
+    EE007: Northeast Estonia,Small regions (TL3) - intermediate,3364
+    EE008: Southern Estonia,Small regions (TL3) - predominantly rural close to a city,15533
+FIN: Finland,Country,303891
+  FI19: Western Finland,Large regions (TL2),58302.8
+    FI193: Central Finland,Small regions (TL3) - predominantly rural close to a city,16703.4
+    FI194: Southern Ostrobothnia,Small regions (TL3) - predominantly rural remote,13443.8
+    FI195: Ostrobothnia,Small regions (TL3) - predominantly rural close to a city,7751.7
+    FI196: Satakunta,,7957.3
+    FI197: Pirkanmaa,Small regions (TL3) - intermediate,12446.7
+  FI1B: Helsinki-Uusimaa,Large regions (TL2),9096.8
+    FI1B1: Helsinki-Uusimaa,Small regions (TL3) - predominantly urban,9096.8
+  FI1C: Southern Finland,Large regions (TL2),31745.4
+    FI1C1: Finland Proper,Small regions (TL3) - intermediate,10661.2
+    FI1C2: Tavastia Proper,,5198.7
+    FI1C3: Päijät-Häme,,5124.5
+    FI1C4: Kymenlaakso,,5148.2
+    FI1C5: South Karelia,,5612.8
+  FI1D: Eastern and Northern Finland,Large regions (TL2),203194
+    FI1D1: Southern Savonia,Small regions (TL3) - predominantly rural remote,13976.7
+    FI1D2: Northern Savonia,Small regions (TL3) - predominantly rural close to a city,16768.4
+    FI1D3: North Karelia,Small regions (TL3) - predominantly rural remote,17762.3
+    FI1D4: Kainuu,,21499.8
+    FI1D5: Central Ostrobothnia,,5018.6
+    FI1D6: North Ostrobothnia,Small regions (TL3) - predominantly rural close to a city,35508.2
+    FI1D7: Lapland,Small regions (TL3) - predominantly rural remote,92659.8
+  FI20: Åland,Large regions (TL2),1552.2
+    FI200: Åland,Small regions (TL3) - predominantly rural remote,1552.2
+FRA: France,Country,543965
+  FR10: Ile-de-France,Large regions (TL2),12012.3
+    FR101: Paris,Small regions (TL3) - predominantly urban,105.4
+    FR102: Seine-et-Marne,Small regions (TL3) - intermediate,5915.3
+    FR103: Yvelines,Small regions (TL3) - predominantly urban,2284.4
+    FR104: Essonne,,1804.4
+    FR105: Hauts-de-Seine,,175.6
+    FR106: Seine-Saint-Denis,,236.2
+    FR107: Val-de-Marne,,245
+    FR108: Val-d'Oise,,1245.9
+  FR21: Champagne-Ardenne,Large regions (TL2),25605.8
+    FR211: Ardennes,Small regions (TL3) - predominantly rural close to a city,5229.4
+    FR212: Aube,,6004.2
+    FR213: Marne,Small regions (TL3) - intermediate,8161.6
+    FR214: Haute-Marne,Small regions (TL3) - predominantly rural remote,6210.6
+  FR22: Picardy,Large regions (TL2),19399.5
+    FR221: Aisne,Small regions (TL3) - predominantly rural close to a city,7369.1
+    FR222: Oise,Small regions (TL3) - intermediate,5860.2
+    FR223: Somme,Small regions (TL3) - predominantly rural close to a city,6170.1
+  FR23: Upper Normandy,Large regions (TL2),12317.4
+    FR231: Eure,Small regions (TL3) - predominantly rural close to a city,6039.9
+    FR232: Seine-Maritime,Small regions (TL3) - intermediate,6277.6
+  FR24: Centre-Val de Loire,Large regions (TL2),39150.9
+    FR241: Cher,Small regions (TL3) - predominantly rural close to a city,7235
+    FR242: Eure-et-Loir,,5880
+    FR243: Indre,,6790.6
+    FR244: Indre-et-Loire,Small regions (TL3) - intermediate,6126.7
+    FR245: Loir-et-Cher,Small regions (TL3) - predominantly rural close to a city,6343.4
+    FR246: Loiret,Small regions (TL3) - intermediate,6775.2
+  FR25: Lower Normandy,Large regions (TL2),17589.3
+    FR251: Calvados,Small regions (TL3) - intermediate,5547.9
+    FR252: Manche,Small regions (TL3) - predominantly rural close to a city,5938
+    FR253: Orne,,6103.4
+  FR26: Burgundy,Large regions (TL2),31582
+    FR261: Côte-d'Or,Small regions (TL3) - intermediate,8763.2
+    FR262: Nièvre,Small regions (TL3) - predominantly rural close to a city,6816.7
+    FR263: Saône-et-Loire,,8574.7
+    FR264: Yonne,Small regions (TL3) - predominantly rural remote,7427.4
+  FR30: Nord-Pas-de-Calais,Large regions (TL2),12414.1
+    FR301: Nord (FR),Small regions (TL3) - predominantly urban,5742.7
+    FR302: Pas-de-Calais,Small regions (TL3) - intermediate,6671.4
+  FR41: Lorraine,Large regions (TL2),23547.4
+    FR411: Meurthe-et-Moselle,Small regions (TL3) - intermediate,5245.9
+    FR412: Meuse,Small regions (TL3) - predominantly rural close to a city,6211.4
+    FR413: Moselle,Small regions (TL3) - intermediate,6216.3
+    FR414: Vosges,Small regions (TL3) - predominantly rural close to a city,5873.8
+  FR42: Alsace,Large regions (TL2),8280.2
+    FR421: Bas-Rhin,Small regions (TL3) - intermediate,4755
+    FR422: Haut-Rhin,,3525.2
+  FR43: Franche-Comté,Large regions (TL2),16202.3
+    FR431: Doubs,Small regions (TL3) - intermediate,5233.6
+    FR432: Jura,Small regions (TL3) - predominantly rural close to a city,4999.2
+    FR433: Haute-Saône,,5360.1
+    FR434: Territoire de Belfort,Small regions (TL3) - intermediate,609.4
+  FR51: Pays de la Loire,Large regions (TL2),32081.8
+    FR511: Loire-Atlantique,Small regions (TL3) - predominantly urban,6815.4
+    FR512: Maine-et-Loire,Small regions (TL3) - intermediate,7165.6
+    FR513: Mayenne,Small regions (TL3) - predominantly rural close to a city,5175.2
+    FR514: Sarthe,,6206
+    FR515: Vendée,,6719.6
+  FR52: Brittany,Large regions (TL2),27207.9
+    FR521: Côtes-d'Armor,Small regions (TL3) - predominantly rural close to a city,6877.6
+    FR522: Finistère,,6733
+    FR523: Ille-et-Vilaine,Small regions (TL3) - intermediate,6774.7
+    FR524: Morbihan,Small regions (TL3) - predominantly rural close to a city,6822.6
+  FR53: Poitou-Charentes,Large regions (TL2),25809.5
+    FR531: Charente,Small regions (TL3) - predominantly rural close to a city,5956
+    FR532: Charente-Maritime,,6863.8
+    FR533: Deux-Sèvres,,5999.4
+    FR534: Vienne,,6990.4
+  FR61: Aquitaine,Large regions (TL2),41308.4
+    FR611: Dordogne,Small regions (TL3) - predominantly rural close to a city,9060
+    FR612: Gironde,Small regions (TL3) - predominantly urban,10000.1
+    FR613: Landes,Small regions (TL3) - predominantly rural close to a city,9242.6
+    FR614: Lot-et-Garonne,Small regions (TL3) - predominantly rural remote,5360.9
+    FR615: Pyrénées-Atlantiques,Small regions (TL3) - intermediate,7644.8
+  FR62: Midi-Pyrénées,Large regions (TL2),45347.9
+    FR621: Ariège,Small regions (TL3) - predominantly rural remote,4889.9
+    FR622: Aveyron,,8735.1
+    FR623: Haute-Garonne,Small regions (TL3) - predominantly urban,6309.3
+    FR624: Gers,Small regions (TL3) - predominantly rural remote,6256.8
+    FR625: Lot,,5216.5
+    FR626: Hautes-Pyrénées,Small regions (TL3) - predominantly rural close to a city,4464
+    FR627: Tarn,,5757.9
+    FR628: Tarn-et-Garonne,,3718.3
+  FR63: Limousin,Large regions (TL2),16942.3
+    FR631: Corrèze,Small regions (TL3) - predominantly rural close to a city,5856.8
+    FR632: Creuse,Small regions (TL3) - predominantly rural remote,5565.4
+    FR633: Haute-Vienne,Small regions (TL3) - predominantly rural close to a city,5520.1
+  FR71: Rhône-Alpes,Large regions (TL2),43698.2
+    FR711: Ain,Small regions (TL3) - predominantly rural close to a city,5762.4
+    FR712: Ardèche,,5528.6
+    FR713: Drôme,,6530
+    FR714: Isère,Small regions (TL3) - intermediate,7431.4
+    FR715: Loire,,4780.6
+    FR716: Rhône,Small regions (TL3) - predominantly urban,3249.1
+    FR717: Savoie,Small regions (TL3) - predominantly rural close to a city,6028.3
+    FR718: Haute-Savoie,Small regions (TL3) - intermediate,4387.8
+  FR72: Auvergne,Large regions (TL2),26012.9
+    FR721: Allier,Small regions (TL3) - predominantly rural close to a city,7340.1
+    FR722: Cantal,Small regions (TL3) - predominantly rural remote,5726
+    FR723: Haute-Loire,Small regions (TL3) - predominantly rural close to a city,4977.1
+    FR724: Puy-de-Dôme,Small regions (TL3) - intermediate,7969.7
+  FR81: Languedoc-Roussillon,Large regions (TL2),27375.8
+    FR811: Aude,Small regions (TL3) - predominantly rural close to a city,6139
+    FR812: Gard,Small regions (TL3) - intermediate,5852.9
+    FR813: Hérault,,6101
+    FR814: Lozère,Small regions (TL3) - predominantly rural remote,5166.9
+    FR815: Pyrénées-Orientales,Small regions (TL3) - intermediate,4116
+  FR82: Provence-Alpes-Côte d'Azur,Large regions (TL2),31399.6
+    FR821: Alpes-de-Haute-Provence,Small regions (TL3) - predominantly rural remote,6925.2
+    FR822: Hautes-Alpes,,5548.7
+    FR823: Alpes-Maritimes,Small regions (TL3) - predominantly urban,4298.6
+    FR824: Bouches-du-Rhône,,5087.5
+    FR825: Var,Small regions (TL3) - intermediate,5972.5
+    FR826: Vaucluse,,3567.1
+  FR83: Corsica,Large regions (TL2),8679.8
+    FR831: Corse-du-Sud,Small regions (TL3) - predominantly rural close to a city,4014.2
+    FR832: Haute-Corse,Small regions (TL3) - predominantly rural remote,4665.6
+DEU: Germany,Country,357122
+  DE1: Baden-Württemberg,Large regions (TL2),35751.5
+  DE2: Bavaria,,70550.1
+  DE3: Berlin,,887.7
+  DE4: Brandenburg,,29483.1
+  DE5: Bremen,,419.2
+  DE6: Hamburg,,755.2
+  DE7: Hesse,,21114.9
+  DE8: Mecklenburg-Vorpommern,,23190.8
+  DE9: Lower Saxony,,47612.9
+  DEA: North Rhine-Westphalia,,34092.3
+  DEB: Rhineland-Palatinate,,19854.1
+  DEC: Saarland,,2568.8
+  DED: Saxony,,18419.7
+  DEE: Saxony-Anhalt,,20449.5
+  DEF: Schleswig-Holstein,,15799.3
+  DEG: Thuringia,,16172.5
+GRC: Greece,Country,130820
+    GR11: East Macedonia - Thrace,Large regions (TL2),14064
+    GR12: Central Macedonia,,18886
+    GR13: West Macedonia,,9258
+    GR14: Thessaly,,14003
+    GR21: Epirus,,9085
+    GR22: Ionian Islands,,2299
+    GR23: West Greece,,11067
+    GR24: Central Greece,,15435
+    GR25: Peloponnese,,15475
+    GR30: Attica,,3806
+    GR41: North Aegean,,3823
+    GR42: South Aegean,,5286
+    GR43: Crete,,8335
+HUN: Hungary,Country,93028
+  HU10: Central Hungary,Large regions (TL2),6915.8
+    HU101: Budapest,Small regions (TL3) - predominantly urban,525.1
+    HU102: Pest,Small regions (TL3) - intermediate,6390.7
+  HU21: Central Transdanubia,Large regions (TL2),11116
+    HU211: Fejér,Small regions (TL3) - predominantly rural close to a city,4358.5
+    HU212: Komárom-Esztergom,Small regions (TL3) - intermediate,2264.7
+    HU213: Veszprém,Small regions (TL3) - predominantly rural close to a city,4492.8
+  HU22: Western Transdanubia,Large regions (TL2),11328.4
+    HU221: Gyor-Moson-Sopron,Small regions (TL3) - predominantly rural close to a city,4208.3
+    HU222: Vas,,3336.1
+    HU223: Zala,Small regions (TL3) - predominantly rural remote,3784
+  HU23: Southern Transdanubia,Large regions (TL2),14168.7
+    HU231: Baranya,Small regions (TL3) - intermediate,4429.6
+    HU232: Somogy,Small regions (TL3) - predominantly rural remote,6035.9
+    HU233: Tolna,Small regions (TL3) - predominantly rural close to a city,3703.3
+  HU31: Northern Hungary,Large regions (TL2),13432.8
+    HU311: Borsod-Abaúj-Zemplén,Small regions (TL3) - intermediate,7250
+    HU312: Heves,Small regions (TL3) - predominantly rural remote,3637.3
+    HU313: Nógrád,,2545.5
+  HU32: Northern Great Plain,Large regions (TL2),17728.8
+    HU321: Hajdú-Bihar,Small regions (TL3) - intermediate,6210.6
+    HU322: Jász-Nagykun-Szolnok,Small regions (TL3) - predominantly rural remote,5581.7
+    HU323: Szabolcs-Szatmár-Bereg,Small regions (TL3) - predominantly rural close to a city,5936.6
+  HU33: Southern Great Plain,Large regions (TL2),18337.2
+    HU331: Bács-Kiskun,Small regions (TL3) - predominantly rural close to a city,8444.7
+    HU332: Békés,Small regions (TL3) - predominantly rural remote,5629.7
+    HU333: Csongrád,Small regions (TL3) - intermediate,4262.8
+ISL: Iceland,Country,100243
+  IS01: Capital Region,Large regions (TL2),1042.7
+    IS011: Capital Region,Small regions (TL3) - intermediate,1042.7
+  IS02: Other Regions,Large regions (TL2),101653
+    IS021: Southern Peninsula,Small regions (TL3) - predominantly rural close to a city,818.3
+    IS022: Western Region (IS),Small regions (TL3) - predominantly rural remote,9520.2
+    IS023: Westfjords,,9353.9
+    IS024: Northwestern Region (IS),,12746.5
+    IS025: Southern Region (IS),,24689
+    IS026: Northeastern Region (IS),,21933.4
+    IS027: Austurland,,22591.8
+IRL: Ireland,Country,68394
+"  IE01: Border, Midland and Western",Large regions (TL2),32097
+    IE011: Border,Small regions (TL3) - predominantly rural remote,11976
+    IE012: Midlands,,6497
+    IE013: West,Small regions (TL3) - predominantly rural close to a city,13625
+  IE02: Southern and Eastern,Large regions (TL2),36297
+    IE021: Dublin,Small regions (TL3) - predominantly urban,917
+    IE022: Mid-East,Small regions (TL3) - predominantly rural close to a city,6030
+    IE023: Mid-West,,7860
+    IE024: South-East (IE),Small regions (TL3) - predominantly rural remote,9372
+    IE025: South-West (IE),Small regions (TL3) - predominantly rural close to a city,12118
+ISR: Israel,Country,21643
+  IL01: Jerusalem District,Large regions (TL2),653
+  IL02: Northern District,,4473
+  IL03: Haifa District,,866
+  IL04: Central District,,1294
+  IL05: Tel Aviv District,,172
+ITA: Italy,Country,295113
+  IL06: Southern District,Large regions (TL2),14185
+  ITC1: Piedmont,,24860
+    ITC11: Turin,Small regions (TL3) - predominantly urban,6727
+    ITC12: Vercelli,Small regions (TL3) - predominantly rural close to a city,2038
+    ITC13: Biella,Small regions (TL3) - intermediate,896
+    ITC14: Verbano-Cusio-Ossola,,2135
+    ITC15: Novara,,1285
+    ITC16: Cuneo,Small regions (TL3) - predominantly rural close to a city,6813
+    ITC17: Asti,,1498
+    ITC18: Alessandria,,3467
+  ITC2: Aosta Valley,Large regions (TL2),3239
+    ITC20: Aosta Valley,Small regions (TL3) - intermediate,3239
+  ITC3: Liguria,Large regions (TL2),5330
+    ITC31: Imperia,Small regions (TL3) - intermediate,1142
+    ITC32: Savona,,1520
+    ITC33: Genoa,Small regions (TL3) - predominantly urban,1808
+    ITC34: La Spezia,,861
+  ITC4: Lombardy,Large regions (TL2),22800
+    ITC41: Varese,Small regions (TL3) - predominantly urban,1113
+    ITC42: Como,,1188
+    ITC43: Lecco,,746
+    ITC44: Sondrio,Small regions (TL3) - predominantly rural remote,3158
+    ITC46: Bergamo,Small regions (TL3) - predominantly urban,2652
+    ITC47: Brescia,Small regions (TL3) - intermediate,4479
+    ITC48: Pavia,,2854
+    ITC49: Lodi,,742
+    ITC4A: Cremona,,1698
+    ITC4B: Mantua,Small regions (TL3) - predominantly rural close to a city,2227
+    ITC4C: Milan,Small regions (TL3) - predominantly urban,1536
+    ITC4D: Monza and Brianza,,405
+  ITF1: Abruzzo,Large regions (TL2),10635
+    ITF11: L'Aquila,Small regions (TL3) - predominantly rural close to a city,5008
+    ITF12: Teramo,,1919
+    ITF13: Pescara,Small regions (TL3) - intermediate,1167
+    ITF14: Chieti,Small regions (TL3) - predominantly rural close to a city,2542
+  ITF2: Molise,Large regions (TL2),4373
+    ITF21: Isernia,Small regions (TL3) - predominantly rural remote,1507
+    ITF22: Campobasso,,2866
+  ITF3: Campania,Large regions (TL2),13392
+    ITF31: Caserta,Small regions (TL3) - predominantly urban,2605
+    ITF32: Benevento,Small regions (TL3) - predominantly rural close to a city,2034
+    ITF33: Naples,Small regions (TL3) - predominantly urban,1162
+    ITF34: Avellino,Small regions (TL3) - intermediate,2756
+    ITF35: Salerno,,4835
+  ITF4: Apulia,Large regions (TL2),19191
+    ITF43: Taranto,Small regions (TL3) - intermediate,2417
+    ITF44: Brindisi,,1837
+    ITF45: Lecce,,2757
+    ITF46: Foggia,Small regions (TL3) - predominantly rural close to a city,7049
+    ITF47: Bari,Small regions (TL3) - intermediate,5130
+    ITF48: Barletta-Andria-Trani,,1538.7
+  ITF5: Basilicata,Large regions (TL2),9719
+    ITF51: Potenza,Small regions (TL3) - predominantly rural close to a city,6383
+    ITF52: Matera,,3336
+  ITF6: Calabria,Large regions (TL2),14753
+    ITF61: Cosenza,Small regions (TL3) - predominantly rural close to a city,6485
+    ITF62: Crotone,Small regions (TL3) - predominantly rural remote,1694
+    ITF63: Catanzaro,Small regions (TL3) - predominantly rural close to a city,2346
+    ITF64: Vibo Valentia,,1128
+    ITF65: Reggio di Calabria,Small regions (TL3) - intermediate,3100
+  ITG1: Sicily,Large regions (TL2),25409
+    ITG11: Trapani,Small regions (TL3) - intermediate,2445
+    ITG12: Palermo,Small regions (TL3) - predominantly urban,4948
+    ITG13: Messina,Small regions (TL3) - intermediate,3164
+    ITG14: Agrigento,,3014
+    ITG15: Caltanissetta,,2105
+    ITG16: Enna,Small regions (TL3) - predominantly rural remote,2527
+    ITG17: Catania,Small regions (TL3) - predominantly urban,3509
+    ITG18: Ragusa,Small regions (TL3) - intermediate,1606
+    ITG19: Siracusa,,2090
+  ITG2: Sardinia,Large regions (TL2),23892
+    ITG25: Sassari,Small regions (TL3) - predominantly rural close to a city,4282.5
+    ITG26: Nuoro,Small regions (TL3) - predominantly rural remote,3916.5
+    ITG27: Cagliari,Small regions (TL3) - intermediate,4551.3
+    ITG28: Oristano,Small regions (TL3) - predominantly rural remote,3022.4
+    ITG29: Olbia-Tempio,,3382.4
+    ITG2A: Ogliastra,,1845.4
+    ITG2B: Medio Campidano,Small regions (TL3) - predominantly rural close to a city,1506.9
+    ITG2C: Carbonia-Iglesias,,1488.6
+  ITH1: Province of Bolzano-Bozen,Large regions (TL2),7370
+    ITH10: Bolzano-Bozen,Small regions (TL3) - predominantly rural close to a city,7370
+  ITH2: Province of Trento,Large regions (TL2),6140
+    ITH20: Trento,Small regions (TL3) - intermediate,6140
+  ITH3: Veneto,Large regions (TL2),17571
+    ITH31: Verona,Small regions (TL3) - intermediate,2895
+    ITH32: Vicenza,,2684
+    ITH33: Belluno,Small regions (TL3) - predominantly rural close to a city,3592
+    ITH34: Treviso,Small regions (TL3) - intermediate,2411
+    ITH35: Venice,,2178
+    ITH36: Padua,,2102
+    ITH37: Rovigo,Small regions (TL3) - predominantly rural close to a city,1709
+  ITH4: Friuli-Venezia Giulia,Large regions (TL2),7556
+    ITH41: Pordenone,Small regions (TL3) - intermediate,2164
+    ITH42: Udine,Small regions (TL3) - predominantly rural close to a city,4728
+    ITH43: Gorizia,Small regions (TL3) - predominantly urban,454
+    ITH44: Trieste,,211
+  ITH5: Emilia-Romagna,Large regions (TL2),21523
+    ITH51: Piacenza,Small regions (TL3) - predominantly rural close to a city,2498
+    ITH52: Parma,Small regions (TL3) - intermediate,3329
+    ITH53: Reggio Nell'Emilia,,2239
+    ITH54: Modena,,2619
+    ITH55: Bologna,,3639
+    ITH56: Ferrara,Small regions (TL3) - predominantly rural close to a city,2553
+    ITH57: Ravenna,Small regions (TL3) - intermediate,1793
+    ITH58: Forlì-Cesena,,2337
+    ITH59: Rimini,,861.5
+  ITI1: Tuscany,Large regions (TL2),22657
+    ITI11: Massa-Carrara,Small regions (TL3) - intermediate,1126
+    ITI12: Lucca,Small regions (TL3) - predominantly urban,1730
+    ITI13: Pistoia,,952
+    ITI14: Florence,Small regions (TL3) - intermediate,3474
+    ITI15: Prato,Small regions (TL3) - predominantly urban,361
+    ITI16: Livorno,Small regions (TL3) - intermediate,1201
+    ITI17: Pisa,,2396
+    ITI18: Arezzo,Small regions (TL3) - predominantly rural close to a city,3204
+    ITI19: Siena,,3784
+    ITI1A: Grosseto,Small regions (TL3) - predominantly rural remote,4428
+  ITI2: Umbria,Large regions (TL2),8252
+    ITI21: Perugia,Small regions (TL3) - intermediate,6157
+    ITI22: Terni,,2095
+  ITI3: Marche,Large regions (TL2),9554
+    ITI31: Pesaro e Urbino,Small regions (TL3) - predominantly rural close to a city,2564.2
+    ITI32: Ancona,Small regions (TL3) - intermediate,1908
+    ITI33: Macerata,Small regions (TL3) - predominantly rural close to a city,2755
+    ITI34: Ascoli Piceno,Small regions (TL3) - intermediate,1197.5
+    ITI35: Fermo,,859.5
+  ITI4: Lazio,Large regions (TL2),16897
+    ITI41: Viterbo,Small regions (TL3) - predominantly rural close to a city,3453
+    ITI42: Rieti,,2720
+    ITI43: Rome,Small regions (TL3) - predominantly urban,5285
+    ITI44: Latina,Small regions (TL3) - intermediate,2223
+    ITI45: Frosinone,Small regions (TL3) - predominantly rural close to a city,3215
+JPN: Japan,Country,373530
+  JPA: Hokkaido,Large regions (TL2),83456
+    JPA01: Hokkaido,Small regions (TL3) - intermediate,83456
+  JPB: Tohoku,Large regions (TL2),66504
+    JPB02: Aomori,Small regions (TL3) - predominantly rural close to a city,9506
+    JPB03: Iwate,,15252
+    JPB04: Miyagi,Small regions (TL3) - predominantly urban,7240
+    JPB05: Akita,Small regions (TL3) - predominantly rural remote,11547
+    JPB06: Yamagata,,9317
+    JPB07: Fukushima,,13642
+"  JPC: Northern-Kanto, Koshin",Large regions (TL2),35355
+    JPC08: Ibaraki,Small regions (TL3) - intermediate,5797
+    JPC09: Tochigi,,6392
+    JPC10: Gumma,,6350
+    JPC19: Yamanashi,Small regions (TL3) - predominantly rural close to a city,12569
+    JPC20: Nagano,,4247
+  JPD: Southern-Kanto,Large regions (TL2),13112
+    JPD11: Saitama,Small regions (TL3) - predominantly urban,3776
+    JPD12: Chiba,,5085
+    JPD13: Tokyo,,1915
+    JPD14: Kanagawa,,2336
+  JPE: Hokuriku,Large regions (TL2),32723
+    JPE15: Niigata,Small regions (TL3) - intermediate,4173
+    JPE16: Toyama,,4411
+    JPE17: Ishikawa,,13566
+    JPE18: Fukui,Small regions (TL3) - predominantly rural remote,10573
+  JPF: Toukai,Large regions (TL2),22338
+    JPF21: Gifu,Small regions (TL3) - intermediate,7573
+    JPF22: Shizuoka,,4180
+    JPF23: Aichi,Small regions (TL3) - predominantly urban,4857
+    JPF24: Mie,Small regions (TL3) - intermediate,5728
+  JPG: Kansai region,Large regions (TL2),26232
+    JPG25: Shiga,Small regions (TL3) - intermediate,3453
+    JPG26: Kyoto,Small regions (TL3) - predominantly urban,4562
+    JPG27: Osaka,,1530
+    JPG28: Hyogo,,8308
+    JPG29: Nara,,3670
+    JPG30: Wakayama,Small regions (TL3) - intermediate,4709
+  JPH: Chugoku,Large regions (TL2),31450
+    JPH31: Tottori,Small regions (TL3) - intermediate,3481
+    JPH32: Shimane,Small regions (TL3) - predominantly rural remote,6529
+    JPH33: Okayama,Small regions (TL3) - intermediate,7058
+    JPH34: Hiroshima,Small regions (TL3) - predominantly urban,8440
+    JPH35: Yamaguchi,Small regions (TL3) - predominantly rural remote,5942
+  JPI: Shikoku,Large regions (TL2),18648
+    JPI36: Tokushima,Small regions (TL3) - intermediate,4077
+    JPI37: Kagawa,,1817
+    JPI38: Ehime,,5663
+    JPI39: Kochi,Small regions (TL3) - predominantly rural close to a city,7091
+"  JPJ: Kyushu, Okinawa",Large regions (TL2),43712
+    JPJ40: Fukuoka,Small regions (TL3) - predominantly urban,4832
+    JPJ41: Saga,Small regions (TL3) - predominantly rural remote,2387
+    JPJ42: Nagasaki,Small regions (TL3) - intermediate,3722
+    JPJ43: Kumamoto,,7375
+    JPJ44: Oita,,6286
+    JPJ45: Miyazaki,Small regions (TL3) - predominantly rural remote,7713
+    JPJ46: Kagoshima,Small regions (TL3) - intermediate,9149
+    JPJ47: Okinawa,,2248
+KOR: Korea,Country,99461
+  KR01: Capital Region (KR),Large regions (TL2),11705.2
+    KR011: Seoul,Small regions (TL3) - predominantly urban,605.5
+    KR012: Incheon,,964.5
+    KR013: Gyeonggi-do,,10135.2
+  KR02: Gyeongnam Region,Large regions (TL2),12331.6
+    KR021: Busan,Small regions (TL3) - predominantly urban,759.9
+    KR022: Ulsan,,1056.3
+    KR023: Gyeongsangnam-do,Small regions (TL3) - intermediate,10515.5
+  KR03: Gyeongbuk Region,Large regions (TL2),19909.3
+    KR031: Daegu,Small regions (TL3) - predominantly urban,885.6
+    KR032: Gyeonsangbuk-do,Small regions (TL3) - predominantly rural close to a city,19023.7
+  KR04: Jeolla Region,Large regions (TL2),20538.5
+    KR041: Gwangju,Small regions (TL3) - predominantly urban,501.4
+    KR042: Jeollabuk-do,Small regions (TL3) - intermediate,8050.1
+    KR043: Jeollanam-do,Small regions (TL3) - predominantly rural close to a city,11987
+  KR05: Chungcheong Region,Large regions (TL2),16558
+    KR051: Daejeon,Small regions (TL3) - predominantly urban,539.8
+    KR052: Chungcheongbuk-do,Small regions (TL3) - intermediate,7431.7
+    KR053: Chungcheongnam-do,Small regions (TL3) - predominantly rural close to a city,8586.4
+  KR06: Gangwon Region,Large regions (TL2),16571.8
+    KR061: Gangwon-do,Small regions (TL3) - predominantly rural close to a city,16571.8
+  KR07: Jeju,Large regions (TL2),1846.3
+    KR071: Jeju-do,Small regions (TL3) - predominantly rural close to a city,1846.3
+LUX: Luxembourg,Country,2586
+  LU00: Luxembourg,Large regions (TL2),2586
+    LU000: Luxembourg,Small regions (TL3) - intermediate,2586
+MEX: Mexico,Country,1959250
+  ME01: Aguascalientes,Large regions (TL2),5625
+"    ME01R1: Aguacalientes, R1",Small regions (TL3) - predominantly urban,1181
+"    ME01R2: Aguacalientes, R2",Small regions (TL3) - predominantly rural close to a city,4444
+  ME02: Baja California Norte,Large regions (TL2),71546
+"    ME02R1: Baja California Norte, R1",Small regions (TL3) - predominantly rural close to a city,53323
+"    ME02R2: Baja California Norte, R2",,12979
+"    ME02R3: Baja California Norte, R3",,3623
+"    ME02R4: Baja California Norte, R4",Small regions (TL3) - predominantly urban,1621
+  ME03: Baja California Sur,Large regions (TL2),73943
+"    ME03R1: Baja California Sur, R1",Small regions (TL3) - predominantly rural remote,22693
+"    ME03R2: Baja California Sur, R2",Small regions (TL3) - predominantly rural close to a city,15542
+"    ME03R3: Baja California Sur, R3",,3725
+"    ME03R4: Baja California Sur, R4",Small regions (TL3) - predominantly rural remote,31983
+  ME04: Campeche,Large regions (TL2),57727
+"    ME04R1: Campeche, R1",Small regions (TL3) - predominantly rural close to a city,4672
+"    ME04R2: Campeche, R2",Small regions (TL3) - predominantly rural remote,28779
+"    ME04R3: Campeche, R3",Small regions (TL3) - predominantly rural close to a city,3228
+"    ME04R4: Campeche, R4",,21048
+  ME05: Coahuila,Large regions (TL2),151445
+"    ME05R1: Coahuila, R1",Small regions (TL3) - predominantly rural close to a city,27074
+"    ME05R2: Coahuila, R2",Small regions (TL3) - predominantly rural remote,19180
+"    ME05R3: Coahuila, R3",,45621
+"    ME05R4: Coahuila, R4",Small regions (TL3) - intermediate,16040
+"    ME05R5: Coahuila, R5",Small regions (TL3) - predominantly urban,16302
+"    ME05R6: Coahuila, R6",Small regions (TL3) - predominantly rural close to a city,27228
+  ME06: Colima,Large regions (TL2),5627
+"    ME06R1: Colima, R1",Small regions (TL3) - predominantly rural close to a city,1138
+"    ME06R2: Colima, R2",Small regions (TL3) - predominantly urban,1945
+"    ME06R3: Colima, R3",Small regions (TL3) - predominantly rural close to a city,2544
+  ME07: Chiapas,Large regions (TL2),73681
+"    ME07R1: Chiapas, R1",Small regions (TL3) - intermediate,12985
+"    ME07R2: Chiapas, R2",,4752
+"    ME07R3: Chiapas, R3",Small regions (TL3) - predominantly rural close to a city,9603
+"    ME07R4: Chiapas, R4",Small regions (TL3) - predominantly rural remote,7967
+"    ME07R5: Chiapas, R5",,5639
+"    ME07R6: Chiapas, R6",,20185
+"    ME07R7: Chiapas, R7",,2223
+"    ME07R8: Chiapas, R8",Small regions (TL3) - intermediate,5893
+"    ME07R9: Chiapas, R9",Small regions (TL3) - predominantly rural remote,4434
+  ME08: Chihuahua,Large regions (TL2),247487
+"    ME08R1: Chihuahua, R1",Small regions (TL3) - predominantly rural close to a city,28355
+"    ME08R10: Chihuahua, R10",Small regions (TL3) - intermediate,10049
+"    ME08R11: Chihuahua, R11",Small regions (TL3) - predominantly rural remote,21374
+"    ME08R12: Chihuahua, R12",Small regions (TL3) - predominantly rural close to a city,11571
+"    ME08R13: Chihuahua, R13",Small regions (TL3) - predominantly rural remote,29634
+"    ME08R2: Chihuahua, R2",Small regions (TL3) - predominantly urban,9937
+"    ME08R3: Chihuahua, R3",Small regions (TL3) - predominantly rural remote,24800
+"    ME08R4: Chihuahua, R4",,23131
+"    ME08R5: Chihuahua, R5",Small regions (TL3) - predominantly rural close to a city,17305
+"    ME08R6: Chihuahua, R6",,23937
+"    ME08R7: Chihuahua, R7",Small regions (TL3) - predominantly rural remote,23444
+"    ME08R8: Chihuahua, R8",,18430
+"    ME08R9: Chihuahua, R9",Small regions (TL3) - predominantly rural close to a city,5520
+  ME09: Federal District (MX),Large regions (TL2),1484
+"    ME09R1: Distrito Federal (MX), R1",Small regions (TL3) - predominantly urban,373
+"    ME09R2: Distrito Federal (MX), R2",,1111
+  ME10: Durango,Large regions (TL2),123367
+"    ME10R1: Durango, R1",Small regions (TL3) - intermediate,7661
+"    ME10R2: Durango, R2",Small regions (TL3) - predominantly rural close to a city,17302
+"    ME10R3: Durango, R3",Small regions (TL3) - predominantly rural remote,12000
+"    ME10R4: Durango, R4",,15066
+"    ME10R5: Durango, R5",Small regions (TL3) - predominantly rural close to a city,14631
+"    ME10R6: Durango, R6",,7863
+"    ME10R7: Durango, R7",Small regions (TL3) - predominantly rural remote,17971
+"    ME10R8: Durango, R8",,20829
+"    ME10R9: Durango, R9",,10044
+  ME11: Guanajuato,Large regions (TL2),30621
+"    ME11R1: Guanajuato, R1",Small regions (TL3) - predominantly urban,10630
+"    ME11R2: Guanajuato, R2",Small regions (TL3) - intermediate,6809
+"    ME11R3: Guanajuato, R3",Small regions (TL3) - predominantly rural close to a city,7258
+"    ME11R4: Guanajuato, R4",Small regions (TL3) - intermediate,5924
+  ME12: Guerrero,Large regions (TL2),63618
+"    ME12R1: Guerrero, R1",Small regions (TL3) - predominantly rural remote,12984
+"    ME12R2: Guerrero, R2",Small regions (TL3) - predominantly rural close to a city,8592
+"    ME12R3: Guerrero, R3",,10647
+"    ME12R4: Guerrero, R4",Small regions (TL3) - predominantly rural remote,7059
+"    ME12R5: Guerrero, R5",Small regions (TL3) - predominantly rural close to a city,14080
+"    ME12R6: Guerrero, R6",Small regions (TL3) - predominantly rural remote,8548
+"    ME12R7: Guerrero, R7",Small regions (TL3) - predominantly urban,1708
+  ME13: Hidalgo,Large regions (TL2),20856
+"    ME13R1: Hidalgo, R1",Small regions (TL3) - intermediate,1354
+"    ME13R10: Hidalgo, R10",,1467
+"    ME13R11: Hidalgo, R11",Small regions (TL3) - predominantly rural close to a city,1502
+"    ME13R12: Hidalgo, R12",Small regions (TL3) - intermediate,416
+"    ME13R13: Hidalgo, R13",Small regions (TL3) - predominantly rural remote,876
+"    ME13R2: Hidalgo, R2",Small regions (TL3) - intermediate,1705
+"    ME13R3: Hidalgo, R3",Small regions (TL3) - predominantly urban,1561
+"    ME13R4: Hidalgo, R4",Small regions (TL3) - predominantly rural close to a city,2274
+"    ME13R5: Hidalgo, R5",Small regions (TL3) - predominantly rural remote,2353
+"    ME13R6: Hidalgo, R6",Small regions (TL3) - intermediate,1752
+"    ME13R7: Hidalgo, R7",,1508
+"    ME13R8: Hidalgo, R8",Small regions (TL3) - predominantly rural remote,2195
+"    ME13R9: Hidalgo, R9",,1893
+  ME14: Jalisco,Large regions (TL2),78630
+"    ME14R1: Jalisco, R1",Small regions (TL3) - predominantly rural remote,8825
+"    ME14R10: Jalisco, R10",Small regions (TL3) - predominantly urban,7554
+"    ME14R2: Jalisco, R2",Small regions (TL3) - predominantly rural close to a city,7896
+"    ME14R3: Jalisco, R3",,6965
+"    ME14R4: Jalisco, R4",,3776
+"    ME14R5: Jalisco, R5",,7664
+"    ME14R6: Jalisco, R6",,6284
+"    ME14R7: Jalisco, R7",Small regions (TL3) - predominantly rural remote,11803
+"    ME14R8: Jalisco, R8",Small regions (TL3) - intermediate,10208
+"    ME14R9: Jalisco, R9",Small regions (TL3) - predominantly rural remote,7655
+  ME15: Mexico,Large regions (TL2),22333
+"    ME15R1: Mexico, R1",Small regions (TL3) - predominantly urban,2989
+"    ME15R2: Mexico, R2",,3182
+"    ME15R3: Mexico, R3",,2619
+"    ME15R4: Mexico, R4",Small regions (TL3) - predominantly rural remote,3434
+"    ME15R5: Mexico, R5",Small regions (TL3) - predominantly urban,3214
+"    ME15R6: Mexico, R6",Small regions (TL3) - predominantly rural close to a city,2829
+"    ME15R7: Mexico, R7",,2006
+"    ME15R8: Mexico, R8",,2060
+  ME16: Michoacan,Large regions (TL2),58667
+"    ME16R1: Michoacan, R1",Small regions (TL3) - predominantly rural close to a city,5949
+"    ME16R2: Michoacan, R2",Small regions (TL3) - intermediate,11023
+"    ME16R3: Michoacan, R3",Small regions (TL3) - predominantly rural close to a city,13192
+"    ME16R4: Michoacan, R4",Small regions (TL3) - predominantly rural remote,8130
+"    ME16R5: Michoacan, R5",Small regions (TL3) - predominantly rural close to a city,7850
+"    ME16R6: Michoacan, R6",Small regions (TL3) - predominantly urban,12523
+  ME17: Morelos,Large regions (TL2),4892
+"    ME17R1: Morelos, R1",Small regions (TL3) - predominantly urban,519
+"    ME17R2: Morelos, R2",Small regions (TL3) - predominantly rural close to a city,611
+"    ME17R3: Morelos, R3",Small regions (TL3) - predominantly urban,965
+"    ME17R4: Morelos, R4",,280
+"    ME17R5: Morelos, R5",Small regions (TL3) - intermediate,706
+"    ME17R6: Morelos, R6",,1381
+"    ME17R7: Morelos, R7",Small regions (TL3) - predominantly rural close to a city,430
+  ME18: Nayarit,Large regions (TL2),27862
+"    ME18R1: Nayarit, R1",Small regions (TL3) - predominantly rural close to a city,7704
+"    ME18R2: Nayarit, R2",Small regions (TL3) - predominantly urban,2160
+"    ME18R3: Nayarit, R3",Small regions (TL3) - predominantly rural close to a city,3635
+"    ME18R4: Nayarit, R4",,2664
+"    ME18R5: Nayarit, R5",Small regions (TL3) - predominantly rural remote,11699
+  ME19: Nuevo Leon,Large regions (TL2),64203
+"    ME19R1: Nuevo Leon, R1",Small regions (TL3) - predominantly rural remote,12658
+"    ME19R2: Nuevo Leon, R2",Small regions (TL3) - predominantly rural close to a city,3747
+"    ME19R3: Nuevo Leon, R3",,9426
+"    ME19R4: Nuevo Leon, R4",,7200
+"    ME19R5: Nuevo Leon, R5",Small regions (TL3) - predominantly rural remote,18311
+"    ME19R6: Nuevo Leon, R6",Small regions (TL3) - predominantly rural close to a city,11003
+"    ME19R7: Nuevo Leon, R7",Small regions (TL3) - predominantly urban,1858
+  ME20: Oaxaca,Large regions (TL2),93343
+"    ME20R1: Oaxaca, R1",Small regions (TL3) - predominantly rural remote,15656
+"    ME20R2: Oaxaca, R2",,4381
+"    ME20R3: Oaxaca, R3",Small regions (TL3) - predominantly rural close to a city,8511
+"    ME20R4: Oaxaca, R4",Small regions (TL3) - intermediate,9401
+"    ME20R5: Oaxaca, R5",Small regions (TL3) - predominantly rural remote,11528
+"    ME20R6: Oaxaca, R6",Small regions (TL3) - predominantly rural close to a city,20192
+"    ME20R7: Oaxaca, R7",Small regions (TL3) - predominantly rural remote,8951
+"    ME20R8: Oaxaca, R8",,14723
+  ME21: Puebla,Large regions (TL2),34251
+"    ME21R1: Puebla, R1",Small regions (TL3) - predominantly rural close to a city,5648
+"    ME21R2: Puebla, R2",Small regions (TL3) - intermediate,2827
+"    ME21R3: Puebla, R3",Small regions (TL3) - predominantly rural close to a city,4518
+"    ME21R4: Puebla, R4",Small regions (TL3) - predominantly urban,2597
+"    ME21R5: Puebla, R5",,1760
+"    ME21R6: Puebla, R6",Small regions (TL3) - predominantly rural close to a city,8542
+"    ME21R7: Puebla, R7",Small regions (TL3) - intermediate,8359
+  ME22: Queretaro,Large regions (TL2),11658
+"    ME22R1: Queretaro, R1",Small regions (TL3) - predominantly rural remote,3606
+"    ME22R2: Queretaro, R2",Small regions (TL3) - predominantly rural close to a city,3571
+"    ME22R3: Queretaro, R3",Small regions (TL3) - intermediate,1716
+"    ME22R4: Queretaro, R4",Small regions (TL3) - predominantly urban,1650
+"    ME22R5: Queretaro, R5",Small regions (TL3) - predominantly rural close to a city,1115
+  ME23: Quintana Roo,Large regions (TL2),42535
+"    ME23R1: Quintana Roo, R1",Small regions (TL3) - predominantly rural remote,3298
+"    ME23R2: Quintana Roo, R2",Small regions (TL3) - predominantly urban,6336
+"    ME23R3: Quintana Roo, R3",Small regions (TL3) - predominantly rural remote,18318
+"    ME23R4: Quintana Roo, R4",Small regions (TL3) - predominantly rural close to a city,14583
+  ME24: San Luis Potosi,Large regions (TL2),61165
+"    ME24R1: San Luis Potosi, R1",Small regions (TL3) - predominantly rural close to a city,10458
+"    ME24R2: San Luis Potosi, R2",Small regions (TL3) - predominantly rural remote,13382
+"    ME24R3: San Luis Potosi, R3",Small regions (TL3) - predominantly urban,8898
+"    ME24R4: San Luis Potosi, R4",Small regions (TL3) - predominantly rural close to a city,28427
+  ME25: Sinaloa,Large regions (TL2),57331
+"    ME25R1: Sinaloa, R1",Small regions (TL3) - predominantly rural close to a city,11406
+"    ME25R2: Sinaloa, R2",,9232
+"    ME25R3: Sinaloa, R3",,10119
+"    ME25R4: Sinaloa, R4",,12602
+"    ME25R5: Sinaloa, R5",Small regions (TL3) - intermediate,13972
+  ME26: Sonora,Large regions (TL2),179516
+"    ME26R1: Sonora, R1",Small regions (TL3) - predominantly rural close to a city,29467
+"    ME26R10: Sonora, R10",,9957
+"    ME26R11: Sonora, R11",,12604
+"    ME26R12: Sonora, R12",Small regions (TL3) - predominantly rural remote,13708
+"    ME26R2: Sonora, R2",Small regions (TL3) - predominantly rural close to a city,18607
+"    ME26R3: Sonora, R3",Small regions (TL3) - predominantly rural remote,13633
+"    ME26R4: Sonora, R4",Small regions (TL3) - predominantly rural close to a city,13092
+"    ME26R5: Sonora, R5",,15557
+"    ME26R6: Sonora, R6",Small regions (TL3) - predominantly rural remote,15886
+"    ME26R7: Sonora, R7",Small regions (TL3) - predominantly rural close to a city,15688
+"    ME26R8: Sonora, R8",Small regions (TL3) - predominantly rural remote,11795
+"    ME26R9: Sonora, R9",,9522
+  ME27: Tabasco,Large regions (TL2),24747
+"    ME27R1: Tabasco, R1",Small regions (TL3) - predominantly urban,1709
+"    ME27R2: Tabasco, R2",Small regions (TL3) - intermediate,8461
+"    ME27R3: Tabasco, R3",Small regions (TL3) - predominantly rural remote,10372
+"    ME27R4: Tabasco, R4",Small regions (TL3) - predominantly rural close to a city,4205
+  ME28: Tamaulipas,Large regions (TL2),80148
+"    ME28R1: Tamaulipas, R1",Small regions (TL3) - predominantly rural close to a city,16844
+"    ME28R2: Tamaulipas, R2",Small regions (TL3) - predominantly rural remote,13750
+"    ME28R3: Tamaulipas, R3",Small regions (TL3) - intermediate,24059
+"    ME28R4: Tamaulipas, R4",,25495
+  ME29: Tlaxcala,Large regions (TL2),3997
+"    ME29R1: Tlaxcala, R1",Small regions (TL3) - predominantly urban,197
+"    ME29R2: Tlaxcala, R2",,159
+"    ME29R3: Tlaxcala, R3",,101
+"    ME29R4: Tlaxcala, R4",,147
+"    ME29R5: Tlaxcala, R5",,269
+"    ME29R6: Tlaxcala, R6",Small regions (TL3) - predominantly rural close to a city,811
+"    ME29R7: Tlaxcala, R7",,1051
+"    ME29R8: Tlaxcala, R8",Small regions (TL3) - predominantly urban,234
+"    ME29R9: Tlaxcala, R9",Small regions (TL3) - intermediate,1028
+  ME30: Veracruz,Large regions (TL2),71856
+"    ME30R1: Veracruz, R1",Small regions (TL3) - predominantly rural remote,15027
+"    ME30R2: Veracruz, R2",Small regions (TL3) - predominantly rural close to a city,8428
+"    ME30R3: Veracruz, R3",Small regions (TL3) - intermediate,9464
+"    ME30R4: Veracruz, R4",,3338
+"    ME30R5: Veracruz, R5",,6062
+"    ME30R6: Veracruz, R6",Small regions (TL3) - predominantly rural close to a city,11330
+"    ME30R7: Veracruz, R7",,18207
+  ME31: Yucatan,Large regions (TL2),39671
+"    ME31R1: Yucatan, R1",Small regions (TL3) - predominantly rural remote,7750
+"    ME31R2: Yucatan, R2",,7178
+"    ME31R3: Yucatan, R3",Small regions (TL3) - predominantly rural close to a city,2947
+"    ME31R4: Yucatan, R4",,2581
+"    ME31R5: Yucatan, R5",,2611
+"    ME31R6: Yucatan, R6",Small regions (TL3) - predominantly urban,3873
+"    ME31R7: Yucatan, R7",Small regions (TL3) - predominantly rural close to a city,3526
+"    ME31R8: Yucatan, R8",Small regions (TL3) - predominantly rural remote,9205
+  ME32: Zacatecas,Large regions (TL2),75416
+"    ME32R1: Zacatecas, R1",Small regions (TL3) - predominantly rural close to a city,17775
+"    ME32R2: Zacatecas, R2",Small regions (TL3) - predominantly rural remote,9062
+"    ME32R3: Zacatecas, R3",,7161
+"    ME32R4: Zacatecas, R4",Small regions (TL3) - predominantly rural close to a city,5547
+"    ME32R5: Zacatecas, R5",Small regions (TL3) - predominantly rural remote,3676
+"    ME32R6: Zacatecas, R6",Small regions (TL3) - predominantly rural close to a city,6253
+"    ME32R7: Zacatecas, R7",Small regions (TL3) - predominantly rural remote,17393
+"    ME32R8: Zacatecas, R8",Small regions (TL3) - predominantly rural close to a city,4310
+"    ME32R9: Zacatecas, R9",Small regions (TL3) - predominantly rural remote,4239
+NLD: Netherlands,Country,33718.2
+  NL11: Groningen,Large regions (TL2),2325.4
+  NL12: Friesland,,3339.9
+  NL13: Drenthe,,2638.9
+    NL21: Overijssel,,3324.5
+    NL22: Gelderland,,4969.5
+    NL23: Flevoland,,1415.4
+    NL31: Utrecht,,1383.2
+    NL32: North Holland,,2665.4
+    NL33: South Holland,,2808.2
+    NL34: Zeeland,,1784.1
+    NL41: North Brabant,,4913.9
+    NL42: Limburg (NL),,2149.7
+NZL: New Zealand,Country,264944
+    NZ011: Northland Region,Large regions (TL2),11839.6
+    NZ012: Auckland Region,,4475.5
+    NZ013: Waikato Region,,24195.2
+    NZ014: Bay of Plenty Region,,12107.8
+    NZ015: Gisborne Region,,8335.3
+    NZ016: Hawke's Bay Region,,14051.3
+    NZ017: Taranaki Region,,7069.1
+    NZ018: Manawatu-Wanganui Region,,22166.7
+    NZ019: Wellington Region,,7983.6
+    NZ021: Tasman-Nelson-Marlborough,,20051.7
+    NZ022: West Coast Region,,23238.4
+    NZ023: Canterbury Region,,45039.4
+    NZ024: Otago Region,,31710.1
+    NZ025: Southland Region,,31093.3
+NOR: Norway,Country,304246
+  NO01: Oslo and Akershus,Large regions (TL2),5005.2
+    NO011: Oslo,Small regions (TL3) - predominantly urban,426.3
+    NO012: Akershus,,4578.9
+  NO02: Hedmark and Oppland,Large regions (TL2),49871
+    NO021: Hedmark,Small regions (TL3) - predominantly rural remote,26086.5
+    NO022: Oppland,,23784.5
+  NO03: South-Eastern Norway,Large regions (TL2),33686.3
+    NO031: Østfold,Small regions (TL3) - intermediate,3888.5
+    NO032: Buskerud,,13796.6
+    NO033: Vestfold,,2148.2
+    NO034: Telemark,Small regions (TL3) - predominantly rural remote,13853
+  NO04: Agder and Rogaland,Large regions (TL2),23582.3
+    NO041: Aust-Agder,Small regions (TL3) - predominantly rural remote,8314.6
+    NO042: Vest-Agder,Small regions (TL3) - intermediate,6678.6
+    NO043: Rogaland,,8589.1
+  NO05: Western Norway,Large regions (TL2),46767.2
+    NO051: Hordaland,Small regions (TL3) - intermediate,14523.1
+    NO052: Sogn og Fjordane,Small regions (TL3) - predominantly rural remote,17674
+    NO053: Møre og Romsdal,,14570.2
+  NO06: Trøndelag,Large regions (TL2),38611.9
+    NO061: Sør-Trøndelag,Small regions (TL3) - intermediate,17832.7
+    NO062: Nord-Trøndelag,Small regions (TL3) - predominantly rural remote,20779.2
+  NO07: Northern Norway,Large regions (TL2),106722
+    NO071: Nordland,Small regions (TL3) - predominantly rural remote,36090.8
+    NO072: Troms,,24869.4
+    NO073: Finnmark,,45761.9
+POL: Poland,Country,312679
+  PL11: Lodzkie,Large regions (TL2),18219
+    PL113: City of Lódz,Small regions (TL3) - predominantly urban,293
+    PL114: Lódzki,,2206
+    PL115: Piotrkowski,Small regions (TL3) - predominantly rural close to a city,5972
+    PL116: Sieradzki,,5666
+    PL117: Skierniewicki,,4082
+  PL12: Mazovia,Large regions (TL2),35558
+    PL121: Ciechanowsko-Plocki,Small regions (TL3) - predominantly rural close to a city,7780
+    PL122: Ostrolecko-Siedlecki,,12090
+    PL127: City of Warsaw,Small regions (TL3) - predominantly urban,517
+    PL128: Radomski,Small regions (TL3) - intermediate,5763
+    PL129: Warsaw-East,,5104
+    PL12A: Warsaw-West,,4304
+  PL21: Lesser Poland,Large regions (TL2),15183
+    PL213: City of Krakow,Small regions (TL3) - predominantly urban,327
+    PL214: Krakowski,,4055
+    PL215: Nowosadecki,Small regions (TL3) - predominantly rural close to a city,5470
+    PL216: Oswiecimski,Small regions (TL3) - intermediate,2726
+    PL217: Tarnowski,Small regions (TL3) - predominantly rural close to a city,2605
+  PL22: Silesia,Large regions (TL2),12333
+    PL224: Czestochowski,Small regions (TL3) - intermediate,3049
+    PL225: Bielski,,2354
+    PL227: Rybnicki,Small regions (TL3) - predominantly urban,1353
+    PL228: Bytomski,,1575
+    PL229: Gliwicki,,878
+    PL22A: Katowicki,,380
+    PL22B: Sosnowiecki,,1800
+    PL22C: Tyski,,944
+  PL31: Lublin Province,Large regions (TL2),25122
+    PL311: Bialski,Small regions (TL3) - predominantly rural remote,5977
+    PL312: Chelmsko-Zamojski,Small regions (TL3) - predominantly rural close to a city,9291
+    PL314: Lubelski,Small regions (TL3) - intermediate,4221
+    PL315: Pulawski,Small regions (TL3) - predominantly rural close to a city,5633
+  PL32: Podkarpacia,Large regions (TL2),17846
+    PL323: Krosnienski,Small regions (TL3) - predominantly rural close to a city,5538
+    PL324: Przemyski,,4292
+    PL325: Rzeszowski,,3552
+    PL326: Tarnobrzeski,,4464
+  PL33: Swietokrzyskie,Large regions (TL2),11711
+    PL331: Kielecki,Small regions (TL3) - intermediate,5031
+    PL332: Sandomiersko-Jedrzejowski,Small regions (TL3) - predominantly rural close to a city,6680
+  PL34: Podlasie,Large regions (TL2),20187
+    PL343: Bialostocki,Small regions (TL3) - intermediate,5132
+    PL344: Lomzynski,Small regions (TL3) - predominantly rural close to a city,8818
+    PL345: Suwalski,,6237
+  PL41: Greater Poland,Large regions (TL2),29826
+    PL411: Pilski,Small regions (TL3) - predominantly rural close to a city,6459
+    PL414: Koninski,,6397
+    PL415: City of Poznan,Small regions (TL3) - predominantly urban,262
+    PL416: Kaliski,Small regions (TL3) - predominantly rural close to a city,5784
+    PL417: Leszczynski,,5996
+    PL418: Poznanski,Small regions (TL3) - predominantly urban,4928
+  PL42: West Pomerania,Large regions (TL2),22892
+    PL422: Koszalinski,Small regions (TL3) - intermediate,10402
+    PL423: Stargardzki,Small regions (TL3) - predominantly rural close to a city,6838
+    PL424: City of Szczecin,Small regions (TL3) - intermediate,301
+    PL425: Szczecinski,,5351
+  PL43: Lubusz,Large regions (TL2),13988
+    PL431: Gorzowski,Small regions (TL3) - intermediate,6113
+    PL432: Zielonogórski,,7875
+  PL51: Lower Silesia,Large regions (TL2),19947
+    PL514: City of Wroclaw,Small regions (TL3) - predominantly urban,293
+    PL515: Jeleniogórski,Small regions (TL3) - intermediate,5571
+    PL516: Legnicko-Glogowski,,3472
+    PL517: Walbrzyski,,4179
+    PL518: Wroclawski,Small regions (TL3) - predominantly urban,6432
+  PL52: Opole region,Large regions (TL2),9412
+    PL521: Nyski,Small regions (TL3) - intermediate,4272
+    PL522: Opolski,,5140
+  PL61: Kuyavian-Pomerania,Large regions (TL2),17972
+    PL613: Bydgosko-Torunski,Small regions (TL3) - predominantly urban,2917
+    PL614: Grudziadzki,Small regions (TL3) - predominantly rural close to a city,6808
+    PL615: Wloclawski,,8247
+  PL62: Warmian-Masuria,Large regions (TL2),24173
+    PL621: Elblaski,Small regions (TL3) - intermediate,7497
+    PL622: Olsztynski,,10329
+    PL623: Elcki,,6347
+  PL63: Pomerania,Large regions (TL2),18310
+    PL631: Slupski,Small regions (TL3) - intermediate,8184
+    PL633: Trojmiejski,,414
+    PL634: Gdanski,,4444
+    PL635: Starogardzki,,5268
+PRT: Portugal,Country,92226
+  PT11: North (PT),Large regions (TL2),21286
+    PT111: Alto Minho,Small regions (TL3) - predominantly rural close to a city,2219
+    PT112: Cávado,Small regions (TL3) - intermediate,1246
+    PT119: Ave,Small regions (TL3) - predominantly urban,1451
+    PT11A: Metropolitan area of Porto,,2041
+    PT11B: Alto Tâmega,Small regions (TL3) - predominantly rural remote,2922
+    PT11C: Tâmega e Sousa,Small regions (TL3) - predominantly urban,1832
+    PT11D: Douro,Small regions (TL3) - predominantly rural remote,4032
+    PT11E: Terras de Trás-os-Montes,,5544
+  PT15: Algarve,Large regions (TL2),4997
+    PT150: Algarve,Small regions (TL3) - intermediate,4997
+  PT16: Central Portugal,Large regions (TL2),28199
+    PT16B: Oeste,Small regions (TL3) - predominantly rural close to a city,2220
+    PT16D: Região de Aveiro,Small regions (TL3) - intermediate,1693
+    PT16E: Região de Coimbra,Small regions (TL3) - predominantly rural close to a city,4336
+    PT16F: Região de Leiria,Small regions (TL3) - intermediate,2449
+    PT16G: Viseu Dão Lafões,Small regions (TL3) - predominantly rural remote,3238
+    PT16H: Beira Baixa,,4615
+    PT16I: Médio Tejo,Small regions (TL3) - predominantly rural close to a city,3344
+    PT16J: Beiras e Serra da Estrela,Small regions (TL3) - predominantly rural remote,6305
+  PT17: Lisbon,Large regions (TL2),3015
+    PT170: Metropolitan area of Lisbon,Small regions (TL3) - predominantly urban,3015
+  PT18: Alentejo,Large regions (TL2),31605
+    PT181: Alentejo Litoral,Small regions (TL3) - predominantly rural remote,5309
+    PT184: Baixo Alentejo,,8543
+    PT185: Lezíria do Tejo,Small regions (TL3) - predominantly rural close to a city,4275
+    PT186: Alto Alentejo,Small regions (TL3) - predominantly rural remote,6084
+    PT187: Alentejo Central,,7393
+  PT20: Azores (PT),Large regions (TL2),2322
+  PT30: Madeira (PT),,802
+SVK: Slovak Republic,Country,49036
+  SK01: Bratislava Region,Large regions (TL2),2053
+    SK010: Bratislava Region,Small regions (TL3) - predominantly urban,2053
+  SK02: West Slovakia,Large regions (TL2),14992
+    SK021: Trnava Region,Small regions (TL3) - predominantly rural close to a city,4146
+    SK022: Trencín Region,Small regions (TL3) - intermediate,4502
+    SK023: Nitra Region,Small regions (TL3) - predominantly rural close to a city,6344
+  SK03: Central Slovakia,Large regions (TL2),16263
+    SK031: Žilina Region,Small regions (TL3) - intermediate,6809
+    SK032: Banská Bystrica Region,Small regions (TL3) - predominantly rural close to a city,9454
+  SK04: East Slovakia,Large regions (TL2),15728
+    SK041: Prešov Region,Small regions (TL3) - predominantly rural close to a city,8973
+    SK042: Košice Region,Small regions (TL3) - intermediate,6755
+SVN: Slovenia,Country,20138
+  SI01: Eastern Slovenia,Large regions (TL2),12114.6
+    SI011: Mura,Small regions (TL3) - predominantly rural close to a city,1327.6
+    SI012: Drava,,2144.1
+    SI013: Carinthia,Small regions (TL3) - predominantly rural remote,1032.9
+    SI014: Savinja,Small regions (TL3) - intermediate,2370.8
+    SI015: Central Sava,,262.8
+    SI016: Lower Sava,Small regions (TL3) - predominantly rural close to a city,877.6
+    SI017: Southeast Slovenia,,2665.5
+    SI018: Inner-Karst,,1433.3
+  SI02: Western Slovenia,Large regions (TL2),8023.4
+    SI021: Central Slovenia,Small regions (TL3) - intermediate,2546.6
+    SI022: Upper Carniola,,2124
+    SI023: Goriska,Small regions (TL3) - predominantly rural close to a city,2316.2
+    SI024: Coastal-Karst,Small regions (TL3) - intermediate,1036.6
+ESP: Spain,Country,501757
+  ES11: Galicia,Large regions (TL2),29346.6
+    ES111: La Corunna,Small regions (TL3) - intermediate,7879.7
+    ES112: Lugo,Small regions (TL3) - predominantly rural close to a city,9814.6
+    ES113: Orense,,7191.4
+    ES114: Pontevedra,Small regions (TL3) - intermediate,4461
+  ES12: Asturias,Large regions (TL2),10576.3
+    ES120: Asturias,Small regions (TL3) - intermediate,10576.3
+  ES13: Cantabria,Large regions (TL2),5261.1
+    ES130: Cantabria,Small regions (TL3) - intermediate,5261.1
+  ES21: Basque Country,Large regions (TL2),7199
+    ES211: Álava,Small regions (TL3) - predominantly urban,3010.8
+    ES212: Guipuscoa,,1975.5
+    ES213: Biscay,,2212.7
+  ES22: Navarra,Large regions (TL2),10350.5
+    ES220: Navarre,Small regions (TL3) - intermediate,10350.5
+  ES23: La Rioja,Large regions (TL2),5030.4
+    ES230: La Rioja (ES),Small regions (TL3) - intermediate,5030.4
+  ES24: Aragon,Large regions (TL2),47453.7
+    ES241: Huesca,Small regions (TL3) - predominantly rural close to a city,15550
+    ES242: Teruel,Small regions (TL3) - predominantly rural remote,14788.7
+    ES243: Saragossa,Small regions (TL3) - predominantly urban,17114.9
+  ES30: Madrid,Large regions (TL2),7961
+    ES300: Madrid,Small regions (TL3) - predominantly urban,7961
+  ES41: Castile and León,Large regions (TL2),93691.7
+    ES411: Ávila,Small regions (TL3) - predominantly rural remote,8026.5
+    ES412: Burgos,Small regions (TL3) - intermediate,14258.3
+    ES413: León,,15511
+    ES414: Palencia,,8007.7
+    ES415: Salamanca,,12232.5
+    ES416: Segovia,Small regions (TL3) - predominantly rural close to a city,6912.3
+    ES417: Soria,Small regions (TL3) - predominantly rural remote,10281.2
+    ES418: Valladolid,Small regions (TL3) - intermediate,8066.1
+    ES419: Zamora,Small regions (TL3) - predominantly rural remote,10396.2
+  ES42: Castile-La Mancha,Large regions (TL2),78866.6
+    ES421: Albacete,Small regions (TL3) - intermediate,14883.7
+    ES422: Ciudad Real,,19646.1
+    ES423: Cuenca,Small regions (TL3) - predominantly rural remote,16977.1
+    ES424: Guadalajara,Small regions (TL3) - intermediate,12094.4
+    ES425: Toledo,Small regions (TL3) - predominantly rural close to a city,15265.3
+  ES43: Extremadura,Large regions (TL2),40701.9
+    ES431: Badajoz,Small regions (TL3) - intermediate,21272.2
+    ES432: Cáceres,Small regions (TL3) - predominantly rural remote,19429.7
+  ES51: Catalonia,Large regions (TL2),31987.6
+    ES511: Barcelona,Small regions (TL3) - predominantly urban,7716.9
+    ES512: Gerona,Small regions (TL3) - intermediate,5898.4
+    ES513: Lérida,Small regions (TL3) - predominantly rural close to a city,12122.4
+    ES514: Tarragona,Small regions (TL3) - intermediate,6249.8
+  ES52: Valencia,Large regions (TL2),23049.4
+    ES521: Alicante,Small regions (TL3) - predominantly urban,5737.8
+    ES522: Castellón,Small regions (TL3) - intermediate,6618.6
+    ES523: Valencia,Small regions (TL3) - predominantly urban,10693
+  ES53: Balearic Islands,Large regions (TL2),4991.7
+    ES531: Eivissa Y Formentera,Small regions (TL3) - intermediate,655.8
+    ES532: Mallorca,,3640.2
+    ES533: Menorca,,695.7
+  ES61: Andalusia,Large regions (TL2),86519.6
+    ES611: Almería,Small regions (TL3) - intermediate,8760.8
+    ES612: Cádiz,Small regions (TL3) - predominantly urban,7189.9
+    ES613: Cordoba (ES),Small regions (TL3) - intermediate,13669.1
+    ES614: Granada,,12598.8
+    ES615: Huelva,,9823.8
+    ES616: Jaén,,13364.6
+    ES617: Málaga,Small regions (TL3) - predominantly urban,7261.3
+    ES618: Seville,,13851.2
+  ES62: Murcia,Large regions (TL2),11290.3
+    ES620: Murcia,Small regions (TL3) - predominantly urban,11290.3
+  ES63: Ceuta,Large regions (TL2),19.3
+    ES630: Ceuta (ES),Small regions (TL3) - predominantly urban,19.3
+  ES64: Melilla,Large regions (TL2),13.4
+    ES640: Melilla (ES),Small regions (TL3) - predominantly urban,13.4
+  ES70: Canary Islands,Large regions (TL2),7447
+    ES703: El Hierro,Small regions (TL3) - predominantly rural remote,268.7
+    ES704: Fuerteventura,Small regions (TL3) - intermediate,1659.7
+    ES705: Gran Canaria,Small regions (TL3) - predominantly urban,1560.1
+    ES706: La Gomera,Small regions (TL3) - predominantly rural remote,369.8
+    ES707: La Palma,Small regions (TL3) - intermediate,708.3
+    ES708: Lanzarote,,845.9
+    ES709: Tenerife,Small regions (TL3) - predominantly urban,2034.4
+SWE: Sweden,Country,407340
+  SE11: Stockholm,Large regions (TL2),6526.2
+    SE110: Stockholm County,Small regions (TL3) - predominantly urban,6526.2
+  SE12: East Middle Sweden,Large regions (TL2),38434.8
+    SE121: Uppsala County,Small regions (TL3) - intermediate,8192.1
+    SE122: Södermanland County,,6076.1
+    SE123: Östergötland County,,10544.6
+    SE124: Örebro County,,8503.9
+    SE125: Västmanland County,,5118.2
+  SE21: Småland with Islands,Large regions (TL2),33162.2
+    SE211: Jönköping County,Small regions (TL3) - intermediate,10437.7
+    SE212: Kronoberg County,Small regions (TL3) - predominantly rural remote,8425
+    SE213: Kalmar County,,11165.5
+    SE214: Gotland County,,3134.1
+  SE22: South Sweden,Large regions (TL2),13900.1
+    SE221: Blekinge County,Small regions (TL3) - predominantly rural remote,2931.3
+    SE224: Skåne County,Small regions (TL3) - intermediate,10968.8
+  SE23: West Sweden,Large regions (TL2),29224.7
+    SE231: Halland County,Small regions (TL3) - intermediate,5427.4
+    SE232: Västra Götaland County,,23797.3
+  SE31: North Middle Sweden,Large regions (TL2),63666.1
+    SE311: Värmlands County,Small regions (TL3) - intermediate,17517.2
+    SE312: Dalarna County,Small regions (TL3) - predominantly rural remote,28029.6
+    SE313: Gävleborg County,Small regions (TL3) - intermediate,18119.3
+  SE32: Central Norrland,Large regions (TL2),70496.5
+    SE321: Västernorrland County,Small regions (TL3) - predominantly rural remote,21551.7
+    SE322: Jämtland County,,48944.8
+  SE33: Upper Norrland,Large regions (TL2),151929
+    SE331: Västerbottens County,Small regions (TL3) - predominantly rural close to a city,54672.1
+    SE332: Norrbottens County,Small regions (TL3) - intermediate,97256.9
+CHE: Switzerland,Country,39995.8
+  CH01: Lake Geneva Region,Large regions (TL2),8282.1
+    CH011: Vaud,Small regions (TL3) - intermediate,2822.7
+    CH012: Valais,,5213.6
+    CH013: Genève,Small regions (TL3) - predominantly urban,245.8
+  CH02: Espace Mittelland,Large regions (TL2),9781
+    CH021: Bern,Small regions (TL3) - intermediate,5841.2
+    CH022: Fribourg (CH),Small regions (TL3) - predominantly rural close to a city,1593.8
+    CH023: Solothurn,Small regions (TL3) - intermediate,790.5
+    CH024: Neuchâtel,,716.9
+    CH025: Jura (CH),Small regions (TL3) - predominantly rural close to a city,838.6
+  CH03: Northwestern Switzerland,Large regions (TL2),1949.6
+    CH031: Basel-Stadt,Small regions (TL3) - predominantly urban,37
+    CH032: Basel-Landschaft,,517.6
+    CH033: Aargau,,1395.1
+  CH04: Zurich,Large regions (TL2),1661
+    CH040: Zürich,Small regions (TL3) - predominantly urban,1661
+  CH05: Eastern Switzerland,Large regions (TL2),11313.3
+    CH051: Glarus,Small regions (TL3) - intermediate,680.7
+    CH052: Schaffhausen,,298.2
+    CH053: Appenzell Ausserrhoden,,242.9
+    CH054: Appenzell Innerrhoden,,172.5
+    CH055: St. Gallen,,1950.8
+    CH056: Graubünden,Small regions (TL3) - predominantly rural remote,7105.4
+    CH057: Thurgau,Small regions (TL3) - intermediate,862.9
+  CH06: Central Switzerland,Large regions (TL2),4267.3
+    CH061: Lucerne,Small regions (TL3) - intermediate,1429.1
+    CH062: Uri,,1057.3
+    CH063: Schwyz,,851.5
+    CH064: Obwalden,Small regions (TL3) - predominantly rural close to a city,480.7
+    CH065: Nidwalden,Small regions (TL3) - intermediate,241.5
+    CH066: Zug,Small regions (TL3) - predominantly urban,207.1
+  CH07: Ticino,Large regions (TL2),2741.5
+    CH070: Ticino,Small regions (TL3) - intermediate,2741.5
+TUR: Turkey,Country,769604
+  TR10: Istanbul,Large regions (TL2),5196.1
+    TR100: Istanbul,Small regions (TL3) - predominantly urban,5196.1
+  TR21: Thrace,Large regions (TL2),18664.9
+    TR211: Tekirdag,Small regions (TL3) - predominantly rural close to a city,6312.8
+    TR212: Edirne,,6074.5
+    TR213: Kirklareli,,6277.7
+  TR22: Southern Marmara - West,Large regions (TL2),24232.3
+    TR221: Balikesir,Small regions (TL3) - intermediate,14299.1
+    TR222: Çanakkale,Small regions (TL3) - predominantly rural remote,9933.2
+  TR31: Izmir,Large regions (TL2),12012
+    TR310: Izmir,Small regions (TL3) - predominantly urban,12012
+  TR32: Southern Aegean,Large regions (TL2),32394.4
+    TR321: Aydin,Small regions (TL3) - intermediate,7851.5
+    TR322: Denizli,,11691.9
+    TR323: Mugla,Small regions (TL3) - predominantly rural remote,12851
+  TR33: Northern Aegean,Large regions (TL2),44728.2
+    TR331: Manisa,Small regions (TL3) - intermediate,13096.3
+    TR332: Afyon,Small regions (TL3) - predominantly rural close to a city,14313.9
+    TR333: Kütahya,,11977.5
+    TR334: Usak,,5340.6
+  TR41: Eastern Marmara - South,Large regions (TL2),28565.5
+    TR411: Bursa,Small regions (TL3) - intermediate,10421.9
+    TR412: Eskisehir,,13841.8
+    TR413: Bilecik,Small regions (TL3) - predominantly rural remote,4301.9
+  TR42: Eastern Marmara - North,Large regions (TL2),20184.4
+    TR421: Kocaeli,Small regions (TL3) - predominantly urban,3612
+    TR422: Sakarya,Small regions (TL3) - intermediate,4838.4
+    TR423: Düzce,,2566.8
+    TR424: Bolu,Small regions (TL3) - predominantly rural close to a city,8319.8
+    TR425: Yalova,Small regions (TL3) - intermediate,847.5
+  TR51: Ankara,Large regions (TL2),24520.5
+    TR510: Ankara,Small regions (TL3) - predominantly urban,24520.5
+  TR52: Central Anatolia - West and South,Large regions (TL2),47717.4
+    TR521: Konya,Small regions (TL3) - predominantly rural close to a city,38872.6
+    TR522: Karaman,,8844.8
+  TR61: Mediterranean region - West,Large regions (TL2),35839.5
+    TR611: Antalya,Small regions (TL3) - intermediate,20723.3
+    TR612: Isparta,Small regions (TL3) - predominantly rural close to a city,8276.2
+    TR613: Burdur,Small regions (TL3) - predominantly rural remote,6839.9
+  TR62: Mediterranean region - Middle,Large regions (TL2),29399.5
+    TR621: Adana,Small regions (TL3) - intermediate,13914.8
+    TR622: Mersin,,15484.7
+  TR63: Mediterranean region - East,Large regions (TL2),23297.5
+    TR631: Hatay,Small regions (TL3) - intermediate,5828
+    TR632: Kahramanmaras,Small regions (TL3) - predominantly rural close to a city,14345.9
+    TR633: Osmaniye,Small regions (TL3) - intermediate,3123.6
+  TR71: Central Anatolia - Middle,Large regions (TL2),31187.1
+    TR711: Kirikkale,Small regions (TL3) - intermediate,4533.5
+    TR712: Aksaray,Small regions (TL3) - predominantly rural close to a city,7570.4
+    TR713: Nigde,,7352.2
+    TR714: Nevsehir,,5379.3
+    TR715: Kirsehir,,6351.6
+  TR72: Central Anatolia - East,Large regions (TL2),59664.2
+    TR721: Kayseri,Small regions (TL3) - intermediate,17042.6
+    TR722: Sivas,Small regions (TL3) - predominantly rural remote,28549.1
+    TR723: Yozgat,Small regions (TL3) - predominantly rural close to a city,14072.5
+  TR81: Western Black Sea - West,Large regions (TL2),9493
+    TR811: Zonguldak,Small regions (TL3) - predominantly urban,3303.9
+    TR812: Karabük,Small regions (TL3) - intermediate,4108.8
+    TR813: Bartin,Small regions (TL3) - predominantly rural remote,2080.4
+  TR82: Western Black Sea - Middle and East,Large regions (TL2),26434.8
+    TR821: Kastamonu,Small regions (TL3) - predominantly rural close to a city,13152.8
+    TR822: Çankiri,,7490.1
+    TR823: Sinop,Small regions (TL3) - predominantly rural remote,5791.9
+  TR83: Middle Black Sea,Large regions (TL2),37523.6
+    TR831: Samsun,Small regions (TL3) - intermediate,9083.4
+    TR832: Tokat,Small regions (TL3) - predominantly rural close to a city,9957.6
+    TR833: Çorum,,12792.4
+    TR834: Amasya,,5690.2
+  TR90: Eastern Black Sea,Large regions (TL2),35174
+    TR901: Trabzon,Small regions (TL3) - intermediate,4664
+    TR902: Ordu,,5952.2
+    TR903: Giresun,Small regions (TL3) - predominantly rural remote,6831.6
+    TR904: Rize,Small regions (TL3) - intermediate,3922
+    TR905: Artvin,Small regions (TL3) - predominantly rural remote,7367.1
+    TR906: Gümüshane,,6437
+  TRA1: Northeastern Anatolia - West,Large regions (TL2),40681.1
+    TRA11: Erzurum,Small regions (TL3) - predominantly rural close to a city,25322.6
+    TRA12: Erzincan,,11619.4
+    TRA13: Bayburt,Small regions (TL3) - predominantly rural remote,3739.1
+  TRA2: Northeastern Anatolia - East,Large regions (TL2),30026.3
+    TRA21: Agri,Small regions (TL3) - predominantly rural close to a city,11470.2
+    TRA22: Kars,,10126.7
+    TRA23: Igdir,,3587.8
+    TRA24: Ardahan,Small regions (TL3) - predominantly rural remote,4841.6
+  TRB1: Eastern Anatolia - West,Large regions (TL2),35916.6
+    TRB11: Malatya,Small regions (TL3) - intermediate,11776.5
+    TRB12: Elazig,,8454.6
+    TRB13: Bingöl,Small regions (TL3) - predominantly rural close to a city,8253.5
+    TRB14: Tunceli,,7432
+  TRB2: Eastern Anatolia - East,Large regions (TL2),41557.9
+    TRB21: Van,Small regions (TL3) - predominantly rural close to a city,19299.1
+    TRB22: Mus,,8059
+    TRB23: Bitlis,,7021
+    TRB24: Hakkari,,7178.9
+  TRC1: Southeastern Anatolia - West,Large regions (TL2),15280.3
+    TRC11: Gaziantep,Small regions (TL3) - intermediate,6819.3
+    TRC12: Adiyaman,Small regions (TL3) - predominantly rural close to a city,7033.2
+    TRC13: Kilis,Small regions (TL3) - intermediate,1427.8
+  TRC2: Southeastern Anatolia - Middle,Large regions (TL2),33822.5
+    TRC21: Sanliurfa,Small regions (TL3) - predominantly rural close to a city,18764.6
+    TRC22: Diyarbakir,Small regions (TL3) - intermediate,15057.9
+  TRC3: Southeastern Anatolia - East,Large regions (TL2),26090.1
+    TRC31: Mardin,Small regions (TL3) - predominantly rural close to a city,8806
+    TRC32: Batman,Small regions (TL3) - intermediate,4659.2
+    TRC33: Sirnak,Small regions (TL3) - predominantly rural close to a city,7151.6
+    TRC34: Siirt,,5473.3
+GBR: United Kingdom,Country,242509
+  UKC: North East England,Large regions (TL2),8573.1
+    UKC11: Hartlepool and Stockton-on-Tees,Small regions (TL3) - predominantly urban,297.8
+    UKC12: South Teesside,,298.8
+    UKC13: Darlington,,197.5
+    UKC14: Durham CC,,2226
+    UKC21: Northumberland,Small regions (TL3) - intermediate,5013
+    UKC22: Tyneside,Small regions (TL3) - predominantly urban,402.6
+    UKC23: Sunderland,,137.5
+  UKD: North West England,Large regions (TL2),14105.3
+    UKD11: West Cumbria,Small regions (TL3) - intermediate,2051.3
+    UKD12: East Cumbria,,4715.3
+    UKD31: Greater Manchester South,Small regions (TL3) - predominantly urban,548.1
+    UKD32: Greater Manchester North,,727.9
+    UKD41: Blackburn with Darwen,,137
+    UKD42: Blackpool,,34.9
+    UKD43: Lancashire CC,,2903.2
+    UKD61: Warrington,,180.7
+    UKD62: Cheshire East,,1166.4
+    UKD63: Cheshire West and Chester,,916.7
+    UKD71: East Merseyside,,302
+    UKD72: Liverpool,,111.8
+    UKD73: Sefton,,153.1
+    UKD74: Wirral,,157.1
+  UKE: Yorkshire and The Humber,Large regions (TL2),15407.7
+    UKE11: City Of Kingston Upon Hull,Small regions (TL3) - predominantly urban,71.5
+    UKE12: East Riding of Yorkshire,,2407.7
+    UKE13: North and North East Lincolnshire,Small regions (TL3) - intermediate,1038.2
+    UKE21: York,,271.9
+    UKE22: North Yorkshire CC,,8037.6
+    UKE31: Barnsley Doncaster And Rotherham,Small regions (TL3) - predominantly urban,1183.6
+    UKE32: Sheffield,,367.9
+    UKE41: Bradford,,366.4
+    UKE42: Leeds,,551.7
+    UKE44: Calderdale and Kirklees,,772.5
+    UKE45: Wakefield,,338.6
+  UKF: East Midlands,Large regions (TL2),15606.5
+    UKF11: Derby,Small regions (TL3) - predominantly urban,78
+    UKF12: East Derbyshire,,502
+    UKF13: South and West Derbyshire,,2044.8
+    UKF14: Nottingham,,74.6
+    UKF15: North Nottinghamshire,,1475.4
+    UKF16: South Nottinghamshire,,609.3
+    UKF21: Leicester City,,73.3
+    UKF22: Leicestershire CC and Rutland,,2464.4
+    UKF24: West Northamptonshire,Small regions (TL3) - intermediate,1377.4
+    UKF25: North Northamptonshire,Small regions (TL3) - predominantly urban,986.6
+    UKF30: Lincolnshire,Small regions (TL3) - intermediate,5920.6
+  UKG: West Midlands,Large regions (TL2),12998.3
+    UKG11: Herefordshire,Small regions (TL3) - predominantly rural close to a city,2179.7
+    UKG12: Worcestershire,Small regions (TL3) - intermediate,1740.5
+    UKG13: Warwickshire,,1975.1
+    UKG21: Telford and Wrekin,,290.3
+    UKG22: Shropshire CC,,3197.3
+    UKG23: Stoke-on-Trent,Small regions (TL3) - predominantly urban,93.5
+    UKG24: Staffordshire CC,,2620.3
+    UKG31: Birmingham,,267.8
+    UKG32: Solihull,,178.3
+    UKG33: Coventry,,98.7
+    UKG36: Dudley,,98
+    UKG37: Sandwell,,85.6
+    UKG38: Walsall,,104
+    UKG39: Wolverhampton,,69.4
+  UKH: East of England,Large regions (TL2),19108.7
+    UKH11: Peterborough,Small regions (TL3) - intermediate,343.4
+    UKH12: Cambridgeshire CC,,3046.2
+    UKH13: Norfolk,,5370.6
+    UKH14: Suffolk,,3800.4
+    UKH21: Luton,Small regions (TL3) - predominantly urban,43.4
+    UKH23: Hertfordshire,,1643.1
+    UKH24: Bedford,,476.4
+    UKH25: Central Bedfordshire,Small regions (TL3) - intermediate,715.7
+    UKH31: Southend-on-Sea,Small regions (TL3) - predominantly urban,41.8
+    UKH32: Thurrock,,163.4
+    UKH33: Essex CC,,3464.4
+  UKI: Greater London,Large regions (TL2),1572.1
+    UKI11: Inner London - West,Small regions (TL3) - predominantly urban,109
+    UKI12: Inner London - East,,210.3
+    UKI21: Outer London - East and North East,,432.4
+    UKI22: Outer London - South,,355.4
+    UKI23: Outer London - West and North West,,465.1
+  UKJ: South East England,Large regions (TL2),19069.9
+    UKJ11: Berkshire,Small regions (TL3) - predominantly urban,1262
+    UKJ12: Milton Keynes,,308.6
+    UKJ13: Buckinghamshire CC,,1564.9
+    UKJ14: Oxfordshire,Small regions (TL3) - intermediate,2604.9
+    UKJ21: Brighton and Hove,Small regions (TL3) - predominantly urban,82.7
+    UKJ22: East Sussex CC,Small regions (TL3) - intermediate,1708.6
+    UKJ23: Surrey,Small regions (TL3) - predominantly urban,1662.5
+    UKJ24: West Sussex,,1990.5
+    UKJ31: Portsmouth,,40.4
+    UKJ32: Southampton,,49.9
+    UKJ33: Hampshire CC,,3678.9
+    UKJ34: Isle of Wight,,380.2
+    UKJ41: Medway,,192
+    UKJ42: Kent CC,,3543.8
+  UKK: South West England,Large regions (TL2),23837.5
+    UKK11: City of Bristol,Small regions (TL3) - predominantly urban,109.6
+"    UKK12: Bath and North East Somerset, North Somerset and South Gloucestershire",,1216.5
+    UKK13: Gloucestershire,Small regions (TL3) - intermediate,2653.3
+    UKK14: Swindon,,230.1
+    UKK15: Wiltshire CC,,3255.3
+    UKK21: Bournemouth and Poole,Small regions (TL3) - predominantly urban,110.9
+    UKK22: Dorset CC,,2541.7
+    UKK23: Somerset,Small regions (TL3) - intermediate,3450.6
+    UKK30: Cornwall and Isles of Scilly,,3562.6
+    UKK41: Plymouth,,79.8
+    UKK42: Torbay,,62.9
+    UKK43: Devon CC,,6564.2
+  UKL: Wales,Large regions (TL2),20735.2
+    UKL11: Isle of Anglesey,Small regions (TL3) - predominantly rural remote,711.3
+    UKL12: Gwynedd,Small regions (TL3) - predominantly rural close to a city,2534.9
+    UKL13: Conwy and Denbighshire,Small regions (TL3) - intermediate,1962.6
+    UKL14: South West Wales,Small regions (TL3) - predominantly rural close to a city,5774.6
+    UKL15: Central Valleys,Small regions (TL3) - predominantly urban,535.6
+    UKL16: Gwent Valleys,,511.8
+    UKL17: Bridgend and Neath Port Talbot,,692.1
+    UKL18: Swansea,,379.7
+    UKL21: Monmouthshire and Newport,,1039.7
+    UKL22: Cardiff and Vale of Glamorgan,,471.3
+    UKL23: Flintshire and Wrexham,,941.3
+    UKL24: Powys,Small regions (TL3) - predominantly rural close to a city,5180.4
+  UKM: Scotland,Large regions (TL2),77932.9
+    UKM21: Angus and Dundee City,Small regions (TL3) - predominantly urban,2241.6
+    UKM22: Clackmannanshire and Fife,Small regions (TL3) - intermediate,1483.7
+    UKM23: East Lothian and Midlothian,,1032.9
+    UKM24: Scottish Borders,Small regions (TL3) - predominantly rural close to a city,4731.7
+    UKM25: Edinburgh City Of,Small regions (TL3) - predominantly urban,263.3
+    UKM26: Falkirk,,297.4
+    UKM27: Perth & Kinross and Stirling,Small regions (TL3) - intermediate,7472.5
+    UKM28: West Lothian,Small regions (TL3) - predominantly urban,427.7
+"    UKM31: East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",,686.6
+    UKM32: Dumfries & Galloway,Small regions (TL3) - predominantly rural close to a city,6426
+    UKM33: East Ayrshire and North Ayrshire mainland,Small regions (TL3) - intermediate,1712.1
+    UKM34: Glasgow City,Small regions (TL3) - predominantly urban,174.7
+"    UKM35: Inverclyde, East Renfrewshire and Renfrewshire",,596.2
+    UKM36: North Lanarkshire,,469.9
+    UKM37: South Ayrshire,Small regions (TL3) - intermediate,1222
+    UKM38: South Lanarkshire,Small regions (TL3) - predominantly urban,1771.9
+    UKM50: Aberdeen City and Aberdeenshire,Small regions (TL3) - intermediate,6498.3
+    UKM61: Caithness & Sutherland and Ross & Cromarty,Small regions (TL3) - predominantly rural remote,12846.2
+"    UKM62: Inverness & Nairn and Moray, Badenoch & Strathspey",Small regions (TL3) - intermediate,7827.3
+"    UKM63: Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",Small regions (TL3) - predominantly rural remote,14238.2
+    UKM64: Eilean Siar (Western Isles),,3056.2
+    UKM65: Orkney Islands,,989.8
+    UKM66: Shetland Islands,,1466.6
+  UKN: Northern Ireland,Large regions (TL2),13562.2
+    UKN01: Belfast,Small regions (TL3) - predominantly urban,109.4
+    UKN02: Outer Belfast,,838.8
+    UKN03: East of Northern Ireland (UK),Small regions (TL3) - intermediate,3137
+    UKN04: North of Northern Ireland (UK),,3217.4
+    UKN05: West and South of Northern Ireland (UK),Small regions (TL3) - predominantly rural close to a city,6259.6
+USA: United States,Country,9161920
+  US01: Alabama,Large regions (TL2),131426
+  US02: Alaska,,1481350
+  US04: Arizona,,294312
+  US05: Arkansas,,134856
+  US06: California,,403933
+  US08: Colorado,,268627
+  US09: Connecticut,,12548
+  US10: Delaware,,5059.7
+  US11: District of Columbia,,159
+  US12: Florida,,139670
+  US13: Georgia,,149976
+  US15: Hawaii,,16634.5
+  US16: Idaho,,214314
+  US17: Illinois,,143961
+  US18: Indiana,,92894.8
+  US19: Iowa,,144701
+  US20: Kansas,,211900
+  US21: Kentucky,,102896
+  US22: Louisiana,,112825
+  US23: Maine,,79931
+  US24: Maryland,,25314.1
+  US25: Massachusetts,,20305.6
+  US26: Michigan,,147121
+  US27: Minnesota,,206189
+  US28: Mississippi,,121489
+  US29: Missouri,,178414
+  US30: Montana (US),,376979
+  US31: Nebraska,,199099
+  US32: Nevada,,284448
+  US33: New Hampshire,,23227.3
+  US34: New Jersey,,19210.8
+  US35: New Mexico,,314309
+  US36: New York,,122283
+  US37: North Carolina,,126161
+  US38: North Dakota,,178647
+  US39: Ohio,,106056
+  US40: Oklahoma,,177847
+  US41: Oregon,,248631
+  US42: Pennsylvania,,116075
+  US44: Rhode Island,,2706.4
+  US45: South Carolina,,77983.2
+  US46: South Dakota,,196540
+  US47: Tennessee,,106752
+  US48: Texas,,678051
+  US49: Utah,,212751
+  US50: Vermont,,23956.3
+  US51: Virginia,,102548
+  US53: Washington,,172348
+  US54: West Virginia,,62361
+  US55: Wisconsin,,140663
+  US56: Wyoming,,251489
+"    US001: Aberdeen, SD",Small regions (TL3) - predominantly rural remote,45660.5
+"    US002: Abilene, TX",Small regions (TL3) - predominantly rural close to a city,28121.7
+"    US003: Albany, GA",,26518.9
+"    US004: Albany-Schenectady-Amsterdam, NY",,25989.4
+"    US005: Albuquerque, NM",Small regions (TL3) - predominantly urban,53025.9
+"    US006: Alpena, MI",Small regions (TL3) - predominantly rural remote,15586.8
+"    US007: Amarillo, TX",Small regions (TL3) - predominantly rural close to a city,94286.5
+"    US008: Anchorage, AK",,1481350
+"    US009: Appleton-Oshkosh-Neenah, WI",,16519.9
+"    US010: Asheville-Brevard, NC",,14930.6
+"    US011: Atlanta-Sandy Springs-Gainesville, GA-AL",Small regions (TL3) - intermediate,68276.1
+"    US012: Augusta-Richmond County, GA-SC",Small regions (TL3) - predominantly rural close to a city,13995.9
+"    US013: Austin-Round Rock, TX",Small regions (TL3) - predominantly urban,24458.1
+"    US014: Bangor, ME",Small regions (TL3) - predominantly rural remote,47111
+"    US015: Baton Rouge-Pierre Part, LA",Small regions (TL3) - intermediate,13067.3
+"    US016: Beaumont-Port Arthur, TX",Small regions (TL3) - predominantly rural close to a city,12813.4
+"    US017: Bend-Prineville, OR",,67465
+"    US018: Billings, MT",,214053
+"    US019: Birmingham-Hoover-Cullman, AL",,36449.7
+"    US020: Bismarck, ND",,71172.4
+"    US021: Boise City-Nampa, ID",,81995.5
+"    US022: Boston-Worcester-Manchester, MA-NH",Small regions (TL3) - intermediate,49516
+"    US023: Buffalo-Niagara-Cattaraugus, NY",Small regions (TL3) - predominantly urban,18212.8
+"    US024: Burlington-South Burlington, VT",Small regions (TL3) - predominantly rural remote,11725.8
+"    US025: Cape Girardeau-Jackson, MO-IL",,18249.4
+"    US026: Casper, WY",,193702
+"    US027: Cedar Rapids, IA",Small regions (TL3) - predominantly rural close to a city,14965.2
+"    US028: Champaign-Urbana, IL",,21807.6
+"    US029: Charleston, WV",,42023
+"    US030: Charleston-North Charleston, SC",,9446.5
+"    US031: Charlotte-Gastonia-Salisbury, NC-SC",,25682.3
+"    US032: Chicago-Naperville-Michigan City, IL-IN-WI",Small regions (TL3) - predominantly urban,41693.8
+"    US033: Cincinnati-Middletown-Wilmington, OH-KY-IN",,20829.8
+"    US034: Clarksburg, WV + Morgantown, WV",Small regions (TL3) - predominantly rural remote,8562.8
+"    US035: Cleveland-Akron-Elyria, OH",Small regions (TL3) - predominantly urban,28073.3
+"    US036: Colorado Springs, CO",Small regions (TL3) - predominantly rural close to a city,29742.5
+"    US037: Columbia, MO",,22439.6
+"    US038: Columbia-Newberry, SC",Small regions (TL3) - intermediate,19462
+"    US039: Columbus-Auburn-Opelika, GA-AL",Small regions (TL3) - predominantly rural close to a city,9905.4
+"    US040: Columbus-Marion-Chillicothe, OH",,36424.3
+"    US041: Corpus Christi-Kingsville, TX",,44021.8
+"    US042: Dallas-Fort Worth, TX",Small regions (TL3) - predominantly urban,122263
+"    US043: Davenport-Moline-Rock Island, IA-IL",Small regions (TL3) - predominantly rural close to a city,9450
+"    US044: Dayton-Springfield-Greenville, OH",,14785.7
+"    US045: Denver-Aurora-Boulder, CO",,189734
+"    US046: Des Moines-Newton-Pella, IA",Small regions (TL3) - intermediate,62220.8
+"    US047: Detroit-Warren-Flint, MI",Small regions (TL3) - predominantly urban,48889.3
+"    US048: Dothan-Enterprise-Ozark, AL",Small regions (TL3) - predominantly rural close to a city,13024.4
+"    US049: Dover, DE",Small regions (TL3) - predominantly rural remote,8721.9
+"    US050: Duluth, MN-WI",Small regions (TL3) - predominantly rural close to a city,45873.3
+"    US051: El Paso, TX",Small regions (TL3) - predominantly urban,92650.1
+"    US052: Erie, PA",Small regions (TL3) - predominantly rural close to a city,11405.6
+"    US053: Eugene-Springfield, OR",,40444.9
+"    US054: Evansville, IN-KY",,22631.4
+"    US055: Fargo-Wahpeton, ND-MN",,44481.3
+"    US056: Farmington, NM",Small regions (TL3) - predominantly rural remote,34097.4
+"    US057: Fayetteville-Springdale-Rogers, AR-MO",Small regions (TL3) - predominantly rural close to a city,11624.8
+"    US058: Flagstaff, AZ",,58558
+"    US059: Fort Smith, AR-OK",,16386.2
+"    US060: Fort Wayne-Huntington-Auburn, IN",Small regions (TL3) - intermediate,13081.4
+"    US061: Fresno-Madera, CA",Small regions (TL3) - predominantly rural close to a city,40830.3
+"    US062: Gainesville, FL",,14520.7
+"    US063: Grand Forks, ND-MN",Small regions (TL3) - predominantly rural remote,51608.3
+"    US064: Grand Rapids-Muskegon-Holland, MI",Small regions (TL3) - predominantly rural close to a city,21796.7
+"    US065: Great Falls, MT",,75539.6
+"    US066: Greensboro--Winston-Salem--High Point, NC",,25147.8
+"    US067: Greenville, NC",,14914
+"    US068: Greenville-Spartanburg-Anderson, SC",Small regions (TL3) - intermediate,17156.6
+"    US069: Gulfport-Biloxi-Pascagoula, MS",Small regions (TL3) - predominantly rural close to a city,7014.8
+"    US070: Harrisburg-Carlisle-Lebanon, PA",Small regions (TL3) - intermediate,22288.9
+"    US071: Harrisonburg, VA",Small regions (TL3) - predominantly rural remote,11499
+"    US072: Hartford-West Hartford-Willimantic, CT",Small regions (TL3) - predominantly urban,11766
+"    US073: Helena, MT",Small regions (TL3) - predominantly rural remote,78139
+"    US074: Honolulu, HI",Small regions (TL3) - predominantly urban,16634.6
+"    US075: Houston-Baytown-Huntsville, TX",,78689.3
+"    US076: Huntsville-Decatur, AL",Small regions (TL3) - predominantly rural close to a city,20919.2
+"    US077: Idaho Falls-Blackfoot, ID",,67702.1
+"    US078: Indianapolis-Anderson-Columbus, IN",,51127.5
+"    US079: Jacksonville, FL",Small regions (TL3) - predominantly urban,27388.4
+"    US080: Jackson-Yazoo City, MS",Small regions (TL3) - predominantly rural remote,85393.9
+"    US081: Johnson City-Kingsport-Bristol (Tri-Cities), TN-VA",Small regions (TL3) - predominantly rural close to a city,19614.3
+"    US082: Jonesboro, AR",,15179.2
+"    US083: Joplin, MO",Small regions (TL3) - predominantly rural remote,19704.4
+"    US084: Kansas City-Overland Park-Kansas City, MO-KS",Small regions (TL3) - predominantly urban,66258.9
+"    US085: Kearney, NE",Small regions (TL3) - predominantly rural remote,74900.1
+"    US086: Kennewick-Richland-Pasco, WA",Small regions (TL3) - predominantly rural close to a city,24296.8
+"    US087: Killeen-Temple-Fort Hood, TX",,16629.8
+"    US088: Knoxville-Sevierville-La Follette, TN",Small regions (TL3) - intermediate,18508.7
+"    US089: La Crosse, WI-MN",Small regions (TL3) - predominantly rural close to a city,11469
+"    US090: Lafayette-Acadiana, LA",,23422.6
+"    US091: Lake Charles-Jennings, LA",,16289.4
+"    US092: Las Vegas-Paradise-Pahrump, NV",,160334
+"    US093: Lewiston, ID-WA",Small regions (TL3) - predominantly rural remote,35276.4
+"    US094: Lexington-Fayette--Frankfort--Richmond, KY",Small regions (TL3) - predominantly rural close to a city,43610.7
+"    US095: Lincoln, NE",,19502.3
+"    US096: Little Rock-North Little Rock-Pine Bluff, AR",,75158.5
+"    US097: Los Angeles-Long Beach-Riverside, CA",Small regions (TL3) - predominantly urban,195736
+"    US098: Louisville-Elizabethtown-Scottsburg, KY-IN",,21761
+"    US099: Lubbock-Levelland, TX",Small regions (TL3) - predominantly rural close to a city,43952.4
+"    US100: Macon-Warner Robins-Fort Valley, GA",,22155.1
+"    US101: Madison-Baraboo, WI",,35050.7
+"    US102: Marinette, WI-MI",Small regions (TL3) - predominantly rural remote,41169
+"    US103: Mason City, IA",,14374.6
+"    US104: McAllen-Edinburg-Pharr, TX",Small regions (TL3) - predominantly rural close to a city,11124.5
+"    US105: Memphis, TN-MS-AR",,49092.5
+"    US106: Miami-Fort Lauderdale-Miami Beach, FL",Small regions (TL3) - predominantly urban,27075.5
+"    US107: Midland-Odessa, TX",Small regions (TL3) - predominantly rural close to a city,125066
+"    US108: Milwaukee-Racine-Waukesha, WI",Small regions (TL3) - predominantly urban,15462.1
+"    US109: Minneapolis-St. Paul-St. Cloud, MN-WI",Small regions (TL3) - intermediate,161568
+"    US110: Minot, ND",Small regions (TL3) - predominantly rural remote,47590.1
+"    US111: Missoula, MT",Small regions (TL3) - predominantly rural close to a city,49673.3
+"    US112: Mobile-Daphne-Fairhope, AL",,25480.9
+"    US113: Monroe-Bastrop, LA",,15062.9
+"    US114: Montgomery-Alexander City, AL",,21957.9
+"    US115: Myrtle Beach-Conway-Georgetown, SC",Small regions (TL3) - predominantly rural remote,20716
+"    US116: Nashville-Davidson--Murfreesboro--Columbia, TN",Small regions (TL3) - predominantly rural close to a city,58544.3
+"    US117: New Orleans-Metairie-Bogalusa, LA",Small regions (TL3) - intermediate,20746.5
+"    US118: New York-Newark-Bridgeport, NY-NJ-CT-PA",Small regions (TL3) - predominantly urban,38552.4
+"    US119: Oklahoma City-Shawnee, OK",Small regions (TL3) - predominantly rural close to a city,119854
+"    US120: Omaha-Council Bluffs-Fremont, NE-IA",Small regions (TL3) - intermediate,34576.7
+"    US121: Orlando-The Villages, FL",Small regions (TL3) - predominantly rural close to a city,31974.7
+"    US122: Paducah, KY-IL",Small regions (TL3) - predominantly rural remote,9821.8
+"    US123: Panama City-Lynn Haven, FL",,10006.7
+"    US124: Pendleton-Hermiston, OR",,54247.9
+"    US125: Pensacola-Ferry Pass-Brent, FL",Small regions (TL3) - predominantly rural close to a city,9511.6
+"    US126: Peoria-Canton, IL",,30332.4
+"    US127: Philadelphia-Camden-Vineland, PA-NJ-DE-MD",Small regions (TL3) - predominantly urban,19612.5
+"    US128: Phoenix-Mesa-Scottsdale, AZ",Small regions (TL3) - predominantly rural close to a city,183683
+"    US129: Pittsburgh-New Castle, PA",Small regions (TL3) - predominantly urban,24991.5
+"    US130: Portland-Lewiston-South Portland, ME",Small regions (TL3) - predominantly rural close to a city,32820
+"    US131: Portland-Vancouver-Beaverton, OR-WA",Small regions (TL3) - intermediate,55655
+"    US132: Pueblo, CO",Small regions (TL3) - predominantly rural close to a city,57088.1
+"    US133: Raleigh-Durham-Cary, NC",,42989.3
+"    US134: Rapid City, SD",,93276.4
+"    US135: Redding, CA",,59339.9
+"    US136: Reno-Sparks, NV",,199174
+"    US137: Richmond, VA",Small regions (TL3) - intermediate,30855.3
+"    US138: Roanoke, VA",Small regions (TL3) - predominantly rural close to a city,18657.4
+"    US139: Rochester-Batavia-Seneca Falls, NY",,24722.6
+"    US140: Sacramento--Arden-Arcade--Truckee, CA-NV",Small regions (TL3) - predominantly urban,34787.1
+"    US141: Salina, KS",Small regions (TL3) - predominantly rural remote,59560.2
+"    US142: Salt Lake City-Ogden-Clearfield, UT",Small regions (TL3) - predominantly rural close to a city,183046
+"    US143: San Angelo, TX",,33441
+"    US144: San Antonio, TX",Small regions (TL3) - predominantly urban,72565.7
+"    US145: San Diego-Carlsbad-San Marcos, CA",,10877.7
+"    US146: San Jose-San Francisco-Oakland, CA",Small regions (TL3) - intermediate,88860.6
+"    US147: Santa Fe-Espanola, NM",Small regions (TL3) - predominantly rural close to a city,51172.6
+"    US148: Sarasota-Bradenton-Venice, FL",,14173.5
+"    US149: Savannah-Hinesville-Fort Stewart, GA",,21176.3
+"    US150: Scotts Bluff, NE",Small regions (TL3) - predominantly rural remote,38875.3
+"    US151: Scranton--Wilkes-Barre, PA",Small regions (TL3) - intermediate,8543.6
+"    US152: Seattle-Tacoma-Olympia, WA",Small regions (TL3) - predominantly rural close to a city,60410.1
+"    US153: Shreveport-Bossier City-Minden, LA",,21288.3
+"    US154: Sioux City-Vermillion, IA-NE-SD",,40178.3
+"    US155: Sioux Falls, SD",,71457.1
+"    US156: South Bend-Mishawaka, IN-MI",Small regions (TL3) - intermediate,12848.6
+"    US157: Spokane, WA",Small regions (TL3) - predominantly rural close to a city,54532.2
+"    US158: Springfield, IL",,24285.3
+"    US159: Springfield, MO",,47818.8
+"    US160: St. Louis-St. Charles-Farmington, MO-IL",Small regions (TL3) - predominantly urban,51386
+"    US161: State College, PA",Small regions (TL3) - predominantly rural remote,22597.8
+"    US162: Syracuse-Auburn, NY",Small regions (TL3) - predominantly rural close to a city,54264.9
+"    US163: Tallahassee, FL",,19282.3
+"    US164: Tampa-St. Petersburg-Clearwater, FL",Small regions (TL3) - predominantly urban,6614.8
+"    US165: Texarkana, TX-Texarkana, AR",Small regions (TL3) - predominantly rural remote,24803.3
+"    US166: Toledo-Fremont, OH",Small regions (TL3) - intermediate,13421.1
+"    US167: Topeka, KS",Small regions (TL3) - predominantly rural close to a city,32675.8
+"    US168: Traverse City, MI",Small regions (TL3) - predominantly rural remote,12950.7
+"    US169: Tucson, AZ",Small regions (TL3) - predominantly rural close to a city,42976.6
+"    US170: Tulsa-Bartlesville, OK",,38307.8
+"    US171: Tupelo, MS",Small regions (TL3) - predominantly rural remote,24570.3
+"    US172: Twin Falls, ID",,29803
+"    US173: Virginia Beach-Norfolk-Newport News, VA-NC",Small regions (TL3) - intermediate,17876.6
+"    US174: Washington-Baltimore-Northern Virginia, DC-MD-VA-WV",,46622.1
+"    US175: Waterloo-Cedar Falls, IA",Small regions (TL3) - predominantly rural close to a city,8780.3
+"    US176: Wausau-Merrill, WI",Small regions (TL3) - predominantly rural remote,44149
+"    US177: Wenatchee, WA",,37855.2
+"    US178: Wichita Falls, TX",Small regions (TL3) - predominantly rural close to a city,26482
+"    US179: Wichita-Winfield, KS",Small regions (TL3) - intermediate,91619.3
+OECD: OECD,Country,34362600
+  BRA: Brazil,,8511230
+    BR01: Acre,Large regions (TL2),152522
+    BR02: Amapá,,142816
+    BR03: Amazonas,,1570950
+    BR04: Pará,,1247700
+    BR05: Rondônia,,237565
+    BR06: Roraima,,224118
+    BR07: Tocantins,,277298
+    BR08: Alagoas,,27819
+    BR09: Bahia,,564273
+    BR10: Ceará,,145712
+    BR11: Maranhão,,331918
+    BR12: Paraíba,,56341
+    BR13: Pernambuco,,98527
+    BR14: Piauí,,251312
+    BR15: Rio Grande Do Norte,,53077
+    BR16: Sergipe,,21962
+    BR17: Espírito Santo,,46047
+    BR18: Minas Gerais,,586552
+    BR19: Rio De Janeiro,,43797
+    BR20: São Paulo,,248177
+    BR21: Paraná,,199282
+    BR22: Rio Grande Do Sul,,281734
+    BR23: Santa Catarina,,95285
+    BR24: Distrito Federal (BR),,5802
+    BR25: Goiás,,340118
+    BR26: Mato Grosso,,903386
+    BR27: Mato Grosso Do Sul,,357140
+  CHN: China,Country,9544040
+    CN01: Beijing,Large regions (TL2),16410.5
+    CN02: Tianjin,,11917.3
+    CN03: Hebei,,188434
+    CN04: Shanxi,,156711
+    CN05: Inner Mongolia,,1145120
+    CN06: Liaoning,,148064
+    CN07: Jilin,,191124
+    CN08: Heilongjiang,,452645
+    CN09: Shanghai,,8239
+    CN10: Jiangsu,,106742
+    CN11: Zhejiang,,105397
+    CN12: Anhui,,140126
+    CN13: Fujian,,124016
+    CN14: Jiangxi,,166894
+    CN15: Shandong,,157126
+    CN16: Henan,,165536
+    CN17: Hubei,,185888
+    CN18: Hunan,,211855
+    CN19: Guangdong,,179813
+    CN20: Guangxi,,237558
+    CN21: Hainan,,35353.7
+    CN22: Chongqing,,82268.6
+    CN23: Sichuan,,484056
+    CN24: Guizhou,,176153
+    CN25: Yunnan,,383194
+    CN26: Tibet,,1202070
+    CN27: Shaanxi,,205795
+    CN28: Gansu,,404091
+    CN29: Qinghai,,717481
+    CN30: Ningxia,,51954.4
+    CN31: Xinjiang,,1664900
+  COL: Colombia,Country,1141770
+    CO05: Antioquia,Large regions (TL2),63612
+    CO08: Atlántico,,3388
+    CO11: Bogotá Capital District,,1587
+    CO13: Bolívar,,25978
+    CO15: Boyacá,,23189
+    CO17: Caldas,,7888
+    CO18: Caquetá,,88965
+    CO19: Cauca,,29308
+    CO20: Cesar,,22905
+    CO23: Córdoba (CO),,25020
+    CO25: Cundinamarca,,22633
+    CO27: Chocó,,46530
+    CO41: Huila,,19890
+    CO44: La Guajira,,20848
+    CO47: Magdalena,,23188
+    CO50: Meta,,85635
+    CO52: Nariño,,33268
+    CO54: Norte de Santander,,21658
+    CO63: Quindio,,1845
+    CO66: Risaralda,,4140
+    CO68: Santander,,30537
+    CO70: Sucre,,10917
+    CO73: Tolima,,23562
+    CO76: Valle del Cauca,,22140
+    CO81: Arauca,,23818
+    CO85: Casanare,,44640
+    CO86: Putumayo,,24885
+    CO88: San Andrés,,52
+    CO91: Amazonas,,109665
+    CO94: Guainía,,72238
+    CO95: Guaviare,,53460
+    CO97: Vaupés,,54135
+    CO99: Vichada,,100242
+  IND: India,Country,3166390
+    IN01: Jammu and Kashmir,Large regions (TL2),101387
+    IN02: Himachal Pradesh,,55673
+    IN03: National Capital Territory of Delhi,,1483
+    IN04: Rajasthan,,342239
+    IN05: Uttar Pradesh,,240928
+    IN06: Sikkim,,7096
+    IN07: Arunachal Pradesh,,83743
+    IN08: Nagaland,,16579
+    IN09: Meghalaya,,22429
+    IN10: Assam,,78438
+    IN11: West Bengal,,88752
+    IN12: Gujarat,,196024
+    IN13: Dadra & Nagar Haveli,,491
+    IN14: Maharashtra,,307713
+    IN15: Daman & Diu,,112
+    IN16: Lakshadweep,,32
+    IN17: Kerala,,38863
+    IN18: Punjab,,50362
+    IN19: Chandigarh,,114
+    IN20: Haryana,,44212
+    IN21: Uttaranchal,,53483
+    IN22: Bihar,,94163
+    IN23: Jharkhand,,79714
+    IN24: Manipur,,22327
+    IN25: Mizoram,,21081
+    IN26: Tripura,,10486
+    IN27: Orissa,,155707
+    IN28: Madhya Pradesh,,308245
+    IN29: Chhattisgarh,,135191
+    IN30: Andhra Pradesh,,275045
+    IN31: Karnataka,,191791
+    IN32: Goa,,3702
+    IN33: Tamil Nadu,,130058
+    IN34: Puducherry,,479
+    IN35: Andaman and Nicobar Islands,,8249
+  LVA: Latvia,Country,62210
+    LV00: Latvia,Large regions (TL2),62210
+      LV003: Kurzeme,Small regions (TL3) - intermediate,13172
+      LV005: Latgale,Small regions (TL3) - predominantly rural,13834
+      LV006: Riga,Small regions (TL3) - predominantly urban,247
+      LV007: Pieriga,,9766
+      LV008: Vidzeme,Small regions (TL3) - predominantly rural,14764
+      LV009: Zemgale,,10427
+  LTU: Lithuania,Country,62675
+    LT00: Lithuania,Large regions (TL2),62675
+      LT001: Alytus county,Small regions (TL3) - predominantly rural,5182
+      LT002: Kaunas county,Small regions (TL3) - intermediate,7825
+      LT003: Klaipeda county,,4676
+      LT004: Marijampole county,Small regions (TL3) - predominantly rural,4367
+      LT005: Panevežys county,,7680
+      LT006: Šiauliai county,,8333
+      LT007: Taurage county,,4298
+      LT008: Telšiai county,,4219
+      LT009: Utena county,,6664
+      LT00A: Vilnius county,Small regions (TL3) - predominantly urban,9431
+  RUS: Russia,Country,18579200
+    RU01: Belgorod Oblast,Large regions (TL2),27100
+    RU02: Bryansk Oblast,,34900
+    RU03: Vladimir Oblast,,29100
+    RU04: Voronezh Oblast,,52200
+    RU05: Ivanovo Oblast,,21400
+    RU06: Kaluga Oblast,,29800
+    RU07: Kostroma Oblast,,60200
+    RU08: Kursk Oblast,,30000
+    RU09: Lipetsk Oblast,,24000
+    RU10: Moscow Oblast,,45800
+    RU11: Oryol Oblast,,24700
+    RU12: Ryazan Oblast,,39600
+    RU13: Smolensk Oblast,,49800
+    RU14: Tambov Oblast,,34500
+    RU15: Tver Oblast,,84200
+    RU16: Tula Oblast,,25700
+    RU17: Yaroslavl Oblast,,36200
+    RU18: City of Moscow,,1100
+    RU19: Republic of Karelia,,180500
+    RU20: Komi republic,,416800
+    RU21: Arkhangelsk Oblast,,589900
+    RU22: Nenets Autonomous Okrug,,176800
+    RU23: Vologda Oblast,,144500
+    RU24: Kaliningrad Oblast,,15100
+    RU25: Leningrad Oblast,,83900
+    RU26: Murmansk Oblast,,144900
+    RU27: Novgorod Oblast,,54500
+    RU28: Pskov Oblast,,55400
+    RU29: Federal City of Saint Petersburg,,1400
+    RU30: Republic of Adygea,,7800
+    RU31: Republic of Kalmykia,,74700
+    RU32: Krasnodar Krai,,75500
+    RU33: Astrakhan Oblast,,49000
+    RU34: Volgograd Oblast,,112900
+    RU35: Rostov Oblast,,101000
+    RU36: Republic of Dagestan,,50300
+    RU37: Republic of Ingushetia,,3600
+    RU38: Kabardino-Balkar Republic,,12500
+    RU39: Karachay-Cherkhess Republic,,14300
+    RU40: Republic of North Ossetia-Alania,,8000
+    RU41: Chechen Republic,,15600
+    RU42: Stavropol Krai,,66200
+    RU43: Republic of Bashkorstostan,,142900
+    RU44: Mari El Republic,,23400
+    RU45: Republic of Mordovia,,26100
+    RU46: Republic of Tatarstan,,67800
+    RU47: Udmurt Republic,,42100
+    RU48: Chuvash Republic,,18300
+    RU49: Perm Krai,,160200
+    RU50: Kirov Oblast,,120400
+    RU51: Nizhny Novgorod Oblast,,76600
+    RU52: Orenburg Oblast,,123700
+    RU53: Penza Oblast,,43400
+    RU54: Samara Oblast,,53600
+    RU55: Saratov Oblast,,101200
+    RU56: Ulianov Oblast,,37200
+    RU57: Kurgan Oblast,,71500
+    RU58: Sverdlovsk Oblast,,194300
+    RU59: Tyumen Oblast,,1464200
+    RU60: Khanty-Mansi Autonomous Okrug - Yugra,,534800
+    RU61: Yamalo-Nenets Autonomous Okrug,,769300
+    RU62: Chelyabinsk Oblast,,88500
+    RU63: Republic of Altai,,92900
+    RU64: Buryat Republic,,351300
+    RU65: Tyva Republic,,168600
+    RU66: Republic of Khakassia,,61600
+    RU67: Altai Krai,,168000
+    RU68: Zabaykalsky Krai,,431900
+    RU69: Krasnoyarsk Krai,,2366800
+    RU70: Irkutsk Oblast,,774800
+    RU71: Kemerovo oblast,,95700
+    RU72: Novosibirsk Oblast,,177800
+    RU73: Omsk Oblast,,141100
+    RU74: Tomsk Oblast,,314400
+    RU75: Sakha Republic (Yakutia),,3083500
+    RU76: Kamchatka Krai,,464300
+    RU77: Primorsky Krai,,164700
+    RU78: Khabarovsk Krai,,787600
+    RU79: Amur Oblast,,361900
+    RU80: Magadan Oblast,,462500
+    RU81: Sakhalin Oblast,,87100
+    RU82: Jewish Autonomous Oblast,,36300
+    RU83: Chukotka Autonomous Okrug,,721500
+  ZAF: South Africa,Country,1221220
+    ZA01: Eastern Cape,Large regions (TL2),169056
+    ZA02: Free State,,130006
+    ZA03: Gauteng,,16538.6
+    ZA04: KwaZulu-Natal,,93452.7
+    ZA05: Limpopo,,125990
+    ZA06: Mpumalanga,,76727.5
+    ZA07: Northern Cape,,373186
+    ZA08: North West,,106756
+    ZA09: Western Cape,,129505

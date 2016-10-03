@@ -1,0 +1,1536 @@
+,Region Name,Region Code,2012
+0,Australia,AUS,999200.0
+1,New South Wales,AU1,313826.0
+2,Victoria,AU2,222163.0
+3,Queensland,AU3,189453.0
+4,South Australia,AU4,61758.2
+5,Western Australia,AU5,159537.0
+6,Tasmania,AU6,16167.8
+7,Northern Territory (NT),AU7,13082.0
+8,Australian Capital Territory (ACT),AU8,23212.4
+9,Austria,AUT,378276.0
+10,Burgenland (AT),AT11,8718.35
+11,Mittelburgenland,  AT111,921.8
+12,Nordburgenland,  AT112,5128.93
+13,Südburgenland,  AT113,2670.0
+14,Lower Austria,AT12,59332.7
+15,Mostviertel-Eisenwurzen,  AT121,8238.97
+16,Niederösterreich-Süd,  AT122,8184.11
+17,Sankt Pölten,  AT123,6923.64
+18,Waldviertel,  AT124,6615.98
+19,Weinviertel,  AT125,2797.6
+20,Wiener Umland/Nordteil,  AT126,9997.9
+21,Wiener Umland/Südteil,  AT127,16576.9
+22,Vienna,AT13,97512.9
+23,Vienna,  AT130,97512.9
+24,Carinthia,AT21,21011.8
+25,Klagenfurt-Villach,  AT211,12360.2
+26,Oberkärnten,  AT212,3765.91
+27,Unterkärnten,  AT213,4885.66
+28,Styria,AT22,48529.9
+29,Graz,  AT221,21622.4
+30,Liezen,  AT222,2975.28
+31,Östliche Obersteiermark,  AT223,6587.36
+32,Oststeiermark,  AT224,8341.52
+33,West- und Südsteiermark,  AT225,5648.86
+34,Westliche Obersteiermark,  AT226,3354.5
+35,Upper Austria,AT31,64231.5
+36,Innviertel,  AT311,10206.6
+37,Linz-Wels,  AT312,32072.2
+38,Mühlviertel,  AT313,5596.39
+39,Steyr-Kirchdorf,  AT314,7189.57
+40,Traunviertel,  AT315,9166.73
+41,Salzburg,AT32,28125.1
+42,Lungau,  AT321,717.88
+43,Pinzgau-Pongau,  AT322,7107.29
+44,Salzburg und Umgebung,  AT323,20299.9
+45,Tyrol,AT33,33451.9
+46,Außerfern,  AT331,1621.8
+47,Innsbruck,  AT332,14110.8
+48,Osttirol,  AT333,1628.95
+49,Tyrolean Oberland,  AT334,4640.01
+50,Tyrolean Unterland,  AT335,11451.6
+51,Vorarlberg,AT34,17247.1
+52,Bludenz-Bregenzer Wald,  AT341,4536.26
+53,Rheintal-Bodenseegebiet,  AT342,12712.0
+54,Belgium,BEL,460777.0
+55,Brussels Capital Region,BE1,83534.7
+56,Flemish Region,BE2,268088.0
+57,Wallonia,BE3,108832.0
+58,Canada,CAN,1469440.0
+59,Newfoundland and Labrador,CA10,25970.8
+60,Prince Edward Island,CA11,4424.63
+61,Nova Scotia,CA12,30664.3
+62,New Brunswick,CA13,25478.1
+63,Quebec,CA24,286815.0
+64,Ontario,CA35,545348.0
+65,Manitoba,CA46,47444.8
+66,Saskatchewan,CA47,63290.4
+67,Alberta,CA48,253411.0
+68,British Columbia,CA59,178594.0
+69,Yukon,CA60,2008.49
+70,Northwest Territories,CA61,3598.12
+71,Nunavut,CA62,1796.65
+72,Chile,CHL,368053.0
+73,Tarapacá,CL01,9002.35
+74,Antofagasta,CL02,40895.9
+75,Atacama,CL03,10781.6
+76,Coquimbo,CL04,12228.7
+77,Valparaíso,CL05,32100.5
+78,O'Higgins,CL06,16870.6
+79,Maule,CL07,11298.9
+80,Bío-Bío,CL08,26557.7
+81,Araucanía,CL09,8163.9
+82,Los Lagos,CL10,9578.62
+83,Aysén,CL11,1911.15
+84,Magallanes y Antártica,CL12,3174.42
+85,Santiago Metropolitan,CL13,178816.0
+86,Los Rios,CL14,4443.27
+87,Arica Y Parinacota,CL15,2229.5
+88,Czech Republic,CZE,301391.0
+89,Prague,CZ01,74454.1
+90,Prague,  CZ010,74454.1
+91,Central Bohemian Region,CZ02,33214.2
+92,Central Bohemia,  CZ020,33214.2
+93,Southwest,CZ03,30271.9
+94,South Bohemia,  CZ031,15542.9
+95,Plzen,  CZ032,14728.9
+96,Northwest,CZ04,24732.3
+97,Karlovy Vary,  CZ041,6123.55
+98,Ústí nad Labem,  CZ042,18608.8
+99,Northeast,CZ05,35433.2
+100,Liberec,  CZ051,9851.78
+101,Hradec Králové,  CZ052,13700.6
+102,Pardubice,  CZ053,11880.9
+103,Southeast,CZ06,44392.9
+104,Vysocina,  CZ063,12317.8
+105,South Moravia,  CZ064,32075.2
+106,Central Moravia,CZ07,28467.3
+107,Olomouc,  CZ071,14277.3
+108,Zlín,  CZ072,14190.0
+109,Moravia-Silesia,CZ08,30425.4
+110,Moravia-Silesia,  CZ080,30425.4
+111,Denmark,DNK,243569.0
+112,Capital (DK),DK01,93314.4
+113,City of Copenhagen,  DK011,43909.9
+114,Copenhagen suburbs,  DK012,32980.3
+115,North Zealand,  DK013,15150.3
+116,Bornholm,  DK014,1273.83
+117,Zealand,DK02,24427.8
+118,East Zealand,  DK021,7220.13
+119,West and South Zealand,  DK022,17207.7
+120,Southern Denmark,DK03,46207.8
+121,Fyn,  DK031,16260.4
+122,South Jutland,  DK032,29947.4
+123,Central Jutland,DK04,49909.9
+124,West Jutland,  DK041,17567.4
+125,East Jutland,  DK042,32342.6
+126,Northern Jutland,DK05,21437.3
+127,North Jutland,  DK050,21437.3
+128,Estonia,EST,32718.1
+129,Estonia,EE00,32718.1
+130,North Estonia,  EE001,20027.5
+131,West Estonia,  EE004,2476.54
+132,Central Estonia,  EE006,2075.84
+133,Northeast Estonia,  EE007,2478.39
+134,Southern Estonia,  EE008,5659.86
+135,Finland,FIN,217692.0
+136,Western Finland,FI19,50136.3
+137,Central Finland,  FI193,8946.61
+138,Southern Ostrobothnia,  FI194,6247.7
+139,Ostrobothnia,  FI195,7407.02
+140,Satakunta,  FI196,8527.12
+141,Pirkanmaa,  FI197,19009.0
+142,Helsinki-Uusimaa,FI1B,81703.9
+143,Helsinki-Uusimaa,  FI1B1,81703.9
+144,Southern Finland,FI1C,41565.6
+145,Finland Proper,  FI1C1,17256.9
+146,Tavastia Proper,  FI1C2,6124.57
+147,Päijät-Häme,  FI1C3,6773.97
+148,Kymenlaakso,  FI1C4,6326.15
+149,South Karelia,  FI1C5,5084.02
+150,Eastern and Northern Finland,FI1D,42779.4
+151,Southern Savonia,  FI1D1,4615.5
+152,Northern Savonia,  FI1D2,8174.09
+153,North Karelia,  FI1D3,5042.61
+154,Kainuu,  FI1D4,2386.2
+155,Central Ostrobothnia,  FI1D5,2436.32
+156,North Ostrobothnia,  FI1D6,13820.3
+157,Lapland,  FI1D7,6304.36
+158,Åland,FI20,1413.2
+159,Åland,  FI200,1413.2
+160,France,FRA,2359010.0
+161,Ile-de-France,FR10,730253.0
+162,Paris,  FR101,232537.0
+163,Seine-et-Marne,  FR102,46699.7
+164,Yvelines,  FR103,62664.3
+165,Essonne,  FR104,49686.7
+166,Hauts-de-Seine,  FR105,172289.0
+167,Seine-Saint-Denis,  FR106,62149.9
+168,Val-de-Marne,  FR107,62321.0
+169,Val-d'Oise,  FR108,41905.9
+170,Champagne-Ardenne,FR21,43653.1
+171,Ardennes,  FR211,7239.38
+172,Aube,  FR212,9374.4
+173,Marne,  FR213,21899.8
+174,Haute-Marne,  FR214,5139.51
+175,Picardy,FR22,55072.3
+176,Aisne,  FR221,13919.8
+177,Oise,  FR222,23778.2
+178,Somme,  FR223,17374.3
+179,Upper Normandy,FR23,60637.1
+180,Eure,  FR231,16046.6
+181,Seine-Maritime,  FR232,44591.7
+182,Centre-Val de Loire,FR24,80706.6
+183,Cher,  FR241,8786.16
+184,Eure-et-Loir,  FR242,12415.2
+185,Indre,  FR243,6282.02
+186,Indre-et-Loire,  FR244,19440.2
+187,Loir-et-Cher,  FR245,9729.45
+188,Loiret,  FR246,24054.7
+189,Lower Normandy,FR25,45258.4
+190,Calvados,  FR251,23808.6
+191,Manche,  FR252,13686.6
+192,Orne,  FR253,7763.17
+193,Burgundy,FR26,51338.9
+194,Côte-d'Or,  FR261,19879.6
+195,Nièvre,  FR262,5700.81
+196,Saône-et-Loire,  FR263,16133.3
+197,Yonne,  FR264,9625.16
+198,Nord-Pas-de-Calais,FR30,122547.0
+199,Nord (FR),  FR301,84846.5
+200,Pas-de-Calais,  FR302,37701.5
+201,Lorraine,FR41,66286.4
+202,Meurthe-et-Moselle,  FR411,22574.7
+203,Meuse,  FR412,4591.11
+204,Moselle,  FR413,28918.8
+205,Vosges,  FR414,10200.5
+206,Alsace,FR42,64382.2
+207,Bas-Rhin,  FR421,41166.5
+208,Haut-Rhin,  FR422,23216.9
+209,Franche-Comté,FR43,33643.6
+210,Doubs,  FR431,16388.8
+211,Jura,  FR432,7263.99
+212,Haute-Saône,  FR433,5305.91
+213,Territoire de Belfort,  FR434,4686.03
+214,Pays de la Loire,FR51,122344.0
+215,Loire-Atlantique,  FR511,50023.0
+216,Maine-et-Loire,  FR512,24278.5
+217,Mayenne,  FR513,9843.12
+218,Sarthe,  FR514,18387.9
+219,Vendée,  FR515,19811.6
+220,Brittany,FR52,101343.0
+221,Côtes-d'Armor,  FR521,16143.9
+222,Finistère,  FR522,26978.3
+223,Ille-et-Vilaine,  FR523,37239.8
+224,Morbihan,  FR524,20979.9
+225,Poitou-Charentes,FR53,54537.9
+226,Charente,  FR531,11201.2
+227,Charente-Maritime,  FR532,17810.2
+228,Deux-Sèvres,  FR533,11920.7
+229,Vienne,  FR534,13604.6
+230,Aquitaine,FR61,109386.0
+231,Dordogne,  FR611,10484.1
+232,Gironde,  FR612,55889.0
+233,Landes,  FR613,11094.6
+234,Lot-et-Garonne,  FR614,9021.69
+235,Pyrénées-Atlantiques,  FR615,22895.8
+236,Midi-Pyrénées,FR62,98434.7
+237,Ariège,  FR621,3570.47
+238,Aveyron,  FR622,7723.33
+239,Haute-Garonne,  FR623,55579.6
+240,Gers,  FR624,4724.7
+241,Lot,  FR625,4727.04
+242,Hautes-Pyrénées,  FR626,6444.9
+243,Tarn,  FR627,9689.61
+244,Tarn-et-Garonne,  FR628,5973.84
+245,Limousin,FR63,20601.4
+246,Corrèze,  FR631,7036.66
+247,Creuse,  FR632,2661.16
+248,Haute-Vienne,  FR633,10903.6
+249,Rhône-Alpes,FR71,238686.0
+250,Ain,  FR711,17381.3
+251,Ardèche,  FR712,7627.25
+252,Drôme,  FR713,17173.9
+253,Isère,  FR714,44086.6
+254,Loire,  FR715,23473.5
+255,Rhône,  FR716,87259.3
+256,Savoie,  FR717,16105.2
+257,Haute-Savoie,  FR718,25579.2
+258,Auvergne,FR72,41180.6
+259,Allier,  FR721,9217.38
+260,Cantal,  FR722,3858.74
+261,Haute-Loire,  FR723,5498.09
+262,Puy-de-Dôme,  FR724,22607.5
+263,Languedoc-Roussillon,FR81,77663.4
+264,Aude,  FR811,8743.97
+265,Gard,  FR812,19163.6
+266,Hérault,  FR813,35611.0
+267,Lozère,  FR814,2045.96
+268,Pyrénées-Orientales,  FR815,12098.8
+269,Provence-Alpes-Côte d'Azur,FR82,175571.0
+270,Alpes-de-Haute-Provence,  FR821,4503.23
+271,Hautes-Alpes,  FR822,4158.72
+272,Alpes-Maritimes,  FR823,41611.8
+273,Bouches-du-Rhône,  FR824,78382.9
+274,Var,  FR825,29011.4
+275,Vaucluse,  FR826,17902.8
+276,Corsica,FR83,9887.65
+277,Corse-du-Sud,  FR831,5051.63
+278,Haute-Corse,  FR832,4836.02
+279,Germany,DEU,3500330.0
+280,Baden-Württemberg,DE1,525986.0
+281,Bavaria,DE2,623541.0
+282,Berlin,DE3,139388.0
+283,Brandenburg,DE4,75502.9
+284,Bremen,DE5,36582.9
+285,Hamburg,DE6,123808.0
+286,Hesse,DE7,297511.0
+287,Mecklenburg-Vorpommern,DE8,47813.7
+288,Lower Saxony,DE9,306536.0
+289,North Rhine-Westphalia,DEA,766358.0
+290,Rhineland-Palatinate,DEB,155396.0
+291,Saarland,DEC,40931.2
+292,Saxony,DED,128464.0
+293,Saxony-Anhalt,DEE,68243.6
+294,Schleswig-Holstein,DEF,99029.8
+295,Thuringia,DEG,65238.3
+296,Greece,GRC,282449.0
+297,East Macedonia - Thrace,  GR11,11130.5
+298,Central Macedonia,  GR12,37972.7
+299,West Macedonia,  GR13,6259.7
+300,Thessaly,  GR14,13824.0
+301,Epirus,  GR21,6169.53
+302,Ionian Islands,  GR22,4947.84
+303,West Greece,  GR23,13326.6
+304,Central Greece,  GR24,12424.9
+305,Peloponnese,  GR25,11985.6
+306,Attica,  GR30,138096.0
+307,North Aegean,  GR41,4049.02
+308,South Aegean,  GR42,9075.4
+309,Crete,  GR43,13187.0
+310,Hungary,HUN,223148.0
+311,Central Hungary,HU10,107833.0
+312,Budapest,  HU101,85084.1
+313,Pest,  HU102,22749.1
+314,Central Transdanubia,HU21,21421.9
+315,Fejér,  HU211,8887.56
+316,Komárom-Esztergom,  HU212,6916.07
+317,Veszprém,  HU213,5616.05
+318,Western Transdanubia,HU22,22455.2
+319,Gyor-Moson-Sopron,  HU221,11623.2
+320,Vas,  HU222,5423.88
+321,Zala,  HU223,5410.31
+322,Southern Transdanubia,HU23,14146.4
+323,Baranya,  HU231,5600.23
+324,Somogy,  HU232,4526.3
+325,Tolna,  HU233,4017.6
+326,Northern Hungary,HU31,16063.6
+327,Borsod-Abaúj-Zemplén,  HU311,9529.66
+328,Heves,  HU312,4544.39
+329,Nógrád,  HU313,1989.58
+330,Northern Great Plain,HU32,21516.9
+331,Hajdú-Bihar,  HU321,8996.09
+332,Jász-Nagykun-Szolnok,  HU322,5627.36
+333,Szabolcs-Szatmár-Bereg,  HU323,6895.72
+334,Southern Great Plain,HU33,19710.5
+335,Bács-Kiskun,  HU331,8186.69
+336,Békés,  HU332,4609.96
+337,Csongrád,  HU333,6916.07
+338,Iceland,ISL,13023.2
+339,Ireland,IRL,207521.0
+340,"Border, Midland and Western",IE01,36472.1
+341,Border,  IE011,12967.4
+342,Midlands,  IE012,6925.17
+343,West,  IE013,16579.6
+344,Southern and Eastern,IE02,171047.0
+345,Dublin,  IE021,86950.8
+346,Mid-East,  IE022,15995.8
+347,Mid-West,  IE023,13775.9
+348,South-East (IE),  IE024,15442.0
+349,South-West (IE),  IE025,38884.2
+350,Israel,ISR,250197.0
+351,Italy,ITA,2115140.0
+352,Piedmont,ITC1,166022.0
+353,Turin,  ITC11,90693.6
+354,Vercelli,  ITC12,6071.21
+355,Biella,  ITC13,6126.21
+356,Verbano-Cusio-Ossola,  ITC14,4909.61
+357,Novara,  ITC15,12862.7
+358,Cuneo,  ITC16,23015.9
+359,Asti,  ITC17,6918.51
+360,Alessandria,  ITC18,15424.2
+361,Aosta Valley,ITC2,5904.89
+362,Aosta Valley,  ITC20,5904.89
+363,Liguria,ITC3,62321.6
+364,Imperia,  ITC31,6719.45
+365,Savona,  ITC32,10314.3
+366,Genoa,  ITC33,36848.9
+367,La Spezia,  ITC34,8438.93
+368,Lombardy,ITC4,462680.0
+369,Varese,  ITC41,32869.1
+370,Como,  ITC42,21558.3
+371,Lecco,  ITC43,12255.0
+372,Sondrio,  ITC44,6800.65
+373,Bergamo,  ITC46,44161.6
+374,Brescia,  ITC47,50208.0
+375,Pavia,  ITC48,16677.5
+376,Lodi,  ITC49,7490.79
+377,Cremona,  ITC4A,13148.2
+378,Mantua,  ITC4B,15606.3
+379,Milan,  ITC4C,210060.0
+380,Monza and Brianza,  ITC4D,31846.3
+381,Abruzzo,ITF1,41219.0
+382,L'Aquila,  ITF11,9460.4
+383,Teramo,  ITF12,9313.73
+384,Pescara,  ITF13,10193.8
+385,Chieti,  ITF14,12249.8
+386,Molise,ITF2,8152.13
+387,Isernia,  ITF21,2236.76
+388,Campobasso,  ITF22,5915.37
+389,Campania,ITF3,127752.0
+390,Caserta,  ITF31,17608.6
+391,Benevento,  ITF32,5758.22
+392,Naples,  ITF33,71679.8
+393,Avellino,  ITF34,9455.16
+394,Salerno,  ITF35,23250.3
+395,Apulia,ITF4,90714.6
+396,Taranto,  ITF43,13321.0
+397,Brindisi,  ITF44,8962.76
+398,Lecce,  ITF45,15766.0
+399,Foggia,  ITF46,12895.4
+400,Bari,  ITF47,32493.3
+401,Barletta-Andria-Trani,  ITF48,7274.71
+402,Basilicata,ITF5,13960.1
+403,Potenza,  ITF51,9669.93
+404,Matera,  ITF52,4291.49
+405,Calabria,ITF6,41135.2
+406,Cosenza,  ITF61,15206.8
+407,Crotone,  ITF62,3685.16
+408,Catanzaro,  ITF63,8562.03
+409,Vibo Valentia,  ITF64,3039.53
+410,Reggio di Calabria,  ITF65,10641.6
+411,Sicily,ITG1,110827.0
+412,Trapani,  ITG11,8619.65
+413,Palermo,  ITG12,29009.8
+414,Messina,  ITG13,14516.7
+415,Agrigento,  ITG14,8153.44
+416,Caltanissetta,  ITG15,5572.26
+417,Enna,  ITG16,3355.14
+418,Catania,  ITG17,24214.1
+419,Ragusa,  ITG18,7735.68
+420,Siracusa,  ITG19,9648.98
+421,Sardinia,ITG2,42004.8
+422,Sassari,  ITG25,8543.7
+423,Nuoro,  ITG26,3571.22
+424,Cagliari,  ITG27,16348.8
+425,Oristano,  ITG28,3531.94
+426,Olbia-Tempio,  ITG29,4570.43
+427,Ogliastra,  ITG2A,1217.91
+428,Medio Campidano,  ITG2B,1741.74
+429,Carbonia-Iglesias,  ITG2C,2479.03
+430,Province of Bolzano-Bozen,ITH1,26422.1
+431,Bolzano-Bozen,  ITH10,26422.1
+432,Province of Trento,ITH2,23349.8
+433,Trento,  ITH20,23349.8
+434,Veneto,ITH3,193798.0
+435,Verona,  ITH31,36983.8
+436,Vicenza,  ITH32,33996.7
+437,Belluno,  ITH33,8049.98
+438,Treviso,  ITH34,34355.5
+439,Venice,  ITH35,33872.3
+440,Padua,  ITH36,38522.6
+441,Rovigo,  ITH37,8018.55
+442,Friuli-Venezia Giulia,ITH4,46546.4
+443,Pordenone,  ITH41,11782.3
+444,Udine,  ITH42,20235.6
+445,Gorizia,  ITH43,4918.78
+446,Trieste,  ITH44,9611.0
+447,Emilia-Romagna,ITH5,187356.0
+448,Piacenza,  ITH51,11355.4
+449,Parma,  ITH52,19579.5
+450,Reggio Nell'Emilia,  ITH53,22131.9
+451,Modena,  ITH54,30078.4
+452,Bologna,  ITH55,49238.9
+453,Ferrara,  ITH56,11482.4
+454,Ravenna,  ITH57,15737.2
+455,Forlì-Cesena,  ITH58,15360.1
+456,Rimini,  ITH59,12392.5
+457,Tuscany,ITI1,140285.0
+458,Massa-Carrara,  ITI11,5870.84
+459,Lucca,  ITI12,13987.6
+460,Pistoia,  ITI13,9098.96
+461,Florence,  ITI14,45184.4
+462,Prato,  ITI15,9150.03
+463,Livorno,  ITI16,11592.4
+464,Pisa,  ITI17,16279.4
+465,Arezzo,  ITI18,11855.6
+466,Siena,  ITI19,10501.5
+467,Grosseto,  ITI1A,6762.67
+468,Umbria,ITI2,28233.2
+469,Perugia,  ITI21,21320.0
+470,Terni,  ITI22,6911.96
+471,Marche,ITI3,51712.7
+472,Pesaro e Urbino,  ITI31,11938.1
+473,Ancona,  ITI32,17570.6
+474,Macerata,  ITI33,10210.8
+475,Ascoli Piceno,  ITI34,6672.31
+476,Fermo,  ITI35,5319.51
+477,Lazio,ITI4,242623.0
+478,Viterbo,  ITI41,8376.07
+479,Rieti,  ITI42,3838.38
+480,Rome,  ITI43,201345.0
+481,Latina,  ITI44,15127.0
+482,Frosinone,  ITI45,13936.5
+483,Japan,JPN,4780340.0
+484,Hokkaido,JPA,173224.0
+485,Hokkaido,  JPA01,173224.0
+486,Tohoku,JPB,298276.0
+487,Aomori,  JPB02,42743.8
+488,Iwate,  JPB03,41874.3
+489,Miyagi,  JPB04,79867.3
+490,Akita,  JPB05,33467.7
+491,Yamagata,  JPB06,35263.7
+492,Fukushima,  JPB07,65058.8
+493,"Northern-Kanto, Koshin",JPC,360975.0
+494,Ibaraki,  JPC08,111270.0
+495,Tochigi,  JPC09,73956.0
+496,Gumma,  JPC10,72291.6
+497,Yamanashi,  JPC19,29994.5
+498,Nagano,  JPC20,73462.6
+499,Southern-Kanto,JPD,1545220.0
+500,Saitama,  JPD11,194728.0
+501,Chiba,  JPD12,182860.0
+502,Tokyo,  JPD13,878434.0
+503,Kanagawa,  JPD14,289194.0
+504,Hokuriku,JPE,196771.0
+505,Niigata,  JPE15,83031.5
+506,Toyama,  JPE16,41900.7
+507,Ishikawa,  JPE17,42307.0
+508,Fukui,  JPE18,29531.7
+509,Toukai,JPF,614835.0
+510,Gifu,  JPF21,68205.6
+511,Shizuoka,  JPF22,148003.0
+512,Aichi,  JPF23,328393.0
+513,Mie,  JPF24,70232.6
+514,Kansai region,JPG,743631.0
+515,Shiga,  JPG25,55142.8
+516,Kyoto,  JPG26,94114.6
+517,Osaka,  JPG27,352133.0
+518,Hyogo,  JPG28,174649.0
+519,Nara,  JPG29,33443.9
+520,Wakayama,  JPG30,34146.6
+521,Chugoku,JPH,264761.0
+522,Tottori,  JPH31,16708.3
+523,Shimane,  JPH32,22384.4
+524,Okayama,  JPH33,67521.1
+525,Hiroshima,  JPH34,103735.0
+526,Yamaguchi,  JPH35,54412.0
+527,Shikoku,JPI,128827.0
+528,Tokushima,  JPI36,27133.5
+529,Kagawa,  JPI37,35970.6
+530,Ehime,  JPI38,45074.5
+531,Kochi,  JPI39,20648.7
+532,"Kyushu, Okinawa",JPJ,453828.0
+533,Fukuoka,  JPJ40,171198.0
+534,Saga,  JPJ41,25274.9
+535,Nagasaki,  JPJ42,42086.1
+536,Kumamoto,  JPJ43,53900.8
+537,Oita,  JPJ44,40131.1
+538,Miyazaki,  JPJ45,33748.2
+539,Kagoshima,  JPJ46,51106.4
+540,Okinawa,  JPJ47,36382.0
+541,Korea,KOR,1600750.0
+542,Capital Region (KR),KR01,771675.0
+543,Seoul,  KR011,364404.0
+544,Incheon,  KR012,72313.8
+545,Gyeonggi-do,  KR013,334957.0
+546,Gyeongnam Region,KR02,272499.0
+547,Busan,  KR021,79045.7
+548,Ulsan,  KR022,82282.4
+549,Gyeongsangnam-do,  KR023,111171.0
+550,Gyeongbuk Region,KR03,149285.0
+551,Daegu,  KR031,50009.9
+552,Gyeonsangbuk-do,  KR032,99274.7
+553,Jeolla Region,KR04,155755.0
+554,Gwangju,  KR041,33610.9
+555,Jeollabuk-do,  KR042,47000.1
+556,Jeollanam-do,  KR043,75143.6
+557,Chungcheong Region,KR05,197408.0
+558,Daejeon,  KR051,35901.8
+559,Chungcheongbuk-do,  KR052,50715.5
+560,Chungcheongnam-do,  KR053,110791.0
+561,Gangwon Region,KR06,39353.1
+562,Gangwon-do,  KR061,39353.1
+563,Jeju,KR07,14771.0
+564,Jeju-do,  KR071,14771.0
+565,Luxembourg,LUX,48767.3
+566,Luxembourg,LU00,48767.3
+567,Luxembourg,  LU000,48767.3
+568,Mexico,MEX,1906640.0
+569,Aguascalientes,ME01,20586.7
+570,Baja California Norte,ME02,53994.4
+571,Baja California Sur,ME03,14096.1
+572,Campeche,ME04,97324.4
+573,Coahuila,ME05,64569.7
+574,Colima,ME06,10981.4
+575,Chiapas,ME07,34522.0
+576,Chihuahua,ME08,52616.9
+577,Federal District (MX),ME09,311972.0
+578,Durango,ME10,23211.6
+579,Guanajuato,ME11,73945.5
+580,Guerrero,ME12,27557.3
+581,Hidalgo,ME13,31892.3
+582,Jalisco,ME14,119422.0
+583,Mexico,ME15,175540.0
+584,Michoacan,ME16,44091.1
+585,Morelos,ME17,22437.6
+586,Nayarit,ME18,12228.2
+587,Nuevo Leon,ME19,136097.0
+588,Oaxaca,ME20,31077.3
+589,Puebla,ME21,61921.0
+590,Queretaro,ME22,38578.3
+591,Quintana Roo,ME23,28501.9
+592,San Luis Potosi,ME24,37243.7
+593,Sinaloa,ME25,39489.1
+594,Sonora,ME26,55952.8
+595,Tabasco,ME27,66084.0
+596,Tamaulipas,ME28,56509.4
+597,Tlaxcala,ME29,10620.4
+598,Veracruz,ME30,102832.0
+599,Yucatan,ME31,27785.4
+600,Zacatecas,ME32,22962.7
+601,Netherlands,NLD,771631.0
+602,Groningen,  NL11,36801.1
+603,Friesland,  NL12,21591.2
+604,Drenthe,  NL13,15711.0
+605,Overijssel,  NL21,43125.7
+606,Gelderland,  NL22,78482.7
+607,Flevoland,  NL23,13751.3
+608,Utrecht,  NL31,68203.8
+609,North Holland,  NL32,151761.0
+610,South Holland,  NL33,164190.0
+611,Zeeland,  NL34,13822.4
+612,North Brabant,  NL41,114797.0
+613,Limburg (NL),  NL42,41843.0
+614,New Zealand,NZL,145422.0
+615,Northland Region,  NZ011,3610.63
+616,Auckland Region,  NZ012,52149.6
+617,Waikato Region,  NZ013,12620.3
+618,Bay of Plenty Region,  NZ014,7597.46
+619,Gisborne Region,  NZ015,1037.4
+620,Hawke's Bay Region,  NZ016,4034.1
+621,Taranaki Region,  NZ017,5779.99
+622,Manawatu-Wanganui Region,  NZ018,5850.23
+623,Wellington Region,  NZ019,19616.7
+624,Tasman-Nelson-Marlborough,  NZ021,4015.19
+625,West Coast Region,  NZ022,1077.92
+626,Canterbury Region,  NZ023,18452.3
+627,Otago Region,  NZ024,6233.85
+628,Southland Region,  NZ025,3346.56
+629,Norway,NOR,333049.0
+630,Oslo and Akershus,NO01,80719.6
+631,Oslo,  NO011,54509.1
+632,Akershus,  NO012,26210.5
+633,Hedmark and Oppland,NO02,13845.8
+634,Hedmark,  NO021,7021.54
+635,Oppland,  NO022,6824.24
+636,South-Eastern Norway,NO03,37128.6
+637,Østfold,  NO031,9960.97
+638,Buskerud,  NO032,11380.7
+639,Vestfold,  NO033,9109.62
+640,Telemark,  NO034,6676.47
+641,Agder and Rogaland,NO04,39023.6
+642,Aust-Agder,  NO041,4141.73
+643,Vest-Agder,  NO042,8545.41
+644,Rogaland,  NO043,26336.5
+645,Western Norway,NO05,44335.7
+646,Hordaland,  NO051,26601.8
+647,Sogn og Fjordane,  NO052,4852.87
+648,Møre og Romsdal,  NO053,12881.1
+649,Trøndelag,NO06,19584.4
+650,Sør-Trøndelag,  NO061,14599.7
+651,Nord-Trøndelag,  NO062,4983.84
+652,Northern Norway,NO07,19891.7
+653,Nordland,  NO071,9875.33
+654,Troms,  NO072,6883.85
+655,Finnmark,  NO073,3131.69
+656,Poland,POL,881236.0
+657,Lodzkie,PL11,53890.7
+658,City of Lódz,  PL113,20160.5
+659,Lódzki,  PL114,7252.67
+660,Piotrkowski,  PL115,13359.7
+661,Sieradzki,  PL116,7017.61
+662,Skierniewicki,  PL117,6100.18
+663,Mazovia,PL12,192700.0
+664,Ciechanowsko-Plocki,  PL121,17323.8
+665,Ostrolecko-Siedlecki,  PL122,13193.1
+666,City of Warsaw,  PL127,113866.0
+667,Radomski,  PL128,10333.6
+668,Warsaw-East,  PL129,15596.2
+669,Warsaw-West,  PL12A,22387.9
+670,Lesser Poland,PL21,67533.3
+671,City of Krakow,  PL213,26831.2
+672,Krakowski,  PL214,11410.7
+673,Nowosadecki,  PL215,10849.3
+674,Oswiecimski,  PL216,11052.5
+675,Tarnowski,  PL217,7391.88
+676,Silesia,PL22,111812.0
+677,Czestochowski,  PL224,10198.9
+678,Bielski,  PL225,15167.2
+679,Rybnicki,  PL227,13962.2
+680,Bytomski,  PL228,7649.76
+681,Gliwicki,  PL229,13186.3
+682,Katowicki,  PL22A,23672.7
+683,Sosnowiecki,  PL22B,15249.3
+684,Tyski,  PL22C,12725.3
+685,Lublin Province,PL31,34864.4
+686,Bialski,  PL311,4285.87
+687,Chelmsko-Zamojski,  PL312,8341.25
+688,Lubelski,  PL314,15137.5
+689,Pulawski,  PL315,7099.76
+690,Podkarpacia,PL32,34056.5
+691,Krosnienski,  PL323,6711.8
+692,Przemyski,  PL324,4906.62
+693,Rzeszowski,  PL325,12337.3
+694,Tarnobrzeski,  PL326,10100.8
+695,Swietokrzyskie,PL33,21883.5
+696,Kielecki,  PL331,14503.0
+697,Sandomiersko-Jedrzejowski,  PL332,7380.47
+698,Podlasie,PL34,19663.0
+699,Bialostocki,  PL343,9870.29
+700,Lomzynski,  PL344,5846.86
+701,Suwalski,  PL345,3945.83
+702,Greater Poland,PL41,84067.5
+703,Pilski,  PL411,7115.74
+704,Koninski,  PL414,11810.1
+705,City of Poznan,  PL415,24795.5
+706,Kaliski,  PL416,12914.7
+707,Leszczynski,  PL417,11107.2
+708,Poznanski,  PL418,16324.2
+709,West Pomerania,PL42,33184.7
+710,Koszalinski,  PL422,10164.7
+711,Stargardzki,  PL423,5675.7
+712,City of Szczecin,  PL424,11045.6
+713,Szczecinski,  PL425,6298.73
+714,Lubusz,PL43,19450.8
+715,Gorzowski,  PL431,7455.78
+716,Zielonogórski,  PL432,11995.0
+717,Lower Silesia,PL51,75420.4
+718,City of Wroclaw,  PL514,22415.3
+719,Jeleniogórski,  PL515,11301.2
+720,Legnicko-Glogowski,  PL516,17675.2
+721,Walbrzyski,  PL517,11360.5
+722,Wroclawski,  PL518,12670.5
+723,Opole region,PL52,18709.0
+724,Nyski,  PL521,5846.86
+725,Opolski,  PL522,12862.2
+726,Kuyavian-Pomerania,PL61,39006.5
+727,Bydgosko-Torunski,  PL613,18672.5
+728,Grudziadzki,  PL614,8313.87
+729,Wloclawski,  PL615,12022.4
+730,Warmian-Masuria,PL62,23807.4
+731,Elblaski,  PL621,8373.2
+732,Olsztynski,  PL622,11490.6
+733,Elcki,  PL623,3941.27
+734,Pomerania,PL63,51186.3
+735,Slupski,  PL631,8151.83
+736,Trojmiejski,  PL633,25338.7
+737,Gdanski,  PL634,8859.3
+738,Starogardzki,  PL635,8836.48
+739,Portugal,PRT,283905.0
+740,North (PT),PT11,80661.0
+741,Algarve,PT15,12057.7
+742,Central Portugal,PT16,53037.3
+743,Lisbon,PT17,106223.0
+744,Alentejo,PT18,18801.3
+745,Azores (PT),PT20,6079.42
+746,Madeira (PT),PT30,6777.39
+747,Minho-Lima,  PT111_2002,4789.69
+748,Cávado,  PT112_2002,8544.23
+749,Ave,  PT113_2002,10811.8
+750,Grande Porto,  PT114_2002,34023.5
+751,Tâmega,  PT115_2002,8598.18
+752,Entre Douro e Vouga,  PT116_2002,6150.23
+753,Douro,  PT117_2002,3808.49
+754,Alto Trás-os-Montes,  PT118_2002,3938.3
+755,Algarve,  PT150_2002,12057.7
+756,Baixo Vouga,  PT161_2002,9690.65
+757,Baixo Mondego,  PT162_2002,8618.41
+758,Pinhal Litoral,  PT163_2002,7121.31
+759,Pinhal Interior Norte,  PT164_2002,2422.66
+760,Dão-Lafões,  PT165_2002,5644.45
+761,Pinhal Interior Sul,  PT166_2002,758.66
+762,Serra da Estrela,  PT167_2002,610.3
+763,Beira Interior Norte,  PT168_2002,1891.6
+764,Beira Interior Sul,  PT169_2002,1910.14
+765,Cova da Beira,  PT16A_2002,1566.22
+766,Oeste,  PT16B_2002,7765.33
+767,Médio Tejo,  PT16C_2002,5037.52
+768,Grande Lisboa,  PT171_2002,90370.2
+769,Península de Setúbal,  PT172_2002,15852.7
+770,Alentejo Litoral,  PT181_2002,3634.84
+771,Alto Alentejo,  PT182_2002,2353.54
+772,Alentejo Central,  PT183_2002,3889.41
+773,Baixo Alentejo,  PT184_2002,3203.24
+774,Lezíria do Tejo,  PT185_2002,5720.32
+775,Azores (PT),  PT200_2002,6079.42
+776,Madeira (PT),  PT300_2002,6777.39
+777,Slovak Republic,SVK,139075.0
+778,Bratislava Region,SK01,37904.9
+779,Bratislava Region,  SK010,37904.9
+780,West Slovakia,SK02,45353.3
+781,Trnava Region,  SK021,15977.7
+782,Trencín Region,  SK022,13482.7
+783,Nitra Region,  SK023,15891.0
+784,Central Slovakia,SK03,27348.8
+785,Žilina Region,  SK031,15289.9
+786,Banská Bystrica Region,  SK032,12058.9
+787,East Slovakia,SK04,28468.2
+788,Prešov Region,  SK041,12478.9
+789,Košice Region,  SK042,15989.3
+790,Slovenia,SVN,58526.2
+791,Eastern Slovenia,SI01,25639.9
+792,Mura,  SI011,2295.14
+793,Drava,  SI012,7613.64
+794,Carinthia,  SI013,1620.58
+795,Savinja,  SI014,6740.77
+796,Central Sava,  SI015,796.47
+797,Lower Sava,  SI016,1727.86
+798,Southeast Slovenia,  SI017,3819.82
+799,Inner-Karst,  SI018,1025.66
+800,Western Slovenia,SI02,32886.2
+801,Central Slovenia,  SI021,21742.1
+802,Upper Carniola,  SI022,4832.48
+803,Goriska,  SI023,3093.24
+804,Coastal-Karst,  SI024,3216.78
+805,Spain,ESP,1532740.0
+806,Galicia,ES11,79482.8
+807,La Corunna,  ES111,34642.0
+808,Lugo,  ES112,9646.83
+809,Orense,  ES113,9139.86
+810,Pontevedra,  ES114,26052.7
+811,Asturias,ES12,31623.5
+812,Asturias,  ES120,31623.5
+813,Cantabria,ES13,17963.0
+814,Cantabria,  ES130,17963.0
+815,Basque Country,ES21,93348.0
+816,Álava,  ES211,15566.2
+817,Guipuscoa,  ES212,31258.8
+818,Biscay,  ES213,46522.9
+819,Navarra,ES22,25834.8
+820,Navarre,  ES220,25834.8
+821,La Rioja,ES23,11269.4
+822,La Rioja (ES),  ES230,11269.4
+823,Aragon,ES24,47945.1
+824,Huesca,  ES241,8213.09
+825,Teruel,  ES242,4985.38
+826,Saragossa,  ES243,34745.1
+827,Madrid,ES30,288565.0
+828,Madrid,  ES300,288565.0
+829,Castile and León,ES41,78654.8
+830,Ávila,  ES411,4545.24
+831,Burgos,  ES412,14071.5
+832,León,  ES413,14269.0
+833,Palencia,  ES414,5779.96
+834,Salamanca,  ES415,9491.4
+835,Segovia,  ES416,4770.39
+836,Soria,  ES417,3051.95
+837,Valladolid,  ES418,17530.2
+838,Zamora,  ES419,5145.17
+839,Castile-La Mancha,ES42,55424.6
+840,Albacete,  ES421,10511.1
+841,Ciudad Real,  ES422,14353.3
+842,Cuenca,  ES423,5947.01
+843,Guadalajara,  ES424,7388.01
+844,Toledo,  ES425,17225.1
+845,Extremadura,ES43,24719.2
+846,Badajoz,  ES431,15370.1
+847,Cáceres,  ES432,9347.59
+848,Catalonia,ES51,288013.0
+849,Barcelona,  ES511,211614.0
+850,Gerona,  ES512,28539.5
+851,Lérida,  ES513,17136.5
+852,Tarragona,  ES514,30722.8
+853,Valencia,ES52,142506.0
+854,Alicante,  ES521,46685.6
+855,Castellón,  ES522,18685.0
+856,Valencia,  ES523,77135.4
+857,Balearic Islands,ES53,38009.2
+858,Eivissa Y Formentera,  ES531,4516.18
+859,Mallorca,  ES532,30959.6
+860,Menorca,  ES533,2533.36
+861,Andalusia,ES61,205717.0
+862,Almería,  ES611,17300.7
+863,Cádiz,  ES612,29607.2
+864,Cordoba (ES),  ES613,18545.5
+865,Granada,  ES614,21707.9
+866,Huelva,  ES615,13506.4
+867,Jaén,  ES616,14399.8
+868,Málaga,  ES617,38657.0
+869,Seville,  ES618,51992.1
+870,Murcia,ES62,39213.4
+871,Murcia,  ES620,39213.4
+872,Ceuta,ES63,2248.65
+873,Ceuta (ES),  ES630,2248.65
+874,Melilla,ES64,2029.31
+875,Melilla (ES),  ES640,2029.31
+876,Canary Islands,ES70,58935.6
+877,El Hierro,  ES703,245.49
+878,Fuerteventura,  ES704,2916.85
+879,Gran Canaria,  ES705,23191.0
+880,La Gomera,  ES706,565.07
+881,La Palma,  ES707,2115.01
+882,Lanzarote,  ES708,4385.45
+883,Tenerife,  ES709,25516.7
+884,Sweden,SWE,417609.0
+885,Stockholm,SE11,129695.0
+886,Stockholm County,  SE110,129695.0
+887,East Middle Sweden,SE12,60851.8
+888,Uppsala County,  SE121,13992.0
+889,Södermanland County,  SE122,9601.22
+890,Östergötland County,  SE123,16682.0
+891,Örebro County,  SE124,11112.5
+892,Västmanland County,  SE125,9464.11
+893,Småland with Islands,SE21,30293.2
+894,Jönköping County,  SE211,12920.7
+895,Kronoberg County,  SE212,7409.31
+896,Kalmar County,  SE213,8043.6
+897,Gotland County,  SE214,1920.64
+898,South Sweden,SE22,52205.5
+899,Blekinge County,  SE221,5217.39
+900,Skåne County,  SE224,46988.1
+901,West Sweden,SE23,78808.4
+902,Halland County,  SE231,10655.8
+903,Västra Götaland County,  SE232,68153.6
+904,North Middle Sweden,SE31,29697.4
+905,Värmlands County,  SE311,9494.69
+906,Dalarna County,  SE312,10415.0
+907,Gävleborg County,  SE313,9787.67
+908,Central Norrland,SE32,14314.5
+909,Västernorrland County,  SE321,9687.05
+910,Jämtland County,  SE322,4627.49
+911,Upper Norrland,SE33,21636.0
+912,Västerbottens County,  SE331,10019.5
+913,Norrbottens County,  SE332,11616.6
+914,Switzerland,CHE,447148.0
+915,Lake Geneva Region,CH01,81636.4
+916,Vaud,  CH011,34984.5
+917,Valais,  CH012,12413.8
+918,Genève,  CH013,34238.1
+919,Espace Mittelland,CH02,91112.8
+920,Bern,  CH021,53707.2
+921,Fribourg (CH),  CH022,11693.0
+922,Solothurn,  CH023,12313.6
+923,Neuchâtel,  CH024,10246.2
+924,Jura (CH),  CH025,3152.87
+925,Northwestern Switzerland,CH03,60681.5
+926,Basel-Stadt,  CH031,19987.1
+927,Basel-Landschaft,  CH032,13115.8
+928,Aargau,  CH033,27578.6
+929,Zurich,CH04,97203.5
+930,Zürich,  CH040,97203.5
+931,Eastern Switzerland,CH05,55496.3
+932,Glarus,  CH051,1868.96
+933,Schaffhausen,  CH052,4980.92
+934,Appenzell Ausserrhoden,  CH053,2115.35
+935,Appenzell Innerrhoden,  CH054,673.47
+936,St. Gallen,  CH055,25134.4
+937,Graubünden,  CH056,9645.8
+938,Thurgau,  CH057,11077.4
+939,Central Switzerland,CH06,41528.7
+940,Lucerne,  CH061,17816.7
+941,Uri,  CH062,1322.59
+942,Schwyz,  CH063,6274.43
+943,Obwalden,  CH064,1660.33
+944,Nidwalden,  CH065,1924.35
+945,Zug,  CH066,12530.3
+946,Ticino,CH07,19489.3
+947,Ticino,  CH070,19489.3
+948,Turkey,TUR,1348310.0
+949,Istanbul,TR10,
+950,Istanbul,  TR100,
+951,Thrace,TR21,
+952,Tekirdag,  TR211,
+953,Edirne,  TR212,
+954,Kirklareli,  TR213,
+955,Southern Marmara - West,TR22,
+956,Balikesir,  TR221,
+957,Çanakkale,  TR222,
+958,Izmir,TR31,
+959,Izmir,  TR310,
+960,Southern Aegean,TR32,
+961,Aydin,  TR321,
+962,Denizli,  TR322,
+963,Mugla,  TR323,
+964,Northern Aegean,TR33,
+965,Manisa,  TR331,
+966,Afyon,  TR332,
+967,Kütahya,  TR333,
+968,Usak,  TR334,
+969,Eastern Marmara - South,TR41,
+970,Bursa,  TR411,
+971,Eskisehir,  TR412,
+972,Bilecik,  TR413,
+973,Eastern Marmara - North,TR42,
+974,Kocaeli,  TR421,
+975,Sakarya,  TR422,
+976,Düzce,  TR423,
+977,Bolu,  TR424,
+978,Yalova,  TR425,
+979,Ankara,TR51,
+980,Ankara,  TR510,
+981,Central Anatolia - West and South,TR52,
+982,Konya,  TR521,
+983,Karaman,  TR522,
+984,Mediterranean region - West,TR61,
+985,Antalya,  TR611,
+986,Isparta,  TR612,
+987,Burdur,  TR613,
+988,Mediterranean region - Middle,TR62,
+989,Adana,  TR621,
+990,Mersin,  TR622,
+991,Mediterranean region - East,TR63,
+992,Hatay,  TR631,
+993,Kahramanmaras,  TR632,
+994,Osmaniye,  TR633,
+995,Central Anatolia - Middle,TR71,
+996,Kirikkale,  TR711,
+997,Aksaray,  TR712,
+998,Nigde,  TR713,
+999,Nevsehir,  TR714,
+1000,Kirsehir,  TR715,
+1001,Central Anatolia - East,TR72,
+1002,Kayseri,  TR721,
+1003,Sivas,  TR722,
+1004,Yozgat,  TR723,
+1005,Western Black Sea - West,TR81,
+1006,Zonguldak,  TR811,
+1007,Karabük,  TR812,
+1008,Bartin,  TR813,
+1009,Western Black Sea - Middle and East,TR82,
+1010,Kastamonu,  TR821,
+1011,Çankiri,  TR822,
+1012,Sinop,  TR823,
+1013,Middle Black Sea,TR83,
+1014,Samsun,  TR831,
+1015,Tokat,  TR832,
+1016,Çorum,  TR833,
+1017,Amasya,  TR834,
+1018,Eastern Black Sea,TR90,
+1019,Trabzon,  TR901,
+1020,Ordu,  TR902,
+1021,Giresun,  TR903,
+1022,Rize,  TR904,
+1023,Artvin,  TR905,
+1024,Gümüshane,  TR906,
+1025,Northeastern Anatolia - West,TRA1,
+1026,Erzurum,  TRA11,
+1027,Erzincan,  TRA12,
+1028,Bayburt,  TRA13,
+1029,Northeastern Anatolia - East,TRA2,
+1030,Agri,  TRA21,
+1031,Kars,  TRA22,
+1032,Igdir,  TRA23,
+1033,Ardahan,  TRA24,
+1034,Eastern Anatolia - West,TRB1,
+1035,Malatya,  TRB11,
+1036,Elazig,  TRB12,
+1037,Bingöl,  TRB13,
+1038,Tunceli,  TRB14,
+1039,Eastern Anatolia - East,TRB2,
+1040,Van,  TRB21,
+1041,Mus,  TRB22,
+1042,Bitlis,  TRB23,
+1043,Hakkari,  TRB24,
+1044,Southeastern Anatolia - West,TRC1,
+1045,Gaziantep,  TRC11,
+1046,Adiyaman,  TRC12,
+1047,Kilis,  TRC13,
+1048,Southeastern Anatolia - Middle,TRC2,
+1049,Sanliurfa,  TRC21,
+1050,Diyarbakir,  TRC22,
+1051,Southeastern Anatolia - East,TRC3,
+1052,Mardin,  TRC31,
+1053,Batman,  TRC32,
+1054,Sirnak,  TRC33,
+1055,Siirt,  TRC34,
+1056,United Kingdom,GBR,2381490.0
+1057,North East England,UKC,70995.6
+1058,Hartlepool and Stockton-on-Tees,  UKC11,7617.5
+1059,South Teesside,  UKC12,6923.68
+1060,Darlington,  UKC13,3614.32
+1061,Durham CC,  UKC14,11049.5
+1062,Northumberland,  UKC21,6749.42
+1063,Tyneside,  UKC22,26865.4
+1064,Sunderland,  UKC23,8172.56
+1065,North West England,UKD,220475.0
+1066,West Cumbria,  UKD11,6951.11
+1067,East Cumbria,  UKD12,8266.14
+1068,Greater Manchester South,  UKD31,59028.0
+1069,Greater Manchester North,  UKD32,27760.9
+1070,Blackburn with Darwen,  UKD41,3701.45
+1071,Blackpool,  UKD42,3114.12
+1072,Lancashire CC,  UKD43,33080.7
+1073,Warrington,  UKD61,9098.73
+1074,Cheshire East,  UKD62,15072.0
+1075,Cheshire West and Chester,  UKD63,11940.2
+1076,East Merseyside,  UKD71,13711.8
+1077,Liverpool,  UKD72,16961.5
+1078,Sefton,  UKD73,5758.71
+1079,Wirral,  UKD74,6028.17
+1080,Yorkshire and The Humber,UKE,159624.0
+1081,City Of Kingston Upon Hull,  UKE11,7775.63
+1082,East Riding of Yorkshire,  UKE12,8166.1
+1083,North and North East Lincolnshire,  UKE13,9845.79
+1084,York,  UKE21,7449.69
+1085,North Yorkshire CC,  UKE22,18357.2
+1086,Barnsley Doncaster And Rotherham,  UKE31,17823.1
+1087,Sheffield,  UKE32,17623.0
+1088,Bradford,  UKE41,13886.1
+1089,Leeds,  UKE42,31567.2
+1090,Calderdale and Kirklees,  UKE44,17024.4
+1091,Wakefield,  UKE45,10105.6
+1092,East Midlands,UKF,139519.0
+1093,Derby,  UKF11,10778.4
+1094,East Derbyshire,  UKF12,6960.79
+1095,South and West Derbyshire,  UKF13,13302.0
+1096,Nottingham,  UKF14,14157.2
+1097,North Nottinghamshire,  UKF15,11912.7
+1098,South Nottinghamshire,  UKF16,7720.77
+1099,Leicester City,  UKF21,10571.9
+1100,Leicestershire CC and Rutland,  UKF22,21950.5
+1101,West Northamptonshire,  UKF24,13984.5
+1102,North Northamptonshire,  UKF25,9134.22
+1103,Lincolnshire,  UKF30,19047.8
+1104,West Midlands,UKG,172016.0
+1105,Herefordshire,  UKG11,5602.2
+1106,Worcestershire,  UKG12,16764.6
+1107,Warwickshire,  UKG13,20308.0
+1108,Telford and Wrekin,  UKG21,5469.89
+1109,Shropshire CC,  UKG22,8726.0
+1110,Stoke-on-Trent,  UKG23,7394.83
+1111,Staffordshire CC,  UKG24,21963.5
+1112,Birmingham,  UKG31,36640.2
+1113,Solihull,  UKG32,8619.51
+1114,Coventry,  UKG33,10336.3
+1115,Dudley,  UKG36,6981.77
+1116,Sandwell,  UKG37,8963.19
+1117,Walsall,  UKG38,6536.43
+1118,Wolverhampton,  UKG39,7707.86
+1119,East of England,UKH,203783.0
+1120,Peterborough,  UKH11,7722.38
+1121,Cambridgeshire CC,  UKH12,26360.3
+1122,Norfolk,  UKH13,26105.4
+1123,Suffolk,  UKH14,23551.2
+1124,Luton,  UKH21,6828.48
+1125,Hertfordshire,  UKH23,47223.3
+1126,Bedford,  UKH24,5608.65
+1127,Central Bedfordshire,  UKH25,7954.73
+1128,Southend-on-Sea,  UKH31,4588.9
+1129,Thurrock,  UKH32,4180.67
+1130,Essex CC,  UKH33,43659.0
+1131,Greater London,UKI,525388.0
+1132,Inner London - West,  UKI11,238902.0
+1133,Inner London - East,  UKI12,130324.0
+1134,Outer London - East and North East,  UKI21,41698.6
+1135,Outer London - South,  UKI22,35004.0
+1136,Outer London - West and North West,  UKI23,79460.2
+1137,South East England,UKJ,356506.0
+1138,Berkshire,  UKJ11,53901.8
+1139,Milton Keynes,  UKJ12,14955.9
+1140,Buckinghamshire CC,  UKJ13,22157.1
+1141,Oxfordshire,  UKJ14,29868.2
+1142,Brighton and Hove,  UKJ21,9850.64
+1143,East Sussex CC,  UKJ22,13626.3
+1144,Surrey,  UKJ23,55918.7
+1145,West Sussex,  UKJ24,30671.7
+1146,Portsmouth,  UKJ31,8135.45
+1147,Southampton,  UKJ32,8304.87
+1148,Hampshire CC,  UKJ33,53088.6
+1149,Isle of Wight,  UKJ34,3509.44
+1150,Medway,  UKJ41,6791.37
+1151,Kent CC,  UKJ42,45726.0
+1152,South West England,UKK,177920.0
+1153,City of Bristol,  UKK11,20120.8
+1154,"Bath and North East Somerset, North Somerset and South Gloucestershire",  UKK12,25592.3
+1155,Gloucestershire,  UKK13,22057.0
+1156,Swindon,  UKK14,10028.1
+1157,Wiltshire CC,  UKK15,15357.6
+1158,Bournemouth and Poole,  UKK21,12135.4
+1159,Dorset CC,  UKK22,11940.2
+1160,Somerset,  UKK23,15247.9
+1161,Cornwall and Isles of Scilly,  UKK30,13108.4
+1162,Plymouth,  UKK41,8007.98
+1163,Torbay,  UKK42,3012.47
+1164,Devon CC,  UKK43,21311.6
+1165,Wales,UKL,81052.7
+1166,Isle of Anglesey,  UKL11,1303.74
+1167,Gwynedd,  UKL12,3293.23
+1168,Conwy and Denbighshire,  UKL13,4889.01
+1169,South West Wales,  UKL14,8085.43
+1170,Central Valleys,  UKL15,6518.68
+1171,Gwent Valleys,  UKL16,6947.88
+1172,Bridgend and Neath Port Talbot,  UKL17,6928.52
+1173,Swansea,  UKL18,6384.76
+1174,Monmouthshire and Newport,  UKL21,7570.71
+1175,Cardiff and Vale of Glamorgan,  UKL22,17059.9
+1176,Flintshire and Wrexham,  UKL23,8819.59
+1177,Powys,  UKL24,3248.05
+1178,Scotland,UKM,183651.0
+1179,Angus and Dundee City,  UKM21,7688.5
+1180,Clackmannanshire and Fife,  UKM22,9644.1
+1181,East Lothian and Midlothian,  UKM23,3899.92
+1182,Scottish Borders,  UKM24,2778.51
+1183,Edinburgh City Of,  UKM25,29156.6
+1184,Falkirk,  UKM26,4095.15
+1185,Perth & Kinross and Stirling,  UKM27,7893.42
+1186,West Lothian,  UKM28,5737.73
+1187,"East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",  UKM31,4774.45
+1188,Dumfries & Galloway,  UKM32,3706.29
+1189,East Ayrshire and North Ayrshire mainland,  UKM33,5055.21
+1190,Glasgow City,  UKM34,30311.9
+1191,"Inverclyde, East Renfrewshire and Renfrewshire",  UKM35,8521.08
+1192,North Lanarkshire,  UKM36,8401.68
+1193,South Ayrshire,  UKM37,3331.95
+1194,South Lanarkshire,  UKM38,7698.18
+1195,Aberdeen City and Aberdeenshire,  UKM50,27710.9
+1196,Caithness & Sutherland and Ross & Cromarty,  UKM61,2066.94
+1197,"Inverness & Nairn and Moray, Badenoch & Strathspey",  UKM62,6336.35
+1198,"Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",  UKM63,2791.42
+1199,Eilean Siar (Western Isles),  UKM64,676.07
+1200,Orkney Islands,  UKM65,592.17
+1201,Shetland Islands,  UKM66,785.79
+1202,Northern Ireland,UKN,52349.6
+1203,Belfast,  UKN01,16080.5
+1204,Outer Belfast,  UKN02,8798.61
+1205,East of Northern Ireland (UK),  UKN03,11123.7
+1206,North of Northern Ireland (UK),  UKN04,6454.14
+1207,West and South of Northern Ireland (UK),  UKN05,9892.59
+1208,United States,USA,16060700.0
+1209,Alabama,US01,186960.0
+1210,Alaska,US02,57941.0
+1211,Arizona,US04,267493.0
+1212,Arkansas,US05,114090.0
+1213,California,US06,2125140.0
+1214,Colorado,US08,276816.0
+1215,Connecticut,US09,239878.0
+1216,Delaware,US10,59104.0
+1217,District of Columbia,US11,109937.0
+1218,Florida,US12,766259.0
+1219,Georgia,US13,438801.0
+1220,Hawaii,US15,72653.0
+1221,Idaho,US16,58353.0
+1222,Illinois,US17,710348.0
+1223,Indiana,US18,300304.0
+1224,Iowa,US19,159660.0
+1225,Kansas,US20,140441.0
+1226,Kentucky,US21,178682.0
+1227,Louisiana,US22,250689.0
+1228,Maine,US23,53180.0
+1229,Maryland,US24,330518.0
+1230,Massachusetts,US25,428350.0
+1231,Michigan,US26,415145.0
+1232,Minnesota,US27,295716.0
+1233,Mississippi,US28,103414.0
+1234,Missouri,US29,266672.0
+1235,Montana (US),US30,41941.0
+1236,Nebraska,US31,102823.0
+1237,Nevada,US32,124938.0
+1238,New Hampshire,US33,66490.0
+1239,New Jersey,US34,523275.0
+1240,New Mexico,US35,88212.0
+1241,New York,US36,1302530.0
+1242,North Carolina,US37,445720.0
+1243,North Dakota,US38,49308.0
+1244,Ohio,US39,542097.0
+1245,Oklahoma,US40,169346.0
+1246,Oregon,US41,203352.0
+1247,Pennsylvania,US42,619417.0
+1248,Rhode Island,US44,51346.0
+1249,South Carolina,US45,176320.0
+1250,South Dakota,US46,43177.0
+1251,Tennessee,US47,280169.0
+1252,Texas,US48,1449330.0
+1253,Utah,US49,128050.0
+1254,Vermont,US50,28348.0
+1255,Virginia,US51,444617.0
+1256,Washington,US53,390643.0
+1257,West Virginia,US54,68722.0
+1258,Wisconsin,US55,273091.0
+1259,Wyoming,US56,40877.0
+1260,Brazil,BRA,2895120.0
+1261,Acre,  BR01,6347.27
+1262,Amapá,  BR02,6868.21
+1263,Amazonas,  BR03,42265.7
+1264,Pará,  BR04,59990.1
+1265,Rondônia,  BR05,19354.4
+1266,Roraima,  BR06,4821.04
+1267,Tocantins,  BR07,12873.3
+1268,Alagoas,  BR08,19474.9
+1269,Bahia,  BR09,110560.0
+1270,Ceará,  BR10,59411.8
+1271,Maranhão,  BR11,38772.0
+1272,Paraíba,  BR12,25530.3
+1273,Pernambuco,  BR13,77346.7
+1274,Piauí,  BR14,16954.2
+1275,Rio Grande Do Norte,  BR15,26065.9
+1276,Sergipe,  BR16,18340.1
+1277,Espírito Santo,  BR17,70747.6
+1278,Minas Gerais,  BR18,266008.0
+1279,Rio De Janeiro,  BR19,332366.0
+1280,São Paulo,  BR20,928702.0
+1281,Paraná,  BR21,168698.0
+1282,Rio Grande Do Sul,  BR22,183023.0
+1283,Santa Catarina,  BR23,116854.0
+1284,Distrito Federal (BR),  BR24,112873.0
+1285,Goiás,  BR25,81688.1
+1286,Mato Grosso,  BR26,53280.5
+1287,Mato Grosso Do Sul,  BR27,35905.8
+1288,China,CHN,16407100.0
+1289,Beijing,  CN01,508799.0
+1290,Tianjin,  CN02,366924.0
+1291,Hebei,  CN03,756252.0
+1292,Shanxi,  CN04,344698.0
+1293,Inner Mongolia,  CN05,451918.0
+1294,Liaoning,  CN06,707061.0
+1295,Jilin,  CN07,339758.0
+1296,Heilongjiang,  CN08,389625.0
+1297,Shanghai,  CN09,574316.0
+1298,Jiangsu,  CN10,1538350.0
+1299,Zhejiang,  CN11,986480.0
+1300,Anhui,  CN12,489808.0
+1301,Fujian,  CN13,560659.0
+1302,Jiangxi,  CN14,368490.0
+1303,Shandong,  CN15,1423240.0
+1304,Henan,  CN16,842315.0
+1305,Hubei,  CN17,633187.0
+1306,Hunan,  CN18,630449.0
+1307,Guangdong,  CN19,1624000.0
+1308,Guangxi,  CN20,370943.0
+1309,Hainan,  CN21,81260.8
+1310,Chongqing,  CN22,324686.0
+1311,Sichuan,  CN23,679354.0
+1312,Guizhou,  CN24,194995.0
+1313,Yunnan,  CN25,293379.0
+1314,Tibet,  CN26,19949.4
+1315,Shaanxi,  CN27,411312.0
+1316,Gansu,  CN28,160789.0
+1317,Qinghai,  CN29,53885.0
+1318,Ningxia,  CN30,66626.7
+1319,Xinjiang,  CN31,213581.0
+1320,Colombia,COL,564820.0
+1321,Antioquia,  CO05,74024.7
+1322,Atlántico,  CO08,21286.0
+1323,Bogotá Capital District,  CO11,139652.0
+1324,Bolívar,  CO13,22576.1
+1325,Boyacá,  CO15,16170.3
+1326,Caldas,  CO17,8016.83
+1327,Caquetá,  CO18,2477.62
+1328,Cauca,  CO19,8373.32
+1329,Cesar,  CO20,11466.3
+1330,Córdoba (CO),  CO23,9993.66
+1331,Cundinamarca,  CO25,28960.7
+1332,Chocó,  CO27,2846.84
+1333,Huila,  CO41,10185.5
+1334,La Guajira,  CO44,6786.93
+1335,Magdalena,  CO47,7257.16
+1336,Meta,  CO50,32153.0
+1337,Nariño,  CO52,8363.98
+1338,Norte de Santander,  CO54,8964.08
+1339,Quindio,  CO63,4374.67
+1340,Risaralda,  CO66,7808.02
+1341,Santander,  CO68,40973.7
+1342,Sucre,  CO70,4398.43
+1343,Tolima,  CO73,12293.9
+1344,Valle del Cauca,  CO76,52376.3
+1345,Arauca,  CO81,4986.64
+1346,Casanare,  CO85,12703.9
+1347,Putumayo,  CO86,2966.52
+1348,San Andrés,  CO88,808.05
+1349,Amazonas,  CO91,374.32
+1350,Guainía,  CO94,190.13
+1351,Guaviare,  CO95,478.72
+1352,Vaupés,  CO97,143.45
+1353,Vichada,  CO99,311.51
+1354,India,IND,5899410.0
+1355,Jammu and Kashmir,  IN01,48329.5
+1356,Himachal Pradesh,  IN02,46315.0
+1357,National Capital Territory of Delhi,  IN03,210441.0
+1358,Rajasthan,  IN04,295432.0
+1359,Uttar Pradesh,  IN05,490357.0
+1360,Sikkim,  IN06,6580.61
+1361,Arunachal Pradesh,  IN07,7437.04
+1362,Nagaland,  IN08,9849.87
+1363,Meghalaya,  IN09,11944.1
+1364,Assam,  IN10,86963.0
+1365,West Bengal,  IN11,379085.0
+1366,Gujarat,  IN12,413788.0
+1367,Maharashtra,  IN14,830806.0
+1368,Kerala,  IN17,218563.0
+1369,Punjab,  IN18,179152.0
+1370,Chandigarh,  IN19,15737.4
+1371,Haryana,  IN20,214485.0
+1372,Uttaranchal,  IN21,68017.9
+1373,Bihar,  IN22,184491.0
+1374,Jharkhand,  IN23,95291.0
+1375,Manipur,  IN24,7978.04
+1376,Mizoram,  IN25,5254.81
+1377,Tripura,  IN26,14261.5
+1378,Orissa,  IN27,157852.0
+1379,Madhya Pradesh,  IN28,227001.0
+1380,Chhattisgarh,  IN29,104079.0
+1381,Andhra Pradesh,  IN30,257662.0
+1382,Karnataka,  IN31,328417.0
+1383,Goa,  IN32,26646.0
+1384,Tamil Nadu,  IN33,468025.0
+1385,Puducherry,  IN34,10553.0
+1386,Andaman and Nicobar Islands,  IN35,3539.44
+1387,Indonesia,IDN,1819360.0
+1388,DKI Jakarta Province,  ID01,298312.0
+1389,Banten Province,  ID02,57529.7
+1390,D.I. Yogyakarta Province,  ID03,15414.8
+1391,West Java Province,  ID04,255912.0
+1392,East Java Province,  ID05,270739.0
+1393,Central Java Province,  ID06,150402.0
+1394,Bali Province,  ID07,22686.5
+1395,Aceh Province,  ID08,25989.8
+1396,North Sumatera Province,  ID09,94898.0
+1397,Bengkulu Province,  ID10,6533.33
+1398,Riau Province,  ID11,126778.0
+1399,Riau Mainland Province,  ID12,24788.7
+1400,West Sumatera Province,  ID13,29758.2
+1401,South Sumatera Province,  ID14,55765.9
+1402,Bangka Belitung Province,  ID15,9277.15
+1403,Jambi Province,  ID16,19636.5
+1404,Lampung Province,  ID17,39071.1
+1405,Papua Province,  ID18,21017.8
+1406,West Papua Province,  ID19,11556.9
+1407,Gorontalo Province,  ID20,2802.2
+1408,West Kalimantan Province,  ID21,20277.8
+1409,South Kalimantan Province,  ID22,20520.0
+1410,Middle Kalimantan Province,  ID23,15101.8
+1411,East Kalimantan Province,  ID24,113272.0
+1412,Maluku Province,  ID25,3099.77
+1413,North Maluku Province,  ID26,1869.75
+1414,South East Sulawesi Province,  ID27,9892.29
+1415,North Sulawesi Province,  ID28,12756.4
+1416,South Sulawesi Province,  ID29,43089.0
+1417,Middle Sulawesi Province,  ID30,13800.7
+1418,West Sulawesi Province,  ID31,3894.11
+1419,Western Lesser Sundas Province,  ID32,13386.4
+1420,Eastern Lesser Sundas Province,  ID33,9527.97
+1421,Latvia,LVA,43416.8
+1422,Latvia,  LV00,43350.3
+1423,Kurzeme,    LV003,4473.2
+1424,Latgale,    LV005,3591.85
+1425,Riga,    LV006,22653.3
+1426,Pieriga,    LV007,6347.29
+1427,Vidzeme,    LV008,2669.46
+1428,Zemgale,    LV009,3615.3
+1429,Lithuania,LTU,71956.5
+1430,Lithuania,  LT00,71956.5
+1431,Alytus county,    LT001,2401.86
+1432,Kaunas county,    LT002,14117.4
+1433,Klaipeda county,    LT003,8680.83
+1434,Marijampole county,    LT004,2475.3
+1435,Panevežys county,    LT005,4434.37
+1436,Šiauliai county,    LT006,5404.19
+1437,Taurage county,    LT007,1473.08
+1438,Telšiai county,    LT008,2881.37
+1439,Utena county,    LT009,2352.18
+1440,Vilnius county,    LT00A,27738.1
+1441,Russia,RUS,2990660.0
+1442,Belgorod Oblast,  RU01,30268.6
+1443,Bryansk Oblast,  RU02,11628.8
+1444,Vladimir Oblast,  RU03,15829.7
+1445,Voronezh Oblast,  RU04,31513.5
+1446,Ivanovo Oblast,  RU05,7565.72
+1447,Kaluga Oblast,  RU06,15987.8
+1448,Kostroma Oblast,  RU07,7294.73
+1449,Kursk Oblast,  RU08,14067.7
+1450,Lipetsk Oblast,  RU09,16341.8
+1451,Moscow Oblast,  RU10,135244.0
+1452,Oryol Oblast,  RU11,8099.3
+1453,Ryazan Oblast,  RU12,13701.3
+1454,Smolensk Oblast,  RU13,11157.0
+1455,Tambov Oblast,  RU14,11265.4
+1456,Tver Oblast,  RU15,14833.0
+1457,Tula Oblast,  RU16,17141.6
+1458,Yaroslavl Oblast,  RU17,17988.3
+1459,City of Moscow,  RU18,586240.0
+1460,Republic of Karelia,  RU19,8978.46
+1461,Komi republic,  RU20,26644.7
+1462,Arkhangelsk Oblast,  RU21,25971.7
+1463,Nenets Autonomous Okrug,  RU22,9071.34
+1464,Vologda Oblast,  RU23,19734.1
+1465,Kaliningrad Oblast,  RU24,14665.8
+1466,Leningrad Oblast,  RU25,37349.5
+1467,Murmansk Oblast,  RU26,15536.1
+1468,Novgorod Oblast,  RU27,9550.01
+1469,Pskov Oblast,  RU28,5996.13
+1470,Federal City of Saint Petersburg,  RU29,127026.0
+1471,Republic of Adygea,  RU30,3615.47
+1472,Republic of Kalmykia,  RU31,1885.25
+1473,Krasnodar Krai,  RU32,79722.5
+1474,Astrakhan Oblast,  RU33,11712.3
+1475,Volgograd Oblast,  RU34,31806.7
+1476,Rostov Oblast,  RU35,46569.7
+1477,Republic of Dagestan,  RU36,20948.0
+1478,Republic of Ingushetia,  RU37,2044.4
+1479,Kabardino-Balkar Republic,  RU38,5874.27
+1480,Karachay-Cherkhess Republic,  RU39,3298.3
+1481,Republic of North Ossetia-Alania,  RU40,5526.37
+1482,Chechen Republic,  RU41,5745.97
+1483,Stavropol Krai,  RU42,23885.0
+1484,Republic of Bashkorstostan,  RU43,63959.7
+1485,Mari El Republic,  RU44,6517.48
+1486,Republic of Mordovia,  RU45,7341.93
+1487,Republic of Tatarstan,  RU46,79637.1
+1488,Udmurt Republic,  RU47,20589.0
+1489,Chuvash Republic,  RU48,12028.4
+1490,Perm Krai,  RU49,49746.3
+1491,Kirov Oblast,  RU50,11769.9
+1492,Nizhny Novgorod Oblast,  RU51,46476.5
+1493,Orenburg Oblast,  RU52,34880.7
+1494,Penza Oblast,  RU53,13319.8
+1495,Samara Oblast,  RU54,52185.6
+1496,Saratov Oblast,  RU55,26455.7
+1497,Ulianov Oblast,  RU56,13535.6
+1498,Kurgan Oblast,  RU57,8027.4
+1499,Sverdlovsk Oblast,  RU58,82270.5
+1500,Tyumen Oblast,  RU59,255977.0
+1501,Khanty-Mansi Autonomous Okrug - Yugra,  RU60,148867.0
+1502,Yamalo-Nenets Autonomous Okrug,  RU61,66075.3
+1503,Chelyabinsk Oblast,  RU62,46739.3
+1504,Republic of Altai,  RU63,1641.36
+1505,Buryat Republic,  RU64,9257.52
+1506,Tyva Republic,  RU65,2086.79
+1507,Republic of Khakassia,  RU66,7242.82
+1508,Altai Krai,  RU67,20536.8
+1509,Zabaykalsky Krai,  RU68,12497.8
+1510,Krasnoyarsk Krai,  RU69,66098.5
+1511,Irkutsk Oblast,  RU70,41220.6
+1512,Kemerovo oblast,  RU71,39776.1
+1513,Novosibirsk Oblast,  RU72,36553.0
+1514,Omsk Oblast,  RU73,27629.0
+1515,Tomsk Oblast,  RU74,20737.2
+1516,Sakha Republic (Yakutia),  RU75,29950.5
+1517,Kamchatka Krai,  RU76,7037.68
+1518,Primorsky Krai,  RU77,30760.0
+1519,Khabarovsk Krai,  RU78,24059.3
+1520,Amur Oblast,  RU79,12969.2
+1521,Magadan Oblast,  RU80,4260.55
+1522,Sakhalin Oblast,  RU81,35558.7
+1523,Jewish Autonomous Oblast,  RU82,2352.69
+1524,Chukotka Autonomous Okrug,  RU83,2707.43
+1525,South Africa,ZAF,665692.0
+1526,Eastern Cape,  ZA01,51370.8
+1527,Free State,  ZA02,33635.3
+1528,Gauteng,  ZA03,224489.0
+1529,KwaZulu-Natal,  ZA04,106752.0
+1530,Limpopo,  ZA05,48811.6
+1531,Mpumalanga,  ZA06,52707.8
+1532,Northern Cape,  ZA07,14038.7
+1533,North West,  ZA08,42774.4
+1534,Western Cape,  ZA09,91111.9
