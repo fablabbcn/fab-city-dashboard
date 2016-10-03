@@ -170,3 +170,11 @@ def oecd_nat_regio():
         glob=global_names,
         map_=True,
         force=False, )
+
+@app.route("/oecd/nat-regio-city")
+def oecd_nat_regio_city():
+    return render_template(
+        "oecd-nat-regio-city.html",
+        glob=global_names,
+        map_=True,
+        force=False, )
