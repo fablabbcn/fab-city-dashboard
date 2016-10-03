@@ -168,7 +168,7 @@ root_basemaps = "/data_custom/geojson_basemaps/"
 geoJSON_dict = {
     ### "regions" - "metropolitan_areas_OECD" == folders name in /data_custom/geojson_basemaps
     ### "country": "AUS", "regions" : "xxx" == filename of the .geojson file
-        "World" : { "country": "all_countries", "regions" : "",
+        "World" : { "country": "", "regions" : "all_countries",
                     "metropolitan_areas_OECD" : ""},
     "AUS"   : { "country": "AUS", "regions" : "AUS_admin_level_4" ,
                     "metropolitan_areas_OECD" : "AUS_MAs_2016"},
