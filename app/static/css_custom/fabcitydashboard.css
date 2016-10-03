@@ -1,11 +1,55 @@
 body {
     font-family: "Roboto Slab", sans-serif;
+    background-color: #F7F7F7;
+}
+
+.content {
+	padding: 0% 6%;
 }
 
 h1, h2, h3, h4, h5, h6, nav {
     font-family: "Montserrat", sans-serif;
 }
 
+h2.section-heading {
+ font-size: 30px;
+ text-align: left;
+ text-transform: uppercase;
+}
+
+h2.section-subheading{
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+p.descriptions {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+} 
+
+.btn-xl {
+  padding: 10px 20px;
+  border-color: #E62339;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #E62339;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color: #fff;
+  background-color: #d41111;
+}
 
 /* styles for modules - check app_vars.py for description */
 

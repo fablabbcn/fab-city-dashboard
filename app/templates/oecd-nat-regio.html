@@ -204,7 +204,6 @@
                     .attr("width", function(d) {
                         for (property in d) {
                             var resilience_value = d[property];
-                            console.log(property, d[property]);
                         }
                         return linearScale(resilience_value);
                     })
