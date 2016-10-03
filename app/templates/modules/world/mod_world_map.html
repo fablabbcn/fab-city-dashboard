@@ -35,11 +35,12 @@
 
 
 <div class="map">
+		
 	<!-- LEAFLET + D3 : http://bl.ocks.org/d3noob/9267535 -->
 
 	<!-- D3.JS V4-->
-	<script type="text/javascript" src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>
-	
+	<!--<script type="text/javascript" src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>-->
+	<!---->
 	
 	
 	<!-- LEAFLET -->
@@ -75,12 +76,12 @@
 	<!-- GEOJSONS MARKERS // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection  / ex: selection = "world"   --> 
 	<script src="{{ url_for('static', filename='data_custom/geojson_labs/FablabsIO_fablabs.geojson') }}" type="text/javascript"></script>
 	<script src="{{ url_for('static', filename='data_custom/geojson_labs/Makery_fablabs.json') }}" type="text/javascript"></script>
-	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/us-states.js') }}" type="text/javascript"></script>-->
 
 	
 	
 	<!-- GEOJSONS BASEMAP // NEED TO BE DYNAMIC - DEPEND ON VIEWS - Jinja + selection / ex: selection = "world"  --> 	
 	<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/all_countries.geojson') }}" type="text/javascript"></script>
+	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/us-states.js') }}" type="text/javascript"></script>-->
 	
 	
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/AUS_MAs_2016.geojson') }}" type="text/javascript"></script>-->
@@ -116,39 +117,6 @@
 	<!--<script src="{{ url_for('static', filename='data_custom/geojson_basemaps/metropolitan_areas_OECD/USA_MAs_2016.geojson') }}" type="text/javascript"></script>-->
 	
 	
-	<!--
-		AUS_MAs_2016;
-		AUT_MAs_2016;
-		BEL_MAs_2016;
-		CAN_MAs_2016;
-		CHE_MAs_2016;
-		CHL_MAs_2016;
-		COL_MAs_2016;
-		CZE_MAs_2016;
-		DEU_MAs_2016;
-		DNK_MAs_2016;
-		ESP_MAs_2016;
-		EST_MAs_2016;
-		FIN_MAs_2016;
-		FRA_MAs_2016;
-		GBR_MAs_2016;
-		GRC_MAs_2016;
-		HUN_MAs_2016;
-		IRL_MAs_2016;
-		ITA_MAs_2016;
-		JPN_MAs_2016;
-		KOR_MAs_2016;
-		LUX_FUAs_2016;
-		MEX_MAs_2016;
-		NLD_MAs_2016;
-		NOR_MAs_2016;
-		POL_MAs_2016;
-		PRT_MAs_2016;
-		SVK_MAs_2016;
-		SVN_MAs_2016;
-		SWE_MAs_2016;
-		USA_MAs_2016;
-		-->
 	<!-- DIV MAP -->
 	<div id="map" style="width: 100%; height: {{ row['height'] }}"></div>
 	
@@ -360,11 +328,11 @@
 				onEachFeature: onEachMarker,
 				pointToLayer: function (feature, latlng) {
 					return L.circleMarker(latlng, {
-						radius: 3,
+						radius   : 3,
 						fillColor: "#ff7800",
-						color: "#000",
-						weight: 1,
-						opacity: 1,
+						color    : "#000",
+						weight   : 1,
+						opacity  : 1,
 						fillOpacity: 0.8
 					});
 				}
@@ -403,8 +371,8 @@
 		var basemapMin = 0;
 		function getCollMinMax(featuresList, varName) {
 			for (var i = 0; i<featuresList.length; i++) {
-				var feature = featuresList[i];
-				var number  = feature[varName] ;
+				var feature  = featuresList[i];
+				var number   = feature[varName] ;
 				if (number > basemapMax ) {
 					basemapMax = number;
 				}
@@ -435,7 +403,7 @@
 		
 		// SERVE REGIONS ///////////////////////////////////////////////////////////////////////////////////
 		
-		// ALL COUNTRIES SERVED
+		// ALL COUNTRIES SERVED -- all_countries_updated , all_countries
 		addBasemap(all_countries_updated, countries_layer, true);
 		
 		

@@ -120,7 +120,9 @@ too_pl{
 too_id{
     
 }
-svg {
+
+/* svg_oecd // if this style is not specific it affects the map (dephase by 10px from top for instance */
+svg_oecd {
     margin-top: 10px;
     margin-bottom: 30px;
     font-family: "Dosis", sans-serif;

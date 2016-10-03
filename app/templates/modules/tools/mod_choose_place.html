@@ -28,16 +28,16 @@
     choose a region <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    <li><a id="changeRegion" name="World" 					>World</a></li>
+    <li><a tag="changeRegion" name="World" 						>World</a></li>
     <li role="separator" class="divider"></li>
-    <li><a id="changeRegion" name="Europe" 					>Europe</a></li>
-    <li><a id="changeRegion" name="USA"    					>USA</a></li>
-    <li><a id="changeRegion" name="CentralAmerica" 	>Central America</a></li>
-    <li><a id="changeRegion" name="SouthAmerica" 		>South America</a></li>
-    <li><a id="changeRegion" name="MiddleEast" 			>Middle East</a></li>
-    <li><a id="changeRegion" name="Asia" 						>Asia</a></li>
-    <li><a id="changeRegion" name="Africa" 					>Africa</a></li>
-    <li><a id="changeRegion" name="Oceania" 				>Oceania</a></li>
+    <li><a tag="changeRegion" name="Europe" 					>Europe</a></li>
+    <li><a tag="changeRegion" name="USA"    					>USA</a></li>
+    <li><a tag="changeRegion" name="CentralAmerica" 	>Central America</a></li>
+    <li><a tag="changeRegion" name="SouthAmerica" 		>South America</a></li>
+    <li><a tag="changeRegion" name="MiddleEast" 			>Middle East</a></li>
+    <li><a tag="changeRegion" name="Asia" 						>Asia</a></li>
+    <li><a tag="changeRegion" name="Africa" 					>Africa</a></li>
+    <li><a tag="changeRegion" name="Oceania" 					>Oceania</a></li>
   </ul>
 </div>
 
@@ -60,7 +60,7 @@
   
   var user_profile = "{{ user_profile }}";
   
-  // onClick get div id and GET corresponding URL
+  ////////// onClick get div id and GET corresponding URL ////// NOT WORKING YET
   // region_id refers to index in app_vars.py
   function changeRegion(region_id) {
 	// create a url adress as a string corresponding to user_profile and selected region ID
@@ -69,7 +69,13 @@
 	window.location = URL_adress;
   }
   
-  $('#changeRegion').click(function(){ changeRegion(this.name); return console.log("error"); });
+  //$('#changeRegion').click(function(){ changeRegion(this.name); return console.log("error"); });
 
+	var chgRegion_butts = document.getElementsByTagName("changeRegion");
+	
+	for (var i=0; i<chgRegion_butts.length; i++){
+		var chgRg_butt = chgRegion_butts[i] ;
+		chgRg_butt.addEventListener('click', changeRegion(this.tag), false );
+	}
   
 </script>

@@ -5280,7 +5280,7 @@ function createCountriesDict (countriesL) {
 		var east          = parseFloat(country.east);
 		var south         = parseFloat(country.south);
 		
-		var centerWE      =  ( west+east ) / 2 ;  // easting
+		var centerWE      =  ( west+east )  / 2 ; // easting
 		var centerSN      =  ( south+north) / 2 ; // northing
 		
 		country["geobox"] = [ [west,north], [east,south] ]
