@@ -75,15 +75,15 @@ p.city-description {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #777;
-    background-color: transparent;
+    color: #F7F7F7;
+    background-color: #01a158;
     text-transform: lowercase;
 }
 
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
-    color: #fff;
-    background-color: #01a158;
-    border-color: #01a158;
+    color: #777;
+    border: 1px solid #01a158;
+    background-color: transparent;
 }
 
 .inverted{
