@@ -198,7 +198,7 @@
                                 for (property in d) {
                                     var resilience_value = d[property];
                                 }
-                                return zerox + legend_width + linearScale(resilience_value);
+                                return zerox + legend_width;
                             })
                             .attr("y1", function(d, i) {
                                 return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
@@ -216,7 +216,7 @@
                                 for (property in d) {
                                     var resilience_value = d[property];
                                 }
-                                return zerox + legend_width + linearScale(resilience_value);
+                                return zerox + legend_width;
                             })
                             .attr("y1", function(d, i) {
                                 return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight * 2;
@@ -263,7 +263,7 @@
                                 return zeroy + 6 + i * (space_between_bars + space_between_groups) + barHeight;
                             })
                             .attr("dy", ".35em")
-                            .text("Values at regional level");
+                            .text("Value at regional level");
 
                         // The legend labels: cities
                         barci.append("text")
@@ -276,7 +276,7 @@
                                 for (property in d) {
                                     var label_text = property;
                                 }
-                                return label_text;
+                                return label_text + " ";
                             });
 
                         // The legend labels: country
@@ -596,13 +596,28 @@
             .attr("rx", 3)
             .attr("ry", 3);
 
-        var otro = d3.select("div#resilience-container1");
+        var otro = d3.select("div#resilience-container2");
 
         function hue(h) {
             handle.attr("x", x(h));
             console.log(h);
+            // Education
             otro.select(".city.education.bar").attr("width", linearScale(h / 10));
             otro.select(".city.education.value").text(Math.round(h) / 10 + "/10");
+            otro.select(".region.education.bar").attr("width", linearScale(h / 10));
+            otro.select(".region.education.value").text(Math.round(h) / 10 + "/10");
+            otro.select(".country.education.bar").attr("width", linearScale(h / 10));
+            otro.select(".country.education.value").text(Math.round(h) / 10 + "/10");
+            // Jobs
+            // Income
+            // Safety
+            // Health
+            // Environment
+            // Civic engagement
+            // Accessibility to services
+            // Housing
+            // Community
+            // Life satisfaction
         }
     </script>
 
