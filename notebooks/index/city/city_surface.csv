@@ -1,4 +1,4 @@
-Metropolitan areas,Total land area (km2)
+Metropolitan areas,2014
 AUS: Australia,7703354
   AUS01: Sydney,12229.11
   AUS02: Melbourne,10103.28
@@ -6,11 +6,11 @@ AUS: Australia,7703354
   AUS04: Perth,6309.49
   AUS05: Adelaide,3239.1
   AUS06: Gold Coast-Tweed Heads,1811.08
-AUT: Austria,82450.2
+AUT: Austria,82409
   AT001: Vienna,9093.06
   AT002: Graz,3074.2
   AT003: Linz,3523.72
-BEL: Belgium,30328
+BEL: Belgium,30326
   BE001: Brussels,3265.7
   BE002: Antwerp,1169.26
   BE003: Ghent,1017.36
@@ -25,7 +25,7 @@ CAN: Canada,9093507
   CAN16: Quebec,6123.6
   CAN21: Ottawa-Gatineau,17251.92
   CAN29: Hamilton,2571.88
-CHE: Switzerland,39995.7
+CHE: Switzerland,39995.8
   CH001: Zurich,1176.16
   CH002: Geneva,1566.51
   CH003: Basel,1430.18
@@ -33,11 +33,11 @@ CHL: Chile,740243
   CL010: Valparaíso,1323.84
   CL011: Santiago,4557.33
   CL020: Concepción,1868.67
-CZE: Czech Republic,77258
+CZE: Czech Republic,77226.5
   CZ001: Prague,3929.04
   CZ002: Brno,2359.25
   CZ003: Ostrava,931.72
-DEU: Germany,357093
+DEU: Germany,357122
   DE001: Berlin,6176.37
   DE002: Hamburg,5760.18
   DE003: Munich,6263.09
@@ -62,11 +62,11 @@ DEU: Germany,357093
   DE502: Mannheim,1949.78
   DE504: Münster,1706.47
   DE507: Aachen,775.3
-DNK: Denmark,43097
+DNK: Denmark,42959
   DK001: Copenhagen,4083.69
 EST: Estonia,43432
   EE001: Tallinn,4326.3
-ESP: Spain,501757
+ESP: Spain,501756.9
   ES001: Madrid,11537.63
   ES002: Barcelona,1362.03
   ES003: Valencia,1474.97
@@ -75,7 +75,7 @@ ESP: Spain,501757
   ES006: Málaga,1623.07
   ES008: Las Palmas,790.06
   ES019: Bilbao,1141.01
-FIN: Finland,304111.7
+FIN: Finland,303890.9
   FI001: Helsinki,6350.71
 FRA: France,543965
   FR001: Paris,12089.37
@@ -96,11 +96,11 @@ FRA: France,543965
 GRC: Greece,130820
   GR001: Athens,1656.14
   GR002: Thessalonica,1399.95
-HUN: Hungary,93028.4
+HUN: Hungary,93028
   HU001: Budapest,6056.87
 IRL: Ireland,68394
   IE001: Dublin,4767.19
-ITA: Italy,295114
+ITA: Italy,295113
   IT001: Rome,5686.46
   IT002: Milan,2637.77
   IT003: Naples,1558.57
@@ -194,13 +194,13 @@ MEX: Mexico,1959248
   MEX73: Oaxaca de Juárez,1702.22
   MEX74: Acapulco de Juárez,1731.31
   MEX75: Tuxtla Gutiérrez,2167.43
-NLD: The Netherlands,33783.4
+NLD: The Netherlands,33718.2
   NL002: Amsterdam,2819.84
   NL001: The Hague,296.87
   NL003: Rotterdam,1480
   NL004: Utrecht,622.67
   NL005: Eindhoven,1199.68
-NOR: Norway,304280
+NOR: Norway,304245.9
   NO001: Oslo,7099.16
 POL: Poland,312679
   PL001: Warsaw,8611.73
@@ -211,16 +211,16 @@ POL: Poland,312679
   PL005: Poznan,3077.07
   PL006: Gdansk,2615.68
   PL009: Lublin,3222.11
-PRT: Portugal,92118
+PRT: Portugal,92212
   PT001: Lisbon,3988.31
   PT002: Porto,951.54
-SWE: Sweden,410335.4
+SWE: Sweden,407339.7
   SE001: Stockholm,7106.87
   SE002: Gothenburg,3850.19
   SE003: Malmö,3468.54
-SVN: Slovenia,20141
+SVN: Slovenia,20138
   SI001: Ljubljana,3145.03
-SVK: Slovak Republic,49033.8
+SVK: Slovak Republic,49036
   SK001: Bratislava,2600.66
 GBR: United Kingdom,242509.2
   UK001: London,6920.87
