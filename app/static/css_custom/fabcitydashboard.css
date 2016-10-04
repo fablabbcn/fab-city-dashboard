@@ -7,6 +7,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, nav {
     font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .color-inverted {
@@ -83,6 +84,8 @@ p.city-description {
     border-color: #d1d1d1;
     color: #222;
     background-color: #d1d1d1;
+    text-transform: lowercase;
+    font-weight: 400;
 }
 
 .btn-link {
