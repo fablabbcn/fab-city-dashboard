@@ -107,7 +107,7 @@
                     var barHeight = 13;
                     var space_between_bars = barHeight * 2;
                     var space_between_groups = 20;
-                    var legend_width = 100;
+                    var legend_width = 150;
 
                     // Linear scale for scaling the graph
                     var linearScale = d3.scaleLinear()
@@ -118,7 +118,7 @@
                     var svg = d3.select("div#container")
                         .append("svg")
                         .attr("preserveAspectRatio", "xMaxYMax meet")
-                        .attr("viewBox", "0 0 550 700")
+                        .attr("viewBox", "0 0 500 600")
                         .classed("svg-content", true);
 
                     // Rounded bars
@@ -412,7 +412,7 @@
                     });
 
                     var income_icon = svg.append("g");
-                    d3.xml("../../../static/images/icons/svg/housing_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                    d3.xml("../../../static/images/icons/svg/income_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
                         if (error) throw error;
                         income_icon.node().appendChild(xml.documentElement);
                     });
@@ -436,9 +436,9 @@
                     });
 
                     // SVG icons transformations
-                    var icon_scale = 0.02;
-                    var icon_x = legend_width - 15;
-                    var icon_y = barHeight;
+                    var icon_scale = 0.03;
+                    var icon_x = legend_width - 20;
+                    var icon_y = barHeight - 2;
 
                     education_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                     icon_y = icon_y + space_between_bars + space_between_groups;
