@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, nav {
 }
 
 a {
-    color: #E62339;
+    color: #01a158;
 }
 
 a :hover, a :focus, a :active, a .active {
@@ -36,7 +36,7 @@ h2.section-subheading {
 }
 
 h1.city-title {
-    font-size: 70px;
+    font-size: 60px;
     padding: 0px;
     margin: 150px 0px 5px 0px;
 }
@@ -68,9 +68,9 @@ p.city-description {
 /*BUTTONS */
 
 .btn-xl {
-    padding: 8px 20px;
+    padding: 8px 15px;
     border: 1px solid #01a158;
-    border-radius: 5px;
+    border-radius: 0px;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
