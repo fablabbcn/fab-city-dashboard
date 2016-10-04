@@ -642,7 +642,7 @@
                                 for (property in d) {
                                     var label_value = d[property];
                                 }
-                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10);
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10) + " $ (millions)";
                             })
                             .attr("x", zerox + legend_width + width + zerox + zeroy2)
                             .attr("y", function(d, i) {
@@ -713,7 +713,7 @@
                                 for (property in d) {
                                     var label_value = d[property];
                                 }
-                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10);
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10) + " persons";
                             })
                             .attr("x", zerox + legend_width + width + zerox + zeroy2)
                             .attr("y", function(d, i) {
@@ -783,7 +783,7 @@
                                 for (property in d) {
                                     var label_value = d[property];
                                 }
-                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10);
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10) + " Km2";
                             })
                             .attr("x", zerox + legend_width + width + zerox + zeroy2)
                             .attr("y", function(d, i) {
