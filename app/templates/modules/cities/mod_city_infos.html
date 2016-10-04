@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div id="container2" class="svg-container">
+            <div id="city-region-country" class="svg-container">
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div id="container2" class="svg-container">
+            <div id="project-sliders" class="svg-container">
             </div>
         </div>
     </div>
@@ -540,10 +540,10 @@
             .range([0, width]);
 
         // Access svg area
-        var svg = d3.select("div#container2")
+        var svg = d3.select("div#project-sliders")
             .append("svg")
             .attr("preserveAspectRatio", "xMinYMin none")
-            .attr("viewBox", "0 0 550 100")
+            .attr("viewBox", "0 0 320 100")
             .classed("svg-content", true);
 
         var slider = svg.append("g")
