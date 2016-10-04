@@ -478,3 +478,19 @@ h2, h3 {
     font-family: "Montserrat", sans-serif ;
     padding-left: 6%;
 }
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 8px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #777;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #fddc2d;
+    border-radius: 3px;
+
+}
