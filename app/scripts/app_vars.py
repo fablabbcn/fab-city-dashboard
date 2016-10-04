@@ -77,6 +77,7 @@ modules_html_dict = {
     #"wor_id" : "world/mod_world_indicators.html",    #d3
     "wor_pr" : "world/mod_world_projects.html",      #leaflet
     "wor_da" : "world/mod_world_dashboard.html",     #d3
+    "wor_de" : "world/mod_world_map_demo.html",           #d3 + leaflet
     #},
 
     ##"concepts" : {
@@ -105,6 +106,7 @@ modules_html_dict = {
     "too_pl" : "tools/mod_choose_place.html",           #row
     "too_id" : "tools/mod_choose_indicator.html",     #row
     "too_al" : "tools/mod_choose_all.html",             #row
+    "too_de" : "tools/mod_choose_all_demo.html",        #row
     #},
 }
 
@@ -154,11 +156,13 @@ user_profiles = {
                         { "400px" : [ {"wor_ma" : 12 } ] },  ### row 1
 
                       ],
-    "demo"       : [
+    "demo"          : [
 
                         { "400px" : [ {"inf_in" : 12 }      ]    }, 
                         { "400px" : [ {"inf_re" : 12 }      ]    }, 
-                        { "400px" : [ {"cit_if" : 12 }      ]    }, 
+                        { "400px" : [ {"cit_if" : 12 }      ]    },
+                        { "130px" : [ {"too_de":  12 }      ]    },
+                        { "600px" : [ {"wor_de" : 12 }      ]    },
                         { "200px" : [ {"inf_co": 12 }       ]    }, 
                       ],     
 

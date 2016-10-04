@@ -1,0 +1,122 @@
+
+<!--MODULE TOOLS/choose city : too_ci <br>-->
+	
+<!--<div class="btn-group" style="text-align: center">
+  <button type="button" class="btn btn-default ">
+	choose a place</button>
+  <button type="button" class="btn  btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">World view</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Madrid</a></li>
+    <li><a href="#">Paris</a></li>
+    <li><a href="#">Barcelona</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Europe</a></li>
+    <li><a href="#">North America</a></li>
+    <li><a href="#">Africa</a></li>
+    <li role="separator" class="divider"></li>
+  </ul>
+</div>-->
+
+<div>
+  
+  <div class="btn-group">
+    <button type="button"
+	    class="btn btn-xl btn-tool dropdown-toggle selector"
+	    data-toggle="dropdown"
+	    aria-haspopup="true"
+	    aria-expanded="false">
+      choose a region <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a> </a></li>
+      <li><a class="changeRegion" role="button" id="World" 		>World</a></li>
+      <hr>
+      <li><a class="changeRegion" role="button" id="Europe" 		>Europe</a></li>
+      <li><a class="changeRegion" role="button" id="NorthAmerica"	>North America</a></li>
+      <li><a class="changeRegion" role="button" id="CentralAmerica" 	>Central America</a></li>
+      <li><a class="changeRegion" role="button" id="SouthAmerica" 	>South America</a></li>
+      <li><a class="changeRegion" role="button" id="MiddleEast" 	>Middle East</a></li>
+      <li><a class="changeRegion" role="button" id="Asia" 		>Asia</a></li>
+      <li><a class="changeRegion" role="button" id="Africa" 		>Africa</a></li>
+      <li><a class="changeRegion" role="button" id="Oceania" 		>Oceania</a></li>
+    </ul>
+  </div>
+  
+  <div class="btn-group">
+    <button type="button"
+	    class="btn btn-xl btn-tool dropdown-toggle"
+	    data-toggle="dropdown"
+	    aria-haspopup="true"
+	    aria-expanded="false">
+      choose a country <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a> </a></li>
+      <li><a class="changeRegion" id="ESP" 			>Spain</a></li>
+      <li><a class="changeRegion" id="FRA" 			>France</a></li>
+      <li><a class="changeRegion" id="DEU" 			>Germany</a></li>
+      <li><a class="changeRegion" id="ITA" 			>Italy</a></li>
+      <li><a class="changeRegion" id="BEL" 			>Belgique</a></li>
+      <hr>
+      <li><a class="changeRegion" id="USA" 			>USA</a></li>
+  
+    </ul>
+  </div>
+
+
+  <div class="btn-group">
+    <button type="button"
+	    class="btn btn-xl btn-tool dropdown-toggle"
+	    data-toggle="dropdown"
+	    aria-haspopup="true"
+	    aria-expanded="false">
+      choose a city * <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a> </a></li>
+      <li><a class="changeRegion" id="Madrid" 				>Madrid</a></li>
+      <li><a class="changeRegion disabled" id="Barcelona" 		>Barcelona</a></li>
+      <li><a class="changeRegion disabled" id="Valencia" 		>Valencia</a></li>
+      <hr>
+      <li><a class="changeRegion disabled" id="Paris" 			>Paris</a></li>
+      <li><a class="changeRegion disabled" id="Toulouse" 		>Toulouse</a></li>
+      <li><a class="changeRegion disabled" id="Nantes" 			>Nantes</a></li>
+  
+    </ul>
+  </div>
+  
+  
+  
+</div>
+
+
+<script type="text/javascript">
+	
+	var user_profile = "{{ user_profile }}";
+	
+	////////// onClick get div id and GET corresponding URL ////// NOT WORKING YET
+	// region_id refers to index in app_vars.py
+	function changeRegion(region_id) {
+	// create a url adress as a string corresponding to user_profile and selected region ID
+	var URL_adress = "/user/"+ user_profile + "/" + region_id ;
+	// load url in navigator
+	window.location = URL_adress;
+	};
+	
+		
+	$(document).ready(function() {
+		
+		//console.log(user_profile);
+		
+		d3.selectAll('.changeRegion')
+      .attr("onclick", "changeRegion(this.id)");
+		
+	
+	});
+	
+</script>
