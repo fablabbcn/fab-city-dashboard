@@ -6,17 +6,13 @@ body {
     background-color: #F7F7F7;
 }
 
-.content {
-    padding: 0% 6%;
-}
-
-.upper-margin {
-    height: 60px;
-}
-
 
 h1, h2, h3, h4, h5, h6, nav {
     font-family: "Montserrat", sans-serif;
+}
+
+.color-inverted {
+	color: #F7F7F7;
 }
 
 a {
@@ -170,6 +166,18 @@ a:hover {
 
 
 
+
+.content {
+    padding: 0% 6%;
+}
+
+.upper-margin {
+    height: 60px;
+}
+
+/* styles for modules - check app_vars.py for description */
+
+
 /*MODULES */
 /* styles for modules - check app_vars.py for description */
 
@@ -238,6 +246,10 @@ a:hover {
 	background-image: url( "{{ url_for('static', filename='images/backgrounds/map-image.png') }} ") ;
 	background-repeat: no-repeat;
 	background-position: center center fixed;
+}
+
+.inf_re {
+	background-color: #222;
 }
 
 
