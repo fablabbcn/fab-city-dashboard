@@ -1,0 +1,311 @@
+Year,2014
+AUS: Australia,23490736
+  AUS01: Sydney,4840628
+  AUS02: Melbourne,4440328
+  AUS03: Brisbane,2274560
+  AUS04: Perth,2021203
+  AUS05: Adelaide,1304631
+  AUS06: Gold Coast-Tweed Heads,560266
+AUT: Austria,8506889
+  AT001: Vienna,2793631
+  AT002: Graz,633168
+  AT003: Linz,616829
+BEL: Belgium,11203992
+  BE001: Brussels,2588102
+  BE002: Antwerp,1081904
+  BE003: Ghent,592100
+  BE005: Liege,739798
+CAN: Canada,35540419
+  CAN09: Vancouver,2479623
+  CAN20: Montreal,4394467
+  CAN26: Toronto,6947229
+  CAN01: Edmonton,1283049
+  CAN04: Calgary,1417661
+  CAN06: Winnipeg,836416
+  CAN16: Quebec,865926
+  CAN21: Ottawa-Gatineau,1477881
+  CAN29: Hamilton,619024
+CHE: Switzerland,8139631
+  CH001: Zurich,1246968
+  CH002: Geneva,831452
+  CH003: Basel,780223
+CHL: Chile,17819054
+  CL010: Valparaíso,1006737
+  CL011: Santiago,6679313
+  CL020: Concepción,914764
+CZE: Czech Republic,10512419
+  CZ001: Prague,1910396
+  CZ002: Brno,646421
+  CZ003: Ostrava,561242
+DEU: Germany,80767463
+  DE001: Berlin,4399542
+  DE002: Hamburg,3008841
+  DE003: Munich,2965871
+  DE004: Cologne,1926073
+  DE005: Frankfurt,2533311
+  DE007: Stuttgart,1965942
+  DE006: Essen,741301
+  DE008: Leipzig,830318
+  DE009: Dresden,847600
+  DE010: Dortmund,804678
+  DE011: Düsseldorf,1427823
+  DE012: Bremen,1027192
+  DE013: Hanover,1217511
+  DE014: Nuremberg,1169367
+  DE015: Bochum,622463
+  DE027: Freiburg im Breisgau,536578
+  DE033: Augsburg,606286
+  DE034: Bonn,750370
+  DE035: Karlsruhe,695098
+  DE040: Saarbrücken,570479
+  DE501: Duisburg,793477
+  DE502: Mannheim,1230276
+  DE504: Münster,559514
+  DE507: Aachen,575876
+DNK: Denmark,5627235
+  DK001: Copenhagen,2025171
+EST: Estonia,1315819
+  EE001: Tallinn,530530
+ESP: Spain,46512199
+  ES001: Madrid,7079173
+  ES002: Barcelona,3846697
+  ES003: Valencia,1668153
+  ES004: Seville,1500644
+  ES005: Zaragoza,879797
+  ES006: Málaga,898253
+  ES008: Las Palmas,683159
+  ES019: Bilbao,1013805
+FIN: Finland,5451270
+  FI001: Helsinki,1498050
+FRA: France,63920247
+  FR001: Paris,12037889
+  FR003: Lyon,1960847
+  FR203: Marseille,1773503
+  FR004: Toulouse,1309149
+  FR006: Strasbourg,776584
+  FR007: Bordeaux,1175699
+  FR008: Nantes,910493
+  FR009: Lille,1363465
+  FR010: Montpellier,672754
+  FR011: Saint-Étienne,525488
+  FR013: Rennes,713771
+  FR026: Grenoble,663114
+  FR032: Toulon,561322
+  FR205: Nice,865195
+  FR215: Rouen,712615
+GRC: Greece,10903704
+  GR001: Athens,3535055
+  GR002: Thessalonica,975439
+HUN: Hungary,9877365
+  HU001: Budapest,2879601
+IRL: Ireland,4605501
+  IE001: Dublin,1836119
+ITA: Italy,60782668
+  IT001: Rome,4149364
+  IT002: Milan,4159854
+  IT003: Naples,3572928
+  IT004: Turin,1774507
+  IT005: Palermo,940259
+  IT006: Genova,707321
+  IT007: Florence,732746
+  IT008: Bari,583764
+  IT009: Bologna,763811
+  IT010: Catania,630814
+  IT011: Venice,545570
+JPN: Japan,127083000
+  JP013: Sendai,1599433
+  JP003: Sapporo,2224201
+  JP030: Tokyo,35925101
+  JP034: Nagoya,6500074
+  JP038: Osaka,17343816
+  JP066: Fukuoka,2599911
+  JP015: Niigata,1036187
+  JP020: Toyama,543730
+  JP021: Nagano,533018
+  JP023: Kanazawa,751445
+  JP024: Utsunomiya,812783
+  JP025: Maebashi,987316
+  JP026: Mito,593682
+  JP031: Kofu,514589
+  JP036: Numazu,529559
+  JP039: Shizuoka,731863
+  JP040: Anjo,780970
+  JP042: Yokkaichi,581797
+  JP046: Himeji,712767
+  JP047: Toyohashi,614046
+  JP048: Hamamatsu,993212
+  JP050: Okayama,891180
+  JP051: Kurashiki,596609
+  JP052: Fukuyama,556149
+  JP053: Hiroshima,1419358
+  JP054: Takamatsu,641872
+  JP055: Wakayama,521972
+  JP059: Tokushima,557512
+  JP064: Kitakyushu,1155450
+  JP065: Matsuyama,645739
+  JP067: Kochi,487693
+  JP071: Oita,556647
+  JP074: Kumamoto,987866
+  JP075: Nagasaki,508050
+  JP077: Kagoshima,703839
+  JP078: Naha,1175512
+KOR: Korea,50423955
+  KR004: Seoul Incheon,24948523
+  KR025: Daegu,2731064
+  KR032: Busan,3432960
+  KR015: Cheongju,797873
+  KR018: Daejeon,1676167
+  KR022: Pohang,524804
+  KR026: Jeonju,734344
+  KR029: Ulsan,1082994
+  KR033: Changwon,730267
+  KR035: Gwangju,1668574
+MEX: Mexico,119713211
+  MEX01: Mexicali,1041837
+  MEX02: Tijuana,1793265
+  MEX05: Juárez,1417787
+  MEX08: Hermosillo,869669
+  MEX10: Chihuahua,905079
+  MEX16: Reynosa,834750
+  MEX19: Monterrey,4823452
+  MEX20: Torreón,1348608
+  MEX21: Saltillo,797444
+  MEX22: Culiacán,910982
+  MEX24: Durango,625895
+  MEX28: Tampico,821685
+  MEX29: San Luis Potosí,1288885
+  MEX31: Aguascalientes,1055539
+  MEX33: Benito Juárez,797657
+  MEX34: León,1775758
+  MEX35: Mérida,1422422
+  MEX37: Guadalajara,4905204
+  MEX38: Irapuato,572778
+  MEX40: Querétaro,1273803
+  MEX42: Celaya,653928
+  MEX46: Pachuca de Soto,646880
+  MEX50: Morelia,924462
+  MEX51: Mexico City,20404259
+  MEX52: Xalapa,789353
+  MEX55: Toluca,2167067
+  MEX59: Veracruz,844813
+  MEX60: Puebla,2342519
+  MEX61: Cuernavaca,947963
+  MEX70: Centro,960063
+  MEX73: Oaxaca de Juárez,805102
+  MEX74: Acapulco de Juárez,827942
+  MEX75: Tuxtla Gutiérrez,826276
+NLD: The Netherlands,16829289
+  NL002: Amsterdam,2452659
+  NL001: The Hague,906897
+  NL003: Rotterdam,1509373
+  NL004: Utrecht,754615
+  NL005: Eindhoven,700299
+NOR: Norway,5107970
+  NO001: Oslo,1299955
+POL: Poland,38017856
+  PL001: Warsaw,3037890
+  PL010: Katowice,2589349
+  PL002: Lódz,939568
+  PL003: Kraków,1362740
+  PL004: Wroclaw,837995
+  PL005: Poznan,950596
+  PL006: Gdansk,1105467
+  PL009: Lublin,671410
+PRT: Portugal,10427301
+  PT001: Lisbon,2886662
+  PT002: Porto,1313829
+SWE: Sweden,9644864
+  SE001: Stockholm,2018208
+  SE002: Gothenburg,898541
+  SE003: Malmö,676852
+SVN: Slovenia,2061085
+  SI001: Ljubljana,585850
+SVK: Slovak Republic,5415949
+  SK001: Bratislava,729157
+GBR: United Kingdom,64308261
+  UK001: London,12401188
+  UK002: Birmingham (UK),1957078
+  UK003: Leeds,1197922
+  UK004: Bradford,577474
+  UK005: Liverpool,954181
+  UK006: Manchester,1935559
+  UK007: Cardiff,664861
+  UK008: Sheffield,920128
+  UK009: Bristol,836621
+  UK010: Newcastle,1082729
+  UK011: Leicester,692217
+  UK017: Portsmouth,594455
+  UK023: Nottingham,863918
+  UK097: Glasgow,967101
+  UK098: Edinburgh,764454
+USA: United States,318857056
+  US106: Philadelphia,4066064
+  US107: Columbus,1970809
+  US114: Denver,2732325
+  US012: Portland,2358928
+  US122: Baltimore,1996200
+  US124: Cincinnati,2165678
+  US125: Washington,6022391
+  US128: Kansas City,2098357
+  US134: Saint Louis (US),2610223
+  US135: Sacramento/Roseville,2311721
+  US014: Minneapolis,3496061
+  US146: San Francisco,6989419
+  US190: Los Angeles,17718858
+  US196: Atlanta,4762159
+  US202: Phoenix,4163445
+  US209: Dallas,4547218
+  US210: San Diego,3215637
+  US242: Houston,6519358
+  US245: San Antonio,2345730
+  US250: Orlando,2374184
+  US259: Miami,5805883
+  US003: Seattle,2776119
+  US033: Milwaukee,1579180
+  US045: Detroit,3801161
+  US048: Boston,3684250
+  US055: Chicago,9655015
+  US069: Cleveland,1468288
+  US084: New York,16713992
+  US103: Harrisburg,591987
+  US115: Indianapolis,1769561
+  US117: Dayton,693273
+  US133: Colorado Springs,694770
+  US141: Louisville,1286409
+  US147: Wichita,609887
+  US149: Richmond,533689
+  US154: Norfolk-Portsmouth-Chesapeake-Virginia beach,1109942
+  US155: Fresno,1152979
+  US159: Las Vegas,2293610
+  US160: Nashville,1328572
+  US161: Tulsa,982186
+  US170: Raleigh,1300612
+  US174: Oklahoma city,1323960
+  US178: Charlotte,1474164
+  US180: Albuquerque,960839
+  US181: Memphis,1378346
+  US186: Little Rock,712108
+  US195: Columbia,697051
+  US205: Birmingham (US),937789
+  US212: Fort Worth,2107791
+  US213: Charleston,718907
+  US223: Tucson,1040867
+  US227: El Paso,858421
+  US233: Baton Rouge,675818
+  US234: Austin,1958079
+  US237: Jacksonville,1452647
+  US241: New Orleans,1150702
+  US251: Clearwater/Saint Petersburg,1438208
+  US252: Tampa,1335571
+  US261: Mcallen,876304
+  US035: Madison,573789
+  US038: Buffalo,1121972
+  US039: Grand Rapids,614322
+  US044: Albany,889447
+  US060: Providence,844060
+  US065: Toledo (US),436627
+  US070: Des Moines,645279
+  US077: Omaha,909370
+  US081: Akron,541333
+  US089: Salt Lake City,1195080
+  US097: Pittsburgh,1200874

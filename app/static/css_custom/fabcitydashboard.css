@@ -1,3 +1,6 @@
+
+/*GLOBAL STYLES */
+
 body {
     font-family: "Roboto Slab", sans-serif;
     background-color: #F7F7F7;
@@ -47,6 +50,9 @@ p.descriptions {
     text-align: left;
 }
 
+
+/*BUTTONS */
+
 .btn-xl {
     padding: 10px 20px;
     border-color: #E62339;
@@ -59,20 +65,34 @@ p.descriptions {
     background-color: #E62339;
 }
 
+.btn-link{
+    margin-top: -1px;
+}
+
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     color: #fff;
     background-color: #d41111;
 }
 
+.btn-tool{
+    margin-bottom: 5px;
+}
+
+
+/*MODALS */
+.modal{
+    z-index : 900000001 ;
+}
 
 /*NAVBAR */
 
 .navbar{
 	position: fixed;
-	z-index: 90;
+	z-index: 900000000;
 	width: 100%;
 }
 
+<<<<<<< HEAD
 .navbar-default{
 	background-color: #222;
 	border-color: #222;
@@ -101,6 +121,8 @@ a:hover {
 }
 
 
+=======
+>>>>>>> 763c7bcceddd5b5c68a0ee7c7faf958decb486dc
 
 .logo-max {
     height: 80px;
@@ -151,8 +173,9 @@ a:hover {
 }
 
 
-/* styles for modules - check app_vars.py for description */
 
+/*MODULES */
+/* styles for modules - check app_vars.py for description */
 
 /* lab_ma == labs + map ... lab_if == labs + infos ... _id == indicators ... _pr == projects ... _da == dashboard */
 

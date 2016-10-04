@@ -497,7 +497,7 @@
                     handle.attr("x", x(h));
                     console.log(h);
                     d3.select(".city.education.bar").attr("width", linearScale(h / 10));
-                    d3.select(".city.education.value").text(Math.round(h * 10) / 10 + "/10");
+                    d3.select(".city.education.value").text(Math.round(h) / 10 + "/10");
                 }
 
             }

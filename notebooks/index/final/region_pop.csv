@@ -1,0 +1,2375 @@
+,2014,Region Name,Region Code
+0,23490700,Australia,AUS
+1,7518470,New South Wales,AU1
+2,220944,Capital Region,AU101
+3,209850,Central West,AU103
+4,136418,Coffs Harbour - Grafton,AU104
+5,119742,Far West and Orana,AU105
+6,264087,Hunter Valley Exc Newcastle,AU106
+7,296845,Illawarra,AU107
+8,212787,Mid North Coast,AU108
+9,116130,Murray,AU109
+10,186262,New England and North West,AU110
+11,368131,Newcastle and Lake Macquarie,AU111
+12,242116,Richmond - Tweed,AU112
+13,158144,Riverina,AU113
+14,146388,Southern Highlands and Shoalhaven,AU114
+15,4840630,Sydney,AU1GS
+16,5841670,Victoria,AU2
+17,154817,Ballarat,AU201
+18,148360,Bendigo,AU202
+19,268756,Geelong,AU203
+20,164769,Hume,AU204
+21,265285,Latrobe - Gippsland,AU205
+22,148770,North West,AU215
+23,128943,Shepparton,AU216
+24,121639,Warrnambool and South West,AU217
+25,4440330,Melbourne,AU2GM
+26,4722450,Queensland,AU3
+27,242498,Cairns,AU306
+28,129053,Darling Downs - Maranoa,AU307
+29,233749,Fitzroy,AU308
+30,560266,Gold Coast,AU309
+31,182049,Mackay,AU312
+32,88424,Queensland - Outback,AU315
+33,335874,Sunshine Coast,AU316
+34,150748,Toowoomba,AU317
+35,236629,Townsville,AU318
+36,288597,Wide Bay,AU319
+37,2274560,Brisbane,AU3GB
+38,1685710,South Australia,AU4
+39,109814,Barossa - Yorke - Mid North,AU405
+40,88034,South Australia - Outback,AU406
+41,183235,South Australia - South East,AU407
+42,1304630,Adelaide,AU4GA
+43,2573390,Western Australia,AU5
+44,178053,Bunbury,AU501
+45,236081,Western Australia - Outback,AU508
+46,138052,Western Australia - Wheat Belt,AU509
+47,2021200,Perth,AU5GP
+48,514762,Tasmania,AU6
+49,219243,Hobart,AU601
+50,143792,Launceston and North East,AU602
+51,37800,South East,AU603
+52,113927,West and North West,AU604
+53,245079,Northern Territory (NT),AU7
+54,140386,Darwin,AU701
+55,104693,Northern Territory - Outback,AU702
+56,385996,Australian Capital Territory (ACT),AU8
+57,385996,Australian Capital Territory,AU801
+58,8506890,Austria,AUT
+59,287318,Burgenland (AT),AT11
+60,37546,Mittelburgenland,AT111
+61,152482,Nordburgenland,AT112
+62,97290,Südburgenland,AT113
+63,1626260,Lower Austria,AT12
+64,241754,Mostviertel-Eisenwurzen,AT121
+65,254011,Niederösterreich-Süd,AT122
+66,149621,Sankt Pölten,AT123
+67,218266,Waldviertel,AT124
+68,123186,Weinviertel,AT125
+69,313363,Wiener Umland/Nordteil,AT126
+70,326061,Wiener Umland/Südteil,AT127
+71,1765580,Vienna,AT13
+72,1765580,Vienna,AT130
+73,555743,Carinthia,AT21
+74,279209,Klagenfurt-Villach,AT211
+75,125595,Oberkärnten,AT212
+76,150939,Unterkärnten,AT213
+77,1214930,Styria,AT22
+78,415265,Graz,AT221
+79,78892,Liezen,AT222
+80,162632,Östliche Obersteiermark,AT223
+81,266469,Oststeiermark,AT224
+82,189878,West- und Südsteiermark,AT225
+83,101791,Westliche Obersteiermark,AT226
+84,1425980,Upper Austria,AT31
+85,276897,Innviertel,AT311
+86,560896,Linz-Wels,AT312
+87,204693,Mühlviertel,AT313
+88,152352,Steyr-Kirchdorf,AT314
+89,231144,Traunviertel,AT315
+90,534185,Salzburg,AT32
+91,20451,Lungau,AT321
+92,163575,Pinzgau-Pongau,AT322
+93,350159,Salzburg und Umgebung,AT323
+94,721574,Tyrol,AT33
+95,31652,Außerfern,AT331
+96,294209,Innsbruck,AT332
+97,48988,Osttirol,AT333
+98,100968,Tyrolean Oberland,AT334
+99,245757,Tyrolean Unterland,AT335
+100,375323,Vorarlberg,AT34
+101,87948,Bludenz-Bregenzer Wald,AT341
+102,287375,Rheintal-Bodenseegebiet,AT342
+103,11204000,Belgium,BEL
+104,1183840,Brussels Capital Region,BE1
+105,6429060,Flemish Region,BE2
+106,3591090,Wallonia,BE3
+107,35540400,Canada,CAN
+108,526977,Newfoundland and Labrador,CA10
+109,275636,"Division 1, NL",CA1001
+110,20938,"Division 2, NL",CA1002
+111,15780,"Division 3, NL",CA1003
+112,20567,"Division 4, NL",CA1004
+113,41771,"Division 5, NL",CA1005
+114,38050,"Division 6, NL",CA1006
+115,34328,"Division 7, NL",CA1007
+116,36031,"Division 8, NL",CA1008
+117,16146,"Division 9, NL",CA1009
+118,25018,"Division 10, NL",CA1010
+119,2712,"Division 11, NL",CA1011
+120,146283,Prince Edward Island,CA11
+121,17745,"Kings, PE",CA1101
+122,83765,"Queens, PE",CA1102
+123,44773,"Prince, PE",CA1103
+124,942668,Nova Scotia,CA12
+125,14046,"Shelburne, NS",CA1201
+126,24789,"Yarmouth, NS",CA1202
+127,17517,"Digby, NS",CA1203
+128,10750,"Queens, NS",CA1204
+129,20969,"Annapolis, NS",CA1205
+130,47594,"Lunenburg, NS",CA1206
+131,60983,"Kings, NS",CA1207
+132,43125,"Hants, NS",CA1208
+133,414370,"Halifax, NS",CA1209
+134,51550,"Colchester, NS",CA1210
+135,30835,"Cumberland, NS",CA1211
+136,45705,"Pictou, NS",CA1212
+137,7627,"Guysborough, NS",CA1213
+138,19599,"Antigonish, NS",CA1214
+139,17259,"Inverness, NS",CA1215
+140,9112,"Richmond, NS",CA1216
+141,99943,"Cape Breton, NS",CA1217
+142,6895,"Victoria, NS",CA1218
+143,753914,New Brunswick,CA13
+144,76169,"Saint John, NB",CA1301
+145,25898,"Charlotte, NB",CA1302
+146,27662,"Sunbury, NB",CA1303
+147,10560,"Queens, NB",CA1304
+148,69296,"Kings, NB",CA1305
+149,29169,"Albert, NB",CA1306
+150,150864,"Westmorland, NB",CA1307
+151,30132,"Kent, NB",CA1308
+152,47242,"Northumberland, NB",CA1309
+153,101481,"York, NB",CA1310
+154,26542,"Carleton, NB",CA1311
+155,18868,"Victoria, NB",CA1312
+156,32793,"Madawaska County, NB",CA1313
+157,31530,"Restigouche County, NB",CA1314
+158,75708,"Gloucester County, NB",CA1315
+159,8214670,Quebec,CA24
+160,12484,"Les Îles-de-la-Madeleine, QC",CA2401
+161,17494,"Le Rocher-Percé, QC",CA2402
+162,17770,"La Côte-de-Gaspé, QC",CA2403
+163,11762,"La Haute-Gaspésie, QC",CA2404
+164,17789,"Bonaventure, QC",CA2405
+165,15173,"Avignon, QC",CA2406
+166,18107,"La Matapédia, QC",CA2407
+167,21594,"Matane, QC",CA2408
+168,18548,"La Mitis, QC",CA2409
+169,57169,"Rimouski-Neigette, QC",CA2410
+170,8939,"Les Basques, QC",CA2411
+171,34475,"Rivière-du-Loup, QC",CA2412
+172,20247,"Témiscouata, QC",CA2413
+173,21213,"Kamouraska, QC",CA2414
+174,16161,"Charlevoix-Est, QC",CA2415
+175,13301,"Charlevoix, QC",CA2416
+176,18363,"L'Islet, QC",CA2417
+177,22701,"Montmagny, QC",CA2418
+178,36587,"Bellechasse, QC",CA2419
+179,6680,"L'Île-d'Orléans, QC",CA2420
+180,27164,"La Côte-de-Beaupré, QC",CA2421
+181,40445,"La Jacques-Cartier, QC",CA2422
+182,576176,"Communauté-Urbaine-de-Québec, QC",CA2423
+183,142887,"Lévis, QC",CA2425
+184,36692,"La Nouvelle-Beauce, QC",CA2426
+185,19412,"Robert-Cliche, QC",CA2427
+186,16850,"Les Etchemins, QC",CA2428
+187,52418,"Beauce-Sartigan, QC",CA2429
+188,22120,"Le Granit, QC",CA2430
+189,42962,"L'Amiante, QC",CA2431
+190,23418,"L'Érable, QC",CA2432
+191,30883,"Lotbinière, QC",CA2433
+192,51911,"Portneuf, QC",CA2434
+193,12673,"Mékinac, QC",CA2435
+194,49428,"Shawinigan, QC",CA2436
+195,153093,"Francheville, QC",CA2437
+196,20313,"Bécancour, QC",CA2438
+197,71311,"Arthabaska, QC",CA2439
+198,14448,"Asbestos, QC",CA2440
+199,22258,"Le Haut-Saint-François, QC",CA2441
+200,30022,"Le Val-Saint-François, QC",CA2442
+201,162638,"Sherbrooke, QC",CA2443
+202,18873,"Coaticook, QC",CA2444
+203,49649,"Memphrémagog, QC",CA2445
+204,57129,"Brome-Missisquoi, QC",CA2446
+205,87495,"La Haute-Yamaska, QC",CA2447
+206,15435,"Acton, QC",CA2448
+207,102028,"Drummond, QC",CA2449
+208,22920,"Nicolet-Yamaska, QC",CA2450
+209,36491,"Maskinongé, QC",CA2451
+210,41767,"D'Autray, QC",CA2452
+211,51037,"Le Bas-Richelieu, QC",CA2453
+212,86148,"Les Maskoutains, QC",CA2454
+213,36772,"Rouville, QC",CA2455
+214,117008,"Le Haut-Richelieu, QC",CA2456
+215,121759,"La Vallée-du-Richelieu, QC",CA2457
+216,416522,"Longueuil, QC",CA2458
+217,76996,"Lajemmerais, QC",CA2459
+218,123455,"L'Assomption, QC",CA2460
+219,66813,"Joliette, QC",CA2461
+220,51141,"Matawinie, QC",CA2462
+221,51543,"Montcalm, QC",CA2463
+222,157515,"Les Moulins, QC",CA2464
+223,420870,"Laval, QC",CA2465
+224,1988240,"Communauté-Urbaine-de-Montréal, QC",CA2466
+225,179785,"Roussillon, QC",CA2467
+226,27044,"Les Jardins-de-Napierville, QC",CA2468
+227,24539,"Le Haut-Saint-Laurent, QC",CA2469
+228,63679,"Beauharnois-Salaberry, QC",CA2470
+229,146779,"Vaudreuil-Soulanges, QC",CA2471
+230,100199,"Deux-Montagnes, QC",CA2472
+231,158419,"Thérèse-De Blainville, QC",CA2473
+232,47209,"Mirabel, QC",CA2474
+233,124730,"La Rivière-du-Nord, QC",CA2475
+234,32456,"Argenteuil, QC",CA2476
+235,41962,"Les Pays-d'en-Haut, QC",CA2477
+236,45917,"Les Laurentides, QC",CA2478
+237,35159,"Antoine-Labelle, QC",CA2479
+238,22916,"Papineau, QC",CA2480
+239,276338,"Gatineau, QC",CA2481
+240,49065,"Les Collines-de-l'Outaouais, QC",CA2482
+241,20689,"La Vallée-de-la-Gatineau, QC",CA2483
+242,14174,"Pontiac, QC",CA2484
+243,16271,"Témiscamingue, QC",CA2485
+244,41926,"Rouyn-Noranda, QC",CA2486
+245,20957,"Abitibi-Ouest, QC",CA2487
+246,24895,"Abitibi, QC",CA2488
+247,43819,"Vallée-de-l'Or, QC",CA2489
+248,15109,"La Tuque, QC",CA2490
+249,31924,"Le Domaine-du-Roy, QC",CA2491
+250,25061,"Maria-Chapdelaine, QC",CA2492
+251,53093,"Lac-Saint-Jean-Est, QC",CA2493
+252,167708,"Le Saguenay-et-son-Fjord, QC",CA2494
+253,11249,"La Haute-Côte-Nord, QC",CA2495
+254,31984,"Manicouagan, QC",CA2496
+255,40027,"Sept-Rivières-Caniapiscau, QC",CA2497
+256,11646,"Minganie-Basse-Côte-Nord, QC",CA2498
+257,44256,"Nord-du-Québec, QC",CA2499
+258,13678700,Ontario,CA35
+259,115011,"Stormont, Dundas and Glengarry, ON",CA3501
+260,89248,"Prescott and Russell, ON",CA3502
+261,947031,"Ottawa-Carleton, ON",CA3506
+262,101355,"Leeds and Grenville, ON",CA3507
+263,67645,"Lanark, ON",CA3509
+264,157056,"Frontenac, ON",CA3510
+265,43589,"Lennox and Addington, ON",CA3511
+266,138340,"Hastings, ON",CA3512
+267,25532,"Prince Edward, ON",CA3513
+268,85730,"Northumberland, ON",CA3514
+269,139721,"Peterborough, ON",CA3515
+270,75804,"Kawartha Lakes, ON",CA3516
+271,653567,"Durham, ON",CA3518
+272,1121630,"York, ON",CA3519
+273,2808500,"Toronto, ON",CA3520
+274,1416080,"Peel, ON",CA3521
+275,60073,"Dufferin, ON",CA3522
+276,220477,"Wellington, ON",CA3523
+277,551027,"Halton, ON",CA3524
+278,551751,"Hamilton, ON",CA3525
+279,446192,"Niagara, ON",CA3526
+280,111351,"Haldimand-Norfolk, ON",CA3528
+281,143506,"Brant, ON",CA3529
+282,538302,"Waterloo, ON",CA3530
+283,78025,"Perth, ON",CA3531
+284,110512,"Oxford, ON",CA3532
+285,90506,"Elgin, ON",CA3534
+286,105672,"Chatham-Kent, ON",CA3536
+287,401824,"Essex, ON",CA3537
+288,129917,"Lambton, ON",CA3538
+289,465347,"Middlesex, ON",CA3539
+290,58975,"Huron, ON",CA3540
+291,68036,"Bruce, ON",CA3541
+292,95478,"Grey, ON",CA3542
+293,479040,"Simcoe, ON",CA3543
+294,62382,"Muskoka, ON",CA3544
+295,17907,"Haliburton, ON",CA3546
+296,104231,"Renfrew, ON",CA3547
+297,87427,"Nipissing, ON",CA3548
+298,42740,"Parry Sound, ON",CA3549
+299,13524,"Manitoulin, ON",CA3551
+300,20887,"Sudbury (District), ON",CA3552
+301,165279,"Greater Sudbury / Grand Sudbury, ON",CA3553
+302,33308,"Timiskaming, ON",CA3554
+303,82303,"Cochrane, ON",CA3556
+304,117133,"Algoma, ON",CA3557
+305,149365,"Thunder Bay, ON",CA3558
+306,20138,"Rainy River, ON",CA3559
+307,70267,"Kenora, ON",CA3560
+308,1282040,Manitoba,CA46
+309,17209,"Division 1, MB",CA4601
+310,72319,"Division 2, MB",CA4602
+311,55555,"Division 3, MB",CA4603
+312,9574,"Division 4, MB",CA4604
+313,13403,"Division 5, MB",CA4605
+314,10526,"Division 6, MB",CA4606
+315,67798,"Division 7, MB",CA4607
+316,14703,"Division 8, MB",CA4608
+317,23720,"Division 9, MB",CA4609
+318,11715,"Division 10, MB",CA4610
+319,712671,"Division 11, MB",CA4611
+320,23316,"Division 12, MB",CA4612
+321,50040,"Division 13, MB",CA4613
+322,19289,"Division 14, MB",CA4614
+323,21809,"Division 15, MB",CA4615
+324,9926,"Division 16, MB",CA4616
+325,21844,"Division 17, MB",CA4617
+326,23777,"Division 18, MB",CA4618
+327,18092,"Division 19, MB",CA4619
+328,9701,"Division 20, MB",CA4620
+329,21922,"Division 21, MB",CA4621
+330,43647,"Division 22, MB",CA4622
+331,9487,"Division 23, MB",CA4623
+332,1125410,Saskatchewan,CA47
+333,33633,"Division 1, SK",CA4701
+334,23831,"Division 2, SK",CA4702
+335,12704,"Division 3, SK",CA4703
+336,11244,"Division 4, SK",CA4704
+337,32720,"Division 5, SK",CA4705
+338,266040,"Division 6, SK",CA4706
+339,48478,"Division 7, SK",CA4707
+340,31052,"Division 8, SK",CA4708
+341,36675,"Division 9, SK",CA4709
+342,17100,"Division 10, SK",CA4710
+343,310441,"Division 11, SK",CA4711
+344,23936,"Division 12, SK",CA4712
+345,23752,"Division 13, SK",CA4713
+346,37521,"Division 14, SK",CA4714
+347,87750,"Division 15, SK",CA4715
+348,39367,"Division 16, SK",CA4716
+349,49504,"Division 17, SK",CA4717
+350,39662,"Division 18, SK",CA4718
+351,4121690,Alberta,CA48
+352,84216,"Division 1, AB",CA4801
+353,170736,"Division 2, AB",CA4802
+354,40444,"Division 3, AB",CA4803
+355,10047,"Division 4, AB",CA4804
+356,57098,"Division 5, AB",CA4805
+357,1511770,"Division 6, AB",CA4806
+358,41687,"Division 7, AB",CA4807
+359,212326,"Division 8, AB",CA4808
+360,22247,"Division 9, AB",CA4809
+361,99837,"Division 10, AB",CA4810
+362,1371310,"Division 11, AB",CA4811
+363,73356,"Division 12, AB",CA4812
+364,71235,"Division 13, AB",CA4813
+365,30070,"Division 14, AB",CA4814
+366,40286,"Division 15, AB",CA4815
+367,80502,"Division 16, AB",CA4816
+368,65656,"Division 17, AB",CA4817
+369,15644,"Division 18, AB",CA4818
+370,123231,"Division 19, AB",CA4819
+371,4631300,British Columbia,CA59
+372,58572,"East Kootenay, BC",CA5901
+373,59288,"Central Kootenay, BC",CA5903
+374,30910,"Kootenay Boundary, BC",CA5905
+375,80907,"Okanagan-Similkameen, BC",CA5907
+376,292187,"Fraser Valley, BC",CA5909
+377,2470280,"Greater Vancouver, BC",CA5915
+378,374568,"Capital, BC",CA5917
+379,82130,"Cowichan Valley, BC",CA5919
+380,152437,"Nanaimo, BC",CA5921
+381,31009,"Alberni-Clayoquot, BC",CA5923
+382,44449,Strathcona BC,CA5924
+383,64864,Comox Valley BC,CA5925
+384,19928,"Powell River, BC",CA5927
+385,29148,"Sunshine Coast, BC",CA5929
+386,42582,"Squamish-Lillooet, BC",CA5931
+387,132738,"Thompson-Nicola, BC",CA5933
+388,191226,"Central Okanagan, BC",CA5935
+389,83306,"North Okanagan, BC",CA5937
+390,51570,"Columbia-Shuswap, BC",CA5939
+391,62514,"Cariboo, BC",CA5941
+392,11363,"Mount Waddington, BC",CA5943
+393,3258,"Central Coast, BC",CA5945
+394,18568,"Skeena-Queen Charlotte, BC",CA5947
+395,38605,"Kitimat-Stikine, BC",CA5949
+396,39903,"Bulkley-Nechako, BC",CA5951
+397,93626,"Fraser-Fort George, BC",CA5953
+398,64908,"Peace River, BC",CA5955
+399,573,"Stikine, BC",CA5957
+400,5888,"Northern Rockies, BC",CA5959
+401,36510,Yukon,CA60
+402,36510,"Yukon, YT",CA6001
+403,43623,Northwest Territories,CA61
+404,6834,Region 1 NT,CA6101
+405,2492,Region 2 NT,CA6102
+406,2861,Region 3 NT,CA6103
+407,3361,Region 4 NT,CA6104
+408,7251,Region 5 NT,CA6105
+409,20824,Region 6 NT,CA6106
+410,..,"Inuvik, NT",CA6107
+411,36585,Nunavut,CA62
+412,19365,"Baffin, NU",CA6204
+413,10584,"Keewatin, NU",CA6205
+414,6636,"Kitikmeot, NU",CA6208
+415,17819100,Chile,CHL
+416,328782,Tarapacá,CL01
+417,302515,Iquique,CL011
+418,26267,Tamarugal,CL012
+419,613328,Antofagasta,CL02
+420,399392,Antofagasta,CL021
+421,181218,El Loa,CL022
+422,32718,Tocopilla,CL023
+423,308247,Atacama,CL03
+424,203076,Copiapó,CL031
+425,29247,Chañaral,CL032
+426,75924,Huasco,CL033
+427,759228,Coquimbo,CL04
+428,485804,Elqui,CL041
+429,89828,Choapa,CL042
+430,183596,Limarí,CL043
+431,1808300,Valparaíso,CL05
+432,738086,Valparaíso,CL051
+433,6148,Isla De Pascua,CL052
+434,110052,Los Andes,CL053
+435,75680,Petorca,CL054
+436,207681,Quillota,CL055
+437,158613,San Antonio,CL056
+438,150799,San Felipe de Aconcagua,CL057
+439,361241,Marga Marga,CL058
+440,910577,O'Higgins,CL06
+441,641883,Cachapoal,CL061
+442,43842,Cardenal Caro,CL062
+443,224852,Colchagua,CL063
+444,1035590,Maule,CL07
+445,424834,Talca,CL071
+446,57622,Cauquenes,CL072
+447,280269,Curicó,CL073
+448,272868,Linares,CL074
+449,2100490,Bío-Bío,CL08
+450,1053880,Concepción,CL081
+451,172912,Arauco,CL082
+452,392299,Bío-Bío,CL083
+453,481403,Ñuble,CL084
+454,983499,Araucanía,CL09
+455,768984,Cautín,CL091
+456,214515,Malleco,CL092
+457,834714,Los Lagos,CL10
+458,399254,Llanquihue,CL101
+459,183896,Chiloé,CL102
+460,231638,Osorno,CL103
+461,19926,Palena,CL104
+462,107334,Aysén,CL11
+463,60867,Coihaique,CL111
+464,34388,Aysen,CL112
+465,4642,Capitán Prat,CL113
+466,7437,General Carrera,CL114
+467,163748,Magallanes y Antártica,CL12
+468,130618,Magallanes,CL121
+469,2966,Antártica Chilena,CL122
+470,8040,Tierra Del Fuego,CL123
+471,22124,Última Esperanza,CL124
+472,7228580,Santiago Metropolitan,CL13
+473,5452550,Santiago,CL131
+474,638720,Cordillera,CL132
+475,217245,Chacabuco,CL133
+476,465479,Maipo,CL134
+477,172317,Melipilla,CL135
+478,282272,Talagante,CL136
+479,401548,Los Rios,CL14
+480,298076,Valdivia,CL141
+481,103472,Ranco,CL142
+482,235081,Arica Y Parinacota,CL15
+483,232394,Arica,CL151
+484,2687,Parinacota,CL152
+485,10512400,Czech Republic,CZE
+486,1243200,Prague,CZ01
+487,1243200,Prague,CZ010
+488,1302340,Central Bohemian Region,CZ02
+489,1302340,Central Bohemia,CZ020
+490,1210180,Southwest,CZ03
+491,636707,South Bohemia,CZ031
+492,573469,Plzen,CZ032
+493,1125430,Northwest,CZ04
+494,300309,Karlovy Vary,CZ041
+495,825120,Ústí nad Labem,CZ042
+496,1506500,Northeast,CZ05
+497,438609,Liberec,CZ051
+498,551909,Hradec Králové,CZ052
+499,515985,Pardubice,CZ053
+500,1680290,Southeast,CZ06
+501,510209,Vysocina,CZ063
+502,1170080,South Moravia,CZ064
+503,1222660,Central Moravia,CZ07
+504,636356,Olomouc,CZ071
+505,586299,Zlín,CZ072
+506,1221830,Moravia-Silesia,CZ08
+507,1221830,Moravia-Silesia,CZ080
+508,5627240,Denmark,DNK
+509,1749410,Capital (DK),DK01
+510,728243,City of Copenhagen,DK011
+511,530612,Copenhagen suburbs,DK012
+512,450245,North Zealand,DK013
+513,40305,Bornholm,DK014
+514,816726,Zealand,DK02
+515,239016,East Zealand,DK021
+516,577710,West and South Zealand,DK022
+517,1202510,Southern Denmark,DK03
+518,486709,Fyn,DK031
+519,715800,South Jutland,DK032
+520,1277540,Central Jutland,DK04
+521,425769,West Jutland,DK041
+522,851769,East Jutland,DK042
+523,581057,Northern Jutland,DK05
+524,581057,North Jutland,DK050
+525,1315820,Estonia,EST
+526,1315820,Estonia,EE00
+527,572103,North Estonia,EE001
+528,147497,West Estonia,EE004
+529,124684,Central Estonia,EE006
+530,149483,Northeast Estonia,EE007
+531,322052,Southern Estonia,EE008
+532,5451270,Finland,FIN
+533,1374400,Western Finland,FI19
+534,275320,Central Finland,FI193
+535,193977,Southern Ostrobothnia,FI194
+536,180384,Ostrobothnia,FI195
+537,224556,Satakunta,FI196
+538,500166,Pirkanmaa,FI197
+539,1585470,Helsinki-Uusimaa,FI1B
+540,1585470,Helsinki-Uusimaa,FI1B1
+541,1161880,Southern Finland,FI1C
+542,470880,Finland Proper,FI1C1
+543,175481,Tavastia Proper,FI1C2
+544,202424,Päijät-Häme,FI1C3
+545,180845,Kymenlaakso,FI1C4
+546,132252,South Karelia,FI1C5
+547,1300850,Eastern and Northern Finland,FI1D
+548,152518,Southern Savonia,FI1D1
+549,248430,Northern Savonia,FI1D2
+550,165445,North Karelia,FI1D3
+551,79975,Kainuu,FI1D4
+552,68677,Central Ostrobothnia,FI1D5
+553,403287,North Ostrobothnia,FI1D6
+554,182514,Lapland,FI1D7
+555,28666,Åland,FI20
+556,28666,Åland,FI200
+557,63920200,France,FRA
+558,12005100,Ile-de-France,FR10
+559,2241350,Paris,FR101
+560,1380030,Seine-et-Marne,FR102
+561,1414930,Yvelines,FR103
+562,1257140,Essonne,FR104
+563,1601580,Hauts-de-Seine,FR105
+564,1554170,Seine-Saint-Denis,FR106
+565,1356670,Val-de-Marne,FR107
+566,1199210,Val-d'Oise,FR108
+567,1338120,Champagne-Ardenne,FR21
+568,281987,Ardennes,FR211
+569,306490,Aube,FR212
+570,569789,Marne,FR213
+571,179856,Haute-Marne,FR214
+572,1927390,Picardy,FR22
+573,540409,Aisne,FR221
+574,815517,Oise,FR222
+575,571461,Somme,FR223
+576,1851910,Upper Normandy,FR23
+577,596574,Eure,FR231
+578,1255340,Seine-Maritime,FR232
+579,2577470,Centre-Val de Loire,FR24
+580,312052,Cher,FR241
+581,435834,Eure-et-Loir,FR242
+582,225993,Indre,FR243
+583,602025,Indre-et-Loire,FR244
+584,333758,Loir-et-Cher,FR245
+585,667812,Loiret,FR246
+586,1478210,Lower Normandy,FR25
+587,690836,Calvados,FR251
+588,499860,Manche,FR252
+589,287515,Orne,FR253
+590,1638490,Burgundy,FR26
+591,528970,Côte-d'Or,FR261
+592,214303,Nièvre,FR262
+593,554505,Saône-et-Loire,FR263
+594,340714,Yonne,FR264
+595,4058330,Nord-Pas-de-Calais,FR30
+596,2595540,Nord (FR),FR301
+597,1462790,Pas-de-Calais,FR302
+598,2346290,Lorraine,FR41
+599,734002,Meurthe-et-Moselle,FR411
+600,191696,Meuse,FR412
+601,1046240,Moselle,FR413
+602,374357,Vosges,FR414
+603,1868770,Alsace,FR42
+604,1110420,Bas-Rhin,FR421
+605,758357,Haut-Rhin,FR422
+606,1178940,Franche-Comté,FR43
+607,534229,Doubs,FR431
+608,260280,Jura,FR432
+609,239828,Haute-Saône,FR433
+610,144600,Territoire de Belfort,FR434
+611,3689470,Pays de la Loire,FR51
+612,1343260,Loire-Atlantique,FR511
+613,804860,Maine-et-Loire,FR512
+614,308521,Mayenne,FR513
+615,570419,Sarthe,FR514
+616,662406,Vendée,FR515
+617,3273340,Brittany,FR52
+618,599477,Côtes-d'Armor,FR521
+619,904999,Finistère,FR522
+620,1026960,Ille-et-Vilaine,FR523
+621,741905,Morbihan,FR524
+622,1796430,Poitou-Charentes,FR53
+623,354801,Charente,FR531
+624,635191,Charente-Maritime,FR532
+625,374383,Deux-Sèvres,FR533
+626,432059,Vienne,FR534
+627,3335130,Aquitaine,FR61
+628,418566,Dordogne,FR611
+629,1515230,Gironde,FR612
+630,401458,Landes,FR613
+631,333182,Lot-et-Garonne,FR614
+632,666699,Pyrénées-Atlantiques,FR615
+633,2967150,Midi-Pyrénées,FR62
+634,152944,Ariège,FR621
+635,275063,Aveyron,FR622
+636,1312020,Haute-Garonne,FR623
+637,190943,Gers,FR624
+638,174810,Lot,FR625
+639,227926,Hautes-Pyrénées,FR626
+640,381872,Tarn,FR627
+641,251573,Tarn-et-Garonne,FR628
+642,735880,Limousin,FR63
+643,239555,Corrèze,FR631
+644,120156,Creuse,FR632
+645,376169,Haute-Vienne,FR633
+646,6448920,Rhône-Alpes,FR71
+647,627405,Ain,FR711
+648,321252,Ardèche,FR712
+649,496601,Drôme,FR713
+650,1242280,Isère,FR714
+651,758203,Loire,FR715
+652,1798510,Rhône,FR716
+653,427313,Savoie,FR717
+654,777356,Haute-Savoie,FR718
+655,1359400,Auvergne,FR72
+656,342593,Allier,FR721
+657,146504,Cantal,FR722
+658,226963,Haute-Loire,FR723
+659,643342,Puy-de-Dôme,FR724
+660,2757560,Languedoc-Roussillon,FR81
+661,367158,Aude,FR811
+662,740660,Gard,FR812
+663,1107730,Hérault,FR813
+664,76543,Lozère,FR814
+665,465467,Pyrénées-Orientales,FR815
+666,4964860,Provence-Alpes-Côte d'Azur,FR82
+667,162438,Alpes-de-Haute-Provence,FR821
+668,141911,Hautes-Alpes,FR822
+669,1083270,Alpes-Maritimes,FR823
+670,1996350,Bouches-du-Rhône,FR824
+671,1030490,Var,FR825
+672,550402,Vaucluse,FR826
+673,323092,Corsica,FR83
+674,148022,Corse-du-Sud,FR831
+675,175070,Haute-Corse,FR832
+676,80767500,Germany,DEU
+677,10631300,Baden-Württemberg,DE1
+678,12604200,Bavaria,DE2
+679,3421830,Berlin,DE3
+680,2449190,Brandenburg,DE4
+681,657391,Bremen,DE5
+682,1746340,Hamburg,DE6
+683,6045430,Hesse,DE7
+684,1596510,Mecklenburg-Vorpommern,DE8
+685,7790560,Lower Saxony,DE9
+686,17571900,North Rhine-Westphalia,DEA
+687,3994370,Rhineland-Palatinate,DEB
+688,990718,Saarland,DEC
+689,4046390,Saxony,DED
+690,2244580,Saxony-Anhalt,DEE
+691,2815960,Schleswig-Holstein,DEF
+692,2160840,Thuringia,DEG
+693,10903700,Greece,GRC
+694,606225,East Macedonia - Thrace,GR11
+695,1899390,Central Macedonia,GR12
+696,278214,West Macedonia,GR13
+697,736379,Thessaly,GR14
+698,340240,Epirus,GR21
+699,207134,Ionian Islands,GR22
+700,676670,West Greece,GR23
+701,558222,Central Greece,GR24
+702,583818,Peloponnese,GR25
+703,3856060,Attica,GR30
+704,198109,North Aegean,GR41
+705,333848,South Aegean,GR42
+706,629397,Crete,GR43
+707,9877370,Hungary,HUN
+708,2965410,Central Hungary,HU10
+709,1744670,Budapest,HU101
+710,1220750,Pest,HU102
+711,1069190,Central Transdanubia,HU21
+712,419506,Fejér,HU211
+713,300677,Komárom-Esztergom,HU212
+714,349007,Veszprém,HU213
+715,984521,Western Transdanubia,HU22
+716,450318,Gyor-Moson-Sopron,HU221
+717,254580,Vas,HU222
+718,279623,Zala,HU223
+719,917492,Southern Transdanubia,HU23
+720,373984,Baranya,HU231
+721,315512,Somogy,HU232
+722,227996,Tolna,HU233
+723,1176890,Northern Hungary,HU31
+724,674999,Borsod-Abaúj-Zemplén,HU311
+725,303503,Heves,HU312
+726,198392,Nógrád,HU313
+727,1484380,Northern Great Plain,HU32
+728,539507,Hajdú-Bihar,HU321
+729,383489,Jász-Nagykun-Szolnok,HU322
+730,561379,Szabolcs-Szatmár-Bereg,HU323
+731,1279480,Southern Great Plain,HU33
+732,516892,Bács-Kiskun,HU331
+733,355199,Békés,HU332
+734,407389,Csongrád,HU333
+735,325671,Iceland,ISL
+736,208752,Capital Region,IS01
+737,208752,Capital Region,IS011
+738,116919,Other Regions,IS02
+739,21560,Southern Peninsula,IS021
+740,15441,Western Region (IS),IS022
+741,6972,Westfjords,IS023
+742,7245,Northwestern Region (IS),IS024
+743,24086,Southern Region (IS),IS025
+744,29091,Northeastern Region (IS),IS026
+745,12524,Austurland,IS027
+746,4605500,Ireland,IRL
+747,1232780,"Border, Midland and Western",IE01
+748,505335,Border,IE011
+749,290143,Midlands,IE012
+750,437305,West,IE013
+751,3372720,Southern and Eastern,IE02
+752,1271560,Dublin,IE021
+753,545415,Mid-East,IE022
+754,378182,Mid-West,IE023
+755,504901,South-East (IE),IE024
+756,672663,South-West (IE),IE025
+757,8134500,Israel,ISR
+758,1008400,Jerusalem District,IL01
+759,1341500,Northern District,IL02
+760,951900,Haifa District,IL03
+761,1976300,Central District,IL04
+762,1331300,Tel Aviv District,IL05
+763,60782700,Italy,ITA
+764,1168600,Southern District,IL06
+765,4436800,Piedmont,ITC1
+766,2297920,Turin,ITC11
+767,177109,Vercelli,ITC12
+768,182325,Biella,ITC13
+769,161412,Verbano-Cusio-Ossola,ITC14
+770,371686,Novara,ITC15
+771,592365,Cuneo,ITC16
+772,219988,Asti,ITC17
+773,433996,Alessandria,ITC18
+774,128591,Aosta Valley,ITC2
+775,128591,Aosta Valley,ITC20
+776,1591940,Liguria,ITC3
+777,217703,Imperia,ITC31
+778,283813,Savona,ITC32
+779,868046,Genoa,ITC33
+780,222377,La Spezia,ITC34
+781,9973400,Lombardy,ITC4
+782,887997,Varese,ITC41
+783,598810,Como,ITC42
+784,340814,Lecco,ITC43
+785,182480,Sondrio,ITC44
+786,1107440,Bergamo,ITC46
+787,1262300,Brescia,ITC47
+788,548326,Pavia,ITC48
+789,229082,Lodi,ITC49
+790,362141,Cremona,ITC4A
+791,415147,Mantua,ITC4B
+792,3176180,Milan,ITC4C
+793,862684,Monza and Brianza,ITC4D
+794,1333940,Abruzzo,ITF1
+795,306701,L'Aquila,ITF11
+796,311103,Teramo,ITF12
+797,322401,Pescara,ITF13
+798,393734,Chieti,ITF14
+799,314725,Molise,ITF2
+800,87243,Isernia,ITF21
+801,227482,Campobasso,ITF22
+802,5869970,Campania,ITF3
+803,923113,Caserta,ITF31
+804,283763,Benevento,ITF32
+805,3127390,Naples,ITF33
+806,430214,Avellino,ITF34
+807,1105490,Salerno,ITF35
+808,4090270,Apulia,ITF4
+809,590281,Taranto,ITF43
+810,401652,Brindisi,ITF44
+811,807256,Lecce,ITF45
+812,635344,Foggia,ITF46
+813,1261960,Bari,ITF47
+814,393769,Barletta-Andria-Trani,ITF48
+815,578391,Basilicata,ITF5
+816,377258,Potenza,ITF51
+817,201133,Matera,ITF52
+818,1980530,Calabria,ITF6
+819,719345,Cosenza,ITF61
+820,174068,Crotone,ITF62
+821,363979,Catanzaro,ITF63
+822,163382,Vibo Valentia,ITF64
+823,559759,Reggio di Calabria,ITF65
+824,5094940,Sicily,ITG1
+825,436150,Trapani,ITG11
+826,1275600,Palermo,ITG12
+827,648371,Messina,ITG13
+828,448831,Agrigento,ITG14
+829,274731,Caltanissetta,ITG15
+830,172456,Enna,ITG16
+831,1115700,Catania,ITG17
+832,318249,Ragusa,ITG18
+833,404847,Siracusa,ITG19
+834,1663860,Sardinia,ITG2
+835,335097,Sassari,ITG25
+836,158980,Nuoro,ITG26
+837,560827,Cagliari,ITG27
+838,163511,Oristano,ITG28
+839,158518,Olbia-Tempio,ITG29
+840,57699,Ogliastra,ITG2A
+841,100676,Medio Campidano,ITG2B
+842,128551,Carbonia-Iglesias,ITG2C
+843,515714,Province of Bolzano-Bozen,ITH1
+844,515714,Bolzano-Bozen,ITH10
+845,536237,Province of Trento,ITH2
+846,536237,Trento,ITH20
+847,4926820,Veneto,ITH3
+848,921717,Verona,ITH31
+849,869813,Vicenza,ITH32
+850,209430,Belluno,ITH33
+851,887722,Treviso,ITH34
+852,857841,Venice,ITH35
+853,936233,Padua,ITH36
+854,244062,Rovigo,ITH37
+855,1229360,Friuli-Venezia Giulia,ITH4
+856,314644,Pordenone,ITH41
+857,537943,Udine,ITH42
+858,141076,Gorizia,ITH43
+859,235700,Trieste,ITH44
+860,4446350,Emilia-Romagna,ITH5
+861,288483,Piacenza,ITH51
+862,443176,Parma,ITH52
+863,534258,Reggio Nell'Emilia,ITH53
+864,700918,Modena,ITH54
+865,1001170,Bologna,ITH55
+866,355101,Ferrara,ITH56
+867,392358,Ravenna,ITH57
+868,396636,Forlì-Cesena,ITH58
+869,334254,Rimini,ITH59
+870,3750510,Tuscany,ITI1
+871,200325,Massa-Carrara,ITI11
+872,394600,Lucca,ITI12
+873,291788,Pistoia,ITI13
+874,1007250,Florence,ITI14
+875,253245,Prato,ITI15
+876,340471,Livorno,ITI16
+877,420254,Pisa,ITI17
+878,346661,Arezzo,ITI18
+879,270817,Siena,ITI19
+880,225098,Grosseto,ITI1A
+881,896742,Umbria,ITI2
+882,665217,Perugia,ITI21
+883,231525,Terni,ITI22
+884,1553140,Marche,ITI3
+885,364385,Pesaro e Urbino,ITI31
+886,479275,Ancona,ITI32
+887,321314,Macerata,ITI33
+888,211756,Ascoli Piceno,ITI34
+889,176408,Fermo,ITI35
+890,5870450,Lazio,ITI4
+891,322195,Viterbo,ITI41
+892,159670,Rieti,ITI42
+893,4321240,Rome,ITI43
+894,569664,Latina,ITI44
+895,497678,Frosinone,ITI45
+896,127083000,Japan,JPN
+897,5400000,Hokkaido,JPA
+898,5400000,Hokkaido,JPA01
+899,9036000,Tohoku,JPB
+900,1321000,Aomori,JPB02
+901,1284000,Iwate,JPB03
+902,2328000,Miyagi,JPB04
+903,1037000,Akita,JPB05
+904,1131000,Yamagata,JPB06
+905,1935000,Fukushima,JPB07
+906,9825000,"Northern-Kanto, Koshin",JPC
+907,2919000,Ibaraki,JPC08
+908,1980000,Tochigi,JPC09
+909,1976000,Gumma,JPC10
+910,841000,Yamanashi,JPC19
+911,2109000,Nagano,JPC20
+912,35922000,Southern-Kanto,JPD
+913,7239000,Saitama,JPD11
+914,6197000,Chiba,JPD12
+915,13390000,Tokyo,JPD13
+916,9096000,Kanagawa,JPD14
+917,5329000,Hokuriku,JPE
+918,2313000,Niigata,JPE15
+919,1070000,Toyama,JPE16
+920,1156000,Ishikawa,JPE17
+921,790000,Fukui,JPE18
+922,15026000,Toukai,JPF
+923,2041000,Gifu,JPF21
+924,3705000,Shizuoka,JPF22
+925,7455000,Aichi,JPF23
+926,1825000,Mie,JPF24
+927,20750000,Kansai region,JPG
+928,1416000,Shiga,JPG25
+929,2610000,Kyoto,JPG26
+930,8836000,Osaka,JPG27
+931,5541000,Hyogo,JPG28
+932,1376000,Nara,JPG29
+933,971000,Wakayama,JPG30
+934,7436000,Chugoku,JPH
+935,574000,Tottori,JPH31
+936,697000,Shimane,JPH32
+937,1924000,Okayama,JPH33
+938,2833000,Hiroshima,JPH34
+939,1408000,Yamaguchi,JPH35
+940,3878000,Shikoku,JPI
+941,764000,Tokushima,JPI36
+942,981000,Kagawa,JPI37
+943,1395000,Ehime,JPI38
+944,738000,Kochi,JPI39
+945,14480000,"Kyushu, Okinawa",JPJ
+946,5091000,Fukuoka,JPJ40
+947,835000,Saga,JPJ41
+948,1386000,Nagasaki,JPJ42
+949,1794000,Kumamoto,JPJ43
+950,1171000,Oita,JPJ44
+951,1114000,Miyazaki,JPJ45
+952,1668000,Kagoshima,JPJ46
+953,1421000,Okinawa,JPJ47
+954,50424000,Korea,KOR
+955,25029700,Capital Region (KR),KR01
+956,9890660,Seoul,KR011
+957,2858350,Incheon,KR012
+958,12280700,Gyeonggi-do,KR013
+959,7823230,Gyeongnam Region,KR02
+960,3411930,Busan,KR021
+961,1138230,Ulsan,KR022
+962,3273080,Gyeongsangnam-do,KR023
+963,5100340,Gyeongbuk Region,KR03
+964,2459900,Daegu,KR031
+965,2640440,Gyeonsangbuk-do,KR032
+966,5071360,Jeolla Region,KR04
+967,1515990,Gwangju,KR041
+968,1797030,Jeollabuk-do,KR042
+969,1758340,Jeollanam-do,KR043
+970,5317220,Chungcheong Region,KR05
+971,1545720,Daejeon,KR051
+972,1558910,Chungcheongbuk-do,KR052
+973,2212590,Chungcheongnam-do,KR053
+974,1501040,Gangwon Region,KR06
+975,1501040,Gangwon-do,KR061
+976,581069,Jeju,KR07
+977,581069,Jeju-do,KR071
+978,549680,Luxembourg,LUX
+979,549680,Luxembourg,LU00
+980,549680,Luxembourg,LU000
+981,119713000,Mexico,MEX
+982,1270180,Aguascalientes,ME01
+983,..,"Aguacalientes, R1",ME01R1
+984,..,"Aguacalientes, R2",ME01R2
+985,3432940,Baja California Norte,ME02
+986,..,"Baja California Norte, R1",ME02R1
+987,..,"Baja California Norte, R2",ME02R2
+988,..,"Baja California Norte, R3",ME02R3
+989,..,"Baja California Norte, R4",ME02R4
+990,741038,Baja California Sur,ME03
+991,..,"Baja California Sur, R1",ME03R1
+992,..,"Baja California Sur, R2",ME03R2
+993,..,"Baja California Sur, R3",ME03R3
+994,..,"Baja California Sur, R4",ME03R4
+995,894136,Campeche,ME04
+996,..,"Campeche, R1",ME04R1
+997,..,"Campeche, R2",ME04R2
+998,..,"Campeche, R3",ME04R3
+999,..,"Campeche, R4",ME04R4
+1000,2925600,Coahuila,ME05
+1001,..,"Coahuila, R1",ME05R1
+1002,..,"Coahuila, R2",ME05R2
+1003,..,"Coahuila, R3",ME05R3
+1004,..,"Coahuila, R4",ME05R4
+1005,..,"Coahuila, R5",ME05R5
+1006,..,"Coahuila, R6",ME05R6
+1007,710986,Colima,ME06
+1008,..,"Colima, R1",ME06R1
+1009,..,"Colima, R2",ME06R2
+1010,..,"Colima, R3",ME06R3
+1011,5186570,Chiapas,ME07
+1012,..,"Chiapas, R1",ME07R1
+1013,..,"Chiapas, R2",ME07R2
+1014,..,"Chiapas, R3",ME07R3
+1015,..,"Chiapas, R4",ME07R4
+1016,..,"Chiapas, R5",ME07R5
+1017,..,"Chiapas, R6",ME07R6
+1018,..,"Chiapas, R7",ME07R7
+1019,..,"Chiapas, R8",ME07R8
+1020,..,"Chiapas, R9",ME07R9
+1021,3673340,Chihuahua,ME08
+1022,..,"Chihuahua, R1",ME08R1
+1023,..,"Chihuahua, R10",ME08R10
+1024,..,"Chihuahua, R11",ME08R11
+1025,..,"Chihuahua, R12",ME08R12
+1026,..,"Chihuahua, R13",ME08R13
+1027,..,"Chihuahua, R2",ME08R2
+1028,..,"Chihuahua, R3",ME08R3
+1029,..,"Chihuahua, R4",ME08R4
+1030,..,"Chihuahua, R5",ME08R5
+1031,..,"Chihuahua, R6",ME08R6
+1032,..,"Chihuahua, R7",ME08R7
+1033,..,"Chihuahua, R8",ME08R8
+1034,..,"Chihuahua, R9",ME08R9
+1035,8874730,Federal District (MX),ME09
+1036,..,"Distrito Federal (MX), R1",ME09R1
+1037,..,"Distrito Federal (MX), R2",ME09R2
+1038,1746800,Durango,ME10
+1039,..,"Durango, R1",ME10R1
+1040,..,"Durango, R2",ME10R2
+1041,..,"Durango, R3",ME10R3
+1042,..,"Durango, R4",ME10R4
+1043,..,"Durango, R5",ME10R5
+1044,..,"Durango, R6",ME10R6
+1045,..,"Durango, R7",ME10R7
+1046,..,"Durango, R8",ME10R8
+1047,..,"Durango, R9",ME10R9
+1048,5769530,Guanajuato,ME11
+1049,..,"Guanajuato, R1",ME11R1
+1050,..,"Guanajuato, R2",ME11R2
+1051,..,"Guanajuato, R3",ME11R3
+1052,..,"Guanajuato, R4",ME11R4
+1053,3546710,Guerrero,ME12
+1054,..,"Guerrero, R1",ME12R1
+1055,..,"Guerrero, R2",ME12R2
+1056,..,"Guerrero, R3",ME12R3
+1057,..,"Guerrero, R4",ME12R4
+1058,..,"Guerrero, R5",ME12R5
+1059,..,"Guerrero, R6",ME12R6
+1060,..,"Guerrero, R7",ME12R7
+1061,2842790,Hidalgo,ME13
+1062,..,"Hidalgo, R1",ME13R1
+1063,..,"Hidalgo, R10",ME13R10
+1064,..,"Hidalgo, R11",ME13R11
+1065,..,"Hidalgo, R12",ME13R12
+1066,..,"Hidalgo, R13",ME13R13
+1067,..,"Hidalgo, R2",ME13R2
+1068,..,"Hidalgo, R3",ME13R3
+1069,..,"Hidalgo, R4",ME13R4
+1070,..,"Hidalgo, R5",ME13R5
+1071,..,"Hidalgo, R6",ME13R6
+1072,..,"Hidalgo, R7",ME13R7
+1073,..,"Hidalgo, R8",ME13R8
+1074,..,"Hidalgo, R9",ME13R9
+1075,7838010,Jalisco,ME14
+1076,..,"Jalisco, R1",ME14R1
+1077,..,"Jalisco, R10",ME14R10
+1078,..,"Jalisco, R2",ME14R2
+1079,..,"Jalisco, R3",ME14R3
+1080,..,"Jalisco, R4",ME14R4
+1081,..,"Jalisco, R5",ME14R5
+1082,..,"Jalisco, R6",ME14R6
+1083,..,"Jalisco, R7",ME14R7
+1084,..,"Jalisco, R8",ME14R8
+1085,..,"Jalisco, R9",ME14R9
+1086,16618900,Mexico,ME15
+1087,..,"Mexico, R1",ME15R1
+1088,..,"Mexico, R2",ME15R2
+1089,..,"Mexico, R3",ME15R3
+1090,..,"Mexico, R4",ME15R4
+1091,..,"Mexico, R5",ME15R5
+1092,..,"Mexico, R6",ME15R6
+1093,..,"Mexico, R7",ME15R7
+1094,..,"Mexico, R8",ME15R8
+1095,4563850,Michoacan,ME16
+1096,..,"Michoacan, R1",ME16R1
+1097,..,"Michoacan, R2",ME16R2
+1098,..,"Michoacan, R3",ME16R3
+1099,..,"Michoacan, R4",ME16R4
+1100,..,"Michoacan, R5",ME16R5
+1101,..,"Michoacan, R6",ME16R6
+1102,1897390,Morelos,ME17
+1103,..,"Morelos, R1",ME17R1
+1104,..,"Morelos, R2",ME17R2
+1105,..,"Morelos, R3",ME17R3
+1106,..,"Morelos, R4",ME17R4
+1107,..,"Morelos, R5",ME17R5
+1108,..,"Morelos, R6",ME17R6
+1109,..,"Morelos, R7",ME17R7
+1110,1201200,Nayarit,ME18
+1111,..,"Nayarit, R1",ME18R1
+1112,..,"Nayarit, R2",ME18R2
+1113,..,"Nayarit, R3",ME18R3
+1114,..,"Nayarit, R4",ME18R4
+1115,..,"Nayarit, R5",ME18R5
+1116,5013590,Nuevo Leon,ME19
+1117,..,"Nuevo Leon, R1",ME19R1
+1118,..,"Nuevo Leon, R2",ME19R2
+1119,..,"Nuevo Leon, R3",ME19R3
+1120,..,"Nuevo Leon, R4",ME19R4
+1121,..,"Nuevo Leon, R5",ME19R5
+1122,..,"Nuevo Leon, R6",ME19R6
+1123,..,"Nuevo Leon, R7",ME19R7
+1124,3986210,Oaxaca,ME20
+1125,..,"Oaxaca, R1",ME20R1
+1126,..,"Oaxaca, R2",ME20R2
+1127,..,"Oaxaca, R3",ME20R3
+1128,..,"Oaxaca, R4",ME20R4
+1129,..,"Oaxaca, R5",ME20R5
+1130,..,"Oaxaca, R6",ME20R6
+1131,..,"Oaxaca, R7",ME20R7
+1132,..,"Oaxaca, R8",ME20R8
+1133,6131500,Puebla,ME21
+1134,..,"Puebla, R1",ME21R1
+1135,..,"Puebla, R2",ME21R2
+1136,..,"Puebla, R3",ME21R3
+1137,..,"Puebla, R4",ME21R4
+1138,..,"Puebla, R5",ME21R5
+1139,..,"Puebla, R6",ME21R6
+1140,..,"Puebla, R7",ME21R7
+1141,1974440,Queretaro,ME22
+1142,..,"Queretaro, R1",ME22R1
+1143,..,"Queretaro, R2",ME22R2
+1144,..,"Queretaro, R3",ME22R3
+1145,..,"Queretaro, R4",ME22R4
+1146,..,"Queretaro, R5",ME22R5
+1147,1529880,Quintana Roo,ME23
+1148,..,"Quintana Roo, R1",ME23R1
+1149,..,"Quintana Roo, R2",ME23R2
+1150,..,"Quintana Roo, R3",ME23R3
+1151,..,"Quintana Roo, R4",ME23R4
+1152,2728210,San Luis Potosi,ME24
+1153,..,"San Luis Potosi, R1",ME24R1
+1154,..,"San Luis Potosi, R2",ME24R2
+1155,..,"San Luis Potosi, R3",ME24R3
+1156,..,"San Luis Potosi, R4",ME24R4
+1157,2958690,Sinaloa,ME25
+1158,..,"Sinaloa, R1",ME25R1
+1159,..,"Sinaloa, R2",ME25R2
+1160,..,"Sinaloa, R3",ME25R3
+1161,..,"Sinaloa, R4",ME25R4
+1162,..,"Sinaloa, R5",ME25R5
+1163,2892460,Sonora,ME26
+1164,..,"Sonora, R1",ME26R1
+1165,..,"Sonora, R10",ME26R10
+1166,..,"Sonora, R11",ME26R11
+1167,..,"Sonora, R12",ME26R12
+1168,..,"Sonora, R2",ME26R2
+1169,..,"Sonora, R3",ME26R3
+1170,..,"Sonora, R4",ME26R4
+1171,..,"Sonora, R5",ME26R5
+1172,..,"Sonora, R6",ME26R6
+1173,..,"Sonora, R7",ME26R7
+1174,..,"Sonora, R8",ME26R8
+1175,..,"Sonora, R9",ME26R9
+1176,2359440,Tabasco,ME27
+1177,..,"Tabasco, R1",ME27R1
+1178,..,"Tabasco, R2",ME27R2
+1179,..,"Tabasco, R3",ME27R3
+1180,..,"Tabasco, R4",ME27R4
+1181,3502720,Tamaulipas,ME28
+1182,..,"Tamaulipas, R1",ME28R1
+1183,..,"Tamaulipas, R2",ME28R2
+1184,..,"Tamaulipas, R3",ME28R3
+1185,..,"Tamaulipas, R4",ME28R4
+1186,1260630,Tlaxcala,ME29
+1187,..,"Tlaxcala, R1",ME29R1
+1188,..,"Tlaxcala, R2",ME29R2
+1189,..,"Tlaxcala, R3",ME29R3
+1190,..,"Tlaxcala, R4",ME29R4
+1191,..,"Tlaxcala, R5",ME29R5
+1192,..,"Tlaxcala, R6",ME29R6
+1193,..,"Tlaxcala, R7",ME29R7
+1194,..,"Tlaxcala, R8",ME29R8
+1195,..,"Tlaxcala, R9",ME29R9
+1196,7985890,Veracruz,ME30
+1197,..,"Veracruz, R1",ME30R1
+1198,..,"Veracruz, R2",ME30R2
+1199,..,"Veracruz, R3",ME30R3
+1200,..,"Veracruz, R4",ME30R4
+1201,..,"Veracruz, R5",ME30R5
+1202,..,"Veracruz, R6",ME30R6
+1203,..,"Veracruz, R7",ME30R7
+1204,2091520,Yucatan,ME31
+1205,..,"Yucatan, R1",ME31R1
+1206,..,"Yucatan, R2",ME31R2
+1207,..,"Yucatan, R3",ME31R3
+1208,..,"Yucatan, R4",ME31R4
+1209,..,"Yucatan, R5",ME31R5
+1210,..,"Yucatan, R6",ME31R6
+1211,..,"Yucatan, R7",ME31R7
+1212,..,"Yucatan, R8",ME31R8
+1213,1563320,Zacatecas,ME32
+1214,..,"Zacatecas, R1",ME32R1
+1215,..,"Zacatecas, R2",ME32R2
+1216,..,"Zacatecas, R3",ME32R3
+1217,..,"Zacatecas, R4",ME32R4
+1218,..,"Zacatecas, R5",ME32R5
+1219,..,"Zacatecas, R6",ME32R6
+1220,..,"Zacatecas, R7",ME32R7
+1221,..,"Zacatecas, R8",ME32R8
+1222,..,"Zacatecas, R9",ME32R9
+1223,16829300,Netherlands,NLD
+1224,582728,Groningen,NL11
+1225,646317,Friesland,NL12
+1226,488988,Drenthe,NL13
+1227,1139700,Overijssel,NL21
+1228,2019690,Gelderland,NL22
+1229,399893,Flevoland,NL23
+1230,1253670,Utrecht,NL31
+1231,2741370,North Holland,NL32
+1232,3577030,South Holland,NL33
+1233,380621,Zeeland,NL34
+1234,2479270,North Brabant,NL41
+1235,1120010,Limburg (NL),NL42
+1236,4509700,New Zealand,NZL
+1237,166000,Northland Region,NZ011
+1238,1526900,Auckland Region,NZ012
+1239,430800,Waikato Region,NZ013
+1240,282300,Bay of Plenty Region,NZ014
+1241,47100,Gisborne Region,NZ015
+1242,158900,Hawke's Bay Region,NZ016
+1243,114800,Taranaki Region,NZ017
+1244,232500,Manawatu-Wanganui Region,NZ018
+1245,491400,Wellington Region,NZ019
+1246,143100,Tasman-Nelson-Marlborough,NZ021
+1247,32800,West Coast Region,NZ022
+1248,574300,Canterbury Region,NZ023
+1249,211600,Otago Region,NZ024
+1250,96500,Southland Region,NZ025
+1251,5107970,Norway,NOR
+1252,1210220,Oslo and Akershus,NO01
+1253,634463,Oslo,NO011
+1254,575757,Akershus,NO012
+1255,382253,Hedmark and Oppland,NO02
+1256,194433,Hedmark,NO021
+1257,187820,Oppland,NO022
+1258,969519,South-Eastern Norway,NO03
+1259,284962,Østfold,NO031
+1260,272228,Buskerud,NO032
+1261,240860,Vestfold,NO033
+1262,171469,Telemark,NO034
+1263,751850,Agder and Rogaland,NO04
+1264,113747,Aust-Agder,NO041
+1265,178478,Vest-Agder,NO042
+1266,459625,Rogaland,NO043
+1267,875741,Western Norway,NO05
+1268,505246,Hordaland,NO051
+1269,108965,Sogn og Fjordane,NO052
+1270,261530,Møre og Romsdal,NO053
+1271,441339,Trøndelag,NO06
+1272,306197,Sør-Trøndelag,NO061
+1273,135142,Nord-Trøndelag,NO062
+1274,478134,Northern Norway,NO07
+1275,240877,Nordland,NO071
+1276,162050,Troms,NO072
+1277,75207,Finnmark,NO073
+1278,38017900,Poland,POL
+1279,2498860,Lodzkie,PL11
+1280,709872,City of Lódz,PL113
+1281,382605,Lódzki,PL114
+1282,590586,Piotrkowski,PL115
+1283,449310,Sieradzki,PL116
+1284,366488,Skierniewicki,PL117
+1285,5292570,Mazovia,PL12
+1286,623068,Ciechanowsko-Plocki,PL121
+1287,748670,Ostrolecko-Siedlecki,PL122
+1288,1719690,City of Warsaw,PL127
+1289,616188,Radomski,PL128
+1290,796228,Warsaw-East,PL129
+1291,788721,Warsaw-West,PL12A
+1292,3316100,Lesser Poland,PL21
+1293,750378,City of Krakow,PL213
+1294,702118,Krakowski,PL214
+1295,777679,Nowosadecki,PL215
+1296,633264,Oswiecimski,PL216
+1297,452658,Tarnowski,PL217
+1298,4548180,Silesia,PL22
+1299,521108,Czestochowski,PL224
+1300,657701,Bielski,PL225
+1301,625439,Rybnicki,PL227
+1302,438532,Bytomski,PL228
+1303,472604,Gliwicki,PL229
+1304,750768,Katowicki,PL22A
+1305,695070,Sosnowiecki,PL22B
+1306,386955,Tyski,PL22C
+1307,2134410,Lublin Province,PL31
+1308,304389,Bialski,PL311
+1309,635058,Chelmsko-Zamojski,PL312
+1310,709182,Lubelski,PL314
+1311,485784,Pulawski,PL315
+1312,2083550,Podkarpacia,PL32
+1313,474956,Krosnienski,PL323
+1314,390097,Przemyski,PL324
+1315,616737,Rzeszowski,PL325
+1316,601756,Tarnobrzeski,PL326
+1317,1253040,Swietokrzyskie,PL33
+1318,767327,Kielecki,PL331
+1319,485714,Sandomiersko-Jedrzejowski,PL332
+1320,1165450,Podlasie,PL34
+1321,502320,Bialostocki,PL343
+1322,395227,Lomzynski,PL344
+1323,267900,Suwalski,PL345
+1324,3441440,Greater Poland,PL41
+1325,408879,Pilski,PL411
+1326,655569,Koninski,PL414
+1327,545204,City of Poznan,PL415
+1328,667263,Kaliski,PL416
+1329,549365,Leszczynski,PL417
+1330,615160,Poznanski,PL418
+1331,1691400,West Pomerania,PL42
+1332,589059,Koszalinski,PL422
+1333,372459,Stargardzki,PL423
+1334,405358,City of Szczecin,PL424
+1335,324524,Szczecinski,PL425
+1336,1008560,Lubusz,PL43
+1337,381472,Gorzowski,PL431
+1338,627092,Zielonogórski,PL432
+1339,2869580,Lower Silesia,PL51
+1340,625960,City of Wroclaw,PL514
+1341,566135,Jeleniogórski,PL515
+1342,447247,Legnicko-Glogowski,PL516
+1343,663714,Walbrzyski,PL517
+1344,566523,Wroclawski,PL518
+1345,960226,Opole region,PL52
+1346,390166,Nyski,PL521
+1347,570060,Opolski,PL522
+1348,2068420,Kuyavian-Pomerania,PL61
+1349,767131,Bydgosko-Torunski,PL613
+1350,530082,Grudziadzki,PL614
+1351,771204,Wloclawski,PL615
+1352,1421260,Warmian-Masuria,PL62
+1353,526553,Elblaski,PL621
+1354,611612,Olsztynski,PL622
+1355,283099,Elcki,PL623
+1356,2264820,Pomerania,PL63
+1357,480351,Slupski,PL631
+1358,740681,Trojmiejski,PL633
+1359,546540,Gdanski,PL634
+1360,497245,Starogardzki,PL635
+1361,10427300,Portugal,PRT
+1362,3644200,North (PT),PT11
+1363,240134,Alto Minho,PT111
+1364,408851,Cávado,PT112
+1365,421931,Ave,PT119
+1366,1740980,Metropolitan area of Porto,PT11A
+1367,91264,Alto Tâmega,PT11B
+1368,428054,Tâmega e Sousa,PT11C
+1369,199400,Douro,PT11D
+1370,113578,Terras de Trás-os-Montes,PT11E
+1371,442358,Algarve,PT15
+1372,442358,Algarve,PT150
+1373,2281160,Central Portugal,PT16
+1374,360090,Oeste,PT16B
+1375,366086,Região de Aveiro,PT16D
+1376,447936,Região de Coimbra,PT16E
+1377,291079,Região de Leiria,PT16F
+1378,262125,Viseu Dão Lafões,PT16G
+1379,85656,Beira Baixa,PT16H
+1380,241445,Médio Tejo,PT16I
+1381,226747,Beiras e Serra da Estrela,PT16J
+1382,2807530,Lisbon,PT17
+1383,2807530,Metropolitan area of Lisbon,PT170
+1384,743306,Alentejo,PT18
+1385,97030,Alentejo Litoral,PT181
+1386,123598,Baixo Alentejo,PT184
+1387,246219,Lezíria do Tejo,PT185
+1388,114137,Alto Alentejo,PT186
+1389,162322,Alentejo Central,PT187
+1390,247440,Azores (PT),PT20
+1391,247440,R. A. Açores,PT200
+1392,261313,Madeira (PT),PT30
+1393,261313,R. A. Madeira,PT300
+1394,240134,Minho-Lima,PT111_2002
+1395,408851,Cávado,PT112_2002
+1396,507373,Ave,PT113_2002
+1397,1271500,Grande Porto,PT114_2002
+1398,544953,Tâmega,PT115_2002
+1399,273489,Entre Douro e Vouga,PT116_2002
+1400,200065,Douro,PT117_2002
+1401,197831,Alto Trás-os-Montes,PT118_2002
+1402,442358,Algarve,PT150_2002
+1403,386341,Baixo Vouga,PT161_2002
+1404,322993,Baixo Mondego,PT162_2002
+1405,258692,Pinhal Litoral,PT163_2002
+1406,127731,Pinhal Interior Norte,PT164_2002
+1407,271469,Dão-Lafões,PT165_2002
+1408,39251,Pinhal Interior Sul,PT166_2002
+1409,42133,Serra da Estrela,PT167_2002
+1410,99992,Beira Interior Norte,PT168_2002
+1411,72223,Beira Interior Sul,PT169_2002
+1412,84622,Cova da Beira,PT16A_2002
+1413,360090,Oeste,PT16B_2002
+1414,215627,Médio Tejo,PT16C_2002
+1415,2026480,Grande Lisboa,PT171_2002
+1416,781044,Península de Setúbal,PT172_2002
+1417,97030,Alentejo Litoral,PT181_2002
+1418,113947,Alto Alentejo,PT182_2002
+1419,162512,Alentejo Central,PT183_2002
+1420,123598,Baixo Alentejo,PT184_2002
+1421,246219,Lezíria do Tejo,PT185_2002
+1422,247440,Azores (PT),PT200_2002
+1423,261313,Madeira (PT),PT300_2002
+1424,5415950,Slovak Republic,SVK
+1425,618380,Bratislava Region,SK01
+1426,618380,Bratislava Region,SK010
+1427,1836660,West Slovakia,SK02
+1428,557608,Trnava Region,SK021
+1429,592394,Trencín Region,SK022
+1430,686662,Nitra Region,SK023
+1431,1347230,Central Slovakia,SK03
+1432,690420,Žilina Region,SK031
+1433,656813,Banská Bystrica Region,SK032
+1434,1613670,East Slovakia,SK04
+1435,818916,Prešov Region,SK041
+1436,794756,Košice Region,SK042
+1437,2061090,Slovenia,SVN
+1438,1079660,Eastern Slovenia,SI01
+1439,117133,Mura,SI011
+1440,323328,Drava,SI012
+1441,71546,Carinthia,SI013
+1442,259853,Savinja,SI014
+1443,42983,Central Sava,SI015
+1444,69958,Lower Sava,SI016
+1445,142405,Southeast Slovenia,SI017
+1446,52449,Inner-Karst,SI018
+1447,981430,Western Slovenia,SI02
+1448,546314,Central Slovenia,SI021
+1449,203894,Upper Carniola,SI022
+1450,118374,Goriska,SI023
+1451,112848,Coastal-Karst,SI024
+1452,46512200,Spain,ESP
+1453,2747230,Galicia,ES11
+1454,1133330,La Corunna,ES111
+1455,341822,Lugo,ES112
+1456,321801,Orense,ES113
+1457,950273,Pontevedra,ES114
+1458,1058980,Asturias,ES12
+1459,1058980,Asturias,ES120
+1460,587682,Cantabria,ES13
+1461,587682,Cantabria,ES130
+1462,2167170,Basque Country,ES21
+1463,319895,Álava,ES211
+1464,706986,Guipuscoa,ES212
+1465,1140290,Biscay,ES213
+1466,636450,Navarra,ES22
+1467,636450,Navarre,ES220
+1468,315223,La Rioja,ES23
+1469,315223,La Rioja (ES),ES230
+1470,1331300,Aragon,ES24
+1471,223358,Huesca,ES241
+1472,139390,Teruel,ES242
+1473,968553,Saragossa,ES243
+1474,6378300,Madrid,ES30
+1475,6378300,Madrid,ES300
+1476,2495690,Castile and León,ES41
+1477,167331,Ávila,ES411
+1478,365296,Burgos,ES412
+1479,484532,León,ES413
+1480,167301,Palencia,ES414
+1481,344395,Salamanca,ES415
+1482,159127,Segovia,ES416
+1483,92630,Soria,ES417
+1484,528676,Valladolid,ES418
+1485,186401,Zamora,ES419
+1486,2075200,Castile-La Mancha,ES42
+1487,396684,Albacete,ES421
+1488,518051,Ciudad Real,ES422
+1489,208663,Cuenca,ES423
+1490,255240,Guadalajara,ES424
+1491,696559,Toledo,ES425
+1492,1096420,Extremadura,ES43
+1493,688647,Badajoz,ES431
+1494,407774,Cáceres,ES432
+1495,7416240,Catalonia,ES51
+1496,5445620,Barcelona,ES511
+1497,743124,Gerona,ES512
+1498,432169,Lérida,ES513
+1499,795328,Tarragona,ES514
+1500,4956430,Valencia,ES52
+1501,1850620,Alicante,ES521
+1502,578213,Castellón,ES522
+1503,2527590,Valencia,ES523
+1504,1115840,Balearic Islands,ES53
+1505,152894,Eivissa Y Formentera,ES531
+1506,869111,Mallorca,ES532
+1507,93836,Menorca,ES533
+1508,8388880,Andalusia,ES61
+1509,688888,Almería,ES611
+1510,1247550,Cádiz,ES612
+1511,797769,Cordoba (ES),ES613
+1512,920484,Granada,ES614
+1513,521428,Huelva,ES615
+1514,656132,Jaén,ES616
+1515,1619710,Málaga,ES617
+1516,1936910,Seville,ES618
+1517,1461800,Murcia,ES62
+1518,1461800,Murcia,ES620
+1519,84674,Ceuta,ES63
+1520,84674,Ceuta (ES),ES630
+1521,83870,Melilla,ES64
+1522,83870,Melilla (ES),ES640
+1523,2114850,Canary Islands,ES70
+1524,10603,El Hierro,ES703
+1525,107598,Fuerteventura,ES704
+1526,853144,Gran Canaria,ES705
+1527,21168,La Gomera,ES706
+1528,83874,La Palma,ES707
+1529,139972,Lanzarote,ES708
+1530,898486,Tenerife,ES709
+1531,9644860,Sweden,SWE
+1532,2163040,Stockholm,SE11
+1533,2163040,Stockholm County,SE110
+1534,1605350,East Middle Sweden,SE12
+1535,345481,Uppsala County,SE121
+1536,277569,Södermanland County,SE122
+1537,437848,Östergötland County,SE123
+1538,285395,Örebro County,SE124
+1539,259054,Västmanland County,SE125
+1540,819426,Småland with Islands,SE21
+1541,341235,Jönköping County,SE211
+1542,187156,Kronoberg County,SE212
+1543,233874,Kalmar County,SE213
+1544,57161,Gotland County,SE214
+1545,1426830,South Sweden,SE22
+1546,152757,Blekinge County,SE221
+1547,1274070,Skåne County,SE224
+1548,1921920,West Sweden,SE23
+1549,306840,Halland County,SE231
+1550,1615080,Västra Götaland County,SE232
+1551,829134,North Middle Sweden,SE31
+1552,273815,Värmlands County,SE311
+1553,277349,Dalarna County,SE312
+1554,277970,Gävleborg County,SE313
+1555,368617,Central Norrland,SE32
+1556,242156,Västernorrland County,SE321
+1557,126461,Jämtland County,SE322
+1558,510548,Upper Norrland,SE33
+1559,261112,Västerbottens County,SE331
+1560,249436,Norrbottens County,SE332
+1561,8139630,Switzerland,CHE
+1562,1545820,Lake Geneva Region,CH01
+1563,749373,Vaud,CH011
+1564,327011,Valais,CH012
+1565,469433,Genève,CH013
+1566,1808480,Espace Mittelland,CH02
+1567,1001280,Bern,CH021
+1568,297622,Fribourg (CH),CH022
+1569,261437,Solothurn,CH023
+1570,176402,Neuchâtel,CH024
+1571,71738,Jura (CH),CH025
+1572,1104350,Northwestern Switzerland,CH03
+1573,189335,Basel-Stadt,CH031
+1574,278656,Basel-Landschaft,CH032
+1575,636362,Aargau,CH033
+1576,1425540,Zurich,CH04
+1577,1425540,Zürich,CH040
+1578,1134780,Eastern Switzerland,CH05
+1579,39593,Glarus,CH051
+1580,78783,Schaffhausen,CH052
+1581,53691,Appenzell Ausserrhoden,CH053
+1582,15778,Appenzell Innerrhoden,CH054
+1583,491699,St. Gallen,CH055
+1584,194959,Graubünden,CH056
+1585,260278,Thurgau,CH057
+1586,774123,Central Switzerland,CH06
+1587,390349,Lucerne,CH061
+1588,35865,Uri,CH062
+1589,151396,Schwyz,CH063
+1590,36507,Obwalden,CH064
+1591,41888,Nidwalden,CH065
+1592,118118,Zug,CH066
+1593,346539,Ticino,CH07
+1594,346539,Ticino,CH070
+1595,76667900,Turkey,TUR
+1596,14160500,Istanbul,TR10
+1597,14160500,Istanbul,TR100
+1598,1613620,Thrace,TR21
+1599,874475,Tekirdag,TR211
+1600,398582,Edirne,TR212
+1601,340559,Kirklareli,TR213
+1602,1665090,Southern Marmara - West,TR22
+1603,1162760,Balikesir,TR221
+1604,502328,Çanakkale,TR222
+1605,4061070,Izmir,TR31
+1606,4061070,Izmir,TR310
+1607,2851090,Southern Aegean,TR32
+1608,1020960,Aydin,TR321
+1609,963464,Denizli,TR322
+1610,866665,Mugla,TR323
+1611,2985150,Northern Aegean,TR33
+1612,1359460,Manisa,TR331
+1613,707123,Afyon,TR332
+1614,572059,Kütahya,TR333
+1615,346508,Usak,TR334
+1616,3749580,Eastern Marmara - South,TR41
+1617,2740970,Bursa,TR411
+1618,799724,Eskisehir,TR412
+1619,208888,Bilecik,TR413
+1620,3448700,Eastern Marmara - North,TR42
+1621,1676200,Kocaeli,TR421
+1622,917373,Sakarya,TR422
+1623,351509,Düzce,TR423
+1624,283496,Bolu,TR424
+1625,220122,Yalova,TR425
+1626,5045080,Ankara,TR51
+1627,5045080,Ankara,TR510
+1628,2317160,Central Anatolia - West and South,TR52
+1629,2079230,Konya,TR521
+1630,237939,Karaman,TR522
+1631,2833310,Mediterranean region - West,TR61
+1632,2158270,Antalya,TR611
+1633,417774,Isparta,TR612
+1634,257267,Burdur,TR613
+1635,3855030,Mediterranean region - Middle,TR62
+1636,2149260,Adana,TR621
+1637,1705770,Mersin,TR622
+1638,3077750,Mediterranean region - East,TR63
+1639,1503070,Hatay,TR631
+1640,1075710,Kahramanmaras,TR632
+1641,498981,Osmaniye,TR633
+1642,1510080,Central Anatolia - Middle,TR71
+1643,274658,Kirikkale,TR711
+1644,382806,Aksaray,TR712
+1645,343658,Nigde,TR713
+1646,285460,Nevsehir,TR714
+1647,223498,Kirsehir,TR715
+1648,2363390,Central Anatolia - East,TR72
+1649,1295360,Kayseri,TR721
+1650,623824,Sivas,TR722
+1651,444211,Yozgat,TR723
+1652,1020960,Western Black Sea - West,TR81
+1653,601567,Zonguldak,TR811
+1654,230251,Karabük,TR812
+1655,189139,Bartin,TR813
+1656,763570,Western Black Sea - Middle and East,TR82
+1657,368093,Kastamonu,TR821
+1658,190909,Çankiri,TR822
+1659,204568,Sinop,TR823
+1660,2714580,Middle Black Sea,TR83
+1661,1261810,Samsun,TR831
+1662,598708,Tokat,TR832
+1663,532080,Çorum,TR833
+1664,321977,Amasya,TR834
+1665,2553650,Eastern Black Sea,TR90
+1666,758237,Trabzon,TR901
+1667,731452,Ordu,TR902
+1668,425007,Giresun,TR903
+1669,328205,Rize,TR904
+1670,169334,Artvin,TR905
+1671,141412,Gümüshane,TR906
+1672,1062350,Northeastern Anatolia - West,TRA1
+1673,766729,Erzurum,TRA11
+1674,219996,Erzincan,TRA12
+1675,75620,Bayburt,TRA13
+1676,1145260,Northeastern Anatolia - East,TRA2
+1677,551177,Agri,TRA21
+1678,300874,Kars,TRA22
+1679,190424,Igdir,TRA23
+1680,102782,Ardahan,TRA24
+1681,1681720,Eastern Anatolia - West,TRB1
+1682,762538,Malatya,TRB11
+1683,568239,Elazig,TRB12
+1684,265514,Bingöl,TRB13
+1685,85428,Tunceli,TRB14
+1686,2092860,Eastern Anatolia - East,TRB2
+1687,1070110,Van,TRB21
+1688,412553,Mus,TRB22
+1689,337156,Bitlis,TRB23
+1690,273041,Hakkari,TRB24
+1691,2570210,Southeastern Anatolia - West,TRC1
+1692,1844440,Gaziantep,TRC11
+1693,597184,Adiyaman,TRC12
+1694,128586,Kilis,TRC13
+1695,3409420,Southeastern Anatolia - Middle,TRC2
+1696,1801980,Sanliurfa,TRC21
+1697,1607440,Diyarbakir,TRC22
+1698,2116730,Southeastern Anatolia - East,TRC3
+1699,779738,Mardin,TRC31
+1700,547581,Batman,TRC32
+1701,475255,Sirnak,TRC33
+1702,314153,Siirt,TRC34
+1703,64308300,United Kingdom,GBR
+1704,2612920,North East England,UKC
+1705,286491,Hartlepool and Stockton-on-Tees,UKC11
+1706,274078,South Teesside,UKC12
+1707,105407,Darlington,UKC13
+1708,516959,Durham CC,UKC14
+1709,316271,Northumberland,UKC21
+1710,837723,Tyneside,UKC22
+1711,275990,Sunderland,UKC23
+1712,7115250,North West England,UKD
+1713,234186,West Cumbria,UKD11
+1714,263909,East Cumbria,UKD12
+1715,1494690,Greater Manchester South,UKD31
+1716,1228790,Greater Manchester North,UKD32
+1717,147698,Blackburn with Darwen,UKD41
+1718,141487,Blackpool,UKD42
+1719,1180420,Lancashire CC,UKD43
+1720,205848,Warrington,UKD61
+1721,373645,Cheshire East,UKD62
+1722,331273,Cheshire West and Chester,UKD63
+1723,448817,East Merseyside,UKD71
+1724,470537,Liverpool,UKD72
+1725,273433,Sefton,UKD73
+1726,320519,Wirral,UKD74
+1727,5352880,Yorkshire and The Humber,UKE
+1728,257808,City Of Kingston Upon Hull,UKE11
+1729,337330,East Riding of Yorkshire,UKE12
+1730,329098,North and North East Lincolnshire,UKE13
+1731,202627,York,UKE21
+1732,603885,North Yorkshire CC,UKE22
+1733,798928,Barnsley Doncaster And Rotherham,UKE31
+1734,561947,Sheffield,UKE32
+1735,528744,Bradford,UKE41
+1736,765707,Leeds,UKE42
+1737,636682,Calderdale and Kirklees,UKE44
+1738,330122,Wakefield,UKE45
+1739,4610500,East Midlands,UKF
+1740,252824,Derby,UKF11
+1741,280438,East Derbyshire,UKF12
+1742,497587,South and West Derbyshire,UKF13
+1743,311462,Nottingham,UKF14
+1744,457515,North Nottinghamshire,UKF15
+1745,339719,South Nottinghamshire,UKF16
+1746,334697,Leicester City,UKF21
+1747,700552,Leicestershire CC and Rutland,UKF22
+1748,384158,West Northamptonshire,UKF24
+1749,325221,North Northamptonshire,UKF25
+1750,726323,Lincolnshire,UKF30
+1751,5687060,West Midlands,UKG
+1752,186398,Herefordshire,UKG11
+1753,572226,Worcestershire,UKG12
+1754,550670,Warwickshire,UKG13
+1755,168713,Telford and Wrekin,UKG21
+1756,309417,Shropshire CC,UKG22
+1757,250700,Stoke-on-Trent,UKG23
+1758,857187,Staffordshire CC,UKG24
+1759,1096950,Birmingham,UKG31
+1760,209042,Solihull,UKG32
+1761,331135,Coventry,UKG33
+1762,314584,Dudley,UKG36
+1763,315484,Sandwell,UKG37
+1764,272731,Walsall,UKG38
+1765,251826,Wolverhampton,UKG39
+1766,5977010,East of England,UKH
+1767,189556,Peterborough,UKH11
+1768,635162,Cambridgeshire CC,UKH12
+1769,873298,Norfolk,UKH13
+1770,737377,Suffolk,UKH14
+1771,209539,Luton,UKH21
+1772,1145460,Hertfordshire,UKH23
+1773,162040,Bedford,UKH24
+1774,265392,Central Bedfordshire,UKH25
+1775,176417,Southend-on-Sea,UKH31
+1776,161726,Thurrock,UKH32
+1777,1421040,Essex CC,UKH33
+1778,8472440,Greater London,UKI
+1779,1113750,Inner London - West,UKI11
+1780,2241060,Inner London - East,UKI12
+1781,1824630,Outer London - East and North East,UKI21
+1782,1264800,Outer London - South,UKI22
+1783,2028200,Outer London - West and North West,UKI23
+1784,8821330,South East England,UKJ
+1785,882000,Berkshire,UKJ11
+1786,257542,Milton Keynes,UKJ12
+1787,517241,Buckinghamshire CC,UKJ13
+1788,667072,Oxfordshire,UKJ14
+1789,278875,Brighton and Hove,UKJ21
+1790,535721,East Sussex CC,UKJ22
+1791,1156760,Surrey,UKJ23
+1792,824010,West Sussex,UKJ24
+1793,208749,Portsmouth,UKJ31
+1794,242743,Southampton,UKJ32
+1795,1341760,Hampshire CC,UKJ33
+1796,138904,Isle of Wight,UKJ34
+1797,271972,Medway,UKJ41
+1798,1497990,Kent CC,UKJ42
+1799,5392670,South West England,UKK
+1800,439347,City of Bristol,UKK11
+1801,657059,"Bath and North East Somerset, North Somerset and South Gloucestershire",UKK12
+1802,607714,Gloucestershire,UKK13
+1803,215510,Swindon,UKK14
+1804,480632,Wiltshire CC,UKK15
+1805,339520,Bournemouth and Poole,UKK21
+1806,416700,Dorset CC,UKK22
+1807,539226,Somerset,UKK23
+1808,546130,Cornwall and Isles of Scilly,UKK30
+1809,259748,Plymouth,UKK41
+1810,132129,Torbay,UKK42
+1811,758956,Devon CC,UKK43
+1812,3092900,Wales,UKL
+1813,70091,Isle of Anglesey,UKL11
+1814,122177,Gwynedd,UKL12
+1815,210606,Conwy and Denbighshire,UKL13
+1816,385072,South West Wales,UKL14
+1817,294948,Central Valleys,UKL15
+1818,340855,Gwent Valleys,UKL16
+1819,281244,Bridgend and Neath Port Talbot,UKL17
+1820,241454,Swansea,UKL18
+1821,239560,Monmouthshire and Newport,UKL21
+1822,482406,Cardiff and Vale of Glamorgan,UKL22
+1823,291155,Flintshire and Wrexham,UKL23
+1824,133329,Powys,UKL24
+1825,5337460,Scotland,UKM
+1826,264813,Angus and Dundee City,UKM21
+1827,419102,Clackmannanshire and Fife,UKM22
+1828,186892,East Lothian and Midlothian,UKM23
+1829,113901,Scottish Borders,UKM24
+1830,489869,Edinburgh City Of,UKM25
+1831,157707,Falkirk,UKM26
+1832,240551,Perth & Kinross and Stirling,UKM27
+1833,176936,West Lothian,UKM28
+1834,221087,"East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",UKM31
+1835,150227,Dumfries & Galloway,UKM32
+1836,253504,East Ayrshire and North Ayrshire mainland,UKM33
+1837,598530,Glasgow City,UKM34
+1838,345385,"Inverclyde, East Renfrewshire and Renfrewshire",UKM35
+1839,337678,North Lanarkshire,UKM36
+1840,112790,South Ayrshire,UKM37
+1841,315117,South Lanarkshire,UKM38
+1842,486500,Aberdeen City and Aberdeenshire,UKM50
+1843,95167,Caithness & Sutherland and Ross & Cromarty,UKM61
+1844,198902,"Inverness & Nairn and Moray, Badenoch & Strathspey",UKM62
+1845,100453,"Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",UKM63
+1846,27398,Eilean Siar (Western Isles),UKM64
+1847,21618,Orkney Islands,UKM65
+1848,23334,Shetland Islands,UKM66
+1849,1835850,Northern Ireland,UKN
+1850,282599,Belfast,UKN01
+1851,395129,Outer Belfast,UKN02
+1852,446336,East of Northern Ireland (UK),UKN03
+1853,290854,North of Northern Ireland (UK),UKN04
+1854,420929,West and South of Northern Ireland (UK),UKN05
+1855,318857000,United States,USA
+1856,4849380,Alabama,US01
+1857,736732,Alaska,US02
+1858,6731480,Arizona,US04
+1859,2966370,Arkansas,US05
+1860,38802500,California,US06
+1861,5355870,Colorado,US08
+1862,3596680,Connecticut,US09
+1863,935614,Delaware,US10
+1864,658893,District of Columbia,US11
+1865,19893300,Florida,US12
+1866,10097300,Georgia,US13
+1867,1419560,Hawaii,US15
+1868,1634460,Idaho,US16
+1869,12880600,Illinois,US17
+1870,6596860,Indiana,US18
+1871,3107130,Iowa,US19
+1872,2904020,Kansas,US20
+1873,4413460,Kentucky,US21
+1874,4649680,Louisiana,US22
+1875,1330090,Maine,US23
+1876,5976410,Maryland,US24
+1877,6745410,Massachusetts,US25
+1878,9909880,Michigan,US26
+1879,5457170,Minnesota,US27
+1880,2994080,Mississippi,US28
+1881,6063590,Missouri,US29
+1882,1023580,Montana (US),US30
+1883,1881500,Nebraska,US31
+1884,2839100,Nevada,US32
+1885,1326810,New Hampshire,US33
+1886,8938180,New Jersey,US34
+1887,2085570,New Mexico,US35
+1888,19746200,New York,US36
+1889,9943960,North Carolina,US37
+1890,739482,North Dakota,US38
+1891,11594200,Ohio,US39
+1892,3878050,Oklahoma,US40
+1893,3970240,Oregon,US41
+1894,12787200,Pennsylvania,US42
+1895,1055170,Rhode Island,US44
+1896,4832480,South Carolina,US45
+1897,853175,South Dakota,US46
+1898,6549350,Tennessee,US47
+1899,26957000,Texas,US48
+1900,2942900,Utah,US49
+1901,626562,Vermont,US50
+1902,8326290,Virginia,US51
+1903,7061530,Washington,US53
+1904,1850330,West Virginia,US54
+1905,5757560,Wisconsin,US55
+1906,584153,Wyoming,US56
+1907,82488,"Aberdeen, SD",US001
+1908,229078,"Abilene, TX",US002
+1909,610262,"Albany, GA",US003
+1910,1391360,"Albany-Schenectady-Amsterdam, NY",US004
+1911,949246,"Albuquerque, NM",US005
+1912,229788,"Alpena, MI",US006
+1913,503864,"Amarillo, TX",US007
+1914,736732,"Anchorage, AK",US008
+1915,865650,"Appleton-Oshkosh-Neenah, WI",US009
+1916,712734,"Asheville-Brevard, NC",US010
+1917,7813450,"Atlanta-Sandy Springs-Gainesville, GA-AL",US011
+1918,640131,"Augusta-Richmond County, GA-SC",US012
+1919,2063630,"Austin-Round Rock, TX",US013
+1920,326391,"Bangor, ME",US014
+1921,857703,"Baton Rouge-Pierre Part, LA",US015
+1922,462397,"Beaumont-Port Arthur, TX",US016
+1923,228542,"Bend-Prineville, OR",US017
+1924,368218,"Billings, MT",US018
+1925,1767550,"Birmingham-Hoover-Cullman, AL",US019
+1926,200078,"Bismarck, ND",US020
+1927,767419,"Boise City-Nampa, ID",US021
+1928,8493520,"Boston-Worcester-Manchester, MA-NH",US022
+1929,1454510,"Buffalo-Niagara-Cattaraugus, NY",US023
+1930,395319,"Burlington-South Burlington, VT",US024
+1931,300871,"Cape Girardeau-Jackson, MO-IL",US025
+1932,373306,"Casper, WY",US026
+1933,527323,"Cedar Rapids, IA",US027
+1934,549844,"Champaign-Urbana, IL",US028
+1935,1184420,"Charleston, WV",US029
+1936,765460,"Charleston-North Charleston, SC",US030
+1937,3084340,"Charlotte-Gastonia-Salisbury, NC-SC",US031
+1938,10485500,"Chicago-Naperville-Michigan City, IL-IN-WI",US032
+1939,2373330,"Cincinnati-Middletown-Wilmington, OH-KY-IN",US033
+1940,346186,"Clarksburg, WV + Morgantown, WV",US034
+1941,4549240,"Cleveland-Akron-Elyria, OH",US035
+1942,753224,"Colorado Springs, CO",US036
+1943,515516,"Columbia, MO",US037
+1944,1103930,"Columbia-Newberry, SC",US038
+1945,496078,"Columbus-Auburn-Opelika, GA-AL",US039
+1946,2792770,"Columbus-Marion-Chillicothe, OH",US040
+1947,880086,"Corpus Christi-Kingsville, TX",US041
+1948,8570130,"Dallas-Fort Worth, TX",US042
+1949,487957,"Davenport-Moline-Rock Island, IA-IL",US043
+1950,1373600,"Dayton-Springfield-Greenville, OH",US044
+1951,4412410,"Denver-Aurora-Boulder, CO",US045
+1952,1296100,"Des Moines-Newton-Pella, IA",US046
+1953,6813090,"Detroit-Warren-Flint, MI",US047
+1954,315604,"Dothan-Enterprise-Ozark, AL",US048
+1955,607051,"Dover, DE",US049
+1956,354576,"Duluth, MN-WI",US050
+1957,1202520,"El Paso, TX",US051
+1958,506189,"Erie, PA",US052
+1959,821670,"Eugene-Springfield, OR",US053
+1960,771375,"Evansville, IN-KY",US054
+1961,320005,"Fargo-Wahpeton, ND-MN",US055
+1962,219274,"Farmington, NM",US056
+1963,565285,"Fayetteville-Springdale-Rogers, AR-MO",US057
+1964,144936,"Flagstaff, AZ",US058
+1965,340741,"Fort Smith, AR-OK",US059
+1966,800935,"Fort Wayne-Huntington-Auburn, IN",US060
+1967,1746670,"Fresno-Madera, CA",US061
+1968,491503,"Gainesville, FL",US062
+1969,209201,"Grand Forks, ND-MN",US063
+1970,1964390,"Grand Rapids-Muskegon-Holland, MI",US064
+1971,149133,"Great Falls, MT",US065
+1972,2001170,"Greensboro--Winston-Salem--High Point, NC",US066
+1973,722475,"Greenville, NC",US067
+1974,1439790,"Greenville-Spartanburg-Anderson, SC",US068
+1975,427322,"Gulfport-Biloxi-Pascagoula, MS",US069
+1976,2218950,"Harrisburg-Carlisle-Lebanon, PA",US070
+1977,324686,"Harrisonburg, VA",US071
+1978,2304930,"Hartford-West Hartford-Willimantic, CT",US072
+1979,271337,"Helena, MT",US073
+1980,1419560,"Honolulu, HI",US074
+1981,7501690,"Houston-Baytown-Huntsville, TX",US075
+1982,1128940,"Huntsville-Decatur, AL",US076
+1983,350931,"Idaho Falls-Blackfoot, ID",US077
+1984,3520270,"Indianapolis-Anderson-Columbus, IN",US078
+1985,1824600,"Jacksonville, FL",US079
+1986,1676080,"Jackson-Yazoo City, MS",US080
+1987,870099,"Johnson City-Kingsport-Bristol (Tri-Cities), TN-VA",US081
+1988,313307,"Jonesboro, AR",US082
+1989,371615,"Joplin, MO",US083
+1990,2707520,"Kansas City-Overland Park-Kansas City, MO-KS",US084
+1991,328927,"Kearney, NE",US085
+1992,585811,"Kennewick-Richland-Pasco, WA",US086
+1993,728574,"Killeen-Temple-Fort Hood, TX",US087
+1994,1237030,"Knoxville-Sevierville-La Follette, TN",US088
+1995,262651,"La Crosse, WI-MN",US089
+1996,866401,"Lafayette-Acadiana, LA",US090
+1997,349403,"Lake Charles-Jennings, LA",US091
+1998,2527010,"Las Vegas-Paradise-Pahrump, NV",US092
+1999,93026,"Lewiston, ID-WA",US093
+2000,1548440,"Lexington-Fayette--Frankfort--Richmond, KY",US094
+2001,425990,"Lincoln, NE",US095
+2002,1572480,"Little Rock-North Little Rock-Pine Bluff, AR",US096
+2003,20579600,"Los Angeles-Long Beach-Riverside, CA",US097
+2004,1641660,"Louisville-Elizabethtown-Scottsburg, KY-IN",US098
+2005,459796,"Lubbock-Levelland, TX",US099
+2006,673814,"Macon-Warner Robins-Fort Valley, GA",US100
+2007,1209980,"Madison-Baraboo, WI",US101
+2008,331857,"Marinette, WI-MI",US102
+2009,157023,"Mason City, IA",US103
+2010,1336320,"McAllen-Edinburg-Pharr, TX",US104
+2011,2053540,"Memphis, TN-MS-AR",US105
+2012,6687420,"Miami-Fort Lauderdale-Miami Beach, FL",US106
+2013,644098,"Midland-Odessa, TX",US107
+2014,2359950,"Milwaukee-Racine-Waukesha, WI",US108
+2015,5460010,"Minneapolis-St. Paul-St. Cloud, MN-WI",US109
+2016,163524,"Minot, ND",US110
+2017,312483,"Missoula, MT",US111
+2018,760571,"Mobile-Daphne-Fairhope, AL",US112
+2019,339322,"Monroe-Bastrop, LA",US113
+2020,555155,"Montgomery-Alexander City, AL",US114
+2021,1110730,"Myrtle Beach-Conway-Georgetown, SC",US115
+2022,3004160,"Nashville-Davidson--Murfreesboro--Columbia, TN",US116
+2023,1691760,"New Orleans-Metairie-Bogalusa, LA",US117
+2024,23708700,"New York-Newark-Bridgeport, NY-NJ-CT-PA",US118
+2025,2170280,"Oklahoma City-Shawnee, OK",US119
+2026,1098030,"Omaha-Council Bluffs-Fremont, NE-IA",US120
+2027,4841480,"Orlando-The Villages, FL",US121
+2028,244306,"Paducah, KY-IL",US122
+2029,302363,"Panama City-Lynn Haven, FL",US123
+2030,146949,"Pendleton-Hermiston, OR",US124
+2031,732123,"Pensacola-Ferry Pass-Brent, FL",US125
+2032,879924,"Peoria-Canton, IL",US126
+2033,7138600,"Philadelphia-Camden-Vineland, PA-NJ-DE-MD",US127
+2034,5070520,"Phoenix-Mesa-Scottsdale, AZ",US128
+2035,2876380,"Pittsburgh-New Castle, PA",US129
+2036,1003700,"Portland-Lewiston-South Portland, ME",US130
+2037,3244340,"Portland-Vancouver-Beaverton, OR-WA",US131
+2038,241628,"Pueblo, CO",US132
+2039,3432740,"Raleigh-Durham-Cary, NC",US133
+2040,250535,"Rapid City, SD",US134
+2041,360977,"Redding, CA",US135
+2042,726952,"Reno-Sparks, NV",US136
+2043,1720520,"Richmond, VA",US137
+2044,823778,"Roanoke, VA",US138
+2045,1533670,"Rochester-Batavia-Seneca Falls, NY",US139
+2046,2872110,"Sacramento--Arden-Arcade--Truckee, CA-NV",US140
+2047,191856,"Salina, KS",US141
+2048,2744880,"Salt Lake City-Ogden-Clearfield, UT",US142
+2049,150334,"San Angelo, TX",US143
+2050,2635790,"San Antonio, TX",US144
+2051,3263430,"San Diego-Carlsbad-San Marcos, CA",US145
+2052,10285200,"San Jose-San Francisco-Oakland, CA",US146
+2053,276006,"Santa Fe-Espanola, NM",US147
+2054,1980480,"Sarasota-Bradenton-Venice, FL",US148
+2055,886559,"Savannah-Hinesville-Fort Stewart, GA",US149
+2056,91219,"Scotts Bluff, NE",US150
+2057,653000,"Scranton--Wilkes-Barre, PA",US151
+2058,4988200,"Seattle-Tacoma-Olympia, WA",US152
+2059,562216,"Shreveport-Bossier City-Minden, LA",US153
+2060,377933,"Sioux City-Vermillion, IA-NE-SD",US154
+2061,514433,"Sioux Falls, SD",US155
+2062,958024,"South Bend-Mishawaka, IN-MI",US156
+2063,865506,"Spokane, WA",US157
+2064,626122,"Springfield, IL",US158
+2065,1033990,"Springfield, MO",US159
+2066,3393420,"St. Louis-St. Charles-Farmington, MO-IL",US160
+2067,801723,"State College, PA",US161
+2068,2024280,"Syracuse-Auburn, NY",US162
+2069,541181,"Tallahassee, FL",US163
+2070,2915580,"Tampa-St. Petersburg-Clearwater, FL",US164
+2071,314853,"Texarkana, TX-Texarkana, AR",US165
+2072,984875,"Toledo-Fremont, OH",US166
+2073,481875,"Topeka, KS",US167
+2074,283287,"Traverse City, MI",US168
+2075,1178660,"Tucson, AZ",US169
+2076,1386940,"Tulsa-Bartlesville, OK",US170
+2077,551035,"Tupelo, MS",US171
+2078,190496,"Twin Falls, ID",US172
+2079,1917460,"Virginia Beach-Norfolk-Newport News, VA-NC",US173
+2080,9920890,"Washington-Baltimore-Northern Virginia, DC-MD-VA-WV",US174
+2081,226380,"Waterloo-Cedar Falls, IA",US175
+2082,521413,"Wausau-Merrill, WI",US176
+2083,268008,"Wenatchee, WA",US177
+2084,188234,"Wichita Falls, TX",US178
+2085,1091180,"Wichita-Winfield, KS",US179
+2086,1263050000,OECD,OECD
+2087,506913000,European Union 28 countries,EU28
+2088,202883000,Brazil,BRA
+2089,790101,Acre,BR01
+2090,750912,Amapá,BR02
+2091,3873740,Amazonas,BR03
+2092,8073920,Pará,BR04
+2093,1748530,Rondônia,BR05
+2094,496936,Roraima,BR06
+2095,1496880,Tocantins,BR07
+2096,3321310,Alagoas,BR08
+2097,15126400,Bahia,BR09
+2098,8843550,Ceará,BR10
+2099,6850880,Maranhão,BR11
+2100,3943890,Paraíba,BR12
+2101,9278150,Pernambuco,BR13
+2102,3193960,Piauí,BR14
+2103,3408510,Rio Grande Do Norte,BR15
+2104,2219570,Sergipe,BR16
+2105,3885050,Espírito Santo,BR17
+2106,20848600,Minas Gerais,BR18
+2107,16461200,Rio De Janeiro,BR19
+2108,44035300,São Paulo,BR20
+2109,11081700,Paraná,BR21
+2110,11207300,Rio Grande Do Sul,BR22
+2111,6727150,Santa Catarina,BR23
+2112,2852370,Distrito Federal (BR),BR24
+2113,6523220,Goiás,BR25
+2114,3224360,Mato Grosso,BR26
+2115,2619660,Mato Grosso Do Sul,BR27
+2116,1355170000,China,CHN
+2117,21148000,Beijing,CN01
+2118,14722100,Tianjin,CN02
+2119,73326100,Hebei,CN03
+2120,36298000,Shanxi,CN04
+2121,24976100,Inner Mongolia,CN05
+2122,43900000,Liaoning,CN06
+2123,27512800,Jilin,CN07
+2124,38350200,Heilongjiang,CN08
+2125,24151500,Shanghai,CN09
+2126,79394900,Jiangsu,CN10
+2127,54980000,Zhejiang,CN11
+2128,60298000,Anhui,CN12
+2129,37740000,Fujian,CN13
+2130,45221500,Jiangxi,CN14
+2131,97333900,Shandong,CN15
+2132,94133500,Henan,CN16
+2133,57990000,Hubei,CN17
+2134,66906000,Hunan,CN18
+2135,106440000,Guangdong,CN19
+2136,47190000,Guangxi,CN20
+2137,8952800,Hainan,CN21
+2138,29700000,Chongqing,CN22
+2139,81070000,Sichuan,CN23
+2140,35022200,Guizhou,CN24
+2141,46866000,Yunnan,CN25
+2142,3120400,Tibet,CN26
+2143,37640000,Shaanxi,CN27
+2144,25821800,Gansu,CN28
+2145,5777900,Qinghai,CN29
+2146,6541900,Ningxia,CN30
+2147,22643000,Xinjiang,CN31
+2148,47661800,Colombia,COL
+2149,6378130,Antioquia,CO05
+2150,2432000,Atlántico,CO08
+2151,7776850,Bogotá Capital District,CO11
+2152,2073000,Bolívar,CO13
+2153,1274620,Boyacá,CO15
+2154,986042,Caldas,CO17
+2155,471541,Caquetá,CO18
+2156,1366980,Cauca,CO19
+2157,1016530,Cesar,CO20
+2158,1683780,Córdoba (CO),CO23
+2159,2639060,Cundinamarca,CO25
+2160,495151,Chocó,CO27
+2161,1140540,Huila,CO41
+2162,930143,La Guajira,CO44
+2163,1247510,Magdalena,CO47
+2164,943072,Meta,CO50
+2165,1722950,Nariño,CO52
+2166,1344040,Norte de Santander,CO54
+2167,562114,Quindio,CO63
+2168,946632,Risaralda,CO66
+2169,2051020,Santander,CO68
+2170,843202,Sucre,CO70
+2171,1404260,Tolima,CO73
+2172,4566880,Valle del Cauca,CO76
+2173,259447,Arauca,CO81
+2174,350239,Casanare,CO85
+2175,341034,Putumayo,CO86
+2176,75801,San Andrés,CO88
+2177,75388,Amazonas,CO91
+2178,40839,Guainía,CO94
+2179,109490,Guaviare,CO95
+2180,43240,Vaupés,CO97
+2181,70260,Vichada,CO99
+2182,4770660,Costa Rica,CRI
+2183,..,San José,CR01
+2184,..,Alajuela,CR02
+2185,..,Cartago,CR03
+2186,..,Heredia,CR04
+2187,..,Guanacaste,CR05
+2188,..,Puntarenas,CR06
+2189,..,Limón,CR07
+2190,..,India,IND
+2191,..,Jammu and Kashmir,IN01
+2192,..,Himachal Pradesh,IN02
+2193,..,National Capital Territory of Delhi,IN03
+2194,..,Rajasthan,IN04
+2195,..,Uttar Pradesh,IN05
+2196,..,Sikkim,IN06
+2197,..,Arunachal Pradesh,IN07
+2198,..,Nagaland,IN08
+2199,..,Meghalaya,IN09
+2200,..,Assam,IN10
+2201,..,West Bengal,IN11
+2202,..,Gujarat,IN12
+2203,..,Dadra & Nagar Haveli,IN13
+2204,..,Maharashtra,IN14
+2205,..,Daman & Diu,IN15
+2206,..,Lakshadweep,IN16
+2207,..,Kerala,IN17
+2208,..,Punjab,IN18
+2209,..,Chandigarh,IN19
+2210,..,Haryana,IN20
+2211,..,Uttaranchal,IN21
+2212,..,Bihar,IN22
+2213,..,Jharkhand,IN23
+2214,..,Manipur,IN24
+2215,..,Mizoram,IN25
+2216,..,Tripura,IN26
+2217,..,Orissa,IN27
+2218,..,Madhya Pradesh,IN28
+2219,..,Chhattisgarh,IN29
+2220,..,Andhra Pradesh,IN30
+2221,..,Karnataka,IN31
+2222,..,Goa,IN32
+2223,..,Tamil Nadu,IN33
+2224,..,Puducherry,IN34
+2225,..,Andaman and Nicobar Islands,IN35
+2226,254480000,Indonesia,IDN
+2227,10178000,DKI Jakarta Province,ID01
+2228,11807000,Banten Province,ID02
+2229,3664000,D.I. Yogyakarta Province,ID03
+2230,46438000,West Java Province,ID04
+2231,38957000,East Java Province,ID05
+2232,33817000,Central Java Province,ID06
+2233,4148000,Bali Province,ID07
+2234,4962000,Aceh Province,ID08
+2235,13893000,North Sumatera Province,ID09
+2236,1858000,Bengkulu Province,ID10
+2237,6234000,Riau Province,ID11
+2238,1934000,Riau Mainland Province,ID12
+2239,5191000,West Sumatera Province,ID13
+2240,8015000,South Sumatera Province,ID14
+2241,1349000,Bangka Belitung Province,ID15
+2242,3384000,Jambi Province,ID16
+2243,8092000,Lampung Province,ID17
+2244,3130000,Papua Province,ID18
+2245,865000,West Papua Province,ID19
+2246,1120000,Gorontalo Province,ID20
+2247,4758000,West Kalimantan Province,ID21
+2248,3969000,South Kalimantan Province,ID22
+2249,2468000,Middle Kalimantan Province,ID23
+2250,4020000,East Kalimantan Province,ID24
+2251,1679000,Maluku Province,ID25
+2252,1145000,North Maluku Province,ID26
+2253,2468000,South East Sulawesi Province,ID27
+2254,2417000,North Sulawesi Province,ID28
+2255,8499000,South Sulawesi Province,ID29
+2256,2850000,Middle Sulawesi Province,ID30
+2257,1272000,West Sulawesi Province,ID31
+2258,4809000,Western Lesser Sundas Province,ID32
+2259,5089000,Eastern Lesser Sundas Province,ID33
+2260,2001470,Latvia,LVA
+2261,2001470,Latvia,LV00
+2262,258034,Kurzeme,  LV003
+2263,286238,Latgale,  LV005
+2264,643368,Riga,  LV006
+2265,367038,Pieriga,  LV007
+2266,201915,Vidzeme,  LV008
+2267,244875,Zemgale,  LV009
+2268,2943470,Lithuania,LTU
+2269,2943470,Lithuania,LT00
+2270,149851,Alytus county,  LT001
+2271,587238,Kaunas county,  LT002
+2272,329013,Klaipeda county,  LT003
+2273,154084,Marijampole county,  LT004
+2274,238748,Panevežys county,  LT005
+2275,285763,Šiauliai county,  LT006
+2276,104623,Taurage county,  LT007
+2277,145482,Telšiai county,  LT008
+2278,142564,Utena county,  LT009
+2279,806106,Vilnius county,  LT00A
+2280,145847000,Russia,RUS
+2281,1544110,Belgorod Oblast,RU01
+2282,1242600,Bryansk Oblast,RU02
+2283,1413320,Vladimir Oblast,RU03
+2284,2328960,Voronezh Oblast,RU04
+2285,1043130,Ivanovo Oblast,RU05
+2286,1004540,Kaluga Oblast,RU06
+2287,656389,Kostroma Oblast,RU07
+2288,1118920,Kursk Oblast,RU08
+2289,1159870,Lipetsk Oblast,RU09
+2290,7133620,Moscow Oblast,RU10
+2291,769980,Oryol Oblast,RU11
+2292,1140840,Ryazan Oblast,RU12
+2293,967896,Smolensk Oblast,RU13
+2294,1068930,Tambov Oblast,RU14
+2295,1325250,Tver Oblast,RU15
+2296,1521500,Tula Oblast,RU16
+2297,1271770,Yaroslavl Oblast,RU17
+2298,12108300,City of Moscow,RU18
+2299,634402,Republic of Karelia,RU19
+2300,872057,Komi republic,RU20
+2301,1191790,Arkhangelsk Oblast,RU21
+2302,43025,Nenets Autonomous Okrug,RU22
+2303,1193370,Vologda Oblast,RU23
+2304,963128,Kaliningrad Oblast,RU24
+2305,1763920,Leningrad Oblast,RU25
+2306,771058,Murmansk Oblast,RU26
+2307,622430,Novgorod Oblast,RU27
+2308,656561,Pskov Oblast,RU28
+2309,5131940,Federal City of Saint Petersburg,RU29
+2310,446406,Republic of Adygea,RU30
+2311,282021,Republic of Kalmykia,RU31
+2312,5404270,Krasnodar Krai,RU32
+2313,1016520,Astrakhan Oblast,RU33
+2314,2569130,Volgograd Oblast,RU34
+2315,4245530,Rostov Oblast,RU35
+2316,2963920,Republic of Dagestan,RU36
+2317,453010,Republic of Ingushetia,RU37
+2318,858397,Kabardino-Balkar Republic,RU38
+2319,469837,Karachay-Cherkhess Republic,RU39
+2320,703977,Republic of North Ossetia-Alania,RU40
+2321,1346440,Chechen Republic,RU41
+2322,2794510,Stavropol Krai,RU42
+2323,4069700,Republic of Bashkorstostan,RU43
+2324,688686,Mari El Republic,RU44
+2325,812156,Republic of Mordovia,RU45
+2326,3838230,Republic of Tatarstan,RU46
+2327,1517050,Udmurt Republic,RU47
+2328,1239980,Chuvash Republic,RU48
+2329,2636150,Perm Krai,RU49
+2330,1310930,Kirov Oblast,RU50
+2331,3281500,Nizhny Novgorod Oblast,RU51
+2332,2008570,Orenburg Oblast,RU52
+2333,1360590,Penza Oblast,RU53
+2334,3211190,Samara Oblast,RU54
+2335,2496550,Saratov Oblast,RU55
+2336,1267560,Ulianov Oblast,RU56
+2337,877149,Kurgan Oblast,RU57
+2338,4320680,Sverdlovsk Oblast,RU58
+2339,3546350,Tyumen Oblast,RU59
+2340,1597250,Khanty-Mansi Autonomous Okrug - Yugra,RU60
+2341,539671,Yamalo-Nenets Autonomous Okrug,RU61
+2342,3490050,Chelyabinsk Oblast,RU62
+2343,211645,Republic of Altai,RU63
+2344,973860,Buryat Republic,RU64
+2345,311761,Tyva Republic,RU65
+2346,534079,Republic of Khakassia,RU66
+2347,2390640,Altai Krai,RU67
+2348,1090340,Zabaykalsky Krai,RU68
+2349,2852810,Krasnoyarsk Krai,RU69
+2350,2418350,Irkutsk Oblast,RU70
+2351,2734080,Kemerovo oblast,RU71
+2352,2731180,Novosibirsk Oblast,RU72
+2353,1973880,Omsk Oblast,RU73
+2354,1070130,Tomsk Oblast,RU74
+2355,954803,Sakha Republic (Yakutia),RU75
+2356,319864,Kamchatka Krai,RU76
+2357,1938520,Primorsky Krai,RU77
+2358,1339910,Khabarovsk Krai,RU78
+2359,811274,Amur Oblast,RU79
+2360,150312,Magadan Oblast,RU80
+2361,491027,Sakhalin Oblast,RU81
+2362,170377,Jewish Autonomous Oblast,RU82
+2363,50555,Chukotka Autonomous Okrug,RU83
+2364,54002000,South Africa,ZAF
+2365,6786880,Eastern Cape,ZA01
+2366,2786760,Free State,ZA02
+2367,12914800,Gauteng,ZA03
+2368,10694400,KwaZulu-Natal,ZA04
+2369,5630460,Limpopo,ZA05
+2370,4229320,Mpumalanga,ZA06
+2371,1166680,Northern Cape,ZA07
+2372,3676270,North West,ZA08
+2373,6116320,Western Cape,ZA09
