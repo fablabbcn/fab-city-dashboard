@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, nav {
 }
 
 a {
-    color: #E62339;
+    color: #01a158;
 }
 
 a :hover, a :focus, a :active, a .active {
@@ -36,7 +36,7 @@ h2.section-subheading {
 }
 
 h1.city-title {
-    font-size: 70px;
+    font-size: 60px;
     padding: 0px;
     margin: 150px 0px 5px 0px;
 }
@@ -68,15 +68,28 @@ p.city-description {
 /*BUTTONS */
 
 .btn-xl {
-    padding: 10px 20px;
-    border-color: #E62339;
-    border-radius: 3px;
+    padding: 8px 15px;
+    border: 1px solid #01a158;
+    border-radius: 0px;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    background-color: transparent;
+    text-transform: lowercase;
+}
+
+.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     color: #fff;
-    background-color: #E62339;
+    background-color: #01a158;
+    border-color: #01a158;
+}
+
+.inverted{
+    border-color: #01a158;
+    background-color: #01a158;
+    color: #F7F7F7 ;
 }
 
 .menu {
@@ -95,10 +108,7 @@ p.city-description {
     margin-top: -1px;
 }
 
-.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
-    color: #fff;
-    background-color: #d41111;
-}
+
 
 .btn-tool {
     margin-bottom: 5px;
@@ -129,7 +139,7 @@ p.city-description {
     color: #F7F7F7;
 }
 
-.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
+.navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
     color: #F7F7F7;
     background-color: #E62339;
 }
