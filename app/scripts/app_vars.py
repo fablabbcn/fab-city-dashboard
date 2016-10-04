@@ -91,6 +91,7 @@ modules_html_dict = {
     "inf_in" : "infos/mod_intro.html",                 #text
     "inf_re" : "infos/mod_intro_resilience.html",      #text
     "inf_pa" : "infos/mod_participation.html",         #form/comment
+    "inf_pr" : "infos/mod_projects.html",         #form/comment
 
     #},
 
@@ -161,6 +162,7 @@ user_profiles = {
                         { "400px" : [ {"inf_in" : 12 }      ]    },
                         { "400px" : [ {"inf_re" : 12 }      ]    },
                         { "400px" : [ {"cit_if" : 12 }      ]    },
+                        { "400px" : [ {"inf_pr" : 12 }      ]    },
                         { "200px" : [ {"inf_co": 12 }       ]    },
                       ],
 
