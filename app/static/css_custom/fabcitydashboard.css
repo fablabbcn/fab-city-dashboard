@@ -38,7 +38,7 @@ h2.section-subheading {
 h1.city-title {
     font-size: 60px;
     padding: 0px;
-    margin: 150px 0px 5px 0px;
+    margin: 80px 0px 5px 0px;
 }
 
 h3.country-title {
@@ -75,15 +75,15 @@ p.city-description {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #777;
-    background-color: transparent;
+    color: #F7F7F7;
+    background-color: #01a158;
     text-transform: lowercase;
 }
 
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
-    color: #fff;
-    background-color: #01a158;
-    border-color: #01a158;
+    color: #777;
+    border: 1px solid #01a158;
+    background-color: transparent;
 }
 
 .inverted{
@@ -435,4 +435,45 @@ h2, h3 {
 
 .dropdown-menu li a{
     font-family: "Montserrat", sans-serif;
+}
+
+/*** SEARCH BAR  ****/
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+} 
+
+.input-lg {
+    height: 100px;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif ;
+    padding-left: 6%;
 }
