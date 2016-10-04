@@ -23,7 +23,7 @@ a :hover, a :focus, a :active, a .active {
 }
 
 h2.section-heading {
-    font-size: 30px;
+    font-size: 40px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -86,6 +86,10 @@ p.city-description {
     background-color: #d1d1d1;
     text-transform: lowercase;
     font-weight: 400;
+}
+
+.menu:hover{
+    background-color: #222;
 }
 
 .btn-link {
@@ -262,13 +266,16 @@ p.city-description {
 
 .inf_co {
     background-color: #222;
-    background-image: url("url_for( 'static', filename='images/backgrounds/map-image.png'");
+    background-image: url('../images/backgrounds/map-image.png');
     background-repeat: no-repeat;
     background-position: center center fixed;
 }
 
 .inf_re {
     background-color: #222;
+    background-image: url('../images/backgrounds/map-image.png');
+    background-repeat: no-repeat;
+    background-position: center center fixed;
 }
 
 .inf_in {}
