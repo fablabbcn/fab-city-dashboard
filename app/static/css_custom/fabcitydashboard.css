@@ -38,7 +38,7 @@ h2.section-subheading {
 h1.city-title {
     font-size: 60px;
     padding: 0px;
-    margin: 150px 0px 5px 0px;
+    margin: 80px 0px 5px 0px;
 }
 
 h3.country-title {
@@ -437,7 +437,8 @@ h2, h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-/*** Search Bar  ****/
+/*** SEARCH BAR  ****/
+
 #custom-search-input{
     padding: 3px;
     border: solid 1px #E4E4E4;
@@ -468,4 +469,11 @@ h2, h3 {
 
 #custom-search-input .glyphicon-search{
     font-size: 23px;
+} 
+
+.input-lg {
+    height: 80px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif ;
+    padding-left: 6%;
 }
