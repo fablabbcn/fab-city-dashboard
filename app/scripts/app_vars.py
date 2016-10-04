@@ -283,3 +283,4 @@ geoJSON_dict     = {
                         "metropolitan_areas_OECD" : "SWE_MAs_2016"},
             "USA"   : { "country": "USA", "regions" : "USA_admin_level_4" ,
                         "metropolitan_areas_OECD" : "USA_MAs_2016"},
+}
