@@ -79,8 +79,7 @@ p.city-description {
     background-color: #E62339;
 }
 
-.menu  {
-
+.menu {
     border-color: #d1d1d1;
     color: #222;
     background-color: #d1d1d1;
@@ -336,7 +335,7 @@ p.city-description {
     padding-bottom: 100%;
     vertical-align: top;
     overflow: hidden;
-    border: 1px solid red;
+    margin-top: 30px;
 }
 
 .svg-content {
@@ -347,6 +346,10 @@ p.city-description {
     font-family: "Dosis", sans-serif;
     font-weight: bold;
     font-size: 60%;
+}
+
+#container2 {
+    height: 200px !important;
 }
 
 
