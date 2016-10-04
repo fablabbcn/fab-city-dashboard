@@ -68,21 +68,27 @@ p.city-description {
 /*BUTTONS */
 
 .btn-xl {
-    padding: 10px 20px;
-    border-color: #e6e6e6;
-    border-radius: 3px;
+    padding: 8px 20px;
+    border: 1px solid #01a158;
+    border-radius: 5px;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    color: #222;
-    background-color: #e6e6e6;
+    color: #777;
+    background-color: transparent;
     text-transform: lowercase;
 }
 
+.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
+    color: #fff;
+    background-color: #01a158;
+    border-color: #01a158;
+}
+
 .inverted{
-    border-color: #d41111;
-    background-color: #d41111;
+    border-color: #01a158;
+    background-color: #01a158;
     color: #F7F7F7 ;
 }
 
@@ -102,11 +108,7 @@ p.city-description {
     margin-top: -1px;
 }
 
-.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
-    color: #fff;
-    background-color: #d41111;
-    border-color: #d41111;
-}
+
 
 .btn-tool {
     margin-bottom: 5px;
