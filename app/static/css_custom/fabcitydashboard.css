@@ -185,6 +185,7 @@ p.city-description {
     text-transform: uppercase;
 }
 
+
 /* DIVS      */
 
 .content {
@@ -196,8 +197,9 @@ p.city-description {
 }
 
 .photo {
-    float: left; width: 200px; 
-    height: 200px; 
+    float: left;
+    width: 200px;
+    height: 200px;
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
@@ -349,11 +351,8 @@ p.city-description {
     display: inline-block;
     position: relative;
     width: 100%;
-    padding-bottom: 100%;
     vertical-align: top;
     overflow: hidden;
-    margin-top: 30px;
-    border: 1px solid red;
 }
 
 .svg-content {
@@ -366,8 +365,25 @@ p.city-description {
     font-size: 60%;
 }
 
-#container2 {
-    height: 200px !important;
+#city-region-country {
+    padding-bottom: 28%;
+}
+
+#resilience-container1 {
+    padding-bottom: 100%;
+}
+
+#resilience-container2 {
+    padding-bottom: 100%;
+}
+
+#project-sliders {
+    padding-bottom: 100%;
+}
+
+h2, h3 {
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 

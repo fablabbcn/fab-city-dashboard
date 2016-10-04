@@ -530,36 +530,36 @@
                         var cire_ratio = (ratio1 + ratio2) / 2
 
                         var gdp = [{
-                            "city": city_gdp[69]["2012"]
+                            "City GDP": city_gdp[69]["2012"]
                         }, {
-                            "region": region_gdp[848]["2012"]
+                            "Region GDP": region_gdp[848]["2012"]
                         }, {
-                            "country": country_gdp[24]["2015"]
+                            "Country GDP": country_gdp[24]["2015"]
                         }];
                         var pop = [{
-                            "city": city_pop[69]["2014"]
+                            "City population": city_pop[69]["2014"]
                         }, {
-                            "region": region_pop[1495]["2014"]
+                            "Region population": region_pop[1495]["2014"]
                         }, {
-                            "country": country_pop[28]["2011"]
+                            "Country population": country_pop[28]["2011"]
                         }];
                         var surf = [{
-                            "city": city_surf[69]["2014"]
+                            "City surface": city_surf[69]["2014"]
                         }, {
-                            "region": region_surf[1457]["2014"]
+                            "Region surface": region_surf[1457]["2014"]
                         }, {
-                            "country": country_surf[178]["2015"]
+                            "Country surface": country_surf[178]["2015"]
                         }];
 
                         // variables
                         var zerox = 0;
-                        var zeroy = 0;
+                        var zeroy = 5;
                         var zeroy2 = 10;
                         var width = 300;
                         var barHeight = 13;
                         var space_between_bars = barHeight * 2;
                         var space_between_groups = 20;
-                        var legend_width = 150;
+                        var legend_width = 120;
 
                         // Linear scale for gdp
                         var gdpScale = d3.scaleLinear()
@@ -577,8 +577,8 @@
                         // Access svg area
                         var svg = d3.select(id)
                             .append("svg")
-                            .attr("preserveAspectRatio", "xMaxYMax meet")
-                            .attr("viewBox", "0 0 800 200")
+                            .attr("preserveAspectRatio", "xMinYMin meet")
+                            .attr("viewBox", "0 0 600 200")
                             .classed("svg-content", true);
 
                         // Rounded bars
@@ -590,85 +590,37 @@
                             .data(gdp)
                             .enter()
                             .append("g")
+                            .attr("transform", "translate(0, " + zeroy + ")");
 
                         var barp = pop_g.selectAll("g")
                             .data(pop)
                             .enter()
                             .append("g")
+                            .attr("transform", "translate(0, " + (zeroy + 60) + ")");
 
                         var bars = surf_g.selectAll("g")
                             .data(surf)
                             .enter()
                             .append("g")
+                            .attr("transform", "translate(0, " + (zeroy + 120) + ")");
 
                         // Scale line: gdp
                         barg.append("line")
                             .style("stroke", "#b3b3b3")
                             .attr("x1", zerox + legend_width)
                             .attr("y1", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + 6;
+                                return zeroy + i * barHeight;
                             })
                             .attr("x2", zerox + legend_width + width)
                             .attr("y2", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + 6;
-                            });
-
-                        // Scale line: pop
-                        barp.append("line")
-                            .style("stroke", "#b3b3b3")
-                            .style("opacity", 0.4)
-                            .attr("x1", function(d) {
-                                for (property in d) {
-                                    var resilience_value = d[property];
-                                }
-                                return zerox + legend_width;
-                            })
-                            .attr("y1", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
-                            })
-                            .attr("x2", zerox + legend_width + width)
-                            .attr("y2", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
-                            });
-
-                        // Scale line: surf
-                        bars.append("line")
-                            .style("stroke", "#b3b3b3")
-                            .style("opacity", 0.2)
-                            .attr("x1", function(d) {
-                                for (property in d) {
-                                    var resilience_value = d[property];
-                                }
-                                return zerox + legend_width;
-                            })
-                            .attr("y1", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight * 2;
-                            })
-                            .attr("x2", zerox + legend_width + width)
-                            .attr("y2", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight * 2;
-                            });
-
-                        // The legend labels: pop
-                        barp.append("text")
-                            .style("opacity", 0.4)
-                            .attr("x", zerox)
-                            .attr("y", function(d, i) {
-                                return zeroy + 6 + i * (space_between_bars + space_between_groups) + barHeight;
-                            })
-                            .attr("dy", ".35em")
-                            .text(function(d) {
-                                for (property in d) {
-                                    var label_text = property;
-                                }
-                                return label_text + " ";
+                                return zeroy + i * barHeight;
                             });
 
                         // The legend labels: gdp
                         barg.append("text")
                             .attr("x", zerox)
                             .attr("y", function(d, i) {
-                                return zeroy + 6 + i * (space_between_bars + space_between_groups);
+                                return zeroy + i * barHeight;
                             })
                             .attr("dy", ".35em")
                             .text(function(d) {
@@ -676,41 +628,6 @@
                                     var label_text = property;
                                 }
                                 return label_text + " ";
-                            });
-
-                        // The legend labels: surf
-                        bars.append("text")
-                            .style("opacity", 0.2)
-                            .attr("x", zerox)
-                            .attr("y", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight * 2;
-                            })
-                            .attr("dy", ".35em")
-                            .text(function(d) {
-                                for (property in d) {
-                                    var label_text = property;
-                                }
-                                return label_text + " ";
-                            });
-
-                        // The value labels: pop
-                        barp.append("text")
-                            .attr("class", function(d) {
-                                for (property in d) {
-                                    var the_class = property;
-                                }
-                                return "region " + property.toLowerCase() + " value";
-                            })
-                            .style("opacity", 0.4)
-                            .text(function(d) {
-                                for (property in d) {
-                                    var label_value = d[property];
-                                }
-                                return label_value;
-                            })
-                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
-                            .attr("y", function(d, i) {
-                                return zeroy2 + i * (space_between_bars + space_between_groups) + barHeight;
                             });
 
                         // The value labels: gdp
@@ -725,58 +642,16 @@
                                 for (property in d) {
                                     var label_value = d[property];
                                 }
-                                return Math.round(label_value * 10) / 10;
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10);
                             })
                             .attr("x", zerox + legend_width + width + zerox + zeroy2)
                             .attr("y", function(d, i) {
-                                return zeroy2 + i * (space_between_bars + space_between_groups)
+                                return zeroy + i * barHeight + 6;
                             });
-
-                        // The value labels: surf
-                        bars.append("text")
-                            .attr("class", function(d) {
-                                for (property in d) {
-                                    var the_class = property;
-                                }
-                                return "countries " + property.toLowerCase() + " value";
-                            })
-                            .style("opacity", 0.2)
-                            .text(function(d) {
-                                for (property in d) {
-                                    var label_value = d[property];
-                                }
-                                return Math.round(label_value * 10) / 10;
-                            })
-                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
-                            .attr("y", function(d, i) {
-                                return zeroy2 + i * (space_between_bars + space_between_groups) + 6 + barHeight + 6;
-                            });
-
-                        // The bars: pop
-                        barp.append("rect")
-                            .attr("class", function(d) {
-                                for (property in d) {
-                                    var the_class = property;
-                                }
-                                return "region " + property.toLowerCase() + " bar";
-                            })
-                            .style("opacity", 0.4)
-                            .attr("x", zerox + legend_width)
-                            .attr("y", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + barHeight;
-                            })
-                            .attr("width", function(d) {
-                                for (property in d) {
-                                    return popScale(d[property]);
-                                }
-                            })
-                            .attr("height", barHeight)
-                            .attr("rx", 6)
-                            .attr("ry", 6)
-                            .attr("fill", "#000");
 
                         // The bars: gdp
                         barg.append("rect")
+                            .style("opacity", 0.4)
                             .attr("class", function(d) {
                                 for (property in d) {
                                     var the_class = property;
@@ -785,7 +660,7 @@
                             })
                             .attr("x", zerox + legend_width)
                             .attr("y", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups);
+                                return zeroy - barHeight / 2 + i * barHeight;
                             })
                             .attr("width", function(d) {
                                 for (property in d) {
@@ -797,18 +672,136 @@
                             .attr("ry", 6)
                             .attr("fill", "#000");
 
-                        // The bars: surf
-                        bars.append("rect")
-                            .style("opacity", 0.1)
+
+                        // Population
+
+                        // Scale line
+                        barp.append("line")
+                            .style("stroke", "#b3b3b3")
+                            .attr("x1", zerox + legend_width)
+                            .attr("y1", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("x2", zerox + legend_width + width)
+                            .attr("y2", function(d, i) {
+                                return zeroy + i * barHeight;
+                            });
+
+                        // The legend labels
+                        barp.append("text")
+                            .attr("x", zerox)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("dy", ".35em")
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_text = property;
+                                }
+                                return label_text + " ";
+                            });
+
+                        // The value labels
+                        barp.append("text")
                             .attr("class", function(d) {
                                 for (property in d) {
                                     var the_class = property;
                                 }
-                                return "country " + property.toLowerCase() + " bar";
+                                return "city " + property.toLowerCase() + " value";
+                            })
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_value = d[property];
+                                }
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10);
+                            })
+                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight + 6;
+                            });
+
+                        // The bars
+                        barp.append("rect")
+                            .style("opacity", 0.4)
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " bar";
                             })
                             .attr("x", zerox + legend_width)
                             .attr("y", function(d, i) {
-                                return zeroy + i * (space_between_bars + space_between_groups) + space_between_bars / 2 + barHeight;
+                                return zeroy - barHeight / 2 + i * barHeight;
+                            })
+                            .attr("width", function(d) {
+                                for (property in d) {
+                                    return popScale(d[property]);
+                                }
+                            })
+                            .attr("height", barHeight)
+                            .attr("rx", 6)
+                            .attr("ry", 6)
+                            .attr("fill", "#000");
+
+                        // Surface
+
+                        // Scale line
+                        bars.append("line")
+                            .style("stroke", "#b3b3b3")
+                            .attr("x1", zerox + legend_width)
+                            .attr("y1", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("x2", zerox + legend_width + width)
+                            .attr("y2", function(d, i) {
+                                return zeroy + i * barHeight;
+                            });
+
+                        // The legend labels
+                        bars.append("text")
+                            .attr("x", zerox)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("dy", ".35em")
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_text = property;
+                                }
+                                return label_text + " ";
+                            });
+
+                        // The value labels
+                        bars.append("text")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " value";
+                            })
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_value = d[property];
+                                }
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10);
+                            })
+                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight + 6;
+                            });
+
+                        // The bars
+                        bars.append("rect")
+                            .style("opacity", 0.4)
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " bar";
+                            })
+                            .attr("x", zerox + legend_width)
+                            .attr("y", function(d, i) {
+                                return zeroy - barHeight / 2 + i * barHeight;
                             })
                             .attr("width", function(d) {
                                 for (property in d) {
@@ -819,6 +812,7 @@
                             .attr("rx", 6)
                             .attr("ry", 6)
                             .attr("fill", "#000");
+
                     }
                 });
         }
@@ -846,7 +840,7 @@
         var svg = d3.select("div#project-sliders")
             .append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", "0 0 320 400")
+            .attr("viewBox", "0 0 400 400")
             .classed("svg-content", true);
 
         // Select the other svg to be modified
@@ -1084,6 +1078,11 @@
         resilience_viz("div#resilience-container2");
         city_region_country_viz("div#city-region-country");
     </script>
+
+
+</div>
+");
+</script>
 
 
 </div>
