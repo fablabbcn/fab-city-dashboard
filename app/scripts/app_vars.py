@@ -4,9 +4,9 @@ import os
 
 ######################################
 ### vars for name application / metas
-title       = "Fabcity Dashboard" 
+title       = "Fabcity Dashboard"
 subtitle    = "subtitle"
-version     = "beta 0.1" 
+version     = "beta 0.1"
 metas       = """
 dataviz,data visualisation,graph,force layout,force directed layout,
 resilience,dashboard,index,indices,urban resilience,smart cities,
@@ -17,7 +17,7 @@ d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap,bower"""
 description = "description"
 authors     = "Massimo Menichinelli, Mariana Quintero, Julien Paris"
 
-licenceCC   = 'GPL' 
+licenceCC   = 'GPL'
 
 ############################
 ### variables for app config
@@ -38,14 +38,14 @@ URLroot_ = 'flask'
 modules_html_dict = {
 
     "empty"  : "empty_module.html",                   #d3 + leaflet
-    
+
     ##"lab" : {
     "lab_ma" : "labs/mod_lab_map.html",               #d3 + leaflet
     "lab_if" : "labs/mod_lab_infos.html",             #text
     #"lab_id" : "labs/mod_lab_indicators.html",        #d3
     "lab_pr" : "labs/mod_lab_projects.html",          #leaflet
     "lab_da" : "labs/mod_lab_dashboard.html",         #d3
-    #}, 
+    #},
 
     ##"city" :    {
     "cit_ma" : "cities/mod_city_map.html",              #d3 + leaflet
@@ -54,7 +54,7 @@ modules_html_dict = {
     "cit_pr" : "cities/mod_city_projects.html",         #leaflet
     "cit_da" : "cities/mod_city_dashboard.html",        #d3
     #},
-    
+
     ##"region" :  {
     "reg_ma"  : "regions/mod_region_map.html",           #d3 + leaflet
     "reg_if"  : "regions/mod_region_infos.html",         #text
@@ -62,7 +62,7 @@ modules_html_dict = {
     "reg_pr"  : "regions/mod_region_projects.html",      #leaflet
     "reg_da"  : "regions/mod_region_dashboard.html",     #d3
     #},
-    
+
     ##"country" : {
     "cou_ma" : "countries/mod_country_map.html",           #d3 + leaflet
     "cou_if" : "countries/mod_country_infos.html",         #text
@@ -78,12 +78,12 @@ modules_html_dict = {
     "wor_pr" : "world/mod_world_projects.html",      #leaflet
     "wor_da" : "world/mod_world_dashboard.html",     #d3
     #},
-    
+
     ##"concepts" : {
     "con_re" : "concepts/mod_resilience_concept.html",    #text / illustration
     "con_an" : "concepts/mod_resilience_anecdote.html",   #text / illustration
     "con_fa" : "concepts/mod_fabcity_concept.html",       #text / illustration
-    
+
     ##"infos" : {
     "inf_ab" : "infos/mod_about.html",                 #text
     "inf_co" : "infos/mod_contact.html",               #text
@@ -100,17 +100,18 @@ modules_html_dict = {
     "too_ch" : "tools/mod_chart_horiz.html",            #row + col
     "too_cv" : "tools/mod_chart_vert.html",            #row + col
     "too_tr" : "tools/mod_treemap.html",            #row + col
-    
+    "too_re" : "tools/mod_resilience.html",
+
     "too_pl" : "tools/mod_choose_place.html",           #row
     "too_id" : "tools/mod_choose_indicator.html",     #row
     "too_al" : "tools/mod_choose_all.html",             #row
-    #},    
+    #},
 }
 
 ############################################################################################
 ### order of modules /// format for one user  : "analitic"      : ["row_01" [ ], "row_02" } ,
 user_profiles = {
-    
+
     ### USER TYPOLOGY ##############################################################
     ### url called return var user_profile in views.py and set bootstrap
     "analytic"      : [ # HEIGHT in px // module/number of columns (max 12 col)
@@ -119,50 +120,50 @@ user_profiles = {
                         { "600px" : [ {"con_re" : 4 }] },                   ### row 3
                       ],
     "citizen"       : [
-                        { "40px" : [ {"too_pl" : 6 }, {"too_id": 6 } ] },  
-                        { "500px" :  [ {"wor_ma" : 12 } ] },               
-                        { "600px" : [ {"con_re" : 4 }] },                   
+                        { "40px" : [ {"too_pl" : 6 }, {"too_id": 6 } ] },
+                        { "500px" :  [ {"wor_ma" : 12 } ] },
+                        { "600px" : [ {"con_re" : 4 }] },
                       ],
     "civic_leader"  : [
-                        { "400px" : [ {"con_re" : 9 }, {"too_id": 3 } ] }, 
-                        { "50px" :  [ {"too_pl" : 12 } ] },                
-                        { "500px" :  [ {"wor_ma" : 12 } ] },               
+                        { "400px" : [ {"con_re" : 9 }, {"too_id": 3 } ] },
+                        { "50px" :  [ {"too_pl" : 12 } ] },
+                        { "500px" :  [ {"wor_ma" : 12 } ] },
                       ],
     "maker"         : [
-                        { "600px" : [ {"wor_ma" : 10 }, {"too_al": 2 } ] },  
-                        { "100px" : [ {"con_re" : 4 }] },                   
-                        { "200px" : [   {"too_da" : 12 }      ]    }, 
+                        { "600px" : [ {"wor_ma" : 10 }, {"too_al": 2 } ] },
+                        { "100px" : [ {"con_re" : 4 }] },
+                        { "200px" : [   {"too_da" : 12 }      ]    },
                      ],
     "fab_manager"   : [
-                        { "400px" : [ {"wor_ma" : 9 }, {"too_id": 3 } ] },  
-                        { "50px" :  [ {"too_pl" : 12 } ] },                 
-                        { "600px" : [ {"con_re" : 4 }] },                   
+                        { "400px" : [ {"wor_ma" : 9 }, {"too_id": 3 } ] },
+                        { "50px" :  [ {"too_pl" : 12 } ] },
+                        { "600px" : [ {"con_re" : 4 }] },
                       ],
-     
+
     ### DASHBOARD TYPOLOGY ######################################################
     "only_infos"       : [
-                        { "400px" : [ {"inf_in" : 12 }      ]    }, 
-                        { "400px" : [ {"inf_ab" : 2 }, {"inf_pa": 5 } ] },    
-                        { "200px" : [ {"inf_co": 12 }        ]      }, 
+                        { "400px" : [ {"inf_in" : 12 }      ]    },
+                        { "400px" : [ {"inf_ab" : 2 }, {"inf_pa": 5 } ] },
+                        { "200px" : [ {"inf_co": 12 }        ]      },
                       ],
     "only_dashboard"    : [
-                        { "200px" : [   {"too_da" : 12 }      ]    }, 
+                        { "200px" : [   {"too_re" : 12 }      ]    },
                         { "50px"  : [   {"too_pl" : 3 },
                                         {"too_id": 3 }
                                     ] },
                         { "400px" : [ {"wor_ma" : 12 } ] },  ### row 1
 
-                      ],   
+                      ],
     "demo"       : [
-                        { "400px" : [ {"inf_in" : 12 }      ]    }, 
-                        { "400px" : [ {"inf_re" : 12 }      ]    }, 
-                        { "400px" : [ {"cit_if" : 12 }      ]    }, 
-                        { "200px" : [ {"inf_co": 12 }        ]      }, 
-                      ],     
-        
+                        { "400px" : [ {"inf_in" : 12 }      ]    },
+                        { "400px" : [ {"inf_re" : 12 }      ]    },
+                        { "400px" : [ {"cit_if" : 12 }      ]    },
+                        { "200px" : [ {"inf_co": 12 }        ]      },
+                      ],
+
     ### CARTO-USER TYPOLOGY ######################################################
     "carto"       : [
-                        { "520px" : [   {"wor_ma": 12 }  ]      }, 
+                        { "520px" : [   {"wor_ma": 12 }  ]      },
                         { "50px"  : [   {"too_pl": 6 },
                                         {"too_id": 6 }
                                     ] },
@@ -170,9 +171,9 @@ user_profiles = {
 
    ### CARTO-USER TYPOLOGY ######################################################
     "introApp"    : [
-                        { "200px" : [ {"inf_in": 12 }  ]      }, 
-                        { "80px"  : [ {"con_re": 12 }  ]      }, 
-                        { "250px" : [ {"wor_ma": 12 }  ]      }, 
+                        { "200px" : [ {"inf_in": 12 }  ]      },
+                        { "80px"  : [ {"con_re": 12 }  ]      },
+                        { "250px" : [ {"wor_ma": 12 }  ]      },
                       ],
 
 
@@ -187,26 +188,26 @@ user_profiles = {
 #                            "empty"         : ""
 #                            }
 
-root_stats_json  = "data_custom/json_stats/" 
+root_stats_json  = "data_custom/json_stats/"
 
-root_basemaps    = "data_custom/geojson_basemaps/" 
+root_basemaps    = "data_custom/geojson_basemaps/"
 
-regions_names    = ["World","Europe","NorthAmerica","CentralAmerica","SouthAmerica","MiddleEast","Asia","Africa","Oceania"]    
+regions_names    = ["World","Europe","NorthAmerica","CentralAmerica","SouthAmerica","MiddleEast","Asia","Africa","Oceania"]
 
 geoJSON_dict     = {
     ### "regions" - "metropolitan_areas_OECD" == folders name in /data_custom/geojson_basemaps
     ### "country": "AUS", "regions" : "xxx" == filename of the .geojson file
 
     ########################################################################
-  
+
         "World" :           {   "country": "", "regions" : "all_countries",
                                 "metropolitan_areas_OECD" : ""},
         "Europe":           {   "country": "", "regions" : "all_countries",
                                 "metropolitan_areas_OECD" : ""},
         "NorthAmerica"   :  {   "country": "", "regions" : "all_countries",
-                                "metropolitan_areas_OECD" : ""},  
+                                "metropolitan_areas_OECD" : ""},
         "CentralAmerica" :  {   "country": "", "regions" : "all_countries",
-                                "metropolitan_areas_OECD" : ""},  
+                                "metropolitan_areas_OECD" : ""},
         "SouthAmerica"   :  {   "country": "", "regions" : "all_countries",
                                 "metropolitan_areas_OECD" : ""},
         "MiddleEast"     :  {   "country": "", "regions" : "all_countries",
@@ -216,10 +217,10 @@ geoJSON_dict     = {
         "Africa"         :  {   "country": "", "regions" : "all_countries",
                                 "metropolitan_areas_OECD" : ""},
         "Oceania"        :  {   "country": "", "regions" : "all_countries",
-                                "metropolitan_areas_OECD" : ""}, 
-    
+                                "metropolitan_areas_OECD" : ""},
+
     ########################################################################
-    
+
         "AUS"   : { "country": "AUS", "regions" : "AUS_admin_level_4" ,
                         "metropolitan_areas_OECD" : "AUS_MAs_2016"},
         "AUT"   : {     "country": "AUT", "regions" : "AUT_admin_level_4" ,
@@ -283,4 +284,3 @@ geoJSON_dict     = {
             "USA"   : { "country": "USA", "regions" : "USA_admin_level_4" ,
                         "metropolitan_areas_OECD" : "USA_MAs_2016"},
 }
-
