@@ -4,7 +4,7 @@ import os
 
 ######################################
 ### vars for name application / metas
-title       = "Fabcity Dashboard"
+title       = "Fab City Dashboard"
 subtitle    = "subtitle"
 version     = "beta 0.1"
 metas       = """
@@ -17,7 +17,7 @@ d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap,bower"""
 description = "description"
 authors     = "Massimo Menichinelli, Mariana Quintero, Julien Paris"
 
-licenceCC   = 'GPL'
+licenceCC   = 'AGPL'
 
 ############################
 ### variables for app config
@@ -158,13 +158,12 @@ user_profiles = {
                       ],
     "demo"          : [
 
-                        { "400px" : [ {"inf_in" : 12 }      ]    }, 
-                        { "400px" : [ {"inf_re" : 12 }      ]    }, 
+                        { "400px" : [ {"inf_in" : 12 }      ]    },
+                        { "400px" : [ {"inf_re" : 12 }      ]    },
                         { "400px" : [ {"cit_if" : 12 }      ]    },
-                        { "130px" : [ {"too_de":  12 }      ]    },
-                        { "600px" : [ {"wor_de" : 12 }      ]    },
-                        { "200px" : [ {"inf_co": 12 }       ]    }, 
-                      ],     
+                        { "400px" : [ {"inf_ne" : 12 }      ]    },
+                        { "200px" : [ {"inf_co": 12 }       ]    },
+                      ],
 
     ### CARTO-USER TYPOLOGY ######################################################
     "carto"       : [
