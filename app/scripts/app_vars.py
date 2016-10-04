@@ -94,7 +94,13 @@ modules_html_dict = {
     #},
 
     ##"tools" : {
-    "too_da" : "tools/mod_dashboard.html",            #row + col
+    "too_da" : "tools/mod_full_dashboard.html",              #row + col
+    "too_pi" : "tools/mod_pie.html",                    #row + col
+    "too_pi" : "tools/mod_graph.html",                    #row + col
+    "too_ch" : "tools/mod_chart_horiz.html",            #row + col
+    "too_cv" : "tools/mod_chart_vert.html",            #row + col
+    "too_tr" : "tools/mod_treemap.html",            #row + col
+    
     "too_pl" : "tools/mod_choose_place.html",           #row
     "too_id" : "tools/mod_choose_indicator.html",     #row
     "too_al" : "tools/mod_choose_all.html",             #row
@@ -113,7 +119,7 @@ user_profiles = {
                         { "600px" : [ {"con_re" : 4 }] },                   ### row 3
                       ],
     "citizen"       : [
-                        { "40px" : [ {"too_pl" : 4 }, {"too_id": 4 } ] },  
+                        { "40px" : [ {"too_pl" : 6 }, {"too_id": 6 } ] },  
                         { "500px" :  [ {"wor_ma" : 12 } ] },               
                         { "600px" : [ {"con_re" : 4 }] },                   
                       ],
@@ -125,7 +131,8 @@ user_profiles = {
     "maker"         : [
                         { "600px" : [ {"wor_ma" : 10 }, {"too_al": 2 } ] },  
                         { "100px" : [ {"con_re" : 4 }] },                   
-                      ],
+                        { "200px" : [   {"too_da" : 12 }      ]    }, 
+                     ],
     "fab_manager"   : [
                         { "400px" : [ {"wor_ma" : 9 }, {"too_id": 3 } ] },  
                         { "50px" :  [ {"too_pl" : 12 } ] },                 
@@ -139,8 +146,8 @@ user_profiles = {
                         { "200px" : [ {"inf_co": 12 }        ]      }, 
                       ],
     "only_dashboard"    : [
-                        { "200px" : [ {"too_da" : 12 }      ]    }, 
-                        { "50px" : [   {"too_pl" : 3 },
+                        { "200px" : [   {"too_da" : 12 }      ]    }, 
+                        { "50px"  : [   {"too_pl" : 3 },
                                         {"too_id": 3 }
                                     ] },
                         { "400px" : [ {"wor_ma" : 12 } ] },  ### row 1
@@ -156,7 +163,7 @@ user_profiles = {
     ### CARTO-USER TYPOLOGY ######################################################
     "carto"       : [
                         { "520px" : [   {"wor_ma": 12 }  ]      }, 
-                        { "50px" : [    {"too_pl": 6 },
+                        { "50px"  : [   {"too_pl": 6 },
                                         {"too_id": 6 }
                                     ] },
                       ],
@@ -164,7 +171,7 @@ user_profiles = {
    ### CARTO-USER TYPOLOGY ######################################################
     "introApp"    : [
                         { "200px" : [ {"inf_in": 12 }  ]      }, 
-                        { "80px" : [ {"con_re": 12 }  ]      }, 
+                        { "80px"  : [ {"con_re": 12 }  ]      }, 
                         { "250px" : [ {"wor_ma": 12 }  ]      }, 
                       ],
 
