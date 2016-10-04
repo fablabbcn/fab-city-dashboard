@@ -500,8 +500,8 @@
         // Access svg area
         var svg = d3.select("div#container2")
             .append("svg")
-            .attr("preserveAspectRatio", "xMaxYMax meet")
-            .attr("viewBox", "0 0 330 100")
+            .attr("preserveAspectRatio", "xMinYMin none")
+            .attr("viewBox", "0 0 550 100")
             .classed("svg-content", true);
 
         var slider = svg.append("g")
@@ -555,8 +555,6 @@
             .attr("ry", 3);
 
         var otro = d3.select("div#container");
-
-        otro.style("border", "2px solid blue !important;");
 
         function hue(h) {
             handle.attr("x", x(h));
