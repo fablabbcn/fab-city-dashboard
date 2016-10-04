@@ -72,16 +72,20 @@ def selectedRegionSpecs(selectedRegion, level):
     #print ("selectedRegionSpecs / regionSpecs : ", regionSpecs)
     
     countryLevel = "_admin_level_4" ### level country --> display country's regions
+    regionLevel  = "OECD_admin_level_4" ### level country --> display country's regions
     
+    #############################################################
     if selectedRegion not in regions_names and level == "regions":
-        stats_js_name = selectedRegion + countryLevel
+        stats_js_name = selectedRegion + countryLevel #############################################
     else :
         stats_js_name = "countries_dict"
     
     temp_specs                     = regionSpecs
+    
     temp_specs["geojson_js_var"]   = regionSpecs["regions"]
     temp_specs["geojson_url"]      = root_basemaps +"regions/"+ selectedRegion + "/" + regionSpecs[level] + ".geojson"
-    temp_specs["dflt_data_js_var"] = stats_js_name
+    
+    temp_specs["dflt_data_js_var"] = stats_js_name ###############################
     temp_specs["dflt_data_url"]    = root_stats_json + stats_js_name + ".js"
     
     #print ("selectedRegionSpecs / temp_specs : ", temp_specs)

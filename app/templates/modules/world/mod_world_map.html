@@ -61,8 +61,11 @@
 	<!--GEOJSON_file_url = "{{ region_specs['geojson_url'] }}" <br>-->
 	<!--GEOJSON_js_var   = "{{ region_specs['js_var'] }}" <br>-->
 	
+	<!-- get basemap vars -->
 	{% set geojson_url      = region_specs['geojson_url'] %}
 	{% set geojson_js_var   = region_specs['geojson_js_var'] %}
+
+	<!-- get default datas vars -->
 	{% set dflt_data_url    = region_specs['dflt_data_url'] %}
 	{% set dflt_data_js_var = region_specs['dflt_data_js_var'] %}
 
