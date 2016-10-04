@@ -343,6 +343,7 @@ p.city-description {
     vertical-align: top;
     overflow: hidden;
     margin-top: 30px;
+    border: 1px solid red;
 }
 
 .svg-content {
