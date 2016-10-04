@@ -18,6 +18,7 @@
 
     <div id="container" class="svg-container">
     </div>
+    <!-- added specific class "svg_oecd" -> style because it was affecting map/Leaflet rendering -->
 
     <script>
         // Colors for the resilience metrics
@@ -85,26 +86,25 @@
                     }
 
                     // Debug: Barcelona
-                    console.log("city_gdp", city_gdp[69]["City Name"], city_gdp[69]["City Code"], city_gdp[69]["2012"]);
-                    console.log("city_pop", city_pop[69]["City Name"], city_pop[69]["City Code"], city_pop[69]["2014"]);
-                    console.log("city_surf", city_surf[69]["City Name"], city_surf[69]["City Code"], city_surf[69]["2014"]);
+                    console.log(city_gdp[69]["City Name"], city_gdp[69]["City Code"], city_gdp[69]["2012"]);
+                    console.log(city_pop[69]["City Name"], city_pop[69]["City Code"], city_pop[69]["2014"]);
+                    console.log(city_surf[69]["City Name"], city_surf[69]["City Code"], city_surf[69]["2014"]);
 
-                    console.log("region_gdp", region_gdp[848]["Region Name"], region_gdp[848]["Region Code"], region_gdp[848]["2012"]);
-                    console.log("region_pop", region_pop[1495]["Region Name"], region_pop[1495]["Region Code"], region_pop[1495]["2014"]);
-                    console.log("region_surf", region_surf[1457]["Region Name"], region_surf[1457]["Region Code"], region_surf[1457]["2014"]);
+                    console.log(region_gdp[848]["Region Name"], region_gdp[848]["Region Code"], region_gdp[848]["2012"]);
+                    console.log(region_pop[848]["Region Name"], region_pop[848]["Region Code"], region_pop[848]["2014"]);
+                    console.log(region_surf[848]["Region Name"], region_surf[848]["Region Code"], region_surf[848]["2014"]);
 
-                    console.log("country_gdp", country_gdp[24]["Country Name"], country_gdp[24]["Country Code"], country_gdp[24]["2015"]);
-                    console.log("country_pop", country_pop[28]["Country Name"], country_pop[28]["Country Code"], country_pop[28]["2011"]);
-                    console.log("country_surf", country_surf[178]["Country Name"], country_surf[178]["Country Code"], country_surf[178]["2015"]);
+                    console.log(country_gdp[25]["Country Name"], country_gdp[25]["Country Code"], country_gdp[25]["2015"]);
+                    console.log(country_pop[29]["Country Name"], country_pop[29]["Country Code"], country_pop[29]["2011"]);
+                    console.log(country_surf[179]["Country Name"], country_surf[179]["Country Code"], country_surf[179]["2015"]);
 
 
                     // variables
                     var zerox = 0;
                     var zeroy = 0;
                     var zeroy2 = 10;
-                    var barHeight = 13;
                     var width = 300;
-
+                    var barHeight = 13;
                     var space_between_bars = barHeight * 2;
                     var space_between_groups = 20;
                     var legend_width = 100;
@@ -118,7 +118,7 @@
                     var svg = d3.select("div#container")
                         .append("svg")
                         .attr("preserveAspectRatio", "xMaxYMax meet")
-                        .attr("viewBox", "0 0 550 600")
+                        .attr("viewBox", "0 0 550 700")
                         .classed("svg-content", true);
 
                     // Rounded bars
@@ -288,7 +288,7 @@
                         })
                         .attr("x", zerox + legend_width + width + zerox + zeroy2)
                         .attr("y", function(d, i) {
-                            return zeroy2 + i * (space_between_bars + space_between_groups);
+                            return zeroy2 + i * (space_between_bars + space_between_groups)
                         });
 
                     // The value labels: countries
@@ -437,8 +437,8 @@
 
                     // SVG icons transformations
                     var icon_scale = 0.02;
-                    var icon_x = legend_width - 20;
-                    var icon_y = 5 + barHeight;
+                    var icon_x = legend_width - 15;
+                    var icon_y = barHeight;
 
                     education_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                     icon_y = icon_y + space_between_bars + space_between_groups;
@@ -472,86 +472,75 @@
                         icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
                     icon_y = icon_y + space_between_bars + space_between_groups;
                     life_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+
+                    // Slider
+                    // From https://bl.ocks.org/mbostock/6452972
+
+                    var x = d3.scaleLinear()
+                        .domain([0, 100])
+                        .range([0, width])
+                        .clamp(true);
+
+                    var slider = svg.append("g")
+                        .attr("class", "slider")
+                        .attr("transform", "translate(" + zerox + ", 600)");
+
+                    slider.append("text")
+                        .text("Slider: how many instances of the projects in the city?")
+                        .attr("x", 0)
+                        .attr("y", -20);
+
+                    slider.append("line")
+                        .attr("class", "track")
+                        .attr("x1", x.range()[0])
+                        .attr("x2", x.range()[1])
+                        .select(function() {
+                            return this.parentNode.appendChild(this.cloneNode(true));
+                        })
+                        .attr("class", "track-inset")
+                        .select(function() {
+                            return this.parentNode.appendChild(this.cloneNode(true));
+                        })
+                        .attr("class", "track-overlay")
+                        .call(d3.drag()
+                            .on("start.interrupt", function() {
+                                slider.interrupt();
+                            })
+                            .on("start drag", function() {
+                                hue(x.invert(d3.event.x));
+                            }));
+
+                    slider.insert("g", ".track-overlay")
+                        .attr("class", "ticks")
+                        .attr("transform", "translate(0," + 18 + ")")
+                        .selectAll("text")
+                        .data(x.ticks(10))
+                        .enter().append("text")
+                        .attr("x", x)
+                        .attr("y", 10)
+                        .attr("text-anchor", "middle")
+                        .text(function(d) {
+                            return d;
+                        });
+
+                    var handle = slider.insert("rect", ".track-overlay")
+                        .attr("class", "handle")
+                        .attr("width", 6)
+                        .attr("height", 20)
+                        .attr("y", -10)
+                        .attr("rx", 3)
+                        .attr("ry", 3);
+
+                    function hue(h) {
+                        handle.attr("x", x(h));
+                        console.log(h);
+                        d3.select(".city.education.bar").attr("width", linearScale(h / 10));
+                        d3.select(".city.education.value").text(Math.round(h) / 10 + "/10");
+                    }
+
                 }
             });
     </script>
 
-    <div id="container2" class="svg-container" style="border: 1px solid red;">
-    </div>
-    <script>
-        // Slider
-        // From https://bl.ocks.org/mbostock/6452972
 
-        var width = 300;
-        var zerox = 10;
-
-        // Access svg area
-        var svg = d3.select("div#container2")
-            .append("svg")
-            .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", "0 0 550 200")
-            .classed("svg-content", true);
-
-        var x = d3.scaleLinear()
-            .domain([0, 100])
-            .range([0, width])
-            .clamp(true);
-
-        var slider = svg.append("g")
-            .attr("class", "slider")
-            .attr("transform", "translate(" + zerox + ", 10)");
-
-        slider.append("text")
-            .text("Slider: how many instances of the projects in the city?")
-            .attr("x", 0)
-            .attr("y", -20);
-
-        slider.append("line")
-            .attr("class", "track")
-            .attr("x1", x.range()[0])
-            .attr("x2", x.range()[1])
-            .select(function() {
-                return this.parentNode.appendChild(this.cloneNode(true));
-            })
-            .attr("class", "track-inset")
-            .select(function() {
-                return this.parentNode.appendChild(this.cloneNode(true));
-            })
-            .attr("class", "track-overlay")
-            .call(d3.drag()
-                .on("start.interrupt", function() {
-                    slider.interrupt();
-                })
-                .on("start drag", function() {
-                    hue(x.invert(d3.event.x));
-                }));
-
-        slider.insert("g", ".track-overlay")
-            .attr("class", "ticks")
-            .attr("transform", "translate(0," + 18 + ")")
-            .selectAll("text")
-            .data(x.ticks(10))
-            .enter().append("text")
-            .attr("x", x)
-            .attr("y", 10)
-            .attr("text-anchor", "middle")
-            .text(function(d) {
-                return d;
-            });
-
-        var handle = slider.insert("rect", ".track-overlay")
-            .attr("class", "handle")
-            .attr("width", 6)
-            .attr("height", 20)
-            .attr("y", -10)
-            .attr("rx", 3)
-            .attr("ry", 3);
-
-        function hue(h) {
-            handle.attr("x", x(h));
-            console.log(h);
-            //d3.select(".city.education.bar").attr("width", linearScale(h / 10));
-            //d3.select(".city.education.value").text(Math.round(h) / 10 + "/10");
-        }
-    </script>
 </div>
