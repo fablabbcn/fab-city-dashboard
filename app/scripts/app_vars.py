@@ -147,8 +147,8 @@ user_profiles = {
                       ],
     "only_dashboard"    : [
                         { "200px" : [   {"too_da" : 12 }      ]    }, 
-                        { "50px"  : [   {"too_pl" : 3 },
-                                        {"too_id": 3 }
+                        { "50px"  : [   {"too_pl" : 6 },
+                                        {"too_id": 6 }
                                     ] },
                         { "400px" : [ {"wor_ma" : 12 } ] },  ### row 1
 
@@ -157,8 +157,13 @@ user_profiles = {
                         { "400px" : [ {"inf_in" : 12 }      ]    }, 
                         { "400px" : [ {"inf_re" : 12 }      ]    }, 
                         { "400px" : [ {"cit_if" : 12 }      ]    }, 
-                        { "200px" : [ {"inf_co": 12 }        ]      }, 
-                      ],     
+                        { "200px" : [   {"too_da" : 12 }    ]    }, 
+                        { "50px"  : [   {"too_pl" : 6 },
+                                        {"too_id": 6 }
+                                    ] },
+                        { "400px" : [ {"wor_ma" : 12 } ] }    ,
+                        { "200px" : [ {"inf_co": 12 }       ]    }, 
+                   ],
         
     ### CARTO-USER TYPOLOGY ######################################################
     "carto"       : [
