@@ -93,15 +93,15 @@ p.city-description {
 }
 
 .menu {
-    border-color: #d1d1d1;
+    border-color: #e8e8e8;
     color: #222;
-    background-color: #d1d1d1;
+    background-color: #e8e8e8;
     text-transform: lowercase;
     font-weight: 400;
 }
 
 .menu:hover {
-    background-color: #222;
+    background-color: #01a158;
 }
 
 .btn-link {
@@ -145,7 +145,7 @@ p.city-description {
 }
 
 .dropdown-menu {
-    background-color: #E62339;
+    background-color: #e8e8e8;
 }
 
 .logo-max {
