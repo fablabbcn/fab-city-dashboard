@@ -1,4 +1,3 @@
-
 /*GLOBAL STYLES */
 
 body {
@@ -6,29 +5,25 @@ body {
     background-color: #F7F7F7;
 }
 
-
 h1, h2, h3, h4, h5, h6, nav {
     font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .color-inverted {
-	color: #F7F7F7;
+    color: #F7F7F7;
 }
 
 a {
-	color: #E62339;
+    color: #E62339;
 }
 
-a :hover,
-a :focus,
-a :active,
-a .active {
-  color: #d41111;
+a :hover, a :focus, a :active, a .active {
+    color: #d41111;
 }
-
 
 h2.section-heading {
-    font-size: 30px;
+    font-size: 40px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -40,15 +35,35 @@ h2.section-subheading {
     text-transform: uppercase;
 }
 
+h1.city-title {
+    font-size: 70px;
+    padding: 0px;
+    margin: 150px 0px 5px 0px;
+}
+
+h3.country-title {
+    font-size: 28px;
+    padding: 0px;
+    margin: 20px 0px 5px 0px;
+}
+
 p.descriptions {
     font-size: 19px;
     line-height: 1.7;
     text-align: left;
 }
 
+p.city-description {
+    font-size: 19px;
+    line-height: 1.7;
+    text-align: left;
+    margin: 70px 0 50px;
+}
+
 .disabled {
     opacity: 0.5;
 }
+
 
 /*BUTTONS */
 
@@ -64,7 +79,19 @@ p.descriptions {
     background-color: #E62339;
 }
 
-.btn-link{
+.menu {
+    border-color: #d1d1d1;
+    color: #222;
+    background-color: #d1d1d1;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+.menu:hover {
+    background-color: #222;
+}
+
+.btn-link {
     margin-top: -1px;
 }
 
@@ -73,51 +100,43 @@ p.descriptions {
     background-color: #d41111;
 }
 
-.btn-tool{
+.btn-tool {
     margin-bottom: 5px;
 }
 
 
 /*MODALS */
-.modal{
-    z-index : 900000001 ;
+
+.modal {
+    z-index: 900000001;
 }
+
 
 /*NAVBAR */
 
-.navbar{
-	position: fixed;
-	z-index: 900000000;
-	width: 100%;
+.navbar {
+    position: fixed;
+    z-index: 900000000;
+    width: 100%;
 }
 
-.navbar-default{
-	background-color: #222;
-	border-color: #222;
+.navbar-default {
+    background-color: #222;
+    border-color: #222;
 }
 
 .navbar-default .navbar-nav li a {
-	color: #F7F7F7;
+    color: #F7F7F7;
 }
 
-.navbar-default 
-.navbar-nav
-.active 
-a, 
-.navbar-default 
-.navbar-nav .active 
-a:focus, 
-.navbar-default 
-.navbar-nav .active 
-a:hover {
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
     color: #F7F7F7;
     background-color: #E62339;
 }
 
-.dropdown-menu{
-	background-color: #E62339;
+.dropdown-menu {
+    background-color: #E62339;
 }
-
 
 .logo-max {
     height: 80px;
@@ -162,13 +181,9 @@ a:hover {
     }
 }
 
-
 .navbar-nav li {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
-
-
-
 
 .content {
     padding: 0% 6%;
@@ -178,11 +193,15 @@ a:hover {
     height: 60px;
 }
 
+
 /* styles for modules - check app_vars.py for description */
 
 
 /*MODULES */
+
+
 /* styles for modules - check app_vars.py for description */
+
 
 /* lab_ma == labs + map ... lab_if == labs + infos ... _id == indicators ... _pr == projects ... _da == dashboard */
 
@@ -245,16 +264,18 @@ a:hover {
 .inf_ab {}
 
 .inf_co {
-	background-color: #222;
-	background-image: url( "{{ url_for('static', filename='images/backgrounds/map-image.png') }} ") ;
-	background-repeat: no-repeat;
-	background-position: center center fixed;
+    background-color: #222;
+    background-image: url('../images/backgrounds/map-image.png');
+    background-repeat: no-repeat;
+    background-position: center center fixed;
 }
 
 .inf_re {
-	background-color: #222;
+    background-color: #222;
+    background-image: url('../images/backgrounds/map-image.png');
+    background-repeat: no-repeat;
+    background-position: center center fixed;
 }
-
 
 .inf_in {}
 
@@ -285,7 +306,7 @@ a:hover {
 /* Slider. From: https://bl.ocks.org/mbostock/6452972*/
 
 .ticks {
-    font: 10px;
+    font: 90%;
 }
 
 .track, .track-inset, .track-overlay {
@@ -313,3 +334,65 @@ a:hover {
 }
 
 .city.education {}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+    margin-top: 30px;
+    border: 1px solid red;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 60%;
+}
+
+#container2 {
+    height: 200px !important;
+}
+
+
+/*DEMO MAP CSS  */
+
+#map {
+    /*width  : 800px;*/
+    /*height : 500px;*/
+    margin-bottom: 5px;
+}
+
+.info {
+    padding: 6px 6px;
+    font: 12px/14px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.info h4 {
+    margin: 0px;
+    color: #777;
+}
+
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+}
+
+.legend i {
+    width: 35px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
