@@ -185,12 +185,22 @@ p.city-description {
     text-transform: uppercase;
 }
 
+/* DIVS      */
+
 .content {
     padding: 0% 6%;
 }
 
 .upper-margin {
     height: 60px;
+}
+
+.photo {
+    float: left; width: 200px; 
+    height: 200px; 
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 
