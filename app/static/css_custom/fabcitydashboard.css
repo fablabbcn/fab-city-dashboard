@@ -432,3 +432,7 @@ h2, h3 {
     margin-right: 8px;
     opacity: 0.7;
 }
+
+.dropdown-menu li a{
+    font-family: "Montserrat", sans-serif;
+}
