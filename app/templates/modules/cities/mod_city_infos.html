@@ -18,7 +18,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <div id="container" class="svg-container">
+            <div id="resilience-container1" class="svg-container">
             </div>
         </div>
         <div class="col-md-6">
@@ -44,7 +44,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <div id="container" class="svg-container">
+            <div id="resilience-container2" class="svg-container">
             </div>
         </div>
         <div class="col-md-6">
@@ -151,7 +151,7 @@
                         .range([0, width]);
 
                     // Access svg area
-                    var svg = d3.select("div#container")
+                    var svg = d3.select("div#resilience-container1")
                         .append("svg")
                         .attr("preserveAspectRatio", "xMaxYMax meet")
                         .attr("viewBox", "0 0 500 600")
@@ -587,7 +587,7 @@
             .attr("rx", 3)
             .attr("ry", 3);
 
-        var otro = d3.select("div#container");
+        var otro = d3.select("div#resilience-container1");
 
         function hue(h) {
             handle.attr("x", x(h));
@@ -596,10 +596,6 @@
             otro.select(".city.education.value").text(Math.round(h) / 10 + "/10");
         }
     </script>
-
-
-</div>
-cript>
 
 
 </div>
