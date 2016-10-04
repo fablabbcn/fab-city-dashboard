@@ -492,11 +492,16 @@
             .range([0, width])
             .clamp(true);
 
+        // Linear scale for scaling the graph
+        var linearScale = d3.scaleLinear()
+            .domain([0, 10.0])
+            .range([0, width]);
+
         // Access svg area
         var svg = d3.select("div#container2")
             .append("svg")
             .attr("preserveAspectRatio", "xMaxYMax meet")
-            .attr("viewBox", "0 0 550 700")
+            .attr("viewBox", "0 0 330 100")
             .classed("svg-content", true);
 
         var slider = svg.append("g")
@@ -549,11 +554,15 @@
             .attr("rx", 3)
             .attr("ry", 3);
 
+        var otro = d3.select("div#container");
+
+        otro.style("border", "2px solid blue !important;");
+
         function hue(h) {
             handle.attr("x", x(h));
             console.log(h);
-            //d3.select(".city.education.bar").attr("width", linearScale(h / 10));
-            //d3.select(".city.education.value").text(Math.round(h) / 10 + "/10");
+            otro.select(".city.education.bar").attr("width", linearScale(h / 10));
+            otro.select(".city.education.value").text(Math.round(h) / 10 + "/10");
         }
     </script>
 
