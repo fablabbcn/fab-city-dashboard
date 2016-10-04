@@ -56,7 +56,7 @@ p.city-description {
     font-size: 19px;
     line-height: 1.7;
     text-align: left;
-    margin: 0 0 50px;
+    margin: 70px 0 50px;
 }
 
 .disabled {
@@ -76,6 +76,13 @@ p.city-description {
     font-weight: 700;
     color: #fff;
     background-color: #E62339;
+}
+
+.menu  {
+
+    border-color: #d1d1d1;
+    color: #222;
+    background-color: #d1d1d1;
 }
 
 .btn-link {
