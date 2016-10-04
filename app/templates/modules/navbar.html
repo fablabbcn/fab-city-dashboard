@@ -1,143 +1,122 @@
-
 <nav class="navbar navbar-default">
-	
-	<div class="container-fluid">
-	  
-	  <!-- Brand and toggle get grouped for better mobile display -->
-	  <div class="navbar-header">
-		<button type="button"
-				class="navbar-toggle collapsed"
-				data-toggle="collapse"
-				data-target="#bs-example-navbar-collapse-1"
-				aria-expanded="false">
+
+    <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		  <span class="sr-only">Toggle navigation</span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		  <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="/">
-            <img id="logo-navbar" class="logo-min" style="width: 30px; height: 30px; margin-top: -5px;" src="{{ url_for('static', filename='images/logos/logo-min.png') }}"/>
-        </a> 
-	  </div>
-  
-  
-	  <!-- Collect the nav links, forms, and other content for toggling -->
-	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		
-		<ul class="nav navbar-nav">
-		  
-			
-			
-			<li>
-				<!--<a href="/user/introApp/World">Intro App</a>-->
-				<a href="/user/demo/World">Demo</a>
-			</li>
-						
-						
-		  
-		  <li class="dropdown active">
-			<a href="#"
-			   class="dropdown-toggle"
-			   data-toggle="dropdown"
-			   role="button"
-			   aria-haspopup="true"
-			   aria-expanded="false">
-				Who are you ? <span class="caret"></span>
-			</a> <!-- user profiles-->
-			
-			<ul class="dropdown-menu">
+            <a class="navbar-brand" href="/">
+                <img id="logo-navbar" class="logo-min" style="width: 30px; height: 30px; margin-top: -5px;" src="{{ url_for('static', filename='images/logos/logo-min.png') }}" />
+            </a>
+        </div>
 
-			  <li><a href="/user/only_dashboard/World">Global dashboard</a></li>
-			  
-			  <li role="separator" class="divider"></li>
 
-			  <li><a href="/user/analytic/World"		>User - analytic</a></li>
-			  <li><a href="/user/citizen/World" 		>User - citizen</a></li>
-			  <li><a href="/user/civic_leader/World"	>User - civic leader</a></li>
-			  <li><a href="/user/maker/World"		>User - maker</a></li>
-			  <li><a href="/user/fab_manager/World"		>User - fab manager</a></li>
-			  
-			  <li role="separator" class="divider"></li>
-			  
-			  <li><a href="/user/carto/World"		>Geo - World</a></li>
-			  <!--<li><a href="/user/carto/Europe"		>Geo - Europe</a></li>-->
-			  <!--<li><a href="/user/carto/SouthAmerica"	>Geo - South America</a></li>-->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-			
-			</ul>
-		  
-		  </li>
-		  
-		  <li class="dropdown">
-			<a href="#"
-			   class="dropdown-toggle"
-			   data-toggle="dropdown"
-			   role="button"
-			   aria-haspopup="true"
-			   aria-expanded="false">
-				Tests <span class="caret"></span>
-			</a> <!-- user profiles-->
-			
-			<ul class="dropdown-menu">
+            <ul class="nav navbar-nav">
+                <li>
+                    <!--<a href="/user/introApp/World">Intro App</a>-->
+                    <a href="">Fab City Dashboard v0.1</a>
+                </li>
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				Who are you? - To be restructured with link to the same one page <span class="caret"></span>
+			</a>
+                    <!-- user profiles-->
 
-			  <li><a href="/oecd/test">OECD / OECD_test</a></li>
-			  <li><a href="/oecd/regional-data">OECD / regional-data</a></li>
-			  <li><a href="/oecd/national-data">OECD / national-data</a></li>
-			  <li><a href="/oecd/nat-regio">OECD / nat-regio</a></li>
-			  <li><a href="/oecd/nat-regio-city">OECD / nat-regio-city</a></li>
-			  <li><a href="/oecd/nat-regio-city-slider">OECD / nat-regio-city-slider</a></li>
-			  
-			  <li role="separator" class="divider"></li>
+                    <ul class="dropdown-menu">
 
-			  <li><a href="/test_leaflet/algo">Leaflet map</a></li>
-			  <!--<li><a href="/test_blank">blank_test</a></li>-->
-			
-			</ul>
-		  
-		  </li>
-		  
-		</ul>
-		
-		
-		
-		<!--<form class="navbar-form navbar-left">
+                        <li><a href="/user/only_dashboard/World">Global dashboard</a></li>
+
+                        <li role="separator" class="divider"></li>
+
+                        <li><a href="/user/analytic/World">User - analytic</a></li>
+                        <li><a href="/user/citizen/World">User - citizen</a></li>
+                        <li><a href="/user/civic_leader/World">User - civic leader</a></li>
+                        <li><a href="/user/maker/World">User - maker</a></li>
+                        <li><a href="/user/fab_manager/World">User - fab manager</a></li>
+
+                        <li role="separator" class="divider"></li>
+
+                        <li><a href="/user/carto/World">Geo - World</a></li>
+                        <!--<li><a href="/user/carto/Europe"		>Geo - Europe</a></li>-->
+                        <!--<li><a href="/user/carto/SouthAmerica"	>Geo - South America</a></li>-->
+
+
+                    </ul>
+
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				Tests - To be removed<span class="caret"></span>
+			</a>
+                    <!-- user profiles-->
+
+                    <ul class="dropdown-menu">
+
+                        <li><a href="/oecd/test">OECD / OECD_test</a></li>
+                        <li><a href="/oecd/regional-data">OECD / regional-data</a></li>
+                        <li><a href="/oecd/national-data">OECD / national-data</a></li>
+                        <li><a href="/oecd/nat-regio">OECD / nat-regio</a></li>
+                        <li><a href="/oecd/nat-regio-city">OECD / nat-regio-city</a></li>
+                        <li><a href="/oecd/nat-regio-city-slider">OECD / nat-regio-city-slider</a></li>
+
+                        <li role="separator" class="divider"></li>
+
+                        <li><a href="/test_leaflet/algo">Leaflet map</a></li>
+                        <!--<li><a href="/test_blank">blank_test</a></li>-->
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+
+
+            <!--<form class="navbar-form navbar-left">
 		  <div class="form-group">
 			<input type="text" class="form-control" placeholder="Search">
 		  </div>
 		  <button type="submit" class="btn btn-default">Submit</button>
 		</form>-->
-		
-		<ul class="nav navbar-nav navbar-right">
-		  
-		  <li><a href="#">Login</a></li>
-		  
-		  <li>
-			<a type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <!--
+<li><a href="#">Login</a></li>
+
+<li>
+    <a type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
 			demo modal
-			</a>
-		  
-		  
-		  <li class="dropdown">
-			<a href="#"
-			   class="dropdown-toggle"
-			   data-toggle="dropdown"
-			   role="button"
-			   aria-haspopup="true"
-			   aria-expanded="false">
+        </a>-->
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 				About
 				<span class="caret"></span>
 			</a>
-			<ul class="dropdown-menu">
-			  <li><a href="#">About</a></li>
-			  <li><a href="#">Credits</a></li>
-			  <li><a href="#">Contact</a></li>
-			  <li role="separator" class="divider"></li>
-			  <li><a href="#">Separated link</a></li>
-			</ul>
-		  </li>
-		
-		</ul>
-		
-	  </div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-  </nav>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Credits</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
