@@ -14,7 +14,8 @@
 
     <h2>Resilience index</h2>
 
-    <svg class="svg_oecd" id="region_resilience" style="border: 1px solid red;"></svg>
+    <div id="container" class="svg-container">
+    </div>
     <!-- added specific class "svg_oecd" -> style because it was affecting map/Leaflet rendering -->
 
     <script>
@@ -111,9 +112,11 @@
                         .range([0, width]);
 
                     // Access svg area
-                    var svg = d3.select("#region_resilience")
-                        .attr("width", 1000)
-                        .attr("height", 1000);
+                    var svg = d3.select("div#container")
+                    .append("svg")
+                    .attr("preserveAspectRatio", "xMinYMin meet")
+                    .attr("viewBox", "0 0 300 300")
+                    .classed("svg-content", true);
 
                     // Rounded bars
                     var regions = svg.append("g");
