@@ -46,6 +46,9 @@ p.descriptions {
     text-align: left;
 }
 
+.disabled {
+    opacity: 0.5;
+}
 
 /*BUTTONS */
 

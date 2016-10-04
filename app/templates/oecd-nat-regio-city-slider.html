@@ -65,6 +65,7 @@
                     }
                 }
 
+                // Calculte the city resilience, in our way
                 var city_array = JSON.parse(JSON.stringify(region_array));
                 for (property in region_array) {
                     //city_array[property] = region_array[property];
@@ -72,6 +73,20 @@
                         city_array[property][subproperty] = city_array[property][subproperty] * 0.2;
                     }
                 }
+
+                // Debug
+                console.log(city_gdp[0]["City Name"], city_gdp[0]["City Code"], city_gdp[0]["2012"]);
+                console.log(city_pop[0]["City Name"], city_pop[0]["City Code"], city_pop[0]["2014"]);
+                console.log(city_surf[0]["City Name"], city_surf[0]["City Code"], city_surf[0]["2014"]);
+
+                console.log(region_gdp[0]["Region Name"], region_gdp[0]["Region Code"], region_gdp[0]["2012"]);
+                console.log(region_pop[0]["Region Name"], region_pop[0]["Region Code"], region_pop[0]["2014"]);
+                console.log(region_surf[0]["Region Name"], region_surf[0]["Region Code"], region_surf[0]["2014"]);
+
+                console.log(country_gdp[0]["Country Name"], country_gdp[0]["Country Code"], country_gdp[0]["2015"]);
+                console.log(country_pop[0]["Country Name"], country_pop[0]["Country Code"], country_pop[0]["2011"]);
+                console.log(country_surf[10]["Country Name"], country_surf[10]["Country Code"], country_surf[10]["2015"]);
+
 
                 // variables
                 var zerox = 10;
