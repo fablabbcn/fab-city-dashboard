@@ -1,6 +1,6 @@
 <div class="city-search-bar" style="min-height: 100px; background-color: #222;  padding-top: 50px;">
 
-</div>    
+</div>
 
 <div class="content" id="cities" style="padding-bottom: 80px;">
     <!--MODULE CITY/info : cit_if" <br>-->
@@ -1061,15 +1061,15 @@
                         .attr("ry", 3);
 
                     var project_impact = {
-                        "Education": 0.01,
+                        "Education": 0.02,
                         "Jobs": 0.3,
                         "Income": 0.4,
                         "Safety": 0.01,
-                        "Health": 0.3,
+                        "Health": 0.1,
                         "Environment": 0.6,
                         "Civic engagement": 0.4,
-                        "Accessibility to services": 0.0,
-                        "Housing": 0.0,
+                        "Accessibility to services": 0.02,
+                        "Housing": 0.02,
                         "Community": 0.7,
                         "Life satisfaction": 0.2
                     };
@@ -1091,15 +1091,76 @@
                         otro.select(".country.education.bar").attr("width", linearScale(countries_wellbeing[28]["Education"]) + linearScale((h / 10) * (project_impact["Education"] * (ratio1 * ratio2))));
                         otro.select(".country.education.value").text(Math.round(h) / 10 + "/10");
                         // Jobs
+                        otro.select(".city.jobs.bar").attr("width", linearScale(city_wellbeing["Jobs"]) + linearScale((h / 10) * (project_impact["Jobs"])));
+                        otro.select(".city.jobs.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.jobs.bar").attr("width", linearScale(regions_wellbeing[283]["Jobs"]) + linearScale((h / 10) * (project_impact["Jobs"] * (ratio1))));
+                        otro.select(".region.jobs.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.jobs.bar").attr("width", linearScale(countries_wellbeing[28]["Jobs"]) + linearScale((h / 10) * (project_impact["Jobs"] * (ratio1 * ratio2))));
+                        otro.select(".country.jobs.value").text(Math.round(h) / 10 + "/10");
                         // Income
+                        otro.select(".city.income.bar").attr("width", linearScale(city_wellbeing["Income"]) + linearScale((h / 10) * (project_impact["Income"])));
+                        otro.select(".city.income.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.income.bar").attr("width", linearScale(regions_wellbeing[283]["Income"]) + linearScale((h / 10) * (project_impact["Income"] * (ratio1))));
+                        otro.select(".region.income.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.income.bar").attr("width", linearScale(countries_wellbeing[28]["Income"]) + linearScale((h / 10) * (project_impact["Income"] * (ratio1 * ratio2))));
+                        otro.select(".country.income.value").text(Math.round(h) / 10 + "/10");
                         // Safety
+                        otro.select(".city.safety.bar").attr("width", linearScale(city_wellbeing["Safety"]) + linearScale((h / 10) * (project_impact["Safety"])));
+                        otro.select(".city.safety.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.safety.bar").attr("width", linearScale(regions_wellbeing[283]["Safety"]) + linearScale((h / 10) * (project_impact["Safety"] * (ratio1))));
+                        otro.select(".region.safety.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.safety.bar").attr("width", linearScale(countries_wellbeing[28]["Safety"]) + linearScale((h / 10) * (project_impact["Safety"] * (ratio1 * ratio2))));
+                        otro.select(".country.safety.value").text(Math.round(h) / 10 + "/10");
                         // Health
+                        otro.select(".city.health.bar").attr("width", linearScale(city_wellbeing["Health"]) + linearScale((h / 10) * (project_impact["Health"])));
+                        otro.select(".city.health.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.health.bar").attr("width", linearScale(regions_wellbeing[283]["Health"]) + linearScale((h / 10) * (project_impact["Health"] * (ratio1))));
+                        otro.select(".region.health.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.health.bar").attr("width", linearScale(countries_wellbeing[28]["Health"]) + linearScale((h / 10) * (project_impact["Health"] * (ratio1 * ratio2))));
+                        otro.select(".country.health.value").text(Math.round(h) / 10 + "/10");
                         // Environment
+                        otro.select(".city.environment.bar").attr("width", linearScale(city_wellbeing["Environment"]) + linearScale((h / 10) * (project_impact["Environment"])));
+                        otro.select(".city.environment.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.environment.bar").attr("width", linearScale(regions_wellbeing[283]["Environment"]) + linearScale((h / 10) * (project_impact["Environment"] * (ratio1))));
+                        otro.select(".region.environment.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.environment.bar").attr("width", linearScale(countries_wellbeing[28]["Environment"]) + linearScale((h / 10) * (project_impact["Environment"] * (ratio1 * ratio2))));
+                        otro.select(".country.environment.value").text(Math.round(h) / 10 + "/10");
                         // Civic engagement
+                        otro.select(".city.civic.bar").attr("width", linearScale(city_wellbeing["Civic engagement"]) + linearScale((h / 10) * (project_impact["Civic engagement"])));
+                        otro.select(".city.civic.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.civic.bar").attr("width", linearScale(regions_wellbeing[283]["Civic engagement"]) + linearScale((h / 10) * (project_impact["Civic engagement"] * (ratio1))));
+                        otro.select(".region.civic.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.civic.bar").attr("width", linearScale(countries_wellbeing[28]["Civic engagement"]) + linearScale((h / 10) * (project_impact["Civic engagement"] * (ratio1 * ratio2))));
+                        otro.select(".country.civic.value").text(Math.round(h) / 10 + "/10");
                         // Accessibility to services
+                        otro.select(".city.accessibility.to.services.bar").attr("width", linearScale(city_wellbeing["Accessibility to services"]) + linearScale((h / 10) * (project_impact["Accessibility to services"])));
+                        otro.select(".city.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.accessibility.to.services.bar").attr("width", linearScale(regions_wellbeing[283]["Accessibility to services"]) + linearScale((h / 10) * (project_impact["Accessibility to services"] * (ratio1))));
+                        otro.select(".region.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.accessibility.to.services.bar").attr("width", linearScale(countries_wellbeing[28]["Accessibility to services"]) + linearScale((h / 10) * (project_impact["Accessibility to services"] * (ratio1 *
+                            ratio2))));
+                        otro.select(".country.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
                         // Housing
+                        otro.select(".city.housing.bar").attr("width", linearScale(city_wellbeing["Housing"]) + linearScale((h / 10) * (project_impact["Housing"])));
+                        otro.select(".city.housing.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.housing.bar").attr("width", linearScale(regions_wellbeing[283]["Housing"]) + linearScale((h / 10) * (project_impact["Housing"] * (ratio1))));
+                        otro.select(".region.housing.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.housing.bar").attr("width", linearScale(countries_wellbeing[28]["Housing"]) + linearScale((h / 10) * (project_impact["Housing"] * (ratio1 * ratio2))));
+                        otro.select(".country.housing.value").text(Math.round(h) / 10 + "/10");
                         // Community
+                        otro.select(".city.community.bar").attr("width", linearScale(city_wellbeing["Community"]) + linearScale((h / 10) * (project_impact["Community"])));
+                        otro.select(".city.community.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.community.bar").attr("width", linearScale(regions_wellbeing[283]["Community"]) + linearScale((h / 10) * (project_impact["Community"] * (ratio1))));
+                        otro.select(".region.community.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.community.bar").attr("width", linearScale(countries_wellbeing[28]["Community"]) + linearScale((h / 10) * (project_impact["Community"] * (ratio1 * ratio2))));
+                        otro.select(".country.community.value").text(Math.round(h) / 10 + "/10");
                         // Life satisfaction
+                        otro.select(".city.life.satisfaction.bar").attr("width", linearScale(city_wellbeing["Life satisfaction"]) + linearScale((h / 10) * (project_impact["Education"])));
+                        otro.select(".city.life.satisfaction.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".region.life.satisfaction.bar").attr("width", linearScale(regions_wellbeing[283]["Life satisfaction"]) + linearScale((h / 10) * (project_impact["Life satisfaction"] * (ratio1))));
+                        otro.select(".region.life.satio.value").text(Math.round(h) / 10 + "/10");
+                        otro.select(".country.life.satisfaction.bar").attr("width", linearScale(countries_wellbeing[28]["Life satisfaction"]) + linearScale((h / 10) * (project_impact["Life satisfaction"] * (ratio1 * ratio2))));
+                        otro.select(".country.life.satisfaction.value").text(Math.round(h) / 10 + "/10");
                     }
 
                     // ---
