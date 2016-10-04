@@ -545,11 +545,6 @@
 
 </div>
 
-
-
-
-
-
 <div class="content">
     <!-- DYNAMIC REGIONS CALLING WITH JINJA + CORRESPONDING GEOJSON <br>-->
 
@@ -647,13 +642,15 @@
 </div>
 
 
-<div class="content">
 
-    {% include 'modules/tools/mod_choose_place_demo.html' %}
+<div class="content" style="padding-bottom: 30px">
+
+    {% include 'modules/tools/mod_choose_place_demo.html' %} {% include 'modules/tools/mod_choose_indicator_demo.html' %}
 
 </div>
 
-<div class="map">
+
+<div class="content map" style="padding-bottom: 30px">
 
     <!-- DIV MAP -->
     <div id="map" style="width: 100%; height: {{ row['height'] }}">
@@ -677,11 +674,9 @@
 
         // CREATE EMPTY LAYER
         //var empty_layer    = new L.layerGroup();
-
         // CREATE BASEMAPS LAYER
         var countries_layer = new L.layerGroup();
         var met_areas_layer = new L.layerGroup();
-
         // CREATE STATS LAYER
         var stats_layer = new L.layerGroup();
 
@@ -703,9 +698,6 @@
             id: 'mapbox.streets',
             attribution: mbAttr
         });
-
-
-
 
         function setMapView(placeName) {
             //console.log("setMapView/placeName : ", placeName);
@@ -732,17 +724,14 @@
         map.options.minZoom = 2;
 
 
-
         /// INTERACTIONS
         // control that shows state info on hover
         var info = L.control();
-
         info.onAdd = function(map) {
             this._div = L.DomUtil.create('div', 'info');
             this.update();
             return this._div;
         };
-
         info.update = function(props) {
             this._div.innerHTML = '<h4>Legend</h4>' +
                 '<b><small>src:' + 'FablabsIO' + '</small><br>' + //////////////////////////////// static datas
@@ -751,9 +740,7 @@
                     (props.addedDatas.population / 1000000) + ' M pers.' :
                     'Hover over a state');
         };
-
         info.addTo(map);
-
 
         /////////////////////////////////////////
         // FUNCTION - ADD POPUP TO MARKERS
@@ -830,7 +817,6 @@
                     markerObjects[i].bringToFront(); //bring markers over all
                 }
             };
-
             info.update(currentLayer.feature.properties);
         };
 
@@ -898,7 +884,6 @@
                 .addTo(layer_);
             markerObjects.push(layer);
         };
-
 
         /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -971,7 +956,6 @@
         });
 
 
-
         // SERVE REGIONS ///////////////////////////////////////////////////////////////////////////////////
 
         // dynamically serving js_var names
@@ -993,7 +977,6 @@
         //addBasemap(NLD_admin_level_4, countries_layer, true);
 
         // CHOOSE REGION AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
-
 
         // CHOOSE METROPOLITAN AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
         //addBasemap(AUS_MAs_2016, met_areas_layer, false);
@@ -1117,469 +1100,4 @@
         //								   ]
         //						};
     </script>
-    =======
-    <div class="content map" style="padding-bottom: 30px">
-
-        <!-- DIV MAP -->
-        <div id="map" style="width: 100%; height: {{ row['height'] }}">
-        </div>
-
-        <!-- LEAFLET / D3 SCRIPT -->
-        <script>
-            //// READ GEOJSON WITH D3 ////////////////// FAIL !!!
-            //var d3_geojson = d3.json(M_fablabs, function (error, json) {
-            //									if (error) 	console.log(error);
-            //									console.log(json)
-            //									}
-            //						 )
-
-            // FIND GEOBOX/CENTER/ZOOM settings from setViews.js
-            var regionSelected = "{{ regionSelected }}";
-            var userProfile = "{{ user_profile }}";
-
-
-
-
-            // CREATE EMPTY LAYER
-            //var empty_layer    = new L.layerGroup();
-
-            // CREATE BASEMAPS LAYER
-            var countries_layer = new L.layerGroup();
-            var met_areas_layer = new L.layerGroup();
-
-            // CREATE STATS LAYER
-            var stats_layer = new L.layerGroup();
-
-            // CREATE FABLABS LAYER
-            var fablabs_layer = new L.layerGroup();
-
-
-            // BASEMAP
-            var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-                '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                'Imagery <a href="http://mapbox.com">Mapbox</a>';
-            var mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw';
-
-            var grayscale = L.tileLayer(mbUrl, {
-                id: 'mapbox.light',
-                attribution: mbAttr
-            });
-            var streets = L.tileLayer(mbUrl, {
-                id: 'mapbox.streets',
-                attribution: mbAttr
-            });
-
-
-
-
-            function setMapView(placeName) {
-                //console.log("setMapView/placeName : ", placeName);
-                var placeDict = setGeoViews[placeName]; //setGeoViews loaded as external .js file
-                //console.log("setMapView/placeDict", placeDict);
-                return placeDict;
-            };
-            var region_settings = setMapView(regionSelected);
-            var set_center_view = region_settings["center"];
-            var set_zoom_view = region_settings["zoom"];
-
-            console.log("results setMapView() : ", regionSelected, region_settings)
-
-
-            // SET MAP VIEW /////////////// NEED TO BE DYNAMIC - respond to view
-            var map = L.map('map', {
-                //center : [20, 0], 	// set_center_view
-                center: set_center_view,
-                //zoom   : 2,			// set_zoom_view
-                zoom: set_zoom_view,
-                layers: [grayscale, fablabs_layer]
-            });
-            map.options.maxZoom = 10;
-            map.options.minZoom = 2;
-
-
-
-            /// INTERACTIONS
-            // control that shows state info on hover
-            var info = L.control();
-
-            info.onAdd = function(map) {
-                this._div = L.DomUtil.create('div', 'info');
-                this.update();
-                return this._div;
-            };
-
-            info.update = function(props) {
-                this._div.innerHTML = '<h4>Legend</h4>' +
-                    '<b><small>src:' + 'FablabsIO' + '</small><br>' + //////////////////////////////// static datas
-                    (props ?
-                        '<b>' + props.addedDatas.countryName + '</b><br />' +
-                        (props.addedDatas.population / 1000000) + ' M pers.' :
-                        'Hover over a state');
-            };
-
-            info.addTo(map);
-
-
-            /////////////////////////////////////////
-            // FUNCTION - ADD POPUP TO MARKERS
-            function onEachMarker(feature, layer) {
-                var props = feature.properties;
-                var popupContent = "<p></p>";
-                if (props && props.name) {
-                    popupContent += '<h5>' + props.name + '</h5> ( ' + props.lab_type + ' )' + '<hr>' +
-                        '<p style="margin-left: 15px"><em>city</em> : ' + props.city + ' ( ' + props.country_code + ' )' +
-                        '<br><em>address</em> : ' + props.address_1 +
-                        '</p>';
-                }
-                layer.bindPopup(popupContent);
-            }
-
-
-
-            // STYLES ///////////////////////////////////////////////////////////////////////////////////////
-
-            // get color depending on a choosen d.value /////////// REDO IN MORE GENERAL WAY ////////////////////////
-            // cf http://hslpicker.com
-            function getColor(d) {
-                return d > 100 * 1000000 ? '#800026' :
-                    d > 50 * 1000000 ? '#BD0026' :
-                    d > 20 * 1000000 ? '#E31A1C' :
-                    d > 10 * 1000000 ? '#FC4E2A' :
-                    d > 5 * 1000000 ? '#FD8D3C' :
-                    d > 2 * 1000000 ? '#FEB24C' :
-                    d > 1 * 1000000 ? '#FED976' :
-                    '#FFEDA0';
-            }
-
-
-            function regionStyle(feature) {
-                //console.log(feature);
-                var props = feature.properties;
-                var fillColor;
-                if (feature.id != "-99" && feature.properties.addedDatas != undefined) {
-                    fillColor = getColor(parseInt(props.addedDatas.population));
-                } else {
-                    fillColor = "#00e0e0"
-                };
-                return {
-                    weight: 2,
-                    opacity: 1,
-                    color: 'white',
-                    dashArray: '3',
-                    fillOpacity: 0.7,
-                    fillColor: fillColor,
-                    //fillColor  : getColor(value),
-                    //fillColor  : '#00e0e0'
-                };
-            };
-
-
-            // HIGHLIGHTS ON BASEMAPS // manage/hack z-index
-            function highlightFeature(e) {
-
-                var currentLayer = e.target;
-
-                currentLayer.setStyle({
-                    weight: 3,
-                    color: '#727',
-                    dashArray: '',
-                    fillOpacity: 0.7
-                });
-
-                if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-                    currentLayer.bringToFront();
-                    for (var i = 0; i < markerObjects.length; i++) {
-                        markerObjects[i].bringToFront(); //bring markers over all
-                    }
-                    for (var i = 0; i < markerObjects.length; i++) {
-                        markerObjects[i].bringToFront(); //bring markers over all
-                    }
-                };
-
-                info.update(currentLayer.feature.properties);
-            };
-
-            function resetHighlight(e) {
-                for (var i = 0; i < basemapObjects.length; i++) {
-                    var layer = basemapObjects[i];
-                    layer.resetStyle(e.target);
-                    info.update();
-                }
-            };
-
-            function zoomToFeature(e) {
-                map.fitBounds(e.target.getBounds());
-            };
-
-            function onEachBasemap(feature, layer) {
-                layer.on({
-                    mouseover: highlightFeature,
-                    mouseout: resetHighlight,
-                    click: zoomToFeature
-                });
-            };
-
-
-            /////////////////////////////////////////////////////////////////////////////////////////
-
-            // LOAD BASEMAPS
-            basemapObjects = [];
-
-            function addBasemap(geojson, layer_, bottom) {
-
-                var layer = L.geoJson(geojson, {
-                        style: regionStyle,
-                        onEachFeature: onEachBasemap
-                    })
-                    .addTo(map)
-                    .addTo(layer_, bottom);
-
-                basemapObjects.push(layer);
-
-            };
-
-
-            // LOAD MARKER OBJECTS (fablabs) ///// MISSING DYNAMIC STYLES ////////////////////////
-            markerObjects = [];
-
-            function addPoints(json, layer_) {
-                var layer = L.geoJson(json, {
-                        style: function(feature) {
-                            return feature.properties && feature.properties.style;
-                        },
-                        onEachFeature: onEachMarker,
-                        pointToLayer: function(feature, latlng) {
-                            return L.circleMarker(latlng, {
-                                radius: 5,
-                                fillColor: "hsla(353, 80%, 52%, 1)",
-                                color: "#fff",
-                                weight: 3,
-                                opacity: 1,
-                                fillOpacity: 0.8
-                            });
-                        }
-                    })
-                    .addTo(map)
-                    .addTo(layer_);
-                markerObjects.push(layer);
-            };
-
-
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-            // PLACE LEGEND - GRADIENTS
-            var legend = L.control({
-                position: 'bottomright'
-            });
-            legend.onAdd = function(map) {
-                var div = L.DomUtil.create('div', 'info legend'), //div created with info lengend classes
-                    grades = [0, 1, 2, 5, 10, 20, 50, 100],
-                    labels = [],
-                    from, to;
-                for (var i = 0; i < grades.length; i++) {
-                    from = grades[i];
-                    to = grades[i + 1];
-                    labels.push(
-                        '<i style="background:' + getColor(from * 1000000 + 1) + '"></i> ' +
-                        from + (to ? '&ndash;' + to : '+'));
-                }
-                div.innerHTML = labels.join('<br>');
-                return div;
-            };
-            legend.addTo(map);
-
-
-
-            // VARIABLES LEGEND GEOJSON COLLECTION MIN/MAX /// STILL TO PUT IN USE
-            var basemapMax = 0;
-            var basemapMin = 0;
-
-            function getCollMinMax(featuresList, varName) {
-                for (var i = 0; i < featuresList.length; i++) {
-                    var feature = featuresList[i];
-                    var number = feature[varName];
-                    if (number > basemapMax) {
-                        basemapMax = number;
-                    }
-                    if (number < basemapMin) {
-                        basemapMin = number;
-                    }
-                }
-            }
-
-            // LOAD DATAS INTO GEOJSON
-            function addDatasToGeojson(geojson, datas_dict) {
-                var new_geojson = {
-                    "type": "FeatureCollection",
-                    "features": []
-                };
-                for (var i = 0; i < geojson.features.length; i++) {
-                    var feature = geojson.features[i];
-                    var datas_toAdd = datas_dict[feature.id];
-                    feature.properties.addedDatas = datas_toAdd;
-                    new_geojson.features.push(feature);
-                }
-                //console.log(new_geojson.features[0]);
-                return new_geojson;
-            };
-
-
-            // GEOJSONs TO UPDATE /////// NEED TO BE DYNAMIC /////////////////////////////////////////
-            var all_countries_updated = addDatasToGeojson({
-                {
-                    geojson_js_var
-                }
-            }, {
-                {
-                    dflt_data_js_var
-                }
-            });
-
-
-
-            // SERVE REGIONS ///////////////////////////////////////////////////////////////////////////////////
-
-            // dynamically serving js_var names
-            addBasemap({
-                {
-                    geojson_js_var
-                }
-            }, countries_layer, true)
-
-            // ALL COUNTRIES SERVED -- all_countries_updated , all_countries
-            //addBasemap(all_countries_updated, countries_layer, true);
-            //addBasemap(ESP_admin_level_4, countries_layer, true);
-            //addBasemap(FRA_admin_level_4, countries_layer, true);
-            //addBasemap(PRT_admin_level_4, countries_layer, true);
-            //addBasemap(ITA_admin_level_4, countries_layer, true);
-            //
-            //addBasemap(DEU_admin_level_4, countries_layer, true);
-            //addBasemap(DNK_admin_level_4, countries_layer, true);
-            //addBasemap(NLD_admin_level_4, countries_layer, true);
-
-            // CHOOSE REGION AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
-
-
-            // CHOOSE METROPOLITAN AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
-            //addBasemap(AUS_MAs_2016, met_areas_layer, false);
-            //addBasemap(AUT_MAs_2016, met_areas_layer, false);
-            //addBasemap(BEL_MAs_2016, met_areas_layer, false);
-            //addBasemap(CAN_MAs_2016, met_areas_layer, false);
-            //addBasemap(CHE_MAs_2016, met_areas_layer, false);
-            //addBasemap(CHL_MAs_2016, met_areas_layer, false);
-            //addBasemap(COL_MAs_2016, met_areas_layer, false);
-            //addBasemap(CZE_MAs_2016, met_areas_layer, false);
-            //addBasemap(DEU_MAs_2016, met_areas_layer, false);
-            //addBasemap(DNK_MAs_2016, met_areas_layer, false);
-
-            //addBasemap(ESP_MAs_2016, met_areas_layer, false);
-            //addBasemap(EST_MAs_2016, met_areas_layer, false);
-            //addBasemap(FIN_MAs_2016, met_areas_layer, false);
-
-            //addBasemap(FRA_MAs_2016, met_areas_layer, false);
-            //addBasemap(GBR_MAs_2016, met_areas_layer, false);
-            //addBasemap(GRC_MAs_2016, met_areas_layer, false);
-            //addBasemap(HUN_MAs_2016, met_areas_layer, false);
-            //addBasemap(IRL_MAs_2016, met_areas_layer, false);
-            //addBasemap(ITA_MAs_2016, met_areas_layer, false);
-            //addBasemap(JPN_MAs_2016, met_areas_layer, false);
-            //addBasemap(KOR_MAs_2016, met_areas_layer, false);
-            //addBasemap(LUX_FUAs_2016, met_areas_layer, false);
-            //addBasemap(MEX_MAs_2016, met_areas_layer, false);
-            //addBasemap(NLD_MAs_2016, met_areas_layer, false);
-            //addBasemap(NOR_MAs_2016, met_areas_layer, false);
-            //addBasemap(POL_MAs_2016, met_areas_layer, false);
-            //addBasemap(PRT_MAs_2016, met_areas_layer, false);
-            //addBasemap(SVK_MAs_2016, met_areas_layer, false);
-            //addBasemap(SVN_MAs_2016, met_areas_layer, false);
-            //addBasemap(SWE_MAs_2016, met_areas_layer, false);
-            //addBasemap(USA_MAs_2016, met_areas_layer, false);
-
-
-            // SERVE LABS //////////////////////////////////////////////////
-            //addPoints(Makery_fablabs, fablabs_layer);
-            addPoints(FablabsIO_fablabs, fablabs_layer);
-
-
-
-            // CREATE CONTROLS
-            var baseLayers = {
-                "Grayscale": grayscale,
-                "Streets": streets
-            };
-
-            var overlays = {
-                //"Empty layer" : empty_layer,
-                "Fablabs": fablabs_layer,
-                //"Metrop. areas" : met_areas_layer,
-                "Countries": countries_layer
-            };
-
-            var controls = L.control.layers(baseLayers, overlays, {
-                collapsed: false
-            }).addTo(map);
-
-
-
-
-            ////////////////////////////////////////////////////////////////////////////////////////////////
-            // ARCHIVE /  INVALID SCRIPTS
-
-            //var checks = document.querySelectorAll('[type = "checkbox"]'), i;
-            //function check() {
-            //	for (i = 0; i < checks.length; ++i) {
-            //		checks[i].disabled = false;
-            //check();
-
-
-            ////FAILED CLUSTERS
-            //var geoJsonData = {
-            //	"type": "FeatureCollection",
-            //	"features": [
-            //		{ "type": "Feature", "id":"1", "properties": { "address": "2"   }, "geometry": { "type": "Point", "coordinates": [175.2209316333,-37.8210922667 ] } },
-            //		{ "type": "Feature", "id":"2", "properties": { "address": "151" }, "geometry": { "type": "Point", "coordinates": [175.2238417833,-37.80975435   ] } },
-            //		{ "type": "Feature", "id":"3", "properties": { "address": "21"  }, "geometry": { "type": "Point", "coordinates": [175.2169955667,-37.818193     ] } },
-            //		{ "type": "Feature", "id":"4", "properties": { "address": "14"  }, "geometry": { "type": "Point", "coordinates": [175.2240856667,-37.8216963    ] } },
-            //		{ "type": "Feature", "id":"5", "properties": { "address": "38B" }, "geometry": { "type": "Point", "coordinates": [175.2196982333,-37.8188702167 ] } },
-            //		{ "type": "Feature", "id":"6", "properties": { "address": "38"  }, "geometry": { "type": "Point", "coordinates": [175.2209942   ,-37.8192782833 ] } }
-            //	]
-            //};
-            //var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            //	maxZoom: 18,
-            //	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            //});
-            //var map = L.map('map')
-            //		.addLayer(tiles);
-            //var markers = L.markerClusterGroup();
-            //var geoJsonLayer = L.geoJson(geoJsonData, {
-            //	onEachFeature: function (feature, layer) {
-            //		layer.bindPopup(feature.properties.address);
-            //	}
-            //});
-            //markers.addLayer(geoJsonLayer);
-            //map.addLayer(markers);
-            //map.fitBounds(markers.getBounds());
-
-
-            //// VALID GEOJSON OBJECT :
-            //var Makery_fablabs_ = {	"type":"FeatureCollection",
-            //						"features":[
-            //									{	"type":"Feature", ///// <------ NECESSARY FOR GEOJSON
-            //										"geometry":{"type":"Point",
-            //													"coordinates":[2.16843,48.7118]},
-            //										"properties":{	"id":"1",
-            //														"name":"(Fab)Lab Digiscope",
-            //														"website":"http:\/\/fablabdigiscope.wordpress.com",
-            //														"twitter":"",
-            //														"facebook":"",
-            //														"type_lab":"fablab",
-            //														"url_makery":"",
-            //														"adress":"660 Rue Noetzlin, Gif-sur-Yvette, 91190",
-            //														"country":"FR",
-            //														"marker-color":"#f00","marker-size":"small"},
-            //									},
-            //
-            //								   ]
-            //						};
-        </script>
-    </div>
+</div>
