@@ -176,7 +176,7 @@ root_stats_json  = "data_custom/json_stats/"
 
 root_basemaps    = "data_custom/geojson_basemaps/" 
 
-regions_names    = ["World","Europe","USA","CentralAmerica","SouthAmerica","MiddleEast","Asia","Africa","Oceania"]    
+regions_names    = ["World","Europe","NorthAmerica","CentralAmerica","SouthAmerica","MiddleEast","Asia","Africa","Oceania"]    
 
 geoJSON_dict     = {
     ### "regions" - "metropolitan_areas_OECD" == folders name in /data_custom/geojson_basemaps
@@ -188,7 +188,7 @@ geoJSON_dict     = {
                                 "metropolitan_areas_OECD" : ""},
         "Europe":           {   "country": "", "regions" : "all_countries",
                                 "metropolitan_areas_OECD" : ""},
-        "USA"   :           {   "country": "", "regions" : "all_countries",
+        "NorthAmerica"   :  {   "country": "", "regions" : "all_countries",
                                 "metropolitan_areas_OECD" : ""},  
         "CentralAmerica" :  {   "country": "", "regions" : "all_countries",
                                 "metropolitan_areas_OECD" : ""},  
