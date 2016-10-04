@@ -1,0 +1,311 @@
+Metropolitan areas,2014
+AUS: Australia,7703354
+  AUS01: Sydney,12229.11
+  AUS02: Melbourne,10103.28
+  AUS03: Brisbane,15441.89
+  AUS04: Perth,6309.49
+  AUS05: Adelaide,3239.1
+  AUS06: Gold Coast-Tweed Heads,1811.08
+AUT: Austria,82409
+  AT001: Vienna,9093.06
+  AT002: Graz,3074.2
+  AT003: Linz,3523.72
+BEL: Belgium,30326
+  BE001: Brussels,3265.7
+  BE002: Antwerp,1169.26
+  BE003: Ghent,1017.36
+  BE005: Liege,1414.19
+CAN: Canada,9093507
+  CAN09: Vancouver,5063.57
+  CAN20: Montreal,10962.77
+  CAN26: Toronto,14412.81
+  CAN01: Edmonton,19808.01
+  CAN04: Calgary,12478.49
+  CAN06: Winnipeg,21715.54
+  CAN16: Quebec,6123.6
+  CAN21: Ottawa-Gatineau,17251.92
+  CAN29: Hamilton,2571.88
+CHE: Switzerland,39995.8
+  CH001: Zurich,1176.16
+  CH002: Geneva,1566.51
+  CH003: Basel,1430.18
+CHL: Chile,740243
+  CL010: Valparaíso,1323.84
+  CL011: Santiago,4557.33
+  CL020: Concepción,1868.67
+CZE: Czech Republic,77226.5
+  CZ001: Prague,3929.04
+  CZ002: Brno,2359.25
+  CZ003: Ostrava,931.72
+DEU: Germany,357122
+  DE001: Berlin,6176.37
+  DE002: Hamburg,5760.18
+  DE003: Munich,6263.09
+  DE004: Cologne,1971.56
+  DE005: Frankfurt,3888.09
+  DE007: Stuttgart,1987.61
+  DE006: Essen,344.67
+  DE008: Leipzig,2121.96
+  DE009: Dresden,1716.19
+  DE010: Dortmund,547.87
+  DE011: Düsseldorf,1132.95
+  DE012: Bremen,3176.34
+  DE013: Hanover,3090.73
+  DE014: Nuremberg,3122.57
+  DE015: Bochum,319.87
+  DE027: Freiburg im Breisgau,1515.07
+  DE033: Augsburg,1803.5
+  DE034: Bonn,1066.66
+  DE035: Karlsruhe,1323.91
+  DE040: Saarbrücken,1040.99
+  DE501: Duisburg,671.31
+  DE502: Mannheim,1949.78
+  DE504: Münster,1706.47
+  DE507: Aachen,775.3
+DNK: Denmark,42959
+  DK001: Copenhagen,4083.69
+EST: Estonia,43432
+  EE001: Tallinn,4326.3
+ESP: Spain,501756.9
+  ES001: Madrid,11537.63
+  ES002: Barcelona,1362.03
+  ES003: Valencia,1474.97
+  ES004: Seville,4164.31
+  ES005: Zaragoza,11890.63
+  ES006: Málaga,1623.07
+  ES008: Las Palmas,790.06
+  ES019: Bilbao,1141.01
+FIN: Finland,303890.9
+  FI001: Helsinki,6350.71
+FRA: France,543965
+  FR001: Paris,12089.37
+  FR003: Lyon,3647.29
+  FR203: Marseille,4230.79
+  FR004: Toulouse,5242.14
+  FR006: Strasbourg,2030.87
+  FR007: Bordeaux,5485.85
+  FR008: Nantes,3143.52
+  FR009: Lille,1453.1
+  FR010: Montpellier,2236.6
+  FR011: Saint-Étienne,1799.48
+  FR013: Rennes,3815.73
+  FR026: Grenoble,2694.43
+  FR032: Toulon,1048.19
+  FR205: Nice,3096.9
+  FR215: Rouen,2870.11
+GRC: Greece,130820
+  GR001: Athens,1656.14
+  GR002: Thessalonica,1399.95
+HUN: Hungary,93028
+  HU001: Budapest,6056.87
+IRL: Ireland,68394
+  IE001: Dublin,4767.19
+ITA: Italy,295113
+  IT001: Rome,5686.46
+  IT002: Milan,2637.77
+  IT003: Naples,1558.57
+  IT004: Turin,1781.34
+  IT005: Palermo,835.58
+  IT006: Genova,1113.59
+  IT007: Florence,1737.87
+  IT008: Bari,754.98
+  IT009: Bologna,2036.1
+  IT010: Catania,609.35
+  IT011: Venice,1089.17
+JPN: Japan,373530
+  JP013: Sendai,1658.58
+  JP003: Sapporo,2174.93
+  JP030: Tokyo,8592.12
+  JP034: Nagoya,3943.23
+  JP038: Osaka,7003.88
+  JP066: Fukuoka,1153.78
+  JP015: Niigata,1538.91
+  JP020: Toyama,1563.38
+  JP021: Nagano,1241.81
+  JP023: Kanazawa,1282.8
+  JP024: Utsunomiya,989.68
+  JP025: Maebashi,1188.35
+  JP026: Mito,644.15
+  JP031: Kofu,790.85
+  JP036: Numazu,482.25
+  JP039: Shizuoka,1171.16
+  JP040: Anjo,284.03
+  JP042: Yokkaichi,433.2
+  JP046: Himeji,881.27
+  JP047: Toyohashi,764.3
+  JP048: Hamamatsu,1455.54
+  JP050: Okayama,1096.05
+  JP051: Kurashiki,530.72
+  JP052: Fukuyama,707.01
+  JP053: Hiroshima,1193.35
+  JP054: Takamatsu,598.83
+  JP055: Wakayama,422.57
+  JP059: Tokushima,791.65
+  JP064: Kitakyushu,564.54
+  JP065: Matsuyama,796.88
+  JP067: Kochi,985.06
+  JP071: Oita,928.52
+  JP074: Kumamoto,813.83
+  JP075: Nagasaki,381.54
+  JP077: Kagoshima,762.65
+  JP078: Naha,418.89
+KOR: Korea,99461
+  KR004: Seoul Incheon,4673.13
+  KR025: Daegu,1113.43
+  KR032: Busan,724.77
+  KR015: Cheongju,578.93
+  KR018: Daejeon,995.6
+  KR022: Pohang,814.95
+  KR026: Jeonju,503.06
+  KR029: Ulsan,726.67
+  KR033: Changwon,166.53
+  KR035: Gwangju,696.43
+MEX: Mexico,1959248
+  MEX01: Mexicali,15813.24
+  MEX02: Tijuana,1252.14
+  MEX05: Juárez,3577.67
+  MEX08: Hermosillo,16926.97
+  MEX10: Chihuahua,8861.48
+  MEX16: Reynosa,4686.45
+  MEX19: Monterrey,10984.38
+  MEX20: Torreón,11553.57
+  MEX21: Saltillo,5562.31
+  MEX22: Culiacán,6238.98
+  MEX24: Durango,9185.1
+  MEX28: Tampico,2091.3
+  MEX29: San Luis Potosí,5245.39
+  MEX31: Aguascalientes,2308.08
+  MEX33: Benito Juárez,2089.92
+  MEX34: León,1744.18
+  MEX35: Mérida,12501.47
+  MEX37: Guadalajara,2478.44
+  MEX38: Irapuato,843.86
+  MEX40: Querétaro,2454.57
+  MEX42: Celaya,1160.47
+  MEX46: Pachuca de Soto,1594.31
+  MEX50: Morelia,1935.06
+  MEX51: Mexico City,5101.68
+  MEX52: Xalapa,1313.03
+  MEX55: Toluca,2190.89
+  MEX59: Veracruz,1056.65
+  MEX60: Puebla,1343.51
+  MEX61: Cuernavaca,947.07
+  MEX70: Centro,3209.37
+  MEX73: Oaxaca de Juárez,1702.22
+  MEX74: Acapulco de Juárez,1731.31
+  MEX75: Tuxtla Gutiérrez,2167.43
+NLD: The Netherlands,33718.2
+  NL002: Amsterdam,2819.84
+  NL001: The Hague,296.87
+  NL003: Rotterdam,1480
+  NL004: Utrecht,622.67
+  NL005: Eindhoven,1199.68
+NOR: Norway,304245.9
+  NO001: Oslo,7099.16
+POL: Poland,312679
+  PL001: Warsaw,8611.73
+  PL010: Katowice,3920.33
+  PL002: Lódz,1693.68
+  PL003: Kraków,3749.06
+  PL004: Wroclaw,2635.24
+  PL005: Poznan,3077.07
+  PL006: Gdansk,2615.68
+  PL009: Lublin,3222.11
+PRT: Portugal,92212
+  PT001: Lisbon,3988.31
+  PT002: Porto,951.54
+SWE: Sweden,407339.7
+  SE001: Stockholm,7106.87
+  SE002: Gothenburg,3850.19
+  SE003: Malmö,3468.54
+SVN: Slovenia,20138
+  SI001: Ljubljana,3145.03
+SVK: Slovak Republic,49036
+  SK001: Bratislava,2600.66
+GBR: United Kingdom,242509.2
+  UK001: London,6920.87
+  UK002: Birmingham (UK),1454.14
+  UK003: Leeds,1726
+  UK004: Bradford,443.63
+  UK005: Liverpool,556.66
+  UK006: Manchester,1435.01
+  UK007: Cardiff,736.87
+  UK008: Sheffield,1109.88
+  UK009: Bristol,807.31
+  UK010: Newcastle,2873.08
+  UK011: Leicester,1099.2
+  UK017: Portsmouth,428.6
+  UK023: Nottingham,1110.74
+  UK097: Glasgow,855.84
+  UK098: Edinburgh,1279.59
+USA: United States,9161923
+  US106: Philadelphia,4326.91
+  US107: Columbus,11491.61
+  US114: Denver,21794.38
+  US012: Portland,17657.21
+  US122: Baltimore,3730.13
+  US124: Cincinnati,10779.42
+  US125: Washington,16605.51
+  US128: Kansas City,19095.39
+  US134: Saint Louis (US),13001.75
+  US135: Sacramento/Roseville,13749.86
+  US014: Minneapolis,21030.86
+  US146: San Francisco,17089.9
+  US190: Los Angeles,83682.18
+  US196: Atlanta,9796.08
+  US202: Phoenix,23889.14
+  US209: Dallas,12067.76
+  US210: San Diego,11028.58
+  US242: Houston,22488.43
+  US245: San Antonio,19126.6
+  US250: Orlando,10390.36
+  US259: Miami,14179.44
+  US003: Seattle,11172.99
+  US033: Milwaukee,3865.74
+  US045: Detroit,5244.45
+  US048: Boston,4829.9
+  US055: Chicago,18910.46
+  US069: Cleveland,1790.11
+  US084: New York,9882.07
+  US103: Harrisburg,5330.03
+  US115: Indianapolis,6929.77
+  US117: Dayton,2280.64
+  US133: Colorado Springs,6963.22
+  US141: Louisville,9429.64
+  US147: Wichita,9428.96
+  US149: Richmond,795.09
+  US154: Norfolk-Portsmouth-Chesapeake-Virginia beach,3054.99
+  US155: Fresno,21162.1
+  US159: Las Vegas,67988.47
+  US160: Nashville,9094.09
+  US161: Tulsa,18235.43
+  US170: Raleigh,5562.72
+  US174: Oklahoma city,14456.94
+  US178: Charlotte,4016.56
+  US180: Albuquerque,24079.87
+  US181: Memphis,13234.05
+  US186: Little Rock,7781.82
+  US195: Columbia,3961.67
+  US205: Birmingham (US),6692.58
+  US212: Fort Worth,4681.62
+  US213: Charleston,7361.17
+  US223: Tucson,23799.97
+  US227: El Paso,14467.58
+  US233: Baton Rouge,6438.7
+  US234: Austin,11084.37
+  US237: Jacksonville,8871.53
+  US241: New Orleans,12510.83
+  US251: Clearwater/Saint Petersburg,2853.86
+  US252: Tampa,2819.26
+  US261: Mcallen,4102
+  US035: Madison,5268.07
+  US038: Buffalo,4111.52
+  US039: Grand Rapids,2258.97
+  US044: Albany,7454.61
+  US060: Providence,1665.12
+  US065: Toledo (US),908.74
+  US070: Des Moines,9020.15
+  US077: Omaha,11411.74
+  US081: Akron,1087.89
+  US089: Salt Lake City,27710.01
+  US097: Pittsburgh,1928.85

@@ -12,20 +12,20 @@ from werkzeug.routing import Rule
 from .scripts.app_vars import title, metas, description, subtitle, version, authors, licenceCC, static_dir, URLroot_
 
 # import var dictionaries : user_profiles, regions dicts...
-from .scripts.app_vars import user_profiles, modules_html_dict, geoJSON_dict, root_basemaps
+from .scripts.app_vars import user_profiles, modules_html_dict, geoJSON_dict, root_basemaps, root_stats_json, regions_names
 
-# import local scripts
+# import local scripts ### not in use so far... to get datas remotely from APIs
 from .scripts.app_scripts import *
 
 # gather global names
 global_names = {
-    'titleApp': title,  # name/brand of the app
-    'subtitleApp': subtitle,  # explanation of what the app does
-    'metas': metas,  # meta for referencing
-    'description': description,  # description of the app
-    'version': version,  # explanation of what the app does
-    'authors': authors,  # authors in metas
-    'licenceCC': licenceCC
+    'titleApp'      : title,        # name/brand of the app
+    'subtitleApp'   : subtitle,     # explanation of what the app does
+    'metas'         : metas,        # meta for referencing
+    'description'   : description,  # description of the app
+    'version'       : version,      # explanation of what the app does
+    'authors'       : authors,      # authors in metas
+    'licenceCC'     : licenceCC
 }
 
 
@@ -63,19 +63,27 @@ def generateTemplate(userProfile):
 
     return canvas
 
-
 def selectedRegionSpecs(selectedRegion, level):
-
+    
     #print ("selectedRegionSpecs / selectedRegion : ", selectedRegion)
-
-    regionSpecs                 = geoJSON_dict[selectedRegion]
-
+    
+    regionSpecs  = geoJSON_dict[selectedRegion]
+    
     #print ("selectedRegionSpecs / regionSpecs : ", regionSpecs)
-
-    temp_specs                  = regionSpecs
-    temp_specs["js_var"]        = regionSpecs["regions"]
-    temp_specs["geojson_url"]   = root_basemaps +"regions/"+ selectedRegion + "/" + regionSpecs[level] + ".geojson"
-
+    
+    countryLevel = "_admin_level_4" ### level country --> display country's regions
+    
+    if selectedRegion not in regions_names and level == "regions":
+        stats_js_name = selectedRegion + countryLevel
+    else :
+        stats_js_name = "countries_dict"
+    
+    temp_specs                     = regionSpecs
+    temp_specs["geojson_js_var"]   = regionSpecs["regions"]
+    temp_specs["geojson_url"]      = root_basemaps +"regions/"+ selectedRegion + "/" + regionSpecs[level] + ".geojson"
+    temp_specs["dflt_data_js_var"] = stats_js_name
+    temp_specs["dflt_data_url"]    = root_stats_json + stats_js_name + ".js"
+    
     #print ("selectedRegionSpecs / temp_specs : ", temp_specs)
     ## format like :
     ### temp_specs = {  'regions'    : 'all_countries',
@@ -98,17 +106,21 @@ def index():
 @app.route('/user/<user_profile>/<regionSelected>')
 def user_entry(user_profile, regionSelected):
     print '-' * 10, 'VIEW USER TEMPLATE', '-' * 50
-
+    print
+    
     print 'user profile/region :', user_profile, regionSelected
-
+    print
+    
     ### generate template corresponding to user_profile
     user_specs = generateTemplate(user_profile)
     print "user_specs", user_specs
-
+    print
+    
     ### generate template corresponding to user_profile
-    region_specs = selectedRegionSpecs(regionSelected, "regions")
+    region_specs = selectedRegionSpecs(regionSelected, "regions") ###### "regions" var NOT GENERAL ENOUGH
     print "region_specs", region_specs
-
+    print
+    
     return render_template("user_driven_template.html",
                            index          = False,
                            glob           = global_names,
