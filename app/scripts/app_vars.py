@@ -93,7 +93,7 @@ modules_html_dict = {
     "inf_re" : "infos/mod_intro_resilience.html",      #text
     "inf_pa" : "infos/mod_participation.html",         #form/comment
     "inf_pr" : "infos/mod_projects.html",         #form/comment
-
+    "inf_la" : "infos/mod_labs.html",
     #},
 
     ##"tools" : {
