@@ -50,6 +50,7 @@ modules_html_dict = {
     ##"city" :    {
     "cit_ma" : "cities/mod_city_map.html",              #d3 + leaflet
     "cit_if" : "cities/mod_city_infos.html",            #text
+    "cit_pp" : "cities/mod_city_infos3.html",            #text
     #"cit_id" : "cities/mod_city_indicators.html",       #d3
     "cit_pr" : "cities/mod_city_projects.html",         #leaflet
     "cit_da" : "cities/mod_city_dashboard.html",        #d3
@@ -161,10 +162,15 @@ user_profiles = {
 
                         { "400px" : [ {"inf_in" : 12 }      ]    },
                         { "400px" : [ {"inf_re" : 12 }      ]    },
+
                         { "400px" : [ {"cit_if" : 12 }      ]    },
-                        { "50px" : [ {"too_de" : 12 }      ]    }, 
-                        { "400px" : [ {"wor_de" : 12 }      ]    },  
+
+                        { "50px" : [ {"too_de" : 12 }      ]    },
+                        { "400px" : [ {"wor_de" : 12 }      ]    },
+
                         { "400px" : [ {"inf_pr" : 12 }      ]    },
+                        { "400px" : [ {"cit_pp" : 12 }      ]    },
+
                         { "200px" : [ {"inf_co": 12 }       ]    },
                       ],
 
