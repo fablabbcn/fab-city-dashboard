@@ -75,6 +75,8 @@ def selectedRegionSpecs(selectedRegion, level):
     regionLevel  = "OECD_admin_level_4" ### level country --> display country's regions
     
     #############################################################
+    ### NOT ENOUGH : NEED TO RETRIEVE
+    ### Basemap(js_name + file_url) / Basemap_DefaultDatas(js_name + file_url) / Markers (js_name + file_url)
     if selectedRegion not in regions_names and level == "regions":
         stats_js_name = selectedRegion + countryLevel #############################################
     else :
