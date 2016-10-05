@@ -516,3 +516,26 @@ h2, h3 {
     
     z-index:1032;
 }
+
+
+/* BOOTSTRAP MODALS*/ 
+
+
+@media (min-width: 768px) {
+
+.modal-dialog {
+    width: 900px;
+    margin: 30px auto;
+}
+
+
+}
+
+.modal-body {
+    padding: 50px;
+}
+
+.modal-body p {
+    font-size: 16px;
+
+}
