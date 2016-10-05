@@ -79,6 +79,7 @@ modules_html_dict = {
     "wor_pr" : "world/mod_world_projects.html",      #leaflet
     "wor_da" : "world/mod_world_dashboard.html",     #d3
     "wor_de" : "world/mod_world_map_demo.html",           #d3 + leaflet
+    "wor_dc" : "world/mod_world_map_demo2.html",           #d3 + leaflet
     #},
 
     ##"concepts" : {
@@ -93,6 +94,7 @@ modules_html_dict = {
     "inf_re" : "infos/mod_intro_resilience.html",      #text
     "inf_pa" : "infos/mod_participation.html",         #form/comment
     "inf_pr" : "infos/mod_projects.html",         #form/comment
+    "inf_fl" : "infos/mod_labs.html",         #form/comment
 
     #},
 
@@ -165,6 +167,7 @@ user_profiles = {
                         { "400px" : [ {"cit_if" : 12 }      ]    },
                         { "50px" : [ {"too_de" : 12 }      ]    },
                         { "400px" : [ {"wor_de" : 12 }      ]    },
+                        { "400px" : [ {"inf_fl" : 12 }      ]    },
                         { "400px" : [ {"inf_pr" : 12 }      ]    },
                         { "400px" : [ {"cit_pp" : 12 }      ]    },
                         { "200px" : [ {"inf_co": 12 }       ]    },
