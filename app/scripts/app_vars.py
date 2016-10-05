@@ -94,8 +94,7 @@ modules_html_dict = {
     "inf_re" : "infos/mod_intro_resilience.html",      #text
     "inf_pa" : "infos/mod_participation.html",         #form/comment
     "inf_pr" : "infos/mod_projects.html",         #form/comment
-    "inf_fl" : "infos/mod_labs.html",         #form/comment
-
+    "inf_la" : "infos/mod_labs.html",
     #},
 
     ##"tools" : {
@@ -167,7 +166,7 @@ user_profiles = {
                         { "400px" : [ {"cit_if" : 12 }      ]    },
                         { "50px" : [ {"too_de" : 12 }      ]    },
                         { "400px" : [ {"wor_de" : 12 }      ]    },
-                        { "400px" : [ {"inf_fl" : 12 }      ]    },
+                        { "400px" : [ {"inf_la" : 12 }      ]    },
                         { "400px" : [ {"inf_pr" : 12 }      ]    },
                         { "400px" : [ {"cit_pp" : 12 }      ]    },
                         { "200px" : [ {"inf_co": 12 }       ]    },
