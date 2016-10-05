@@ -51,14 +51,44 @@
 
 	<h4 class ="text-muted" style="padding-top:30px">Images</h4>
 
+	<div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="{{ url_for('static', filename='images/projects/precious_plastic.png') }}" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="{{ url_for('static', filename='images/projects/precious_plastic_2.png') }}" alt="...">
+        </a>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="{{ url_for('static', filename='images/projects/precious_plastic_3.jpg') }}" alt="...">
+        </a>
+    </div>
+
+    <!--
 	<div class="photo" style="background-image: url({{ url_for('static', filename='images/projects/precious_plastic.png') }});">
-	</div>	
+
 
 	<div class="photo" style="background-image: url({{ url_for('static', filename='images/projects/precious_plastic_2.png') }});">
 	</div>	
 
 	<div class="photo" style="background-image: url({{ url_for('static', filename='images/projects/precious_plastic_3.jpg') }});">
 	</div>	
+	-->
+
+	<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	    <div class="modal-dialog">
+	        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+	        <div class="modal-content">
+	            <div class="modal-body">
+	                <img src="" alt="" />
+	            </div>
+	        </div>
+	   	</div>
+	</div>
+	
 
 </div>
 
