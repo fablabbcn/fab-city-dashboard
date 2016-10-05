@@ -1,0 +1,1746 @@
+<div class="city-search-bar" id="cities" style="min-height: 100px;">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Barcelona" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="content" style="padding-bottom: 80px;">
+    <!--MODULE CITY/info : cit_if" <br>-->
+
+    <h1 class="city-title">
+		BARCELONA
+	</h1>
+
+    <h3 class="country-title text-muted">
+		CATALONIA / SPAIN
+	</h3>
+
+    <p class="city-description text-muted"> The Barcelona metropolitan area comprises over 66% of the people in one of the richest regions in Europe – Catalonia, with a GDP per capita amounting to €28,400 (16% more than the EU average). Barcelona has a long-standing mercantile tradition. Less
+        well known is that the region was one of the earliest to begin industrialization in continental Europe, beginning with textile-related works from the mid-1780s but really gathering momentum in the mid-19th century, when it became a major centre
+        for the production of textiles and machinery. Since then, manufacturing has played a large role in its history. <a href="https://es.wikipedia.org/wiki/Barcelona#Econom.C3.ADa" style="padding-left: 8x; font-size: 15px;">Wikipedia </a>
+    </p>
+
+    <h2>Resilience index</h2>
+
+    <h3>City / Region / Country general data</h3>
+    <div id="city-region-country" class="svg-container">
+    </div>
+
+    <h3>City / Region / Country resilience</h3>
+    <div id="resilience-container1" class="svg-container">
+    </div>
+
+    <h2>Mapa</h2>
+    <p>
+        Lorem ipsum
+    </p>
+
+    <script src="{{ url_for('static', filename='data_custom/geojson_labs/FablabsIO_fablabs.geojson') }}" type="text/javascript"></script>
+
+    <!-- ESP_MAs_2016.geojson -->
+    <script src="{{ url_for('static', filename='data_custom/geojson_basemaps/regions/ESP/ESP_MAs_2016.geojson') }}" type="text/javascript"></script>
+
+
+    <div class="map">
+
+        <!-- DIV MAP -->
+        <div id="map" style="width: 100%; height: {{ row['height'] }}">
+        </div>
+
+        <!-- LEAFLET / D3 SCRIPT -->
+        <script>
+            // FIND GEOBOX/CENTER/ZOOM settings from setViews.js
+            var regionSelected = "{{ regionSelected }}";
+            var userProfile = "{{ user_profile }}";
+
+            // CREATE EMPTY LAYER
+            //var empty_layer    = new L.layerGroup();
+
+            // CREATE BASEMAPS LAYER
+            var countries_layer = new L.layerGroup();
+            var met_areas_layer = new L.layerGroup();
+
+            // CREATE STATS LAYER
+            var stats_layer = new L.layerGroup();
+
+            // CREATE FABLABS LAYER
+            var fablabs_layer = new L.layerGroup();
+
+
+            // BASEMAP
+            var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery <a href="http://mapbox.com">Mapbox</a>';
+            var mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw';
+
+            var grayscale = L.tileLayer(mbUrl, {
+                id: 'mapbox.light',
+                attribution: mbAttr
+            });
+            var streets = L.tileLayer(mbUrl, {
+                id: 'mapbox.streets',
+                attribution: mbAttr
+            });
+
+
+            function setMapView(placeName) {
+                //console.log("setMapView/placeName : ", placeName);
+                var placeDict = setGeoViews[placeName]; //setGeoViews loaded as external .js file
+                //console.log("setMapView/placeDict", placeDict);
+                return placeDict;
+            };
+            var region_settings = setMapView(regionSelected);
+            var set_center_view = region_settings["center"];
+            var set_zoom_view = region_settings["zoom"];
+
+
+            // SET MAP VIEW /////////////// NEED TO BE DYNAMIC - respond to view
+            var map = L.map('map', {
+                center: [41.390205, 2.154007], // set_center_view
+                //center: set_center_view,
+                zoom: 22, // set_zoom_view
+                //zoom: set_zoom_view,
+                layers: [grayscale, fablabs_layer, met_areas_layer]
+            });
+
+
+            /// INTERACTIONS
+            /////////////////////////////////////////
+            // FUNCTION - ADD POPUP TO MARKERS
+            function onEachMarker(feature, layer) {
+                var props = feature.properties;
+                var popupContent = "<p></p>";
+                if (props && props.name) {
+                    popupContent += '<h5>' + props.name + '</h5> ( ' + props.lab_type + ' )' + '<hr>' +
+                        '<p style="margin-left: 15px"><em>city</em> : ' + props.city + ' ( ' + props.country_code + ' )' +
+                        '<br><em>address</em> : ' + props.address_1 +
+                        '</p>';
+                }
+                layer.bindPopup(popupContent);
+            }
+
+
+
+            // STYLES ///////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////
+
+            // LOAD BASEMAPS
+            basemapObjects = [];
+
+            function addBasemap(geojson, layer_, bottom) {
+
+                var layer = L.geoJson(geojson, {
+                        style: regionStyle,
+                        onEachFeature: onEachBasemap
+                    })
+                    .addTo(map)
+                    .addTo(layer_, bottom);
+
+                basemapObjects.push(layer);
+
+            };
+            addBasemap(ESP_MAs_2016, met_areas_layer, true);
+
+
+            // LOAD MARKER OBJECTS (fablabs) ///// MISSING DYNAMIC STYLES ////////////////////////
+            markerObjects = [];
+
+            function addPoints(json, layer_) {
+                var layer = L.geoJson(json, {
+                        style: function(feature) {
+                            return feature.properties && feature.properties.style;
+                        },
+                        onEachFeature: onEachMarker,
+                        pointToLayer: function(feature, latlng) {
+                            return L.circleMarker(latlng, {
+                                radius: 5,
+                                fillColor: "hsla(353, 80%, 52%, 1)",
+                                color: "#fff",
+                                weight: 3,
+                                opacity: 1,
+                                fillOpacity: 0.8
+                            });
+                        }
+                    })
+                    .addTo(map)
+                    .addTo(layer_);
+                markerObjects.push(layer);
+            };
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+            // VARIABLES LEGEND GEOJSON COLLECTION MIN/MAX /// STILL TO PUT IN USE
+            var basemapMax = 0;
+            var basemapMin = 0;
+
+            function getCollMinMax(featuresList, varName) {
+                for (var i = 0; i < featuresList.length; i++) {
+                    var feature = featuresList[i];
+                    var number = feature[varName];
+                    if (number > basemapMax) {
+                        basemapMax = number;
+                    }
+                    if (number < basemapMin) {
+                        basemapMin = number;
+                    }
+                }
+            }
+
+            // LOAD DATAS INTO GEOJSON
+            function addDatasToGeojson(geojson, datas_dict) {
+                var new_geojson = {
+                    "type": "FeatureCollection",
+                    "features": []
+                };
+                for (var i = 0; i < geojson.features.length; i++) {
+                    var feature = geojson.features[i];
+                    var datas_toAdd = datas_dict[feature.id];
+                    feature.properties.addedDatas = datas_toAdd;
+                    new_geojson.features.push(feature);
+                }
+                //console.log(new_geojson.features[0]);
+                return new_geojson;
+            };
+
+
+            // SERVE REGIONS ///////////////////////////////////////////////////////////////////////////////////
+
+            // dynamically serving js_var names
+            // addBasemap({ // { // geojson_js_var // } // }, countries_layer, true)
+
+            // ALL COUNTRIES SERVED -- all_countries_updated , all_countries
+            //addBasemap(all_countries_updated, countries_layer, true);
+            //addBasemap(ESP_admin_level_4, countries_layer, true);
+            //addBasemap(FRA_admin_level_4, countries_layer, true);
+            //addBasemap(PRT_admin_level_4, countries_layer, true);
+            //addBasemap(ITA_admin_level_4, countries_layer, true);
+            //
+            //addBasemap(DEU_admin_level_4, countries_layer, true);
+            //addBasemap(DNK_admin_level_4, countries_layer, true);
+            //addBasemap(NLD_admin_level_4, countries_layer, true);
+
+            // CHOOSE REGION AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
+
+
+            // CHOOSE METROPOLITAN AREAS TO SERVE -- insert as Jinja call here (DRY) //////////////////////////////
+            //addBasemap(AUS_MAs_2016, met_areas_layer, false);
+            //addBasemap(AUT_MAs_2016, met_areas_layer, false);
+            //addBasemap(BEL_MAs_2016, met_areas_layer, false);
+            //addBasemap(CAN_MAs_2016, met_areas_layer, false);
+            //addBasemap(CHE_MAs_2016, met_areas_layer, false);
+            //addBasemap(CHL_MAs_2016, met_areas_layer, false);
+            //addBasemap(COL_MAs_2016, met_areas_layer, false);
+            //addBasemap(CZE_MAs_2016, met_areas_layer, false);
+            //addBasemap(DEU_MAs_2016, met_areas_layer, false);
+            //addBasemap(DNK_MAs_2016, met_areas_layer, false);
+
+            addBasemap(ESP_MAs_2016, met_areas_layer, true);
+            //addBasemap(EST_MAs_2016, met_areas_layer, false);
+            //addBasemap(FIN_MAs_2016, met_areas_layer, false);
+
+            //addBasemap(FRA_MAs_2016, met_areas_layer, false);
+            //addBasemap(GBR_MAs_2016, met_areas_layer, false);
+            //addBasemap(GRC_MAs_2016, met_areas_layer, false);
+            //addBasemap(HUN_MAs_2016, met_areas_layer, false);
+            //addBasemap(IRL_MAs_2016, met_areas_layer, false);
+            //addBasemap(ITA_MAs_2016, met_areas_layer, false);
+            //addBasemap(JPN_MAs_2016, met_areas_layer, false);
+            //addBasemap(KOR_MAs_2016, met_areas_layer, false);
+            //addBasemap(LUX_FUAs_2016, met_areas_layer, false);
+            //addBasemap(MEX_MAs_2016, met_areas_layer, false);
+            //addBasemap(NLD_MAs_2016, met_areas_layer, false);
+            //addBasemap(NOR_MAs_2016, met_areas_layer, false);
+            //addBasemap(POL_MAs_2016, met_areas_layer, false);
+            //addBasemap(PRT_MAs_2016, met_areas_layer, false);
+            //addBasemap(SVK_MAs_2016, met_areas_layer, false);
+            //addBasemap(SVN_MAs_2016, met_areas_layer, false);
+            //addBasemap(SWE_MAs_2016, met_areas_layer, false);
+            //addBasemap(USA_MAs_2016, met_areas_layer, false);
+
+
+            // SERVE LABS //////////////////////////////////////////////////
+            //addPoints(Makery_fablabs, fablabs_layer);
+            addPoints(FablabsIO_fablabs, fablabs_layer);
+        </script>
+    </div>
+
+    <h2>Lab</h2>
+    <p>
+        Lorem ipsum
+    </p>
+
+    <h2>Project</h2>
+    <p>
+        Lorem ipsum
+    </p>
+
+
+    <div class="content" style="padding-bottom: 10px;" id="projects">
+        <!--MODULE INFOS/project : inf_pr <br>-->
+
+        <h2 class="section-heading" style="padding:0px; margin: 50px 0px 5px 0px;">
+    		Projects
+    	</h2>
+
+        <h3 class="project-name"> Precious Plastic</h3>
+
+        <!--<i class="fa fa-user fa-2x" style="display: inline;"></i>-->
+
+        <h4 class="text-muted" style="margin-top: 30px;">2 contributors</h4>
+        <!--<p class="descriptions" style="display: inline;">2 contributors</p> <br>-->
+
+        <i class="fa fa-user fa" style="display: inline;"></i>
+        <a href="https://www.fablabs.io/users/7143">inesccprates</a>
+        <i class="fa fa-user fa" style="display: inline;"></i>
+        <a href="https://www.fablabs.io/users/7141">cyrilledubois</a>
+
+
+    </div>
+
+
+
+    <div class="content" style="padding-top: 30px;">
+
+        <h4 class="text-muted" style="display: inline;">Description</h4>
+
+        <p class="descriptions" style="padding: 10px 0">"We are building 4 small-scale plastic recycling machines based on the models done by the Precious Plastic team, using the open-source materials uploaded on their site."
+        </p>
+
+        <h4 class="text-muted" style="padding-top: 30px">Lab</h4>
+        <img width="20px" src="{{ url_for('static', filename='images/logos/fablabs.svg') }}"> <a href="https://www.fablabs.io/fablabbcn">Fab Lab Barcelona </a>
+
+        <h4 class="text-muted" style="padding-top: 30px"> Machines</h4>
+        <img width="20px" src="{{ url_for('static', filename='images/icons/svg/machines.svg') }}"> <span class="badge">Missing Info</span>
+
+        <h4 class="text-muted" style="padding-top: 30px"> Materials</h4>
+        <img width="20px" src="{{ url_for('static', filename='images/icons/svg/machines.svg') }}"> <span class="badge">Missing Info</span>
+
+        <h4 class="text-muted" style="padding-top: 30px"> Partners</h4>
+        <img width="20px" src="{{ url_for('static', filename='images/icons/svg/users.svg') }}"> <span class="badge">Missing Info</span>
+
+        <h4 class="text-muted" style="padding-top: 30px"> Supply-Chain Network</h4>
+        <img width="20px" src="{{ url_for('static', filename='images/icons/svg/machines.svg') }}"> <span class="badge">Missing Info</span>
+
+    </div>
+
+    <div class="content" style="padding-bottom: 300px;">
+
+        <h4 class="text-muted" style="padding-top:30px">Images</h4>
+
+        <div class="col-xs-6 col-sm-3">
+            <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                <img src="{{ url_for('static', filename='images/projects/precious_plastic.png') }}" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                <img src="{{ url_for('static', filename='images/projects/precious_plastic_2.png') }}" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox">
+                <img src="{{ url_for('static', filename='images/projects/precious_plastic_3.jpg') }}" alt="...">
+            </a>
+        </div>
+
+        <!--
+    	<div class="photo" style="background-image: url({{ url_for('static', filename='images/projects/precious_plastic.png') }});">
+
+
+    	<div class="photo" style="background-image: url({{ url_for('static', filename='images/projects/precious_plastic_2.png') }});">
+    	</div>
+
+    	<div class="photo" style="background-image: url({{ url_for('static', filename='images/projects/precious_plastic_3.jpg') }});">
+    	</div>
+    	-->
+
+        <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div id="resilience-container2" class="svg-container">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="project-sliders" class="svg-container">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- added specific class "svg_oecd" -> style because it was affecting map/Leaflet rendering -->
+
+    <script>
+        function resilience_viz(id) {
+            // Colors for the resilience metrics
+            var resilience_colors = {
+                "Housing": "#16785D",
+                "Income": "#22357C",
+                "Jobs": "#1A5774",
+                "Community": "#67A61E",
+                "Environment": "#1A9022",
+                "Education": "#551C7B",
+                "Civic engagement": "#7A1676",
+                "Work life balance": "#A81E3E",
+                "Life satisfaction": "#E62339",
+                "Safety": "#B78621",
+                "Health": "#B74021",
+                "Accessibility to services": "#B7B721"
+            };
+
+            // Load both regions and countries
+            d3.queue()
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/national.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/regional.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_gdp.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_pop.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_surf.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_gdp.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_pop.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_surf.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/country_gdp.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/country_pop.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/WB/country_surf.csv")
+                .await(function(error, countries_wellbeing, regions_wellbeing, city_gdp, city_pop, city_surf, region_gdp, region_pop, region_surf, country_gdp, country_pop, country_surf) {
+                    if (error) {
+                        console.error('An error loading data: ' + error);
+                    } else {
+
+
+                        // Calculate ratio base on GDP / Population
+                        ratio1 = city_gdp[69]["2012"] / region_gdp[848]["2012"];
+                        ratio2 = city_pop[69]["2014"] / region_pop[1495]["2014"];
+                        cire_ratio = (ratio1 + ratio2) / 2;
+
+                        // Clean data
+                        var region_array = [];
+                        for (var property in regions_wellbeing[283]) {
+                            if (property != "Region" && property != "Region Code" && property != "Country") {
+                                //region_object[property] = parseFloat(region_data[property]);
+                                test = {}
+                                test[property] = parseFloat(regions_wellbeing[283][property]);
+                                region_array.push(test);
+                            }
+                        }
+
+                        var country_array = [];
+                        for (var property in countries_wellbeing[28]) {
+                            if (property != "Country") {
+                                //region_object[property] = parseFloat(region_data[property]);
+                                test = {}
+                                test[property] = parseFloat(countries_wellbeing[28][property]);
+                                country_array.push(test);
+                            }
+                        }
+
+                        // Calculte the city resilience, in our way
+                        var city_array = JSON.parse(JSON.stringify(region_array));
+                        for (property in region_array) {
+                            //city_array[property] = region_array[property];
+                            for (subproperty in city_array[property]) {
+                                city_array[property][subproperty] = city_array[property][subproperty] * cire_ratio;
+                            }
+                        }
+
+
+                        // variables
+                        var zerox = 0;
+                        var zeroy = 0;
+                        var zeroy2 = 10;
+                        var width = 300;
+                        var barHeight = 13;
+                        var space_between_bars = barHeight * 2;
+                        var space_between_groups = 20;
+                        var legend_width = 150;
+
+                        // Linear scale for scaling the graph
+                        var linearScale = d3.scaleLinear()
+                            .domain([0, 10.0])
+                            .range([0, width]);
+
+                        // Access svg area
+                        var svg = d3.select(id)
+                            .append("svg")
+                            .attr("preserveAspectRatio", "xMaxYMax meet")
+                            .attr("viewBox", "0 0 500 600")
+                            .classed("svg-content", true);
+
+                        // Rounded bars
+                        var regions = svg.append("g");
+                        var countries = svg.append("g");
+                        var cities = svg.append("g");
+
+                        var barr = regions.selectAll("g")
+                            .data(region_array)
+                            .enter()
+                            .append("g")
+
+                        var barc = countries.selectAll("g")
+                            .data(country_array)
+                            .enter()
+                            .append("g")
+
+                        var barci = cities.selectAll("g")
+                            .data(city_array)
+                            .enter()
+                            .append("g")
+
+                        // Scale line: city
+                        barci.append("line")
+                            .style("stroke", "#b3b3b3")
+                            .attr("x1", zerox + legend_width)
+                            .attr("y1", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + 6;
+                            })
+                            .attr("x2", zerox + legend_width + linearScale(10))
+                            .attr("y2", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + 6;
+                            });
+
+                        // Scale line: region
+                        barr.append("line")
+                            .style("stroke", "#b3b3b3")
+                            .style("opacity", 0.4)
+                            .attr("x1", function(d) {
+                                for (property in d) {
+                                    var resilience_value = d[property];
+                                }
+                                return zerox + legend_width;
+                            })
+                            .attr("y1", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
+                            })
+                            .attr("x2", zerox + legend_width + linearScale(10))
+                            .attr("y2", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight;
+                            });
+
+                        // Scale line: country
+                        barc.append("line")
+                            .style("stroke", "#b3b3b3")
+                            .style("opacity", 0.2)
+                            .attr("x1", function(d) {
+                                for (property in d) {
+                                    var resilience_value = d[property];
+                                }
+                                return zerox + legend_width;
+                            })
+                            .attr("y1", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight * 2;
+                            })
+                            .attr("x2", zerox + legend_width + width)
+                            .attr("y2", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight * 2;
+                            });
+
+                        // The bars: region
+                        barr.append("rect")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "region " + property.toLowerCase() + " bar";
+                            })
+                            .style("opacity", 0.4)
+                            .attr("x", zerox + legend_width)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + barHeight;
+                            })
+                            .attr("width", function(d) {
+                                for (property in d) {
+                                    var resilience_value = d[property];
+                                }
+                                return linearScale(resilience_value);
+                            })
+                            .attr("height", barHeight)
+                            .attr("rx", 6)
+                            .attr("ry", 6)
+                            .attr("fill", function(d) {
+                                for (property in d) {
+                                    var the_color = resilience_colors[property];
+                                }
+                                return the_color;
+                            });
+
+                        // The legend labels: region
+                        barr.append("text")
+                            .style("opacity", 0.4)
+                            .attr("x", zerox)
+                            .attr("y", function(d, i) {
+                                return zeroy + 6 + i * (space_between_bars + space_between_groups) + barHeight;
+                            })
+                            .attr("dy", ".35em")
+                            .text("Value at regional level");
+
+                        // The legend labels: cities
+                        barci.append("text")
+                            .attr("x", zerox)
+                            .attr("y", function(d, i) {
+                                return zeroy + 6 + i * (space_between_bars + space_between_groups);
+                            })
+                            .attr("dy", ".35em")
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_text = property;
+                                }
+                                return label_text + " ";
+                            });
+
+                        // The legend labels: country
+                        barc.append("text")
+                            .style("opacity", 0.2)
+                            .attr("x", zerox)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + 6 + barHeight * 2;
+                            })
+                            .attr("dy", ".35em")
+                            .text("Value at country level");
+
+                        // The value labels: region
+                        barr.append("text")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "region " + property.toLowerCase() + " value";
+                            })
+                            .style("opacity", 0.4)
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_value = d[property];
+                                }
+                                return label_value + "/10";
+                            })
+                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
+                            .attr("y", function(d, i) {
+                                return zeroy2 + i * (space_between_bars + space_between_groups) + barHeight;
+                            });
+
+                        // The value labels: cities
+                        barci.append("text")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " value";
+                            })
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_value = d[property];
+                                }
+                                return Math.round(label_value * 10) / 10 + "/10";
+                            })
+                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
+                            .attr("y", function(d, i) {
+                                return zeroy2 + i * (space_between_bars + space_between_groups)
+                            });
+
+                        // The value labels: countries
+                        barc.append("text")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "countries " + property.toLowerCase() + " value";
+                            })
+                            .style("opacity", 0.2)
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_value = d[property];
+                                }
+                                return Math.round(label_value * 10) / 10 + "/10";
+                            })
+                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
+                            .attr("y", function(d, i) {
+                                return zeroy2 + i * (space_between_bars + space_between_groups) + 6 + barHeight + 6;
+                            });
+
+                        // The bars: city
+                        barci.append("rect")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " bar";
+                            })
+                            .attr("x", zerox + legend_width)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups);
+                            })
+                            .attr("width", function(d) {
+                                for (property in d) {
+                                    var resilience_value = d[property];
+                                }
+                                return linearScale(resilience_value);
+                            })
+                            .attr("height", barHeight)
+                            .attr("rx", 6)
+                            .attr("ry", 6)
+                            .attr("fill", function(d) {
+                                for (property in d) {
+                                    var the_color = resilience_colors[property];
+                                }
+                                return the_color;
+                            });
+
+                        // The bars: country
+                        barc.append("rect")
+                            .style("opacity", 0.1)
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "country " + property.toLowerCase() + " bar";
+                            })
+                            .attr("x", zerox + legend_width)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * (space_between_bars + space_between_groups) + space_between_bars / 2 + barHeight;
+                            })
+                            .attr("width", function(d) {
+                                for (property in d) {
+                                    var resilience_value = d[property];
+                                }
+                                return linearScale(resilience_value);
+                            })
+                            .attr("height", barHeight)
+                            .attr("rx", 6)
+                            .attr("ry", 6)
+                            .attr("fill", function(d) {
+                                for (property in d) {
+                                    var the_color = resilience_colors[property];
+                                }
+                                return the_color;
+                            });
+
+                        // SVG icons
+                        var accessibility_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/accesibility_to_services_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            accessibility_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var civic_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/civic_engagement_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            civic_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var community_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/community_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            community_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var education_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/education_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            education_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var environment_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/environment_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            environment_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var health_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/health_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            health_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var housing_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/housing_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            housing_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var income_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/income_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            income_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var jobs_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/jobs_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            jobs_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var life_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/life_satisfaction_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            life_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        var safety_icon = svg.append("g");
+                        d3.xml("../../../static/images/icons/svg/safety_cr.svg").mimeType("image/svg+xml").get(function(error, xml) {
+                            if (error) throw error;
+                            safety_icon.node().appendChild(xml.documentElement);
+                        });
+
+                        // SVG icons transformations
+                        var icon_scale = 0.03;
+                        var icon_x = legend_width - 20;
+                        var icon_y = barHeight - 2;
+
+                        education_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                        icon_y = icon_y + space_between_bars + space_between_groups;
+                        jobs_icon.attr("transform", "translate (" + icon_x +
+                            ", " + icon_y + ") scale(" +
+                            icon_scale + ")");
+                        icon_y = icon_y + space_between_bars + space_between_groups;
+                        income_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                        icon_y = icon_y +
+                            space_between_bars + space_between_groups;
+                        safety_icon.attr(
+                            "transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                        icon_y = icon_y + space_between_bars + space_between_groups;
+                        health_icon.attr("transform", "translate (" + icon_x + ", " + icon_y +
+                            ") scale(" + icon_scale +
+                            ")");
+                        icon_y = icon_y + space_between_bars + space_between_groups;
+                        environment_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                        icon_y = icon_y + space_between_bars +
+                            space_between_groups;
+                        civic_icon.attr("transform",
+                            "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                        icon_y = icon_y + space_between_bars + space_between_groups;
+                        accessibility_icon.attr("transform", "translate (" + icon_x + ", " + icon_y +
+                            ") scale(" + icon_scale + ")");
+                        icon_y = icon_y + space_between_bars + space_between_groups;
+                        housing_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                        icon_y = icon_y +
+                            space_between_bars + space_between_groups;
+                        community_icon.attr("transform", "translate (" +
+                            icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+                        icon_y = icon_y + space_between_bars + space_between_groups;
+                        life_icon.attr("transform", "translate (" + icon_x + ", " + icon_y + ") scale(" + icon_scale + ")");
+
+                    }
+                });
+
+        }
+
+        function city_region_country_viz(id) {
+            // Load both regions and countries
+            d3.queue()
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_gdp.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_pop.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_surf.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_gdp.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_pop.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_surf.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/country_gdp.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/country_pop.csv")
+                .defer(d3.csv, "../../../static/data_custom/json_stats/WB/country_surf.csv")
+                .await(function(error, city_gdp, city_pop, city_surf, region_gdp, region_pop, region_surf, country_gdp, country_pop, country_surf) {
+                    if (error) {
+                        console.error('An error loading data: ' + error);
+                    } else {
+
+
+
+                        var gdp = [{
+                            "City GDP": city_gdp[69]["2012"]
+                        }, {
+                            "Region GDP": region_gdp[848]["2012"]
+                        }, {
+                            "Country GDP": country_gdp[24]["2015"]
+                        }];
+                        var pop = [{
+                            "City population": city_pop[69]["2014"]
+                        }, {
+                            "Region population": region_pop[1495]["2014"]
+                        }, {
+                            "Country population": country_pop[28]["2011"]
+                        }];
+                        var surf = [{
+                            "City surface": city_surf[69]["2014"]
+                        }, {
+                            "Region surface": region_surf[1457]["2014"]
+                        }, {
+                            "Country surface": country_surf[178]["2015"]
+                        }];
+
+                        // variables
+                        var zerox = 0;
+                        var zeroy = 5;
+                        var zeroy2 = 10;
+                        var width = 300;
+                        var barHeight = 13;
+                        var space_between_bars = barHeight * 2;
+                        var space_between_groups = 20;
+                        var legend_width = 120;
+
+                        // Linear scale for gdp
+                        var gdpScale = d3.scaleLinear()
+                            .domain([0, country_gdp[24]["2015"]])
+                            .range([0, width]);
+
+                        var popScale = d3.scaleLinear()
+                            .domain([0, country_pop[28]["2011"]])
+                            .range([0, width]);
+
+                        var surfScale = d3.scaleLinear()
+                            .domain([0, country_surf[178]["2015"]])
+                            .range([0, width]);
+
+                        // Access svg area
+                        var svg = d3.select(id)
+                            .append("svg")
+                            .attr("preserveAspectRatio", "xMinYMin meet")
+                            .attr("viewBox", "0 0 600 200")
+                            .classed("svg-content", true);
+
+                        // Rounded bars
+                        var gdp_g = svg.append("g");
+                        var pop_g = svg.append("g");
+                        var surf_g = svg.append("g");
+
+                        var barg = gdp_g.selectAll("g")
+                            .data(gdp)
+                            .enter()
+                            .append("g")
+                            .attr("transform", "translate(0, " + zeroy + ")");
+
+                        var barp = pop_g.selectAll("g")
+                            .data(pop)
+                            .enter()
+                            .append("g")
+                            .attr("transform", "translate(0, " + (zeroy + 60) + ")");
+
+                        var bars = surf_g.selectAll("g")
+                            .data(surf)
+                            .enter()
+                            .append("g")
+                            .attr("transform", "translate(0, " + (zeroy + 120) + ")");
+
+                        // Scale line: gdp
+                        barg.append("line")
+                            .style("stroke", "#b3b3b3")
+                            .attr("x1", zerox + legend_width)
+                            .attr("y1", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("x2", zerox + legend_width + width)
+                            .attr("y2", function(d, i) {
+                                return zeroy + i * barHeight;
+                            });
+
+                        // The legend labels: gdp
+                        barg.append("text")
+                            .attr("x", zerox)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("dy", ".35em")
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_text = property;
+                                }
+                                return label_text + " ";
+                            });
+
+                        // The value labels: gdp
+                        barg.append("text")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " value";
+                            })
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_value = d[property];
+                                }
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10) + " $ (millions)";
+                            })
+                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight + 6;
+                            });
+
+                        // The bars: gdp
+                        barg.append("rect")
+                            .style("opacity", 0.4)
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " bar";
+                            })
+                            .attr("x", zerox + legend_width)
+                            .attr("y", function(d, i) {
+                                return zeroy - barHeight / 2 + i * barHeight;
+                            })
+                            .attr("width", function(d) {
+                                for (property in d) {
+                                    return gdpScale(d[property]);
+                                }
+                            })
+                            .attr("height", barHeight)
+                            .attr("rx", 6)
+                            .attr("ry", 6)
+                            .attr("fill", "#000");
+
+
+                        // Population
+
+                        // Scale line
+                        barp.append("line")
+                            .style("stroke", "#b3b3b3")
+                            .attr("x1", zerox + legend_width)
+                            .attr("y1", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("x2", zerox + legend_width + width)
+                            .attr("y2", function(d, i) {
+                                return zeroy + i * barHeight;
+                            });
+
+                        // The legend labels
+                        barp.append("text")
+                            .attr("x", zerox)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("dy", ".35em")
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_text = property;
+                                }
+                                return label_text + " ";
+                            });
+
+                        // The value labels
+                        barp.append("text")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " value";
+                            })
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_value = d[property];
+                                }
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10) + " persons";
+                            })
+                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight + 6;
+                            });
+
+                        // The bars
+                        barp.append("rect")
+                            .style("opacity", 0.4)
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " bar";
+                            })
+                            .attr("x", zerox + legend_width)
+                            .attr("y", function(d, i) {
+                                return zeroy - barHeight / 2 + i * barHeight;
+                            })
+                            .attr("width", function(d) {
+                                for (property in d) {
+                                    return popScale(d[property]);
+                                }
+                            })
+                            .attr("height", barHeight)
+                            .attr("rx", 6)
+                            .attr("ry", 6)
+                            .attr("fill", "#000");
+
+                        // Surface
+
+                        // Scale line
+                        bars.append("line")
+                            .style("stroke", "#b3b3b3")
+                            .attr("x1", zerox + legend_width)
+                            .attr("y1", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("x2", zerox + legend_width + width)
+                            .attr("y2", function(d, i) {
+                                return zeroy + i * barHeight;
+                            });
+
+                        // The legend labels
+                        bars.append("text")
+                            .attr("x", zerox)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight;
+                            })
+                            .attr("dy", ".35em")
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_text = property;
+                                }
+                                return label_text + " ";
+                            });
+
+                        // The value labels
+                        bars.append("text")
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " value";
+                            })
+                            .text(function(d) {
+                                for (property in d) {
+                                    var label_value = d[property];
+                                }
+                                return Intl.NumberFormat().format(Math.round(label_value * 10) / 10) + " Km2";
+                            })
+                            .attr("x", zerox + legend_width + width + zerox + zeroy2)
+                            .attr("y", function(d, i) {
+                                return zeroy + i * barHeight + 6;
+                            });
+
+                        // The bars
+                        bars.append("rect")
+                            .style("opacity", 0.4)
+                            .attr("class", function(d) {
+                                for (property in d) {
+                                    var the_class = property;
+                                }
+                                return "city " + property.toLowerCase() + " bar";
+                            })
+                            .attr("x", zerox + legend_width)
+                            .attr("y", function(d, i) {
+                                return zeroy - barHeight / 2 + i * barHeight;
+                            })
+                            .attr("width", function(d) {
+                                for (property in d) {
+                                    return surfScale(d[property]);
+                                }
+                            })
+                            .attr("height", barHeight)
+                            .attr("rx", 6)
+                            .attr("ry", 6)
+                            .attr("fill", "#000");
+
+                    }
+                });
+        }
+
+        // Slider
+        // Adapted from https://bl.ocks.org/mbostock/6452972
+
+        // Load both regions and countries
+        d3.queue()
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/national.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/regional.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_gdp.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_pop.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_surf.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_gdp.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_pop.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/region_surf.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/country_gdp.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/country_pop.csv")
+            .defer(d3.csv, "../../../static/data_custom/json_stats/WB/country_surf.csv")
+            .await(function(error, countries_wellbeing, regions_wellbeing, city_gdp, city_pop, city_surf, region_gdp, region_pop, region_surf, country_gdp, country_pop, country_surf) {
+                    if (error) {
+                        console.error('An error loading data: ' + error);
+                    } else {
+
+
+                        // Calculate ratio base on GDP / Population
+                        ratio1 = city_gdp[69]["2012"] / region_gdp[848]["2012"];
+                        ratio2 = city_pop[69]["2014"] / region_pop[1495]["2014"];
+                        cire_ratio = (ratio1 + ratio2) / 2;
+
+                        // Clean data
+                        var region_array = [];
+                        for (var property in regions_wellbeing[283]) {
+                            if (property != "Region" && property != "Region Code" && property != "Country") {
+                                //region_object[property] = parseFloat(region_data[property]);
+                                test = {}
+                                test[property] = parseFloat(regions_wellbeing[283][property]);
+                                region_array.push(test);
+                            }
+                        }
+
+                        var country_array = [];
+                        for (var property in countries_wellbeing[28]) {
+                            if (property != "Country") {
+                                //region_object[property] = parseFloat(region_data[property]);
+                                test = {}
+                                test[property] = parseFloat(countries_wellbeing[28][property]);
+                                country_array.push(test);
+                            }
+                        }
+
+                        // Calculte the city resilience, in our way
+                        var city_array = JSON.parse(JSON.stringify(region_array));
+                        for (property in region_array) {
+                            //city_array[property] = region_array[property];
+                            for (subproperty in city_array[property]) {
+                                city_array[property][subproperty] = city_array[property][subproperty] * cire_ratio;
+                            }
+                        }
+                        var city_wellbeing = {};
+                        for (property in city_array) {
+                            //city_array[property] = region_array[property];
+                            for (subproperty in city_array[property]) {
+                                city_wellbeing[subproperty] = city_array[property][subproperty];
+                            }
+                        }
+
+                        var width = 300;
+                        var zerox = 10;
+                        var zeroy = 10;
+
+                        var x = d3.scaleLinear()
+                            .domain([0, 100])
+                            .range([0, width])
+                            .clamp(true);
+
+                        // Linear scale for scaling the graph
+                        var linearScale = d3.scaleLinear()
+                            .domain([0, 10.0])
+                            .range([0, width]);
+
+                        // Access svg area
+                        var svg = d3.select("div#project-sliders")
+                            .append("svg")
+                            .attr("preserveAspectRatio", "xMinYMin meet")
+                            .attr("viewBox", "0 0 400 400")
+                            .classed("svg-content", true);
+
+                        // Select the other svg to be modified
+                        var otro = d3.select("div#resilience-container2");
+
+                        // Slider 1
+                        var slider1 = svg.append("g")
+                            .attr("transform", "translate(" + zerox + ", " + (zeroy + 0) + ")");
+
+                        slider1.append("text")
+                            .text("What would happen with more active installation of the projects in the city?");
+
+                        var slider1_s = slider1.append("g")
+                            .attr("class", "slider")
+                            .attr("transform", "translate(0, " + (zeroy + 10) + ")");
+
+                        slider1_s.append("line")
+                            .attr("class", "track")
+                            .attr("x1", x.range()[0])
+                            .attr("x2", x.range()[1])
+                            .select(function() {
+                                return this.parentNode.appendChild(this.cloneNode(true));
+                            })
+                            .attr("class", "track-inset")
+                            .select(function() {
+                                return this.parentNode.appendChild(this.cloneNode(true));
+                            })
+                            .attr("class", "track-overlay")
+                            .call(d3.drag()
+                                .on("start.interrupt", function() {
+                                    slider1_s.interrupt();
+                                })
+                                .on("start drag", function() {
+                                    hue1(x.invert(d3.event.x));
+                                }));
+
+                        slider1_s.insert("g", ".track-overlay")
+                            .attr("class", "ticks")
+                            .attr("transform", "translate(0," + 18 + ")")
+                            .selectAll("text")
+                            .data(x.ticks(10))
+                            .enter().append("text")
+                            .attr("x", x)
+                            .attr("y", 0)
+                            .attr("text-anchor", "middle")
+                            .text(function(d) {
+                                return d;
+                            });
+
+                        var handle1 = slider1_s.insert("rect", ".track-overlay")
+                            .attr("class", "handle")
+                            .attr("width", 6)
+                            .attr("height", 20)
+                            .attr("y", -10)
+                            .attr("rx", 3)
+                            .attr("ry", 3);
+
+                        // Slider 2
+                        var slider2 = svg.append("g")
+                            .attr("transform", "translate(" + zerox + ", " + (zeroy + 70) + ")");
+
+                        slider2.append("text")
+                            .text("What would happen if the project had more budget?");
+
+                        var slider2_s = slider2.append("g")
+                            .attr("class", "slider")
+                            .attr("transform", "translate(0, " + (zeroy + 10) + ")");
+
+                        slider2_s.append("line")
+                            .attr("class", "track")
+                            .attr("x1", x.range()[0])
+                            .attr("x2", x.range()[1])
+                            .select(function() {
+                                return this.parentNode.appendChild(this.cloneNode(true));
+                            })
+                            .attr("class", "track-inset")
+                            .select(function() {
+                                return this.parentNode.appendChild(this.cloneNode(true));
+                            })
+                            .attr("class", "track-overlay")
+                            .call(d3.drag()
+                                .on("start.interrupt", function() {
+                                    slider2_s.interrupt();
+                                })
+                                .on("start drag", function() {
+                                    hue2(x.invert(d3.event.x));
+                                }));
+
+                        slider2_s.insert("g", ".track-overlay")
+                            .attr("class", "ticks")
+                            .attr("transform", "translate(0," + 18 + ")")
+                            .selectAll("text")
+                            .data(x.ticks(10))
+                            .enter().append("text")
+                            .attr("x", x)
+                            .attr("y", 0)
+                            .attr("text-anchor", "middle")
+                            .text(function(d) {
+                                return d + "K €";
+                            });
+
+                        var handle2 = slider2_s.insert("rect", ".track-overlay")
+                            .attr("class", "handle")
+                            .attr("width", 6)
+                            .attr("height", 20)
+                            .attr("y", -10)
+                            .attr("rx", 3)
+                            .attr("ry", 3);
+
+                        // Slider 3
+                        var slider3 = svg.append("g")
+                            .attr("transform", "translate(" + zerox + ", " + (zeroy + 150) + ")");
+
+                        slider3.append("text")
+                            .text("What would happen if the project had more participants?");
+
+                        var slider3_s = slider3.append("g")
+                            .attr("class", "slider")
+                            .attr("transform", "translate(0, " + (zeroy + 10) + ")");
+
+                        slider3_s.append("line")
+                            .attr("class", "track")
+                            .attr("x1", x.range()[0])
+                            .attr("x2", x.range()[1])
+                            .select(function() {
+                                return this.parentNode.appendChild(this.cloneNode(true));
+                            })
+                            .attr("class", "track-inset")
+                            .select(function() {
+                                return this.parentNode.appendChild(this.cloneNode(true));
+                            })
+                            .attr("class", "track-overlay")
+                            .call(d3.drag()
+                                .on("start.interrupt", function() {
+                                    slider3_s.interrupt();
+                                })
+                                .on("start drag", function() {
+                                    hue3(x.invert(d3.event.x));
+                                }));
+
+                        slider3_s.insert("g", ".track-overlay")
+                            .attr("class", "ticks")
+                            .attr("transform", "translate(0," + 18 + ")")
+                            .selectAll("text")
+                            .data(x.ticks(10))
+                            .enter().append("text")
+                            .attr("x", x)
+                            .attr("y", 0)
+                            .attr("text-anchor", "middle")
+                            .text(function(d) {
+                                return d;
+                            });
+
+                        var handle3 = slider3_s.insert("rect", ".track-overlay")
+                            .attr("class", "handle")
+                            .attr("width", 6)
+                            .attr("height", 20)
+                            .attr("y", -10)
+                            .attr("rx", 3)
+                            .attr("ry", 3);
+
+                        var project_impact = {
+                            "Education": 0.02,
+                            "Jobs": 0.3,
+                            "Income": 0.4,
+                            "Safety": 0.01,
+                            "Health": 0.1,
+                            "Environment": 0.6,
+                            "Civic engagement": 0.4,
+                            "Accessibility to services": 0.02,
+                            "Housing": 0.02,
+                            "Community": 0.7,
+                            "Life satisfaction": 0.2
+                        };
+
+                        var money_impact = 4;
+                        var community_impact = 3;
+
+                        //data/
+                        //regions_wellbeing[283]
+                        //countries_wellbeing[28]
+                        //city_wellbeing
+
+                        // ---
+                        function hue1(h) {
+                            handle1.attr("x", x(h));
+                            // Education
+                            otro.select(".city.education.bar").attr("width", linearScale(city_wellbeing["Education"]) + linearScale((h / 10) * (project_impact["Education"])));
+                            otro.select(".city.education.value").text(Math.round(h) / 10 + "/10");
+                            otro.select(".region.education.bar").attr("width", linearScale(regions_wellbeing[283]["Education"]) + linearScale((h / 10) * (project_impact["Education"] * (ratio1))));
+                            otro.select(".region.education.value").text(Math.round(h) / 10 + "/10");
+                            otro.select(".country.education.bar").attr("width", linearScale(countries_wellbeing[28]["Education"]) + linearScale((h / 10) * (project_impact["Education"] * (ratio1 * ratio2))));
+                            otro.select(".country.education.value").text(Math.round(h) / 10 + "/10");
+                            // Jobs
+                            otro.select(".city.jobs.bar").attr("width", linearScale(city_wellbeing["Jobs"]) + linearScale((h / 10) * (project_impact["Jobs"])));
+                            otro.select(".city.jobs.value").text(Math.round(h) / 10 + "/10");
+                            otro.select(".region.jobs.bar").attr("width", linearScale(regions_wellbeing[283]["Jobs"]) + linearScale((h / 10) * (project_impact["Jobale((h / 10) * (project_impact["
+                                                Education "] * (ratio1))));
+                                                otro.select(".region.education.value").text(Math.round(h) / 10 + "/10"); otro.select(".country.education.bar").attr("width", linearScale(countries_wellbeing[28]["Education"]) + linearScale((h / 10) * (
+                                                    project_impact["Education"] * (ratio1 * ratio2)))); otro.select(".country.education.value").text(Math.round(h) / 10 + "/10");
+                                                // Jobs
+                                                otro.select(".city.jobs.bar").attr("width", linearScale(city_wellbeing["Jobs"]) + linearScale((h / 10) * (project_impact["Jobs"]))); otro.select(".city.jobs.value").text(Math.round(h) / 10 + "/10"); otro
+                                                .select(".region.jobs.bar").attr("width", linearScale(regions_wellbeing[283]["Jobs"]) + linearScale((h / 10) * (project_impact["Job                    otro.select(".region.jobs.value ").text(Math.round(h) / 10 + " /
+                                                            10 ");
+                                                            otro.select(".country.jobs.bar").attr("width", linearScale(countries_wellbeing[28]["Jobs"]) + linearScale((h / 10) * (project_impact["Jobs"] * (ratio1 * ratio2)))); otro.select(
+                                                                ".country.jobs.value").text(
+                                                                Math.round(h) / 10 + "/10");
+                                                            // Income
+                                                            otro.select(".city.income.bar").attr("width", linearScale(city_wellbeing["Income"]) + linearScale((h / 10) * (project_impact["Income"]))); otro.select(".city.income.value").text(Math.round(
+                                                                    h) / 10 +
+                                                                "/10"); otro.select(".region.income.bar").attr("width", linearScale(regions_wellbeing[283]["Income"]) + linearScale((h / 10) * (project_impact["Income"] * (ratio1)))); otro.select(
+                                                                ".region.income.value").text(Math.round(h) / 10 + "/10"); otro.select(".country.income.bar").attr("width", linearScale(countries_wellbeing[28]["Income"]) + linearScale((h / 10) * (
+                                                                project_impact[
+                                                                    "Income"] * (ratio1 * ratio2)))); otro.select(".country.income.value").text(Math.round(h) / 10 + "/10");
+                                                            // Safety
+                                                            otro.select(".city.safety.bar").attr("width", linearScale(city_wellbeing["Safety"]) + linearScale((h / 10) * (project_impact["Safety"]))); otro.select(".city.safety.value").text(Math.round(
+                                                                    h) / 10 +
+                                                                "/10"); otro.select(".region.safety.bar").attr("width", linearScale(regions_wellbeing[283]["Safety"]) + linearScale((h / 10) * (project_impact["Safety"] * (ratio1)))); otro.select(
+                                                                ".region.safety.value").text(Math.round(h) / 10 + "/10"); otro.select(".country.safety.bar").attr("width", linearScale(countries_wellbeing[28]["Safety"]) + linearScale((h / 10) * (
+                                                                project_impact[
+                                                                    "Safety"] * (ratio1 * ratio2)))); otro.select(".country.safety.value").text(Math.round(h) / 10 + "/10");
+                                                            // Health
+                                                            otro.select(".city.health.bar").attr("width", linearScale(city_wellbeing["Health"]) + linearScale((h / 10) * (project_impact["Health"]))); otro.select(".city.health.value").text(Math.round(
+                                                                    h) / 10 +
+                                                                "/10"); otro.select(".region.health.bar").attr("width", linearScale(regions_wellbeing[283]["Health"]) + linearScale((h / 10) * (project_impact["Health"] * (ratio1)))); otro.select(
+                                                                ".region.health.value").text(Math.round(h) / 10 + "/10"); otro.select(".country.health.bar").attr("width", linearScale(countries_wellbeing[28]["Health"]) + linearScale((h / 10) * (
+                                                                project_impact[
+                                                                    "Health"] * (ratio1 * ratio2)))); otro.select(".country.health.value").text(Math.round(h) / 10 + "/10");
+                                                            // Environment
+                                                            otro.select(".city.environment.bar").attr("width", linearScale(city_wellbeing["Environment"]) + linearScale((h / 10) * (project_impact["Environment"]))); otro.select(
+                                                                ".city.environment.value").text(
+                                                                Math.round(h) / 10 + "/10"); otro.select(".region.environment.bar").attr("width", linearScale(regions_wellbeing[283]["Environment"]) + linearScale((h / 10) * (project_impact[
+                                                                "Environment"] * (
+                                                                ratio1)))); otro.select(".region.environment.value").text(Math.round(h) / 10 + "/10"); otro.select(".country.environment.bar").attr("width", linearScale(countries_wellbeing[28][
+                                                                    "Environment"
+                                                                ]) +
+                                                                linearScale((h / 10) * (project_impact["Environment"] * (ratio1 * ratio2)))); otro.select(".country.environment.value").text(Math.round(h) / 10 + "/10");
+                                                            // Civic engagement
+                                                            otro.select(".city.civic.bar").attr("width", linearScale(city_wellbeing["Civic engagement"]) + linearScale((h / 10) * (project_impact["Civic engagement"]))); otro.select(
+                                                                ".city.civic.value").text(Math.round(
+                                                                h) / 10 + "/10"); otro.select(".region.civic.bar").attr("width", linearScale(regions_wellbeing[283]["Civic engagement"]) + linearScale((h / 10) * (project_impact["Civic engagement"] *
+                                                                (ratio1)))); otro
+                                                            .select(".region.civic.value").text(Math.round(h) / 10 + "/10"); otro.select(".country.civic.bar").attr("width", linearScale(countries_wellbeing[28]["Civic engagement"]) + linearScale((
+                                                                h / 10) * (
+                                                                project_impact["Civic engagement"] * (ratio1 * ratio2)))); otro.select(".country.civic.value").text(Math.round(h) / 10 + "/10");
+                                                            // Accessibility to services
+                                                            otro.select(".city.accessibility.to.services.bar").attr("width", linearScale(city_wellbeing["Accessibility to services"]) + linearScale((h / 10) * (project_impact[
+                                                                "Accessibility to services"]))); otro.select(
+                                                                ".city.accessibility.to.services.value").text(Math.round(h) / 10 + "/10"); otro.select(".region.accessibility.to.services.bar").attr("width", linearScale(regions_wellbeing[283][
+                                                                "Accessibility to services"
+                                                            ]) + linearScale((h / 10) * (project_impact["Accessibility to services"] * (ratio1)))); otro.select(".region.accessibility.to.services.value").text(Math.round(h) / 10 + "/10"); otro.select(
+                                                                ".country.accessibility.to.services.bar").attr("width", linearScale(countries_wellbeing[28]["Accessibility to services"]) + linearScale((h / 10) * (project_impact[
+                                                                "Accessibility to services"] * (
+                                                                ratio1 *
+                                                                ratio2)))); otro.select(".country.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                                                            // Housing
+                                                            otro.select(".city.housing.bar").attr("width", linearScale(city_wellbeing["Housing"]) + linearScale((h / 10) * (project_impact["Housing"]))); otro.select(".city.housing.value").text(
+                                                                Math.round(h) / 10 +
+                                                                "/10"); otro.select(".region.housing.bar").attr("width", linearScale(regions_wellbeing[283]["Housing"]) + linearScale((h / 10) * (project_impact["Housing"] * (ratio1)))); otro.select(
+                                                                ".region.housing.value").text(Math.round(h) / 10 + "/10"); otro.select(".country.housing.bar").attr("width", linearScale(countries_wellbeing[28]["Housing"]) + linearScale((h / 10) *
+                                                                (project_impact[
+                                                                    "Housing"] * (ratio1 * ratio2)))); otro.select(".country.housing.value").text(Math.round(h) / 10 + "/10");
+                                                            // Community
+                                                            otro.select(".city.community.bar").attr("width", linearScale(city_wellbeing["Community"]) + linearScale((h / 10) * (project_impact["Community"]))); otro.select(".city.community.value").text(
+                                                                Math.round(
+                                                                    h) / 10 + "/10"); otro.select(".region.community.bar").attr("width", linearScale(regions_wellbeing[283]["Community"]) + linearScale((h / 10) * (project_impact["Community"] * (
+                                                                ratio1)))); otro.select(
+                                                                ".region.community.value").text(Math.round(h) / 10 + "/10"); otro.select(".country.community.bar").attr("width", linearScale(countries_wellbeing[28]["Community"]) + linearScale((h /
+                                                                10) * (
+                                                                project_impact["Community"] * (ratio1 * ratio2)))); otro.select(".country.community.value").text(Math.round(h) / 10 + "/10");
+                                                            // Life satisfaction
+                                                            otro.select(".city.life.satisfaction.bar").attr("width", linearScale(city_wellbeing["Life satisfaction"]) + linearScale((h / 10) * (project_impact["Education"]))); otro.select(
+                                                                ".city.life.satisfaction.value").text(Math.round(h) / 10 + "/10"); otro.select(".region.life.satisfaction.bar").attr("width", linearScale(regions_wellbeing[283]["Life satisfaction"]) +
+                                                                linearScale(
+                                                                    (h / 10) * (project_impact["Life satisfaction"] * (ratio1)))); otro.select(".region.life.satio.value").text(Math.round(h) / 10 + "/10"); otro.select(
+                                                                ".country.life.satisfaction.bar").attr("width",
+                                                                linearScale(countries_wellbeing[28]["Life satisfaction"]) + linearScale((h / 10) * (project_impact["Life satisfaction"] * (ratio1 * ratio2)))); otro.select(
+                                                                ".country.life.satisfaction.value").text(
+                                                                Math.round(h) / 10 + "/10");
+                                                        }
+
+                                                        // ---
+                                                        function hue2(h) {
+                                                            handle2.attr("x", x(h));
+                                                            // Education
+                                                            otro.select(".city.education.bar").attr("width", linearScale(city_wellbeing["Education"]) + linearScale((h / 10) * money_impact * (project_impact["Education"])));
+                                                            otro.select(".city.education.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.education.bar").attr("width", linearScale(regions_wellbeing[283]["Education"]) + linearScale((h / 10) * money_impact * (project_impact["Education"] * (ratio1))));
+                                                            otro.select(".region.education.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.education.bar").attr("width", linearScale(countries_wellbeing[28]["Education"]) + linearScale((h / 10) * money_impact * (project_impact["Education"] * (ratio1 *
+                                                                ratio2))));
+                                                            otro.select(".country.education.value").text(Math.round(h) / 10 + "/10");
+                                                            // Jobs
+                                                            otro.select(".city.jobs.bar").attr("width", linearScale(city_wellbeing["Jobs"]) + linearScale((h / 10) * money_impact * (project_impact["Jobs"])));
+                                                            otro.select(".city.jobs.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.jobs.bar").attr("width", linearScale(regions_wellbeing[283]["Jobs"]) + linearScale((h / 10) * money_impact * (project_impact["Jobs"] * (ratio1))));
+                                                            otro.select(".region.jobs.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.jobs.bar").attr("width", linearScale(countries_wellbeing[28]["Jobs"]) + linearScale((h / 10) * money_impact * (project_impact["Jobs"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.jobs.value").text(Math.round(h) / 10 + "/10");
+                                                            // Income
+                                                            otro.select(".city.income.bar").attr("width", linearScale(city_wellbeing["Income"]) + linearScale((h / 10) * money_impact * (project_impact["Income"])));
+                                                            otro.select(".city.income.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.income.bar").attr("width", linearScale(regions_wellbeing[283]["Income"]) + linearScale((h / 10) * money_impact * (project_impact["Income"] * (ratio1))));
+                                                            otro.select(".region.income.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.income.bar").attr("width", linearScale(countries_wellbeing[28]["Income"]) + linearScale((h / 10) * money_impact * (project_impact["Income"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.income.value").text(Math.round(h) / 10 + "/10");
+                                                            // Safety
+                                                            otro.select(".city.safety.bar").attr("width", linearScale(city_wellbeing["Safety"]) + linearScale((h / 10) * money_impact * (project_impact["Safety"])));
+                                                            otro.select(".city.safety.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.safety.bar").attr("width", linearScale(regions_wellbeing[283]["Safety"]) + linearScale((h / 10) * money_impact * (project_impact["Safety"] * (ratio1))));
+                                                            otro.select(".region.safety.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.safety.bar").attr("width", linearScale(countries_wellbeing[28]["Safety"]) + linearScale((h / 10) * money_impact * (project_impact["Safety"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.safety.value").text(Math.round(h) / 10 + "/10");
+                                                            // Health
+                                                            otro.select(".city.health.bar").attr("width", linearScale(city_wellbeing["Health"]) + linearScale((h / 10) * money_impact * (project_impact["Health"])));
+                                                            otro.select(".city.health.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.health.bar").attr("width", linearScale(regions_wellbeing[283]["Health"]) + linearScale((h / 10) * money_impact * (project_impact["Health"] * (ratio1))));
+                                                            otro.select(".region.health.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.health.bar").attr("width", linearScale(countries_wellbeing[28]["Health"]) + linearScale((h / 10) * money_impact * (project_impact["Health"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.health.value").text(Math.round(h) / 10 + "/10");
+                                                            // Environment
+                                                            otro.select(".city.environment.bar").attr("width", linearScale(city_wellbeing["Environment"]) + linearScale((h / 10) * money_impact * (project_impact["Environment"])));
+                                                            otro.select(".city.environment.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.environment.bar").attr("width", linearScale(regions_wellbeing[283]["Environment"]) + linearScale((h / 10) * money_impact * (project_impact["Environment"] * (ratio1))));
+                                                            otro.select(".region.environment.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.environment.bar").attr("width", linearScale(countries_wellbeing[28]["Environment"]) + linearScale((h / 10) * money_impact * (project_impact["Environment"] * (
+                                                                ratio1 * ratio2))));
+                                                            otro.select(".country.environment.value").text(Math.round(h) / 10 + "/10");
+                                                            // Civic engagement
+                                                            otro.select(".city.civic.bar").attr("width", linearScale(city_wellbeing["Civic engagement"]) + linearScale((h / 10) * money_impact * (project_impact["Civic engagement"])));
+                                                            otro.select(".city.civic.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.civic.bar").attr("width", linearScale(regions_wellbeing[283]["Civic engagement"]) + linearScale((h / 10) * money_impact * (project_impact["Civic engagement"] * (
+                                                                ratio1))));
+                                                            otro.select(".region.civic.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.civic.bar").attr("width", linearScale(countries_wellbeing[28]["Civic engagement"]) + linearScale((h / 10) * money_impact * (project_impact["Civic engagement"] * (
+                                                                ratio1 * ratio2))));
+                                                            otro.select(".country.civic.value").text(Math.round(h) / 10 + "/10");
+                                                            // Accessibility to services
+                                                            otro.select(".city.accessibility.to.services.bar").attr("width", linearScale(city_wellbeing["Accessibility to services"]) + linearScale((h / 10) * money_impact * (project_impact[
+                                                                "Accessibility to services"])));
+                                                            otro.select(".city.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.accessibility.to.services.bar").attr("width", linearScale(regions_wellbeing[283]["Accessibility to services"]) + linearScale((h / 10) * money_impact * (
+                                                                project_impact[
+                                                                    "Accessibility to services"] * (
+                                                                    ratio1))));
+                                                            otro.select(".region.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.accessibility.to.services.bar").attr("width", linearScale(countries_wellbeing[28]["Accessibility to services"]) + linearScale((h / 10) * money_impact * (
+                                                                project_impact[
+                                                                    "Accessibility to services"] *
+                                                                (ratio1 *
+                                                                    ratio2))));
+                                                            otro.select(".country.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                                                            // Housing
+                                                            otro.select(".city.housing.bar").attr("width", linearScale(city_wellbeing["Housing"]) + linearScale((h / 10) * money_impact * (project_impact["Housing"])));
+                                                            otro.select(".city.housing.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.housing.bar").attr("width", linearScale(regions_wellbeing[283]["Housing"]) + linearScale((h / 10) * money_impact * (project_impact["Housing"] * (ratio1))));
+                                                            otro.select(".region.housing.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.housing.bar").attr("width", linearScale(countries_wellbeing[28]["Housing"]) + linearScale((h / 10) * money_impact * (project_impact["Housing"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.housing.value").text(Math.round(h) / 10 + "/10");
+                                                            // Community
+                                                            otro.select(".city.community.bar").attr("width", linearScale(city_wellbeing["Community"]) + linearScale((h / 10) * money_impact * (project_impact["Community"])));
+                                                            otro.select(".city.community.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.community.bar").attr("width", linearScale(regions_wellbeing[283]["Community"]) + linearScale((h / 10) * money_impact * (project_impact["Community"] * (ratio1))));
+                                                            otro.select(".region.community.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.community.bar").attr("width", linearScale(countries_wellbeing[28]["Community"]) + linearScale((h / 10) * money_impact * (project_impact["Community"] * (ratio1 *
+                                                                ratio2))));
+                                                            otro.select(".country.community.value").text(Math.round(h) / 10 + "/10");
+                                                            // Life satisfaction
+                                                            otro.select(".city.life.satisfaction.bar").attr("width", linearScale(city_wellbeing["Life satisfaction"]) + linearScale((h / 10) * money_impact * (project_impact["Education"])));
+                                                            otro.select(".city.life.satisfaction.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.life.satisfaction.bar").attr("width", linearScale(regions_wellbeing[283]["Life satisfaction"]) + linearScale((h / 10) * money_impact * (project_impact[
+                                                                "Life satisfaction"] * (
+                                                                ratio1))));
+                                                            otro.select(".region.life.satio.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.life.satisfaction.bar").attr("width", linearScale(countries_wellbeing[28]["Life satisfaction"]) + linearScale((h / 10) * money_impact * (project_impact[
+                                                                "Life satisfaction"] * (
+                                                                ratio1 * ratio2))));
+                                                            otro.select(".country.life.satisfaction.value").text(Math.round(h) / 10 + "/10");
+                                                        }
+
+                                                        // ---
+                                                        function hue3(h) {
+                                                            handle3.attr("x", x(h));
+                                                            // Education
+                                                            otro.select(".city.education.bar").attr("width", linearScale(city_wellbeing["Education"]) + linearScale((h / 10) * community_impact * (project_impact["Education"])));
+                                                            otro.select(".city.education.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.education.bar").attr("width", linearScale(regions_wellbeing[283]["Education"]) + linearScale((h / 10) * community_impact * (project_impact["Education"] * (ratio1))));
+                                                            otro.select(".region.education.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.education.bar").attr("width", linearScale(countries_wellbeing[28]["Education"]) + linearScale((h / 10) * community_impact * (project_impact["Education"] * (ratio1 *
+                                                                ratio2))));
+                                                            otro.select(".country.education.value").text(Math.round(h) / 10 + "/10");
+                                                            // Jobs
+                                                            otro.select(".city.jobs.bar").attr("width", linearScale(city_wellbeing["Jobs"]) + linearScale((h / 10) * community_impact * (project_impact["Jobs"])));
+                                                            otro.select(".city.jobs.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.jobs.bar").attr("width", linearScale(regions_wellbeing[283]["Jobs"]) + linearScale((h / 10) * community_impact * (project_impact["Jobs"] * (ratio1))));
+                                                            otro.select(".region.jobs.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.jobs.bar").attr("width", linearScale(countries_wellbeing[28]["Jobs"]) + linearScale((h / 10) * community_impact * (project_impact["Jobs"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.jobs.value").text(Math.round(h) / 10 + "/10");
+                                                            // Income
+                                                            otro.select(".city.income.bar").attr("width", linearScale(city_wellbeing["Income"]) + linearScale((h / 10) * community_impact * (project_impact["Income"])));
+                                                            otro.select(".city.income.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.income.bar").attr("width", linearScale(regions_wellbeing[283]["Income"]) + linearScale((h / 10) * community_impact * (project_impact["Income"] * (ratio1))));
+                                                            otro.select(".region.income.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.income.bar").attr("width", linearScale(countries_wellbeing[28]["Income"]) + linearScale((h / 10) * community_impact * (project_impact["Income"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.income.value").text(Math.round(h) / 10 + "/10");
+                                                            // Safety
+                                                            otro.select(".city.safety.bar").attr("width", linearScale(city_wellbeing["Safety"]) + linearScale((h / 10) * community_impact * (project_impact["Safety"])));
+                                                            otro.select(".city.safety.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.safety.bar").attr("width", linearScale(regions_wellbeing[283]["Safety"]) + linearScale((h / 10) * community_impact * (project_impact["Safety"] * (ratio1))));
+                                                            otro.select(".region.safety.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.safety.bar").attr("width", linearScale(countries_wellbeing[28]["Safety"]) + linearScale((h / 10) * community_impact * (project_impact["Safety"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.safety.value").text(Math.round(h) / 10 + "/10");
+                                                            // Health
+                                                            otro.select(".city.health.bar").attr("width", linearScale(city_wellbeing["Health"]) + linearScale((h / 10) * community_impact * (project_impact["Health"])));
+                                                            otro.select(".city.health.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.health.bar").attr("width", linearScale(regions_wellbeing[283]["Health"]) + linearScale((h / 10) * money_impact * (project_impact["Health"] * (ratio1))));
+                                                            otro.select(".region.health.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.health.bar").attr("width", linearScale(countries_wellbeing[28]["Health"]) + linearScale((h / 10) * community_impact * (project_impact["Health"] * (ratio1 * ratio2))));
+                                                            otro.select(".country.health.value").text(Math.round(h) / 10 + "/10");
+                                                            // Environment
+                                                            otro.select(".city.environment.bar").attr("width", linearScale(city_wellbeing["Environment"]) + linearScale((h / 10) * community_impact * (project_impact["Environment"])));
+                                                            otro.select(".city.environment.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.environment.bar").attr("width", linearScale(regions_wellbeing[283]["Environment"]) + linearScale((h / 10) * community_impact * (project_impact["Environment"] * (
+                                                                ratio1))));
+                                                            otro.select(".region.environment.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.environment.bar").attr("width", linearScale(countries_wellbeing[28]["Environment"]) + linearScale((h / 10) * community_impact * (project_impact["Environment"] * (
+                                                                ratio1 * ratio2))));
+                                                            otro.select(".country.environment.value").text(Math.round(h) / 10 + "/10");
+                                                            // Civic engagement
+                                                            otro.select(".city.civic.bar").attr("width", linearScale(city_wellbeing["Civic engagement"]) + linearScale((h / 10) * community_impact * (project_impact["Civic engagement"])));
+                                                            otro.select(".city.civic.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.civic.bar").attr("width", linearScale(regions_wellbeing[283]["Civic engagement"]) + linearScale((h / 10) * community_impact * (project_impact["Civic engagement"] *
+                                                                (ratio1))));
+                                                            otro.select(".region.civic.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.civic.bar").attr("width", linearScale(countries_wellbeing[28]["Civic engagement"]) + linearScale((h / 10) * community_impact * (project_impact["Civic engagement"] *
+                                                                (ratio1 *
+                                                                    ratio2))));
+                                                            otro.select(".country.civic.value").text(Math.round(h) / 10 + "/10");
+                                                            // Accessibility to services
+                                                            otro.select(".city.accessibility.to.services.bar").attr("width", linearScale(city_wellbeing["Accessibility to services"]) + linearScale((h / 10) * community_impact * (project_impact[
+                                                                "Accessibility to services"])));
+                                                            otro.select(".city.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.accessibility.to.services.bar").attr("width", linearScale(regions_wellbeing[283]["Accessibility to services"]) + linearScale((h / 10) * community_impact * (
+                                                                project_impact[
+                                                                    "Accessibility to services"] *
+                                                                (
+                                                                    ratio1))));
+                                                            otro.select(".region.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.accessibility.to.services.bar").attr("width", linearScale(countries_wellbeing[28]["Accessibility to services"]) + linearScale((h / 10) * community_impact * (
+                                                                project_impact[
+                                                                    "Accessibility to services"] *
+                                                                (ratio1 *
+                                                                    ratio2))));
+                                                            otro.select(".country.accessibility.to.services.value").text(Math.round(h) / 10 + "/10");
+                                                            // Housing
+                                                            otro.select(".city.housing.bar").attr("width", linearScale(city_wellbeing["Housing"]) + linearScale((h / 10) * community_impact * (project_impact["Housing"])));
+                                                            otro.select(".city.housing.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.housing.bar").attr("width", linearScale(regions_wellbeing[283]["Housing"]) + linearScale((h / 10) * community_impact * (project_impact["Housing"] * (ratio1))));
+                                                            otro.select(".region.housing.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.housing.bar").attr("width", linearScale(countries_wellbeing[28]["Housing"]) + linearScale((h / 10) * community_impact * (project_impact["Housing"] * (ratio1 *
+                                                                ratio2))));
+                                                            otro.select(".country.housing.value").text(Math.round(h) / 10 + "/10");
+                                                            // Community
+                                                            otro.select(".city.community.bar").attr("width", linearScale(city_wellbeing["Community"]) + linearScale((h / 10) * community_impact * (project_impact["Community"])));
+                                                            otro.select(".city.community.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.community.bar").attr("width", linearScale(regions_wellbeing[283]["Community"]) + linearScale((h / 10) * community_impact * (project_impact["Community"] * (ratio1))));
+                                                            otro.select(".region.community.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.community.bar").attr("width", linearScale(countries_wellbeing[28]["Community"]) + linearScale((h / 10) * community_impact * (project_impact["Community"] * (ratio1 *
+                                                                ratio2))));
+                                                            otro.select(".country.community.value").text(Math.round(h) / 10 + "/10");
+                                                            // Life satisfaction
+                                                            otro.select(".city.life.satisfaction.bar").attr("width", linearScale(city_wellbeing["Life satisfaction"]) + linearScale((h / 10) * community_impact * (project_impact["Education"])));
+                                                            otro.select(".city.life.satisfaction.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".region.life.satisfaction.bar").attr("width", linearScale(regions_wellbeing[283]["Life satisfaction"]) + linearScale((h / 10) * community_impact * (project_impact[
+                                                                "Life satisfaction"] * (
+                                                                ratio1))));
+                                                            otro.select(".region.life.satio.value").text(Math.round(h) / 10 + "/10");
+                                                            otro.select(".country.life.satisfaction.bar").attr("width", linearScale(countries_wellbeing[28]["Life satisfaction"]) + linearScale((h / 10) * community_impact * (project_impact[
+                                                                    "Life satisfaction"] *
+                                                                (ratio1 * ratio2))));
+                                                            otro.select(".country.life.satisfaction.value").text(Math.round(h) / 10 + "/10");
+                                                        }
+
+                                                    }
+                                                });
+    </script>
+
+    <script>
+        // Add the two resilience vizs
+        resilience_viz("div#resilience-container1");
+        resilience_viz("div#resilience-container2");
+        city_region_country_viz("div#city-region-country");
+    </script>
+
+
+</div>
+");
+</script>
+
+
+</div>
