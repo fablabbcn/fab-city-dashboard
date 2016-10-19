@@ -36,83 +36,76 @@ URLroot_ = 'flask'
 ###############################################################################
 
 modules_html_dict = {
-    "empty": "empty_module.html",  #d3 + leaflet
+    "empty": "empty_module.html",  # d3 + leaflet
 
-    # "lab" : {
-    "lab_ma": "labs/mod_lab_map.html",  #d3 + leaflet
-    "lab_if": "labs/mod_lab_infos.html",  #text
+    # Lab
+    "lab_ma": "labs/mod_lab_map.html",  # d3 + leaflet
+    "lab_if": "labs/mod_lab_infos.html",  # text
     #"lab_id" : "labs/mod_lab_indicators.html",        #d3
-    "lab_pr": "labs/mod_lab_projects.html",  #leaflet
-    "lab_da": "labs/mod_lab_dashboard.html",  #d3
-    #},
+    "lab_pr": "labs/mod_lab_projects.html",  # leaflet
+    "lab_da": "labs/mod_lab_dashboard.html",  # d3
 
-    # "city" :    {
-    "cit_ma": "cities/mod_city_map.html",  #d3 + leaflet
-    "cit_if": "cities/mod_city_infos.html",  #text
-    "cit_pp": "cities/mod_city_infos3.html",  #text
-    # "cit_id" : "cities/mod_city_indicators.html",       #d3
-    "cit_pr": "cities/mod_city_projects.html",  #leaflet
-    "cit_da": "cities/mod_city_dashboard.html",  #d3
-    # },
+    # City
+    "cit_ma": "cities/mod_city_map.html",  # d3 + leaflet
+    "cit_if": "cities/mod_city_infos.html",  # text
+    "cit_pp": "cities/mod_city_infos3.html",  # text
+    # "cit_id" : "cities/mod_city_indicators.html",       # d3
+    "cit_pr": "cities/mod_city_projects.html",  # leaflet
+    "cit_da": "cities/mod_city_dashboard.html",  # d3
 
-    # "region" :  {
-    "reg_ma": "regions/mod_region_map.html",  #d3 + leaflet
-    "reg_if": "regions/mod_region_infos.html",  #text
-    # "reg_id"  : "regions/mod_region_indicators.html",    #d3
-    "reg_pr": "regions/mod_region_projects.html",  #leaflet
-    "reg_da": "regions/mod_region_dashboard.html",  #d3
-    # },
+    # Region
+    "reg_ma": "regions/mod_region_map.html",  # d3 + leaflet
+    "reg_if": "regions/mod_region_infos.html",  # text
+    # "reg_id"  : "regions/mod_region_indicators.html",    # d3
+    "reg_pr": "regions/mod_region_projects.html",  # leaflet
+    "reg_da": "regions/mod_region_dashboard.html",  # d3
 
-    # "country" : {
-    "cou_ma": "countries/mod_country_map.html",  #d3 + leaflet
-    "cou_if": "countries/mod_country_infos.html",  #text
-    # "cou_id" : "countries/mod_country_indicators.html",    #d3
-    "cou_pr": "countries/mod_country_projects.html",  #leaflet
-    "cou_da": "countries/mod_country_dashboard.html",  #d3
-    # },
+    # Country
+    "cou_ma": "countries/mod_country_map.html",  # d3 + leaflet
+    "cou_if": "countries/mod_country_infos.html",  # text
+    # "cou_id" : "countries/mod_country_indicators.html",    # d3
+    "cou_pr": "countries/mod_country_projects.html",  # leaflet
+    "cou_da": "countries/mod_country_dashboard.html",  # d3
 
-    # "world" : {
-    "wor_ma": "world/mod_world_map.html",  #d3 + leaflet
-    "wor_if": "world/mod_world_infos.html",  #text
-    # "wor_id" : "world/mod_world_indicators.html",    #d3
-    "wor_pr": "world/mod_world_projects.html",  #leaflet
-    "wor_da": "world/mod_world_dashboard.html",  #d3
-    "wor_de": "world/mod_world_map_demo.html",  #d3 + leaflet
-    "wor_dc": "world/mod_world_map_demo2.html",  #d3 + leaflet
-    # },
+    # World
+    "wor_ma": "world/mod_world_map.html",  # d3 + leaflet
+    "wor_if": "world/mod_world_infos.html",  # text
+    # "wor_id" : "world/mod_world_indicators.html",    # d3
+    "wor_pr": "world/mod_world_projects.html",  # leaflet
+    "wor_da": "world/mod_world_dashboard.html",  # d3
+    "wor_de": "world/mod_world_map_demo.html",  # d3 + leaflet
+    "wor_dc": "world/mod_world_map_demo2.html",  # d3 + leaflet
 
-    # "concepts" : {
-    "con_re": "concepts/mod_resilience_concept.html",  #text / illustration
-    "con_an": "concepts/mod_resilience_anecdote.html",  #text / illustration
-    "con_fa": "concepts/mod_fabcity_concept.html",  #text / illustration
+    # Concepts
+    "con_re": "concepts/mod_resilience_concept.html",  # text / illustration
+    "con_an": "concepts/mod_resilience_anecdote.html",  # text / illustration
+    "con_fa": "concepts/mod_fabcity_concept.html",  # text / illustration
 
-    # "infos" : {
-    "inf_ab": "infos/mod_about.html",  #text
-    "inf_co": "infos/mod_contact.html",  #text
-    "inf_in": "infos/mod_intro.html",  #text
-    "inf_re": "infos/mod_intro_resilience.html",  #text
-    "inf_pa": "infos/mod_participation.html",  #form/comment
-    "inf_pr": "infos/mod_projects.html",  #form/comment
+    # Infos
+    "inf_ab": "infos/mod_about.html",  # text
+    "inf_co": "infos/mod_contact.html",  # text
+    "inf_in": "infos/mod_intro.html",  # text
+    "inf_re": "infos/mod_intro_resilience.html",  # text
+    "inf_pa": "infos/mod_participation.html",  # form/comment
+    "inf_pr": "infos/mod_projects.html",  # form/comment
     "inf_la": "infos/mod_labs.html",
-    # },
 
-    # "tools" : {
-    "too_da": "tools/mod_full_dashboard.html",  #row + col
-    "too_pi": "tools/mod_pie.html",  #row + col
-    "too_pi": "tools/mod_graph.html",  #row + col
-    "too_ch": "tools/mod_chart_horiz.html",  #row + col
-    "too_cv": "tools/mod_chart_vert.html",  #row + col
-    "too_tr": "tools/mod_treemap.html",  #row + col
+    # Tools
+    "too_da": "tools/mod_full_dashboard.html",  # row + col
+    "too_pi": "tools/mod_pie.html",  # row + col
+    "too_pi": "tools/mod_graph.html",  # row + col
+    "too_ch": "tools/mod_chart_horiz.html",  # row + col
+    "too_cv": "tools/mod_chart_vert.html",  # row + col
+    "too_tr": "tools/mod_treemap.html",  # row + col
     "too_re": "tools/mod_resilience.html",
-    "too_pl": "tools/mod_choose_place.html",  #row
-    "too_id": "tools/mod_choose_indicator.html",  #row
-    "too_al": "tools/mod_choose_all.html",  #row
-    "too_de": "tools/mod_choose_all_demo.html",  #row
-    # },
+    "too_pl": "tools/mod_choose_place.html",  # row
+    "too_id": "tools/mod_choose_indicator.html",  # row
+    "too_al": "tools/mod_choose_all.html",  # row
+    "too_de": "tools/mod_choose_all_demo.html",  # row
 }
 
-###############################################################################
-# order of modules /// format for one user  : "analitic"      : ["row_01" [ ], "row_02" } ,
+# order of modules /// format for one user  :
+# "analitic" : ["row_01" [ ], "row_02" } ,
 user_profiles = {
 
     # USER TYPOLOGY
