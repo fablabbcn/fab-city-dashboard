@@ -9,7 +9,7 @@ from werkzeug.routing import Rule
 # app = Flask(__name__)
 
 # import global variables for Z2N
-from .scripts.app_vars import title, metas, description, subtitle, version, authors, licenceCC, static_dir, URLroot_
+from .scripts.app_vars import title, metas, description, subtitle, version, authors, license, static_dir, URLroot_
 
 # import var dictionaries : user_profiles, regions dicts...
 from .scripts.app_vars import user_profiles, modules_html_dict, geoJSON_dict, root_basemaps, root_stats_json, regions_names

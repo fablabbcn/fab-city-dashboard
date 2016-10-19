@@ -17,7 +17,7 @@ d3,d3.js,javascript,python,flask,HTML,CSS,JSON,bootstrap,bower"""
 description = "description"
 authors = "Massimo Menichinelli, Mariana Quintero, Julien Paris"
 
-licenceCC = 'AGPL'
+license = 'AGPL'
 
 ############################
 # variables for app config
