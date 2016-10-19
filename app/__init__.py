@@ -1,6 +1,4 @@
 # -*- encoding: utf-8 -*-
-# needed encoding for '|' signs 
-
 '''
 FAB CITY DASHBOARD - VISUALIZAR'16
 --------------------------------------------
@@ -20,7 +18,6 @@ Participants at Visualizar'16:
 '''
 
 from flask import Flask
-import os
 
 from .scripts.app_vars import static_dir  # custom static directory
 
