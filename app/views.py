@@ -25,7 +25,7 @@ global_names = {
     'description': description,  # description of the app
     'version': version,  # explanation of what the app does
     'authors': authors,  # authors in metas
-    'licenceCC': licenceCC
+    'license': license
 }
 
 
