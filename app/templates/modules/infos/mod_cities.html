@@ -1,5 +1,4 @@
 <div class="content" id="resilience" style="padding-top: 50px;">
-    <!--MODULE INFOS/intro_resilience : inf_re <br>-->
 
     <h2 class="section-heading" style="padding:0px; margin: 150px 0px 5px 0px; text-transform: none">Current Fab Cities</h2>
     <p>
@@ -9,20 +8,62 @@
     <div id="fabcities_list" class="btn-group" role="group" aria-label="...">
     </div>
 
-    <h2 class="section-heading" id="citydataviztitle" style="padding:0px; margin: 150px 0px 5px 0px; text-transform: none">
+    <div id="wholeviz" style="display: none; border: 2px solid blue;">
+
+        <h2 class="city-title" id="title">
 	</h2>
-    <div id="citydatavizcontent">
+
+        <h3 class="country-title text-muted">
+        <span id="city">City</span> / <span id="region">Region</span> / <span id="country">Country</span>
+	</h3>
+
+        <p id="description">
+        </p>
+        </p>
+        <div id="content">
+        </div>
+
+        <h3>City map</h3>
+        <p>
+            no labs, just FUA border, regional resilience, country resilience
+        </p>
+
+        <div id="map" style="border: 1px solid red; height: 480px;">
+        </div>
+
+        <h3>City resilience</h3>
+        <p>
+            my d3 viz
+        </p>
+        <h3>City labs</h3>
+        <p>
+            map of labs with FUA borders
+        </p>
+        <h3>Projects</h3>
+        <p>
+            list of projects from lab
+        </p>
+
     </div>
 
     <script>
+        // Initially hide the whole city visualization with JQuery
+        $("#wholeviz").hide();
+
+        // The visualization
         d3.json("api/cities", function(data) {
 
             // Debug
             console.log(data);
 
             var button_group = d3.select('#fabcities_list');
-            var dataviztitle = d3.select('#citydataviztitle');
-            var datavizcontent = d3.select('#citydatavizcontent');
+            var viz = d3.select('#wholeviz');
+            var title = d3.select('#title');
+            var city = d3.select('#city');
+            var region = d3.select('#region');
+            var country = d3.select('#country');
+            var description = d3.select('#description');
+            var content = d3.select('#content');
 
             button_group.selectAll('div')
                 .data(data)
@@ -38,9 +79,35 @@
                 })
                 .on("click", function(d) {
                     console.log(d);
-                    dataviztitle.text(d["name"]);
-                    datavizcontent.append("p")
-                        .text(d["name"]);
+                    $("#wholeviz").show();
+                    title.text(d["name"]);
+                    city.text(d["city"]);
+                    region.text(d["region"]);
+                    country.text(d["country"]);
+                    description.html(d["description"]);
+
+                    // initialize the map
+                    var map = L.map('map').setView([d["lat"], d["long"]], 10);
+
+                    // load a tile layer
+                    L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+                        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+                    }).addTo(map);
+
+                    // function popUp(feature, layer) {
+                    //     layer.bindPopup(feature.properties.name);
+                    // }
+                    //
+                    var fuaStyle = {
+                        "color": "#958d86", // medium? brown
+                        "weight": 1, // stroke weight in pixels
+                        "opacity": 0.85
+                    };
+
+                    var fua = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/ESP/ESP_MAs_2016.geojson', fuaStyle).addTo(map);
+
+                    // GEOJSON
+                    //L.geoJson(fua).addTo(map);
                 });
 
         });

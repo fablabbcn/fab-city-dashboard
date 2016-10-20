@@ -1,31 +1,32 @@
 {
-  "name": "fab-city-dashboard",
-  "homepage": "https://github.com/fablabbcn/fab-city-dashboard",
-  "authors": [
-    "Massimo Menichinelli <info@openp2pdesign.org>"
-  ],
-  "description": "Fab City Dashboard developed during Visualizar'16",
-  "main": "",
-  "keywords": [
-    "fab",
-    "city",
-    "dashboard",
-    "dataviz"
-  ],
-  "license": "AGPL",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "static/bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "d3": "^4.2.6",
-    "leaflet": "^1.0.0",
-    "leaflet.markercluster": "^0.5.0"
-  }
+    "name": "fab-city-dashboard",
+    "homepage": "https://github.com/fablabbcn/fab-city-dashboard",
+    "authors": [
+        "Massimo Menichinelli <info@openp2pdesign.org>"
+    ],
+    "description": "Fab City Dashboard developed during Visualizar'16",
+    "main": "",
+    "keywords": [
+        "fab",
+        "city",
+        "dashboard",
+        "dataviz"
+    ],
+    "license": "AGPL",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "static/bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "d3": "^4.2.6",
+        "leaflet": "^1.0.0",
+        "leaflet.markercluster": "^0.5.0",
+        "leaflet-ajax": "^2.1.0"
+    }
 }

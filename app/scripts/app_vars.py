@@ -20,7 +20,7 @@ authors = "Massimo Menichinelli, Mariana Quintero, Julien Paris"
 license = 'AGPL'
 
 fabcities = [
-    {"id": 0, "name": "Barcelona", "type": "city"},
+    {"id": 0, "name": "Barcelona", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": 'The Barcelona metropolitan area comprises over 66% of the people in one of the richest regions in Europe – Catalonia, with a GDP per capita amounting to €28,400 (16% more than the EU average). Barcelona has a long-standing mercantile tradition. Less well known is that the region was one of the earliest to begin industrialization in continental Europe, beginning with textile-related works from the mid-1780s but really gathering momentum in the mid-19th century, when it became a major centre for the production of textiles and machinery. Since then, manufacturing has played a large role in its history. <span style="padding-left: 8x; font-size: 15px;">(Source: <a href="https://es.wikipedia.org/wiki/Barcelona#Econom.C3.ADa">Wikipedia </a>).'},
     {"id": 1, "name": "Boston", "type": "city"},
     {"id": 2, "name": "Somerville", "type": "city"},
     {"id": 3, "name": "Cambridge", "type": "city"},
