@@ -1,17 +1,14 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
+<!-- base -->
 
-{% block content %}
+{% include 'modules/infos/mod_intro.html' %}
+<!-- Fab City intro -->
 
-<div class="jumbotron col-sm-3 col-sm-offset-2">
+{% include 'modules/infos/mod_intro_resilience.html' %}
+<!-- Resilience intro -->
 
-	<div class="row">
-		
-		<h2>
-			Fabcity dashboard
-		</h2>
-	
-	</div>
-
-</div>
+{% include 'modules/infos/mod_cities.html' %}
+<!-- List the Fab Cities -->
 
 {% endblock %}
+<!-- end -->

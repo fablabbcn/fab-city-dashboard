@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 from app import app
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 import pandas as pd
 
@@ -9,10 +9,10 @@ from werkzeug.routing import Rule
 # app = Flask(__name__)
 
 # import global variables for Z2N
-from .scripts.app_vars import title, metas, description, subtitle, version, authors, license, static_dir, URLroot_
+from .scripts.app_vars import title, metas, description, subtitle, version, authors, license, static_dir, URLroot_, fabcities
 
-# import var dictionaries : user_profiles, regions dicts...
-from .scripts.app_vars import user_profiles, modules_html_dict, geoJSON_dict, root_basemaps, root_stats_json, regions_names
+# import var dictionaries
+from .scripts.app_vars import modules_html_dict, geoJSON_dict, root_basemaps, root_stats_json, regions_names
 
 # import local scripts ### not in use so far... to get datas remotely from APIs
 from .scripts.app_scripts import *
@@ -27,41 +27,6 @@ global_names = {
     'authors': authors,  # authors in metas
     'license': license
 }
-
-
-# inform jinja how to create template corresponding to user
-def generateTemplate(userProfile):
-
-    canvas = []
-
-    canvas_raw = user_profiles[userProfile]
-    # return a list of rows' dictionaries with following format
-    # [   { "400px" : [ {"reg_ma" : 9 }, {"reg_id": 3 } ] },
-    #     { "50px" :  [ {"tool_la" : 12 } ] },
-    #     { "600px" : [ {"con_re" : 4 }, {"wor_ma": 8 } ] },
-    # ]
-
-    counter = 1
-
-    for row in canvas_raw:
-
-        for height, modules in row.items():
-
-            row_id = "row_" + str(counter)
-            temp_template = {"row": row_id, "height": height, "columns": []}
-
-            for module in modules:
-                index_module = modules.index(module)
-                for mod_name, mod_size in module.items():
-                    mod_dict = {"index_module": index_module,
-                                "module": mod_name,
-                                "width": mod_size}
-                    temp_template["columns"].append(mod_dict)
-
-        canvas.append(temp_template)
-        counter += 1
-
-    return canvas
 
 
 def selectedRegionSpecs(selectedRegion, level):
@@ -192,6 +157,11 @@ def data_d3leaflet_map(selection):
 
 
 # Tests by massimo
+@app.route("/api/cities")
+def fabicites_list():
+    return jsonify(fabcities)
+
+
 @app.route("/oecd/regional-data")
 def regional_data():
     regional_data = pd.read_csv(

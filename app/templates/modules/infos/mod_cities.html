@@ -1,0 +1,49 @@
+<div class="content" id="resilience" style="padding-top: 50px;">
+    <!--MODULE INFOS/intro_resilience : inf_re <br>-->
+
+    <h2 class="section-heading" style="padding:0px; margin: 150px 0px 5px 0px; text-transform: none">Current Fab Cities</h2>
+    <p>
+        Choose one of the current Fab Cities.
+    </p>
+
+    <div id="fabcities_list" class="btn-group" role="group" aria-label="...">
+    </div>
+
+    <h2 class="section-heading" id="citydataviztitle" style="padding:0px; margin: 150px 0px 5px 0px; text-transform: none">
+	</h2>
+    <div id="citydatavizcontent">
+    </div>
+
+    <script>
+        d3.json("api/cities", function(data) {
+
+            // Debug
+            console.log(data);
+
+            var button_group = d3.select('#fabcities_list');
+            var dataviztitle = d3.select('#citydataviztitle');
+            var datavizcontent = d3.select('#citydatavizcontent');
+
+            button_group.selectAll('div')
+                .data(data)
+                .enter()
+                .append('button')
+                .attr("class", "btn btn-default")
+                .attr("type", "button")
+                .attr("aria-label", function(d) {
+                    return d["name"];
+                })
+                .html(function(d) {
+                    return d["name"];
+                })
+                .on("click", function(d) {
+                    console.log(d);
+                    dataviztitle.text(d["name"]);
+                    datavizcontent.append("p")
+                        .text(d["name"]);
+                });
+
+        });
+    </script>
+
+</div>
