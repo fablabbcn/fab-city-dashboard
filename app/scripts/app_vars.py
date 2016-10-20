@@ -19,6 +19,27 @@ authors = "Massimo Menichinelli, Mariana Quintero, Julien Paris"
 
 license = 'AGPL'
 
+fabcities = [
+    {"id": 0, "name": "Barcelona", "type": "city"},
+    {"id": 1, "name": "Boston", "type": "city"},
+    {"id": 2, "name": "Somerville", "type": "city"},
+    {"id": 3, "name": "Cambridge", "type": "city"},
+    {"id": 4, "name": "Ekurhuleni", "type": "city"},
+    {"id": 5, "name": "Kerala", "type": "state"},
+    {"id": 6, "name": "Georgia", "type": "country"},
+    {"id": 7, "name": "Shenzhen", "type": "city"},
+    {"id": 8, "name": "Amsterdam", "type": "city"},
+    {"id": 9, "name": "Toulouse", "type": "city"},
+    {"id": 10, "name": "Occitane Region", "type": "region"},
+    {"id": 11, "name": "Paris", "type": "city"},
+    {"id": 12, "name": "Bhutan", "type": "country"},
+    {"id": 13, "name": "Sacramento", "type": "city"},
+    {"id": 14, "name": "Santiago", "type": "city"},
+    {"id": 15, "name": "Detroit", "type": "city"}
+    ]
+
+
+
 ############################
 # variables for app config
 
