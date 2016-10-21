@@ -219,3 +219,8 @@ def oecd_nat_regio_city_slider():
         glob=global_names,
         map_=True,
         force=False, )
+
+
+@app.route('/info')
+def info():
+    return render_template('modules/infos/mod_viz.html')
