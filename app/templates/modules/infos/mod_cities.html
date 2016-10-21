@@ -22,13 +22,19 @@
         </div>
 
         <!-- City resilience map -->
-        {% include 'modules/cities/mod_city_res.html' %}
+        <h3>The resilience of the Fab City</h3>
+
+        <div id="map_res" style="height: 480px;">
+        </div>
 
         <!-- City resilience index -->
-        {% include 'modules/cities/mod_city_infos.html' %}
-
+        <!--{% include 'modules/cities/mod_city_infos.html' %}
+-->
         <!-- City labs map -->
-        {% include 'modules/cities/mod_city_labs.html' %}
+        <h3>The laboratories of the Fab City</h3>
+
+        <div id="map_labs" style="height: 480px;">
+        </div>
 
         <h3>Projects</h3>
         <p>
@@ -39,13 +45,10 @@
 
     <script>
         // Initially hide the whole city visualization with JQuery
-        // $("#wholeviz").hide();
+        $("#wholeviz").hide();
 
         // The visualization
         d3.json("api/cities", function(data) {
-
-            // Debug
-            console.log(data);
 
             var button_group = d3.select('#fabcities_list');
             var viz = d3.select('#wholeviz');
@@ -69,7 +72,9 @@
                     return d["name"];
                 })
                 .on("click", function(d) {
-                    console.log(d["name"]);
+                    console.log(d);
+                    $("#wholeviz").show();
+                    labs_map(d);
                 });
 
         });
