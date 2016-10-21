@@ -94,20 +94,34 @@
                         attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
                     }).addTo(map);
 
-                    // function popUp(feature, layer) {
-                    //     layer.bindPopup(feature.properties.name);
-                    // }
-                    //
-                    var fuaStyle = {
-                        "color": "#958d86", // medium? brown
-                        "weight": 1, // stroke weight in pixels
+                    var regionStyle = {
+                        "color": "#c38c5c",
+                        "weight": 1,
                         "opacity": 0.85
                     };
 
-                    var fua = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/ESP/ESP_MAs_2016.geojson', fuaStyle).addTo(map);
+                    // Functional urban areas plotting
+                    var fua_geojson = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/ESP/ESP_MAs_2016.geojson', {
+                        style: function(feature) {
+                            switch (feature.properties.CORE) {
+                                case 0:
+                                    return {
+                                        color: "#8f7e6f",
+                                        weight: 1,
+                                        opacity: 0.55
+                                    };
+                                case 1:
+                                    return {
+                                        color: "#5d3d1e",
+                                        weight: 2,
+                                        opacity: 0.95
+                                    };
+                            }
+                        }
+                    }).addTo(map);
 
-                    // GEOJSON
-                    //L.geoJson(fua).addTo(map);
+                    // var region_geojson = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/FRA/FRA_admin_level_4.geojson', fuaStyle).addTo(map);
+
                 });
 
         });
