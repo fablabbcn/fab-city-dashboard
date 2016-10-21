@@ -12,11 +12,6 @@ from werkzeug.routing import Rule
 # import global variables for Z2N
 from .scripts.app_vars import title, metas, description, subtitle, version, authors, license, static_dir, URLroot_, fabcities
 
-# import var dictionaries
-from .scripts.app_vars import modules_html_dict, geoJSON_dict, root_basemaps, root_stats_json, regions_names
-
-# import local scripts ### not in use so far... to get datas remotely from APIs
-from .scripts.app_scripts import *
 
 # gather global names
 global_names = {
@@ -28,8 +23,6 @@ global_names = {
     'authors': authors,  # authors in metas
     'license': license
 }
-
-
 
 @app.route('/')
 @app.route('/index')

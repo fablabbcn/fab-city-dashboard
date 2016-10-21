@@ -16,7 +16,6 @@
 
             var button_group = d3.select('#fabcities_list');
 
-
             button_group.selectAll('div').data(data).enter().append('button').attr("class", "btn btn-default").attr("type", "button").attr("aria-label", function(d) {
                 return d["name"];
             }).html(function(d) {
