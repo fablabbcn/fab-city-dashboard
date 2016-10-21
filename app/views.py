@@ -4,6 +4,7 @@ from app import app
 from flask import Flask, render_template, jsonify
 
 import pandas as pd
+import makerlabs.fablabs_io as fio
 
 from werkzeug.routing import Rule
 # app = Flask(__name__)
@@ -161,6 +162,10 @@ def data_d3leaflet_map(selection):
 def fabicites_list():
     return jsonify(fabcities)
 
+@app.route("/api/labs")
+def labs_map():
+    labs_geojson = fio.get_labs(format="geojson")
+    return labs_geojson
 
 @app.route("/oecd/regional-data")
 def regional_data():
