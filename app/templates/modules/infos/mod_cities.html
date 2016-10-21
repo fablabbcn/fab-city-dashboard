@@ -94,12 +94,6 @@
                         attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
                     }).addTo(map);
 
-                    var regionStyle = {
-                        "color": "#c38c5c",
-                        "weight": 1,
-                        "opacity": 0.85
-                    };
-
                     // Functional urban areas plotting
                     var fua_geojson = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/ESP/ESP_MAs_2016.geojson', {
                         style: function(feature) {
@@ -158,7 +152,14 @@
                         }
                     }).addTo(map);
 
-                    // var region_geojson = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/FRA/FRA_admin_level_4.geojson', fuaStyle).addTo(map);
+                    var regionStyle = {
+                        "color": "#c38c5c",
+                        "weight": 1,
+                        "fillColor": "#c38c5c",
+                        "fillOpacity": 0.15
+                    };
+
+                    var region_geojson = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/ESP/ESP_admin_level_4.geojson', regionStyle).addTo(map);
 
                 });
 
