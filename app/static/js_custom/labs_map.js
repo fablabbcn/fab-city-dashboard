@@ -1,5 +1,5 @@
 function labs_map(d) {
-
+    console.log(d);
     // initialize the map
     var map = L.map('map_labs').setView([d.lat, d.long], 10);
 

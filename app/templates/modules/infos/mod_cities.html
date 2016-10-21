@@ -22,15 +22,11 @@
             }).html(function(d) {
                 return d["name"];
             }).on("click", function(d) {
-                console.log(d);
-
                 // Load the basic html of the viz
                 // Edit it later as a callback
                 $('#after').load('info', function() {
                     viz_load(d);
                 });
-
-                //labs_map(d);
 
             });
 

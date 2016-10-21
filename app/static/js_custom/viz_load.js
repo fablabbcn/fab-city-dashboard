@@ -1,5 +1,6 @@
 function viz_load(d) {
-    console.log("viz loada");
+
+    // Select elements of the interface
     var title = d3.select('#title');
     var viz = d3.select('#wholeviz');
     var city = d3.select('#city');
@@ -7,5 +8,13 @@ function viz_load(d) {
     var country = d3.select('#country');
     var description = d3.select('#description');
     var content = d3.select('#content');
+
+    // Update the interface with the select Fab City
     title.html(d.name);
+    city.html(d.city);
+    region.html(d.region);
+    country.html(d.country);
+    description.html(d.description);
+
+    labs_map(d);
 }
