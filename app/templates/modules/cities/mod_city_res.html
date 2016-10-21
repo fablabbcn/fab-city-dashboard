@@ -1,14 +1,25 @@
-<h3>The laboratories of the Fab City</h3>
+<h3>The resilience of the Fab City</h3>
 
-<div id="map_labs" style="height: 480px;">
+<div id="map_res" style="height: 480px;">
 </div>
 
 <script>
     // The visualization
     d3.json("api/cities", function(data) {
 
+        var button_group = d3.select('#fabcities_list');
+        var viz = d3.select('#wholeviz');
+        var title = d3.select('#title');
+        var city = d3.select('#city');
+        var region = d3.select('#region');
+        var country = d3.select('#country');
+        var description = d3.select('#description');
+        var content = d3.select('#content');
+
+
+
         // initialize the map
-        var map = L.map('map_labs').setView([d["lat"], d["long"]], 10);
+        var map = L.map('map_res').setView([d["lat"], d["long"]], 10);
 
         // load a tile layer
         var basemap = L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
