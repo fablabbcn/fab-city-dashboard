@@ -10,16 +10,14 @@
 
     <div id="wholeviz" style="display: none; border: 2px solid blue;">
 
-        <h2 class="city-title" id="title">
-	</h2>
+        <h2 class="city-title" id="title"></h2>
 
         <h3 class="country-title text-muted">
-        <span id="city">City</span> / <span id="region">Region</span> / <span id="country">Country</span>
-	</h3>
+        <span id="city">City</span> / <span id="region">Region</span> / <span id="country">Country</span></h3>
 
         <p id="description">
         </p>
-        </p>
+
         <div id="content">
         </div>
 
@@ -28,17 +26,14 @@
             no labs, just FUA border, regional resilience, country resilience
         </p>
 
-        <div id="map" style="border: 1px solid red; height: 480px;">
-        </div>
-
-        <h3>City resilience</h3>
         <!-- City resilience index -->
         {% include 'modules/cities/mod_city_infos.html' %}
 
-        <h3>City labs</h3>
-        <p>
-            map of labs with FUA borders
-        </p>
+        <!-- City labs map -->
+        {% include 'modules/cities/mod_city_labs.html' %}
+
+
+
         <h3>Projects</h3>
         <p>
             list of projects from lab
@@ -48,7 +43,7 @@
 
     <script>
         // Initially hide the whole city visualization with JQuery
-        $("#wholeviz").hide();
+        // $("#wholeviz").hide();
 
         // The visualization
         d3.json("api/cities", function(data) {
