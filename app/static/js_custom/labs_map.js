@@ -35,7 +35,7 @@ function labs_map(d) {
     var fablabs_layer = new L.layerGroup();
 
     var fablabIcon = L.icon({
-        iconUrl: '../../../static/images/icons/svg/fablabs-red.png',
+        iconUrl: '../../../static/images/icons/svg/fablabs.svg',
         iconSize: [25, 25]
     });
 
@@ -43,10 +43,10 @@ function labs_map(d) {
         var props = feature.properties;
         var popupContent = "<p></p>";
         if (props && props.name) {
-            popupContent += '<h5>' + props.name + '</h5> ( ' + props.lab_type + ' )' + '<hr>' +
-                '<p style="margin-left: 15px"><em>city</em> : ' + props.city + ' ( ' + props.country_code + ' )' +
-                '<br><em>address</em> : ' + props.address_1 +
-                '</p>';
+            popupContent += '<h5>' + props.name + '</h5> (' + props.lab_type + ')' + '<hr>' +
+                '<p><em>City</em> : ' + props.city +
+                '<br><em>Address</em> : ' + props.address_1 + '<br><em>Link</em> : <a href="' + props.url +
+                '">' + props.url + '</a></p>';
         }
         layer.bindPopup(popupContent);
     }

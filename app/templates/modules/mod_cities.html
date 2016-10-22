@@ -21,10 +21,16 @@
             }).html(function(d) {
                 return d["name"];
             }).on("click", function(d) {
+                // Remove if existing
+                $("#wholeviz").remove();
                 // Load the basic html of the viz
                 // Edit it later as a callback
                 $('#after').load('viz_format', function() {
                     viz_load(d);
+                    // Scroll to the loaded viz
+                    $('html, body').animate({
+                        scrollTop: $("#fabcities_list").offset().top
+                    }, 1500);
                 });
 
             });

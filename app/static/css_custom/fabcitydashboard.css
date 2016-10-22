@@ -208,20 +208,6 @@ p.city-description {
     background-size: cover;
 }
 
-.inf_co {
-    background-color: #222;
-    background-image: url('../images/backgrounds/map-image.png');
-    background-repeat: no-repeat;
-    background-position: center center fixed;
-}
-
-.inf_re {
-    background-color: #222;
-    background-image: url('../images/backgrounds/map-image.png');
-    background-repeat: no-repeat;
-    background-position: center center fixed;
-}
-
 #region_resilience {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -277,6 +263,9 @@ p.city-description {
 
 .city.education {}
 
+
+/* SVG */
+
 .svg-container {
     display: inline-block;
     position: relative;
@@ -295,19 +284,7 @@ p.city-description {
     font-size: 60%;
 }
 
-#city-region-country {
-    padding-bottom: 28%;
-}
-
-#resilience-container1 {
-    padding-bottom: 100%;
-}
-
-#resilience-container2 {
-    padding-bottom: 100%;
-}
-
-#project-sliders {
+#city-region-country, #resilience-city, #project-sliders, #resilience-sliders {
     padding-bottom: 100%;
 }
 
