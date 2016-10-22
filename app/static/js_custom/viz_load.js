@@ -20,6 +20,6 @@ function viz_load(d) {
     city_region_country_viz("div#city-region-country");
     resilience_viz_simple("div#resilience-city");
     labs_map(d);
-    resilience_project_viz("div#resilience-sliders");
+    resilience_project_viz();
 
 }
