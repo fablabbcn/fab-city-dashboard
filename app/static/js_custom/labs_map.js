@@ -8,8 +8,11 @@ function labs_map(d) {
         attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
     }).addTo(map);
 
+    var fuaURL = "../../../static/data_custom/geojson_basemaps/MA/OECD_MA_" + d.countrycode + "/" + d.countrycode + "_MAs_2016.geojson";
+    var regionURL = "../../../static/data_custom/geojson_basemaps/MA/OECD_MA_" + d.countrycode + "/" + d.countrycode + "_admin_level_4.geojson";
+
     // Functional urban areas plotting
-    var fua_geojson = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/ESP/ESP_MAs_2016.geojson', {
+    var fua_geojson = new L.GeoJSON.AJAX(fuaURL, {
         style: function(feature) {
             switch (feature.properties.CORE) {
                 case 0:
@@ -73,6 +76,6 @@ function labs_map(d) {
         "fillOpacity": 0.15
     };
 
-    var region_geojson = new L.GeoJSON.AJAX('../../../static/data_custom/geojson_basemaps/regions/ESP/ESP_admin_level_4.geojson', regionStyle).addTo(map);
+    var region_geojson = new L.GeoJSON.AJAX(regionURL, regionStyle).addTo(map);
 
 }

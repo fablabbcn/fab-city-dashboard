@@ -2,11 +2,10 @@
 
 import os
 
-######################################
 # vars for name application / metas
 title = "Fab City Dashboard"
 subtitle = "subtitle"
-version = "beta 0.1"
+version = "beta 0.15"
 metas = """
 dataviz,data visualisation,graph,force layout,force directed layout,
 resilience,dashboard,index,indices,urban resilience,smart cities,
@@ -20,22 +19,22 @@ authors = "Massimo Menichinelli, Mariana Quintero, Julien Paris"
 license = 'AGPL'
 
 fabcities = [
-    {"id": 0, "name": "Barcelona", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": 'The Barcelona metropolitan area comprises over 66% of the people in one of the richest regions in Europe – Catalonia, with a GDP per capita amounting to €28,400 (16% more than the EU average). Barcelona has a long-standing mercantile tradition. Less well known is that the region was one of the earliest to begin industrialization in continental Europe, beginning with textile-related works from the mid-1780s but really gathering momentum in the mid-19th century, when it became a major centre for the production of textiles and machinery. Since then, manufacturing has played a large role in its history. <span style="padding-left: 8x; font-size: 15px;">(Source: <a href="https://es.wikipedia.org/wiki/Barcelona#Econom.C3.ADa">Wikipedia </a>).'},
-    {"id": 1, "name": "Boston", "type": "city"},
-    {"id": 2, "name": "Somerville", "type": "city"},
-    {"id": 3, "name": "Cambridge", "type": "city"},
-    {"id": 4, "name": "Ekurhuleni", "type": "city"},
-    {"id": 5, "name": "Kerala", "type": "state"},
-    {"id": 6, "name": "Georgia", "type": "country"},
-    {"id": 7, "name": "Shenzhen", "type": "city"},
-    {"id": 8, "name": "Amsterdam", "type": "city"},
-    {"id": 9, "name": "Toulouse", "type": "city"},
-    {"id": 10, "name": "Occitane Region", "type": "region"},
-    {"id": 11, "name": "Paris", "type": "city"},
-    {"id": 12, "name": "Bhutan", "type": "country"},
-    {"id": 13, "name": "Sacramento", "type": "city"},
-    {"id": 14, "name": "Santiago", "type": "city"},
-    {"id": 15, "name": "Detroit", "type": "city"}
+    {"id": 0, "name": "Barcelona", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "countrycode": "ESP", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": 'The Barcelona metropolitan area comprises over 66% of the people in one of the richest regions in Europe – Catalonia, with a GDP per capita amounting to €28,400 (16% more than the EU average). Barcelona has a long-standing mercantile tradition. Less well known is that the region was one of the earliest to begin industrialization in continental Europe, beginning with textile-related works from the mid-1780s but really gathering momentum in the mid-19th century, when it became a major centre for the production of textiles and machinery. Since then, manufacturing has played a large role in its history. <span style="padding-left: 8x; font-size: 15px;">(Source: <a href="https://es.wikipedia.org/wiki/Barcelona#Econom.C3.ADa">Wikipedia </a>).'},
+    {"id": 1, "name": "Boston", "type": "city", "city": "Boston", "region": "Massachussets", "country": "United States of America", "countrycode": "USA", "lat": 42.3600825, "long": -71.05888010000001, "description": ""},
+    {"id": 2, "name": "Somerville", "type": "city", "city": "Somerville", "region": "Massachussets", "country": "United States of America", "countrycode": "USA", "lat": 42.3875968, "long": -71.0994968, "description": ""},
+    {"id": 3, "name": "Cambridge", "type": "city", "city": "Cambridge", "region": "Massachussets", "country": "United States of America", "countrycode": "USA", "lat": 42.3736158, "long": -71.1097335, "description": ""},
+    {"id": 4, "name": "Ekurhuleni", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 5, "name": "Kerala", "type": "state", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 6, "name": "Georgia", "type": "country", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 7, "name": "Shenzhen", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 8, "name": "Amsterdam", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 9, "name": "Toulouse", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 10, "name": "Occitane Region", "type": "region", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 11, "name": "Paris", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 12, "name": "Bhutan", "type": "country", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 13, "name": "Sacramento", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 14, "name": "Santiago", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""},
+    {"id": 15, "name": "Detroit", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ""}
     ]
 
 
