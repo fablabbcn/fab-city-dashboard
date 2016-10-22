@@ -16,5 +16,10 @@ function viz_load(d) {
     country.html(d.country);
     description.html(d.description);
 
+    // Load the visualizations
+    city_region_country_viz("div#city-region-country");
+    resilience_viz_simple("div#resilience-city");
     labs_map(d);
+    resilience_project_viz("div#resilience-sliders");
+
 }

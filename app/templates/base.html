@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="eng">
 
 <head>
-
     <meta charset="utf-8">
     <title>Fab City Dashboard v.O.1</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="{{ glob.metas }}">
     <meta name="author" content="{{ glob.authors }}">
@@ -55,20 +52,7 @@
     <script type="text/javascript" src={{ url_for( 'static', filename='js_custom/resilience_viz_simple.js' ) }}></script>
     <script type="text/javascript" src={{ url_for( 'static', filename='js_custom/resilience_project_viz.js' ) }}></script>
 
-
-
 </head>
-
-
-
-<header>
-
-    <!-- for background carousel or smthg like that -->
-
-</header>
-
-
-
 
 
 <body id="body">
@@ -78,28 +62,18 @@
     <div class="upper-margin"> </div>
 
     <!-- CONTENTS  -->
-
     <div class="container-fluid">
-
         {% block content %}{% endblock %}
-
     </div>
 
     <!-- FOOTER -->
-
     {% include 'modules/footer.html' %}
 
-
-
     <!-- MODALS -->
-
-
     {% include 'modules/modals.html' %}
 
 
 </body>
-
-<!--<script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>-->
 
 <!--  bootstrap callings  -->
 <script type="text/javascript">

@@ -15,7 +15,21 @@ function resilience_project_viz(id) {
                 console.error('An error loading data: ' + error);
             } else {
 
-
+                // Colors for the resilience metrics
+                var resilience_colors = {
+                    "Housing": "#16785D",
+                    "Income": "#22357C",
+                    "Jobs": "#1A5774",
+                    "Community": "#67A61E",
+                    "Environment": "#1A9022",
+                    "Education": "#551C7B",
+                    "Civic engagement": "#7A1676",
+                    "Work life balance": "#A81E3E",
+                    "Life satisfaction": "#E62339",
+                    "Safety": "#B78621",
+                    "Health": "#B74021",
+                    "Accessibility to services": "#B7B721"
+                };
 
                 var gdp = [{
                     "City GDP": city_gdp[69]["2012"]
