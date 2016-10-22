@@ -1,4 +1,4 @@
-function resilience_project_viz() {
+function resilience_project_viz(d) {
 
     // Colors for the resilience metrics
     var resilience_colors = {
@@ -35,28 +35,125 @@ function resilience_project_viz() {
             } else {
 
 
+                // Find the city, region and country in the data
+                var city_gdp_position = 0;
+                var city_pop_position = 0;
+                var city_surf_position = 0;
+                var region_gdp_position = 0;
+                var region_pop_position = 0;
+                var region_surf_position = 0;
+                var country_gdp_position = 0;
+                var country_pop_position = 0;
+                var country_surf_position = 0;
+                // Find the city
+                for (var i = 0, len = city_gdp.length; i < len; i++) {
+                    if (city_gdp[i]["City Name"] == d.city) {
+                        city_gdp_position = i;
+                    }
+                };
+                for (var i = 0, len = city_pop.length; i < len; i++) {
+                    if (city_pop[i]["City Name"] == d.city) {
+                        city_pop_position = i;
+                    }
+                };
+                for (var i = 0, len = city_surf.length; i < len; i++) {
+                    if (city_surf[i]["City Name"] == d.city) {
+                        city_surf_position = i;
+                    }
+                };
+                // Find the region
+                for (var i = 0, len = region_gdp.length; i < len; i++) {
+                    if (region_gdp[i]["Region Name"] == d.region) {
+                        region_gdp_position = i;
+                    }
+                };
+                for (var i = 0, len = region_pop.length; i < len; i++) {
+                    if (region_pop[i]["Region Name"] == d.region) {
+                        region_pop_position = i;
+                    }
+                };
+                for (var i = 0, len = region_surf.length; i < len; i++) {
+                    if (region_surf[i]["Region Name"] == d.region) {
+                        region_surf_position = i;
+                    }
+                };
+                // Find the country
+                for (var i = 0, len = country_gdp.length; i < len; i++) {
+                    if (country_gdp[i]["Country Code"] == d.countrycode) {
+                        country_gdp_position = i;
+                    }
+                };
+                for (var i = 0, len = country_pop.length; i < len; i++) {
+                    if (country_pop[i]["Country Code"] == d.countrycode) {
+                        country_pop_position = i;
+                    }
+                };
+                for (var i = 0, len = country_surf.length; i < len; i++) {
+                    if (country_surf[i]["Country Code"] == d.countrycode) {
+                        country_surf_position = i;
+                    }
+                };
+
+
+                var gdp = [{
+                    "City GDP": city_gdp[city_gdp_position]["2012"]
+                }, {
+                    "Region GDP": region_gdp[region_gdp_position]["2012"]
+                }, {
+                    "Country GDP": country_gdp[country_gdp_position]["2015"]
+                }];
+                var pop = [{
+                    "City population": city_pop[city_pop_position]["2014"]
+                }, {
+                    "Region population": region_pop[region_pop_position]["2014"]
+                }, {
+                    "Country population": country_pop[country_pop_position]["2011"]
+                }];
+                var surf = [{
+                    "City surface": city_surf[city_surf_position]["2014"]
+                }, {
+                    "Region surface": region_surf[region_surf_position]["2014"]
+                }, {
+                    "Country surface": country_surf[country_surf_position]["2015"]
+                }];
+
                 // Calculate ratio base on GDP / Population
-                ratio1 = city_gdp[69]["2012"] / region_gdp[848]["2012"];
-                ratio2 = city_pop[69]["2014"] / region_pop[1495]["2014"];
+                ratio1 = city_gdp[city_gdp_position]["2012"] / region_gdp[region_gdp_position]["2012"];
+                ratio2 = city_pop[city_pop_position]["2014"] / region_pop[region_pop_position]["2014"];
                 cire_ratio = (ratio1 + ratio2) / 2;
+
+                // Find the region in the wellbeing data
+                var regions_wellbeing_position = 0;
+                for (var i = 0, len = regions_wellbeing.length; i < len; i++) {
+                    if (regions_wellbeing[i]["Region"] == d.region) {
+                        regions_wellbeing_position = i;
+                    }
+                };
+                // Find the country in the wellbeing data
+                var countries_wellbeing_position = 0;
+                for (var i = 0, len = countries_wellbeing.length; i < len; i++) {
+                    if (countries_wellbeing[i]["Country"] == d.country) {
+                        countries_wellbeing_position = i;
+                    }
+                };
 
                 // Clean data
                 var region_array = [];
-                for (var property in regions_wellbeing[283]) {
+                for (var property in regions_wellbeing[regions_wellbeing_position]) {
                     if (property != "Region" && property != "Region Code" && property != "Country") {
                         //region_object[property] = parseFloat(region_data[property]);
                         test = {}
-                        test[property] = parseFloat(regions_wellbeing[283][property]);
+                        test[property] = parseFloat(regions_wellbeing[regions_wellbeing_position][property]);
                         region_array.push(test);
                     }
                 }
 
                 var country_array = [];
-                for (var property in countries_wellbeing[28]) {
+                for (var property in countries_wellbeing[countries_wellbeing_position]) {
                     if (property != "Country") {
                         //region_object[property] = parseFloat(region_data[property]);
                         test = {}
-                        test[property] = parseFloat(countries_wellbeing[28][property]);
+                        test[property] = parseFloat(countries_wellbeing[countries_wellbeing_position][property]);
                         country_array.push(test);
                     }
                 }

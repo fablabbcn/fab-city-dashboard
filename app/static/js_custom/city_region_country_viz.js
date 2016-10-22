@@ -1,4 +1,4 @@
-function city_region_country_viz(id) {
+function city_region_country_viz(d) {
     // Load both regions and countries
     d3.queue()
         .defer(d3.csv, "../../../static/data_custom/json_stats/OECD/city_gdp.csv")
@@ -15,28 +15,86 @@ function city_region_country_viz(id) {
                 console.error('An error loading data: ' + error);
             } else {
 
+                // Find the city, region and country in the data
+                var city_gdp_position = 0;
+                var city_pop_position = 0;
+                var city_surf_position = 0;
+                var region_gdp_position = 0;
+                var region_pop_position = 0;
+                var region_surf_position = 0;
+                var country_gdp_position = 0;
+                var country_pop_position = 0;
+                var country_surf_position = 0;
+                // Find the city
+                for (var i = 0, len = city_gdp.length; i < len; i++) {
+                    if (city_gdp[i]["City Name"] == d.city) {
+                        city_gdp_position = i;
+                    }
+                };
+                for (var i = 0, len = city_pop.length; i < len; i++) {
+                    if (city_pop[i]["City Name"] == d.city) {
+                        city_pop_position = i;
+                    }
+                };
+                for (var i = 0, len = city_surf.length; i < len; i++) {
+                    if (city_surf[i]["City Name"] == d.city) {
+                        city_surf_position = i;
+                    }
+                };
+                // Find the region
+                for (var i = 0, len = region_gdp.length; i < len; i++) {
+                    if (region_gdp[i]["Region Name"] == d.region) {
+                        region_gdp_position = i;
+                    }
+                };
+                for (var i = 0, len = region_pop.length; i < len; i++) {
+                    if (region_pop[i]["Region Name"] == d.region) {
+                        region_pop_position = i;
+                    }
+                };
+                for (var i = 0, len = region_surf.length; i < len; i++) {
+                    if (region_surf[i]["Region Name"] == d.region) {
+                        region_surf_position = i;
+                    }
+                };
+                // Find the country
+                for (var i = 0, len = country_gdp.length; i < len; i++) {
+                    if (country_gdp[i]["Country Code"] == d.countrycode) {
+                        country_gdp_position = i;
+                    }
+                };
+                for (var i = 0, len = country_pop.length; i < len; i++) {
+                    if (country_pop[i]["Country Code"] == d.countrycode) {
+                        country_pop_position = i;
+                    }
+                };
+                for (var i = 0, len = country_surf.length; i < len; i++) {
+                    if (country_surf[i]["Country Code"] == d.countrycode) {
+                        country_surf_position = i;
+                    }
+                };
 
 
                 var gdp = [{
-                    "City GDP": city_gdp[69]["2012"]
+                    "City GDP": city_gdp[city_gdp_position]["2012"]
                 }, {
-                    "Region GDP": region_gdp[848]["2012"]
+                    "Region GDP": region_gdp[region_gdp_position]["2012"]
                 }, {
-                    "Country GDP": country_gdp[24]["2015"]
+                    "Country GDP": country_gdp[country_gdp_position]["2015"]
                 }];
                 var pop = [{
-                    "City population": city_pop[69]["2014"]
+                    "City population": city_pop[city_pop_position]["2014"]
                 }, {
-                    "Region population": region_pop[1495]["2014"]
+                    "Region population": region_pop[region_pop_position]["2014"]
                 }, {
-                    "Country population": country_pop[28]["2011"]
+                    "Country population": country_pop[country_pop_position]["2011"]
                 }];
                 var surf = [{
-                    "City surface": city_surf[69]["2014"]
+                    "City surface": city_surf[city_surf_position]["2014"]
                 }, {
-                    "Region surface": region_surf[1457]["2014"]
+                    "Region surface": region_surf[region_surf_position]["2014"]
                 }, {
-                    "Country surface": country_surf[178]["2015"]
+                    "Country surface": country_surf[country_surf_position]["2015"]
                 }];
 
                 // variables
@@ -63,7 +121,7 @@ function city_region_country_viz(id) {
                     .range([0, width]);
 
                 // Access svg area
-                var svg = d3.select(id)
+                var svg = d3.select("div#city-region-country")
                     .append("svg")
                     .attr("preserveAspectRatio", "xMinYMin meet")
                     .attr("viewBox", "0 0 600 200")

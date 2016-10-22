@@ -17,9 +17,9 @@ function viz_load(d) {
     description.html(d.description);
 
     // Load the visualizations
-    city_region_country_viz("div#city-region-country");
-    resilience_viz_simple("div#resilience-city");
+    city_region_country_viz(d);
+    resilience_viz_simple(d);
     labs_map(d);
-    resilience_project_viz();
+    resilience_project_viz(d);
 
 }
