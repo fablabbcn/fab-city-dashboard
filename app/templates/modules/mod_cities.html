@@ -1,6 +1,6 @@
-<div class="content" id="resilience" style="padding-top: 50px;">
+<div class="content" id="resilience">
 
-    <h2 class="section-heading" style="padding:0px; margin: 150px 0px 5px 0px; text-transform: none">Current Fab Cities</h2>
+    <h2 class="section-heading">Current Fab Cities</h2>
     <p>
         Choose one of the current Fab Cities.
     </p>
@@ -16,7 +16,7 @@
 
             var button_group = d3.select('#fabcities_list');
 
-            button_group.selectAll('div').data(data).enter().append('button').attr("class", "btn btn-default").attr("type", "button").attr("aria-label", function(d) {
+            button_group.selectAll('div').data(data).enter().append('button').attr("class", "btn btn-default").attr("type", "button").attr("class", "btn-xl").attr("aria-label", function(d) {
                 return d["name"];
             }).html(function(d) {
                 return d["name"];

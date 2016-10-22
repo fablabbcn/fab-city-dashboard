@@ -83,13 +83,7 @@ p.city-description {
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     color: #777;
     border: 1px solid #01a158;
-    background-color: transparent;
-}
-
-.inverted{
-    border-color: #01a158;
-    background-color: #01a158;
-    color: #F7F7F7 ;
+    background-color: #fff;
 }
 
 .menu {
@@ -107,8 +101,6 @@ p.city-description {
 .btn-link {
     margin-top: -1px;
 }
-
-
 
 .btn-tool {
     margin-bottom: 5px;
@@ -216,76 +208,6 @@ p.city-description {
     background-size: cover;
 }
 
-
-/* styles for modules - check app_vars.py for description */
-
-
-/*MODULES */
-
-
-/* styles for modules - check app_vars.py for description */
-
-
-/* lab_ma == labs + map ... lab_if == labs + infos ... _id == indicators ... _pr == projects ... _da == dashboard */
-
-.lab_ma {}
-
-.lab_if {}
-
-.lab_id {}
-
-.lab_pr {}
-
-.lab_da {}
-
-.cit_ma {}
-
-.cit_if {}
-
-.cit_id {}
-
-.cit_pr {}
-
-.cit_da {}
-
-.reg_ma {}
-
-.reg_if {}
-
-.reg_id {}
-
-.reg_pr {}
-
-.reg_da {}
-
-.cou_ma {}
-
-.cou_if {}
-
-.cou_id {}
-
-.cou_pr {}
-
-.cou_da {}
-
-.wor_ma {}
-
-.wor_if {}
-
-.wor_id {}
-
-.wor_pr {}
-
-.wor_da {}
-
-.con_re {}
-
-.con_an {}
-
-.con_fa {}
-
-.inf_ab {}
-
 .inf_co {
     background-color: #222;
     background-image: url('../images/backgrounds/map-image.png');
@@ -300,29 +222,26 @@ p.city-description {
     background-position: center center fixed;
 }
 
-.inf_in {}
-
-.inf_pa {}
-
-.too_da {}
-
-.too_pl {
-    margin-top: 10px;
-    /* not working yet */
-}
-
-.too_id {
-    margin-top: 10px;
-}
-
-
-/* svg_oecd // if this style is not specific it affects the map (dephase by 10px from top for instance */
-
 #region_resilience {
     margin-top: 10px;
     margin-bottom: 30px;
     font-family: "Dosis", sans-serif;
     font-weight: bold;
+}
+
+#intro {
+    margin-bottom: 40px;
+}
+
+#intro_resilience {
+    background-color: #000;
+    background-image: url("../images/backgrounds/map-image.png");
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+#fabcities_list {
+    margin-bottom: 40px;
 }
 
 
@@ -434,25 +353,26 @@ h2, h3 {
     opacity: 0.7;
 }
 
-.dropdown-menu li a{
+.dropdown-menu li a {
     font-family: "Montserrat", sans-serif;
 }
 
+
 /*** SEARCH BAR  ****/
 
-#custom-search-input{
+#custom-search-input {
     padding: 3px;
     border: solid 1px #E4E4E4;
     border-radius: 6px;
     background-color: #fff;
 }
 
-#custom-search-input input{
+#custom-search-input input {
     border: 0;
     box-shadow: none;
 }
 
-#custom-search-input button{
+#custom-search-input button {
     margin: 2px 0 0 0;
     background: none;
     box-shadow: none;
@@ -462,20 +382,20 @@ h2, h3 {
     border-left: solid 1px #ccc;
 }
 
-#custom-search-input button:hover{
+#custom-search-input button:hover {
     border: 0;
     box-shadow: none;
     border-left: solid 1px #ccc;
 }
 
-#custom-search-input .glyphicon-search{
+#custom-search-input .glyphicon-search {
     font-size: 23px;
-} 
+}
 
 .input-lg {
     height: 100px;
     font-size: 30px;
-    font-family: "Montserrat", sans-serif ;
+    font-family: "Montserrat", sans-serif;
     padding-left: 6%;
 }
 
@@ -492,15 +412,14 @@ h2, h3 {
     vertical-align: middle;
     background-color: #fddc2d;
     border-radius: 3px;
-
 }
 
 
-
 /* PHOTO MODAL */
+
 #lightbox .modal-content {
     display: inline-block;
-    text-align: center;   
+    text-align: center;
 }
 
 #lightbox .close {
@@ -513,22 +432,17 @@ h2, h3 {
     position: absolute;
     top: -15px;
     right: -55px;
-    
-    z-index:1032;
+    z-index: 1032;
 }
 
 
-/* BOOTSTRAP MODALS*/ 
-
+/* BOOTSTRAP MODALS*/
 
 @media (min-width: 768px) {
-
-.modal-dialog {
-    width: 900px;
-    margin: 30px auto;
-}
-
-
+    .modal-dialog {
+        width: 900px;
+        margin: 30px auto;
+    }
 }
 
 .modal-body {
@@ -537,5 +451,4 @@ h2, h3 {
 
 .modal-body p {
     font-size: 16px;
-
 }
