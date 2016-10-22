@@ -109,15 +109,15 @@ function city_region_country_viz(d) {
 
                 // Linear scale for gdp
                 var gdpScale = d3.scaleLinear()
-                    .domain([0, country_gdp[24]["2015"]])
+                    .domain([0, country_gdp[country_gdp_position]["2015"]])
                     .range([0, width]);
 
                 var popScale = d3.scaleLinear()
-                    .domain([0, country_pop[28]["2011"]])
+                    .domain([0, country_pop[country_pop_position]["2011"]])
                     .range([0, width]);
 
                 var surfScale = d3.scaleLinear()
-                    .domain([0, country_surf[178]["2015"]])
+                    .domain([0, country_surf[country_surf_position]["2015"]])
                     .range([0, width]);
 
                 // Access svg area

@@ -21,19 +21,19 @@ license = 'AGPL'
 fabcities = [
     {"id": 0, "name": "Barcelona", "type": "city", "city": "Barcelona", "region": "Catalonia", "country": "Spain", "countrycode": "ESP", "lat": 41.38506389999999, "long": 2.1734034999999494, "description": ''},
     {"id": 1, "name": "Boston", "type": "city", "city": "Boston", "region": "Massachussets", "country": "United States of America", "countrycode": "USA", "lat": 42.3600825, "long": -71.05888010000001, "description": ""},
-    {"id": 2, "name": "Somerville", "type": "city", "city": "Somerville", "region": "Massachussets", "country": "United States of America", "countrycode": "USA", "lat": 42.3875968, "long": -71.0994968, "description": ""},
-    {"id": 3, "name": "Cambridge", "type": "city", "city": "Cambridge", "region": "Massachussets", "country": "United States of America", "countrycode": "USA", "lat": 42.3736158, "long": -71.1097335, "description": ""},
+    {"id": 2, "name": "Somerville", "type": "city", "city": "Boston", "region": "Massachussets", "country": "United States of America", "countrycode": "USA", "lat": 42.3875968, "long": -71.0994968, "description": ""},
+    {"id": 3, "name": "Cambridge", "type": "city", "city": "Boston", "region": "Massachussets", "country": "United States of America", "countrycode": "USA", "lat": 42.3736158, "long": -71.1097335, "description": ""},
     {"id": 4, "name": "Ekurhuleni", "type": "region", "city": "Germiston",  "region": "Ekurhuleni", "country": "South Africa", "countrycode": "ZAF",  "lat": -26.2258734, "long": 28.170779400000015, "description": ""},
     {"id": 5, "name": "Kerala", "type": "state", "city": "Thiruvananthapuram", "region": "Kerala", "country": "India", "countrycode": "IND", "lat": 8.524139100000001, "long": 76.93663760000004, "description": ""},
     {"id": 6, "name": "Georgia", "type": "country", "city": "Tbilisi", "region": "Tbilisi", "country": "Georgia", "countrycode": "GEO", "lat": 41.7151377, "long": 44.82709599999998, "description": ""},
     {"id": 7, "name": "Shenzhen", "type": "city", "city": "Shenzhen", "region": "Guangdong", "country": "China", "countrycode": "CHN", "lat": 22.543096, "long": 114.05786499999999, "description": ""},
     {"id": 8, "name": "Amsterdam", "type": "city", "city": "Amsterdam", "region": "North Holland", "country": "Netherlands", "countrycode": "NLD", "lat": 52.3702157, "long": 4.895167899999933, "description": ""},
-    {"id": 9, "name": "Toulouse", "type": "city", "city": "Toulouse", "region": "Occitane Region", "country": "France", "countrycode": "FRA", "lat": 43.604652, "long": 1.4442090000000007, "description": ""},
+    {"id": 9, "name": "Toulouse", "type": "city", "city": "Toulouse", "region": "Aquitaine", "country": "France", "countrycode": "FRA", "lat": 43.604652, "long": 1.4442090000000007, "description": ""},
     {"id": 10, "name": "Occitane Region", "type": "region", "city": "Toulouse", "region": "Occitane Region", "country": "France", "countrycode": "FRA", "lat": 43.604652, "long": 1.4442090000000007, "description": ""},
-    {"id": 11, "name": "Paris", "type": "city", "city": "Paris", "region": "Île-de-France", "country": "France", "countrycode": "FRA", "lat": 48.85661400000001, "long": 2.3522219000000177, "description": ""},
+    {"id": 11, "name": "Paris", "type": "city", "city": "Paris", "region": "Ile-de-France", "country": "France", "countrycode": "FRA", "lat": 48.85661400000001, "long": 2.3522219000000177, "description": ""},
     {"id": 12, "name": "Bhutan", "type": "country", "city": "Thimphu", "region": "Thimphu District", "country": "Bhutan", "countrycode": "BTN", "lat": 27.4727924, "long": 89.63928629999998, "description": ""},
-    {"id": 13, "name": "Sacramento", "type": "city", "city": "Sacramento", "region": "California", "country": "United States of America", "countrycode": "USA", "lat": 38.58157189999999, "long": -121.49439960000001, "description": ""},
-    {"id": 14, "name": "Santiago", "type": "city", "city": "Santiago", "region": "Santiago Metropolitan Region", "country": "Chile", "countrycode": "CHL", "lat": -33.4378305, "long": -70.65044920000003, "description": ""},
+    {"id": 13, "name": "Sacramento", "type": "city", "city": "Sacramento/Roseville", "region": "California", "country": "United States of America", "countrycode": "USA", "lat": 38.58157189999999, "long": -121.49439960000001, "description": ""},
+    {"id": 14, "name": "Santiago", "type": "city", "city": "Santiago", "region": "Santiago Metropolitan", "country": "Chile", "countrycode": "CHL", "lat": -33.4378305, "long": -70.65044920000003, "description": ""},
     {"id": 15, "name": "Detroit", "type": "city", "city": "Detroit", "region": "Michigan", "country": "United States of America", "countrycode": "USA", "lat": 42.33142699999999, "long": -83.0457538, "description": ""}
     ]
 
