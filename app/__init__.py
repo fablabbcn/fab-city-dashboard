@@ -19,7 +19,7 @@ Participants at Visualizar'16:
 
 from flask import Flask
 
-app = Flask(__name__, static_folder='app/static')
+app = Flask(__name__)
 
 from app import views
 
