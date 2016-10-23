@@ -1,5 +1,3 @@
-#!venv/bin/python
-''' venv = name of virtual environnement'''
 from app import app
 import os
 

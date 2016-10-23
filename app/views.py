@@ -7,7 +7,6 @@ import pandas as pd
 import makerlabs.fablabs_io as fio
 
 from werkzeug.routing import Rule
-# app = Flask(__name__)
 
 # import global variables for Z2N
 from .scripts.app_vars import title, metas, description, subtitle, version, authors, license, static_dir, URLroot_, fabcities
