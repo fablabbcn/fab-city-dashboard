@@ -9,7 +9,8 @@ function labs_map(d) {
     }).addTo(map);
 
     var fuaURL = "../../../static/data_custom/geojson_basemaps/MA/OECD_MA_" + d.countrycode + "/" + d.countrycode + "_MAs_2016.geojson";
-    var regionURL = "../../../static/data_custom/geojson_basemaps/MA/OECD_MA_" + d.countrycode + "/" + d.countrycode + "_admin_level_4.geojson";
+    var regionURL = "../../../static/data_custom/geojson_basemaps/regions/" + d.countrycode + "/admin_level_4.geojson";
+    console.log(regionURL);
 
     // Functional urban areas plotting
     var fua_geojson = new L.GeoJSON.AJAX(fuaURL, {
