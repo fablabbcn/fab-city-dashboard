@@ -1,0 +1,30 @@
+{% from "macros/form_macros.html" import render_field, render_checkbox_field, render_submit_field %}
+<!-- Form select / deselect roles to user -->
+<form action="{{ url_for('admin.add_role_user', username = user.username) }}" method="POST" id="form_role_user" role="form">
+  <div class="row">
+    <div class="col-sm-8 col-md-8 col-lg-8">
+      {{ form_user.hidden_tag() }}
+
+      {# User roles are compared to general roles #}
+      {% for role in roles %}
+        {# I create a dictionary to save the value in the next for #}
+        {% set vars = {'user_role_checked': False} %}
+
+        {% for role_u in user.roles %}
+          {% if role_u.name==role.name %}
+            {% if vars.update({'user_role_checked': True}) %}{% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {# render checbox  select or deselect #}
+        {{ render_checkbox_field( form_role.name, label=role.name, value=role.name, checked=vars.user_role_checked) }}
+      {% endfor %}
+
+    </div>
+  </div>
+  <div id="submit_roles_user" class="row">
+    <div class="col-sm-6 col-md-5 col-lg-4">
+      {{ render_submit_field(form_user.submit) }}
+    </div>
+  </div>
+</form>

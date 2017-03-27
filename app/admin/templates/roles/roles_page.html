@@ -1,0 +1,59 @@
+{% extends "base_admin.html" %}
+<!-- Macros Form -->
+{% from "macros/form_macros.html" import render_field, render_checkbox_field, render_submit_field %}
+
+{% block content_admin %}
+    <!-- Title -->
+  {% block title %}
+    <h2 class="section-heading">Roles page</h2>
+  {% endblock %}
+
+  {% include "roles/add_roles.html" %}
+
+  <!-- Remove role -->
+  <div class="row">
+    <div class="col-sm-6 col-md-5 col-lg-4">
+      <h4>Remove role</h4>
+
+      <!-- List roles -->
+      {% for role in roles %}
+      <div class="list-group">
+        <button type="button" class="list-group-item" value="{{role.name}}"  data-toggle="modal">
+          <div class="row">
+            <div  class="col-sm-9"><span class="role-remove">{{role.name}}</span></div>
+            <div class="col-sm-3"><p><span class="glyphicon glyphicon-trash"></span></p></div>
+          </div>
+        </button>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+  <script>
+  $(document).ready(function(){
+
+    // Remove role to push button
+    $(".list-group-item").click(function(){
+      var roleRemove = "";
+      roleRemove = $(this).attr("value");
+
+      //role selection
+      if(roleRemove !== ""){
+        //Change message modal and sow
+        $("#modal_action #message-modal").html("Do you accept your remove the <b>"+roleRemove+"</b> role?");
+        $("#modal_action").modal('show');
+
+        //Click accept modal, it remove role
+        $("#modal-accept").click(function(){
+          $.post("{{ url_for('admin.remove_role') }}", data= {"role_remove": roleRemove}, function(){
+            location.reload();
+          });
+         });
+      }
+
+    });
+
+  });
+  </script>
+{% endblock %}

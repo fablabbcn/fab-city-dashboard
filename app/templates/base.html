@@ -4,10 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>Fab City Dashboard v.O.1</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="{{ glob.metas }}">
-    <meta name="author" content="{{ glob.authors }}">
-    <meta name="description" content="{{ glob.description }}">
+    {% if not glob %}
+    {% else %}
+      <meta name="keywords" content="{{ glob.metas }}">
+      <meta name="author" content="{{ glob.authors }}">
+      <meta name="description" content="{{ glob.description }}">
+    {% endif %}
+
 
     <!-- JQUERY -->
     <script src={{ url_for( 'static', filename='bower_components/jquery/dist/jquery.min.js' ) }}></script>
@@ -63,7 +68,15 @@
 
     <!-- CONTENTS  -->
     <div class="container-fluid">
-        {% block content %}{% endblock %}
+      <!-- MESSAGES -->
+      {% include 'modules/mod_message.html' %}
+
+      <!-- TODO Rename modal-->
+      <!-- Modal -->
+      {% include 'modules/modals_action.html' %}
+
+      <!-- CONTENT -->
+      {% block content %}{% endblock %}
     </div>
 
     <!-- FOOTER -->

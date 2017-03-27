@@ -1,0 +1,49 @@
+{% extends "base_admin.html" %}
+  {% block content_admin %}
+
+    <!-- Title -->
+    <h2 class="section-heading">Members page</h2>
+    <p> This page can only be accessed by authenticated users.</p>
+    {% if current_user_is_admin %}
+      <p>
+        Your <b>Admin role</b> allows you to <b>add users</b>, <b>remove users</b> and <b>change users roles</b>.
+      </p>
+    {% endif %}
+    <br>
+    <!-- List Members -->
+    <div class="row">
+      <div class="col-sm-12 col-md-10 col-lg-8">
+        {% if current_user_is_admin %}
+          <div>
+            <a href="{{ url_for('admin.members_invite') }}" class="btn" role="button">Invite user</a>
+          </div>
+        {% endif %}
+        <div class="list-group" id="list_items">
+
+          <!-- Item  active/inactive-->
+           {% for u in users %}
+             {% if u.username == current_user.username %}
+              <a href="{{ url_for('admin.profile_page', username = u.username) }}" class="list-group-item active">
+            {% else %}
+              <a href="{{ url_for('admin.profile_page', username = u.username) }}" class="list-group-item">
+            {% endif %}
+
+            <!-- Username -->
+            <h4><span class="glyphicon glyphicon-user"> {{u.username}}</span></h4>
+
+              <!-- Roles -->
+            <span class="glyphicon glyphicon-eye-open">
+            {% for r in u.roles %}
+              {{r.name }}
+            {% endfor %}
+            </span>
+
+            </a>
+            {% endfor %}
+
+        </div>
+      </div>
+    </div>
+
+
+{% endblock %}
