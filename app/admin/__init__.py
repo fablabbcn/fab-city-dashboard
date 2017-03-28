@@ -38,7 +38,7 @@ if not User.query.filter(User.username==os.getenv('ADMIN_USER')).first():
 # This part above is based on the flask-user example under BSD license
 
 # Blueprint
-admin = Blueprint('admin', __name__, template_folder='./templates')
+admin = Blueprint('admin', __name__, template_folder='./templates', static_folder="./static", static_url_path="/static")
 
 # Views
 from . import views

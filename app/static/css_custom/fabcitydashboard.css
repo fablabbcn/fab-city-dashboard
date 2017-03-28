@@ -86,9 +86,7 @@ p.city-description {
     background-color: #fff;
 }
 
-.btn-danger{
-  background-color: #ed9393;
-}
+
 
 .menu {
     border-color: #e8e8e8;
@@ -111,107 +109,13 @@ p.city-description {
 }
 
 
-
-/* FORMS */
-.form-control:focus{
-  border-color: #01A158;
-}
-
-input[type="text"], input[type="file"] {
-  border-radius: 0px;
-}
-
-/* LIST-GROUP  */
-.list-group-item:first-child, .list-group-item:last-child {
-    border-radius: 0px;
-}
-
-.list-group-item.active, .btn-primary{
-  background-color: #01A158;
-  border-color: #ddd;
-  z-index: 2;
-}
-
-a.list-group-item:focus, a.list-group-item:hover, .list-group-item.active:focus, .list-group-item.active:hover, .btn:hover,  .btn:focus{
-  background-color: #faece1;
-  border-color: #01A158;
-  color:#d41111;
-  z-index: 2;
-}
-
 /* MAIN-DIV */
 #main-div{
   margin-left: 5em;
   margin-right: 5em;
 }
 
-## TODO
-/* PROFILE */
-.thumbnail{
-  border-radius: 0px;
-}
 
-/* EDIT PROFILE */
-#links_Username_Pass{
-  margin-top: 10px;
-}
-
-/* PROFILE ROLES */
-#submit_role{
-  margin-left: -1.5em;
-
-}
-
-#submit_roles_user{
-  margin-top: 0.9px;
-}
-/* AVATAR */
-#avatar{
-  margin-top: 0.6em;
-  margin-left: 0.6em;
-  border: 2px solid  #c6c6c6;
-  padding: 2px;
-
-  background-color: #ddd;
-  width: 100px;
-  height: 100px;
-}
-
-a.edit_avatar{
-  position: relative;
-  top:-18px;
-  margin-left: 112px;
-}
-div.edit_avatar{
-  margin-top: 0px;
-  margin-left: -7px;
-}
-/* ROLES */
-.list-group-item p{
-  text-align: right;
-}
-
-/* VERTICAL-MENU */
-#vertical-menu{
-  margin-top: 5em;
-  margin-right: 2em;
-  border-right: 1px solid  #ddd;
-}
-.nav-pills > li > a{
-  border: 1px solid  #F7F7F7;
-  border-radius: 0px;
-}
-.nav-pills > li.active > a{
-  background-color: #01A158;
-
-}
-
-.nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover, .nav-pills > li > a:hover {
-  background-color: #faece1;
-  border-color: #01A158;
-  color:#d41111;
-}
-## -----
 
 /*MODALS */
 
@@ -241,6 +145,10 @@ div.edit_avatar{
 .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
     color: #F7F7F7;
     background-color: #01a158;
+}
+
+.navbar .divider-vertical {
+  border-right: 2px solid white;
 }
 
 .dropdown-menu {

@@ -37,8 +37,6 @@ configure_uploads(app, uploaded_photos)
 # Initialize Flask-Mail
 mail = Mail(app)
 
-
-
 from app import views
 
 # Load Blueprints

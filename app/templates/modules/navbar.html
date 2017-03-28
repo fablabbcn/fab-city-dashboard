@@ -39,7 +39,7 @@
                     <a href="#projects">Projects</a>
                 </li>
 
-                <li>
+                <li class="divider-vertical">
                     <a href="#" class="" data-toggle="modal" data-target="#myModal"> About</a>
                 </li>
 
@@ -61,9 +61,10 @@
             -->
             <!-- TODO -->
             <!-- Menu - login -->
+
               {% if call_or_get(current_user.is_authenticated) %}
                   <!-- User - login -->
-                  <li><a href="{{ url_for('admin.profile_page', username=current_user.username) }}"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span> {{ current_user.username }}</a></li>
+                  <li ><a href="{{ url_for('admin.profile_page', username=current_user.username) }}"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span> {{ current_user.username }}</a></li>
                   <li><a href="{{ url_for('admin.home_page') }}"> admin</a></li>
                   <li><a href="{{ url_for('user.logout') }}"><span class="glyphicon glyphicon-share" aria-hidden="true"> </span> Sign out</a></li>
               {% else %}
