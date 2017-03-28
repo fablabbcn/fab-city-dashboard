@@ -2,7 +2,6 @@ import os
 import config
 
  # This part below is based on the flask-user example under BSD license
-
 # Use a Class-based config to avoid needing a 2nd file
 # os.getenv() enables configuration through OS environment variables
 class ConfigClass(object):
@@ -21,8 +20,10 @@ class ConfigClass(object):
 
     # Flask-User settings
     USER_APP_NAME        = "CITY_DASHBOARD"                # Used by email templates
-    USER_ENABLE_INVITATION = False
-    USER_REQUIRE_INVITATION          = False
+    USER_ENABLE_INVITATION = True
+    USER_REQUIRE_INVITATION          = True
+    USER_INVITE_URL= "/"
+    USER_INVITE_ENDPOINT                     = "admin.members_invite"
 
 # This part above is based on the flask-user example under BSD license
 
