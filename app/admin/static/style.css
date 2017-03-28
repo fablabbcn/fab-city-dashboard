@@ -94,3 +94,7 @@ a.list-group-item:focus, a.list-group-item:hover, .list-group-item.active:focus,
   color:#d41111;
   z-index: 2;
 }
+
+.flask-user{
+  margin:2em;
+}
