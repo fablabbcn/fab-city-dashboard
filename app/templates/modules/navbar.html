@@ -59,8 +59,8 @@
                     </ul>
                 </li>
             -->
-            <!-- Menu - login -->
-
+          <!-- Menu - login -->
+          <!-- This part is used GLYPHICONS FREE under license (CC BY 3.0) -->
               {% if call_or_get(current_user.is_authenticated) %}
                   <!-- User - login -->
                   <li ><a href="{{ url_for('admin.profile_page', username=current_user.username) }}" class="username"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span> {{ current_user.username }}</a></li>

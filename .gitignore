@@ -110,7 +110,7 @@ ENV/
 
 
 
-## ADD RUBEN
+## Added with admin 
 # file config
 app/config.py
 app/config_example.py
