@@ -1,7 +1,7 @@
 from flask_user import UserMixin
 from . import db
 
-# This part below is based on the flask-user example under BSD license
+# This part below is based on the flask-user example under BSD license 
 
 # User -  Model
 class User(db.Model, UserMixin):

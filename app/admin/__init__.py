@@ -5,7 +5,7 @@ from flask_user import UserManager, SQLAlchemyAdapter
 from flask import Blueprint
 from flask_user.signals import user_sent_invitation, user_registered
 
-# This part below is based on the flask-user example under BSD license
+# This part below is based on the flask-user example under BSD license 
 
 # Initialize Flask-SQLAlchemy
 db = SQLAlchemy(app)

@@ -1,7 +1,7 @@
 import os
 import config
 
- # This part below is based on the flask-user example under BSD license
+ # This part below is based on the flask-user example under BSD license 
 # Use a Class-based config to avoid needing a 2nd file
 # os.getenv() enables configuration through OS environment variables
 class ConfigClass(object):
