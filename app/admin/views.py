@@ -71,11 +71,15 @@ def remove_avatar(user):
 
 # Root - route
 @admin.route('/')
+@login_required
+@confirm_email_required
 def home_page():
     return redirect(url_for('admin.members_page') )
 
 # About - route
 @admin.route('/about')
+@login_required
+@confirm_email_required
 def about_page():
     return render_template('about_admin_page.html', blueprint_title="Admin", title="About")
 
@@ -84,6 +88,7 @@ def about_page():
 # Members - route
 @admin.route('/members')
 @login_required
+@confirm_email_required
 def members_page():
     return render_template('members/members_page.html', users=db.session.query(User).all(),
         blueprint_title="Admin", title="Members" , current_user_is_admin=current_user_is_admin())
@@ -91,6 +96,7 @@ def members_page():
 # Members_invite
 @admin.route('/members/invite', methods=['GET', 'POST'])
 @login_required
+@confirm_email_required
 @roles_required('admin')
 def members_invite():
     return invite()
@@ -98,6 +104,7 @@ def members_invite():
 # Users_profile - route
 @admin.route('/members/profile/<username>')
 @login_required
+@confirm_email_required
 def profile_page(username):
     return render_template('members/profile_page.html',
         user=db.session.query(User).filter(User.username == username).first(),
@@ -108,6 +115,7 @@ def profile_page(username):
 # CurrentUser_profile_edit - route
 @admin.route('/members/myprofile/edit', methods=['GET', 'POST'])
 @login_required
+@confirm_email_required
 def edit_myprofile():
     # Initialize form
     form_user = UserForm()
@@ -139,6 +147,8 @@ def edit_myprofile():
 
 # CurrentUser_admin_role_profile_edit - route
 @admin.route('/members/myprofile/edit/admin', methods=['GET', 'POST'])
+@login_required
+@confirm_email_required
 @roles_required('admin')
 def edit_myprofile_roles():
     # Initialize form
@@ -174,6 +184,8 @@ def edit_myprofile_roles():
 
 # Edit_profile_roles - route
 @admin.route('/members/profile/roles/edit/<username>' ,methods=['GET','POST'])
+@login_required
+@confirm_email_required
 @roles_required('admin')
 def  edit_profile_roles(username):
     user=db.session.query(User).filter(User.username == username).first()
@@ -188,6 +200,8 @@ def  edit_profile_roles(username):
 
 #Roles - route
 @admin.route('/roles')
+@login_required
+@confirm_email_required
 @roles_required('admin')
 def roles_page():
     form_role = RoleForm()
@@ -197,6 +211,8 @@ def roles_page():
 
 #Add_role - route
 @admin.route('/roles/add' ,methods=['GET','POST'])
+@login_required
+@confirm_email_required
 @roles_required('admin')
 def add_role():
     # Initialize form
@@ -218,6 +234,8 @@ def add_role():
 
 #Add_role to user - route
 @admin.route('/members/roles/add/<username>' ,methods=['GET','POST'])
+@login_required
+@confirm_email_required
 @roles_required('admin')
 def add_role_user(username) :
     user=db.session.query(User).filter(User.username == username).first()
@@ -274,6 +292,8 @@ def add_role_user(username) :
 
 #Remove_role - route
 @admin.route('/roles/remove', methods=['POST'])
+@login_required
+@confirm_email_required
 @roles_required('admin')
 def remove_role():
 
@@ -287,6 +307,8 @@ def remove_role():
 
 #Remove_user - route
 @admin.route('/user/remove', methods=['POST'])
+@login_required
+@confirm_email_required
 @roles_required('admin')
 def remove_user():
     if request.method == 'POST' :
@@ -302,6 +324,7 @@ def remove_user():
 #Load_avatar -route
 @admin.route('/members/loaded/avatar/<username>')
 @login_required
+@confirm_email_required
 def loaded_avatar(username):
     #Selection image avatar database
     user=db.session.query(User).filter(User.username==username).first()
