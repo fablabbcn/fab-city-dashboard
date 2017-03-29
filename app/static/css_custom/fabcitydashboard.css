@@ -143,8 +143,12 @@ p.city-description {
 }
 
 .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
-    color: #F7F7F7;
-    background-color: #01a158;
+    /*color: #F7F7F7;
+    background-color: #01a158;*/
+    background-color: #25be78;
+    border-color: #01A158;
+    color:#f1f1f1;
+    z-index: 2;
 }
 
 .navbar .divider-vertical {

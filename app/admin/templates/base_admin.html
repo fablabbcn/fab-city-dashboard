@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 
-
-
 <!-- Current_user is admin -->
 {% set vars = {'current_user_is_admin': False} %}
 {% for r in current_user.roles %}
@@ -12,6 +10,7 @@
 
 {% block content %}
   <div class="row">
+
     <!-- VERTICAL-MENU -->
     {% block vertical_menu %}
     <div id="vertical-menu" class="col-sm-2 col-md-2 col-lg-2">
@@ -30,8 +29,10 @@
       <div id="content_admin text-center">
         {% block content_admin %}{% endblock %}
       </div>
-
     </div>
 
   </div>
+  <script type="text/javascript">
+    $(".navbar-right li .admin").addClass('active')
+  </script>
 {% endblock %}

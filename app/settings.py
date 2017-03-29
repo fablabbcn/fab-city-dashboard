@@ -23,7 +23,7 @@ class ConfigClass(object):
     USER_ENABLE_INVITATION = True
     USER_REQUIRE_INVITATION          = True
     USER_INVITE_URL= "/"
-    USER_INVITE_ENDPOINT                     = "admin.members_invite"
+    USER_AFTER_LOGIN_ENDPOINT                = "admin.home_page"
 
 # This part above is based on the flask-user example under BSD license
 

@@ -28,19 +28,19 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#resilience">Index</a>
+                    <a href="/#resilience">Index</a>
                 </li>
 
                 <li>
-                    <a href="#cities">Cities</a>
+                    <a href="/#cities">Cities</a>
                 </li>
 
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="/#projects">Projects</a>
                 </li>
 
                 <li class="divider-vertical">
-                    <a href="#" class="" data-toggle="modal" data-target="#myModal"> About</a>
+                    <a href="/#" class="" data-toggle="modal" data-target="#myModal"> About</a>
                 </li>
 
 
@@ -59,13 +59,12 @@
                     </ul>
                 </li>
             -->
-            <!-- TODO -->
             <!-- Menu - login -->
 
               {% if call_or_get(current_user.is_authenticated) %}
                   <!-- User - login -->
-                  <li ><a href="{{ url_for('admin.profile_page', username=current_user.username) }}"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span> {{ current_user.username }}</a></li>
-                  <li><a href="{{ url_for('admin.home_page') }}"> admin</a></li>
+                  <li ><a href="{{ url_for('admin.profile_page', username=current_user.username) }}" class="username"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span> {{ current_user.username }}</a></li>
+                  <li><a class="admin" href="{{ url_for('admin.home_page') }}"> admin</a></li>
                   <li><a href="{{ url_for('user.logout') }}"><span class="glyphicon glyphicon-share" aria-hidden="true"> </span> Sign out</a></li>
               {% else %}
                   <li><a href="{{ url_for('user.login') }}"><span class="glyphicon glyphicon-edit" aria-hidden="true"> </span> Sign in</a></li>
