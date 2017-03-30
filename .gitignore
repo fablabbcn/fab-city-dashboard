@@ -108,24 +108,16 @@ ENV/
 # Rope project settings
 .ropeproject
 
-
-
-## Added with admin 
+## Added with admin
 # file config
 app/config.py
 app/config_example.py
-
-# virtual entorn
-venv
 
 # files compiling
 *.pyc
 
 # files database
 *.sqlite
-
-# logo-web
-app/static/icon_page.png
 
 # bootstrap_wtf
 app/templates/macros/bootstrap_wtf.html
@@ -134,4 +126,4 @@ app/templates/macros/bootstrap_wtf.html
 app/upload_photos/
 
 # avatar default
-app/static/default_avatar.png
+app/admin/static/default_avatar.png
