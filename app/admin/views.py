@@ -336,5 +336,4 @@ def loaded_avatar(username):
     photo_path="../"+folder+"/"+filename
 
     #Look image
-    return send_file(photo_path, mimetype='image/png'
-    )
+    return send_file(photo_path, mimetype='image/png')

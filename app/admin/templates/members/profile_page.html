@@ -17,23 +17,28 @@
           <!-- Avatar not found -->
           <script type="text/javascript">
           function imgExists(imgPath) {
-              var http = jQuery.ajax({
-                             type:"HEAD",
-                             url: imgPath,
-                             async: false
-                         });
-              return http.status != 500;
+            var http = jQuery.ajax({
+              type:"HEAD",
+              url: imgPath,
+              async: false
+            });
+            if(http.status != 500 && http.status !=404){
+              return true;
+            }else{
+              return false;
+            }
           }
-
+          // Avatar show default
           function handleImageError() {
-              var imgPath;
+            var imgPath;
 
-              $('#avatar').each(function() {
-                  imgPath = $(this).attr('src');
-                  if (!imgExists(imgPath)) {
-                      $(this).attr('src', '/static/default_avatar.png');
-                  }
-              });
+            $('#avatar').each(function() {
+              imgPath = $(this).attr('src');
+              if (!imgExists(imgPath)) {
+                $(this).attr('src', '/admin/static/default_avatar.png');
+              }
+            });
+
           }
           handleImageError();
           </script>
