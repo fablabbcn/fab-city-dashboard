@@ -17,7 +17,7 @@ from werkzeug.utils import secure_filename
 
 
 
-# Current user is admin
+# Current user is admin - function
 def current_user_is_admin() :
     value = False
     for r in current_user.roles:
@@ -26,7 +26,7 @@ def current_user_is_admin() :
 
     return value
 
-# Save avatar - fuction
+# Save avatar - function
 def save_avatar():
     f = request.files['photo']
     # Check intigrity image
@@ -82,7 +82,6 @@ def home_page():
 @confirm_email_required
 def about_page():
     return render_template('about_admin_page.html', blueprint_title="Admin", title="About")
-
 
 
 # Members - route
@@ -198,7 +197,7 @@ def  edit_profile_roles(username):
         form_role=form_role,roles=db.session.query(Role).all(),  blueprint_title="Admin", title="Members",
         subtitle="Profile edit" )
 
-#Roles - route
+# Roles - route
 @admin.route('/roles')
 @login_required
 @confirm_email_required
@@ -209,7 +208,7 @@ def roles_page():
     return render_template('roles/roles_page.html', form_role=form_role, roles=db.session.query(Role).all(),
       blueprint_title="Admin", title="Roles" )
 
-#Add_role - route
+# Add_role - route
 @admin.route('/roles/add' ,methods=['GET','POST'])
 @login_required
 @confirm_email_required
@@ -232,7 +231,7 @@ def add_role():
     return "None"
 
 
-#Add_role to user - route
+# Add_role to user - route
 @admin.route('/members/roles/add/<username>' ,methods=['GET','POST'])
 @login_required
 @confirm_email_required
@@ -240,7 +239,7 @@ def add_role():
 def add_role_user(username) :
     user=db.session.query(User).filter(User.username == username).first()
 
-    #User is current_user
+    # User is current_user
     user_is_current_user=False
     if user == current_user:
         user_is_current_user=True
@@ -248,39 +247,39 @@ def add_role_user(username) :
     form_role = RoleForm()
 
     if request.method == 'POST' and form_role.validate() :
-        #Remove deselect roles
+        # Remove deselect roles
         remove_roles= [ ]
 
-        #User Roles
+        # User Roles
         role_admin=False
         for r_user in user.roles :
             role_status=False
 
-            #Role admin user
+            # Role admin user
             if r_user.name == "admin" :
                 role_admin=True
 
-            #Roles checks
+            # Roles checks
             for r_name in request.form.getlist("name") :
-                #Compare with roles user, true If the role remains checked
+                # Compare with roles user, true If the role remains checked
                 if r_user.name == r_name :
                     role_status=True
-            #Add array remove_roles, If the role does not remains checked
+            # Add array remove_roles, If the role does not remains checked
             if not role_status :
                 remove_roles.append(r_user.name)
 
 
-        #Removes roles that are not checked now
+        # Removes roles that are not checked now
         for r_role in remove_roles :
             role=db.session.query(Role).filter(Role.name==r_role).first()
             user.roles.remove(role)
             db.session.commit()
 
-        #Add roles checked
+        # Add roles checked
         for r_name in request.form.getlist("name") :
             role=db.session.query(Role).filter(Role.name==r_name).first()
 
-            #If it does not belong to the user it adds it
+            # If it does not belong to the user it adds it
             if not db.session.query(User).join(User.roles).filter(User.username==user.username, Role.name==role.name).first() :
                 user.roles.append(role)
                 db.session.commit()
@@ -290,7 +289,7 @@ def add_role_user(username) :
     else:
         return redirect(url_for('admin.edit_profile_roles', username=username))
 
-#Remove_role - route
+# Remove_role - route
 @admin.route('/roles/remove', methods=['POST'])
 @login_required
 @confirm_email_required
@@ -305,7 +304,7 @@ def remove_role():
 
     return "None"
 
-#Remove_user - route
+# Remove_user - route
 @admin.route('/user/remove', methods=['POST'])
 @login_required
 @confirm_email_required
@@ -321,19 +320,19 @@ def remove_user():
 
     return "None"
 
-#Load_avatar -route
+# Load_avatar -route
 @admin.route('/members/loaded/avatar/<username>')
 @login_required
 @confirm_email_required
 def loaded_avatar(username):
-    #Selection image avatar database
+    # Selection image avatar database
     user=db.session.query(User).filter(User.username==username).first()
     filename = user.avatar_photo
 
     folder=os.getenv('UPLOADED_PHOTOS_DEST');
 
-    #Load_path
+    # Load_path
     photo_path="../"+folder+"/"+filename
 
-    #Look image
+    # Look image
     return send_file(photo_path, mimetype='image/png')
