@@ -1,3 +1,6 @@
+# OUR CONFIGURATION
+app/config.py
+
 # BOWER
 app/static/bower_components/
 
