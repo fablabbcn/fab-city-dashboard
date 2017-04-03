@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+<!-- Current_user is admin -->
+{% set vars = {'current_user_is_admin': False} %}
+{% for r in current_user.roles %}
+  {% if r.name == "admin"%}
+      {% if vars.update({'current_user_is_admin': True}) %}{% endif %}
+  {% endif %}
+{% endfor %}
+
+{% block content %}
+  <div class="row">
+
+    <!-- VERTICAL-MENU -->
+    {% block vertical_menu %}
+    <div id="vertical-menu" class="col-sm-2 col-md-2 col-lg-2">
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" {% if title == "Members" %} class="active" {% endif %}><a href="{{ url_for('admin.members_page') }}">Members</a></li>
+          {% if vars.current_user_is_admin %}
+          <li role="presentation" {% if title == "Roles" %} class="active" {% endif %}><a href="{{ url_for('admin.roles_page') }}">Roles</a></li>
+          {% endif %}
+          <li role="presentation" {% if title == "About" %} class="active" {% endif %}><a href="{{ url_for('admin.about_page') }}">About</a></li>
+        </ul>
+    </div>
+    {% endblock %}
+
+    <!-- CONTENT-ADMIN -->
+    <div class="col-sm-9 col-md-9 col-lg-9">
+      <div id="content_admin text-center">
+        {% block content_admin %}{% endblock %}
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- SELECT - ADMIN -->
+  <script type="text/javascript">
+    $(".navbar-right li .admin").addClass('active')
+  </script>
+{% endblock %}

@@ -1,0 +1,125 @@
+{% extends "base_admin.html" %}
+
+{% block content_admin %}
+    <!-- Title -->
+    {% block title %}
+      <h2 class="section-heading">Profile page</h2>
+    {% endblock %}
+    <div class="row">
+      <div class="col-sm-10 col-md-8 col-lg-6">
+
+        <!-- Thumbnail -->
+        <div class="thumbnail">
+
+          <! -- Avatar -->
+          <img id="avatar" src="{{url_for('admin.loaded_avatar', username=user.username)}}" alt="avatar_photo">
+
+          <!-- Avatar not found -->
+          <script type="text/javascript">
+          function imgExists(imgPath) {
+            var http = jQuery.ajax({
+              type:"HEAD",
+              url: imgPath,
+              async: false
+            });
+            if(http.status != 500 && http.status !=404){
+              return true;
+            }else{
+              return false;
+            }
+          }
+          // Avatar show default
+          function handleImageError() {
+            var imgPath;
+
+            $('#avatar').each(function() {
+              imgPath = $(this).attr('src');
+              if (!imgExists(imgPath)) {
+                $(this).attr('src', '/admin/static/default_avatar.png');
+              }
+            });
+
+          }
+          handleImageError();
+          </script>
+
+
+          {% block profile_edit_avatar %}
+
+          {% endblock %}
+          <div class="caption">
+
+            <!-- Username & email -->
+            <h3 class="username">{{user.username}}</h3>
+            <p><b>email:</b> {{user.email}}</p>
+
+            <!-- Block edit -->
+            {% block profile_edit_name %}
+
+              <!-- First_name & last_name -->
+              <p>
+                {% if user.first_name==" " and user.last_name==" " %}
+                  <b>name:</b> <i>no entry</i></p>
+                {% else %}
+                  <b>name:</b> {{user.first_name}} {{user.last_name}}
+                {% endif %}
+              </p>
+
+            {% endblock %}
+
+            <!-- Roles -->
+            {% block roles %}
+              <p>
+                <b>Roles:</b>
+                {% for r in user.roles %}
+                  {{r.name}}
+                {% endfor %}
+              </p>
+            {% endblock %}
+
+            <!-- Buttons -->
+            {% block buttons %}
+            <p>
+              {# Buttons according to role and user #}
+                {# Role admin and current_user #}
+                {% if current_user_is_admin and  current_user.username == user.username %}
+                  <a href="{{ url_for('admin.edit_myprofile_roles') }}" class="btn btn-primary" role="button">Edit</a>
+
+                {# Role admin  #}
+                {% elif current_user_is_admin %}
+                  <a href="{{ url_for('admin.edit_profile_roles', username = user.username) }}"class="btn btn-primary" role="button">Edit</a>
+
+                  <!-- Button Remove user -->
+                  <a href="#modal_action" class="btn btn-danger" id="btn_delete_user" role="button">Remove <b>User</b></a>
+
+                  <!-- Show modal and Remove User action -->
+                  <script type="text/javascript">
+                    //Click remove button
+                    $("#btn_delete_user").click(function() {
+
+                      //Change message modal and sow
+                      $("#modal_action #message-modal").html("Do you accept your remove to <b>{{user.username}}</b>, user?");
+                      $("#modal_action").modal('show');
+
+                      //Click accept modal, it remove user
+                      $("#modal-accept").click(function(){
+                        $.post("{{ url_for('admin.remove_user') }}", data= {"user_remove": "{{user.username}}" }, function(){
+                          location.reload();
+                        });
+                      });
+                    });
+                  </script>
+
+                {# Only current_user #}
+                {% elif  current_user.username == user.username and current_user_is_admin==False   %}
+                  <a href="{{ url_for('admin.edit_myprofile') }}" class="btn btn-primary" role="button">Edit</a>
+                {% endif %}
+             </p>
+            {% endblock %}
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "members/profile_page.html"  %}
+{% set user = current_user %}
+
+<!-- Title -->
+{% block title %}
+  <h2 class="section-heading">My Profile page</h2>
+{% endblock %}
+
+<!-- Macros Form -->
+{% from "macros/form_macros.html" import render_field, render_submit_field%}
+
+<!-- Block edit avatar-->
+{% block profile_edit_avatar %}
+  <!-- Link edit -->  
+  <a class="edit_avatar" ><span class="glyphicon glyphicon-pencil"></span></a>
+  <!-- Form -->
+  <div class="row edit_avatar">
+    <div class="col-sm-8 col-md-8 col-lg-8">
+      <form  action="" method="POST" enctype="multipart/form-data">
+        {{ form_avatar_upload.hidden_tag() }}
+        {{render_field(form_avatar_upload.photo,label_visible=False)}}
+        {{ render_submit_field(form_avatar_upload.submit) }}
+      </form>
+    </div>
+  </div>
+
+  <!-- Show & Hide - Form -->
+  <script type="text/javascript">
+    $("div.edit_avatar").hide();
+    $("a.edit_avatar").click(function() {
+      if($("div.edit_avatar").is(":visible")){
+        $("div.edit_avatar").hide();
+      }else{
+        $("div.edit_avatar").show();
+      }
+    });
+  </script>
+{% endblock %}
+
+<!-- block edit_name -->
+{% block profile_edit_name %}
+  <!-- First_name & last_name -->
+  <!-- Text + Link-edit -->
+  <p><b>name:</b> {{user.first_name}} {{user.last_name}} <a class="edit_name"><span class="glyphicon glyphicon-pencil"></span></a></p>
+  <!-- Form -->
+  <div class="row edit_name">
+    <div class="col-sm-8 col-md-8 col-lg-8">
+      <form action="" method="POST" class="form" role="form_user">
+        {{ form_user.hidden_tag() }}
+        {{ render_field(form_user.first_name, tabindex=240, value=user.first_name ) }}
+        {{ render_field(form_user.last_name, tabindex=240, value=user.last_name) }}
+        {{ render_submit_field(form_user.submit) }}
+      </form>
+    </div>
+  </div>
+
+  <!-- Show & Hide - Form -->
+  <script type="text/javascript">
+    $("div.edit_name").hide();
+    $("a.edit_name").click(function() {
+      if($("div.edit_name").is(":visible")){
+        $("div.edit_name").hide();
+      }else{
+        $("div.edit_name").show();
+      }
+    });
+  </script>
+
+  <!-- Link edit username & password -->
+  <div id="links_Username_Pass">
+    {% if user_manager.enable_change_username %}
+    <a href="{{ url_for('user.change_username') }}">{%trans%}Change username{%endtrans%}</a>
+    {% endif %}
+    {% if user_manager.enable_change_password %}
+    <p><a href="{{ url_for('user.change_password') }}">{%trans%}Change password{%endtrans%}</a></p>
+    {% endif %}
+  </div>
+
+{% endblock %}
+
+<!-- Not buttons -->
+{% block buttons %}
+
+{% endblock %}

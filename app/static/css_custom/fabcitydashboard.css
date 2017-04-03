@@ -67,7 +67,7 @@ p.city-description {
 
 /*BUTTONS */
 
-.btn-xl {
+.btn-xl, .btn {
     padding: 8px 15px;
     border: 1px solid #01a158;
     border-radius: 0px;
@@ -85,6 +85,8 @@ p.city-description {
     border: 1px solid #01a158;
     background-color: #fff;
 }
+
+
 
 .menu {
     border-color: #e8e8e8;
@@ -105,6 +107,14 @@ p.city-description {
 .btn-tool {
     margin-bottom: 5px;
 }
+
+
+/* MAIN-DIV */
+#main-div{
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
 
 
 /*MODALS */
@@ -133,8 +143,16 @@ p.city-description {
 }
 
 .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover {
-    color: #F7F7F7;
-    background-color: #01a158;
+    /*color: #F7F7F7;
+    background-color: #01a158;*/
+    background-color: #25be78;
+    border-color: #01A158;
+    color:#f1f1f1;
+    z-index: 2;
+}
+
+.navbar .divider-vertical {
+  border-right: 2px solid white;
 }
 
 .dropdown-menu {

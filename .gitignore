@@ -107,3 +107,23 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+## Added with admin
+# file config
+app/config.py
+app/config_example.py
+
+# files compiling
+*.pyc
+
+# files database
+*.sqlite
+
+# bootstrap_wtf
+app/templates/macros/bootstrap_wtf.html
+
+# upload photos
+app/upload_photos/
+
+# avatar default
+app/admin/static/default_avatar.png

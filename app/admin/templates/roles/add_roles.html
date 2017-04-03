@@ -1,0 +1,33 @@
+<!-- Macros Form -->
+{% from "macros/form_macros.html" import render_field, render_checkbox_field, render_submit_field %}
+<p>
+
+      <b>Roles</b>
+      <!-- Form add roles -->
+      <form action="" method="POST" id="form_role" role="form">
+        <div class="row">
+          <div class="col-sm-8 col-md-8 col-lg-8">
+            {{ form_role.hidden_tag() }}
+            {{ render_field(form_role.name, label_visible=false, placeholder="Add role") }}
+          </div>
+
+          <div id="submit_role" class="col-sm-1 col-md-1 col-lg-1">
+            {{ render_submit_field(form_role.submit) }}
+          </div>
+        </div>
+      </form>
+
+</p>
+
+<!-- Add role, action to push submit -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#form_role").submit(function(event) {
+      /* Act on the event desactive submit*/
+      event.preventDefault();
+      $.post("{{ url_for('admin.add_role') }}", data= $("#form_role").serialize(), function(){
+        location.reload();
+      });
+    });
+  });
+</script>
