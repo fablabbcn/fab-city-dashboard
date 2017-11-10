@@ -13,6 +13,10 @@ The proposal aims at developing a visualisation tool for Fab Cities that show th
 
 `pip install -r requirements.txt`
 
+`bower install`
+
+Customise the `app/config_example.py` as `app/config.py`
+
 `python run.py`
 
 ## License
