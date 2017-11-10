@@ -9,7 +9,7 @@ Flask-Login==0.4.0
 Flask-Mail==0.9.1
 Flask-SQLAlchemy==2.1
 Flask-Uploads==0.2.1
-Flask-User==0.6.11
+Flask-User
 Flask-WTF==0.14.2
 geojson==1.3.3
 geopy==1.11.0
